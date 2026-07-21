@@ -1,0 +1,510 @@
+{
+  "method": "relation_prompt_variants",
+  "model": "qwen2.5-7b-it",
+  "n_pairs": 8,
+  "results": [
+    {
+      "concept_a": "cancer",
+      "concept_b": "chemotherapy",
+      "expected": "treatment",
+      "v1_dict": {
+        "known": [
+          "treated",
+          "Treat",
+          "therapeutic",
+          "treating",
+          "causal"
+        ],
+        "top5": [
+          "treated",
+          "Treat",
+          "therapeutic",
+          "often",
+          "apeut"
+        ]
+      },
+      "v2_blank": {
+        "known": [
+          "affects"
+        ],
+        "top5": [
+          "does",
+          "interacts",
+          "impacts",
+          "affects",
+          "influences"
+        ]
+      },
+      "v3_prior": {
+        "known": [
+          "therapies",
+          "treated",
+          "suppress",
+          "affects",
+          "therapy"
+        ],
+        "dict_rel_used": "treated"
+      },
+      "v4_func": {
+        "known": [
+          "treat",
+          "induce",
+          "inhibit",
+          "kill",
+          "target"
+        ],
+        "top5": [
+          "treat",
+          "induce",
+          "utilize",
+          "inhibit",
+          "kill"
+        ]
+      },
+      "v5_causal": {
+        "known": [
+          "therapies",
+          "therapy",
+          "reatment",
+          "therapeutic"
+        ],
+        "top5": [
+          "therapies",
+          "therapy",
+          "chemotherapy",
+          "drugs",
+          "cells"
+        ]
+      }
+    },
+    {
+      "concept_a": "cancer",
+      "concept_b": "surgery",
+      "expected": "treatment",
+      "v1_dict": {
+        "known": [
+          "treated",
+          "Treat",
+          "therapeutic"
+        ],
+        "top5": [
+          "often",
+          "apeut",
+          "treated",
+          "alink",
+          "Treat"
+        ]
+      },
+      "v2_blank": {
+        "known": [
+          "affects"
+        ],
+        "top5": [
+          "impacts",
+          "affects",
+          "relates",
+          "influences",
+          "pert"
+        ]
+      },
+      "v3_prior": {
+        "known": [
+          "suppress",
+          "therapy"
+        ],
+        "dict_rel_used": "treated"
+      },
+      "v4_func": {
+        "known": [
+          "remove",
+          "removal",
+          "treat"
+        ],
+        "top5": [
+          "remove",
+          "identify",
+          "understand",
+          "removal",
+          "treat"
+        ]
+      },
+      "v5_causal": {
+        "known": [
+          "therapy",
+          "therapies",
+          "reatment"
+        ],
+        "top5": [
+          "surgery",
+          "surgeries",
+          "therapy",
+          "management",
+          "surgical"
+        ]
+      }
+    },
+    {
+      "concept_a": "blood",
+      "concept_b": "heart",
+      "expected": "pumps/circulation",
+      "v1_dict": {
+        "known": [
+          "regulated",
+          "integral",
+          "vital"
+        ],
+        "top5": [
+          "reflected",
+          "evidenced",
+          "evident",
+          "closely",
+          "regulated"
+        ]
+      },
+      "v2_blank": {
+        "known": [
+          "affects"
+        ],
+        "top5": [
+          "pressure",
+          "affects",
+          "pressures",
+          "interacts",
+          "influences"
+        ]
+      },
+      "v3_prior": {
+        "known": [
+          "affects"
+        ],
+        "dict_rel_used": "regulated"
+      },
+      "v4_func": {
+        "known": [],
+        "top5": [
+          "transport",
+          "serve",
+          "deliver",
+          "supply",
+          "facilitate"
+        ]
+      },
+      "v5_causal": {
+        "known": [],
+        "top5": [
+          "flows",
+          "circ",
+          "circulating",
+          "circulation",
+          "flow"
+        ]
+      }
+    },
+    {
+      "concept_a": "insulin",
+      "concept_b": "diabetes",
+      "expected": "regulates",
+      "v1_dict": {
+        "known": [
+          "central",
+          "critical",
+          "crucial",
+          "integral",
+          "regulated"
+        ],
+        "top5": [
+          "central",
+          "pivotal",
+          "critical",
+          "closely",
+          "crucial"
+        ]
+      },
+      "v2_blank": {
+        "known": [],
+        "top5": [
+          "itself",
+          "plays",
+          "primarily",
+          "resistance",
+          "does"
+        ]
+      },
+      "v3_prior": {
+        "known": [
+          "regulates"
+        ],
+        "dict_rel_used": "central"
+      },
+      "v4_func": {
+        "known": [
+          "regulate",
+          "regulates",
+          "manage",
+          "regulatory"
+        ],
+        "top5": [
+          "regulate",
+          "facilitate",
+          "help",
+          "regulating",
+          "regulation"
+        ]
+      },
+      "v5_causal": {
+        "known": [
+          "regulates"
+        ],
+        "top5": [
+          "plays",
+          "resistance",
+          "regulates",
+          "regulation",
+          "deficiency"
+        ]
+      }
+    },
+    {
+      "concept_a": "calcium",
+      "concept_b": "bones",
+      "expected": "builds",
+      "v1_dict": {
+        "known": [
+          "integral",
+          "essential",
+          "crucial",
+          "critical",
+          "vital"
+        ],
+        "top5": [
+          "integral",
+          "essential",
+          "crucial",
+          "critical",
+          "vital"
+        ]
+      },
+      "v2_blank": {
+        "known": [],
+        "top5": [
+          "plays",
+          "interacts",
+          "interactions",
+          "levels",
+          "does"
+        ]
+      },
+      "v3_prior": {
+        "known": [],
+        "dict_rel_used": "integral"
+      },
+      "v4_func": {
+        "known": [
+          "support",
+          "promote"
+        ],
+        "top5": [
+          "maintain",
+          "serve",
+          "contribute",
+          "facilitate",
+          "support"
+        ]
+      },
+      "v5_causal": {
+        "known": [
+          "regulates"
+        ],
+        "top5": [
+          "plays",
+          "metabolism",
+          "play",
+          "ions",
+          "ombine"
+        ]
+      }
+    },
+    {
+      "concept_a": "diagnosis",
+      "concept_b": "treatment",
+      "expected": "precedes",
+      "v1_dict": {
+        "known": [
+          "causal",
+          "critical",
+          "crucial",
+          "integral",
+          "caus"
+        ],
+        "top5": [
+          "sequential",
+          "ersive",
+          "pivotal",
+          "causal",
+          "critical"
+        ]
+      },
+      "v2_blank": {
+        "known": [
+          "affects"
+        ],
+        "top5": [
+          "plays",
+          "serves",
+          "impacts",
+          "relates",
+          "affects"
+        ]
+      },
+      "v3_prior": {
+        "known": [],
+        "dict_rel_used": "causal"
+      },
+      "v4_func": {
+        "known": [],
+        "top5": [
+          "identify",
+          "guide",
+          "enable",
+          "facilitate",
+          "inform"
+        ]
+      },
+      "v5_causal": {
+        "known": [],
+        "top5": [
+          "plays",
+          "serves",
+          "drives",
+          "directly",
+          "forms"
+        ]
+      }
+    },
+    {
+      "concept_a": "smoking",
+      "concept_b": "cancer",
+      "expected": "causes",
+      "v1_dict": {
+        "known": [
+          "causal",
+          "caus"
+        ],
+        "top5": [
+          "causal",
+          "caus",
+          "alink",
+          "licative",
+          "contri"
+        ]
+      },
+      "v2_blank": {
+        "known": [],
+        "top5": [
+          "appears",
+          "negatively",
+          "itself",
+          "elmet",
+          "seems"
+        ]
+      },
+      "v3_prior": {
+        "known": [
+          "association",
+          "prevention",
+          "increases"
+        ],
+        "dict_rel_used": "causal"
+      },
+      "v4_func": {
+        "known": [
+          "increase",
+          "promote",
+          "induce",
+          "cause"
+        ],
+        "top5": [
+          "increase",
+          "promote",
+          "introduce",
+          "induce",
+          "contribute"
+        ]
+      },
+      "v5_causal": {
+        "known": [
+          "increases"
+        ],
+        "top5": [
+          "increases",
+          "cigarettes",
+          "plays",
+          "serves",
+          "significantly"
+        ]
+      }
+    },
+    {
+      "concept_a": "tumor",
+      "concept_b": "growth",
+      "expected": "causes",
+      "v1_dict": {
+        "known": [
+          "growth",
+          "causal"
+        ],
+        "top5": [
+          "alink",
+          "apeut",
+          "agini",
+          "growth",
+          "odyn"
+        ]
+      },
+      "v2_blank": {
+        "known": [],
+        "top5": [
+          "characteristics",
+          "does",
+          "appears",
+          "itself",
+          "refers"
+        ]
+      },
+      "v3_prior": {
+        "known": [
+          "progression",
+          "inhibition",
+          "suppress",
+          "growth"
+        ],
+        "dict_rel_used": "growth"
+      },
+      "v4_func": {
+        "known": [
+          "promote"
+        ],
+        "top5": [
+          "prolifer",
+          "undergo",
+          "facilitate",
+          "promote",
+          "replicate"
+        ]
+      },
+      "v5_causal": {
+        "known": [
+          "growth",
+          "progression"
+        ],
+        "top5": [
+          "growth",
+          "characteristics",
+          "biology",
+          "development",
+          "progression"
+        ]
+      }
+    }
+  ]
+}

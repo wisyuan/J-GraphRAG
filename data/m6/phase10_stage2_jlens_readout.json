@@ -1,0 +1,2362 @@
+{
+  "method": "jlens_static_readout",
+  "model": "qwen2.5-7b-it",
+  "n_clusters": 10,
+  "summary": {
+    "judge_accuracy": 0.2
+  },
+  "comparison_phase9": {
+    "phase9_xlmr_best": 0.0,
+    "phase9b_perpos_best": 0.0
+  },
+  "gate_pass": true,
+  "clusters": {
+    "84": {
+      "n_members": 32,
+      "concept_tokens": [
+        "initialization",
+        "initializing",
+        "iare"
+      ],
+      "model_final_top3": [
+        "\"",
+        "`",
+        "initialization"
+      ],
+      "lens_by_layer": {
+        "0": [
+          {
+            "token": ".",
+            "prob": 0.9074794054031372
+          },
+          {
+            "token": "，",
+            "prob": 0.03987186402082443
+          },
+          {
+            "token": ".",
+            "prob": 0.021341871470212936
+          },
+          {
+            "token": ".",
+            "prob": 0.012944498099386692
+          },
+          {
+            "token": ".",
+            "prob": 0.004473499022424221
+          },
+          {
+            "token": "：",
+            "prob": 0.0012816789094358683
+          },
+          {
+            "token": ",",
+            "prob": 0.000998172559775412
+          },
+          {
+            "token": "،",
+            "prob": 0.0008808841812424362
+          },
+          {
+            "token": ",",
+            "prob": 0.0008275141008198261
+          },
+          {
+            "token": "''",
+            "prob": 0.0006444686441682279
+          }
+        ],
+        "6": [
+          {
+            "token": ".",
+            "prob": 0.09436434507369995
+          },
+          {
+            "token": "<|endoftext|>",
+            "prob": 0.013594473712146282
+          },
+          {
+            "token": "：",
+            "prob": 0.013594473712146282
+          },
+          {
+            "token": "呸",
+            "prob": 0.011997080408036709
+          },
+          {
+            "token": "FindObjectOfType",
+            "prob": 0.008777251467108727
+          },
+          {
+            "token": "挺好",
+            "prob": 0.008777251467108727
+          },
+          {
+            "token": "[…]",
+            "prob": 0.008777251467108727
+          },
+          {
+            "token": "/",
+            "prob": 0.007276596967130899
+          },
+          {
+            "token": "'.",
+            "prob": 0.007276596967130899
+          },
+          {
+            "token": "从严治",
+            "prob": 0.006032510660588741
+          }
+        ],
+        "13": [
+          {
+            "token": "[…]",
+            "prob": 0.08470741659402847
+          },
+          {
+            "token": "[…]",
+            "prob": 0.07022491097450256
+          },
+          {
+            "token": "[…]",
+            "prob": 0.05821850150823593
+          },
+          {
+            "token": "FindObjectOfType",
+            "prob": 0.03317189961671829
+          },
+          {
+            "token": "",
+            "prob": 0.018900780007243156
+          },
+          {
+            "token": "​​",
+            "prob": 0.016679879277944565
+          },
+          {
+            "token": "ksz",
+            "prob": 0.008928095921874046
+          },
+          {
+            "token": "​​",
+            "prob": 0.007879017852246761
+          },
+          {
+            "token": "：\"",
+            "prob": 0.007401651237159967
+          },
+          {
+            "token": "alink",
+            "prob": 0.0054151639342308044
+          }
+        ],
+        "20": [
+          {
+            "token": "：\"",
+            "prob": 0.025347093120217323
+          },
+          {
+            "token": "\"**",
+            "prob": 0.013567321933805943
+          },
+          {
+            "token": "alink",
+            "prob": 0.011973118409514427
+          },
+          {
+            "token": "：<",
+            "prob": 0.007730426732450724
+          },
+          {
+            "token": ")(\"",
+            "prob": 0.005655701272189617
+          },
+          {
+            "token": "：“",
+            "prob": 0.005313039291650057
+          },
+          {
+            "token": "upy",
+            "prob": 0.0036515952087938786
+          },
+          {
+            "token": "abez",
+            "prob": 0.0036515952087938786
+          },
+          {
+            "token": "ogui",
+            "prob": 0.0032225213944911957
+          },
+          {
+            "token": "ære",
+            "prob": 0.003027278697118163
+          }
+        ],
+        "26": [
+          {
+            "token": "initialization",
+            "prob": 0.41739359498023987
+          },
+          {
+            "token": "初始化",
+            "prob": 0.04683026298880577
+          },
+          {
+            "token": "initializing",
+            "prob": 0.023547735065221786
+          },
+          {
+            "token": "iare",
+            "prob": 0.01952175982296467
+          },
+          {
+            "token": "Initialization",
+            "prob": 0.013417095877230167
+          },
+          {
+            "token": "tsy",
+            "prob": 0.013417095877230167
+          },
+          {
+            "token": "(Temp",
+            "prob": 0.011840545572340488
+          },
+          {
+            "token": "一致好评",
+            "prob": 0.01112316269427538
+          },
+          {
+            "token": "Initialization",
+            "prob": 0.009221426211297512
+          },
+          {
+            "token": "\"w",
+            "prob": 0.009221426211297512
+          }
+        ]
+      },
+      "sample_docs": [
+        "const root:\nconst root = createTempDir();\n\t\t",
+        "const root:\nconst root = createTempDir();\n\t\t",
+        "const root:\nconst root = createTempDir();\n\t\t"
+      ],
+      "judge": {
+        "accurate": false,
+        "confidence": 0.95,
+        "reason": "The keywords 'initialization', 'initializing', and 'iare' (which appears to be a typo) do not match the document content. The documents consist solely of repeated code snippets defining a constant 'ro"
+      }
+    },
+    "110": {
+      "n_members": 15,
+      "concept_tokens": [
+        "testing",
+        "asynchronous"
+      ],
+      "model_final_top3": [
+        "testing",
+        "`",
+        "\""
+      ],
+      "lens_by_layer": {
+        "0": [
+          {
+            "token": ".",
+            "prob": 0.81463223695755
+          },
+          {
+            "token": "，",
+            "prob": 0.08586160093545914
+          },
+          {
+            "token": ".",
+            "prob": 0.027875181287527084
+          },
+          {
+            "token": ".",
+            "prob": 0.02170921303331852
+          },
+          {
+            "token": "​",
+            "prob": 0.01690715178847313
+          },
+          {
+            "token": ".",
+            "prob": 0.007986373268067837
+          },
+          {
+            "token": "",
+            "prob": 0.0024357063230127096
+          },
+          {
+            "token": "：",
+            "prob": 0.0021495032124221325
+          },
+          {
+            "token": "''",
+            "prob": 0.0015726102283224463
+          },
+          {
+            "token": "",
+            "prob": 0.0013878236059099436
+          }
+        ],
+        "6": [
+          {
+            "token": "''",
+            "prob": 0.1654590666294098
+          },
+          {
+            "token": "\"\"",
+            "prob": 0.04453270509839058
+          },
+          {
+            "token": "呸",
+            "prob": 0.032580822706222534
+          },
+          {
+            "token": "\".",
+            "prob": 0.009334561415016651
+          },
+          {
+            "token": "：\"",
+            "prob": 0.007738623768091202
+          },
+          {
+            "token": "{{$",
+            "prob": 0.006415544077754021
+          },
+          {
+            "token": "挺好",
+            "prob": 0.005318673327565193
+          },
+          {
+            "token": "从来没",
+            "prob": 0.004409334622323513
+          },
+          {
+            "token": ".",
+            "prob": 0.004142186604440212
+          },
+          {
+            "token": "个多",
+            "prob": 0.0036554671823978424
+          }
+        ],
+        "13": [
+          {
+            "token": "",
+            "prob": 0.05918201059103012
+          },
+          {
+            "token": "FindObjectOfType",
+            "prob": 0.035895705223083496
+          },
+          {
+            "token": "：\"",
+            "prob": 0.026261858642101288
+          },
+          {
+            "token": "​​",
+            "prob": 0.024670731276273727
+          },
+          {
+            "token": "​​",
+            "prob": 0.018049493432044983
+          },
+          {
+            "token": "ksz",
+            "prob": 0.010284291580319405
+          },
+          {
+            "token": "[…]",
+            "prob": 0.008525977842509747
+          },
+          {
+            "token": "={$",
+            "prob": 0.007524148561060429
+          },
+          {
+            "token": "alink",
+            "prob": 0.006237737834453583
+          },
+          {
+            "token": "蹚",
+            "prob": 0.005504784639924765
+          }
+        ],
+        "20": [
+          {
+            "token": "：\"",
+            "prob": 0.02198854088783264
+          },
+          {
+            "token": "alink",
+            "prob": 0.016087161377072334
+          },
+          {
+            "token": "\"**",
+            "prob": 0.008089132606983185
+          },
+          {
+            "token": "：<",
+            "prob": 0.007138634100556374
+          },
+          {
+            "token": "：“",
+            "prob": 0.0067061264999210835
+          },
+          {
+            "token": "abez",
+            "prob": 0.0067061264999210835
+          },
+          {
+            "token": "agini",
+            "prob": 0.0052227359265089035
+          },
+          {
+            "token": "蹚",
+            "prob": 0.004609048366546631
+          },
+          {
+            "token": "redni",
+            "prob": 0.003167749848216772
+          },
+          {
+            "token": "nika",
+            "prob": 0.003167749848216772
+          }
+        ],
+        "26": [
+          {
+            "token": "testing",
+            "prob": 0.19499419629573822
+          },
+          {
+            "token": "asynchronous",
+            "prob": 0.08128567039966583
+          },
+          {
+            "token": "testing",
+            "prob": 0.07173436135053635
+          },
+          {
+            "token": "Testing",
+            "prob": 0.04930225387215614
+          },
+          {
+            "token": "async",
+            "prob": 0.04350908845663071
+          },
+          {
+            "token": "Testing",
+            "prob": 0.03839663416147232
+          },
+          {
+            "token": "测试",
+            "prob": 0.03607030212879181
+          },
+          {
+            "token": ":async",
+            "prob": 0.02990332990884781
+          },
+          {
+            "token": "Tes",
+            "prob": 0.01930703967809677
+          },
+          {
+            "token": "_async",
+            "prob": 0.018137287348508835
+          }
+        ]
+      },
+      "sample_docs": [
+        "const appendFullOutput:\nconst appendFullOutput = (text: string): void => {\n\t\tif (!fullOutputPath || captureError) return",
+        "const result:\nconst result = await env.exec(command, {\n\t\t\t...(options ?? {}),\n\t\t\tonStdout: onChunk,\n\t\t\tonStderr: onChunk",
+        "const result:\nconst result = getOrThrow(await compact(preparation!, models, model));\n\t\texpect(result.summary.length).toB"
+      ],
+      "judge": {
+        "accurate": false,
+        "confidence": 0.9,
+        "reason": "The documents show code snippets related to async/await patterns and testing assertions (expect), but the concept of 'asynchronous' is partially supported while 'testing' is only marginally present. T"
+      }
+    },
+    "55": {
+      "n_members": 14,
+      "concept_tokens": [
+        "generics",
+        "generic"
+      ],
+      "model_final_top3": [
+        "\"",
+        ":",
+        "generics"
+      ],
+      "lens_by_layer": {
+        "0": [
+          {
+            "token": ".",
+            "prob": 0.8704594969749451
+          },
+          {
+            "token": "，",
+            "prob": 0.04910796508193016
+          },
+          {
+            "token": ".",
+            "prob": 0.029785485938191414
+          },
+          {
+            "token": ".",
+            "prob": 0.01697125844657421
+          },
+          {
+            "token": "​",
+            "prob": 0.004862347152084112
+          },
+          {
+            "token": ".",
+            "prob": 0.004567752126604319
+          },
+          {
+            "token": "''",
+            "prob": 0.0020269276574254036
+          },
+          {
+            "token": ",",
+            "prob": 0.0014829320134595037
+          },
+          {
+            "token": "﻿",
+            "prob": 0.0013086828403174877
+          },
+          {
+            "token": "",
+            "prob": 0.0012293938780203462
+          }
+        ],
+        "6": [
+          {
+            "token": "呸",
+            "prob": 0.019678287208080292
+          },
+          {
+            "token": "挺好",
+            "prob": 0.006388604640960693
+          },
+          {
+            "token": "FindObjectOfType",
+            "prob": 0.006001538597047329
+          },
+          {
+            "token": "\"\"",
+            "prob": 0.00563792372122407
+          },
+          {
+            "token": "''",
+            "prob": 0.00563792372122407
+          },
+          {
+            "token": "从来没",
+            "prob": 0.004975450225174427
+          },
+          {
+            "token": "☰",
+            "prob": 0.0046740029938519
+          },
+          {
+            "token": "个多",
+            "prob": 0.0046740029938519
+          },
+          {
+            "token": "从严治",
+            "prob": 0.00439081946387887
+          },
+          {
+            "token": "سرطان",
+            "prob": 0.00439081946387887
+          }
+        ],
+        "13": [
+          {
+            "token": "[…]",
+            "prob": 0.14909279346466064
+          },
+          {
+            "token": "[…]",
+            "prob": 0.12360226362943649
+          },
+          {
+            "token": "：\"",
+            "prob": 0.03125154599547386
+          },
+          {
+            "token": "​​",
+            "prob": 0.03125154599547386
+          },
+          {
+            "token": "​​",
+            "prob": 0.029358111321926117
+          },
+          {
+            "token": "FindObjectOfType",
+            "prob": 0.024338729679584503
+          },
+          {
+            "token": "",
+            "prob": 0.022864121943712234
+          },
+          {
+            "token": "[…]",
+            "prob": 0.022864121943712234
+          },
+          {
+            "token": "ksz",
+            "prob": 0.010145891457796097
+          },
+          {
+            "token": "​",
+            "prob": 0.008953718468546867
+          }
+        ],
+        "20": [
+          {
+            "token": "alink",
+            "prob": 0.023615609854459763
+          },
+          {
+            "token": "：\"",
+            "prob": 0.014323591254651546
+          },
+          {
+            "token": "：<",
+            "prob": 0.0076668658293783665
+          },
+          {
+            "token": "蹚",
+            "prob": 0.0076668658293783665
+          },
+          {
+            "token": "\"**",
+            "prob": 0.006765985861420631
+          },
+          {
+            "token": "abez",
+            "prob": 0.005609198939055204
+          },
+          {
+            "token": "用微信",
+            "prob": 0.004368448629975319
+          },
+          {
+            "token": "agini",
+            "prob": 0.0038551422767341137
+          },
+          {
+            "token": "：“",
+            "prob": 0.0031960252672433853
+          },
+          {
+            "token": "upy",
+            "prob": 0.003002387937158346
+          }
+        ],
+        "26": [
+          {
+            "token": "generics",
+            "prob": 0.39868438243865967
+          },
+          {
+            "token": "泛",
+            "prob": 0.027130812406539917
+          },
+          {
+            "token": "generic",
+            "prob": 0.019849326461553574
+          },
+          {
+            "token": "generic",
+            "prob": 0.018646717071533203
+          },
+          {
+            "token": "TypeScript",
+            "prob": 0.014522077515721321
+          },
+          {
+            "token": "(strict",
+            "prob": 0.012815688736736774
+          },
+          {
+            "token": "Gener",
+            "prob": 0.009376158006489277
+          },
+          {
+            "token": "/interfaces",
+            "prob": 0.008808085694909096
+          },
+          {
+            "token": "院副院长",
+            "prob": 0.008808085694909096
+          },
+          {
+            "token": "riger",
+            "prob": 0.008808085694909096
+          }
+        ]
+      },
+      "sample_docs": [
+        "interface AgentHarnessTurnState:\ninterface AgentHarnessTurnState<\n\tTSkill extends Skill = Skill,\n\tTPromptTemplate extend",
+        "class AgentHarness:\nexport class AgentHarness<\n\tTSkill extends Skill = Skill,\n\tTPromptTemplate extends PromptTemplate = ",
+        "interface AgentHarnessResources:\nexport interface AgentHarnessResources<\n\tTSkill extends Skill = Skill,\n\tTPromptTemplate"
+      ],
+      "judge": {
+        "accurate": true,
+        "confidence": 0.95,
+        "reason": "The documents prominently feature TypeScript generic type parameters (e.g., <TSkill extends Skill = Skill, ...>), which directly correspond to the concept 'generics'. The keyword 'generic' also covers"
+      }
+    },
+    "154": {
+      "n_members": 13,
+      "concept_tokens": [
+        "reten",
+        "agini"
+      ],
+      "model_final_top3": [
+        ":",
+        "\"",
+        "an"
+      ],
+      "lens_by_layer": {
+        "0": [
+          {
+            "token": ".",
+            "prob": 0.859380304813385
+          },
+          {
+            "token": "，",
+            "prob": 0.05493834242224693
+          },
+          {
+            "token": ".",
+            "prob": 0.033321790397167206
+          },
+          {
+            "token": ".",
+            "prob": 0.01478645484894514
+          },
+          {
+            "token": "​",
+            "prob": 0.005110062193125486
+          },
+          {
+            "token": ".",
+            "prob": 0.003979720175266266
+          },
+          {
+            "token": "''",
+            "prob": 0.003512091003358364
+          },
+          {
+            "token": "：",
+            "prob": 0.0020011290907859802
+          },
+          {
+            "token": "﻿",
+            "prob": 0.0017659901641309261
+          },
+          {
+            "token": "،",
+            "prob": 0.0013753544772043824
+          }
+        ],
+        "6": [
+          {
+            "token": "''",
+            "prob": 0.01243548933416605
+          },
+          {
+            "token": "呸",
+            "prob": 0.010974280536174774
+          },
+          {
+            "token": "：\"",
+            "prob": 0.007542505860328674
+          },
+          {
+            "token": "挺好",
+            "prob": 0.006252956576645374
+          },
+          {
+            "token": "个多",
+            "prob": 0.006252956576645374
+          },
+          {
+            "token": "从来没",
+            "prob": 0.005874108988791704
+          },
+          {
+            "token": "\"\"",
+            "prob": 0.005183883011341095
+          },
+          {
+            "token": "{{$",
+            "prob": 0.005183883011341095
+          },
+          {
+            "token": "سرطان",
+            "prob": 0.0048698075115680695
+          },
+          {
+            "token": "FindObjectOfType",
+            "prob": 0.004574760794639587
+          }
+        ],
+        "13": [
+          {
+            "token": "",
+            "prob": 0.0947379320859909
+          },
+          {
+            "token": "[…]",
+            "prob": 0.061167407780885696
+          },
+          {
+            "token": "[…]",
+            "prob": 0.04475102946162224
+          },
+          {
+            "token": "​​",
+            "prob": 0.04203970357775688
+          },
+          {
+            "token": "[…]",
+            "prob": 0.03709990531206131
+          },
+          {
+            "token": "FindObjectOfType",
+            "prob": 0.0225022304803133
+          },
+          {
+            "token": "​",
+            "prob": 0.016462983563542366
+          },
+          {
+            "token": "：\"",
+            "prob": 0.015465542674064636
+          },
+          {
+            "token": "​​",
+            "prob": 0.014528533443808556
+          },
+          {
+            "token": "ksz",
+            "prob": 0.009985304437577724
+          }
+        ],
+        "20": [
+          {
+            "token": "：\"",
+            "prob": 0.02673804946243763
+          },
+          {
+            "token": "\"**",
+            "prob": 0.018376775085926056
+          },
+          {
+            "token": "alink",
+            "prob": 0.013444735668599606
+          },
+          {
+            "token": "：“",
+            "prob": 0.008154644630849361
+          },
+          {
+            "token": "：<",
+            "prob": 0.007660579867660999
+          },
+          {
+            "token": "abez",
+            "prob": 0.00676043750718236
+          },
+          {
+            "token": "蹚",
+            "prob": 0.004946041852235794
+          },
+          {
+            "token": "redni",
+            "prob": 0.0036186014767736197
+          },
+          {
+            "token": "upy",
+            "prob": 0.003193404758349061
+          },
+          {
+            "token": "用微信",
+            "prob": 0.00299992598593235
+          }
+        ],
+        "26": [
+          {
+            "token": "reten",
+            "prob": 0.024441339075565338
+          },
+          {
+            "token": "NCY",
+            "prob": 0.022960513830184937
+          },
+          {
+            "token": ":",
+            "prob": 0.02026258036494255
+          },
+          {
+            "token": "üc",
+            "prob": 0.02026258036494255
+          },
+          {
+            "token": "agini",
+            "prob": 0.017881667241454124
+          },
+          {
+            "token": "一致好评",
+            "prob": 0.016798270866274834
+          },
+          {
+            "token": "venient",
+            "prob": 0.013926255516707897
+          },
+          {
+            "token": "epam",
+            "prob": 0.013926255516707897
+          },
+          {
+            "token": "testing",
+            "prob": 0.013082507066428661
+          },
+          {
+            "token": "omid",
+            "prob": 0.01084577850997448
+          }
+        ]
+      },
+      "sample_docs": [
+        "const agent:\nconst agent = new Agent();\n\n\t\texpect(agent.state).toBeDefined();\n\t\texpect(agent.state.systemPrompt).toBe(\"\"",
+        "const agent:\nconst agent = new Agent({\n\t\t\tinitialState: {\n\t\t\t\tsystemPrompt: \"You are a helpful assistant.\",\n\t\t\t\tmodel: c",
+        "const agent:\nconst agent = new Agent();\n\n\t\t// Test setSystemPrompt\n\t\tagent.state.systemPrompt = \"Custom prompt\";\n\t\texpec"
+      ],
+      "judge": {
+        "accurate": false,
+        "confidence": 0.95,
+        "reason": "The keywords 'reten' and 'agini' appear to be misspellings or obscure terms, while the document samples clearly describe code related to an Agent class, its state, systemPrompt, model, and thinkingLev"
+      }
+    },
+    "89": {
+      "n_members": 13,
+      "concept_tokens": [
+        "iare",
+        "epam",
+        "omid",
+        "ogui"
+      ],
+      "model_final_top3": [
+        ":",
+        "\"",
+        "`"
+      ],
+      "lens_by_layer": {
+        "0": [
+          {
+            "token": ".",
+            "prob": 0.8032582402229309
+          },
+          {
+            "token": "，",
+            "prob": 0.12318364530801773
+          },
+          {
+            "token": ".",
+            "prob": 0.027485985308885574
+          },
+          {
+            "token": ".",
+            "prob": 0.008923392742872238
+          },
+          {
+            "token": "​",
+            "prob": 0.006528493482619524
+          },
+          {
+            "token": ".",
+            "prob": 0.0034944508224725723
+          },
+          {
+            "token": "：",
+            "prob": 0.0032827327959239483
+          },
+          {
+            "token": "''",
+            "prob": 0.0028970015700906515
+          },
+          {
+            "token": "",
+            "prob": 0.001870444742962718
+          },
+          {
+            "token": "،",
+            "prob": 0.00155065325088799
+          }
+        ],
+        "6": [
+          {
+            "token": "呸",
+            "prob": 0.01646409183740616
+          },
+          {
+            "token": "FindObjectOfType",
+            "prob": 0.00938095711171627
+          },
+          {
+            "token": "''",
+            "prob": 0.007777085993438959
+          },
+          {
+            "token": "：\"",
+            "prob": 0.007305896375328302
+          },
+          {
+            "token": "个多",
+            "prob": 0.006863254588097334
+          },
+          {
+            "token": ".",
+            "prob": 0.0064474307000637054
+          },
+          {
+            "token": ",'#",
+            "prob": 0.0064474307000637054
+          },
+          {
+            "token": "挺好",
+            "prob": 0.0064474307000637054
+          },
+          {
+            "token": "从来没",
+            "prob": 0.0064474307000637054
+          },
+          {
+            "token": "☰",
+            "prob": 0.005689837969839573
+          }
+        ],
+        "13": [
+          {
+            "token": "[…]",
+            "prob": 0.13754816353321075
+          },
+          {
+            "token": "[…]",
+            "prob": 0.07362423092126846
+          },
+          {
+            "token": "",
+            "prob": 0.07362423092126846
+          },
+          {
+            "token": "​​",
+            "prob": 0.06497315317392349
+          },
+          {
+            "token": "[…]",
+            "prob": 0.06497315317392349
+          },
+          {
+            "token": "​",
+            "prob": 0.039408210664987564
+          },
+          {
+            "token": "​​",
+            "prob": 0.03069114498794079
+          },
+          {
+            "token": "：\"",
+            "prob": 0.022454120218753815
+          },
+          {
+            "token": "FindObjectOfType",
+            "prob": 0.021093694493174553
+          },
+          {
+            "token": "ksz",
+            "prob": 0.007759936153888702
+          }
+        ],
+        "20": [
+          {
+            "token": "：\"",
+            "prob": 0.02380727045238018
+          },
+          {
+            "token": "alink",
+            "prob": 0.021009841933846474
+          },
+          {
+            "token": "\"**",
+            "prob": 0.011971047148108482
+          },
+          {
+            "token": "：<",
+            "prob": 0.0077290888875722885
+          },
+          {
+            "token": "：“",
+            "prob": 0.006820897571742535
+          },
+          {
+            "token": "abez",
+            "prob": 0.006407639943063259
+          },
+          {
+            "token": "蹚",
+            "prob": 0.004990275017917156
+          },
+          {
+            "token": "upy",
+            "prob": 0.003221963532269001
+          },
+          {
+            "token": "NCY",
+            "prob": 0.003026754828169942
+          },
+          {
+            "token": "*__",
+            "prob": 0.003026754828169942
+          }
+        ],
+        "26": [
+          {
+            "token": "iare",
+            "prob": 0.020852692425251007
+          },
+          {
+            "token": "一致好评",
+            "prob": 0.017287489026784897
+          },
+          {
+            "token": "epam",
+            "prob": 0.017287489026784897
+          },
+          {
+            "token": "omid",
+            "prob": 0.016240093857049942
+          },
+          {
+            "token": "ogui",
+            "prob": 0.012647797353565693
+          },
+          {
+            "token": "条评论",
+            "prob": 0.011881507001817226
+          },
+          {
+            "token": "ynet",
+            "prob": 0.011161642149090767
+          },
+          {
+            "token": "inox",
+            "prob": 0.011161642149090767
+          },
+          {
+            "token": "yny",
+            "prob": 0.009253325872123241
+          },
+          {
+            "token": "SURE",
+            "prob": 0.008692695759236813
+          }
+        ]
+      },
+      "sample_docs": [
+        "const faux:\nconst faux = createFauxRegistration();\n\t\tfaux.setResponses([\n\t\t\tfauxAssistantMessage(\"Nice to meet you, Alic",
+        "const faux:\nconst faux = createFauxRegistration();\n\t\t\tfaux.setResponses([fauxAssistantMessage(\"HELLO WORLD\")]);\n\t\t\t",
+        "const registration:\nconst registration = newFaux();\n\t\tregistration.setResponses([\n\t\t\t(_context, options) => {\n\t\t\t\tcaptur"
+      ],
+      "judge": {
+        "accurate": false,
+        "confidence": 0.95,
+        "reason": "The concept keywords 'iare', 'epam', 'omid', 'ogui' appear to be random or misspelled terms unrelated to the actual content of the documents, which describe JavaScript code for creating faux (mock) as"
+      }
+    },
+    "171": {
+      "n_members": 13,
+      "concept_tokens": [
+        "initialization",
+        "inox"
+      ],
+      "model_final_top3": [
+        "`",
+        "the",
+        "\""
+      ],
+      "lens_by_layer": {
+        "0": [
+          {
+            "token": ".",
+            "prob": 0.7707741856575012
+          },
+          {
+            "token": "，",
+            "prob": 0.0812389999628067
+          },
+          {
+            "token": ".",
+            "prob": 0.05943572521209717
+          },
+          {
+            "token": ".",
+            "prob": 0.02988615818321705
+          },
+          {
+            "token": ".",
+            "prob": 0.01502770371735096
+          },
+          {
+            "token": "​",
+            "prob": 0.008562527596950531
+          },
+          {
+            "token": "",
+            "prob": 0.005528383422642946
+          },
+          {
+            "token": "：",
+            "prob": 0.0026114233769476414
+          },
+          {
+            "token": "",
+            "prob": 0.0026114233769476414
+          },
+          {
+            "token": "،",
+            "prob": 0.0016860617324709892
+          }
+        ],
+        "6": [
+          {
+            "token": "呸",
+            "prob": 0.014500436373054981
+          },
+          {
+            "token": "FindObjectOfType",
+            "prob": 0.012021283619105816
+          },
+          {
+            "token": "：\"",
+            "prob": 0.009965994395315647
+          },
+          {
+            "token": ".",
+            "prob": 0.00936218537390232
+          },
+          {
+            "token": "挺好",
+            "prob": 0.008794959634542465
+          },
+          {
+            "token": "/",
+            "prob": 0.008794959634542465
+          },
+          {
+            "token": "个多",
+            "prob": 0.006849520839750767
+          },
+          {
+            "token": "从来没",
+            "prob": 0.006044681183993816
+          },
+          {
+            "token": "<|endoftext|>",
+            "prob": 0.005678452085703611
+          },
+          {
+            "token": "سرطان",
+            "prob": 0.005678452085703611
+          }
+        ],
+        "13": [
+          {
+            "token": "[…]",
+            "prob": 0.05184539407491684
+          },
+          {
+            "token": "[…]",
+            "prob": 0.03793090209364891
+          },
+          {
+            "token": "[…]",
+            "prob": 0.029540617018938065
+          },
+          {
+            "token": "",
+            "prob": 0.029540617018938065
+          },
+          {
+            "token": "FindObjectOfType",
+            "prob": 0.027750840410590172
+          },
+          {
+            "token": "​​",
+            "prob": 0.024490028619766235
+          },
+          {
+            "token": "：\"",
+            "prob": 0.013108568266034126
+          },
+          {
+            "token": "ksz",
+            "prob": 0.01020896341651678
+          },
+          {
+            "token": "​​",
+            "prob": 0.01020896341651678
+          },
+          {
+            "token": "​",
+            "prob": 0.005816892255097628
+          }
+        ],
+        "20": [
+          {
+            "token": "：\"",
+            "prob": 0.028137465938925743
+          },
+          {
+            "token": "alink",
+            "prob": 0.014148406684398651
+          },
+          {
+            "token": "：<",
+            "prob": 0.012485925108194351
+          },
+          {
+            "token": "：“",
+            "prob": 0.010351195931434631
+          },
+          {
+            "token": "\"**",
+            "prob": 0.009134897962212563
+          },
+          {
+            "token": "abez",
+            "prob": 0.004315020516514778
+          },
+          {
+            "token": "蹚",
+            "prob": 0.004053586628288031
+          },
+          {
+            "token": ")(\"",
+            "prob": 0.003360541071742773
+          },
+          {
+            "token": "upy",
+            "prob": 0.0027859865222126245
+          },
+          {
+            "token": "nika",
+            "prob": 0.0026171922218054533
+          }
+        ],
+        "26": [
+          {
+            "token": "initialization",
+            "prob": 0.09866747260093689
+          },
+          {
+            "token": "一致好评",
+            "prob": 0.04113072156906128
+          },
+          {
+            "token": "tsy",
+            "prob": 0.03863873705267906
+          },
+          {
+            "token": "inox",
+            "prob": 0.028268704190850258
+          },
+          {
+            "token": "`",
+            "prob": 0.024947043508291245
+          },
+          {
+            "token": "初始化",
+            "prob": 0.022015688940882683
+          },
+          {
+            "token": "SURE",
+            "prob": 0.018251648172736168
+          },
+          {
+            "token": "NCY",
+            "prob": 0.017145836725831032
+          },
+          {
+            "token": "üc",
+            "prob": 0.013353190384805202
+          },
+          {
+            "token": "Initialization",
+            "prob": 0.011784149333834648
+          }
+        ]
+      },
+      "sample_docs": [
+        "const env:\nconst env = new NodeExecutionEnv({ cwd: root });\n\t\t",
+        "const env:\nconst env = new NodeExecutionEnv({ cwd: root });\n\t\t",
+        "const env:\nconst env = new NodeExecutionEnv({ cwd: root });\n\t\t"
+      ],
+      "judge": {
+        "accurate": false,
+        "confidence": 0.8,
+        "reason": "The concept keyword 'initialization' is vaguely related to the document samples (which show initialization of an execution environment), but the keyword 'inox' does not appear in the documents and is "
+      }
+    },
+    "83": {
+      "n_members": 13,
+      "concept_tokens": [
+        "initialization",
+        "iare",
+        "inox"
+      ],
+      "model_final_top3": [
+        "`",
+        "\"",
+        "the"
+      ],
+      "lens_by_layer": {
+        "0": [
+          {
+            "token": ".",
+            "prob": 0.8430068492889404
+          },
+          {
+            "token": "，",
+            "prob": 0.06919821351766586
+          },
+          {
+            "token": ".",
+            "prob": 0.027098411694169044
+          },
+          {
+            "token": ".",
+            "prob": 0.027098411694169044
+          },
+          {
+            "token": ".",
+            "prob": 0.006436436902731657
+          },
+          {
+            "token": "：",
+            "prob": 0.0022243729326874018
+          },
+          {
+            "token": "�",
+            "prob": 0.0017323433421552181
+          },
+          {
+            "token": "،",
+            "prob": 0.0015287877758964896
+          },
+          {
+            "token": ",",
+            "prob": 0.0015287877758964896
+          },
+          {
+            "token": ",",
+            "prob": 0.0012674095341935754
+          }
+        ],
+        "6": [
+          {
+            "token": ".",
+            "prob": 0.024038640782237053
+          },
+          {
+            "token": "呸",
+            "prob": 0.01552051305770874
+          },
+          {
+            "token": "挺好",
+            "prob": 0.012087387964129448
+          },
+          {
+            "token": "FindObjectOfType",
+            "prob": 0.010020796209573746
+          },
+          {
+            "token": "/",
+            "prob": 0.007331371307373047
+          },
+          {
+            "token": "<|endoftext|>",
+            "prob": 0.0068871863186359406
+          },
+          {
+            "token": "：\"",
+            "prob": 0.0068871863186359406
+          },
+          {
+            "token": "从严治",
+            "prob": 0.006077920086681843
+          },
+          {
+            "token": "{{$",
+            "prob": 0.006077920086681843
+          },
+          {
+            "token": "从来没",
+            "prob": 0.005709677468985319
+          }
+        ],
+        "13": [
+          {
+            "token": "[…]",
+            "prob": 0.03960788995027542
+          },
+          {
+            "token": "FindObjectOfType",
+            "prob": 0.025572776794433594
+          },
+          {
+            "token": "[…]",
+            "prob": 0.021200576797127724
+          },
+          {
+            "token": "[…]",
+            "prob": 0.019916098564863205
+          },
+          {
+            "token": "ksz",
+            "prob": 0.014570929110050201
+          },
+          {
+            "token": "：\"",
+            "prob": 0.011347850784659386
+          },
+          {
+            "token": "alink",
+            "prob": 0.008837714791297913
+          },
+          {
+            "token": "​​",
+            "prob": 0.008302264846861362
+          },
+          {
+            "token": "",
+            "prob": 0.006882819347083569
+          },
+          {
+            "token": "词条",
+            "prob": 0.0053603448905050755
+          }
+        ],
+        "20": [
+          {
+            "token": "：\"",
+            "prob": 0.04860440269112587
+          },
+          {
+            "token": "alink",
+            "prob": 0.01308169774711132
+          },
+          {
+            "token": "：“",
+            "prob": 0.01308169774711132
+          },
+          {
+            "token": "\"**",
+            "prob": 0.012289117090404034
+          },
+          {
+            "token": "：<",
+            "prob": 0.01154455728828907
+          },
+          {
+            "token": ")(\"",
+            "prob": 0.007002128288149834
+          },
+          {
+            "token": "upy",
+            "prob": 0.0035208913031965494
+          },
+          {
+            "token": "UGC",
+            "prob": 0.003307571168988943
+          },
+          {
+            "token": "abez",
+            "prob": 0.003107175463810563
+          },
+          {
+            "token": "\"_",
+            "prob": 0.0029189211782068014
+          }
+        ],
+        "26": [
+          {
+            "token": "tsy",
+            "prob": 0.05535073205828667
+          },
+          {
+            "token": "initialization",
+            "prob": 0.04588736593723297
+          },
+          {
+            "token": "iare",
+            "prob": 0.03573711961507797
+          },
+          {
+            "token": "inox",
+            "prob": 0.021675657480955124
+          },
+          {
+            "token": "`",
+            "prob": 0.019128702580928802
+          },
+          {
+            "token": "`\"",
+            "prob": 0.017969751730561256
+          },
+          {
+            "token": "üc",
+            "prob": 0.016881020739674568
+          },
+          {
+            "token": "SURE",
+            "prob": 0.013994856737554073
+          },
+          {
+            "token": "qli",
+            "prob": 0.013994856737554073
+          },
+          {
+            "token": "条评论",
+            "prob": 0.009618515148758888
+          }
+        ]
+      },
+      "sample_docs": [
+        "const dir:\nconst dir = createTempDir();\n\t\t",
+        "const dir:\nconst dir = createTempDir();\n\t\t",
+        "const dir:\nconst dir = createTempDir();\n\t\t"
+      ],
+      "judge": {
+        "accurate": false,
+        "confidence": 1.0,
+        "reason": "The document samples are identical code snippets about creating a temporary directory, with no mention or relevance to 'initialization', 'iare', or 'inox'. The keywords appear arbitrary and unrelated "
+      }
+    },
+    "32": {
+      "n_members": 11,
+      "concept_tokens": [
+        "parsing",
+        "handling",
+        "processing"
+      ],
+      "model_final_top3": [
+        ":",
+        "\"",
+        "`"
+      ],
+      "lens_by_layer": {
+        "0": [
+          {
+            "token": ".",
+            "prob": 0.7290123105049133
+          },
+          {
+            "token": "，",
+            "prob": 0.1266833394765854
+          },
+          {
+            "token": ".",
+            "prob": 0.05280947685241699
+          },
+          {
+            "token": ".",
+            "prob": 0.028266875073313713
+          },
+          {
+            "token": "​",
+            "prob": 0.01714472658932209
+          },
+          {
+            "token": ".",
+            "prob": 0.008620910346508026
+          },
+          {
+            "token": "：",
+            "prob": 0.0035937298089265823
+          },
+          {
+            "token": "''",
+            "prob": 0.003171455580741167
+          },
+          {
+            "token": ",",
+            "prob": 0.002469931961968541
+          },
+          {
+            "token": "،",
+            "prob": 0.0023202865850180387
+          }
+        ],
+        "6": [
+          {
+            "token": "呸",
+            "prob": 0.010225917212665081
+          },
+          {
+            "token": "个多",
+            "prob": 0.006602348294109106
+          },
+          {
+            "token": "挺好",
+            "prob": 0.005826552398502827
+          },
+          {
+            "token": "ąż",
+            "prob": 0.005826552398502827
+          },
+          {
+            "token": "FindObjectOfType",
+            "prob": 0.005473539233207703
+          },
+          {
+            "token": "从来没",
+            "prob": 0.005141913890838623
+          },
+          {
+            "token": "سرطان",
+            "prob": 0.0040045264177024364
+          },
+          {
+            "token": "предусмотрен",
+            "prob": 0.0033198692835867405
+          },
+          {
+            "token": ",'#",
+            "prob": 0.0033198692835867405
+          },
+          {
+            "token": "在线咨询",
+            "prob": 0.0031187287531793118
+          }
+        ],
+        "13": [
+          {
+            "token": "[…]",
+            "prob": 0.21831834316253662
+          },
+          {
+            "token": "[…]",
+            "prob": 0.14095692336559296
+          },
+          {
+            "token": "[…]",
+            "prob": 0.05875958502292633
+          },
+          {
+            "token": "",
+            "prob": 0.04576200991868973
+          },
+          {
+            "token": "​​",
+            "prob": 0.04298943281173706
+          },
+          {
+            "token": "：\"",
+            "prob": 0.02954617515206337
+          },
+          {
+            "token": "​​",
+            "prob": 0.013956624083220959
+          },
+          {
+            "token": "​",
+            "prob": 0.01231667771935463
+          },
+          {
+            "token": "FindObjectOfType",
+            "prob": 0.010869430378079414
+          },
+          {
+            "token": "：“",
+            "prob": 0.009592238813638687
+          }
+        ],
+        "20": [
+          {
+            "token": "：\"",
+            "prob": 0.0361064113676548
+          },
+          {
+            "token": "alink",
+            "prob": 0.01413947343826294
+          },
+          {
+            "token": "\"**",
+            "prob": 0.013282806612551212
+          },
+          {
+            "token": "：“",
+            "prob": 0.008576024323701859
+          },
+          {
+            "token": "：<",
+            "prob": 0.007109773810952902
+          },
+          {
+            "token": "redni",
+            "prob": 0.0043122959323227406
+          },
+          {
+            "token": "abez",
+            "prob": 0.0035750188399106264
+          },
+          {
+            "token": "\"_",
+            "prob": 0.003358419518917799
+          },
+          {
+            "token": "agini",
+            "prob": 0.003154942998662591
+          },
+          {
+            "token": "蹚",
+            "prob": 0.003154942998662591
+          }
+        ],
+        "26": [
+          {
+            "token": "parsing",
+            "prob": 0.2776898443698883
+          },
+          {
+            "token": "Parsing",
+            "prob": 0.05468037351965904
+          },
+          {
+            "token": "handling",
+            "prob": 0.05468037351965904
+          },
+          {
+            "token": "处理",
+            "prob": 0.05468037351965904
+          },
+          {
+            "token": "processing",
+            "prob": 0.02141314186155796
+          },
+          {
+            "token": "Grün",
+            "prob": 0.015666188672184944
+          },
+          {
+            "token": "üc",
+            "prob": 0.012987727299332619
+          },
+          {
+            "token": "omid",
+            "prob": 0.010767203755676746
+          },
+          {
+            "token": "ADV",
+            "prob": 0.008926325477659702
+          },
+          {
+            "token": "icions",
+            "prob": 0.008385506458580494
+          }
+        ]
+      },
+      "sample_docs": [
+        "function parseAdvisoryUrl:\nfunction parseAdvisoryUrl(value: string): AdvisoryRef | undefined {\n\t",
+        "function readAdvisoryRefFromDraft:\nasync function readAdvisoryRefFromDraft(cwd: string, target: string): Promise<Advisor",
+        "function formatAdvisoryDetail:\nfunction formatAdvisoryDetail(advisory: GitHubAdvisoryMetadata): string | undefined {\n\t"
+      ],
+      "judge": {
+        "accurate": true,
+        "confidence": 0.8,
+        "reason": "The keywords 'parsing', 'handling', and 'processing' generally align with the document samples, which involve parsing advisory URLs, reading advisory references, and formatting advisory details—all fo"
+      }
+    },
+    "130": {
+      "n_members": 11,
+      "concept_tokens": [
+        "folios",
+        "Nguồn",
+        "ynet"
+      ],
+      "model_final_top3": [
+        ":",
+        "`",
+        "\""
+      ],
+      "lens_by_layer": {
+        "0": [
+          {
+            "token": ".",
+            "prob": 0.7549005746841431
+          },
+          {
+            "token": "，",
+            "prob": 0.13118204474449158
+          },
+          {
+            "token": ".",
+            "prob": 0.040008265525102615
+          },
+          {
+            "token": ".",
+            "prob": 0.027497252449393272
+          },
+          {
+            "token": ".",
+            "prob": 0.007400784641504288
+          },
+          {
+            "token": "​",
+            "prob": 0.00448880298063159
+          },
+          {
+            "token": "：",
+            "prob": 0.0037213482428342104
+          },
+          {
+            "token": "''",
+            "prob": 0.0025576427578926086
+          },
+          {
+            "token": "،",
+            "prob": 0.0022571119479835033
+          },
+          {
+            "token": ",",
+            "prob": 0.0022571119479835033
+          }
+        ],
+        "6": [
+          {
+            "token": "呸",
+            "prob": 0.014151355251669884
+          },
+          {
+            "token": "FindObjectOfType",
+            "prob": 0.007574675139039755
+          },
+          {
+            "token": "''",
+            "prob": 0.00711574824526906
+          },
+          {
+            "token": "：\"",
+            "prob": 0.00711574824526906
+          },
+          {
+            "token": "从来没",
+            "prob": 0.006684626918286085
+          },
+          {
+            "token": "\"\"",
+            "prob": 0.006684626918286085
+          },
+          {
+            "token": "سرطان",
+            "prob": 0.005899162497371435
+          },
+          {
+            "token": "个多",
+            "prob": 0.005899162497371435
+          },
+          {
+            "token": ",'#",
+            "prob": 0.004315919708460569
+          },
+          {
+            "token": "挺好",
+            "prob": 0.004315919708460569
+          }
+        ],
+        "13": [
+          {
+            "token": "[…]",
+            "prob": 0.05673692375421524
+          },
+          {
+            "token": "FindObjectOfType",
+            "prob": 0.047036558389663696
+          },
+          {
+            "token": "[…]",
+            "prob": 0.04150962084531784
+          },
+          {
+            "token": "[…]",
+            "prob": 0.03232772648334503
+          },
+          {
+            "token": "：\"",
+            "prob": 0.014345340430736542
+          },
+          {
+            "token": "​​",
+            "prob": 0.012659719213843346
+          },
+          {
+            "token": "",
+            "prob": 0.011172163300216198
+          },
+          {
+            "token": "alink",
+            "prob": 0.009859398938715458
+          },
+          {
+            "token": "ksz",
+            "prob": 0.00636570667847991
+          },
+          {
+            "token": "​​",
+            "prob": 0.005277356132864952
+          }
+        ],
+        "20": [
+          {
+            "token": "alink",
+            "prob": 0.01828886568546295
+          },
+          {
+            "token": "：\"",
+            "prob": 0.01828886568546295
+          },
+          {
+            "token": "\"**",
+            "prob": 0.011808179318904877
+          },
+          {
+            "token": "：<",
+            "prob": 0.007623933255672455
+          },
+          {
+            "token": "：“",
+            "prob": 0.007162022404372692
+          },
+          {
+            "token": "abez",
+            "prob": 0.005937525071203709
+          },
+          {
+            "token": "蹚",
+            "prob": 0.004922381602227688
+          },
+          {
+            "token": "redni",
+            "prob": 0.0038335544522851706
+          },
+          {
+            "token": "agini",
+            "prob": 0.0036012912169098854
+          },
+          {
+            "token": "用微信",
+            "prob": 0.0031781282741576433
+          }
+        ],
+        "26": [
+          {
+            "token": ":async",
+            "prob": 0.14014817774295807
+          },
+          {
+            "token": "folios",
+            "prob": 0.02149241976439953
+          },
+          {
+            "token": "ówn",
+            "prob": 0.015724189579486847
+          },
+          {
+            "token": "Nguồn",
+            "prob": 0.01387654896825552
+          },
+          {
+            "token": "ynet",
+            "prob": 0.01387654896825552
+          },
+          {
+            "token": "yny",
+            "prob": 0.013035811483860016
+          },
+          {
+            "token": "条评论",
+            "prob": 0.013035811483860016
+          },
+          {
+            "token": "clide",
+            "prob": 0.012246010825037956
+          },
+          {
+            "token": "NCY",
+            "prob": 0.010807067155838013
+          },
+          {
+            "token": ":",
+            "prob": 0.010807067155838013
+          }
+        ]
+      },
+      "sample_docs": [
+        "const abortController:\nconst abortController = new AbortController();\n\t\tlet resolvePromise = () => {};\n\t\t",
+        "const promise:\nconst promise = new Promise<void>((resolve) => {\n\t\t\tresolvePromise = resolve;\n\t\t});\n\t\tthis.activeRun = { ",
+        "const abortController:\nconst abortController = new AbortController();\n\t\t"
+      ],
+      "judge": {
+        "accurate": false,
+        "confidence": 1.0,
+        "reason": "The concept keywords 'folios', 'Nguồn', and 'ynet' appear to be unrelated to the document samples, which are about JavaScript code involving AbortController and Promise objects."
+      }
+    },
+    "122": {
+      "n_members": 11,
+      "concept_tokens": [
+        "iterating",
+        "processing",
+        "iteration"
+      ],
+      "model_final_top3": [
+        "\"",
+        ":",
+        "processing"
+      ],
+      "lens_by_layer": {
+        "0": [
+          {
+            "token": ".",
+            "prob": 0.7283458113670349
+          },
+          {
+            "token": "，",
+            "prob": 0.1434198021888733
+          },
+          {
+            "token": ".",
+            "prob": 0.05978626385331154
+          },
+          {
+            "token": ".",
+            "prob": 0.02199413813650608
+          },
+          {
+            "token": ".",
+            "prob": 0.011059346608817577
+          },
+          {
+            "token": "​",
+            "prob": 0.004610221367329359
+          },
+          {
+            "token": "：",
+            "prob": 0.0035904443357139826
+          },
+          {
+            "token": "،",
+            "prob": 0.0023181652650237083
+          },
+          {
+            "token": ",",
+            "prob": 0.001921826391480863
+          },
+          {
+            "token": "''",
+            "prob": 0.0018053888343274593
+          }
+        ],
+        "6": [
+          {
+            "token": "呸",
+            "prob": 0.020923562347888947
+          },
+          {
+            "token": "FindObjectOfType",
+            "prob": 0.01269078254699707
+          },
+          {
+            "token": "挺好",
+            "prob": 0.008193784393370152
+          },
+          {
+            "token": "从来没",
+            "prob": 0.0072309901006519794
+          },
+          {
+            "token": "个多",
+            "prob": 0.0072309901006519794
+          },
+          {
+            "token": "从严治",
+            "prob": 0.005631500389426947
+          },
+          {
+            "token": "☰",
+            "prob": 0.005290305241942406
+          },
+          {
+            "token": "سرطان",
+            "prob": 0.005290305241942406
+          },
+          {
+            "token": ",'#",
+            "prob": 0.005290305241942406
+          },
+          {
+            "token": "ąż",
+            "prob": 0.004668678157031536
+          }
+        ],
+        "13": [
+          {
+            "token": "[…]",
+            "prob": 0.20278038084506989
+          },
+          {
+            "token": "[…]",
+            "prob": 0.20278038084506989
+          },
+          {
+            "token": "",
+            "prob": 0.15792551636695862
+          },
+          {
+            "token": "[…]",
+            "prob": 0.10854052007198334
+          },
+          {
+            "token": "​​",
+            "prob": 0.04250507801771164
+          },
+          {
+            "token": "FindObjectOfType",
+            "prob": 0.01771875098347664
+          },
+          {
+            "token": "​",
+            "prob": 0.016645226627588272
+          },
+          {
+            "token": "​​",
+            "prob": 0.013799377717077732
+          },
+          {
+            "token": "[…",
+            "prob": 0.00786264892667532
+          },
+          {
+            "token": "：\"",
+            "prob": 0.00786264892667532
+          }
+        ],
+        "20": [
+          {
+            "token": "：\"",
+            "prob": 0.031122155487537384
+          },
+          {
+            "token": "\"**",
+            "prob": 0.025801172479987144
+          },
+          {
+            "token": "：“",
+            "prob": 0.015649203211069107
+          },
+          {
+            "token": "：<",
+            "prob": 0.012973644770681858
+          },
+          {
+            "token": "alink",
+            "prob": 0.007868913002312183
+          },
+          {
+            "token": "abez",
+            "prob": 0.005408219527453184
+          },
+          {
+            "token": "redni",
+            "prob": 0.004483571741729975
+          },
+          {
+            "token": "\"_",
+            "prob": 0.004483571741729975
+          },
+          {
+            "token": "agini",
+            "prob": 0.0042119259014725685
+          },
+          {
+            "token": "蹚",
+            "prob": 0.0037170115392655134
+          }
+        ],
+        "26": [
+          {
+            "token": "iterating",
+            "prob": 0.2598147988319397
+          },
+          {
+            "token": "processing",
+            "prob": 0.22928574681282043
+          },
+          {
+            "token": "iteration",
+            "prob": 0.22928574681282043
+          },
+          {
+            "token": "iteration",
+            "prob": 0.06569147109985352
+          },
+          {
+            "token": "processing",
+            "prob": 0.024166541174054146
+          },
+          {
+            "token": "handling",
+            "prob": 0.01882092095911503
+          },
+          {
+            "token": "looping",
+            "prob": 0.017680618911981583
+          },
+          {
+            "token": "处理",
+            "prob": 0.011415465734899044
+          },
+          {
+            "token": "Processing",
+            "prob": 0.009463753551244736
+          },
+          {
+            "token": "遍",
+            "prob": 0.008890373632311821
+          }
+        ]
+      },
+      "sample_docs": [
+        "const entry:\nconst entry of entries) {\n\t\tif (entry.type === \"branch_summary\" && !entry.fromHook && entry.details) {\n\t\t\t",
+        "const entry:\nconst entry = entries[i];\n\t\t",
+        "const entry:\nconst entry = entries[i];\n\t\tif (entry.type === \"message\") {\n\t\t\t"
+      ],
+      "judge": {
+        "accurate": false,
+        "confidence": 0.8,
+        "reason": "The documents show loops over entries and condition checks, but they focus on iterating over arrays or objects, not on 'processing' or 'iteration' as abstract concepts. The keyword 'iterating' is part"
+      }
+    }
+  }
+}

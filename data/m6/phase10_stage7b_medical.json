@@ -1,0 +1,53 @@
+{
+  "method": "graphrag_bench_qa",
+  "domain": "medical",
+  "retrieval": "bge-m3 cosine top-10",
+  "generation": "DeepSeek (deepseek-chat)",
+  "evaluation": "evidence recall (LLM judge)",
+  "n_chunks": 957,
+  "n_questions": 80,
+  "overall_recall": 0.50125,
+  "by_level": {
+    "L1": 0.575,
+    "L2": 0.47916666666666663,
+    "L3": 0.4708333333333333,
+    "L4": 0.4800000000000001
+  },
+  "leaderboard_reference": {
+    "RAG w/o rerank": {
+      "avg": 61.0,
+      "L1_acc": 63.7,
+      "L2_acc": 57.6,
+      "L3_cov": 77.3,
+      "L4_cov": 57.9
+    },
+    "RAG w/ rerank": {
+      "avg": 62.4,
+      "L1_acc": 64.7,
+      "L2_acc": 58.6,
+      "L3_cov": 78.5,
+      "L4_cov": 58.7
+    },
+    "LightRAG": {
+      "avg": 62.6,
+      "L1_acc": 63.3,
+      "L2_acc": 61.3,
+      "L3_cov": 51.2,
+      "L4_cov": 51.6
+    },
+    "HippoRAG2": {
+      "avg": 64.9,
+      "L1_acc": 66.3,
+      "L2_acc": 62.0,
+      "L3_cov": 46.1,
+      "L4_cov": 51.5
+    },
+    "MS-GraphRAG local": {
+      "avg": 45.2,
+      "L1_acc": 38.6,
+      "L2_acc": 47.0,
+      "L3_cov": 23.0,
+      "L4_cov": 32.7
+    }
+  }
+}

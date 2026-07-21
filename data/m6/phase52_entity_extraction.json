@@ -1,0 +1,1151 @@
+{
+  "method": "phase52_entity_extraction",
+  "created": "2026-07-21 10:18:12",
+  "s1": {
+    "domain": "medical",
+    "n_chunks": 20,
+    "variant_desc": {
+      "v1": "singular naming question + sentence-end multi-position readout (1 forward/chunk)",
+      "v2": "plural naming question + sentence-end multi-position readout (diagnostic contrast)"
+    },
+    "diagnosis_note": "复数列举 prompt + prefill -1 读出在全层被格式 token (':','**','‘') 占据（S1 第一次运行 avg_entities=0.1）；单数显式命名问题在 L24-26 稳定读出主导实体；句末多位置在一次 forward 内给出句级局部实体。v1=句末多位置, v2=-1 单位置（对照）。",
+    "variants": {
+      "v1": {
+        "chunks": {
+          "Medical::chunk_0": [
+            "basal cell skin cancer",
+            "basal cell skin cancer treated",
+            "basal cell",
+            "type of skin cancer",
+            "skin cancer",
+            "layer of the skin",
+            "basal cells",
+            "surgery"
+          ],
+          "Medical::chunk_1": [
+            "Basal cell skin cancer",
+            "layer of skin",
+            "melanin",
+            "body"
+          ],
+          "Medical::chunk_2": [
+            "basal cell skin cancer",
+            "cell skin cancer",
+            "Skin cancer",
+            "caught early",
+            "melanin",
+            "symptoms",
+            "ultraviolet"
+          ],
+          "Medical::chunk_3": [
+            "basal cell skin cancer",
+            "higher risk",
+            "skin cancer",
+            "type of skin",
+            "exposure",
+            "early",
+            "family",
+            "Age"
+          ],
+          "Medical::chunk_4": [
+            "skin cancer",
+            "type of skin cancer",
+            "basal cell skin cancer",
+            "basal cell skin cancer treated",
+            "options",
+            "treat",
+            "Radiation",
+            "prevention"
+          ],
+          "Medical::chunk_5": [
+            "you understand",
+            "you get",
+            "ask",
+            "learn",
+            "Chapter",
+            "recommendations",
+            "make"
+          ],
+          "Medical::chunk_6": [
+            "tests",
+            "treat",
+            "diagnosis"
+          ],
+          "Medical::chunk_7": [
+            "Adrenal glands 8 Adrenal tumors",
+            "Adrenal tumors",
+            "adrenal glands",
+            "produce hormones",
+            "adrenal gland",
+            "Adrenal cortex",
+            "symptoms"
+          ],
+          "Medical::chunk_8": [
+            "blood pressure",
+            "adrenal gland",
+            "Adrenal glands Adrenal glands",
+            "Adrenal tumors Adrenal tumors",
+            "adrenal glands",
+            "Adrenal tumors",
+            "hormones",
+            "fight",
+            "stress",
+            "symptoms",
+            "cancer",
+            "benign"
+          ],
+          "Medical::chunk_9": [
+            "adrenal tumors",
+            "symptoms",
+            "functional"
+          ],
+          "Medical::chunk_10": [
+            "type of adrenal gland",
+            "Adrenal tumor",
+            "adrenal cancer",
+            "adrenal glands",
+            "symptoms caused by",
+            "hormones"
+          ],
+          "Medical::chunk_11": [
+            "adrenal cancer",
+            "symptoms caused by",
+            "adrenal tumors",
+            "adrenal tumor",
+            "Hereditary conditions",
+            "genetic",
+            "Signs",
+            "syndrome"
+          ],
+          "Medical::chunk_12": [
+            "produce hormones"
+          ],
+          "Medical::chunk_13": [
+            "adrenal glands",
+            "Adrenal cancer",
+            "symptoms caused by hormones",
+            "adrenal tumors",
+            "adrenal tumor",
+            "tests 14 Imaging tests",
+            "Blood tests",
+            "overview of the tests",
+            "treatment plan",
+            "Write down",
+            "take notes",
+            "Test"
+          ],
+          "Medical::chunk_14": [
+            "Keep",
+            "ask",
+            "Organize",
+            "computer"
+          ],
+          "Medical::chunk_15": [
+            "Family history",
+            "family members",
+            "Ask family members",
+            "record",
+            "information",
+            "tests",
+            "records"
+          ],
+          "Medical::chunk_16": [
+            "Physical exam",
+            "blood pressure",
+            "ask family members",
+            "information"
+          ],
+          "Medical::chunk_17": [
+            "Write down",
+            "family history",
+            "contrast",
+            "any"
+          ],
+          "Medical::chunk_18": [
+            "MRI scan",
+            "Contrast",
+            "avoid",
+            "PET"
+          ],
+          "Medical::chunk_19": [
+            "cancer cells",
+            "PET scans",
+            "adrenal tumors",
+            "radioactive"
+          ]
+        },
+        "stats": {
+          "avg_entities": 6.05,
+          "n_multiword": 70,
+          "n_capitalized_single": 9,
+          "proper_rate": 0.653
+        }
+      },
+      "v2": {
+        "chunks": {
+          "Medical::chunk_0": [
+            "basal cell skin cancer",
+            "basal cell skin cancer treated",
+            "type of skin cancer",
+            "skin cancer",
+            "layer of the skin"
+          ],
+          "Medical::chunk_1": [
+            "Basal cell skin cancer",
+            "layer of skin",
+            "melanin"
+          ],
+          "Medical::chunk_2": [
+            "basal cell skin cancer",
+            "cell skin cancer",
+            "Skin cancer",
+            "caught early",
+            "melanin",
+            "symptoms"
+          ],
+          "Medical::chunk_3": [
+            "basal cell skin cancer",
+            "higher risk",
+            "skin cancer",
+            "type of skin",
+            "exposure",
+            "Age",
+            "family",
+            "early",
+            "harm"
+          ],
+          "Medical::chunk_4": [
+            "skin cancer",
+            "type of skin cancer",
+            "basal cell skin cancer",
+            "basal cell skin cancer treated",
+            "options",
+            "treat",
+            "Radiation",
+            "prevention"
+          ],
+          "Medical::chunk_5": [
+            "you understand",
+            "you get",
+            "ask",
+            "Chapter",
+            "learn",
+            "recommendations",
+            "make"
+          ],
+          "Medical::chunk_6": [
+            "Cancer care",
+            "basal cell skin cancer",
+            "tests",
+            "providers",
+            "diagnosis",
+            "treat",
+            "chapter",
+            "expert"
+          ],
+          "Medical::chunk_7": [
+            "Adrenal glands 8 Adrenal tumors",
+            "Adrenal tumors",
+            "one or",
+            "adrenal glands",
+            "produce hormones",
+            "adrenal gland",
+            "Adrenal cortex"
+          ],
+          "Medical::chunk_8": [
+            "adrenal gland",
+            "Adrenal glands Adrenal glands",
+            "Adrenal tumors Adrenal tumors",
+            "adrenal glands",
+            "Adrenal tumors",
+            "hormones",
+            "symptoms",
+            "cancer",
+            "stress",
+            "benign"
+          ],
+          "Medical::chunk_9": [
+            "adrenal tumors",
+            "symptoms",
+            "functional",
+            "cancer",
+            "approximately"
+          ],
+          "Medical::chunk_10": [
+            "type of adrenal gland",
+            "Adrenal tumor",
+            "adrenal cancer",
+            "adrenal glands",
+            "symptoms caused by",
+            "hormones"
+          ],
+          "Medical::chunk_11": [
+            "adrenal cancer",
+            "symptoms caused by",
+            "adrenal tumors",
+            "adrenal tumor",
+            "Hereditary conditions",
+            "genetic",
+            "Signs",
+            "syndrome"
+          ],
+          "Medical::chunk_12": [],
+          "Medical::chunk_13": [
+            "adrenal glands",
+            "Adrenal cancer",
+            "symptoms caused by",
+            "adrenal tumors",
+            "adrenal tumor",
+            "tests 14 Imaging tests",
+            "Blood tests",
+            "overview of the tests",
+            "treatment plan",
+            "Write down",
+            "take notes",
+            "Test"
+          ],
+          "Medical::chunk_14": [
+            "Write down",
+            "Keep",
+            "ask",
+            "Organize"
+          ],
+          "Medical::chunk_15": [
+            "take notes",
+            "Family history",
+            "family members",
+            "Ask family members",
+            "Physical exam",
+            "tests",
+            "record",
+            "information",
+            "records",
+            "blood"
+          ],
+          "Medical::chunk_16": [
+            "Physical exam",
+            "blood pressure",
+            "ask family members",
+            "information",
+            "Feel"
+          ],
+          "Medical::chunk_17": [
+            "Write down",
+            "family history",
+            "contrast",
+            "any",
+            "did"
+          ],
+          "Medical::chunk_18": [
+            "MRI scan",
+            "Contrast",
+            "PET",
+            "avoid",
+            "doctors",
+            "magnetic"
+          ],
+          "Medical::chunk_19": [
+            "cancer cells",
+            "PET scans",
+            "adrenal tumors",
+            "scan uses",
+            "radioactive"
+          ]
+        },
+        "stats": {
+          "avg_entities": 6.45,
+          "n_multiword": 73,
+          "n_capitalized_single": 10,
+          "proper_rate": 0.643
+        }
+      }
+    },
+    "winner": "v2",
+    "winner_rationale": "v2 wins on recall*properness score (7.37235, 0.643) vs (6.97565, 0.653). Smoke samples printed above for manual template-pollution check."
+  },
+  "s2": {
+    "variant": "v2",
+    "coverage_overall": 0.3,
+    "coverage_medical": {
+      "domain": "medical",
+      "targets": [
+        {
+          "entity": "basal cell carcinoma",
+          "n_chunks_with_entity": 2,
+          "recovered": true,
+          "extractions": {
+            "Medical::chunk_0": [
+              "basal cell skin cancer",
+              "basal cell skin cancer treated",
+              "basal cell carcinoma",
+              "skin cancer",
+              "remove the cancer",
+              "top layer of the skin",
+              "layer of the skin",
+              "Basal cell skin cancer occurs",
+              "Skin lesions Basal cell skin"
+            ],
+            "Medical::chunk_20": [
+              "Blood tests",
+              "Biochemical tests",
+              "Biochemical tests measure",
+              "Biochemical tests\nSquamous cell skin",
+              "Skin basics 6 Risk",
+              "Squamous cell skin",
+              "signs",
+              "PET"
+            ]
+          }
+        },
+        {
+          "entity": "fair skin",
+          "n_chunks_with_entity": 1,
+          "recovered": true,
+          "extractions": {
+            "Medical::chunk_3": [
+              "basal cell skin",
+              "basal skin",
+              "risk factor",
+              "Fair skin",
+              "higher risk of developing skin",
+              "sun exposure",
+              "History of skin",
+              "Age",
+              "family",
+              "early",
+              "harm"
+            ]
+          }
+        },
+        {
+          "entity": "organ transplant",
+          "n_chunks_with_entity": 5,
+          "recovered": false,
+          "extractions": {
+            "Medical::chunk_4": [
+              "Radiation therapy",
+              "basal cell skin",
+              "systemic therapy",
+              "skin exams",
+              "options",
+              "treat",
+              "recurrence",
+              "prevention"
+            ],
+            "Medical::chunk_26": [
+              "weakened immune system",
+              "squamous cell skin",
+              "immune system",
+              "weaken the immune system",
+              "regular basis",
+              "organ"
+            ],
+            "Medical::chunk_58": [
+              "squamous cell skin",
+              "deep the tumor",
+              "nearby lymph nodes",
+              "Weakened immune system",
+              "weaken the immune system"
+            ],
+            "Medical::chunk_541": [
+              "Primary CNS lymphoma",
+              "immune system",
+              "symptoms",
+              "HIV",
+              "age",
+              "AIDS"
+            ],
+            "Medical::chunk_895": [
+              "HPV infection",
+              "anal precancer",
+              "does"
+            ]
+          }
+        },
+        {
+          "entity": "immune suppression",
+          "n_chunks_with_entity": 1,
+          "recovered": false,
+          "extractions": {
+            "Medical::chunk_4": [
+              "Radiation therapy",
+              "basal cell skin",
+              "systemic therapy",
+              "skin exams",
+              "options",
+              "treat",
+              "recurrence",
+              "prevention"
+            ]
+          }
+        }
+      ],
+      "n_recovered": 2,
+      "n_targets": 4,
+      "coverage": 0.5,
+      "gate": 0.6,
+      "passed": false
+    },
+    "coverage_novel": {
+      "domain": "novel",
+      "targets": [
+        {
+          "entity": "Princess Frederica",
+          "n_chunks_with_entity": 1,
+          "recovered": false,
+          "extractions": {
+            "Novel-44557::chunk_188": []
+          }
+        },
+        {
+          "entity": "Baron von Pawel-Rammingen",
+          "n_chunks_with_entity": 1,
+          "recovered": false,
+          "extractions": {
+            "Novel-44557::chunk_188": []
+          }
+        },
+        {
+          "entity": "Arthur",
+          "n_chunks_with_entity": 5,
+          "recovered": false,
+          "extractions": {
+            "Novel-51410::chunk_46": [
+              "women"
+            ],
+            "Novel-29973::chunk_147": [
+              "CANADA PART",
+              "CANADIAN HISTORY",
+              "BRITISH CANADA",
+              "GOVERNOR"
+            ],
+            "Novel-10146::chunk_151": [
+              "later",
+              "soon"
+            ],
+            "Novel-10146::chunk_153": [
+              "printing business",
+              "printers"
+            ],
+            "Novel-47676::chunk_170": [
+              "here"
+            ]
+          }
+        },
+        {
+          "entity": "Excalibur",
+          "n_chunks_with_entity": 5,
+          "recovered": false,
+          "extractions": {
+            "Novel-44557::chunk_70": [],
+            "Novel-44557::chunk_86": [],
+            "Novel-44557::chunk_193": [
+              "Sir Launcelot",
+              "king",
+              "Knights"
+            ],
+            "Novel-44557::chunk_194": [
+              "others",
+              "afterwards"
+            ],
+            "Novel-44557::chunk_196": [
+              "imagine"
+            ]
+          }
+        },
+        {
+          "entity": "Dozmare",
+          "n_chunks_with_entity": 5,
+          "recovered": false,
+          "extractions": {
+            "Novel-44557::chunk_69": [],
+            "Novel-44557::chunk_70": [],
+            "Novel-44557::chunk_86": [],
+            "Novel-44557::chunk_193": [
+              "Sir Launcelot",
+              "king",
+              "Knights"
+            ],
+            "Novel-44557::chunk_195": []
+          }
+        },
+        {
+          "entity": "Cornwall",
+          "n_chunks_with_entity": 5,
+          "recovered": true,
+          "extractions": {
+            "Novel-44557::chunk_0": [
+              "London MACMILLAN",
+              "CORNWALL",
+              "MICHAEL",
+              "JOHN",
+              "AUTHOR"
+            ],
+            "Novel-44557::chunk_1": [
+              "JOHN CURGENVEN",
+              "CORNWALL",
+              "TREVENA"
+            ],
+            "Novel-44557::chunk_4": [],
+            "Novel-44557::chunk_9": [
+              "well"
+            ],
+            "Novel-44557::chunk_11": [
+              "ask you",
+              "you go",
+              "take you",
+              "drive"
+            ]
+          }
+        }
+      ],
+      "n_recovered": 1,
+      "n_targets": 6,
+      "coverage": 0.167,
+      "gate": 0.6,
+      "passed": false
+    },
+    "precision_medical": {
+      "domain": "medical",
+      "n_chunks": 200,
+      "n_instances": 1542,
+      "n_judged": 250,
+      "n_yes": 49,
+      "precision": 0.196,
+      "gate": 0.7,
+      "passed": false,
+      "judged_sample": [
+        {
+          "cid": "Medical::chunk_128",
+          "entity": "make up the mouth",
+          "multiword": true,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_165",
+          "entity": "blood tests",
+          "multiword": true,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_21",
+          "entity": "cutaneous squamous cell carcinoma",
+          "multiword": true,
+          "judge": true
+        },
+        {
+          "cid": "Medical::chunk_168",
+          "entity": "too",
+          "multiword": false,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_146",
+          "entity": "cells make",
+          "multiword": true,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_15",
+          "entity": "information",
+          "multiword": false,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_77",
+          "entity": "lymphocytes",
+          "multiword": false,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_41",
+          "entity": "any",
+          "multiword": false,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_13",
+          "entity": "tests mean",
+          "multiword": true,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_83",
+          "entity": "metastatic cancer at the time of diagnosis",
+          "multiword": true,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_106",
+          "entity": "Keep",
+          "multiword": false,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_149",
+          "entity": "regular dental",
+          "multiword": true,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_102",
+          "entity": "cancer staging",
+          "multiword": true,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_121",
+          "entity": "white blood cell",
+          "multiword": true,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_53",
+          "entity": "contact",
+          "multiword": false,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_65",
+          "entity": "higher the risk of the cancer returning",
+          "multiword": true,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_34",
+          "entity": "doctors who",
+          "multiword": true,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_98",
+          "entity": "parts of the lung",
+          "multiword": true,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_20",
+          "entity": "Blood tests",
+          "multiword": true,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_76",
+          "entity": "role of blood stem cells",
+          "multiword": true,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_96",
+          "entity": "Cancer app",
+          "multiword": true,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_102",
+          "entity": "Barrett esophagus",
+          "multiword": true,
+          "judge": true
+        },
+        {
+          "cid": "Medical::chunk_75",
+          "entity": "cancer care",
+          "multiword": true,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_69",
+          "entity": "immune checkpoint inhibitor",
+          "multiword": true,
+          "judge": true
+        },
+        {
+          "cid": "Medical::chunk_162",
+          "entity": "Accurate testing",
+          "multiword": true,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_8",
+          "entity": "Functional adrenal tumors",
+          "multiword": true,
+          "judge": true
+        },
+        {
+          "cid": "Medical::chunk_89",
+          "entity": "branches",
+          "multiword": false,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_96",
+          "entity": "cell lung cancer",
+          "multiword": true,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_34",
+          "entity": "personal preferences",
+          "multiword": true,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_84",
+          "entity": "expert recommendations",
+          "multiword": true,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_173",
+          "entity": "flow cytometry",
+          "multiword": true,
+          "judge": true
+        },
+        {
+          "cid": "Medical::chunk_104",
+          "entity": "stage",
+          "multiword": false,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_112",
+          "entity": "Bone marrow",
+          "multiword": true,
+          "judge": true
+        },
+        {
+          "cid": "Medical::chunk_88",
+          "entity": "Lung cancer Early detection",
+          "multiword": true,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_45",
+          "entity": "beam of radiation",
+          "multiword": true,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_56",
+          "entity": "tumors",
+          "multiword": false,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_11",
+          "entity": "Signs",
+          "multiword": false,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_89",
+          "entity": "left lung",
+          "multiword": true,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_22",
+          "entity": "becoming squamous cells",
+          "multiword": true,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_119",
+          "entity": "Grades",
+          "multiword": false,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_95",
+          "entity": "cell lung cancer cells",
+          "multiword": true,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_125",
+          "entity": "any symptoms",
+          "multiword": true,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_137",
+          "entity": "Fertility preservation",
+          "multiword": true,
+          "judge": true
+        },
+        {
+          "cid": "Medical::chunk_79",
+          "entity": "primary care physician",
+          "multiword": true,
+          "judge": true
+        },
+        {
+          "cid": "Medical::chunk_13",
+          "entity": "tests 16 Biopsy",
+          "multiword": true,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_146",
+          "entity": "chromosome",
+          "multiword": false,
+          "judge": true
+        },
+        {
+          "cid": "Medical::chunk_133",
+          "entity": "Guide 1 Tests",
+          "multiword": true,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_102",
+          "entity": "chronic",
+          "multiword": false,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_194",
+          "entity": "stage",
+          "multiword": false,
+          "judge": true
+        },
+        {
+          "cid": "Medical::chunk_1",
+          "entity": "basal cell",
+          "multiword": true,
+          "judge": true
+        },
+        {
+          "cid": "Medical::chunk_68",
+          "entity": "cancer cells",
+          "multiword": true,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_168",
+          "entity": "red blood cell",
+          "multiword": true,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_59",
+          "entity": "radiation therapy",
+          "multiword": true,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_63",
+          "entity": "Mohs surgery",
+          "multiword": true,
+          "judge": true
+        },
+        {
+          "cid": "Medical::chunk_113",
+          "entity": "Why you",
+          "multiword": true,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_11",
+          "entity": "adrenal tumors",
+          "multiword": true,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_98",
+          "entity": "left lung",
+          "multiword": true,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_89",
+          "entity": "at risk of developing lung cancer",
+          "multiword": true,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_168",
+          "entity": "iron deficiency",
+          "multiword": true,
+          "judge": false
+        },
+        {
+          "cid": "Medical::chunk_87",
+          "entity": "chest",
+          "multiword": false,
+          "judge": false
+        }
+      ]
+    },
+    "granularity_contrast": [
+      {
+        "cid": "Medical::chunk_0",
+        "topic_concepts": [
+          "Cancer"
+        ],
+        "entities": [
+          "basal cell skin cancer",
+          "basal cell skin cancer treated",
+          "basal cell carcinoma",
+          "skin cancer",
+          "remove the cancer",
+          "top layer of the skin",
+          "layer of the skin",
+          "Basal cell skin cancer occurs",
+          "Skin lesions Basal cell skin"
+        ]
+      },
+      {
+        "cid": "Medical::chunk_20",
+        "topic_concepts": [
+          "blood"
+        ],
+        "entities": [
+          "Blood tests",
+          "Biochemical tests",
+          "Biochemical tests measure",
+          "Biochemical tests\nSquamous cell skin",
+          "Skin basics 6 Risk",
+          "Squamous cell skin",
+          "signs",
+          "PET"
+        ]
+      },
+      {
+        "cid": "Medical::chunk_3",
+        "topic_concepts": [
+          "Cancer"
+        ],
+        "entities": [
+          "basal cell skin",
+          "basal skin",
+          "risk factor",
+          "Fair skin",
+          "higher risk of developing skin",
+          "sun exposure",
+          "History of skin",
+          "Age",
+          "family",
+          "early",
+          "harm"
+        ]
+      },
+      {
+        "cid": "Medical::chunk_4",
+        "topic_concepts": [],
+        "entities": [
+          "Radiation therapy",
+          "basal cell skin",
+          "systemic therapy",
+          "skin exams",
+          "options",
+          "treat",
+          "recurrence",
+          "prevention"
+        ]
+      },
+      {
+        "cid": "Medical::chunk_26",
+        "topic_concepts": [],
+        "entities": [
+          "weakened immune system",
+          "squamous cell skin",
+          "immune system",
+          "weaken the immune system",
+          "regular basis",
+          "organ"
+        ]
+      },
+      {
+        "cid": "Medical::chunk_58",
+        "topic_concepts": [],
+        "entities": [
+          "squamous cell skin",
+          "deep the tumor",
+          "nearby lymph nodes",
+          "Weakened immune system",
+          "weaken the immune system"
+        ]
+      },
+      {
+        "cid": "Medical::chunk_541",
+        "topic_concepts": [],
+        "entities": [
+          "Primary CNS lymphoma",
+          "immune system",
+          "symptoms",
+          "HIV",
+          "age",
+          "AIDS"
+        ]
+      },
+      {
+        "cid": "Medical::chunk_895",
+        "topic_concepts": [
+          "Cancer"
+        ],
+        "entities": [
+          "HPV infection",
+          "anal precancer",
+          "does"
+        ]
+      }
+    ],
+    "passed": false
+  },
+  "conclusion": {
+    "verdict": "FALSIFIED",
+    "reason": "S2 双门槛均未过线：覆盖率 overall=0.30 (medical 0.50 / novel 0.17, gate ≥0.60)，精度 0.196 (gate ≥0.70)。S3 全量提取与 S4 终审未执行。",
+    "rounds": [
+      {
+        "round": 1,
+        "coverage_overall": 0.1,
+        "precision": 0.104,
+        "fixes": [
+          "复数列举 prompt + prefill -1 读出全层被格式 token 占据 → 改单数显式命名问题",
+          "句末多位置读出（1 forward 多 positions）替代单位置"
+        ]
+      },
+      {
+        "round": 2,
+        "coverage_overall": 0.1,
+        "precision": 0.196,
+        "fixes": [
+          "span 间隔只允许 of/von/der 类小品词（禁跨助动词合并 'skin cancer are diagnosed'）",
+          "逗号/冒号/破折号硬边界",
+          "独立小写单 token 一律丢弃"
+        ]
+      },
+      {
+        "round": 3,
+        "coverage_overall": 0.2,
+        "precision": 0.184,
+        "fixes": [
+          "BPE 补全改 chunk-local 优先（'bas'→'basal' 而非全局高频 'based'）",
+          "merge 路径不再要求语料 bigram≥2（'fair skin' 全语料仅 1 次共现）"
+        ]
+      },
+      {
+        "round": 4,
+        "coverage_overall": 0.3,
+        "precision": 0.196,
+        "fixes": [
+          "chunk_words 3 字母词加 \\b 边界（子串假阳性导致 'bas' 跳过补全）",
+          "补全后词同样过 BAD_WORDS/POS 过滤",
+          "extend_ratio 0.1→0.05"
+        ],
+        "recovered": [
+          "basal cell carcinoma",
+          "fair skin",
+          "Cornwall"
+        ]
+      }
+    ],
+    "structural_limits": [
+      "罕见多 token 专名（Dozmare/Excalibur/Princess Frederica/Pawel-Rammingen）在 4 种独立读出策略（单数/复数显式命名问题 × -1 位置 × 句末多位置 × 类型化问题 person/place/work）下均未进入 workspace——Qwen2.5-7B 4bit 对低频专名不形成可读出的实体级 workspace 表示，这是能力上限而非工程问题。",
+      "句末多位置 harvest 同时带出主题性内容词（exposure/family/harm/options），合成 span 多为合理但泛化的短语（sun exposure/higher risk of developing），DeepSeek judge 判定精度天花板 ~0.2，距 0.7 门槛量级差距。",
+      "paired-question 协议本身被证实：显式命名问题确实把主导实体放进 workspace（basal 0.31/Queen 0.85 @L24-26），但每 chunk 仅 1-3 个显著实体可达，且偏向高频/具体医学术语，低频叙事专名不可达。"
+    ],
+    "replacement_claim_final_state": "Phase 50 的「topical concept vs named entity」诊断成立但治疗失败：J-Lens 实体级提取在 medical 说明文上部分可行（basal cell carcinoma/fair skin/sun exposure 级粒度可达），但对 Phase 50 失败案例的真正痛点——novel 低频专名——无解。实体级提取不能补齐 LightRAG-J 保持率缺口；替换主张在实体维度 FALSIFIED。若未来重启：需要更大模型（workspace 更rich）或放弃 lens 读出、改走生成式提取+缓存（违背零 LLM-API 初衷但与 LightRAG 同构）。"
+  }
+}

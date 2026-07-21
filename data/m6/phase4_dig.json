@@ -1,0 +1,189 @@
+{
+  "benchmarks": {
+    "musique": {
+      "n_docs": 5842,
+      "n_queries": 476,
+      "query_type_distribution": {
+        "1_hop": 114,
+        "3_hop": 99,
+        "2_hop": 215,
+        "4_hop": 48
+      },
+      "stratified": {
+        "D0-flat": {
+          "4_hop": {
+            "n_queries": 48,
+            "ndcg_10": 0.39439,
+            "recall_10": 0.39583
+          },
+          "1_hop": {
+            "n_queries": 114,
+            "ndcg_10": 0.69431,
+            "recall_10": 0.81579
+          },
+          "3_hop": {
+            "n_queries": 99,
+            "ndcg_10": 0.53847,
+            "recall_10": 0.56061
+          },
+          "2_hop": {
+            "n_queries": 215,
+            "ndcg_10": 0.61256,
+            "recall_10": 0.65116
+          },
+          "_all": {
+            "n_queries": 476,
+            "ndcg_10": 0.59473,
+            "recall_10": 0.64601
+          }
+        },
+        "D1-concept-tree": {
+          "4_hop": {
+            "n_queries": 48,
+            "ndcg_10": 0.39439,
+            "recall_10": 0.39583
+          },
+          "1_hop": {
+            "n_queries": 114,
+            "ndcg_10": 0.69431,
+            "recall_10": 0.81579
+          },
+          "3_hop": {
+            "n_queries": 99,
+            "ndcg_10": 0.53847,
+            "recall_10": 0.56061
+          },
+          "2_hop": {
+            "n_queries": 215,
+            "ndcg_10": 0.61256,
+            "recall_10": 0.65116
+          },
+          "_all": {
+            "n_queries": 476,
+            "ndcg_10": 0.59473,
+            "recall_10": 0.64601
+          }
+        }
+      },
+      "permutation": {
+        "D1-concept-tree_vs_D0-flat": {
+          "p_value": 1.0,
+          "delta": 0.0,
+          "significant": false,
+          "n": 476
+        }
+      }
+    },
+    "hotpotqa": {
+      "n_docs": 4937,
+      "n_queries": 500,
+      "query_type_distribution": {
+        "comparison": 96,
+        "bridge": 404
+      },
+      "stratified": {
+        "D0-flat": {
+          "comparison": {
+            "n_queries": 96,
+            "ndcg_10": 0.96725,
+            "recall_10": 0.98958
+          },
+          "bridge": {
+            "n_queries": 404,
+            "ndcg_10": 0.8321,
+            "recall_10": 0.91832
+          },
+          "_all": {
+            "n_queries": 500,
+            "ndcg_10": 0.85805,
+            "recall_10": 0.932
+          }
+        },
+        "D1-concept-tree": {
+          "comparison": {
+            "n_queries": 96,
+            "ndcg_10": 0.96725,
+            "recall_10": 0.98958
+          },
+          "bridge": {
+            "n_queries": 404,
+            "ndcg_10": 0.8321,
+            "recall_10": 0.91832
+          },
+          "_all": {
+            "n_queries": 500,
+            "ndcg_10": 0.85805,
+            "recall_10": 0.932
+          }
+        }
+      },
+      "permutation": {
+        "D1-concept-tree_vs_D0-flat": {
+          "p_value": 1.0,
+          "delta": 0.0,
+          "significant": false,
+          "n": 500
+        }
+      }
+    },
+    "pi-code": {
+      "n_docs": 1162,
+      "n_queries": 368,
+      "query_type_distribution": {
+        "code": 368
+      },
+      "stratified": {
+        "D0-flat": {
+          "code": {
+            "n_queries": 368,
+            "ndcg_10": 0.45373,
+            "recall_10": 0.09968
+          },
+          "_all": {
+            "n_queries": 368,
+            "ndcg_10": 0.45373,
+            "recall_10": 0.09968
+          }
+        },
+        "D1-concept-tree": {
+          "code": {
+            "n_queries": 368,
+            "ndcg_10": 0.45373,
+            "recall_10": 0.09968
+          },
+          "_all": {
+            "n_queries": 368,
+            "ndcg_10": 0.45373,
+            "recall_10": 0.09968
+          }
+        },
+        "D2-kg": {
+          "code": {
+            "n_queries": 368,
+            "ndcg_10": 0.45373,
+            "recall_10": 0.09968
+          },
+          "_all": {
+            "n_queries": 368,
+            "ndcg_10": 0.45373,
+            "recall_10": 0.09968
+          }
+        }
+      },
+      "permutation": {
+        "D1-concept-tree_vs_D0-flat": {
+          "p_value": 1.0,
+          "delta": 0.0,
+          "significant": false,
+          "n": 368
+        },
+        "D2-kg_vs_D0-flat": {
+          "p_value": 1.0,
+          "delta": 0.0,
+          "significant": false,
+          "n": 368
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,4557 @@
+{
+  "method": "treesitter_summary_jlens",
+  "model": "qwen2.5-7b-it",
+  "repo": "/tmp/pi-repo",
+  "modes": {
+    "none": {
+      "n_summaries": 80,
+      "n_clusters": 8,
+      "accuracy": 0.0,
+      "clusters": {
+        "8": {
+          "n_files": 11,
+          "sample_file": "agent-loop.ts",
+          "concept_tokens": [
+            "related",
+            "epam"
+          ],
+          "model_final_top3": [
+            ":",
+            "\"",
+            "`"
+          ],
+          "lens_by_layer": {
+            "0": [
+              {
+                "token": ".",
+                "prob": 0.7050530314445496
+              },
+              {
+                "token": "，",
+                "prob": 0.1388331800699234
+              },
+              {
+                "token": ".",
+                "prob": 0.054367851465940475
+              },
+              {
+                "token": ".",
+                "prob": 0.03297577053308487
+              },
+              {
+                "token": "​",
+                "prob": 0.016581257805228233
+              },
+              {
+                "token": ".",
+                "prob": 0.01070566475391388
+              },
+              {
+                "token": "：",
+                "prob": 0.004192398861050606
+              },
+              {
+                "token": "،",
+                "prob": 0.0025428184308111668
+              },
+              {
+                "token": "''",
+                "prob": 0.0023887567222118378
+              },
+              {
+                "token": ",",
+                "prob": 0.002244029426947236
+              }
+            ],
+            "9": [
+              {
+                "token": "[…]",
+                "prob": 0.6488180756568909
+              },
+              {
+                "token": "[…]",
+                "prob": 0.1127476766705513
+              },
+              {
+                "token": "…",
+                "prob": 0.1127476766705513
+              },
+              {
+                "token": "…",
+                "prob": 0.05325822904706001
+              },
+              {
+                "token": "[…]",
+                "prob": 0.04147754982113838
+              },
+              {
+                "token": "",
+                "prob": 0.010487167164683342
+              },
+              {
+                "token": "…",
+                "prob": 0.0063607883639633656
+              },
+              {
+                "token": "—",
+                "prob": 0.0023400033824145794
+              },
+              {
+                "token": "​​",
+                "prob": 0.0023400033824145794
+              },
+              {
+                "token": "‘",
+                "prob": 0.0018223964143544436
+              }
+            ],
+            "18": [
+              {
+                "token": "alink",
+                "prob": 0.011948427185416222
+              },
+              {
+                "token": "ynos",
+                "prob": 0.0049808453768491745
+              },
+              {
+                "token": "rzy",
+                "prob": 0.004129266366362572
+              },
+              {
+                "token": "odzi",
+                "prob": 0.004129266366362572
+              },
+              {
+                "token": "Erot",
+                "prob": 0.003644064534455538
+              },
+              {
+                "token": "agini",
+                "prob": 0.0034232817124575377
+              },
+              {
+                "token": "ksz",
+                "prob": 0.0034232817124575377
+              },
+              {
+                "token": "utow",
+                "prob": 0.0032158757094293833
+              },
+              {
+                "token": "zych",
+                "prob": 0.0030210355762392282
+              },
+              {
+                "token": "amac",
+                "prob": 0.0030210355762392282
+              }
+            ],
+            "26": [
+              {
+                "token": "围绕",
+                "prob": 0.14870652556419373
+              },
+              {
+                "token": "related",
+                "prob": 0.03532089665532112
+              },
+              {
+                "token": "一致好评",
+                "prob": 0.03318091109395027
+              },
+              {
+                "token": "epam",
+                "prob": 0.02750794216990471
+              },
+              {
+                "token": "NCY",
+                "prob": 0.021423207595944405
+              },
+              {
+                "token": ":",
+                "prob": 0.017760463058948517
+              },
+              {
+                "token": "evident",
+                "prob": 0.012206574901938438
+              },
+              {
+                "token": "rawer",
+                "prob": 0.01146701630204916
+              },
+              {
+                "token": "gregator",
+                "prob": 0.010772264562547207
+              },
+              {
+                "token": "emble",
+                "prob": 0.008930521085858345
+              }
+            ]
+          },
+          "judge": {
+            "accurate": false,
+            "confidence": 0.9,
+            "reason": "The documents are about an agent system's code modules (agent-loop, agent, agent-harness), focusing on functions, types, and AI agent messaging, not about the concept of 'related' or 'epam' (which app"
+          }
+        },
+        "9": {
+          "n_files": 10,
+          "sample_file": "anthropic-messages.lazy.ts",
+          "concept_tokens": [
+            "alink",
+            "odzi",
+            "zych"
+          ],
+          "model_final_top3": [
+            "\"",
+            ":",
+            "`"
+          ],
+          "lens_by_layer": {
+            "0": [
+              {
+                "token": ".",
+                "prob": 0.6858105063438416
+              },
+              {
+                "token": "，",
+                "prob": 0.1191760003566742
+              },
+              {
+                "token": ".",
+                "prob": 0.07228389382362366
+              },
+              {
+                "token": ".",
+                "prob": 0.046669989824295044
+              },
+              {
+                "token": "​",
+                "prob": 0.030132411047816277
+              },
+              {
+                "token": ".",
+                "prob": 0.009782561101019382
+              },
+              {
+                "token": "：",
+                "prob": 0.0026329406537115574
+              },
+              {
+                "token": ",",
+                "prob": 0.0024734188336879015
+              },
+              {
+                "token": "،",
+                "prob": 0.0023235620465129614
+              },
+              {
+                "token": "",
+                "prob": 0.0019263005815446377
+              }
+            ],
+            "9": [
+              {
+                "token": "[…]",
+                "prob": 0.48827263712882996
+              },
+              {
+                "token": "[…]",
+                "prob": 0.2613535225391388
+              },
+              {
+                "token": "[…]",
+                "prob": 0.10894835740327835
+              },
+              {
+                "token": "",
+                "prob": 0.08484905958175659
+              },
+              {
+                "token": "…",
+                "prob": 0.01670777052640915
+              },
+              {
+                "token": "…",
+                "prob": 0.007892192341387272
+              },
+              {
+                "token": "…",
+                "prob": 0.005424218717962503
+              },
+              {
+                "token": "—",
+                "prob": 0.004786856472492218
+              },
+              {
+                "token": "​​",
+                "prob": 0.0032899552024900913
+              },
+              {
+                "token": "​",
+                "prob": 0.0025622197426855564
+              }
+            ],
+            "18": [
+              {
+                "token": "alink",
+                "prob": 0.012206478975713253
+              },
+              {
+                "token": "ksz",
+                "prob": 0.005416592117398977
+              },
+              {
+                "token": "odzi",
+                "prob": 0.004490512888878584
+              },
+              {
+                "token": "zych",
+                "prob": 0.003962863236665726
+              },
+              {
+                "token": "rzy",
+                "prob": 0.003962863236665726
+              },
+              {
+                "token": "ynos",
+                "prob": 0.003962863236665726
+              },
+              {
+                "token": "agini",
+                "prob": 0.003497214987874031
+              },
+              {
+                "token": "�",
+                "prob": 0.0032853293232619762
+              },
+              {
+                "token": "Erot",
+                "prob": 0.0032853293232619762
+              },
+              {
+                "token": "amac",
+                "prob": 0.003086281241849065
+              }
+            ],
+            "26": [
+              {
+                "token": ".lazy",
+                "prob": 0.08183412253856659
+              },
+              {
+                "token": "_lazy",
+                "prob": 0.08183412253856659
+              },
+              {
+                "token": "lazy",
+                "prob": 0.046627677977085114
+              },
+              {
+                "token": "lazy",
+                "prob": 0.023445868864655495
+              },
+              {
+                "token": "azy",
+                "prob": 0.015137790702283382
+              },
+              {
+                "token": "一致好评",
+                "prob": 0.014220638200640678
+              },
+              {
+                "token": "gregator",
+                "prob": 0.013359053060412407
+              },
+              {
+                "token": "epam",
+                "prob": 0.012549669481813908
+              },
+              {
+                "token": "agini",
+                "prob": 0.012549669481813908
+              },
+              {
+                "token": ":async",
+                "prob": 0.011075044050812721
+              }
+            ]
+          },
+          "judge": {
+            "accurate": false,
+            "confidence": 0.0,
+            "reason": "The keywords 'alink', 'odzi', and 'zych' do not appear in the document samples or relate to their content about lazy-loaded API modules for various AI providers (Anthropic, Azure OpenAI, Bedrock). The"
+          }
+        },
+        "6": {
+          "n_files": 5,
+          "sample_file": "jsonl-repo.ts",
+          "concept_tokens": [
+            "epam",
+            "inox",
+            "sexy"
+          ],
+          "model_final_top3": [
+            ":",
+            "\"",
+            "`"
+          ],
+          "lens_by_layer": {
+            "0": [
+              {
+                "token": ".",
+                "prob": 0.8097326755523682
+              },
+              {
+                "token": "，",
+                "prob": 0.08534519374370575
+              },
+              {
+                "token": ".",
+                "prob": 0.03557717055082321
+              },
+              {
+                "token": ".",
+                "prob": 0.024451809003949165
+              },
+              {
+                "token": "​",
+                "prob": 0.008995316922664642
+              },
+              {
+                "token": ".",
+                "prob": 0.007938339374959469
+              },
+              {
+                "token": "",
+                "prob": 0.003522617043927312
+              },
+              {
+                "token": "：",
+                "prob": 0.0027434169314801693
+              },
+              {
+                "token": "",
+                "prob": 0.0014684452908113599
+              },
+              {
+                "token": ",",
+                "prob": 0.0014684452908113599
+              }
+            ],
+            "9": [
+              {
+                "token": "[…]",
+                "prob": 0.5871248245239258
+              },
+              {
+                "token": "[…]",
+                "prob": 0.115611732006073
+              },
+              {
+                "token": "[…]",
+                "prob": 0.10202699899673462
+              },
+              {
+                "token": "…",
+                "prob": 0.07945870608091354
+              },
+              {
+                "token": "",
+                "prob": 0.04253118112683296
+              },
+              {
+                "token": "…",
+                "prob": 0.02009030617773533
+              },
+              {
+                "token": "—",
+                "prob": 0.009489988908171654
+              },
+              {
+                "token": "…",
+                "prob": 0.009489988908171654
+              },
+              {
+                "token": "​​",
+                "prob": 0.006522367708384991
+              },
+              {
+                "token": "​​",
+                "prob": 0.004482753574848175
+              }
+            ],
+            "18": [
+              {
+                "token": "alink",
+                "prob": 0.013863327912986279
+              },
+              {
+                "token": "ynos",
+                "prob": 0.00510003324598074
+              },
+              {
+                "token": "rzy",
+                "prob": 0.0039719101041555405
+              },
+              {
+                "token": "odzi",
+                "prob": 0.003505198284983635
+              },
+              {
+                "token": "�",
+                "prob": 0.003505198284983635
+              },
+              {
+                "token": "zych",
+                "prob": 0.003505198284983635
+              },
+              {
+                "token": "ksz",
+                "prob": 0.003292829031124711
+              },
+              {
+                "token": "agini",
+                "prob": 0.003292829031124711
+              },
+              {
+                "token": "Erot",
+                "prob": 0.003093326697126031
+              },
+              {
+                "token": "utow",
+                "prob": 0.0027298510540276766
+              }
+            ],
+            "26": [
+              {
+                "token": "\"data",
+                "prob": 0.034374646842479706
+              },
+              {
+                "token": "epam",
+                "prob": 0.026771001517772675
+              },
+              {
+                "token": "inox",
+                "prob": 0.01623743213713169
+              },
+              {
+                "token": "：\"",
+                "prob": 0.01346130482852459
+              },
+              {
+                "token": "sexy",
+                "prob": 0.01346130482852459
+              },
+              {
+                "token": "条评论",
+                "prob": 0.01346130482852459
+              },
+              {
+                "token": "persistent",
+                "prob": 0.012645726092159748
+              },
+              {
+                "token": "venient",
+                "prob": 0.012645726092159748
+              },
+              {
+                "token": "serialization",
+                "prob": 0.01187956053763628
+              },
+              {
+                "token": "持久",
+                "prob": 0.01187956053763628
+              }
+            ]
+          },
+          "judge": {
+            "accurate": false,
+            "confidence": 0.95,
+            "reason": "The document samples are about TypeScript modules for session and JSON storage/repo implementations, likely related to a software development project. The keywords 'epam', 'inox', and 'sexy' do not ap"
+          }
+        },
+        "5": {
+          "n_files": 5,
+          "sample_file": "repo-utils.ts",
+          "concept_tokens": [
+            "epam",
+            "related",
+            "agini"
+          ],
+          "model_final_top3": [
+            ":",
+            "\"",
+            "related"
+          ],
+          "lens_by_layer": {
+            "0": [
+              {
+                "token": ".",
+                "prob": 0.7630374431610107
+              },
+              {
+                "token": "，",
+                "prob": 0.11701558530330658
+              },
+              {
+                "token": ".",
+                "prob": 0.03798939660191536
+              },
+              {
+                "token": ".",
+                "prob": 0.03149431571364403
+              },
+              {
+                "token": ".",
+                "prob": 0.010224707424640656
+              },
+              {
+                "token": "​",
+                "prob": 0.008476580493152142
+              },
+              {
+                "token": "：",
+                "prob": 0.0029294276610016823
+              },
+              {
+                "token": ",",
+                "prob": 0.0027519427239894867
+              },
+              {
+                "token": "،",
+                "prob": 0.0021432151552289724
+              },
+              {
+                "token": "",
+                "prob": 0.0017767876852303743
+              }
+            ],
+            "9": [
+              {
+                "token": "[…]",
+                "prob": 0.4620828628540039
+              },
+              {
+                "token": "[…]",
+                "prob": 0.40778669714927673
+              },
+              {
+                "token": "…",
+                "prob": 0.033473171293735504
+              },
+              {
+                "token": "[…]",
+                "prob": 0.033473171293735504
+              },
+              {
+                "token": "",
+                "prob": 0.026068931445479393
+              },
+              {
+                "token": "…",
+                "prob": 0.02300575003027916
+              },
+              {
+                "token": "…",
+                "prob": 0.003113489830866456
+              },
+              {
+                "token": "—",
+                "prob": 0.0027476451359689236
+              },
+              {
+                "token": "…",
+                "prob": 0.002139868214726448
+              },
+              {
+                "token": "​",
+                "prob": 0.0010108022252097726
+              }
+            ],
+            "18": [
+              {
+                "token": "alink",
+                "prob": 0.017205925658345222
+              },
+              {
+                "token": "rzy",
+                "prob": 0.006329706404358149
+              },
+              {
+                "token": "相关新闻",
+                "prob": 0.004350339062511921
+              },
+              {
+                "token": "agini",
+                "prob": 0.004350339062511921
+              },
+              {
+                "token": "ynos",
+                "prob": 0.004086765460669994
+              },
+              {
+                "token": "ksz",
+                "prob": 0.0038391610141843557
+              },
+              {
+                "token": "FindObjectOfType",
+                "prob": 0.003606557846069336
+              },
+              {
+                "token": "odzi",
+                "prob": 0.003606557846069336
+              },
+              {
+                "token": "zych",
+                "prob": 0.003388047683984041
+              },
+              {
+                "token": "Erot",
+                "prob": 0.003388047683984041
+              }
+            ],
+            "26": [
+              {
+                "token": "围绕",
+                "prob": 0.06906646490097046
+              },
+              {
+                "token": "epam",
+                "prob": 0.057258106768131256
+              },
+              {
+                "token": "related",
+                "prob": 0.03262468799948692
+              },
+              {
+                "token": "NCY",
+                "prob": 0.02242259867489338
+              },
+              {
+                "token": "agini",
+                "prob": 0.012776011601090431
+              },
+              {
+                "token": "EFR",
+                "prob": 0.00878081563860178
+              },
+              {
+                "token": "emble",
+                "prob": 0.00878081563860178
+              },
+              {
+                "token": "reten",
+                "prob": 0.0077490429393947124
+              },
+              {
+                "token": "：\"",
+                "prob": 0.0077490429393947124
+              },
+              {
+                "token": "sexy",
+                "prob": 0.0077490429393947124
+              }
+            ]
+          },
+          "judge": {
+            "accurate": false,
+            "confidence": 0.3,
+            "reason": "The keywords 'epam', 'related', and 'agini' do not match the document samples, which are clearly about creating session IDs, timestamps, user/assistant messages, and an in-memory session repository—li"
+          }
+        },
+        "0": {
+          "n_files": 4,
+          "sample_file": "index.ts",
+          "concept_tokens": [
+            "aternity",
+            "likely"
+          ],
+          "model_final_top3": [
+            ":",
+            "related",
+            "\""
+          ],
+          "lens_by_layer": {
+            "0": [
+              {
+                "token": ".",
+                "prob": 0.9242814183235168
+              },
+              {
+                "token": ".",
+                "prob": 0.035838279873132706
+              },
+              {
+                "token": "，",
+                "prob": 0.012385377660393715
+              },
+              {
+                "token": ".",
+                "prob": 0.006227759178727865
+              },
+              {
+                "token": ".",
+                "prob": 0.004850183613598347
+              },
+              {
+                "token": "​",
+                "prob": 0.004020943772047758
+              },
+              {
+                "token": "''",
+                "prob": 0.0011520195985212922
+              },
+              {
+                "token": "﻿",
+                "prob": 0.0009550577960908413
+              },
+              {
+                "token": "",
+                "prob": 0.000897193793207407
+              },
+              {
+                "token": ",",
+                "prob": 0.0005792718729935586
+              }
+            ],
+            "9": [
+              {
+                "token": "[…]",
+                "prob": 0.38680535554885864
+              },
+              {
+                "token": "[…]",
+                "prob": 0.34135451912879944
+              },
+              {
+                "token": "[…]",
+                "prob": 0.18271391093730927
+              },
+              {
+                "token": "",
+                "prob": 0.019257904961705208
+              },
+              {
+                "token": "​​",
+                "prob": 0.006252126302570105
+              },
+              {
+                "token": "—",
+                "prob": 0.006252126302570105
+              },
+              {
+                "token": "​",
+                "prob": 0.004574153572320938
+              },
+              {
+                "token": "…",
+                "prob": 0.0037921061739325523
+              },
+              {
+                "token": "：\"",
+                "prob": 0.0037921061739325523
+              },
+              {
+                "token": "[…",
+                "prob": 0.00334652210585773
+              }
+            ],
+            "18": [
+              {
+                "token": "alink",
+                "prob": 0.006040965672582388
+              },
+              {
+                "token": "zych",
+                "prob": 0.0041518909856677055
+              },
+              {
+                "token": "ynos",
+                "prob": 0.003900340758264065
+              },
+              {
+                "token": "�",
+                "prob": 0.003900340758264065
+              },
+              {
+                "token": "ksz",
+                "prob": 0.0036640309263020754
+              },
+              {
+                "token": "zyst",
+                "prob": 0.003037588205188513
+              },
+              {
+                "token": "Erot",
+                "prob": 0.0028535500168800354
+              },
+              {
+                "token": "ogui",
+                "prob": 0.0026806623209267855
+              },
+              {
+                "token": "相关新闻",
+                "prob": 0.0026806623209267855
+              },
+              {
+                "token": "utow",
+                "prob": 0.0026806623209267855
+              }
+            ],
+            "26": [
+              {
+                "token": "aternity",
+                "prob": 0.05009380355477333
+              },
+              {
+                "token": "likely",
+                "prob": 0.023662636056542397
+              },
+              {
+                "token": "tsy",
+                "prob": 0.022228989750146866
+              },
+              {
+                "token": "Ī",
+                "prob": 0.018428480252623558
+              },
+              {
+                "token": "条评论",
+                "prob": 0.016263077035546303
+              },
+              {
+                "token": "epam",
+                "prob": 0.016263077035546303
+              },
+              {
+                "token": "微软雅黑",
+                "prob": 0.01435211580246687
+              },
+              {
+                "token": "版权归",
+                "prob": 0.013482564128935337
+              },
+              {
+                "token": "Ό",
+                "prob": 0.012665697373449802
+              },
+              {
+                "token": "rawer",
+                "prob": 0.012665697373449802
+              }
+            ]
+          },
+          "judge": {
+            "accurate": false,
+            "confidence": 0.95,
+            "reason": "The concept keywords 'aternity' and 'likely' do not appear to relate to the document samples, which are all TypeScript module declarations with no symbols (empty or minimal content). The documents app"
+          }
+        },
+        "10": {
+          "n_files": 4,
+          "sample_file": "azure-openai-responses.ts",
+          "concept_tokens": [
+            "Open",
+            "oice",
+            "venient"
+          ],
+          "model_final_top3": [
+            ":",
+            "\"",
+            "Open"
+          ],
+          "lens_by_layer": {
+            "0": [
+              {
+                "token": ".",
+                "prob": 0.6380593180656433
+              },
+              {
+                "token": "，",
+                "prob": 0.2071475237607956
+              },
+              {
+                "token": ".",
+                "prob": 0.04622086510062218
+              },
+              {
+                "token": ".",
+                "prob": 0.029842432588338852
+              },
+              {
+                "token": "​",
+                "prob": 0.023241309449076653
+              },
+              {
+                "token": ".",
+                "prob": 0.008031981997191906
+              },
+              {
+                "token": "：",
+                "prob": 0.005185836926102638
+              },
+              {
+                "token": "،",
+                "prob": 0.004038733895868063
+              },
+              {
+                "token": "''",
+                "prob": 0.002775778528302908
+              },
+              {
+                "token": ",",
+                "prob": 0.0024496158584952354
+              }
+            ],
+            "9": [
+              {
+                "token": "[…]",
+                "prob": 0.6043502688407898
+              },
+              {
+                "token": "[…]",
+                "prob": 0.1962037980556488
+              },
+              {
+                "token": "[…]",
+                "prob": 0.10502032935619354
+              },
+              {
+                "token": "",
+                "prob": 0.03008882701396942
+              },
+              {
+                "token": "…",
+                "prob": 0.023433202877640724
+              },
+              {
+                "token": "…",
+                "prob": 0.018249796703457832
+              },
+              {
+                "token": "…",
+                "prob": 0.0046142712235450745
+              },
+              {
+                "token": "—",
+                "prob": 0.0046142712235450745
+              },
+              {
+                "token": "…",
+                "prob": 0.0026291324757039547
+              },
+              {
+                "token": "​​",
+                "prob": 0.0014072732301428914
+              }
+            ],
+            "18": [
+              {
+                "token": "alink",
+                "prob": 0.01532813161611557
+              },
+              {
+                "token": "ynos",
+                "prob": 0.004391583148390055
+              },
+              {
+                "token": "utow",
+                "prob": 0.003640750190243125
+              },
+              {
+                "token": "odzi",
+                "prob": 0.003640750190243125
+              },
+              {
+                "token": "Erot",
+                "prob": 0.0032129508908838034
+              },
+              {
+                "token": "zych",
+                "prob": 0.0032129508908838034
+              },
+              {
+                "token": "amac",
+                "prob": 0.0030182881746441126
+              },
+              {
+                "token": "ksz",
+                "prob": 0.002835419261828065
+              },
+              {
+                "token": "�",
+                "prob": 0.0026636298280209303
+              },
+              {
+                "token": "agini",
+                "prob": 0.0026636298280209303
+              }
+            ],
+            "26": [
+              {
+                "token": "围绕",
+                "prob": 0.06125237047672272
+              },
+              {
+                "token": "Open",
+                "prob": 0.04481319338083267
+              },
+              {
+                "token": "APIs",
+                "prob": 0.030799625441432
+              },
+              {
+                "token": "oice",
+                "prob": 0.02718057483434677
+              },
+              {
+                "token": "venient",
+                "prob": 0.02116825431585312
+              },
+              {
+                "token": "related",
+                "prob": 0.019885733723640442
+              },
+              {
+                "token": "redni",
+                "prob": 0.017549097537994385
+              },
+              {
+                "token": ":",
+                "prob": 0.013667251914739609
+              },
+              {
+                "token": "/WebAPI",
+                "prob": 0.009999174624681473
+              },
+              {
+                "token": "?option",
+                "prob": 0.00882424134761095
+              }
+            ]
+          },
+          "judge": {
+            "accurate": false,
+            "confidence": 0.3,
+            "reason": "The keywords 'Open', 'oice', 'venient' appear to be fragments or misspellings likely intended to represent 'OpenAI' or 'convenient', but none accurately describe the actual content of the documents, w"
+          }
+        },
+        "1": {
+          "n_files": 3,
+          "sample_file": "system-prompt.ts",
+          "concept_tokens": [
+            "epam",
+            "related",
+            "likely"
+          ],
+          "model_final_top3": [
+            ":",
+            "\"",
+            "related"
+          ],
+          "lens_by_layer": {
+            "0": [
+              {
+                "token": ".",
+                "prob": 0.8902332186698914
+              },
+              {
+                "token": ".",
+                "prob": 0.04432209953665733
+              },
+              {
+                "token": "，",
+                "prob": 0.03451808914542198
+              },
+              {
+                "token": ".",
+                "prob": 0.010527422651648521
+              },
+              {
+                "token": ".",
+                "prob": 0.0056349229998886585
+              },
+              {
+                "token": "​",
+                "prob": 0.0018293915782123804
+              },
+              {
+                "token": ",",
+                "prob": 0.0009198758634738624
+              },
+              {
+                "token": "：",
+                "prob": 0.0008641434251330793
+              },
+              {
+                "token": "﻿",
+                "prob": 0.0007626038859598339
+              },
+              {
+                "token": "''",
+                "prob": 0.0007164000417105854
+              }
+            ],
+            "9": [
+              {
+                "token": "[…]",
+                "prob": 0.5829642415046692
+              },
+              {
+                "token": "[…]",
+                "prob": 0.31203827261924744
+              },
+              {
+                "token": "[…]",
+                "prob": 0.08940046280622482
+              },
+              {
+                "token": "[…",
+                "prob": 0.003927981946617365
+              },
+              {
+                "token": "",
+                "prob": 0.0016374265542253852
+              },
+              {
+                "token": "…",
+                "prob": 0.0016374265542253852
+              },
+              {
+                "token": "…",
+                "prob": 0.0014450239250436425
+              },
+              {
+                "token": "[…",
+                "prob": 0.0011253857519477606
+              },
+              {
+                "token": "​​",
+                "prob": 0.0007734655519016087
+              },
+              {
+                "token": "​",
+                "prob": 0.000565879512578249
+              }
+            ],
+            "18": [
+              {
+                "token": "alink",
+                "prob": 0.014455496333539486
+              },
+              {
+                "token": "zych",
+                "prob": 0.004408677574247122
+              },
+              {
+                "token": "odzi",
+                "prob": 0.004141569137573242
+              },
+              {
+                "token": "ksz",
+                "prob": 0.004141569137573242
+              },
+              {
+                "token": "相关新闻",
+                "prob": 0.004141569137573242
+              },
+              {
+                "token": "ynos",
+                "prob": 0.003890644060447812
+              },
+              {
+                "token": "rzy",
+                "prob": 0.003890644060447812
+              },
+              {
+                "token": "agini",
+                "prob": 0.003890644060447812
+              },
+              {
+                "token": "Erot",
+                "prob": 0.0034334813244640827
+              },
+              {
+                "token": "ogui",
+                "prob": 0.003225457388907671
+              }
+            ],
+            "26": [
+              {
+                "token": ":",
+                "prob": 0.049431659281253815
+              },
+              {
+                "token": "epam",
+                "prob": 0.03849741443991661
+              },
+              {
+                "token": "related",
+                "prob": 0.033973850309848785
+              },
+              {
+                "token": "likely",
+                "prob": 0.01935771480202675
+              },
+              {
+                "token": "围绕",
+                "prob": 0.01935771480202675
+              },
+              {
+                "token": "anuts",
+                "prob": 0.016048109158873558
+              },
+              {
+                "token": ":",
+                "prob": 0.01416240818798542
+              },
+              {
+                "token": "üc",
+                "prob": 0.012498280964791775
+              },
+              {
+                "token": "iare",
+                "prob": 0.011741047725081444
+              },
+              {
+                "token": "rawer",
+                "prob": 0.010361438617110252
+              }
+            ]
+          },
+          "judge": {
+            "accurate": false,
+            "confidence": 0.9,
+            "reason": "The keywords 'epam, related, likely' are generic and vague, while the document samples show code snippets about system prompts, skill formatting, and testing in a TypeScript environment. The keywords "
+          }
+        },
+        "4": {
+          "n_files": 3,
+          "sample_file": "nodejs-env.test.ts",
+          "concept_tokens": [
+            "testing",
+            "initialization"
+          ],
+          "model_final_top3": [
+            ":",
+            "testing",
+            "\""
+          ],
+          "lens_by_layer": {
+            "0": [
+              {
+                "token": ".",
+                "prob": 0.700200617313385
+              },
+              {
+                "token": "，",
+                "prob": 0.20061084628105164
+              },
+              {
+                "token": ".",
+                "prob": 0.039502616971731186
+              },
+              {
+                "token": ".",
+                "prob": 0.018659714609384537
+              },
+              {
+                "token": ".",
+                "prob": 0.009382693096995354
+              },
+              {
+                "token": "：",
+                "prob": 0.005346097517758608
+              },
+              {
+                "token": "​",
+                "prob": 0.0025253177154809237
+              },
+              {
+                "token": "،",
+                "prob": 0.002372316550463438
+              },
+              {
+                "token": "",
+                "prob": 0.002372316550463438
+              },
+              {
+                "token": ",",
+                "prob": 0.0017356239259243011
+              }
+            ],
+            "9": [
+              {
+                "token": "[…]",
+                "prob": 0.5853358507156372
+              },
+              {
+                "token": "[…]",
+                "prob": 0.19003072381019592
+              },
+              {
+                "token": "[…]",
+                "prob": 0.11525946110486984
+              },
+              {
+                "token": "",
+                "prob": 0.03741926699876785
+              },
+              {
+                "token": "—",
+                "prob": 0.02571786195039749
+              },
+              {
+                "token": "…",
+                "prob": 0.01072080060839653
+              },
+              {
+                "token": "​​",
+                "prob": 0.007368291262537241
+              },
+              {
+                "token": "…",
+                "prob": 0.003943962045013905
+              },
+              {
+                "token": "​​",
+                "prob": 0.003480534302070737
+              },
+              {
+                "token": "​",
+                "prob": 0.003480534302070737
+              }
+            ],
+            "18": [
+              {
+                "token": "alink",
+                "prob": 0.008683433756232262
+              },
+              {
+                "token": "FindObjectOfType",
+                "prob": 0.005266768857836723
+              },
+              {
+                "token": "odzi",
+                "prob": 0.004647907335311174
+              },
+              {
+                "token": "zych",
+                "prob": 0.004366304725408554
+              },
+              {
+                "token": "ksz",
+                "prob": 0.0036197935696691275
+              },
+              {
+                "token": "ogui",
+                "prob": 0.003194456920027733
+              },
+              {
+                "token": "agini",
+                "prob": 0.003194456920027733
+              },
+              {
+                "token": "rzy",
+                "prob": 0.003194456920027733
+              },
+              {
+                "token": "ynos",
+                "prob": 0.0030009145848453045
+              },
+              {
+                "token": "Erot",
+                "prob": 0.0028190980665385723
+              }
+            ],
+            "26": [
+              {
+                "token": "testing",
+                "prob": 0.2704302668571472
+              },
+              {
+                "token": "Testing",
+                "prob": 0.08779585361480713
+              },
+              {
+                "token": "initialization",
+                "prob": 0.06423281878232956
+              },
+              {
+                "token": "testing",
+                "prob": 0.04699373245239258
+              },
+              {
+                "token": "测试",
+                "prob": 0.03659875690937042
+              },
+              {
+                "token": "etest",
+                "prob": 0.025153934955596924
+              },
+              {
+                "token": "lke",
+                "prob": 0.019589902833104134
+              },
+              {
+                "token": "Testing",
+                "prob": 0.017288027331233025
+              },
+              {
+                "token": "agini",
+                "prob": 0.014332279562950134
+              },
+              {
+                "token": "venience",
+                "prob": 0.007671516388654709
+              }
+            ]
+          },
+          "judge": {
+            "accurate": false,
+            "confidence": 0.6,
+            "reason": "The documents are test files that involve creating temporary directories and initializing NodeExecutionEnv objects, so 'initialization' is somewhat relevant, but 'testing' is very broad; the core them"
+          }
+        }
+      }
+    },
+    "docstring": {
+      "n_summaries": 80,
+      "n_clusters": 8,
+      "accuracy": 0.0,
+      "clusters": {
+        "7": {
+          "n_files": 12,
+          "sample_file": "agent-loop.ts",
+          "concept_tokens": [
+            "related",
+            "epam"
+          ],
+          "model_final_top3": [
+            ":",
+            "\"",
+            "`"
+          ],
+          "lens_by_layer": {
+            "0": [
+              {
+                "token": ".",
+                "prob": 0.7216671109199524
+              },
+              {
+                "token": "，",
+                "prob": 0.12540693581104279
+              },
+              {
+                "token": ".",
+                "prob": 0.05564899370074272
+              },
+              {
+                "token": ".",
+                "prob": 0.02978675812482834
+              },
+              {
+                "token": "​",
+                "prob": 0.018066581338644028
+              },
+              {
+                "token": ".",
+                "prob": 0.009670344181358814
+              },
+              {
+                "token": "：",
+                "prob": 0.0037869615480303764
+              },
+              {
+                "token": "''",
+                "prob": 0.002445046091452241
+              },
+              {
+                "token": "،",
+                "prob": 0.002445046091452241
+              },
+              {
+                "token": ",",
+                "prob": 0.002157745650038123
+              }
+            ],
+            "9": [
+              {
+                "token": "[…]",
+                "prob": 0.6925967335700989
+              },
+              {
+                "token": "[…]",
+                "prob": 0.1203552633523941
+              },
+              {
+                "token": "[…]",
+                "prob": 0.07299915701150894
+              },
+              {
+                "token": "…",
+                "prob": 0.05685180053114891
+              },
+              {
+                "token": "…",
+                "prob": 0.020914608612656593
+              },
+              {
+                "token": "",
+                "prob": 0.012685352005064487
+              },
+              {
+                "token": "…",
+                "prob": 0.00987936183810234
+              },
+              {
+                "token": "…",
+                "prob": 0.002204383723437786
+              },
+              {
+                "token": "…\"",
+                "prob": 0.0015150492545217276
+              },
+              {
+                "token": "‘",
+                "prob": 0.0015150492545217276
+              }
+            ],
+            "18": [
+              {
+                "token": "alink",
+                "prob": 0.013908568769693375
+              },
+              {
+                "token": "ynos",
+                "prob": 0.004806673154234886
+              },
+              {
+                "token": "rzy",
+                "prob": 0.004515450913459063
+              },
+              {
+                "token": "agini",
+                "prob": 0.0035166367888450623
+              },
+              {
+                "token": "odzi",
+                "prob": 0.0035166367888450623
+              },
+              {
+                "token": "Erot",
+                "prob": 0.0035166367888450623
+              },
+              {
+                "token": "amac",
+                "prob": 0.003103421302512288
+              },
+              {
+                "token": "相关新闻",
+                "prob": 0.0029153944924473763
+              },
+              {
+                "token": "utow",
+                "prob": 0.0029153944924473763
+              },
+              {
+                "token": "�",
+                "prob": 0.002738759620115161
+              }
+            ],
+            "26": [
+              {
+                "token": "围绕",
+                "prob": 0.16780927777290344
+              },
+              {
+                "token": "related",
+                "prob": 0.06571505218744278
+              },
+              {
+                "token": "epam",
+                "prob": 0.022710515186190605
+              },
+              {
+                "token": "NCY",
+                "prob": 0.02004196122288704
+              },
+              {
+                "token": ":",
+                "prob": 0.01882767863571644
+              },
+              {
+                "token": "一致好评",
+                "prob": 0.017686966806650162
+              },
+              {
+                "token": "emble",
+                "prob": 0.009467151947319508
+              },
+              {
+                "token": "gregator",
+                "prob": 0.007848544977605343
+              },
+              {
+                "token": "stery",
+                "prob": 0.0073730251751840115
+              },
+              {
+                "token": "akit",
+                "prob": 0.006506671663373709
+              }
+            ]
+          },
+          "judge": {
+            "accurate": false,
+            "confidence": 0.95,
+            "reason": "The concept keywords 'related' and 'epam' do not appear in or relate to the document samples. The documents are about agent loop functions, message types, and agent harness utilities—not about 'relate"
+          }
+        },
+        "8": {
+          "n_files": 10,
+          "sample_file": "anthropic-messages.lazy.ts",
+          "concept_tokens": [
+            "alink",
+            "odzi",
+            "zych"
+          ],
+          "model_final_top3": [
+            "\"",
+            ":",
+            "`"
+          ],
+          "lens_by_layer": {
+            "0": [
+              {
+                "token": ".",
+                "prob": 0.6858105063438416
+              },
+              {
+                "token": "，",
+                "prob": 0.1191760003566742
+              },
+              {
+                "token": ".",
+                "prob": 0.07228389382362366
+              },
+              {
+                "token": ".",
+                "prob": 0.046669989824295044
+              },
+              {
+                "token": "​",
+                "prob": 0.030132411047816277
+              },
+              {
+                "token": ".",
+                "prob": 0.009782561101019382
+              },
+              {
+                "token": "：",
+                "prob": 0.0026329406537115574
+              },
+              {
+                "token": ",",
+                "prob": 0.0024734188336879015
+              },
+              {
+                "token": "،",
+                "prob": 0.0023235620465129614
+              },
+              {
+                "token": "",
+                "prob": 0.0019263005815446377
+              }
+            ],
+            "9": [
+              {
+                "token": "[…]",
+                "prob": 0.48827263712882996
+              },
+              {
+                "token": "[…]",
+                "prob": 0.2613535225391388
+              },
+              {
+                "token": "[…]",
+                "prob": 0.10894835740327835
+              },
+              {
+                "token": "",
+                "prob": 0.08484905958175659
+              },
+              {
+                "token": "…",
+                "prob": 0.01670777052640915
+              },
+              {
+                "token": "…",
+                "prob": 0.007892192341387272
+              },
+              {
+                "token": "…",
+                "prob": 0.005424218717962503
+              },
+              {
+                "token": "—",
+                "prob": 0.004786856472492218
+              },
+              {
+                "token": "​​",
+                "prob": 0.0032899552024900913
+              },
+              {
+                "token": "​",
+                "prob": 0.0025622197426855564
+              }
+            ],
+            "18": [
+              {
+                "token": "alink",
+                "prob": 0.012206478975713253
+              },
+              {
+                "token": "ksz",
+                "prob": 0.005416592117398977
+              },
+              {
+                "token": "odzi",
+                "prob": 0.004490512888878584
+              },
+              {
+                "token": "zych",
+                "prob": 0.003962863236665726
+              },
+              {
+                "token": "rzy",
+                "prob": 0.003962863236665726
+              },
+              {
+                "token": "ynos",
+                "prob": 0.003962863236665726
+              },
+              {
+                "token": "agini",
+                "prob": 0.003497214987874031
+              },
+              {
+                "token": "�",
+                "prob": 0.0032853293232619762
+              },
+              {
+                "token": "Erot",
+                "prob": 0.0032853293232619762
+              },
+              {
+                "token": "amac",
+                "prob": 0.003086281241849065
+              }
+            ],
+            "26": [
+              {
+                "token": ".lazy",
+                "prob": 0.08183412253856659
+              },
+              {
+                "token": "_lazy",
+                "prob": 0.08183412253856659
+              },
+              {
+                "token": "lazy",
+                "prob": 0.046627677977085114
+              },
+              {
+                "token": "lazy",
+                "prob": 0.023445868864655495
+              },
+              {
+                "token": "azy",
+                "prob": 0.015137790702283382
+              },
+              {
+                "token": "一致好评",
+                "prob": 0.014220638200640678
+              },
+              {
+                "token": "gregator",
+                "prob": 0.013359053060412407
+              },
+              {
+                "token": "epam",
+                "prob": 0.012549669481813908
+              },
+              {
+                "token": "agini",
+                "prob": 0.012549669481813908
+              },
+              {
+                "token": ":async",
+                "prob": 0.011075044050812721
+              }
+            ]
+          },
+          "judge": {
+            "accurate": false,
+            "confidence": 0.0,
+            "reason": "The keywords 'alink', 'odzi', 'zych' do not appear in or relate to the provided document samples, which describe lazy API imports for various AI provider interfaces (Anthropic, Azure OpenAI, Bedrock)."
+          }
+        },
+        "6": {
+          "n_files": 5,
+          "sample_file": "jsonl-repo.ts",
+          "concept_tokens": [
+            "epam",
+            "inox",
+            "sexy"
+          ],
+          "model_final_top3": [
+            ":",
+            "\"",
+            "`"
+          ],
+          "lens_by_layer": {
+            "0": [
+              {
+                "token": ".",
+                "prob": 0.8097326755523682
+              },
+              {
+                "token": "，",
+                "prob": 0.08534519374370575
+              },
+              {
+                "token": ".",
+                "prob": 0.03557717055082321
+              },
+              {
+                "token": ".",
+                "prob": 0.024451809003949165
+              },
+              {
+                "token": "​",
+                "prob": 0.008995316922664642
+              },
+              {
+                "token": ".",
+                "prob": 0.007938339374959469
+              },
+              {
+                "token": "",
+                "prob": 0.003522617043927312
+              },
+              {
+                "token": "：",
+                "prob": 0.0027434169314801693
+              },
+              {
+                "token": "",
+                "prob": 0.0014684452908113599
+              },
+              {
+                "token": ",",
+                "prob": 0.0014684452908113599
+              }
+            ],
+            "9": [
+              {
+                "token": "[…]",
+                "prob": 0.5871248245239258
+              },
+              {
+                "token": "[…]",
+                "prob": 0.115611732006073
+              },
+              {
+                "token": "[…]",
+                "prob": 0.10202699899673462
+              },
+              {
+                "token": "…",
+                "prob": 0.07945870608091354
+              },
+              {
+                "token": "",
+                "prob": 0.04253118112683296
+              },
+              {
+                "token": "…",
+                "prob": 0.02009030617773533
+              },
+              {
+                "token": "—",
+                "prob": 0.009489988908171654
+              },
+              {
+                "token": "…",
+                "prob": 0.009489988908171654
+              },
+              {
+                "token": "​​",
+                "prob": 0.006522367708384991
+              },
+              {
+                "token": "​​",
+                "prob": 0.004482753574848175
+              }
+            ],
+            "18": [
+              {
+                "token": "alink",
+                "prob": 0.013863327912986279
+              },
+              {
+                "token": "ynos",
+                "prob": 0.00510003324598074
+              },
+              {
+                "token": "rzy",
+                "prob": 0.0039719101041555405
+              },
+              {
+                "token": "odzi",
+                "prob": 0.003505198284983635
+              },
+              {
+                "token": "�",
+                "prob": 0.003505198284983635
+              },
+              {
+                "token": "zych",
+                "prob": 0.003505198284983635
+              },
+              {
+                "token": "ksz",
+                "prob": 0.003292829031124711
+              },
+              {
+                "token": "agini",
+                "prob": 0.003292829031124711
+              },
+              {
+                "token": "Erot",
+                "prob": 0.003093326697126031
+              },
+              {
+                "token": "utow",
+                "prob": 0.0027298510540276766
+              }
+            ],
+            "26": [
+              {
+                "token": "\"data",
+                "prob": 0.034374646842479706
+              },
+              {
+                "token": "epam",
+                "prob": 0.026771001517772675
+              },
+              {
+                "token": "inox",
+                "prob": 0.01623743213713169
+              },
+              {
+                "token": "：\"",
+                "prob": 0.01346130482852459
+              },
+              {
+                "token": "sexy",
+                "prob": 0.01346130482852459
+              },
+              {
+                "token": "条评论",
+                "prob": 0.01346130482852459
+              },
+              {
+                "token": "persistent",
+                "prob": 0.012645726092159748
+              },
+              {
+                "token": "venient",
+                "prob": 0.012645726092159748
+              },
+              {
+                "token": "serialization",
+                "prob": 0.01187956053763628
+              },
+              {
+                "token": "持久",
+                "prob": 0.01187956053763628
+              }
+            ]
+          },
+          "judge": {
+            "accurate": false,
+            "confidence": 0.0,
+            "reason": "The keywords 'epam', 'inox', and 'sexy' have no apparent relation to the provided code documents, which are about TypeScript module definitions, file system types, and session repository implementatio"
+          }
+        },
+        "5": {
+          "n_files": 5,
+          "sample_file": "repo-utils.ts",
+          "concept_tokens": [
+            "epam",
+            "related",
+            "agini"
+          ],
+          "model_final_top3": [
+            ":",
+            "\"",
+            "related"
+          ],
+          "lens_by_layer": {
+            "0": [
+              {
+                "token": ".",
+                "prob": 0.7630374431610107
+              },
+              {
+                "token": "，",
+                "prob": 0.11701558530330658
+              },
+              {
+                "token": ".",
+                "prob": 0.03798939660191536
+              },
+              {
+                "token": ".",
+                "prob": 0.03149431571364403
+              },
+              {
+                "token": ".",
+                "prob": 0.010224707424640656
+              },
+              {
+                "token": "​",
+                "prob": 0.008476580493152142
+              },
+              {
+                "token": "：",
+                "prob": 0.0029294276610016823
+              },
+              {
+                "token": ",",
+                "prob": 0.0027519427239894867
+              },
+              {
+                "token": "،",
+                "prob": 0.0021432151552289724
+              },
+              {
+                "token": "",
+                "prob": 0.0017767876852303743
+              }
+            ],
+            "9": [
+              {
+                "token": "[…]",
+                "prob": 0.4620828628540039
+              },
+              {
+                "token": "[…]",
+                "prob": 0.40778669714927673
+              },
+              {
+                "token": "…",
+                "prob": 0.033473171293735504
+              },
+              {
+                "token": "[…]",
+                "prob": 0.033473171293735504
+              },
+              {
+                "token": "",
+                "prob": 0.026068931445479393
+              },
+              {
+                "token": "…",
+                "prob": 0.02300575003027916
+              },
+              {
+                "token": "…",
+                "prob": 0.003113489830866456
+              },
+              {
+                "token": "—",
+                "prob": 0.0027476451359689236
+              },
+              {
+                "token": "…",
+                "prob": 0.002139868214726448
+              },
+              {
+                "token": "​",
+                "prob": 0.0010108022252097726
+              }
+            ],
+            "18": [
+              {
+                "token": "alink",
+                "prob": 0.017205925658345222
+              },
+              {
+                "token": "rzy",
+                "prob": 0.006329706404358149
+              },
+              {
+                "token": "相关新闻",
+                "prob": 0.004350339062511921
+              },
+              {
+                "token": "agini",
+                "prob": 0.004350339062511921
+              },
+              {
+                "token": "ynos",
+                "prob": 0.004086765460669994
+              },
+              {
+                "token": "ksz",
+                "prob": 0.0038391610141843557
+              },
+              {
+                "token": "FindObjectOfType",
+                "prob": 0.003606557846069336
+              },
+              {
+                "token": "odzi",
+                "prob": 0.003606557846069336
+              },
+              {
+                "token": "zych",
+                "prob": 0.003388047683984041
+              },
+              {
+                "token": "Erot",
+                "prob": 0.003388047683984041
+              }
+            ],
+            "26": [
+              {
+                "token": "围绕",
+                "prob": 0.06906646490097046
+              },
+              {
+                "token": "epam",
+                "prob": 0.057258106768131256
+              },
+              {
+                "token": "related",
+                "prob": 0.03262468799948692
+              },
+              {
+                "token": "NCY",
+                "prob": 0.02242259867489338
+              },
+              {
+                "token": "agini",
+                "prob": 0.012776011601090431
+              },
+              {
+                "token": "EFR",
+                "prob": 0.00878081563860178
+              },
+              {
+                "token": "emble",
+                "prob": 0.00878081563860178
+              },
+              {
+                "token": "reten",
+                "prob": 0.0077490429393947124
+              },
+              {
+                "token": "：\"",
+                "prob": 0.0077490429393947124
+              },
+              {
+                "token": "sexy",
+                "prob": 0.0077490429393947124
+              }
+            ]
+          },
+          "judge": {
+            "accurate": false,
+            "confidence": 0.2,
+            "reason": "The documents appear to be code snippets related to session management, repositories, and test utilities, with no clear connection to the keywords 'epam', 'related', or 'agini'. The keywords seem arbi"
+          }
+        },
+        "0": {
+          "n_files": 4,
+          "sample_file": "index.ts",
+          "concept_tokens": [
+            "aternity",
+            "likely"
+          ],
+          "model_final_top3": [
+            ":",
+            "related",
+            "\""
+          ],
+          "lens_by_layer": {
+            "0": [
+              {
+                "token": ".",
+                "prob": 0.9242814183235168
+              },
+              {
+                "token": ".",
+                "prob": 0.035838279873132706
+              },
+              {
+                "token": "，",
+                "prob": 0.012385377660393715
+              },
+              {
+                "token": ".",
+                "prob": 0.006227759178727865
+              },
+              {
+                "token": ".",
+                "prob": 0.004850183613598347
+              },
+              {
+                "token": "​",
+                "prob": 0.004020943772047758
+              },
+              {
+                "token": "''",
+                "prob": 0.0011520195985212922
+              },
+              {
+                "token": "﻿",
+                "prob": 0.0009550577960908413
+              },
+              {
+                "token": "",
+                "prob": 0.000897193793207407
+              },
+              {
+                "token": ",",
+                "prob": 0.0005792718729935586
+              }
+            ],
+            "9": [
+              {
+                "token": "[…]",
+                "prob": 0.38680535554885864
+              },
+              {
+                "token": "[…]",
+                "prob": 0.34135451912879944
+              },
+              {
+                "token": "[…]",
+                "prob": 0.18271391093730927
+              },
+              {
+                "token": "",
+                "prob": 0.019257904961705208
+              },
+              {
+                "token": "​​",
+                "prob": 0.006252126302570105
+              },
+              {
+                "token": "—",
+                "prob": 0.006252126302570105
+              },
+              {
+                "token": "​",
+                "prob": 0.004574153572320938
+              },
+              {
+                "token": "…",
+                "prob": 0.0037921061739325523
+              },
+              {
+                "token": "：\"",
+                "prob": 0.0037921061739325523
+              },
+              {
+                "token": "[…",
+                "prob": 0.00334652210585773
+              }
+            ],
+            "18": [
+              {
+                "token": "alink",
+                "prob": 0.006040965672582388
+              },
+              {
+                "token": "zych",
+                "prob": 0.0041518909856677055
+              },
+              {
+                "token": "ynos",
+                "prob": 0.003900340758264065
+              },
+              {
+                "token": "�",
+                "prob": 0.003900340758264065
+              },
+              {
+                "token": "ksz",
+                "prob": 0.0036640309263020754
+              },
+              {
+                "token": "zyst",
+                "prob": 0.003037588205188513
+              },
+              {
+                "token": "Erot",
+                "prob": 0.0028535500168800354
+              },
+              {
+                "token": "ogui",
+                "prob": 0.0026806623209267855
+              },
+              {
+                "token": "相关新闻",
+                "prob": 0.0026806623209267855
+              },
+              {
+                "token": "utow",
+                "prob": 0.0026806623209267855
+              }
+            ],
+            "26": [
+              {
+                "token": "aternity",
+                "prob": 0.05009380355477333
+              },
+              {
+                "token": "likely",
+                "prob": 0.023662636056542397
+              },
+              {
+                "token": "tsy",
+                "prob": 0.022228989750146866
+              },
+              {
+                "token": "Ī",
+                "prob": 0.018428480252623558
+              },
+              {
+                "token": "条评论",
+                "prob": 0.016263077035546303
+              },
+              {
+                "token": "epam",
+                "prob": 0.016263077035546303
+              },
+              {
+                "token": "微软雅黑",
+                "prob": 0.01435211580246687
+              },
+              {
+                "token": "版权归",
+                "prob": 0.013482564128935337
+              },
+              {
+                "token": "Ό",
+                "prob": 0.012665697373449802
+              },
+              {
+                "token": "rawer",
+                "prob": 0.012665697373449802
+              }
+            ]
+          },
+          "judge": {
+            "accurate": false,
+            "confidence": 0.95,
+            "reason": "The concept keywords 'aternity' and 'likely' do not relate to the document samples, which appear to be TypeScript module files with no symbols (likely empty or minimal declarations). The keywords are "
+          }
+        },
+        "1": {
+          "n_files": 3,
+          "sample_file": "system-prompt.ts",
+          "concept_tokens": [
+            "epam",
+            "related",
+            "likely"
+          ],
+          "model_final_top3": [
+            ":",
+            "\"",
+            "related"
+          ],
+          "lens_by_layer": {
+            "0": [
+              {
+                "token": ".",
+                "prob": 0.8902332186698914
+              },
+              {
+                "token": ".",
+                "prob": 0.04432209953665733
+              },
+              {
+                "token": "，",
+                "prob": 0.03451808914542198
+              },
+              {
+                "token": ".",
+                "prob": 0.010527422651648521
+              },
+              {
+                "token": ".",
+                "prob": 0.0056349229998886585
+              },
+              {
+                "token": "​",
+                "prob": 0.0018293915782123804
+              },
+              {
+                "token": ",",
+                "prob": 0.0009198758634738624
+              },
+              {
+                "token": "：",
+                "prob": 0.0008641434251330793
+              },
+              {
+                "token": "﻿",
+                "prob": 0.0007626038859598339
+              },
+              {
+                "token": "''",
+                "prob": 0.0007164000417105854
+              }
+            ],
+            "9": [
+              {
+                "token": "[…]",
+                "prob": 0.5829642415046692
+              },
+              {
+                "token": "[…]",
+                "prob": 0.31203827261924744
+              },
+              {
+                "token": "[…]",
+                "prob": 0.08940046280622482
+              },
+              {
+                "token": "[…",
+                "prob": 0.003927981946617365
+              },
+              {
+                "token": "",
+                "prob": 0.0016374265542253852
+              },
+              {
+                "token": "…",
+                "prob": 0.0016374265542253852
+              },
+              {
+                "token": "…",
+                "prob": 0.0014450239250436425
+              },
+              {
+                "token": "[…",
+                "prob": 0.0011253857519477606
+              },
+              {
+                "token": "​​",
+                "prob": 0.0007734655519016087
+              },
+              {
+                "token": "​",
+                "prob": 0.000565879512578249
+              }
+            ],
+            "18": [
+              {
+                "token": "alink",
+                "prob": 0.014455496333539486
+              },
+              {
+                "token": "zych",
+                "prob": 0.004408677574247122
+              },
+              {
+                "token": "odzi",
+                "prob": 0.004141569137573242
+              },
+              {
+                "token": "ksz",
+                "prob": 0.004141569137573242
+              },
+              {
+                "token": "相关新闻",
+                "prob": 0.004141569137573242
+              },
+              {
+                "token": "ynos",
+                "prob": 0.003890644060447812
+              },
+              {
+                "token": "rzy",
+                "prob": 0.003890644060447812
+              },
+              {
+                "token": "agini",
+                "prob": 0.003890644060447812
+              },
+              {
+                "token": "Erot",
+                "prob": 0.0034334813244640827
+              },
+              {
+                "token": "ogui",
+                "prob": 0.003225457388907671
+              }
+            ],
+            "26": [
+              {
+                "token": ":",
+                "prob": 0.049431659281253815
+              },
+              {
+                "token": "epam",
+                "prob": 0.03849741443991661
+              },
+              {
+                "token": "related",
+                "prob": 0.033973850309848785
+              },
+              {
+                "token": "likely",
+                "prob": 0.01935771480202675
+              },
+              {
+                "token": "围绕",
+                "prob": 0.01935771480202675
+              },
+              {
+                "token": "anuts",
+                "prob": 0.016048109158873558
+              },
+              {
+                "token": ":",
+                "prob": 0.01416240818798542
+              },
+              {
+                "token": "üc",
+                "prob": 0.012498280964791775
+              },
+              {
+                "token": "iare",
+                "prob": 0.011741047725081444
+              },
+              {
+                "token": "rawer",
+                "prob": 0.010361438617110252
+              }
+            ]
+          },
+          "judge": {
+            "accurate": false,
+            "confidence": 0.9,
+            "reason": "The keywords 'epam', 'related', and 'likely' are too vague and generic; the documents appear to be about software development code snippets (TypeScript/JavaScript functions and tests), not clearly tie"
+          }
+        },
+        "4": {
+          "n_files": 3,
+          "sample_file": "nodejs-env.test.ts",
+          "concept_tokens": [
+            "testing",
+            "initialization"
+          ],
+          "model_final_top3": [
+            ":",
+            "testing",
+            "\""
+          ],
+          "lens_by_layer": {
+            "0": [
+              {
+                "token": ".",
+                "prob": 0.700200617313385
+              },
+              {
+                "token": "，",
+                "prob": 0.20061084628105164
+              },
+              {
+                "token": ".",
+                "prob": 0.039502616971731186
+              },
+              {
+                "token": ".",
+                "prob": 0.018659714609384537
+              },
+              {
+                "token": ".",
+                "prob": 0.009382693096995354
+              },
+              {
+                "token": "：",
+                "prob": 0.005346097517758608
+              },
+              {
+                "token": "​",
+                "prob": 0.0025253177154809237
+              },
+              {
+                "token": "،",
+                "prob": 0.002372316550463438
+              },
+              {
+                "token": "",
+                "prob": 0.002372316550463438
+              },
+              {
+                "token": ",",
+                "prob": 0.0017356239259243011
+              }
+            ],
+            "9": [
+              {
+                "token": "[…]",
+                "prob": 0.5853358507156372
+              },
+              {
+                "token": "[…]",
+                "prob": 0.19003072381019592
+              },
+              {
+                "token": "[…]",
+                "prob": 0.11525946110486984
+              },
+              {
+                "token": "",
+                "prob": 0.03741926699876785
+              },
+              {
+                "token": "—",
+                "prob": 0.02571786195039749
+              },
+              {
+                "token": "…",
+                "prob": 0.01072080060839653
+              },
+              {
+                "token": "​​",
+                "prob": 0.007368291262537241
+              },
+              {
+                "token": "…",
+                "prob": 0.003943962045013905
+              },
+              {
+                "token": "​​",
+                "prob": 0.003480534302070737
+              },
+              {
+                "token": "​",
+                "prob": 0.003480534302070737
+              }
+            ],
+            "18": [
+              {
+                "token": "alink",
+                "prob": 0.008683433756232262
+              },
+              {
+                "token": "FindObjectOfType",
+                "prob": 0.005266768857836723
+              },
+              {
+                "token": "odzi",
+                "prob": 0.004647907335311174
+              },
+              {
+                "token": "zych",
+                "prob": 0.004366304725408554
+              },
+              {
+                "token": "ksz",
+                "prob": 0.0036197935696691275
+              },
+              {
+                "token": "ogui",
+                "prob": 0.003194456920027733
+              },
+              {
+                "token": "agini",
+                "prob": 0.003194456920027733
+              },
+              {
+                "token": "rzy",
+                "prob": 0.003194456920027733
+              },
+              {
+                "token": "ynos",
+                "prob": 0.0030009145848453045
+              },
+              {
+                "token": "Erot",
+                "prob": 0.0028190980665385723
+              }
+            ],
+            "26": [
+              {
+                "token": "testing",
+                "prob": 0.2704302668571472
+              },
+              {
+                "token": "Testing",
+                "prob": 0.08779585361480713
+              },
+              {
+                "token": "initialization",
+                "prob": 0.06423281878232956
+              },
+              {
+                "token": "testing",
+                "prob": 0.04699373245239258
+              },
+              {
+                "token": "测试",
+                "prob": 0.03659875690937042
+              },
+              {
+                "token": "etest",
+                "prob": 0.025153934955596924
+              },
+              {
+                "token": "lke",
+                "prob": 0.019589902833104134
+              },
+              {
+                "token": "Testing",
+                "prob": 0.017288027331233025
+              },
+              {
+                "token": "agini",
+                "prob": 0.014332279562950134
+              },
+              {
+                "token": "venience",
+                "prob": 0.007671516388654709
+              }
+            ]
+          },
+          "judge": {
+            "accurate": false,
+            "confidence": 0.95,
+            "reason": "The documents are clearly test files, but the keyword 'initialization' is inaccurate. The code samples show repeated setup patterns (creating temp directories and execution environments) for testing p"
+          }
+        },
+        "2": {
+          "n_files": 3,
+          "sample_file": "generate-image-models.ts",
+          "concept_tokens": [
+            "epam",
+            "emble",
+            "agini"
+          ],
+          "model_final_top3": [
+            ":",
+            "\"",
+            ":"
+          ],
+          "lens_by_layer": {
+            "0": [
+              {
+                "token": ".",
+                "prob": 0.763536810874939
+              },
+              {
+                "token": "，",
+                "prob": 0.13268280029296875
+              },
+              {
+                "token": ".",
+                "prob": 0.029605533927679062
+              },
+              {
+                "token": ".",
+                "prob": 0.026126792654395103
+              },
+              {
+                "token": "​",
+                "prob": 0.007968221791088581
+              },
+              {
+                "token": ".",
+                "prob": 0.007031930610537529
+              },
+              {
+                "token": "：",
+                "prob": 0.0033216490410268307
+              },
+              {
+                "token": "",
+                "prob": 0.002586902817711234
+              },
+              {
+                "token": "،",
+                "prob": 0.0021446177270263433
+              },
+              {
+                "token": "''",
+                "prob": 0.001892618602141738
+              }
+            ],
+            "9": [
+              {
+                "token": "[…]",
+                "prob": 0.6210303902626038
+              },
+              {
+                "token": "[…]",
+                "prob": 0.2588839828968048
+              },
+              {
+                "token": "[…]",
+                "prob": 0.05776482820510864
+              },
+              {
+                "token": "…",
+                "prob": 0.021250490099191666
+              },
+              {
+                "token": "…",
+                "prob": 0.018753493204712868
+              },
+              {
+                "token": "",
+                "prob": 0.010038021020591259
+              },
+              {
+                "token": "…",
+                "prob": 0.001976603642106056
+              },
+              {
+                "token": "—",
+                "prob": 0.001976603642106056
+              },
+              {
+                "token": "…",
+                "prob": 0.0015393805224448442
+              },
+              {
+                "token": "​​",
+                "prob": 0.0011988707119598985
+              }
+            ],
+            "18": [
+              {
+                "token": "alink",
+                "prob": 0.013003223575651646
+              },
+              {
+                "token": "ynos",
+                "prob": 0.0039657591842114925
+              },
+              {
+                "token": "rzy",
+                "prob": 0.003725486109033227
+              },
+              {
+                "token": "odzi",
+                "prob": 0.003725486109033227
+              },
+              {
+                "token": "ksz",
+                "prob": 0.0034997703041881323
+              },
+              {
+                "token": "agini",
+                "prob": 0.0032877298071980476
+              },
+              {
+                "token": "zych",
+                "prob": 0.0032877298071980476
+              },
+              {
+                "token": "Erot",
+                "prob": 0.0030885362066328526
+              },
+              {
+                "token": "amac",
+                "prob": 0.002560486551374197
+              },
+              {
+                "token": "相关新闻",
+                "prob": 0.0022596213966608047
+              }
+            ],
+            "26": [
+              {
+                "token": "epam",
+                "prob": 0.03765207156538963
+              },
+              {
+                "token": ":",
+                "prob": 0.03121466189622879
+              },
+              {
+                "token": "emble",
+                "prob": 0.021453505381941795
+              },
+              {
+                "token": "agini",
+                "prob": 0.013012208044528961
+              },
+              {
+                "token": "yny",
+                "prob": 0.01148323342204094
+              },
+              {
+                "token": "Ī",
+                "prob": 0.01148323342204094
+              },
+              {
+                "token": "iare",
+                "prob": 0.01148323342204094
+              },
+              {
+                "token": "afil",
+                "prob": 0.010133917443454266
+              },
+              {
+                "token": "：\"",
+                "prob": 0.010133917443454266
+              },
+              {
+                "token": "vanished",
+                "prob": 0.008943150751292706
+              }
+            ]
+          },
+          "judge": {
+            "accurate": false,
+            "confidence": 0.95,
+            "reason": "The concept keywords 'epam', 'emble', and 'agini' appear to be nonsensical or unrelated to the document samples, which are clearly about JavaScript/TypeScript code modules for generating models and im"
+          }
+        }
+      }
+    },
+    "all": {
+      "n_summaries": 80,
+      "n_clusters": 8,
+      "accuracy": 0.0,
+      "clusters": {
+        "9": {
+          "n_files": 11,
+          "sample_file": "agent-loop.ts",
+          "concept_tokens": [
+            "related",
+            "epam"
+          ],
+          "model_final_top3": [
+            ":",
+            "\"",
+            "`"
+          ],
+          "lens_by_layer": {
+            "0": [
+              {
+                "token": ".",
+                "prob": 0.7216671109199524
+              },
+              {
+                "token": "，",
+                "prob": 0.12540693581104279
+              },
+              {
+                "token": ".",
+                "prob": 0.05564899370074272
+              },
+              {
+                "token": ".",
+                "prob": 0.02978675812482834
+              },
+              {
+                "token": "​",
+                "prob": 0.018066581338644028
+              },
+              {
+                "token": ".",
+                "prob": 0.009670344181358814
+              },
+              {
+                "token": "：",
+                "prob": 0.0037869615480303764
+              },
+              {
+                "token": "''",
+                "prob": 0.002445046091452241
+              },
+              {
+                "token": "،",
+                "prob": 0.002445046091452241
+              },
+              {
+                "token": ",",
+                "prob": 0.002157745650038123
+              }
+            ],
+            "9": [
+              {
+                "token": "[…]",
+                "prob": 0.6925967335700989
+              },
+              {
+                "token": "[…]",
+                "prob": 0.1203552633523941
+              },
+              {
+                "token": "[…]",
+                "prob": 0.07299915701150894
+              },
+              {
+                "token": "…",
+                "prob": 0.05685180053114891
+              },
+              {
+                "token": "…",
+                "prob": 0.020914608612656593
+              },
+              {
+                "token": "",
+                "prob": 0.012685352005064487
+              },
+              {
+                "token": "…",
+                "prob": 0.00987936183810234
+              },
+              {
+                "token": "…",
+                "prob": 0.002204383723437786
+              },
+              {
+                "token": "…\"",
+                "prob": 0.0015150492545217276
+              },
+              {
+                "token": "‘",
+                "prob": 0.0015150492545217276
+              }
+            ],
+            "18": [
+              {
+                "token": "alink",
+                "prob": 0.013908568769693375
+              },
+              {
+                "token": "ynos",
+                "prob": 0.004806673154234886
+              },
+              {
+                "token": "rzy",
+                "prob": 0.004515450913459063
+              },
+              {
+                "token": "agini",
+                "prob": 0.0035166367888450623
+              },
+              {
+                "token": "odzi",
+                "prob": 0.0035166367888450623
+              },
+              {
+                "token": "Erot",
+                "prob": 0.0035166367888450623
+              },
+              {
+                "token": "amac",
+                "prob": 0.003103421302512288
+              },
+              {
+                "token": "相关新闻",
+                "prob": 0.0029153944924473763
+              },
+              {
+                "token": "utow",
+                "prob": 0.0029153944924473763
+              },
+              {
+                "token": "�",
+                "prob": 0.002738759620115161
+              }
+            ],
+            "26": [
+              {
+                "token": "围绕",
+                "prob": 0.16780927777290344
+              },
+              {
+                "token": "related",
+                "prob": 0.06571505218744278
+              },
+              {
+                "token": "epam",
+                "prob": 0.022710515186190605
+              },
+              {
+                "token": "NCY",
+                "prob": 0.02004196122288704
+              },
+              {
+                "token": ":",
+                "prob": 0.01882767863571644
+              },
+              {
+                "token": "一致好评",
+                "prob": 0.017686966806650162
+              },
+              {
+                "token": "emble",
+                "prob": 0.009467151947319508
+              },
+              {
+                "token": "gregator",
+                "prob": 0.007848544977605343
+              },
+              {
+                "token": "stery",
+                "prob": 0.0073730251751840115
+              },
+              {
+                "token": "akit",
+                "prob": 0.006506671663373709
+              }
+            ]
+          },
+          "judge": {
+            "accurate": false,
+            "confidence": 0.1,
+            "reason": "The documents are about software agent programming modules and functions (agent-loop, agent, agent-harness) with types and APIs for message handling, not about the concept keyword 'related' or the com"
+          }
+        },
+        "8": {
+          "n_files": 10,
+          "sample_file": "anthropic-messages.lazy.ts",
+          "concept_tokens": [
+            "alink",
+            "odzi",
+            "zych"
+          ],
+          "model_final_top3": [
+            "\"",
+            ":",
+            "`"
+          ],
+          "lens_by_layer": {
+            "0": [
+              {
+                "token": ".",
+                "prob": 0.6858105063438416
+              },
+              {
+                "token": "，",
+                "prob": 0.1191760003566742
+              },
+              {
+                "token": ".",
+                "prob": 0.07228389382362366
+              },
+              {
+                "token": ".",
+                "prob": 0.046669989824295044
+              },
+              {
+                "token": "​",
+                "prob": 0.030132411047816277
+              },
+              {
+                "token": ".",
+                "prob": 0.009782561101019382
+              },
+              {
+                "token": "：",
+                "prob": 0.0026329406537115574
+              },
+              {
+                "token": ",",
+                "prob": 0.0024734188336879015
+              },
+              {
+                "token": "،",
+                "prob": 0.0023235620465129614
+              },
+              {
+                "token": "",
+                "prob": 0.0019263005815446377
+              }
+            ],
+            "9": [
+              {
+                "token": "[…]",
+                "prob": 0.48827263712882996
+              },
+              {
+                "token": "[…]",
+                "prob": 0.2613535225391388
+              },
+              {
+                "token": "[…]",
+                "prob": 0.10894835740327835
+              },
+              {
+                "token": "",
+                "prob": 0.08484905958175659
+              },
+              {
+                "token": "…",
+                "prob": 0.01670777052640915
+              },
+              {
+                "token": "…",
+                "prob": 0.007892192341387272
+              },
+              {
+                "token": "…",
+                "prob": 0.005424218717962503
+              },
+              {
+                "token": "—",
+                "prob": 0.004786856472492218
+              },
+              {
+                "token": "​​",
+                "prob": 0.0032899552024900913
+              },
+              {
+                "token": "​",
+                "prob": 0.0025622197426855564
+              }
+            ],
+            "18": [
+              {
+                "token": "alink",
+                "prob": 0.012206478975713253
+              },
+              {
+                "token": "ksz",
+                "prob": 0.005416592117398977
+              },
+              {
+                "token": "odzi",
+                "prob": 0.004490512888878584
+              },
+              {
+                "token": "zych",
+                "prob": 0.003962863236665726
+              },
+              {
+                "token": "rzy",
+                "prob": 0.003962863236665726
+              },
+              {
+                "token": "ynos",
+                "prob": 0.003962863236665726
+              },
+              {
+                "token": "agini",
+                "prob": 0.003497214987874031
+              },
+              {
+                "token": "�",
+                "prob": 0.0032853293232619762
+              },
+              {
+                "token": "Erot",
+                "prob": 0.0032853293232619762
+              },
+              {
+                "token": "amac",
+                "prob": 0.003086281241849065
+              }
+            ],
+            "26": [
+              {
+                "token": ".lazy",
+                "prob": 0.08183412253856659
+              },
+              {
+                "token": "_lazy",
+                "prob": 0.08183412253856659
+              },
+              {
+                "token": "lazy",
+                "prob": 0.046627677977085114
+              },
+              {
+                "token": "lazy",
+                "prob": 0.023445868864655495
+              },
+              {
+                "token": "azy",
+                "prob": 0.015137790702283382
+              },
+              {
+                "token": "一致好评",
+                "prob": 0.014220638200640678
+              },
+              {
+                "token": "gregator",
+                "prob": 0.013359053060412407
+              },
+              {
+                "token": "epam",
+                "prob": 0.012549669481813908
+              },
+              {
+                "token": "agini",
+                "prob": 0.012549669481813908
+              },
+              {
+                "token": ":async",
+                "prob": 0.011075044050812721
+              }
+            ]
+          },
+          "judge": {
+            "accurate": false,
+            "confidence": 0.0,
+            "reason": "The keywords 'alink', 'odzi', 'zych' do not correspond to any recognizable concept or term in the provided document samples, which are clearly about programming API modules, lazy loading, and provider"
+          }
+        },
+        "7": {
+          "n_files": 5,
+          "sample_file": "jsonl-repo.ts",
+          "concept_tokens": [
+            "epam",
+            "sexy",
+            "inox"
+          ],
+          "model_final_top3": [
+            "\"",
+            ":",
+            "`"
+          ],
+          "lens_by_layer": {
+            "0": [
+              {
+                "token": ".",
+                "prob": 0.8211468458175659
+              },
+              {
+                "token": "，",
+                "prob": 0.07637856155633926
+              },
+              {
+                "token": ".",
+                "prob": 0.03607867658138275
+              },
+              {
+                "token": ".",
+                "prob": 0.02188282273709774
+              },
+              {
+                "token": "​",
+                "prob": 0.009710444137454033
+              },
+              {
+                "token": ".",
+                "prob": 0.007104312069714069
+              },
+              {
+                "token": "",
+                "prob": 0.003572272602468729
+              },
+              {
+                "token": "：",
+                "prob": 0.002613530494272709
+              },
+              {
+                "token": ",",
+                "prob": 0.0013989220606163144
+              },
+              {
+                "token": "",
+                "prob": 0.001314165536314249
+              }
+            ],
+            "9": [
+              {
+                "token": "[…]",
+                "prob": 0.5447471737861633
+              },
+              {
+                "token": "[…]",
+                "prob": 0.13773365318775177
+              },
+              {
+                "token": "",
+                "prob": 0.10726708173751831
+              },
+              {
+                "token": "[…]",
+                "prob": 0.0946628674864769
+              },
+              {
+                "token": "…",
+                "prob": 0.04471557214856148
+              },
+              {
+                "token": "…",
+                "prob": 0.012811225838959217
+              },
+              {
+                "token": "—",
+                "prob": 0.009977392852306366
+              },
+              {
+                "token": "…",
+                "prob": 0.007770400959998369
+              },
+              {
+                "token": "​​",
+                "prob": 0.006857355125248432
+              },
+              {
+                "token": "​​",
+                "prob": 0.004712986294180155
+              }
+            ],
+            "18": [
+              {
+                "token": "alink",
+                "prob": 0.014073334634304047
+              },
+              {
+                "token": "ynos",
+                "prob": 0.005177290644496679
+              },
+              {
+                "token": "odzi",
+                "prob": 0.0037877866998314857
+              },
+              {
+                "token": "�",
+                "prob": 0.0037877866998314857
+              },
+              {
+                "token": "rzy",
+                "prob": 0.0035582962445914745
+              },
+              {
+                "token": "agini",
+                "prob": 0.003342709969729185
+              },
+              {
+                "token": "zych",
+                "prob": 0.003342709969729185
+              },
+              {
+                "token": "Erot",
+                "prob": 0.003342709969729185
+              },
+              {
+                "token": "ksz",
+                "prob": 0.0031401854939758778
+              },
+              {
+                "token": "amac",
+                "prob": 0.0031401854939758778
+              }
+            ],
+            "26": [
+              {
+                "token": "\"data",
+                "prob": 0.021250875666737556
+              },
+              {
+                "token": "epam",
+                "prob": 0.019963350147008896
+              },
+              {
+                "token": "sexy",
+                "prob": 0.017617594450712204
+              },
+              {
+                "token": "inox",
+                "prob": 0.016550198197364807
+              },
+              {
+                "token": "条评论",
+                "prob": 0.014605499804019928
+              },
+              {
+                "token": "：\"",
+                "prob": 0.013720597140491009
+              },
+              {
+                "token": "venient",
+                "prob": 0.012108384631574154
+              },
+              {
+                "token": "agini",
+                "prob": 0.010685611516237259
+              },
+              {
+                "token": "serialization",
+                "prob": 0.010038202628493309
+              },
+              {
+                "token": "NCY",
+                "prob": 0.009430019184947014
+              }
+            ]
+          },
+          "judge": {
+            "accurate": false,
+            "confidence": 0.1,
+            "reason": "The keywords 'epam', 'sexy', and 'inox' do not appear in the document samples and are unrelated to the technical content about TypeScript/JavaScript repository and storage system implementations."
+          }
+        },
+        "6": {
+          "n_files": 5,
+          "sample_file": "repo-utils.ts",
+          "concept_tokens": [
+            "epam",
+            "related",
+            "agini"
+          ],
+          "model_final_top3": [
+            ":",
+            "\"",
+            "related"
+          ],
+          "lens_by_layer": {
+            "0": [
+              {
+                "token": ".",
+                "prob": 0.7630374431610107
+              },
+              {
+                "token": "，",
+                "prob": 0.11701558530330658
+              },
+              {
+                "token": ".",
+                "prob": 0.03798939660191536
+              },
+              {
+                "token": ".",
+                "prob": 0.03149431571364403
+              },
+              {
+                "token": ".",
+                "prob": 0.010224707424640656
+              },
+              {
+                "token": "​",
+                "prob": 0.008476580493152142
+              },
+              {
+                "token": "：",
+                "prob": 0.0029294276610016823
+              },
+              {
+                "token": ",",
+                "prob": 0.0027519427239894867
+              },
+              {
+                "token": "،",
+                "prob": 0.0021432151552289724
+              },
+              {
+                "token": "",
+                "prob": 0.0017767876852303743
+              }
+            ],
+            "9": [
+              {
+                "token": "[…]",
+                "prob": 0.4620828628540039
+              },
+              {
+                "token": "[…]",
+                "prob": 0.40778669714927673
+              },
+              {
+                "token": "…",
+                "prob": 0.033473171293735504
+              },
+              {
+                "token": "[…]",
+                "prob": 0.033473171293735504
+              },
+              {
+                "token": "",
+                "prob": 0.026068931445479393
+              },
+              {
+                "token": "…",
+                "prob": 0.02300575003027916
+              },
+              {
+                "token": "…",
+                "prob": 0.003113489830866456
+              },
+              {
+                "token": "—",
+                "prob": 0.0027476451359689236
+              },
+              {
+                "token": "…",
+                "prob": 0.002139868214726448
+              },
+              {
+                "token": "​",
+                "prob": 0.0010108022252097726
+              }
+            ],
+            "18": [
+              {
+                "token": "alink",
+                "prob": 0.017205925658345222
+              },
+              {
+                "token": "rzy",
+                "prob": 0.006329706404358149
+              },
+              {
+                "token": "相关新闻",
+                "prob": 0.004350339062511921
+              },
+              {
+                "token": "agini",
+                "prob": 0.004350339062511921
+              },
+              {
+                "token": "ynos",
+                "prob": 0.004086765460669994
+              },
+              {
+                "token": "ksz",
+                "prob": 0.0038391610141843557
+              },
+              {
+                "token": "FindObjectOfType",
+                "prob": 0.003606557846069336
+              },
+              {
+                "token": "odzi",
+                "prob": 0.003606557846069336
+              },
+              {
+                "token": "zych",
+                "prob": 0.003388047683984041
+              },
+              {
+                "token": "Erot",
+                "prob": 0.003388047683984041
+              }
+            ],
+            "26": [
+              {
+                "token": "围绕",
+                "prob": 0.06906646490097046
+              },
+              {
+                "token": "epam",
+                "prob": 0.057258106768131256
+              },
+              {
+                "token": "related",
+                "prob": 0.03262468799948692
+              },
+              {
+                "token": "NCY",
+                "prob": 0.02242259867489338
+              },
+              {
+                "token": "agini",
+                "prob": 0.012776011601090431
+              },
+              {
+                "token": "EFR",
+                "prob": 0.00878081563860178
+              },
+              {
+                "token": "emble",
+                "prob": 0.00878081563860178
+              },
+              {
+                "token": "reten",
+                "prob": 0.0077490429393947124
+              },
+              {
+                "token": "：\"",
+                "prob": 0.0077490429393947124
+              },
+              {
+                "token": "sexy",
+                "prob": 0.0077490429393947124
+              }
+            ]
+          },
+          "judge": {
+            "accurate": false,
+            "confidence": 0.1,
+            "reason": "The keywords 'epam', 'related', and 'agini' do not match the content of the documents, which focus on session management, repo utilities, and message creation for a conversational AI system."
+          }
+        },
+        "10": {
+          "n_files": 4,
+          "sample_file": "branch-summarization.ts",
+          "concept_tokens": [
+            "agini",
+            "summaries",
+            "summ",
+            "epam"
+          ],
+          "model_final_top3": [
+            "\"",
+            ":",
+            "summaries"
+          ],
+          "lens_by_layer": {
+            "0": [
+              {
+                "token": ".",
+                "prob": 0.8419477939605713
+              },
+              {
+                "token": ".",
+                "prob": 0.05382391810417175
+              },
+              {
+                "token": "，",
+                "prob": 0.04749944433569908
+              },
+              {
+                "token": ".",
+                "prob": 0.013608818873763084
+              },
+              {
+                "token": ".",
+                "prob": 0.009956425055861473
+              },
+              {
+                "token": "​",
+                "prob": 0.008254165761172771
+              },
+              {
+                "token": "''",
+                "prob": 0.0028525632806122303
+              },
+              {
+                "token": "",
+                "prob": 0.0019605362322181463
+              },
+              {
+                "token": ",",
+                "prob": 0.0015268671559169888
+              },
+              {
+                "token": "",
+                "prob": 0.0015268671559169888
+              }
+            ],
+            "9": [
+              {
+                "token": "[…]",
+                "prob": 0.7375168800354004
+              },
+              {
+                "token": "[…]",
+                "prob": 0.14522568881511688
+              },
+              {
+                "token": "[…]",
+                "prob": 0.05342554673552513
+              },
+              {
+                "token": "",
+                "prob": 0.03671880066394806
+              },
+              {
+                "token": "…",
+                "prob": 0.01530667394399643
+              },
+              {
+                "token": "…",
+                "prob": 0.0020715331193059683
+              },
+              {
+                "token": "…",
+                "prob": 0.0016133117023855448
+              },
+              {
+                "token": "",
+                "prob": 0.0016133117023855448
+              },
+              {
+                "token": "​​",
+                "prob": 0.0008112239884212613
+              },
+              {
+                "token": "…\"",
+                "prob": 0.000762074429076165
+              }
+            ],
+            "18": [
+              {
+                "token": "alink",
+                "prob": 0.018610412254929543
+              },
+              {
+                "token": "odzi",
+                "prob": 0.005008924752473831
+              },
+              {
+                "token": "ynos",
+                "prob": 0.004705449100583792
+              },
+              {
+                "token": "�",
+                "prob": 0.0034425801131874323
+              },
+              {
+                "token": "ksz",
+                "prob": 0.0034425801131874323
+              },
+              {
+                "token": "zych",
+                "prob": 0.003234004834666848
+              },
+              {
+                "token": "rzy",
+                "prob": 0.003234004834666848
+              },
+              {
+                "token": "Erot",
+                "prob": 0.003038066206499934
+              },
+              {
+                "token": "相关新闻",
+                "prob": 0.0028539991471916437
+              },
+              {
+                "token": "amac",
+                "prob": 0.0026810842100530863
+              }
+            ],
+            "26": [
+              {
+                "token": "agini",
+                "prob": 0.05069104954600334
+              },
+              {
+                "token": "summaries",
+                "prob": 0.047619834542274475
+              },
+              {
+                "token": "summ",
+                "prob": 0.023944756016135216
+              },
+              {
+                "token": "epam",
+                "prob": 0.018648196011781693
+              },
+              {
+                "token": "__,__",
+                "prob": 0.018648196011781693
+              },
+              {
+                "token": "IFn",
+                "prob": 0.01452322956174612
+              },
+              {
+                "token": "incy",
+                "prob": 0.013643311336636543
+              },
+              {
+                "token": "readcr",
+                "prob": 0.01281670480966568
+              },
+              {
+                "token": "SURE",
+                "prob": 0.01204017922282219
+              },
+              {
+                "token": "inox",
+                "prob": 0.011310702189803123
+              }
+            ]
+          },
+          "judge": {
+            "accurate": false,
+            "confidence": 0.9,
+            "reason": "The keywords 'agini', 'summaries', 'summ', and 'epam' do not match the document content. The documents are about branch summarization, compaction, and related code structures, with no reference to 'ag"
+          }
+        },
+        "0": {
+          "n_files": 4,
+          "sample_file": "index.ts",
+          "concept_tokens": [
+            "aternity",
+            "likely"
+          ],
+          "model_final_top3": [
+            ":",
+            "related",
+            "\""
+          ],
+          "lens_by_layer": {
+            "0": [
+              {
+                "token": ".",
+                "prob": 0.9242814183235168
+              },
+              {
+                "token": ".",
+                "prob": 0.035838279873132706
+              },
+              {
+                "token": "，",
+                "prob": 0.012385377660393715
+              },
+              {
+                "token": ".",
+                "prob": 0.006227759178727865
+              },
+              {
+                "token": ".",
+                "prob": 0.004850183613598347
+              },
+              {
+                "token": "​",
+                "prob": 0.004020943772047758
+              },
+              {
+                "token": "''",
+                "prob": 0.0011520195985212922
+              },
+              {
+                "token": "﻿",
+                "prob": 0.0009550577960908413
+              },
+              {
+                "token": "",
+                "prob": 0.000897193793207407
+              },
+              {
+                "token": ",",
+                "prob": 0.0005792718729935586
+              }
+            ],
+            "9": [
+              {
+                "token": "[…]",
+                "prob": 0.38680535554885864
+              },
+              {
+                "token": "[…]",
+                "prob": 0.34135451912879944
+              },
+              {
+                "token": "[…]",
+                "prob": 0.18271391093730927
+              },
+              {
+                "token": "",
+                "prob": 0.019257904961705208
+              },
+              {
+                "token": "​​",
+                "prob": 0.006252126302570105
+              },
+              {
+                "token": "—",
+                "prob": 0.006252126302570105
+              },
+              {
+                "token": "​",
+                "prob": 0.004574153572320938
+              },
+              {
+                "token": "…",
+                "prob": 0.0037921061739325523
+              },
+              {
+                "token": "：\"",
+                "prob": 0.0037921061739325523
+              },
+              {
+                "token": "[…",
+                "prob": 0.00334652210585773
+              }
+            ],
+            "18": [
+              {
+                "token": "alink",
+                "prob": 0.006040965672582388
+              },
+              {
+                "token": "zych",
+                "prob": 0.0041518909856677055
+              },
+              {
+                "token": "ynos",
+                "prob": 0.003900340758264065
+              },
+              {
+                "token": "�",
+                "prob": 0.003900340758264065
+              },
+              {
+                "token": "ksz",
+                "prob": 0.0036640309263020754
+              },
+              {
+                "token": "zyst",
+                "prob": 0.003037588205188513
+              },
+              {
+                "token": "Erot",
+                "prob": 0.0028535500168800354
+              },
+              {
+                "token": "ogui",
+                "prob": 0.0026806623209267855
+              },
+              {
+                "token": "相关新闻",
+                "prob": 0.0026806623209267855
+              },
+              {
+                "token": "utow",
+                "prob": 0.0026806623209267855
+              }
+            ],
+            "26": [
+              {
+                "token": "aternity",
+                "prob": 0.05009380355477333
+              },
+              {
+                "token": "likely",
+                "prob": 0.023662636056542397
+              },
+              {
+                "token": "tsy",
+                "prob": 0.022228989750146866
+              },
+              {
+                "token": "Ī",
+                "prob": 0.018428480252623558
+              },
+              {
+                "token": "条评论",
+                "prob": 0.016263077035546303
+              },
+              {
+                "token": "epam",
+                "prob": 0.016263077035546303
+              },
+              {
+                "token": "微软雅黑",
+                "prob": 0.01435211580246687
+              },
+              {
+                "token": "版权归",
+                "prob": 0.013482564128935337
+              },
+              {
+                "token": "Ό",
+                "prob": 0.012665697373449802
+              },
+              {
+                "token": "rawer",
+                "prob": 0.012665697373449802
+              }
+            ]
+          },
+          "judge": {
+            "accurate": false,
+            "confidence": 1.0,
+            "reason": "The keywords 'aternity' and 'likely' do not relate to the document samples, which are module files (TypeScript and declaration files) with no symbols, clearly about code structure or type definitions."
+          }
+        },
+        "5": {
+          "n_files": 4,
+          "sample_file": "azure-openai-responses.ts",
+          "concept_tokens": [
+            "oice",
+            "iare",
+            "redni"
+          ],
+          "model_final_top3": [
+            ":",
+            "\"",
+            "Open"
+          ],
+          "lens_by_layer": {
+            "0": [
+              {
+                "token": ".",
+                "prob": 0.6194749474525452
+              },
+              {
+                "token": "，",
+                "prob": 0.22789210081100464
+              },
+              {
+                "token": ".",
+                "prob": 0.039601705968379974
+              },
+              {
+                "token": ".",
+                "prob": 0.03720236197113991
+              },
+              {
+                "token": "​",
+                "prob": 0.013685984537005424
+              },
+              {
+                "token": ".",
+                "prob": 0.010658655315637589
+              },
+              {
+                "token": "：",
+                "prob": 0.006073118653148413
+              },
+              {
+                "token": "''",
+                "prob": 0.004443188663572073
+              },
+              {
+                "token": "،",
+                "prob": 0.004173989407718182
+              },
+              {
+                "token": ",",
+                "prob": 0.0028687380254268646
+              }
+            ],
+            "9": [
+              {
+                "token": "[…]",
+                "prob": 0.500872790813446
+              },
+              {
+                "token": "[…]",
+                "prob": 0.20879483222961426
+              },
+              {
+                "token": "[…]",
+                "prob": 0.16260959208011627
+              },
+              {
+                "token": "",
+                "prob": 0.04658842831850052
+              },
+              {
+                "token": "…",
+                "prob": 0.019420946016907692
+              },
+              {
+                "token": "…",
+                "prob": 0.015125048346817493
+              },
+              {
+                "token": "…",
+                "prob": 0.013347807340323925
+              },
+              {
+                "token": "…",
+                "prob": 0.005564194172620773
+              },
+              {
+                "token": "—",
+                "prob": 0.004333398770540953
+              },
+              {
+                "token": "​​",
+                "prob": 0.002046952722594142
+              }
+            ],
+            "18": [
+              {
+                "token": "alink",
+                "prob": 0.014826381579041481
+              },
+              {
+                "token": "ynos",
+                "prob": 0.005123860668390989
+              },
+              {
+                "token": "ksz",
+                "prob": 0.004247829783707857
+              },
+              {
+                "token": "odzi",
+                "prob": 0.004247829783707857
+              },
+              {
+                "token": "Erot",
+                "prob": 0.003308213083073497
+              },
+              {
+                "token": "zych",
+                "prob": 0.0031077784951776266
+              },
+              {
+                "token": "agini",
+                "prob": 0.0029194876551628113
+              },
+              {
+                "token": "amac",
+                "prob": 0.0029194876551628113
+              },
+              {
+                "token": "utow",
+                "prob": 0.0029194876551628113
+              },
+              {
+                "token": "rzy",
+                "prob": 0.0027426048181951046
+              }
+            ],
+            "26": [
+              {
+                "token": "APIs",
+                "prob": 0.042462244629859924
+              },
+              {
+                "token": "oice",
+                "prob": 0.03306962922215462
+              },
+              {
+                "token": "iare",
+                "prob": 0.029183845967054367
+              },
+              {
+                "token": "围绕",
+                "prob": 0.02419425919651985
+              },
+              {
+                "token": "redni",
+                "prob": 0.02272840216755867
+              },
+              {
+                "token": "venient",
+                "prob": 0.02272840216755867
+              },
+              {
+                "token": "akit",
+                "prob": 0.02135135792195797
+              },
+              {
+                "token": "/WebAPI",
+                "prob": 0.013785472139716148
+              },
+              {
+                "token": "SURE",
+                "prob": 0.013785472139716148
+              },
+              {
+                "token": ":",
+                "prob": 0.011428558267652988
+              }
+            ]
+          },
+          "judge": {
+            "accurate": false,
+            "confidence": 0.0,
+            "reason": "The concept keywords 'oice', 'iare', 'redni' appear to be garbled or nonsensical strings, while the document samples clearly relate to OpenAI, Azure, and codex API modules. The keywords do not match t"
+          }
+        },
+        "1": {
+          "n_files": 3,
+          "sample_file": "system-prompt.ts",
+          "concept_tokens": [
+            "epam",
+            "related",
+            "likely"
+          ],
+          "model_final_top3": [
+            ":",
+            "\"",
+            "related"
+          ],
+          "lens_by_layer": {
+            "0": [
+              {
+                "token": ".",
+                "prob": 0.8902332186698914
+              },
+              {
+                "token": ".",
+                "prob": 0.04432209953665733
+              },
+              {
+                "token": "，",
+                "prob": 0.03451808914542198
+              },
+              {
+                "token": ".",
+                "prob": 0.010527422651648521
+              },
+              {
+                "token": ".",
+                "prob": 0.0056349229998886585
+              },
+              {
+                "token": "​",
+                "prob": 0.0018293915782123804
+              },
+              {
+                "token": ",",
+                "prob": 0.0009198758634738624
+              },
+              {
+                "token": "：",
+                "prob": 0.0008641434251330793
+              },
+              {
+                "token": "﻿",
+                "prob": 0.0007626038859598339
+              },
+              {
+                "token": "''",
+                "prob": 0.0007164000417105854
+              }
+            ],
+            "9": [
+              {
+                "token": "[…]",
+                "prob": 0.5829642415046692
+              },
+              {
+                "token": "[…]",
+                "prob": 0.31203827261924744
+              },
+              {
+                "token": "[…]",
+                "prob": 0.08940046280622482
+              },
+              {
+                "token": "[…",
+                "prob": 0.003927981946617365
+              },
+              {
+                "token": "",
+                "prob": 0.0016374265542253852
+              },
+              {
+                "token": "…",
+                "prob": 0.0016374265542253852
+              },
+              {
+                "token": "…",
+                "prob": 0.0014450239250436425
+              },
+              {
+                "token": "[…",
+                "prob": 0.0011253857519477606
+              },
+              {
+                "token": "​​",
+                "prob": 0.0007734655519016087
+              },
+              {
+                "token": "​",
+                "prob": 0.000565879512578249
+              }
+            ],
+            "18": [
+              {
+                "token": "alink",
+                "prob": 0.014455496333539486
+              },
+              {
+                "token": "zych",
+                "prob": 0.004408677574247122
+              },
+              {
+                "token": "odzi",
+                "prob": 0.004141569137573242
+              },
+              {
+                "token": "ksz",
+                "prob": 0.004141569137573242
+              },
+              {
+                "token": "相关新闻",
+                "prob": 0.004141569137573242
+              },
+              {
+                "token": "ynos",
+                "prob": 0.003890644060447812
+              },
+              {
+                "token": "rzy",
+                "prob": 0.003890644060447812
+              },
+              {
+                "token": "agini",
+                "prob": 0.003890644060447812
+              },
+              {
+                "token": "Erot",
+                "prob": 0.0034334813244640827
+              },
+              {
+                "token": "ogui",
+                "prob": 0.003225457388907671
+              }
+            ],
+            "26": [
+              {
+                "token": ":",
+                "prob": 0.049431659281253815
+              },
+              {
+                "token": "epam",
+                "prob": 0.03849741443991661
+              },
+              {
+                "token": "related",
+                "prob": 0.033973850309848785
+              },
+              {
+                "token": "likely",
+                "prob": 0.01935771480202675
+              },
+              {
+                "token": "围绕",
+                "prob": 0.01935771480202675
+              },
+              {
+                "token": "anuts",
+                "prob": 0.016048109158873558
+              },
+              {
+                "token": ":",
+                "prob": 0.01416240818798542
+              },
+              {
+                "token": "üc",
+                "prob": 0.012498280964791775
+              },
+              {
+                "token": "iare",
+                "prob": 0.011741047725081444
+              },
+              {
+                "token": "rawer",
+                "prob": 0.010361438617110252
+              }
+            ]
+          },
+          "judge": {
+            "accurate": false,
+            "confidence": 0.8,
+            "reason": "The keywords 'epam', 'related', 'likely' are too vague and do not meaningfully describe the document cluster, which appears to be about software code (TypeScript/JavaScript modules, functions, and tes"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "method": "bpe_completion_autoregressive_vs_bm25",
+  "model": "qwen2.5-7b-it",
+  "layer": 26,
+  "corpus": "both",
+  "n_docs": 150,
+  "n_prefixes_total": 865,
+  "n_prefixes_unique": 269,
+  "cases": [
+    {
+      "prefix": "Skin",
+      "doc_excerpt": "Here is a basal cell lesion pictured on a person's cheek. Skin basics Did you know that your skin is your body’s largest organ and if you measured it it would stretch to about 20 square feet? Working ",
+      "bm25": "skinned",
+      "autoregressive": null,
+      "prob": 0.9557539820671082,
+      "judge": "bm25"
+    },
+    {
+      "prefix": "Bas",
+      "doc_excerpt": "This book is only about basal cell skin cancer. For more information on squamous cell skin cancer or melanoma, read the NCCN Guidelines for Patients, available at NCCN.org/patientguidelines and on the",
+      "bm25": "basal",
+      "autoregressive": "Basal",
+      "prob": 0.9296161532402039,
+      "judge": "tie"
+    },
+    {
+      "prefix": "Dys",
+      "doc_excerpt": "Additionally, a triglyceride-lowering effect was observed in MeSy patients treated with HSEP plus diet, and in individuals without MeSy treated with HSEP. Significant differences in total cholesterol,",
+      "bm25": "dysmenorrhea",
+      "autoregressive": "Dyslipidemia",
+      "prob": 0.9015713930130005,
+      "judge": "neither"
+    },
+    {
+      "prefix": "Gas",
+      "doc_excerpt": "MEASUREMENTS: All participants were polled for gaseous symptoms (including number of gas passages, impression of increased rectal gas, and abdominal bloating), and five were examined for breath hydrog",
+      "bm25": "gastrointestinal",
+      "autoregressive": null,
+      "prob": 0.7474191784858704,
+      "judge": "bm25"
+    },
+    {
+      "prefix": "blo",
+      "doc_excerpt": "However, a statistically significant (P < 0.05) increase in feelings of abdominal bloating (which the participants perceived as excessive gas in the bowel) was reported with both fiber preparations an",
+      "bm25": "blood",
+      "autoregressive": "bloating",
+      "prob": 0.7442575693130493,
+      "judge": "neither"
+    },
+    {
+      "prefix": "Lat",
+      "doc_excerpt": "Hit Reaction Time latencies (HRT) in the Continuous Performance Test (CPT) measure the speed of visual information processing. The latencies may involve different neuropsychological functions dependin",
+      "bm25": "latencies",
+      "autoregressive": "Latencies",
+      "prob": 0.7307907938957214,
+      "judge": "tie"
+    },
+    {
+      "prefix": "Mast",
+      "doc_excerpt": "This is a retrospective review of the medical records of all patients seen in mastalgia clinic in the University Hospital of Wales, Cardiff since 1973. A postal questionnaire was distributed to all pa",
+      "bm25": "mastalgia",
+      "autoregressive": "Mastalgia",
+      "prob": 0.6656605005264282,
+      "judge": "tie"
+    },
+    {
+      "prefix": "Grape",
+      "doc_excerpt": "Summary Grapefruit is a popular, tasty and nutritive fruit enjoyed globally. Biomedical evidence in the last 10 years has, however, shown that consumption of grapefruit or its juice is associated with",
+      "bm25": "grapefruit",
+      "autoregressive": "Grapefruit",
+      "prob": 0.6607133150100708,
+      "judge": "tie"
+    },
+    {
+      "prefix": "Flat",
+      "doc_excerpt": "In addition to causing embarrassment and unease, flatulence is linked to a variety of symptoms, some of which may be distressing. This review describes the origins of intestinal gas, its composition a",
+      "bm25": "flatulence",
+      "autoregressive": "Flatulence",
+      "prob": 0.6444496512413025,
+      "judge": "tie"
+    },
+    {
+      "prefix": "Toxic",
+      "doc_excerpt": "The results indicate that aqueous HS calyx extract induces testicular toxicity in rats.",
+      "bm25": "toxicity",
+      "autoregressive": "Toxicity",
+      "prob": 0.5365023612976074,
+      "judge": "tie"
+    },
+    {
+      "prefix": "Stat",
+      "doc_excerpt": "RESULTS: There was some evidence that statin use after a diagnosis of breast cancer had reduced mortality due to breast cancer and all causes (fully adjusted HR = 0.84 [95% confidence interval = 0.68-",
+      "bm25": "statin",
+      "autoregressive": "Statin",
+      "prob": 0.48684069514274597,
+      "judge": "tie"
+    },
+    {
+      "prefix": "dys",
+      "doc_excerpt": "If dysmenorrhea remains uncontrolled with any of these approaches, pelvic ultrasonography should be performed and referral for laparoscopy should be considered to rule out secondary causes of dysmenor",
+      "bm25": "dysmenorrhea",
+      "autoregressive": "dysmenorrhea",
+      "prob": 0.4602290093898773,
+      "judge": "tie"
+    },
+    {
+      "prefix": "phosph",
+      "doc_excerpt": "Although phosphorus is an essential nutrient, in excess it could be linked to tissue damage by a variety of mechanisms involved in the endocrine regulation of extracellular phosphate, specifically the",
+      "bm25": "phosphorus",
+      "autoregressive": "phosphorus",
+      "prob": 0.4525053799152374,
+      "judge": "tie"
+    },
+    {
+      "prefix": "Mort",
+      "doc_excerpt": "CONCLUSIONS: In this large population-based breast cancer cohort, there was some evidence of reduced mortality in statin users after breast cancer diagnosis. However, these associations were weak in m",
+      "bm25": "mortality",
+      "autoregressive": "Mortality",
+      "prob": 0.3893926441669464,
+      "judge": "tie"
+    },
+    {
+      "prefix": "Bias",
+      "doc_excerpt": "The risk decrease by post-diagnostic statin use was likely affected by healthy adherer bias; that is, the greater likelihood of dying cancer patients to discontinue statin use as the association was n",
+      "bm25": "bias",
+      "autoregressive": null,
+      "prob": 0.3864329159259796,
+      "judge": "bm25"
+    },
+    {
+      "prefix": "Lip",
+      "doc_excerpt": "The aim of the present study was to evaluate the effects of a Hibiscus sabdariffa extract powder (HSEP) and a recognized preventive treatment (diet) on the lipid profiles of individuals with and witho",
+      "bm25": "lipid",
+      "autoregressive": "Lipid",
+      "prob": 0.37088924646377563,
+      "judge": "tie"
+    },
+    {
+      "prefix": "Imm",
+      "doc_excerpt": "This might be a genetic counselor, medical geneticist, endocrinologist, oncologist, surgeon, or an oncology nurse. Weakened immune system When your immune system is weakened, your body has trouble fig",
+      "bm25": "immune",
+      "autoregressive": "Immune",
+      "prob": 0.22815701365470886,
+      "judge": "tie"
+    },
+    {
+      "prefix": "Cardio",
+      "doc_excerpt": "Taken together, these findings suggest that endothelial dysfunction mediated by acute postprandial hyperphosphatemia may contribute to the relationship between serum phosphorus level and the risk for ",
+      "bm25": "cardiovascular",
+      "autoregressive": "Cardiovascular",
+      "prob": 0.22338654100894928,
+      "judge": "tie"
+    },
+    {
+      "prefix": "risk",
+      "doc_excerpt": "In addition to providing color, melanin also protects our skin from harmful ultraviolet (UV) rays. Risk factors A risk factor is something that increases the chances of getting a disease. For example,",
+      "bm25": "risks",
+      "autoregressive": null,
+      "prob": 0.22046321630477905,
+      "judge": "bm25"
+    },
+    {
+      "prefix": "lact",
+      "doc_excerpt": "A significant increase in gas passages (to 19 +/- 12 times per day) and a subjective impression of increased rectal gas were reported with lactulose but not with either of the two fiber preparations. ",
+      "bm25": "lactulose",
+      "autoregressive": "lactulose",
+      "prob": 0.2048754245042801,
+      "judge": "tie"
+    }
+  ],
+  "summary": {
+    "n_cases": 20,
+    "bm25_wins": 4,
+    "auto_wins": 0,
+    "ties": 14,
+    "neither": 2,
+    "bm25_rate": 0.2,
+    "auto_rate": 0.0
+  }
+}

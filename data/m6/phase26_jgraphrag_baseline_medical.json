@@ -1,0 +1,420 @@
+{
+  "method": "jgraphrag_baseline_acc_timing",
+  "domain": "medical",
+  "n_chunks": 200,
+  "n_questions": 28,
+  "efficiency": {
+    "build_time_s": 55.3,
+    "extraction_time_per_chunk_s": 0.1726,
+    "vram_peak_gb": 5.76,
+    "n_concepts": 13,
+    "bpe_completions": {
+      "Skin": "skinned",
+      "odyn": "odynophagia",
+      "lung": "lungs",
+      "Lung": "lungs"
+    }
+  },
+  "results": {
+    "B0": {
+      "acc": 0.7142857142857143,
+      "recall": 0.7150974025974025,
+      "acc_by_level": {
+        "L1": 0.8571428571428571,
+        "L2": 0.7142857142857143,
+        "L3": 1.0,
+        "L4": 0.2857142857142857
+      },
+      "recall_by_level": {
+        "L1": 1.0,
+        "L2": 0.5952380952380951,
+        "L3": 1.0,
+        "L4": 0.26515151515151514
+      },
+      "n": 28
+    },
+    "JGR": {
+      "acc": 0.6428571428571429,
+      "recall": 0.7002840909090908,
+      "acc_by_level": {
+        "L1": 1.0,
+        "L2": 0.5714285714285714,
+        "L3": 0.7142857142857143,
+        "L4": 0.2857142857142857
+      },
+      "recall_by_level": {
+        "L1": 1.0,
+        "L2": 0.5,
+        "L3": 0.9285714285714286,
+        "L4": 0.3725649350649351
+      },
+      "n": 28
+    }
+  },
+  "per_query": [
+    {
+      "level": "L1",
+      "B0": {
+        "acc": true,
+        "recall": 1.0,
+        "answer": "The primary risk factor for basal cell carcinoma is exposure to UV radiation from the sun or other s"
+      },
+      "JGR": {
+        "acc": true,
+        "recall": 1.0,
+        "answer": "UV light exposure (from the sun or tanning beds)."
+      }
+    },
+    {
+      "level": "L1",
+      "B0": {
+        "acc": true,
+        "recall": 1.0,
+        "answer": "A family history of skin cancer increases the risk of developing basal cell carcinoma."
+      },
+      "JGR": {
+        "acc": true,
+        "recall": 1.0,
+        "answer": "Family history of skin cancer increases the risk of developing basal cell carcinoma."
+      }
+    },
+    {
+      "level": "L1",
+      "B0": {
+        "acc": true,
+        "recall": 1.0,
+        "answer": "Yes, older age increases the risk of basal cell carcinoma because sun exposure builds up over time."
+      },
+      "JGR": {
+        "acc": true,
+        "recall": 1.0,
+        "answer": "Yes, older age increases the risk of basal cell carcinoma because sun exposure builds up over time."
+      }
+    },
+    {
+      "level": "L1",
+      "B0": {
+        "acc": true,
+        "recall": 1.0,
+        "answer": "Basal cell carcinoma (BCC), also called basal cell skin cancer."
+      },
+      "JGR": {
+        "acc": true,
+        "recall": 1.0,
+        "answer": "Basal cell carcinoma (basal cell skin cancer)."
+      }
+    },
+    {
+      "level": "L1",
+      "B0": {
+        "acc": true,
+        "recall": 1.0,
+        "answer": "Fair skin increases the risk of developing BCC because it has less melanin to filter out harmful UV "
+      },
+      "JGR": {
+        "acc": true,
+        "recall": 1.0,
+        "answer": "Fair skin increases the risk of developing BCC because it has less melanin to filter harmful UV radi"
+      }
+    },
+    {
+      "level": "L1",
+      "B0": {
+        "acc": false,
+        "recall": 1.0,
+        "answer": "Basal cells."
+      },
+      "JGR": {
+        "acc": true,
+        "recall": 1.0,
+        "answer": "Basal cell carcinoma arises from basal cells in the lower part of the epidermis."
+      }
+    },
+    {
+      "level": "L2",
+      "B0": {
+        "acc": true,
+        "recall": 1.0,
+        "answer": "A patient with fair skin and a history of organ transplant is at particularly high risk because fair"
+      },
+      "JGR": {
+        "acc": true,
+        "recall": 1.0,
+        "answer": "A patient with fair skin has less melanin to filter UV radiation, increasing DNA damage risk. An org"
+      }
+    },
+    {
+      "level": "L1",
+      "B0": {
+        "acc": true,
+        "recall": 1.0,
+        "answer": "The face, head, and neck are the most commonly affected anatomical locations."
+      },
+      "JGR": {
+        "acc": true,
+        "recall": 1.0,
+        "answer": "Face, head, and neck."
+      }
+    },
+    {
+      "level": "L2",
+      "B0": {
+        "acc": true,
+        "recall": 1.0,
+        "answer": "Based on the context, the diagnostic steps include a medical and family history, a physical exam, a "
+      },
+      "JGR": {
+        "acc": true,
+        "recall": 1.0,
+        "answer": "Based on the context, the diagnostic steps are: medical and family history, physical exam, skin exam"
+      }
+    },
+    {
+      "level": "L2",
+      "B0": {
+        "acc": true,
+        "recall": 0.6666666666666666,
+        "answer": "Management of recurrent basal cell carcinoma often requires more aggressive approaches than initial "
+      },
+      "JGR": {
+        "acc": true,
+        "recall": 0.0,
+        "answer": "Management of recurrent basal cell carcinoma often requires more aggressive approaches than initial "
+      }
+    },
+    {
+      "level": "L2",
+      "B0": {
+        "acc": false,
+        "recall": 0.75,
+        "answer": "Based on the context, having **fair skin, red or blond hair, or light eye color** combined with a **"
+      },
+      "JGR": {
+        "acc": false,
+        "recall": 0.75,
+        "answer": "Based on the context, the risk factors for BCC (basal cell carcinoma) that should prompt earlier and"
+      }
+    },
+    {
+      "level": "L2",
+      "B0": {
+        "acc": false,
+        "recall": 0.0,
+        "answer": "Based on the provided context, no follow-up strategy for BCC (basal cell carcinoma) on the neck is m"
+      },
+      "JGR": {
+        "acc": false,
+        "recall": 0.0,
+        "answer": "Based solely on the provided context, there is no information about treatment for **BCC (basal cell "
+      }
+    },
+    {
+      "level": "L3",
+      "B0": {
+        "acc": true,
+        "recall": 1.0,
+        "answer": "The main risk factors for basal cell carcinoma include UV light exposure (from the sun or tanning be"
+      },
+      "JGR": {
+        "acc": true,
+        "recall": 1.0,
+        "answer": "The main risk factors for basal cell carcinoma include UV light exposure (sun or tanning beds), fair"
+      }
+    },
+    {
+      "level": "L2",
+      "B0": {
+        "acc": true,
+        "recall": 0.5,
+        "answer": "UV radiation damages DNA in basal skin cells, causing abnormal cell growth that leads to development"
+      },
+      "JGR": {
+        "acc": true,
+        "recall": 0.5,
+        "answer": "UV radiation damages DNA in basal cells, causing abnormal growth that leads to basal cell carcinoma."
+      }
+    },
+    {
+      "level": "L3",
+      "B0": {
+        "acc": true,
+        "recall": 1.0,
+        "answer": "Basal cell carcinoma most commonly involves sun-exposed areas such as the face, head, neck, arms, le"
+      },
+      "JGR": {
+        "acc": true,
+        "recall": 1.0,
+        "answer": "Basal cell carcinoma most commonly involves sun-exposed areas such as the face, head, neck, arms, le"
+      }
+    },
+    {
+      "level": "L2",
+      "B0": {
+        "acc": true,
+        "recall": 0.25,
+        "answer": "Because the patient has a history of radiation therapy, the lesion may represent a recurrent or new "
+      },
+      "JGR": {
+        "acc": false,
+        "recall": 0.25,
+        "answer": "A biopsy is needed to confirm squamous cell skin cancer, and imaging is required because prior radia"
+      }
+    },
+    {
+      "level": "L3",
+      "B0": {
+        "acc": true,
+        "recall": 1.0,
+        "answer": "Based on the context, diagnostic methods include a review of medical and family history, a physical "
+      },
+      "JGR": {
+        "acc": true,
+        "recall": 1.0,
+        "answer": "The diagnostic methods include a medical and family history, physical exam, skin exam, and biopsy (r"
+      }
+    },
+    {
+      "level": "L3",
+      "B0": {
+        "acc": true,
+        "recall": 1.0,
+        "answer": "Based on the context, typical symptoms and presentations of basal cell carcinoma include:\n\n- In ligh"
+      },
+      "JGR": {
+        "acc": false,
+        "recall": 1.0,
+        "answer": "Based on the text, typical symptoms and presentations of basal cell carcinoma include:\n\n- **In light"
+      }
+    },
+    {
+      "level": "L3",
+      "B0": {
+        "acc": true,
+        "recall": 1.0,
+        "answer": "After treatment for basal cell carcinoma, full skin exams with your doctor are recommended at least "
+      },
+      "JGR": {
+        "acc": true,
+        "recall": 0.5,
+        "answer": "After treatment for basal cell carcinoma, follow-up practices include full skin exams with your doct"
+      }
+    },
+    {
+      "level": "L3",
+      "B0": {
+        "acc": true,
+        "recall": 1.0,
+        "answer": "Surgery is the most common treatment for basal cell carcinoma. Radiation therapy or systemic therapy"
+      },
+      "JGR": {
+        "acc": true,
+        "recall": 1.0,
+        "answer": "The standard treatment options for basal cell carcinoma are surgery (most common), radiation therapy"
+      }
+    },
+    {
+      "level": "L3",
+      "B0": {
+        "acc": true,
+        "recall": 1.0,
+        "answer": "Recurrence in basal cell carcinoma is when the cancer returns to the original site, or metastasizes "
+      },
+      "JGR": {
+        "acc": false,
+        "recall": 1.0,
+        "answer": "Recurrence in basal cell carcinoma means the cancer returns to the original area or spreads to lymph"
+      }
+    },
+    {
+      "level": "L4",
+      "B0": {
+        "acc": true,
+        "recall": 0.5,
+        "answer": "**Consult Note**\n\n**Reason for Consult:** New patient referral for suspicious facial lesion, suspect"
+      },
+      "JGR": {
+        "acc": true,
+        "recall": 0.75,
+        "answer": "**Consult Note: Suspicious Facial Lesion – Suspected Basal Cell Carcinoma**\n\n**HPI:** New patient re"
+      }
+    },
+    {
+      "level": "L4",
+      "B0": {
+        "acc": false,
+        "recall": 0.18181818181818182,
+        "answer": "**Dear Family,**\n\nI’ve been diagnosed with basal cell carcinoma (BCC), a common and highly treatable"
+      },
+      "JGR": {
+        "acc": false,
+        "recall": 0.18181818181818182,
+        "answer": "**Dear Family,**\n\nI’ve been diagnosed with **basal cell skin cancer**. This is a common, slow-growin"
+      }
+    },
+    {
+      "level": "L4",
+      "B0": {
+        "acc": false,
+        "recall": 0.08333333333333333,
+        "answer": "**Discharge Summary**\n\n**Patient:** [Name]\n**Date of Discharge:** [Date]\n**Diagnosis:** Basal cell c"
+      },
+      "JGR": {
+        "acc": false,
+        "recall": 0.4166666666666667,
+        "answer": "**Discharge Summary**\n\n**Patient:** [Name]\n**Diagnosis:** Basal cell carcinoma, scalp\n**Date of Disc"
+      }
+    },
+    {
+      "level": "L4",
+      "B0": {
+        "acc": false,
+        "recall": 0.0,
+        "answer": "Based on the context provided, which focuses on AML, Hodgkin lymphoma, and squamous cell skin cancer"
+      },
+      "JGR": {
+        "acc": false,
+        "recall": 0.0,
+        "answer": "Based on the context provided, which focuses on AML and general cancer care teams, there is no speci"
+      }
+    },
+    {
+      "level": "L4",
+      "B0": {
+        "acc": false,
+        "recall": 0.75,
+        "answer": "**Public Health Advisory: Protect Your Community from Basal Cell Skin Cancer**\n\n**Who is at risk?** "
+      },
+      "JGR": {
+        "acc": false,
+        "recall": 0.5833333333333334,
+        "answer": "**Public Health Advisory: Protecting Our Community from Basal Cell Carcinoma**\n\n**What is the concer"
+      }
+    },
+    {
+      "level": "L4",
+      "B0": {
+        "acc": true,
+        "recall": 0.09090909090909091,
+        "answer": "**Clinical findings:** Recurrent basal cell carcinoma (BCC) with regional spread to lymph nodes.  \n*"
+      },
+      "JGR": {
+        "acc": true,
+        "recall": 0.36363636363636365,
+        "answer": "**Clinical Findings:** Recurrent basal cell carcinoma (BCC) with regional spread to lymph nodes (pal"
+      }
+    },
+    {
+      "level": "L4",
+      "B0": {
+        "acc": false,
+        "recall": 0.25,
+        "answer": "Based on the context provided, I will outline a diagnostic and staging plan for suspected primary CN"
+      },
+      "JGR": {
+        "acc": false,
+        "recall": 0.3125,
+        "answer": "**Initial Diagnostic Workup and Staging Plan for Suspected Primary CNS Lymphoma (PCNSL) in a 62-Year"
+      }
+    }
+  ]
+}

@@ -1,0 +1,8059 @@
+{
+  "method": "multihop_depth_gradient_ab_comparison",
+  "model": "qwen2.5-7b-it",
+  "n_docs": 1206,
+  "n_clusters_analyzed": 8,
+  "n_total_layers": 27,
+  "layers": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26
+  ],
+  "clusters": [
+    {
+      "cluster_id": 61,
+      "n_docs": 34,
+      "sample_doc": "It has been speculated that maternal phthalate exposure may affect reproductive development in human newborns. However, the mechanism awaits further investigation. The aim is to evaluate the associati",
+      "plain_gradient": {
+        "0": [
+          {
+            "token": "Nguồn",
+            "prob": 0.0085
+          },
+          {
+            "token": "rigesimal",
+            "prob": 0.0024
+          },
+          {
+            "token": "doch",
+            "prob": 0.001
+          }
+        ],
+        "1": [
+          {
+            "token": "rigesimal",
+            "prob": 0.0056
+          },
+          {
+            "token": "Nguồn",
+            "prob": 0.0046
+          },
+          {
+            "token": "Prosec",
+            "prob": 0.0032
+          },
+          {
+            "token": "François",
+            "prob": 0.0022
+          },
+          {
+            "token": "captures",
+            "prob": 0.0021
+          }
+        ],
+        "2": [
+          {
+            "token": "Marcus",
+            "prob": 0.0009
+          },
+          {
+            "token": "Metro",
+            "prob": 0.0007
+          }
+        ],
+        "3": [
+          {
+            "token": "Sexo",
+            "prob": 0.0019
+          },
+          {
+            "token": "Yahoo",
+            "prob": 0.0017
+          },
+          {
+            "token": "Metro",
+            "prob": 0.0015
+          },
+          {
+            "token": "Fecha",
+            "prob": 0.0012
+          },
+          {
+            "token": "Vintage",
+            "prob": 0.001
+          }
+        ],
+        "4": [
+          {
+            "token": "Prosec",
+            "prob": 0.009
+          },
+          {
+            "token": "Sexy",
+            "prob": 0.0058
+          },
+          {
+            "token": "Nguồn",
+            "prob": 0.0048
+          },
+          {
+            "token": "Sexo",
+            "prob": 0.004
+          },
+          {
+            "token": "Vintage",
+            "prob": 0.0035
+          }
+        ],
+        "5": [
+          {
+            "token": "Usuarios",
+            "prob": 0.0088
+          },
+          {
+            "token": "Método",
+            "prob": 0.0073
+          },
+          {
+            "token": "Área",
+            "prob": 0.005
+          },
+          {
+            "token": "Vintage",
+            "prob": 0.0037
+          },
+          {
+            "token": "Categoria",
+            "prob": 0.0031
+          }
+        ],
+        "6": [
+          {
+            "token": "Usuarios",
+            "prob": 0.0146
+          },
+          {
+            "token": "Método",
+            "prob": 0.0107
+          },
+          {
+            "token": "Área",
+            "prob": 0.0089
+          },
+          {
+            "token": "Additionally",
+            "prob": 0.0019
+          },
+          {
+            "token": "Sexo",
+            "prob": 0.0017
+          }
+        ],
+        "7": [
+          {
+            "token": "Usuarios",
+            "prob": 0.1152
+          },
+          {
+            "token": "Método",
+            "prob": 0.0156
+          },
+          {
+            "token": "Área",
+            "prob": 0.0146
+          },
+          {
+            "token": "Nike",
+            "prob": 0.0095
+          },
+          {
+            "token": "Additionally",
+            "prob": 0.0054
+          }
+        ],
+        "8": [
+          {
+            "token": "Usuarios",
+            "prob": 0.0555
+          },
+          {
+            "token": "Nike",
+            "prob": 0.0406
+          },
+          {
+            "token": "Vintage",
+            "prob": 0.0132
+          },
+          {
+            "token": "Nguồn",
+            "prob": 0.0096
+          },
+          {
+            "token": "Prosec",
+            "prob": 0.0091
+          }
+        ],
+        "9": [
+          {
+            "token": "Usuarios",
+            "prob": 0.0612
+          },
+          {
+            "token": "Nike",
+            "prob": 0.0327
+          },
+          {
+            "token": "Área",
+            "prob": 0.0113
+          },
+          {
+            "token": "Vintage",
+            "prob": 0.0073
+          },
+          {
+            "token": "Método",
+            "prob": 0.0057
+          }
+        ],
+        "10": [
+          {
+            "token": "Nike",
+            "prob": 0.0168
+          },
+          {
+            "token": "Usuarios",
+            "prob": 0.0031
+          },
+          {
+            "token": "Área",
+            "prob": 0.0013
+          },
+          {
+            "token": "typealias",
+            "prob": 0.0013
+          },
+          {
+            "token": "Método",
+            "prob": 0.0011
+          }
+        ],
+        "11": [
+          {
+            "token": "Nike",
+            "prob": 0.0773
+          },
+          {
+            "token": "Método",
+            "prob": 0.0184
+          },
+          {
+            "token": "Área",
+            "prob": 0.0098
+          },
+          {
+            "token": "Usuarios",
+            "prob": 0.0098
+          },
+          {
+            "token": "Investigators",
+            "prob": 0.0098
+          }
+        ],
+        "12": [
+          {
+            "token": "Nike",
+            "prob": 0.005
+          },
+          {
+            "token": "Researchers",
+            "prob": 0.001
+          },
+          {
+            "token": "typealias",
+            "prob": 0.0008
+          },
+          {
+            "token": "Investigators",
+            "prob": 0.0006
+          }
+        ],
+        "13": [
+          {
+            "token": "Nike",
+            "prob": 0.0422
+          },
+          {
+            "token": "Investigators",
+            "prob": 0.0057
+          },
+          {
+            "token": "typealias",
+            "prob": 0.0054
+          },
+          {
+            "token": "Método",
+            "prob": 0.0044
+          },
+          {
+            "token": "Researchers",
+            "prob": 0.0039
+          }
+        ],
+        "14": [
+          {
+            "token": "Nike",
+            "prob": 0.0052
+          },
+          {
+            "token": "Researchers",
+            "prob": 0.0015
+          },
+          {
+            "token": "Método",
+            "prob": 0.0009
+          }
+        ],
+        "15": [
+          {
+            "token": "Nike",
+            "prob": 0.0407
+          },
+          {
+            "token": "Researchers",
+            "prob": 0.0071
+          },
+          {
+            "token": "Sony",
+            "prob": 0.0043
+          },
+          {
+            "token": "typealias",
+            "prob": 0.0031
+          },
+          {
+            "token": "Investigators",
+            "prob": 0.0026
+          }
+        ],
+        "16": [
+          {
+            "token": "analyzed",
+            "prob": 0.0245
+          }
+        ],
+        "17": [],
+        "18": [
+          {
+            "token": "Nike",
+            "prob": 0.0081
+          }
+        ],
+        "19": [
+          {
+            "token": "Nike",
+            "prob": 0.1543
+          },
+          {
+            "token": "Conclusion",
+            "prob": 0.0184
+          },
+          {
+            "token": "Nintendo",
+            "prob": 0.0027
+          },
+          {
+            "token": "analyzed",
+            "prob": 0.0025
+          }
+        ],
+        "20": [
+          {
+            "token": "Nike",
+            "prob": 0.0028
+          },
+          {
+            "token": "Conclusion",
+            "prob": 0.0028
+          }
+        ],
+        "21": [
+          {
+            "token": "Conclusion",
+            "prob": 0.0161
+          },
+          {
+            "token": "Question",
+            "prob": 0.0019
+          },
+          {
+            "token": "Summary",
+            "prob": 0.001
+          },
+          {
+            "token": "Questions",
+            "prob": 0.0008
+          }
+        ],
+        "22": [
+          {
+            "token": "Conclusion",
+            "prob": 0.002
+          },
+          {
+            "token": "Question",
+            "prob": 0.0019
+          },
+          {
+            "token": "Questions",
+            "prob": 0.0014
+          }
+        ],
+        "23": [],
+        "24": [],
+        "25": [
+          {
+            "token": "Question",
+            "prob": 0.0002
+          }
+        ],
+        "26": [
+          {
+            "token": "Given",
+            "prob": 0.0
+          },
+          {
+            "token": "significant",
+            "prob": 0.0
+          },
+          {
+            "token": "Elite",
+            "prob": 0.0
+          },
+          {
+            "token": "Yahoo",
+            "prob": 0.0
+          },
+          {
+            "token": "Questions",
+            "prob": 0.0
+          }
+        ]
+      },
+      "concern_gradient": {
+        "0": [],
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": [],
+        "8": [],
+        "9": [],
+        "10": [],
+        "11": [],
+        "12": [],
+        "13": [],
+        "14": [
+          {
+            "token": "alyzed",
+            "prob": 0.0
+          }
+        ],
+        "15": [
+          {
+            "token": "alyzed",
+            "prob": 0.0
+          }
+        ],
+        "16": [
+          {
+            "token": "alyzed",
+            "prob": 0.0
+          }
+        ],
+        "17": [],
+        "18": [
+          {
+            "token": "alyzed",
+            "prob": 0.0
+          }
+        ],
+        "19": [
+          {
+            "token": "alyzed",
+            "prob": 0.0031
+          },
+          {
+            "token": "analyzed",
+            "prob": 0.0
+          },
+          {
+            "token": "artisan",
+            "prob": 0.0
+          },
+          {
+            "token": "öffent",
+            "prob": 0.0
+          },
+          {
+            "token": "intégr",
+            "prob": 0.0
+          }
+        ],
+        "20": [
+          {
+            "token": "alyzed",
+            "prob": 0.3582
+          },
+          {
+            "token": "analyzed",
+            "prob": 0.004
+          },
+          {
+            "token": "öffent",
+            "prob": 0.0031
+          },
+          {
+            "token": "intégr",
+            "prob": 0.0031
+          },
+          {
+            "token": "paced",
+            "prob": 0.0026
+          }
+        ],
+        "21": [
+          {
+            "token": "alyzed",
+            "prob": 0.6003
+          },
+          {
+            "token": "Incontri",
+            "prob": 0.0071
+          },
+          {
+            "token": "öffent",
+            "prob": 0.0028
+          },
+          {
+            "token": "artisan",
+            "prob": 0.0026
+          },
+          {
+            "token": "analyzed",
+            "prob": 0.0015
+          }
+        ],
+        "22": [
+          {
+            "token": "alyzed",
+            "prob": 0.1638
+          },
+          {
+            "token": "Incontri",
+            "prob": 0.0184
+          },
+          {
+            "token": "Annunci",
+            "prob": 0.006
+          },
+          {
+            "token": "transformed",
+            "prob": 0.0039
+          },
+          {
+            "token": "verity",
+            "prob": 0.0039
+          }
+        ],
+        "23": [
+          {
+            "token": "logarith",
+            "prob": 0.0139
+          },
+          {
+            "token": "transformed",
+            "prob": 0.013
+          },
+          {
+            "token": "distributed",
+            "prob": 0.0089
+          },
+          {
+            "token": "verity",
+            "prob": 0.004
+          },
+          {
+            "token": "logg",
+            "prob": 0.0019
+          }
+        ],
+        "24": [
+          {
+            "token": "transformed",
+            "prob": 0.1626
+          },
+          {
+            "token": "normalized",
+            "prob": 0.0986
+          },
+          {
+            "token": "transform",
+            "prob": 0.0111
+          },
+          {
+            "token": "normal",
+            "prob": 0.0092
+          },
+          {
+            "token": "logarith",
+            "prob": 0.0063
+          }
+        ],
+        "25": [
+          {
+            "token": "normally",
+            "prob": 0.5626
+          },
+          {
+            "token": "ormal",
+            "prob": 0.1423
+          },
+          {
+            "token": "transformed",
+            "prob": 0.0672
+          },
+          {
+            "token": "transform",
+            "prob": 0.0141
+          },
+          {
+            "token": "normalized",
+            "prob": 0.0117
+          }
+        ],
+        "26": [
+          {
+            "token": "normally",
+            "prob": 0.2216
+          },
+          {
+            "token": "transformed",
+            "prob": 0.0983
+          },
+          {
+            "token": "ormal",
+            "prob": 0.0526
+          },
+          {
+            "token": "aturally",
+            "prob": 0.0142
+          },
+          {
+            "token": "alyzed",
+            "prob": 0.0076
+          }
+        ]
+      },
+      "plain_onset": 0,
+      "concern_onset": 19,
+      "ab_comparison": {
+        "per_layer": {
+          "0": {
+            "overlap": [],
+            "plain_only": [
+              "doch",
+              "nguồn",
+              "rigesimal"
+            ],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 3,
+            "n_concern_only": 0
+          },
+          "1": {
+            "overlap": [],
+            "plain_only": [
+              "captures",
+              "françois",
+              "nguồn",
+              "prosec",
+              "rigesimal"
+            ],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 0
+          },
+          "2": {
+            "overlap": [],
+            "plain_only": [
+              "marcus",
+              "metro"
+            ],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 2,
+            "n_concern_only": 0
+          },
+          "3": {
+            "overlap": [],
+            "plain_only": [
+              "fecha",
+              "metro",
+              "sexo",
+              "vintage",
+              "yahoo"
+            ],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 0
+          },
+          "4": {
+            "overlap": [],
+            "plain_only": [
+              "nguồn",
+              "prosec",
+              "sexo",
+              "sexy",
+              "vintage"
+            ],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 0
+          },
+          "5": {
+            "overlap": [],
+            "plain_only": [
+              "categoria",
+              "método",
+              "usuarios",
+              "vintage",
+              "área"
+            ],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 0
+          },
+          "6": {
+            "overlap": [],
+            "plain_only": [
+              "additionally",
+              "método",
+              "sexo",
+              "usuarios",
+              "área"
+            ],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 0
+          },
+          "7": {
+            "overlap": [],
+            "plain_only": [
+              "additionally",
+              "método",
+              "nike",
+              "usuarios",
+              "área"
+            ],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 0
+          },
+          "8": {
+            "overlap": [],
+            "plain_only": [
+              "nguồn",
+              "nike",
+              "prosec",
+              "usuarios",
+              "vintage"
+            ],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 0
+          },
+          "9": {
+            "overlap": [],
+            "plain_only": [
+              "método",
+              "nike",
+              "usuarios",
+              "vintage",
+              "área"
+            ],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 0
+          },
+          "10": {
+            "overlap": [],
+            "plain_only": [
+              "método",
+              "nike",
+              "typealias",
+              "usuarios",
+              "área"
+            ],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 0
+          },
+          "11": {
+            "overlap": [],
+            "plain_only": [
+              "investigators",
+              "método",
+              "nike",
+              "usuarios",
+              "área"
+            ],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 0
+          },
+          "12": {
+            "overlap": [],
+            "plain_only": [
+              "investigators",
+              "nike",
+              "researchers",
+              "typealias"
+            ],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 4,
+            "n_concern_only": 0
+          },
+          "13": {
+            "overlap": [],
+            "plain_only": [
+              "investigators",
+              "método",
+              "nike",
+              "researchers",
+              "typealias"
+            ],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 0
+          },
+          "14": {
+            "overlap": [],
+            "plain_only": [
+              "método",
+              "nike",
+              "researchers"
+            ],
+            "concern_only": [
+              "alyzed"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 3,
+            "n_concern_only": 1
+          },
+          "15": {
+            "overlap": [],
+            "plain_only": [
+              "investigators",
+              "nike",
+              "researchers",
+              "sony",
+              "typealias"
+            ],
+            "concern_only": [
+              "alyzed"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 1
+          },
+          "16": {
+            "overlap": [],
+            "plain_only": [
+              "analyzed"
+            ],
+            "concern_only": [
+              "alyzed"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 1,
+            "n_concern_only": 1
+          },
+          "17": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "18": {
+            "overlap": [],
+            "plain_only": [
+              "nike"
+            ],
+            "concern_only": [
+              "alyzed"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 1,
+            "n_concern_only": 1
+          },
+          "19": {
+            "overlap": [
+              "analyzed"
+            ],
+            "plain_only": [
+              "conclusion",
+              "nike",
+              "nintendo"
+            ],
+            "concern_only": [
+              "alyzed",
+              "artisan",
+              "intégr",
+              "öffent"
+            ],
+            "n_overlap": 1,
+            "n_plain_only": 3,
+            "n_concern_only": 4
+          },
+          "20": {
+            "overlap": [],
+            "plain_only": [
+              "conclusion",
+              "nike"
+            ],
+            "concern_only": [
+              "alyzed",
+              "analyzed",
+              "intégr",
+              "paced",
+              "öffent"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 2,
+            "n_concern_only": 5
+          },
+          "21": {
+            "overlap": [],
+            "plain_only": [
+              "conclusion",
+              "question",
+              "questions",
+              "summary"
+            ],
+            "concern_only": [
+              "alyzed",
+              "analyzed",
+              "artisan",
+              "incontri",
+              "öffent"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 4,
+            "n_concern_only": 5
+          },
+          "22": {
+            "overlap": [],
+            "plain_only": [
+              "conclusion",
+              "question",
+              "questions"
+            ],
+            "concern_only": [
+              "alyzed",
+              "annunci",
+              "incontri",
+              "transformed",
+              "verity"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 3,
+            "n_concern_only": 5
+          },
+          "23": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [
+              "distributed",
+              "logarith",
+              "logg",
+              "transformed",
+              "verity"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 5
+          },
+          "24": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [
+              "logarith",
+              "normal",
+              "normalized",
+              "transform",
+              "transformed"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 5
+          },
+          "25": {
+            "overlap": [],
+            "plain_only": [
+              "question"
+            ],
+            "concern_only": [
+              "normalized",
+              "normally",
+              "ormal",
+              "transform",
+              "transformed"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 1,
+            "n_concern_only": 5
+          },
+          "26": {
+            "overlap": [],
+            "plain_only": [
+              "elite",
+              "given",
+              "questions",
+              "significant",
+              "yahoo"
+            ],
+            "concern_only": [
+              "alyzed",
+              "aturally",
+              "normally",
+              "ormal",
+              "transformed"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          }
+        },
+        "most_document_driven_layers": [
+          [
+            1,
+            5
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "cluster_id": 101,
+      "n_docs": 23,
+      "sample_doc": "Diverticular disease of the colon is among the most prevalent conditions in western society and is among the leading reasons for outpatient visits and causes of hospitalization. While previously consi",
+      "plain_gradient": {
+        "0": [],
+        "1": [
+          {
+            "token": "rigesimal",
+            "prob": 0.0095
+          },
+          {
+            "token": "ività",
+            "prob": 0.0031
+          },
+          {
+            "token": "isclosed",
+            "prob": 0.0026
+          },
+          {
+            "token": "regor",
+            "prob": 0.002
+          },
+          {
+            "token": "captures",
+            "prob": 0.0019
+          }
+        ],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": [],
+        "8": [],
+        "9": [],
+        "10": [
+          {
+            "token": "food",
+            "prob": 0.0016
+          },
+          {
+            "token": "nutrition",
+            "prob": 0.0007
+          },
+          {
+            "token": "foods",
+            "prob": 0.0005
+          },
+          {
+            "token": "nutrients",
+            "prob": 0.0003
+          },
+          {
+            "token": "dietary",
+            "prob": 0.0003
+          }
+        ],
+        "11": [
+          {
+            "token": "food",
+            "prob": 0.0007
+          },
+          {
+            "token": "nutrition",
+            "prob": 0.0003
+          },
+          {
+            "token": "foods",
+            "prob": 0.0002
+          }
+        ],
+        "12": [
+          {
+            "token": "food",
+            "prob": 0.0165
+          },
+          {
+            "token": "nutrition",
+            "prob": 0.0128
+          },
+          {
+            "token": "foods",
+            "prob": 0.0044
+          },
+          {
+            "token": "nutrients",
+            "prob": 0.0025
+          },
+          {
+            "token": "diet",
+            "prob": 0.0025
+          }
+        ],
+        "13": [
+          {
+            "token": "nutrition",
+            "prob": 0.0194
+          },
+          {
+            "token": "food",
+            "prob": 0.0092
+          },
+          {
+            "token": "nutrients",
+            "prob": 0.0072
+          },
+          {
+            "token": "foods",
+            "prob": 0.0067
+          },
+          {
+            "token": "nutrient",
+            "prob": 0.0052
+          }
+        ],
+        "14": [
+          {
+            "token": "nutrition",
+            "prob": 0.0417
+          },
+          {
+            "token": "nutrients",
+            "prob": 0.0144
+          },
+          {
+            "token": "nutrient",
+            "prob": 0.0144
+          },
+          {
+            "token": "food",
+            "prob": 0.0119
+          },
+          {
+            "token": "dietary",
+            "prob": 0.0105
+          }
+        ],
+        "15": [
+          {
+            "token": "nutrition",
+            "prob": 0.0532
+          },
+          {
+            "token": "nutrients",
+            "prob": 0.0303
+          },
+          {
+            "token": "dietary",
+            "prob": 0.0268
+          },
+          {
+            "token": "nutrient",
+            "prob": 0.0236
+          },
+          {
+            "token": "foods",
+            "prob": 0.0162
+          }
+        ],
+        "16": [
+          {
+            "token": "nutrition",
+            "prob": 0.0542
+          },
+          {
+            "token": "dietary",
+            "prob": 0.0187
+          },
+          {
+            "token": "nutrients",
+            "prob": 0.0187
+          },
+          {
+            "token": "nutrient",
+            "prob": 0.0137
+          },
+          {
+            "token": "diet",
+            "prob": 0.0137
+          }
+        ],
+        "17": [
+          {
+            "token": "food",
+            "prob": 0.0158
+          },
+          {
+            "token": "nutrition",
+            "prob": 0.014
+          },
+          {
+            "token": "diet",
+            "prob": 0.0066
+          },
+          {
+            "token": "foods",
+            "prob": 0.0051
+          },
+          {
+            "token": "nutrients",
+            "prob": 0.0048
+          }
+        ],
+        "18": [
+          {
+            "token": "nutrition",
+            "prob": 0.1683
+          },
+          {
+            "token": "food",
+            "prob": 0.0659
+          },
+          {
+            "token": "foods",
+            "prob": 0.0513
+          },
+          {
+            "token": "dietary",
+            "prob": 0.0482
+          },
+          {
+            "token": "nutrients",
+            "prob": 0.0453
+          }
+        ],
+        "19": [
+          {
+            "token": "nutrition",
+            "prob": 0.133
+          },
+          {
+            "token": "nutrients",
+            "prob": 0.0914
+          },
+          {
+            "token": "food",
+            "prob": 0.0669
+          },
+          {
+            "token": "foods",
+            "prob": 0.059
+          },
+          {
+            "token": "diet",
+            "prob": 0.0432
+          }
+        ],
+        "20": [
+          {
+            "token": "nutrition",
+            "prob": 0.215
+          },
+          {
+            "token": "foods",
+            "prob": 0.1478
+          },
+          {
+            "token": "food",
+            "prob": 0.1478
+          },
+          {
+            "token": "nutrients",
+            "prob": 0.1015
+          },
+          {
+            "token": "dietary",
+            "prob": 0.0616
+          }
+        ],
+        "21": [
+          {
+            "token": "nutrients",
+            "prob": 0.2
+          },
+          {
+            "token": "foods",
+            "prob": 0.1765
+          },
+          {
+            "token": "food",
+            "prob": 0.1375
+          },
+          {
+            "token": "dietary",
+            "prob": 0.0573
+          },
+          {
+            "token": "nutrition",
+            "prob": 0.0475
+          }
+        ],
+        "22": [
+          {
+            "token": "fibre",
+            "prob": 0.3619
+          },
+          {
+            "token": "foods",
+            "prob": 0.086
+          },
+          {
+            "token": "fiber",
+            "prob": 0.0246
+          },
+          {
+            "token": "nutrients",
+            "prob": 0.0246
+          },
+          {
+            "token": "dietary",
+            "prob": 0.0217
+          }
+        ],
+        "23": [
+          {
+            "token": "fibre",
+            "prob": 0.7695
+          },
+          {
+            "token": "fiber",
+            "prob": 0.1515
+          },
+          {
+            "token": "intake",
+            "prob": 0.0091
+          },
+          {
+            "token": "dietary",
+            "prob": 0.0063
+          },
+          {
+            "token": "fibers",
+            "prob": 0.0052
+          }
+        ],
+        "24": [
+          {
+            "token": "fibre",
+            "prob": 0.9993
+          },
+          {
+            "token": "fiber",
+            "prob": 0.0006
+          },
+          {
+            "token": "sources",
+            "prob": 0.0
+          },
+          {
+            "token": "fibers",
+            "prob": 0.0
+          },
+          {
+            "token": "intake",
+            "prob": 0.0
+          }
+        ],
+        "25": [
+          {
+            "token": "fibre",
+            "prob": 0.9915
+          },
+          {
+            "token": "fiber",
+            "prob": 0.0076
+          },
+          {
+            "token": "fibers",
+            "prob": 0.0001
+          },
+          {
+            "token": "fibr",
+            "prob": 0.0
+          },
+          {
+            "token": "sources",
+            "prob": 0.0
+          }
+        ],
+        "26": [
+          {
+            "token": "fibre",
+            "prob": 0.9776
+          },
+          {
+            "token": "fiber",
+            "prob": 0.0203
+          },
+          {
+            "token": "fibers",
+            "prob": 0.0011
+          },
+          {
+            "token": "dietary",
+            "prob": 0.0
+          },
+          {
+            "token": "factors",
+            "prob": 0.0
+          }
+        ]
+      },
+      "concern_gradient": {
+        "0": [],
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": [
+          {
+            "token": "nutrition",
+            "prob": 0.0017
+          },
+          {
+            "token": "ically",
+            "prob": 0.0016
+          },
+          {
+            "token": "opportunità",
+            "prob": 0.0014
+          },
+          {
+            "token": "onomic",
+            "prob": 0.0014
+          }
+        ],
+        "8": [],
+        "9": [
+          {
+            "token": "food",
+            "prob": 0.0026
+          },
+          {
+            "token": "nutrition",
+            "prob": 0.0012
+          }
+        ],
+        "10": [
+          {
+            "token": "food",
+            "prob": 0.0131
+          },
+          {
+            "token": "nutrition",
+            "prob": 0.0062
+          },
+          {
+            "token": "nutritional",
+            "prob": 0.0014
+          }
+        ],
+        "11": [
+          {
+            "token": "food",
+            "prob": 0.0044
+          },
+          {
+            "token": "nutrition",
+            "prob": 0.0017
+          }
+        ],
+        "12": [
+          {
+            "token": "food",
+            "prob": 0.0194
+          },
+          {
+            "token": "nutrition",
+            "prob": 0.011
+          },
+          {
+            "token": "diet",
+            "prob": 0.0018
+          }
+        ],
+        "13": [
+          {
+            "token": "nutrition",
+            "prob": 0.0388
+          },
+          {
+            "token": "food",
+            "prob": 0.0195
+          },
+          {
+            "token": "nutritional",
+            "prob": 0.0056
+          },
+          {
+            "token": "diet",
+            "prob": 0.0046
+          },
+          {
+            "token": "dietary",
+            "prob": 0.0036
+          }
+        ],
+        "14": [
+          {
+            "token": "nutrition",
+            "prob": 0.0297
+          },
+          {
+            "token": "nutritional",
+            "prob": 0.0096
+          },
+          {
+            "token": "diet",
+            "prob": 0.0058
+          },
+          {
+            "token": "food",
+            "prob": 0.0058
+          },
+          {
+            "token": "nutrient",
+            "prob": 0.0043
+          }
+        ],
+        "15": [
+          {
+            "token": "nutrition",
+            "prob": 0.0141
+          },
+          {
+            "token": "nutritional",
+            "prob": 0.0055
+          },
+          {
+            "token": "nutrient",
+            "prob": 0.0036
+          },
+          {
+            "token": "dietary",
+            "prob": 0.0028
+          },
+          {
+            "token": "diet",
+            "prob": 0.0023
+          }
+        ],
+        "16": [
+          {
+            "token": "nutrition",
+            "prob": 0.021
+          },
+          {
+            "token": "diet",
+            "prob": 0.0082
+          },
+          {
+            "token": "nutritional",
+            "prob": 0.006
+          },
+          {
+            "token": "nutrient",
+            "prob": 0.0047
+          },
+          {
+            "token": "food",
+            "prob": 0.0044
+          }
+        ],
+        "17": [
+          {
+            "token": "food",
+            "prob": 0.0381
+          },
+          {
+            "token": "nutrition",
+            "prob": 0.0381
+          },
+          {
+            "token": "diet",
+            "prob": 0.0297
+          },
+          {
+            "token": "prescription",
+            "prob": 0.0169
+          },
+          {
+            "token": "studied",
+            "prob": 0.0159
+          }
+        ],
+        "18": [
+          {
+            "token": "nutrition",
+            "prob": 0.0105
+          },
+          {
+            "token": "food",
+            "prob": 0.0087
+          },
+          {
+            "token": "diet",
+            "prob": 0.0053
+          },
+          {
+            "token": "analyzed",
+            "prob": 0.0047
+          },
+          {
+            "token": "nutritional",
+            "prob": 0.0036
+          }
+        ],
+        "19": [
+          {
+            "token": "nutrition",
+            "prob": 0.0099
+          },
+          {
+            "token": "analyzed",
+            "prob": 0.0036
+          },
+          {
+            "token": "nutrient",
+            "prob": 0.0034
+          },
+          {
+            "token": "nutritional",
+            "prob": 0.003
+          },
+          {
+            "token": "Food",
+            "prob": 0.0027
+          }
+        ],
+        "20": [
+          {
+            "token": "nutrition",
+            "prob": 0.1397
+          },
+          {
+            "token": "food",
+            "prob": 0.0514
+          },
+          {
+            "token": "nutritional",
+            "prob": 0.0353
+          },
+          {
+            "token": "nutrient",
+            "prob": 0.0353
+          },
+          {
+            "token": "dietary",
+            "prob": 0.0275
+          }
+        ],
+        "21": [
+          {
+            "token": "nutrition",
+            "prob": 0.0265
+          },
+          {
+            "token": "Food",
+            "prob": 0.0265
+          },
+          {
+            "token": "variables",
+            "prob": 0.0234
+          },
+          {
+            "token": "Dietary",
+            "prob": 0.022
+          },
+          {
+            "token": "alyzed",
+            "prob": 0.0118
+          }
+        ],
+        "22": [
+          {
+            "token": "questionnaire",
+            "prob": 0.8145
+          },
+          {
+            "token": "survey",
+            "prob": 0.0858
+          },
+          {
+            "token": "surveys",
+            "prob": 0.0406
+          },
+          {
+            "token": "alyzed",
+            "prob": 0.0023
+          },
+          {
+            "token": "classification",
+            "prob": 0.0014
+          }
+        ],
+        "23": [
+          {
+            "token": "questionnaire",
+            "prob": 0.8374
+          },
+          {
+            "token": "survey",
+            "prob": 0.0197
+          },
+          {
+            "token": "assessed",
+            "prob": 0.0077
+          },
+          {
+            "token": "etic",
+            "prob": 0.0077
+          },
+          {
+            "token": "surveys",
+            "prob": 0.005
+          }
+        ],
+        "24": [
+          {
+            "token": "questionnaire",
+            "prob": 0.3139
+          },
+          {
+            "token": "assessed",
+            "prob": 0.1904
+          },
+          {
+            "token": "assessment",
+            "prob": 0.0658
+          },
+          {
+            "token": "etic",
+            "prob": 0.0274
+          },
+          {
+            "token": "recall",
+            "prob": 0.0274
+          }
+        ],
+        "25": [
+          {
+            "token": "aries",
+            "prob": 0.0501
+          },
+          {
+            "token": "ário",
+            "prob": 0.0173
+          },
+          {
+            "token": "naire",
+            "prob": 0.0135
+          },
+          {
+            "token": "arily",
+            "prob": 0.0093
+          },
+          {
+            "token": "assessed",
+            "prob": 0.0068
+          }
+        ],
+        "26": [
+          {
+            "token": "assessed",
+            "prob": 0.4802
+          },
+          {
+            "token": "assessment",
+            "prob": 0.1292
+          },
+          {
+            "token": "assessments",
+            "prob": 0.0254
+          },
+          {
+            "token": "itian",
+            "prob": 0.0106
+          },
+          {
+            "token": "etic",
+            "prob": 0.0094
+          }
+        ]
+      },
+      "plain_onset": 1,
+      "concern_onset": 7,
+      "ab_comparison": {
+        "per_layer": {
+          "0": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "1": {
+            "overlap": [],
+            "plain_only": [
+              "captures",
+              "isclosed",
+              "ività",
+              "regor",
+              "rigesimal"
+            ],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 0
+          },
+          "2": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "3": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "4": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "5": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "6": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "7": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [
+              "ically",
+              "nutrition",
+              "onomic",
+              "opportunità"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 4
+          },
+          "8": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "9": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [
+              "food",
+              "nutrition"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 2
+          },
+          "10": {
+            "overlap": [
+              "food",
+              "nutrition"
+            ],
+            "plain_only": [
+              "dietary",
+              "foods",
+              "nutrients"
+            ],
+            "concern_only": [
+              "nutritional"
+            ],
+            "n_overlap": 2,
+            "n_plain_only": 3,
+            "n_concern_only": 1
+          },
+          "11": {
+            "overlap": [
+              "food",
+              "nutrition"
+            ],
+            "plain_only": [
+              "foods"
+            ],
+            "concern_only": [],
+            "n_overlap": 2,
+            "n_plain_only": 1,
+            "n_concern_only": 0
+          },
+          "12": {
+            "overlap": [
+              "diet",
+              "food",
+              "nutrition"
+            ],
+            "plain_only": [
+              "foods",
+              "nutrients"
+            ],
+            "concern_only": [],
+            "n_overlap": 3,
+            "n_plain_only": 2,
+            "n_concern_only": 0
+          },
+          "13": {
+            "overlap": [
+              "food",
+              "nutrition"
+            ],
+            "plain_only": [
+              "foods",
+              "nutrient",
+              "nutrients"
+            ],
+            "concern_only": [
+              "diet",
+              "dietary",
+              "nutritional"
+            ],
+            "n_overlap": 2,
+            "n_plain_only": 3,
+            "n_concern_only": 3
+          },
+          "14": {
+            "overlap": [
+              "food",
+              "nutrient",
+              "nutrition"
+            ],
+            "plain_only": [
+              "dietary",
+              "nutrients"
+            ],
+            "concern_only": [
+              "diet",
+              "nutritional"
+            ],
+            "n_overlap": 3,
+            "n_plain_only": 2,
+            "n_concern_only": 2
+          },
+          "15": {
+            "overlap": [
+              "dietary",
+              "nutrient",
+              "nutrition"
+            ],
+            "plain_only": [
+              "foods",
+              "nutrients"
+            ],
+            "concern_only": [
+              "diet",
+              "nutritional"
+            ],
+            "n_overlap": 3,
+            "n_plain_only": 2,
+            "n_concern_only": 2
+          },
+          "16": {
+            "overlap": [
+              "diet",
+              "nutrient",
+              "nutrition"
+            ],
+            "plain_only": [
+              "dietary",
+              "nutrients"
+            ],
+            "concern_only": [
+              "food",
+              "nutritional"
+            ],
+            "n_overlap": 3,
+            "n_plain_only": 2,
+            "n_concern_only": 2
+          },
+          "17": {
+            "overlap": [
+              "diet",
+              "food",
+              "nutrition"
+            ],
+            "plain_only": [
+              "foods",
+              "nutrients"
+            ],
+            "concern_only": [
+              "prescription",
+              "studied"
+            ],
+            "n_overlap": 3,
+            "n_plain_only": 2,
+            "n_concern_only": 2
+          },
+          "18": {
+            "overlap": [
+              "food",
+              "nutrition"
+            ],
+            "plain_only": [
+              "dietary",
+              "foods",
+              "nutrients"
+            ],
+            "concern_only": [
+              "analyzed",
+              "diet",
+              "nutritional"
+            ],
+            "n_overlap": 2,
+            "n_plain_only": 3,
+            "n_concern_only": 3
+          },
+          "19": {
+            "overlap": [
+              "food",
+              "nutrition"
+            ],
+            "plain_only": [
+              "diet",
+              "foods",
+              "nutrients"
+            ],
+            "concern_only": [
+              "analyzed",
+              "nutrient",
+              "nutritional"
+            ],
+            "n_overlap": 2,
+            "n_plain_only": 3,
+            "n_concern_only": 3
+          },
+          "20": {
+            "overlap": [
+              "dietary",
+              "food",
+              "nutrition"
+            ],
+            "plain_only": [
+              "foods",
+              "nutrients"
+            ],
+            "concern_only": [
+              "nutrient",
+              "nutritional"
+            ],
+            "n_overlap": 3,
+            "n_plain_only": 2,
+            "n_concern_only": 2
+          },
+          "21": {
+            "overlap": [
+              "dietary",
+              "food",
+              "nutrition"
+            ],
+            "plain_only": [
+              "foods",
+              "nutrients"
+            ],
+            "concern_only": [
+              "alyzed",
+              "variables"
+            ],
+            "n_overlap": 3,
+            "n_plain_only": 2,
+            "n_concern_only": 2
+          },
+          "22": {
+            "overlap": [],
+            "plain_only": [
+              "dietary",
+              "fiber",
+              "fibre",
+              "foods",
+              "nutrients"
+            ],
+            "concern_only": [
+              "alyzed",
+              "classification",
+              "questionnaire",
+              "survey",
+              "surveys"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "23": {
+            "overlap": [],
+            "plain_only": [
+              "dietary",
+              "fiber",
+              "fibers",
+              "fibre",
+              "intake"
+            ],
+            "concern_only": [
+              "assessed",
+              "etic",
+              "questionnaire",
+              "survey",
+              "surveys"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "24": {
+            "overlap": [],
+            "plain_only": [
+              "fiber",
+              "fibers",
+              "fibre",
+              "intake",
+              "sources"
+            ],
+            "concern_only": [
+              "assessed",
+              "assessment",
+              "etic",
+              "questionnaire",
+              "recall"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "25": {
+            "overlap": [],
+            "plain_only": [
+              "fiber",
+              "fibers",
+              "fibr",
+              "fibre",
+              "sources"
+            ],
+            "concern_only": [
+              "aries",
+              "arily",
+              "assessed",
+              "naire",
+              "ário"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "26": {
+            "overlap": [],
+            "plain_only": [
+              "dietary",
+              "factors",
+              "fiber",
+              "fibers",
+              "fibre"
+            ],
+            "concern_only": [
+              "assessed",
+              "assessment",
+              "assessments",
+              "etic",
+              "itian"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          }
+        },
+        "most_document_driven_layers": [
+          [
+            1,
+            5
+          ],
+          [
+            22,
+            5
+          ],
+          [
+            23,
+            5
+          ],
+          [
+            24,
+            5
+          ],
+          [
+            25,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "cluster_id": 151,
+      "n_docs": 16,
+      "sample_doc": "BACKGROUND: Irritable bowel syndrome (IBS) is a common chronic gastrointestinal disorder. The role of pharmacotherapy for IBS is limited and focused mainly on symptom control. OBJECTIVES: The objectiv",
+      "plain_gradient": {
+        "0": [],
+        "1": [
+          {
+            "token": "rigesimal",
+            "prob": 0.0049
+          },
+          {
+            "token": "indsay",
+            "prob": 0.0009
+          },
+          {
+            "token": "Sexo",
+            "prob": 0.0009
+          }
+        ],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": [
+          {
+            "token": "Pedido",
+            "prob": 0.0015
+          },
+          {
+            "token": "indsay",
+            "prob": 0.0014
+          },
+          {
+            "token": "decltype",
+            "prob": 0.0009
+          }
+        ],
+        "8": [],
+        "9": [],
+        "10": [],
+        "11": [],
+        "12": [],
+        "13": [
+          {
+            "token": "application",
+            "prob": 0.0001
+          },
+          {
+            "token": "practice",
+            "prob": 0.0001
+          },
+          {
+            "token": "routine",
+            "prob": 0.0001
+          },
+          {
+            "token": "standard",
+            "prob": 0.0001
+          }
+        ],
+        "14": [
+          {
+            "token": "application",
+            "prob": 0.0007
+          },
+          {
+            "token": "limited",
+            "prob": 0.0007
+          },
+          {
+            "token": "practice",
+            "prob": 0.0003
+          },
+          {
+            "token": "routine",
+            "prob": 0.0002
+          }
+        ],
+        "15": [
+          {
+            "token": "limited",
+            "prob": 0.0025
+          },
+          {
+            "token": "application",
+            "prob": 0.0014
+          },
+          {
+            "token": "practice",
+            "prob": 0.0012
+          },
+          {
+            "token": "alternative",
+            "prob": 0.0004
+          },
+          {
+            "token": "routine",
+            "prob": 0.0004
+          }
+        ],
+        "16": [
+          {
+            "token": "limited",
+            "prob": 0.0034
+          },
+          {
+            "token": "practice",
+            "prob": 0.0008
+          },
+          {
+            "token": "application",
+            "prob": 0.0007
+          },
+          {
+            "token": "cost",
+            "prob": 0.0005
+          },
+          {
+            "token": "until",
+            "prob": 0.0005
+          }
+        ],
+        "17": [
+          {
+            "token": "limited",
+            "prob": 0.0022
+          },
+          {
+            "token": "alternative",
+            "prob": 0.0004
+          },
+          {
+            "token": "cost",
+            "prob": 0.0002
+          },
+          {
+            "token": "practice",
+            "prob": 0.0002
+          },
+          {
+            "token": "application",
+            "prob": 0.0002
+          }
+        ],
+        "18": [
+          {
+            "token": "limited",
+            "prob": 0.005
+          },
+          {
+            "token": "despite",
+            "prob": 0.0005
+          },
+          {
+            "token": "alternative",
+            "prob": 0.0004
+          },
+          {
+            "token": "until",
+            "prob": 0.0004
+          },
+          {
+            "token": "outside",
+            "prob": 0.0003
+          }
+        ],
+        "19": [
+          {
+            "token": "despite",
+            "prob": 0.0008
+          },
+          {
+            "token": "unless",
+            "prob": 0.0006
+          },
+          {
+            "token": "until",
+            "prob": 0.0005
+          },
+          {
+            "token": "limited",
+            "prob": 0.0005
+          },
+          {
+            "token": "among",
+            "prob": 0.0002
+          }
+        ],
+        "20": [
+          {
+            "token": "unless",
+            "prob": 0.0004
+          },
+          {
+            "token": "until",
+            "prob": 0.0001
+          },
+          {
+            "token": "except",
+            "prob": 0.0001
+          },
+          {
+            "token": "among",
+            "prob": 0.0001
+          },
+          {
+            "token": "practical",
+            "prob": 0.0001
+          }
+        ],
+        "21": [
+          {
+            "token": "unless",
+            "prob": 0.0
+          }
+        ],
+        "22": [
+          {
+            "token": "unless",
+            "prob": 0.0
+          }
+        ],
+        "23": [],
+        "24": [
+          {
+            "token": "except",
+            "prob": 0.0
+          },
+          {
+            "token": "unless",
+            "prob": 0.0
+          },
+          {
+            "token": "outside",
+            "prob": 0.0
+          },
+          {
+            "token": "among",
+            "prob": 0.0
+          },
+          {
+            "token": "currently",
+            "prob": 0.0
+          }
+        ],
+        "25": [
+          {
+            "token": "outside",
+            "prob": 0.0
+          },
+          {
+            "token": "except",
+            "prob": 0.0
+          },
+          {
+            "token": "unless",
+            "prob": 0.0
+          },
+          {
+            "token": "clinically",
+            "prob": 0.0
+          },
+          {
+            "token": "among",
+            "prob": 0.0
+          }
+        ],
+        "26": [
+          {
+            "token": "clinically",
+            "prob": 0.0001
+          },
+          {
+            "token": "outside",
+            "prob": 0.0
+          },
+          {
+            "token": "Clin",
+            "prob": 0.0
+          },
+          {
+            "token": "among",
+            "prob": 0.0
+          },
+          {
+            "token": "except",
+            "prob": 0.0
+          }
+        ]
+      },
+      "concern_gradient": {
+        "0": [],
+        "1": [
+          {
+            "token": "busty",
+            "prob": 0.0
+          }
+        ],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": [],
+        "8": [],
+        "9": [],
+        "10": [],
+        "11": [],
+        "12": [
+          {
+            "token": "limited",
+            "prob": 0.0
+          }
+        ],
+        "13": [
+          {
+            "token": "limited",
+            "prob": 0.0
+          },
+          {
+            "token": "availability",
+            "prob": 0.0
+          }
+        ],
+        "14": [
+          {
+            "token": "limited",
+            "prob": 0.0002
+          },
+          {
+            "token": "availability",
+            "prob": 0.0
+          }
+        ],
+        "15": [
+          {
+            "token": "limited",
+            "prob": 0.0013
+          },
+          {
+            "token": "availability",
+            "prob": 0.0002
+          },
+          {
+            "token": "limitations",
+            "prob": 0.0
+          },
+          {
+            "token": "limitation",
+            "prob": 0.0
+          },
+          {
+            "token": "resources",
+            "prob": 0.0
+          }
+        ],
+        "16": [
+          {
+            "token": "limited",
+            "prob": 0.1392
+          },
+          {
+            "token": "availability",
+            "prob": 0.0035
+          },
+          {
+            "token": "limitations",
+            "prob": 0.0024
+          },
+          {
+            "token": "limitation",
+            "prob": 0.0014
+          },
+          {
+            "token": "limiting",
+            "prob": 0.0011
+          }
+        ],
+        "17": [
+          {
+            "token": "limited",
+            "prob": 0.4835
+          },
+          {
+            "token": "availability",
+            "prob": 0.0226
+          },
+          {
+            "token": "limitations",
+            "prob": 0.0073
+          },
+          {
+            "token": "limiting",
+            "prob": 0.005
+          },
+          {
+            "token": "limitation",
+            "prob": 0.0045
+          }
+        ],
+        "18": [
+          {
+            "token": "limited",
+            "prob": 0.677
+          },
+          {
+            "token": "availability",
+            "prob": 0.0232
+          },
+          {
+            "token": "limitations",
+            "prob": 0.0046
+          },
+          {
+            "token": "restricted",
+            "prob": 0.004
+          },
+          {
+            "token": "limiting",
+            "prob": 0.0038
+          }
+        ],
+        "19": [
+          {
+            "token": "limited",
+            "prob": 0.4739
+          },
+          {
+            "token": "availability",
+            "prob": 0.1743
+          },
+          {
+            "token": "limitations",
+            "prob": 0.0143
+          },
+          {
+            "token": "experimental",
+            "prob": 0.0082
+          },
+          {
+            "token": "resources",
+            "prob": 0.0082
+          }
+        ],
+        "20": [
+          {
+            "token": "availability",
+            "prob": 0.5378
+          },
+          {
+            "token": "limited",
+            "prob": 0.0935
+          },
+          {
+            "token": "resources",
+            "prob": 0.0087
+          },
+          {
+            "token": "limitations",
+            "prob": 0.0077
+          },
+          {
+            "token": "experimental",
+            "prob": 0.0068
+          }
+        ],
+        "21": [
+          {
+            "token": "availability",
+            "prob": 0.5669
+          },
+          {
+            "token": "effectiveness",
+            "prob": 0.0036
+          },
+          {
+            "token": "documentation",
+            "prob": 0.0026
+          },
+          {
+            "token": "empirical",
+            "prob": 0.0023
+          },
+          {
+            "token": "literature",
+            "prob": 0.0022
+          }
+        ],
+        "22": [
+          {
+            "token": "availability",
+            "prob": 0.013
+          },
+          {
+            "token": "literature",
+            "prob": 0.0012
+          },
+          {
+            "token": "empirical",
+            "prob": 0.0005
+          },
+          {
+            "token": "documentation",
+            "prob": 0.0003
+          },
+          {
+            "token": "findings",
+            "prob": 0.0003
+          }
+        ],
+        "23": [
+          {
+            "token": "availability",
+            "prob": 0.4827
+          },
+          {
+            "token": "literature",
+            "prob": 0.0069
+          },
+          {
+            "token": "randomized",
+            "prob": 0.0061
+          },
+          {
+            "token": "empirical",
+            "prob": 0.0016
+          },
+          {
+            "token": "experimental",
+            "prob": 0.0011
+          }
+        ],
+        "24": [
+          {
+            "token": "availability",
+            "prob": 0.6562
+          },
+          {
+            "token": "literature",
+            "prob": 0.0024
+          },
+          {
+            "token": "empirical",
+            "prob": 0.001
+          },
+          {
+            "token": "accessibility",
+            "prob": 0.0007
+          },
+          {
+            "token": "randomized",
+            "prob": 0.0005
+          }
+        ],
+        "25": [
+          {
+            "token": "availability",
+            "prob": 0.8321
+          },
+          {
+            "token": "accessibility",
+            "prob": 0.0019
+          },
+          {
+            "token": "number",
+            "prob": 0.0018
+          },
+          {
+            "token": "empirical",
+            "prob": 0.0016
+          },
+          {
+            "token": "literature",
+            "prob": 0.0011
+          }
+        ],
+        "26": [
+          {
+            "token": "availability",
+            "prob": 0.4125
+          },
+          {
+            "token": "number",
+            "prob": 0.008
+          },
+          {
+            "token": "empirical",
+            "prob": 0.0071
+          },
+          {
+            "token": "accessibility",
+            "prob": 0.0049
+          },
+          {
+            "token": "efficacy",
+            "prob": 0.0043
+          }
+        ]
+      },
+      "plain_onset": 1,
+      "concern_onset": 13,
+      "ab_comparison": {
+        "per_layer": {
+          "0": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "1": {
+            "overlap": [],
+            "plain_only": [
+              "indsay",
+              "rigesimal",
+              "sexo"
+            ],
+            "concern_only": [
+              "busty"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 3,
+            "n_concern_only": 1
+          },
+          "2": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "3": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "4": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "5": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "6": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "7": {
+            "overlap": [],
+            "plain_only": [
+              "decltype",
+              "indsay",
+              "pedido"
+            ],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 3,
+            "n_concern_only": 0
+          },
+          "8": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "9": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "10": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "11": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "12": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [
+              "limited"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 1
+          },
+          "13": {
+            "overlap": [],
+            "plain_only": [
+              "application",
+              "practice",
+              "routine",
+              "standard"
+            ],
+            "concern_only": [
+              "availability",
+              "limited"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 4,
+            "n_concern_only": 2
+          },
+          "14": {
+            "overlap": [
+              "limited"
+            ],
+            "plain_only": [
+              "application",
+              "practice",
+              "routine"
+            ],
+            "concern_only": [
+              "availability"
+            ],
+            "n_overlap": 1,
+            "n_plain_only": 3,
+            "n_concern_only": 1
+          },
+          "15": {
+            "overlap": [
+              "limited"
+            ],
+            "plain_only": [
+              "alternative",
+              "application",
+              "practice",
+              "routine"
+            ],
+            "concern_only": [
+              "availability",
+              "limitation",
+              "limitations",
+              "resources"
+            ],
+            "n_overlap": 1,
+            "n_plain_only": 4,
+            "n_concern_only": 4
+          },
+          "16": {
+            "overlap": [
+              "limited"
+            ],
+            "plain_only": [
+              "application",
+              "cost",
+              "practice",
+              "until"
+            ],
+            "concern_only": [
+              "availability",
+              "limitation",
+              "limitations",
+              "limiting"
+            ],
+            "n_overlap": 1,
+            "n_plain_only": 4,
+            "n_concern_only": 4
+          },
+          "17": {
+            "overlap": [
+              "limited"
+            ],
+            "plain_only": [
+              "alternative",
+              "application",
+              "cost",
+              "practice"
+            ],
+            "concern_only": [
+              "availability",
+              "limitation",
+              "limitations",
+              "limiting"
+            ],
+            "n_overlap": 1,
+            "n_plain_only": 4,
+            "n_concern_only": 4
+          },
+          "18": {
+            "overlap": [
+              "limited"
+            ],
+            "plain_only": [
+              "alternative",
+              "despite",
+              "outside",
+              "until"
+            ],
+            "concern_only": [
+              "availability",
+              "limitations",
+              "limiting",
+              "restricted"
+            ],
+            "n_overlap": 1,
+            "n_plain_only": 4,
+            "n_concern_only": 4
+          },
+          "19": {
+            "overlap": [
+              "limited"
+            ],
+            "plain_only": [
+              "among",
+              "despite",
+              "unless",
+              "until"
+            ],
+            "concern_only": [
+              "availability",
+              "experimental",
+              "limitations",
+              "resources"
+            ],
+            "n_overlap": 1,
+            "n_plain_only": 4,
+            "n_concern_only": 4
+          },
+          "20": {
+            "overlap": [],
+            "plain_only": [
+              "among",
+              "except",
+              "practical",
+              "unless",
+              "until"
+            ],
+            "concern_only": [
+              "availability",
+              "experimental",
+              "limitations",
+              "limited",
+              "resources"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "21": {
+            "overlap": [],
+            "plain_only": [
+              "unless"
+            ],
+            "concern_only": [
+              "availability",
+              "documentation",
+              "effectiveness",
+              "empirical",
+              "literature"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 1,
+            "n_concern_only": 5
+          },
+          "22": {
+            "overlap": [],
+            "plain_only": [
+              "unless"
+            ],
+            "concern_only": [
+              "availability",
+              "documentation",
+              "empirical",
+              "findings",
+              "literature"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 1,
+            "n_concern_only": 5
+          },
+          "23": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [
+              "availability",
+              "empirical",
+              "experimental",
+              "literature",
+              "randomized"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 5
+          },
+          "24": {
+            "overlap": [],
+            "plain_only": [
+              "among",
+              "currently",
+              "except",
+              "outside",
+              "unless"
+            ],
+            "concern_only": [
+              "accessibility",
+              "availability",
+              "empirical",
+              "literature",
+              "randomized"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "25": {
+            "overlap": [],
+            "plain_only": [
+              "among",
+              "clinically",
+              "except",
+              "outside",
+              "unless"
+            ],
+            "concern_only": [
+              "accessibility",
+              "availability",
+              "empirical",
+              "literature",
+              "number"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "26": {
+            "overlap": [],
+            "plain_only": [
+              "among",
+              "clin",
+              "clinically",
+              "except",
+              "outside"
+            ],
+            "concern_only": [
+              "accessibility",
+              "availability",
+              "efficacy",
+              "empirical",
+              "number"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          }
+        },
+        "most_document_driven_layers": [
+          [
+            20,
+            5
+          ],
+          [
+            24,
+            5
+          ],
+          [
+            25,
+            5
+          ],
+          [
+            26,
+            5
+          ],
+          [
+            13,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "cluster_id": 167,
+      "n_docs": 13,
+      "sample_doc": "While many women with polycystic ovary syndrome (PCOS) are overweight, obese or centrally obese, the effect of excess weight on the outcomes of PCOS is inconsistent. The review aimed to assess the eff",
+      "plain_gradient": {
+        "0": [],
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": [],
+        "8": [],
+        "9": [],
+        "10": [],
+        "11": [],
+        "12": [],
+        "13": [],
+        "14": [],
+        "15": [],
+        "16": [],
+        "17": [
+          {
+            "token": "examination",
+            "prob": 0.0012
+          }
+        ],
+        "18": [],
+        "19": [
+          {
+            "token": "conducted",
+            "prob": 0.0006
+          }
+        ],
+        "20": [
+          {
+            "token": "studied",
+            "prob": 0.0006
+          }
+        ],
+        "21": [],
+        "22": [],
+        "23": [
+          {
+            "token": "randomized",
+            "prob": 0.0
+          },
+          {
+            "token": "divided",
+            "prob": 0.0
+          },
+          {
+            "token": "retrospect",
+            "prob": 0.0
+          },
+          {
+            "token": "randomly",
+            "prob": 0.0
+          }
+        ],
+        "24": [
+          {
+            "token": "retrospect",
+            "prob": 0.0002
+          },
+          {
+            "token": "divided",
+            "prob": 0.0001
+          },
+          {
+            "token": "randomized",
+            "prob": 0.0001
+          },
+          {
+            "token": "randomly",
+            "prob": 0.0
+          },
+          {
+            "token": "prospect",
+            "prob": 0.0
+          }
+        ],
+        "25": [
+          {
+            "token": "over",
+            "prob": 0.0003
+          },
+          {
+            "token": "prospect",
+            "prob": 0.0002
+          },
+          {
+            "token": "retrospect",
+            "prob": 0.0002
+          },
+          {
+            "token": "divided",
+            "prob": 0.0
+          },
+          {
+            "token": "randomized",
+            "prob": 0.0
+          }
+        ],
+        "26": [
+          {
+            "token": "prospect",
+            "prob": 0.0046
+          },
+          {
+            "token": "retrospect",
+            "prob": 0.0025
+          },
+          {
+            "token": "over",
+            "prob": 0.0008
+          },
+          {
+            "token": "consec",
+            "prob": 0.0001
+          },
+          {
+            "token": "prospective",
+            "prob": 0.0001
+          }
+        ]
+      },
+      "concern_gradient": {
+        "0": [],
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [
+          {
+            "token": "Categoria",
+            "prob": 0.0001
+          }
+        ],
+        "6": [],
+        "7": [
+          {
+            "token": "Categoria",
+            "prob": 0.0001
+          },
+          {
+            "token": "Archived",
+            "prob": 0.0001
+          },
+          {
+            "token": "posición",
+            "prob": 0.0001
+          },
+          {
+            "token": "indsay",
+            "prob": 0.0
+          },
+          {
+            "token": "Unterstützung",
+            "prob": 0.0
+          }
+        ],
+        "8": [],
+        "9": [],
+        "10": [],
+        "11": [],
+        "12": [],
+        "13": [],
+        "14": [],
+        "15": [],
+        "16": [],
+        "17": [],
+        "18": [
+          {
+            "token": "Participants",
+            "prob": 0.0035
+          },
+          {
+            "token": "Investig",
+            "prob": 0.0008
+          },
+          {
+            "token": "Methods",
+            "prob": 0.0007
+          },
+          {
+            "token": "Implementation",
+            "prob": 0.0006
+          },
+          {
+            "token": "Organisation",
+            "prob": 0.0006
+          }
+        ],
+        "19": [
+          {
+            "token": "Participants",
+            "prob": 0.0458
+          },
+          {
+            "token": "Experimental",
+            "prob": 0.0062
+          },
+          {
+            "token": "Methods",
+            "prob": 0.0048
+          },
+          {
+            "token": "Implementation",
+            "prob": 0.004
+          },
+          {
+            "token": "Researchers",
+            "prob": 0.0033
+          }
+        ],
+        "20": [
+          {
+            "token": "Participants",
+            "prob": 0.2324
+          },
+          {
+            "token": "Researchers",
+            "prob": 0.0216
+          },
+          {
+            "token": "Methods",
+            "prob": 0.0158
+          },
+          {
+            "token": "Experimental",
+            "prob": 0.0109
+          },
+          {
+            "token": "Pregn",
+            "prob": 0.0048
+          }
+        ],
+        "21": [
+          {
+            "token": "Participants",
+            "prob": 0.2897
+          },
+          {
+            "token": "Researchers",
+            "prob": 0.0185
+          },
+          {
+            "token": "Women",
+            "prob": 0.0082
+          },
+          {
+            "token": "Pregn",
+            "prob": 0.0082
+          },
+          {
+            "token": "Investigators",
+            "prob": 0.0041
+          }
+        ],
+        "22": [
+          {
+            "token": "Participants",
+            "prob": 0.0
+          }
+        ],
+        "23": [
+          {
+            "token": "Participants",
+            "prob": 0.0001
+          },
+          {
+            "token": "Materials",
+            "prob": 0.0
+          },
+          {
+            "token": "Subjects",
+            "prob": 0.0
+          }
+        ],
+        "24": [
+          {
+            "token": "Participants",
+            "prob": 0.0
+          }
+        ],
+        "25": [
+          {
+            "token": "Women",
+            "prob": 0.0
+          },
+          {
+            "token": "Participants",
+            "prob": 0.0
+          },
+          {
+            "token": "Female",
+            "prob": 0.0
+          },
+          {
+            "token": "Pregn",
+            "prob": 0.0
+          },
+          {
+            "token": "Materials",
+            "prob": 0.0
+          }
+        ],
+        "26": [
+          {
+            "token": "Women",
+            "prob": 0.0001
+          },
+          {
+            "token": "Pregn",
+            "prob": 0.0
+          },
+          {
+            "token": "Participants",
+            "prob": 0.0
+          },
+          {
+            "token": "Obst",
+            "prob": 0.0
+          },
+          {
+            "token": "Female",
+            "prob": 0.0
+          }
+        ]
+      },
+      "plain_onset": 23,
+      "concern_onset": 7,
+      "ab_comparison": {
+        "per_layer": {
+          "0": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "1": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "2": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "3": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "4": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "5": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [
+              "categoria"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 1
+          },
+          "6": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "7": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [
+              "archived",
+              "categoria",
+              "indsay",
+              "posición",
+              "unterstützung"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 5
+          },
+          "8": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "9": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "10": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "11": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "12": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "13": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "14": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "15": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "16": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "17": {
+            "overlap": [],
+            "plain_only": [
+              "examination"
+            ],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 1,
+            "n_concern_only": 0
+          },
+          "18": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [
+              "implementation",
+              "investig",
+              "methods",
+              "organisation",
+              "participants"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 5
+          },
+          "19": {
+            "overlap": [],
+            "plain_only": [
+              "conducted"
+            ],
+            "concern_only": [
+              "experimental",
+              "implementation",
+              "methods",
+              "participants",
+              "researchers"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 1,
+            "n_concern_only": 5
+          },
+          "20": {
+            "overlap": [],
+            "plain_only": [
+              "studied"
+            ],
+            "concern_only": [
+              "experimental",
+              "methods",
+              "participants",
+              "pregn",
+              "researchers"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 1,
+            "n_concern_only": 5
+          },
+          "21": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [
+              "investigators",
+              "participants",
+              "pregn",
+              "researchers",
+              "women"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 5
+          },
+          "22": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [
+              "participants"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 1
+          },
+          "23": {
+            "overlap": [],
+            "plain_only": [
+              "divided",
+              "randomized",
+              "randomly",
+              "retrospect"
+            ],
+            "concern_only": [
+              "materials",
+              "participants",
+              "subjects"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 4,
+            "n_concern_only": 3
+          },
+          "24": {
+            "overlap": [],
+            "plain_only": [
+              "divided",
+              "prospect",
+              "randomized",
+              "randomly",
+              "retrospect"
+            ],
+            "concern_only": [
+              "participants"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 1
+          },
+          "25": {
+            "overlap": [],
+            "plain_only": [
+              "divided",
+              "over",
+              "prospect",
+              "randomized",
+              "retrospect"
+            ],
+            "concern_only": [
+              "female",
+              "materials",
+              "participants",
+              "pregn",
+              "women"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "26": {
+            "overlap": [],
+            "plain_only": [
+              "consec",
+              "over",
+              "prospect",
+              "prospective",
+              "retrospect"
+            ],
+            "concern_only": [
+              "female",
+              "obst",
+              "participants",
+              "pregn",
+              "women"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          }
+        },
+        "most_document_driven_layers": [
+          [
+            24,
+            5
+          ],
+          [
+            25,
+            5
+          ],
+          [
+            26,
+            5
+          ],
+          [
+            23,
+            4
+          ],
+          [
+            17,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "cluster_id": 103,
+      "n_docs": 13,
+      "sample_doc": "Diabetic retinopathy is a common and specific microvascular complication of diabetes, and remains the leading cause of preventable blindness in working-aged people. It is identified in a third of peop",
+      "plain_gradient": {
+        "0": [],
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": [],
+        "8": [],
+        "9": [],
+        "10": [],
+        "11": [],
+        "12": [],
+        "13": [],
+        "14": [],
+        "15": [],
+        "16": [],
+        "17": [],
+        "18": [],
+        "19": [
+          {
+            "token": "iect",
+            "prob": 0.0002
+          },
+          {
+            "token": "artisan",
+            "prob": 0.0001
+          }
+        ],
+        "20": [
+          {
+            "token": "odyn",
+            "prob": 0.0072
+          },
+          {
+            "token": "atego",
+            "prob": 0.005
+          },
+          {
+            "token": "iect",
+            "prob": 0.0034
+          },
+          {
+            "token": "artisan",
+            "prob": 0.0032
+          },
+          {
+            "token": "outu",
+            "prob": 0.003
+          }
+        ],
+        "21": [
+          {
+            "token": "atego",
+            "prob": 0.0056
+          },
+          {
+            "token": "artisan",
+            "prob": 0.0036
+          },
+          {
+            "token": "meta",
+            "prob": 0.0025
+          },
+          {
+            "token": "imary",
+            "prob": 0.0023
+          },
+          {
+            "token": "iect",
+            "prob": 0.0023
+          }
+        ],
+        "22": [
+          {
+            "token": "atego",
+            "prob": 0.0181
+          },
+          {
+            "token": "meld",
+            "prob": 0.0141
+          },
+          {
+            "token": "ourcem",
+            "prob": 0.0132
+          },
+          {
+            "token": "irable",
+            "prob": 0.0097
+          },
+          {
+            "token": "artisan",
+            "prob": 0.0046
+          }
+        ],
+        "23": [
+          {
+            "token": "atego",
+            "prob": 0.013
+          },
+          {
+            "token": "zoek",
+            "prob": 0.0114
+          },
+          {
+            "token": "irable",
+            "prob": 0.0107
+          },
+          {
+            "token": "strtolower",
+            "prob": 0.0089
+          },
+          {
+            "token": "artisan",
+            "prob": 0.0089
+          }
+        ],
+        "24": [
+          {
+            "token": "Fauc",
+            "prob": 0.0328
+          },
+          {
+            "token": "ogui",
+            "prob": 0.0272
+          },
+          {
+            "token": "vidence",
+            "prob": 0.0106
+          },
+          {
+            "token": "irable",
+            "prob": 0.01
+          },
+          {
+            "token": "imited",
+            "prob": 0.0088
+          }
+        ],
+        "25": [
+          {
+            "token": "ogui",
+            "prob": 0.0145
+          },
+          {
+            "token": "irable",
+            "prob": 0.0128
+          },
+          {
+            "token": "zoek",
+            "prob": 0.0064
+          },
+          {
+            "token": "iber",
+            "prob": 0.0057
+          },
+          {
+            "token": "ivered",
+            "prob": 0.0053
+          }
+        ],
+        "26": [
+          {
+            "token": "ighted",
+            "prob": 0.1537
+          },
+          {
+            "token": "iber",
+            "prob": 0.1124
+          },
+          {
+            "token": "ivered",
+            "prob": 0.0365
+          },
+          {
+            "token": "phia",
+            "prob": 0.0236
+          },
+          {
+            "token": "gado",
+            "prob": 0.0221
+          }
+        ]
+      },
+      "concern_gradient": {
+        "0": [],
+        "1": [
+          {
+            "token": "initialised",
+            "prob": 0.0001
+          }
+        ],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": [],
+        "8": [],
+        "9": [],
+        "10": [],
+        "11": [],
+        "12": [],
+        "13": [
+          {
+            "token": "period",
+            "prob": 0.0004
+          },
+          {
+            "token": "duration",
+            "prob": 0.0003
+          },
+          {
+            "token": "time",
+            "prob": 0.0001
+          }
+        ],
+        "14": [
+          {
+            "token": "period",
+            "prob": 0.0028
+          },
+          {
+            "token": "duration",
+            "prob": 0.0013
+          },
+          {
+            "token": "post",
+            "prob": 0.0006
+          },
+          {
+            "token": "standard",
+            "prob": 0.0004
+          },
+          {
+            "token": "time",
+            "prob": 0.0004
+          }
+        ],
+        "15": [
+          {
+            "token": "period",
+            "prob": 0.0377
+          },
+          {
+            "token": "duration",
+            "prob": 0.0244
+          },
+          {
+            "token": "standard",
+            "prob": 0.0122
+          },
+          {
+            "token": "post",
+            "prob": 0.0115
+          },
+          {
+            "token": "time",
+            "prob": 0.0058
+          }
+        ],
+        "16": [
+          {
+            "token": "period",
+            "prob": 0.0413
+          },
+          {
+            "token": "post",
+            "prob": 0.0364
+          },
+          {
+            "token": "standard",
+            "prob": 0.0143
+          },
+          {
+            "token": "either",
+            "prob": 0.0098
+          },
+          {
+            "token": "duration",
+            "prob": 0.0092
+          }
+        ],
+        "17": [
+          {
+            "token": "post",
+            "prob": 0.0334
+          },
+          {
+            "token": "period",
+            "prob": 0.0179
+          },
+          {
+            "token": "standard",
+            "prob": 0.0096
+          },
+          {
+            "token": "long",
+            "prob": 0.0066
+          },
+          {
+            "token": "completed",
+            "prob": 0.0066
+          }
+        ],
+        "18": [
+          {
+            "token": "post",
+            "prob": 0.0532
+          },
+          {
+            "token": "period",
+            "prob": 0.0322
+          },
+          {
+            "token": "including",
+            "prob": 0.0222
+          },
+          {
+            "token": "either",
+            "prob": 0.0196
+          },
+          {
+            "token": "plus",
+            "prob": 0.0111
+          }
+        ],
+        "19": [
+          {
+            "token": "including",
+            "prob": 0.0399
+          },
+          {
+            "token": "post",
+            "prob": 0.0189
+          },
+          {
+            "token": "period",
+            "prob": 0.0166
+          },
+          {
+            "token": "plus",
+            "prob": 0.0156
+          },
+          {
+            "token": "either",
+            "prob": 0.0156
+          }
+        ],
+        "20": [
+          {
+            "token": "included",
+            "prob": 0.0222
+          },
+          {
+            "token": "plus",
+            "prob": 0.0134
+          },
+          {
+            "token": "period",
+            "prob": 0.0119
+          },
+          {
+            "token": "relevant",
+            "prob": 0.0092
+          },
+          {
+            "token": "completed",
+            "prob": 0.0092
+          }
+        ],
+        "21": [
+          {
+            "token": "included",
+            "prob": 0.0252
+          },
+          {
+            "token": "involving",
+            "prob": 0.0163
+          },
+          {
+            "token": "published",
+            "prob": 0.0119
+          },
+          {
+            "token": "reported",
+            "prob": 0.0082
+          },
+          {
+            "token": "conducted",
+            "prob": 0.0056
+          }
+        ],
+        "22": [
+          {
+            "token": "published",
+            "prob": 0.0884
+          },
+          {
+            "token": "involving",
+            "prob": 0.0473
+          },
+          {
+            "token": "reporting",
+            "prob": 0.0346
+          },
+          {
+            "token": "reported",
+            "prob": 0.0136
+          },
+          {
+            "token": "conducted",
+            "prob": 0.0088
+          }
+        ],
+        "23": [
+          {
+            "token": "published",
+            "prob": 0.2825
+          },
+          {
+            "token": "involving",
+            "prob": 0.017
+          },
+          {
+            "token": "reporting",
+            "prob": 0.017
+          },
+          {
+            "token": "conducted",
+            "prob": 0.0052
+          },
+          {
+            "token": "publication",
+            "prob": 0.0036
+          }
+        ],
+        "24": [
+          {
+            "token": "published",
+            "prob": 0.2904
+          },
+          {
+            "token": "reporting",
+            "prob": 0.0164
+          },
+          {
+            "token": "involving",
+            "prob": 0.0128
+          },
+          {
+            "token": "conducted",
+            "prob": 0.0099
+          },
+          {
+            "token": "investigating",
+            "prob": 0.0047
+          }
+        ],
+        "25": [
+          {
+            "token": "published",
+            "prob": 0.0178
+          },
+          {
+            "token": "involving",
+            "prob": 0.0031
+          },
+          {
+            "token": "reporting",
+            "prob": 0.0015
+          },
+          {
+            "token": "conducted",
+            "prob": 0.0008
+          },
+          {
+            "token": "investigating",
+            "prob": 0.0008
+          }
+        ],
+        "26": [
+          {
+            "token": "reporting",
+            "prob": 0.017
+          },
+          {
+            "token": "published",
+            "prob": 0.008
+          },
+          {
+            "token": "evaluating",
+            "prob": 0.008
+          },
+          {
+            "token": "assessing",
+            "prob": 0.0071
+          },
+          {
+            "token": "involving",
+            "prob": 0.0038
+          }
+        ]
+      },
+      "plain_onset": 19,
+      "concern_onset": 13,
+      "ab_comparison": {
+        "per_layer": {
+          "0": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "1": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [
+              "initialised"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 1
+          },
+          "2": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "3": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "4": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "5": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "6": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "7": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "8": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "9": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "10": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "11": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "12": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "13": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [
+              "duration",
+              "period",
+              "time"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 3
+          },
+          "14": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [
+              "duration",
+              "period",
+              "post",
+              "standard",
+              "time"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 5
+          },
+          "15": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [
+              "duration",
+              "period",
+              "post",
+              "standard",
+              "time"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 5
+          },
+          "16": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [
+              "duration",
+              "either",
+              "period",
+              "post",
+              "standard"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 5
+          },
+          "17": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [
+              "completed",
+              "long",
+              "period",
+              "post",
+              "standard"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 5
+          },
+          "18": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [
+              "either",
+              "including",
+              "period",
+              "plus",
+              "post"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 5
+          },
+          "19": {
+            "overlap": [],
+            "plain_only": [
+              "artisan",
+              "iect"
+            ],
+            "concern_only": [
+              "either",
+              "including",
+              "period",
+              "plus",
+              "post"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 2,
+            "n_concern_only": 5
+          },
+          "20": {
+            "overlap": [],
+            "plain_only": [
+              "artisan",
+              "atego",
+              "iect",
+              "odyn",
+              "outu"
+            ],
+            "concern_only": [
+              "completed",
+              "included",
+              "period",
+              "plus",
+              "relevant"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "21": {
+            "overlap": [],
+            "plain_only": [
+              "artisan",
+              "atego",
+              "iect",
+              "imary",
+              "meta"
+            ],
+            "concern_only": [
+              "conducted",
+              "included",
+              "involving",
+              "published",
+              "reported"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "22": {
+            "overlap": [],
+            "plain_only": [
+              "artisan",
+              "atego",
+              "irable",
+              "meld",
+              "ourcem"
+            ],
+            "concern_only": [
+              "conducted",
+              "involving",
+              "published",
+              "reported",
+              "reporting"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "23": {
+            "overlap": [],
+            "plain_only": [
+              "artisan",
+              "atego",
+              "irable",
+              "strtolower",
+              "zoek"
+            ],
+            "concern_only": [
+              "conducted",
+              "involving",
+              "publication",
+              "published",
+              "reporting"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "24": {
+            "overlap": [],
+            "plain_only": [
+              "fauc",
+              "imited",
+              "irable",
+              "ogui",
+              "vidence"
+            ],
+            "concern_only": [
+              "conducted",
+              "investigating",
+              "involving",
+              "published",
+              "reporting"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "25": {
+            "overlap": [],
+            "plain_only": [
+              "iber",
+              "irable",
+              "ivered",
+              "ogui",
+              "zoek"
+            ],
+            "concern_only": [
+              "conducted",
+              "investigating",
+              "involving",
+              "published",
+              "reporting"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "26": {
+            "overlap": [],
+            "plain_only": [
+              "gado",
+              "iber",
+              "ighted",
+              "ivered",
+              "phia"
+            ],
+            "concern_only": [
+              "assessing",
+              "evaluating",
+              "involving",
+              "published",
+              "reporting"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          }
+        },
+        "most_document_driven_layers": [
+          [
+            20,
+            5
+          ],
+          [
+            21,
+            5
+          ],
+          [
+            22,
+            5
+          ],
+          [
+            23,
+            5
+          ],
+          [
+            24,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "cluster_id": 165,
+      "n_docs": 12,
+      "sample_doc": "Overweight or obese women with PCOS had decreased sex hormone-binding globulin (SHBG), increased total testosterone, free androgen index, hirsutism, fasting glucose, fasting insulin, homeostatic model",
+      "plain_gradient": {
+        "0": [],
+        "1": [
+          {
+            "token": "rigesimal",
+            "prob": 0.0752
+          }
+        ],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": [],
+        "8": [],
+        "9": [],
+        "10": [],
+        "11": [],
+        "12": [],
+        "13": [],
+        "14": [],
+        "15": [],
+        "16": [],
+        "17": [
+          {
+            "token": "varying",
+            "prob": 0.0002
+          },
+          {
+            "token": "phenomenon",
+            "prob": 0.0002
+          },
+          {
+            "token": "various",
+            "prob": 0.0002
+          },
+          {
+            "token": "diverse",
+            "prob": 0.0001
+          },
+          {
+            "token": "individual",
+            "prob": 0.0001
+          }
+        ],
+        "18": [
+          {
+            "token": "phenomenon",
+            "prob": 0.0028
+          },
+          {
+            "token": "diverse",
+            "prob": 0.0012
+          },
+          {
+            "token": "system",
+            "prob": 0.0007
+          }
+        ],
+        "19": [
+          {
+            "token": "phenomenon",
+            "prob": 0.1082
+          },
+          {
+            "token": "phenomena",
+            "prob": 0.0166
+          },
+          {
+            "token": "underlying",
+            "prob": 0.0129
+          },
+          {
+            "token": "diverse",
+            "prob": 0.0121
+          },
+          {
+            "token": "syndrome",
+            "prob": 0.0121
+          }
+        ],
+        "20": [
+          {
+            "token": "phenomenon",
+            "prob": 0.4002
+          },
+          {
+            "token": "individuals",
+            "prob": 0.0396
+          },
+          {
+            "token": "variability",
+            "prob": 0.0226
+          },
+          {
+            "token": "phenomena",
+            "prob": 0.0212
+          },
+          {
+            "token": "syndrome",
+            "prob": 0.0212
+          }
+        ],
+        "21": [
+          {
+            "token": "phenomenon",
+            "prob": 0.4601
+          },
+          {
+            "token": "syndrome",
+            "prob": 0.2174
+          },
+          {
+            "token": "phenomena",
+            "prob": 0.0333
+          },
+          {
+            "token": "individuals",
+            "prob": 0.0229
+          },
+          {
+            "token": "symptoms",
+            "prob": 0.0139
+          }
+        ],
+        "22": [
+          {
+            "token": "syndrome",
+            "prob": 0.4866
+          },
+          {
+            "token": "phenomenon",
+            "prob": 0.0958
+          },
+          {
+            "token": "disorder",
+            "prob": 0.0089
+          },
+          {
+            "token": "diagnosis",
+            "prob": 0.0079
+          },
+          {
+            "token": "individuals",
+            "prob": 0.0061
+          }
+        ],
+        "23": [
+          {
+            "token": "syndrome",
+            "prob": 0.0124
+          },
+          {
+            "token": "disorder",
+            "prob": 0.0008
+          },
+          {
+            "token": "diagnosis",
+            "prob": 0.0001
+          },
+          {
+            "token": "diseases",
+            "prob": 0.0001
+          },
+          {
+            "token": "illness",
+            "prob": 0.0001
+          }
+        ],
+        "24": [
+          {
+            "token": "syndrome",
+            "prob": 0.3989
+          },
+          {
+            "token": "disorder",
+            "prob": 0.0155
+          },
+          {
+            "token": "population",
+            "prob": 0.0004
+          },
+          {
+            "token": "underlying",
+            "prob": 0.0004
+          },
+          {
+            "token": "diagnosis",
+            "prob": 0.0003
+          }
+        ],
+        "25": [
+          {
+            "token": "syndrome",
+            "prob": 0.8055
+          },
+          {
+            "token": "disorder",
+            "prob": 0.109
+          },
+          {
+            "token": "condition",
+            "prob": 0.0167
+          },
+          {
+            "token": "synd",
+            "prob": 0.0001
+          },
+          {
+            "token": "illness",
+            "prob": 0.0001
+          }
+        ],
+        "26": [
+          {
+            "token": "syndrome",
+            "prob": 0.9351
+          },
+          {
+            "token": "disorder",
+            "prob": 0.0598
+          },
+          {
+            "token": "condition",
+            "prob": 0.0004
+          },
+          {
+            "token": "synd",
+            "prob": 0.0001
+          },
+          {
+            "token": "phenotype",
+            "prob": 0.0
+          }
+        ]
+      },
+      "concern_gradient": {
+        "0": [],
+        "1": [
+          {
+            "token": "коло",
+            "prob": 0.0028
+          },
+          {
+            "token": "avanaugh",
+            "prob": 0.0016
+          }
+        ],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": [],
+        "8": [],
+        "9": [],
+        "10": [
+          {
+            "token": "female",
+            "prob": 0.0015
+          },
+          {
+            "token": "women",
+            "prob": 0.0008
+          }
+        ],
+        "11": [
+          {
+            "token": "women",
+            "prob": 0.003
+          },
+          {
+            "token": "female",
+            "prob": 0.0022
+          }
+        ],
+        "12": [
+          {
+            "token": "women",
+            "prob": 0.0046
+          },
+          {
+            "token": "female",
+            "prob": 0.0028
+          }
+        ],
+        "13": [
+          {
+            "token": "women",
+            "prob": 0.0037
+          },
+          {
+            "token": "female",
+            "prob": 0.0029
+          }
+        ],
+        "14": [
+          {
+            "token": "women",
+            "prob": 0.0079
+          },
+          {
+            "token": "female",
+            "prob": 0.0048
+          }
+        ],
+        "15": [
+          {
+            "token": "criteria",
+            "prob": 0.0334
+          },
+          {
+            "token": "defined",
+            "prob": 0.0043
+          },
+          {
+            "token": "according",
+            "prob": 0.0029
+          },
+          {
+            "token": "women",
+            "prob": 0.0023
+          },
+          {
+            "token": "syndrome",
+            "prob": 0.0021
+          }
+        ],
+        "16": [
+          {
+            "token": "criteria",
+            "prob": 0.0253
+          },
+          {
+            "token": "according",
+            "prob": 0.0099
+          },
+          {
+            "token": "defined",
+            "prob": 0.006
+          },
+          {
+            "token": "sympt",
+            "prob": 0.0015
+          },
+          {
+            "token": "documented",
+            "prob": 0.0015
+          }
+        ],
+        "17": [
+          {
+            "token": "according",
+            "prob": 0.0496
+          },
+          {
+            "token": "criteria",
+            "prob": 0.0466
+          },
+          {
+            "token": "defined",
+            "prob": 0.0142
+          },
+          {
+            "token": "documented",
+            "prob": 0.0052
+          },
+          {
+            "token": "specifically",
+            "prob": 0.0052
+          }
+        ],
+        "18": [
+          {
+            "token": "according",
+            "prob": 0.0228
+          },
+          {
+            "token": "criteria",
+            "prob": 0.0089
+          },
+          {
+            "token": "described",
+            "prob": 0.0079
+          },
+          {
+            "token": "defined",
+            "prob": 0.0074
+          },
+          {
+            "token": "including",
+            "prob": 0.0065
+          }
+        ],
+        "19": [
+          {
+            "token": "despite",
+            "prob": 0.0211
+          },
+          {
+            "token": "including",
+            "prob": 0.01
+          },
+          {
+            "token": "since",
+            "prob": 0.0088
+          },
+          {
+            "token": "suggested",
+            "prob": 0.0083
+          },
+          {
+            "token": "today",
+            "prob": 0.0068
+          }
+        ],
+        "20": [
+          {
+            "token": "suggested",
+            "prob": 0.0278
+          },
+          {
+            "token": "indicates",
+            "prob": 0.0217
+          },
+          {
+            "token": "suggests",
+            "prob": 0.0203
+          },
+          {
+            "token": "resulted",
+            "prob": 0.0149
+          },
+          {
+            "token": "indicated",
+            "prob": 0.0123
+          }
+        ],
+        "21": [
+          {
+            "token": "indicates",
+            "prob": 0.1304
+          },
+          {
+            "token": "suggests",
+            "prob": 0.0842
+          },
+          {
+            "token": "resulted",
+            "prob": 0.0166
+          },
+          {
+            "token": "means",
+            "prob": 0.0121
+          },
+          {
+            "token": "suggested",
+            "prob": 0.0121
+          }
+        ],
+        "22": [
+          {
+            "token": "demonstrates",
+            "prob": 0.2927
+          },
+          {
+            "token": "demonstrated",
+            "prob": 0.1077
+          },
+          {
+            "token": "reflects",
+            "prob": 0.0839
+          },
+          {
+            "token": "indicates",
+            "prob": 0.074
+          },
+          {
+            "token": "highlighting",
+            "prob": 0.0653
+          }
+        ],
+        "23": [
+          {
+            "token": "demonstrates",
+            "prob": 0.1843
+          },
+          {
+            "token": "reflects",
+            "prob": 0.1626
+          },
+          {
+            "token": "indicates",
+            "prob": 0.0986
+          },
+          {
+            "token": "highlighting",
+            "prob": 0.0871
+          },
+          {
+            "token": "highlights",
+            "prob": 0.0768
+          }
+        ],
+        "24": [
+          {
+            "token": "demonstrates",
+            "prob": 0.2919
+          },
+          {
+            "token": "reflects",
+            "prob": 0.1379
+          },
+          {
+            "token": "indicates",
+            "prob": 0.1217
+          },
+          {
+            "token": "highlights",
+            "prob": 0.1217
+          },
+          {
+            "token": "illustrates",
+            "prob": 0.0575
+          }
+        ],
+        "25": [
+          {
+            "token": "highlights",
+            "prob": 0.6999
+          },
+          {
+            "token": "reflects",
+            "prob": 0.177
+          },
+          {
+            "token": "highlight",
+            "prob": 0.0211
+          },
+          {
+            "token": "demonstrates",
+            "prob": 0.0145
+          },
+          {
+            "token": "emphasizes",
+            "prob": 0.0128
+          }
+        ],
+        "26": [
+          {
+            "token": "highlights",
+            "prob": 0.5235
+          },
+          {
+            "token": "reflects",
+            "prob": 0.2182
+          },
+          {
+            "token": "indicates",
+            "prob": 0.0261
+          },
+          {
+            "token": "demonstrates",
+            "prob": 0.0261
+          },
+          {
+            "token": "complic",
+            "prob": 0.0179
+          }
+        ]
+      },
+      "plain_onset": 17,
+      "concern_onset": 1,
+      "ab_comparison": {
+        "per_layer": {
+          "0": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "1": {
+            "overlap": [],
+            "plain_only": [
+              "rigesimal"
+            ],
+            "concern_only": [
+              "avanaugh",
+              "коло"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 1,
+            "n_concern_only": 2
+          },
+          "2": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "3": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "4": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "5": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "6": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "7": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "8": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "9": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "10": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [
+              "female",
+              "women"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 2
+          },
+          "11": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [
+              "female",
+              "women"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 2
+          },
+          "12": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [
+              "female",
+              "women"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 2
+          },
+          "13": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [
+              "female",
+              "women"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 2
+          },
+          "14": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [
+              "female",
+              "women"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 2
+          },
+          "15": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [
+              "according",
+              "criteria",
+              "defined",
+              "syndrome",
+              "women"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 5
+          },
+          "16": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [
+              "according",
+              "criteria",
+              "defined",
+              "documented",
+              "sympt"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 5
+          },
+          "17": {
+            "overlap": [],
+            "plain_only": [
+              "diverse",
+              "individual",
+              "phenomenon",
+              "various",
+              "varying"
+            ],
+            "concern_only": [
+              "according",
+              "criteria",
+              "defined",
+              "documented",
+              "specifically"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "18": {
+            "overlap": [],
+            "plain_only": [
+              "diverse",
+              "phenomenon",
+              "system"
+            ],
+            "concern_only": [
+              "according",
+              "criteria",
+              "defined",
+              "described",
+              "including"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 3,
+            "n_concern_only": 5
+          },
+          "19": {
+            "overlap": [],
+            "plain_only": [
+              "diverse",
+              "phenomena",
+              "phenomenon",
+              "syndrome",
+              "underlying"
+            ],
+            "concern_only": [
+              "despite",
+              "including",
+              "since",
+              "suggested",
+              "today"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "20": {
+            "overlap": [],
+            "plain_only": [
+              "individuals",
+              "phenomena",
+              "phenomenon",
+              "syndrome",
+              "variability"
+            ],
+            "concern_only": [
+              "indicated",
+              "indicates",
+              "resulted",
+              "suggested",
+              "suggests"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "21": {
+            "overlap": [],
+            "plain_only": [
+              "individuals",
+              "phenomena",
+              "phenomenon",
+              "symptoms",
+              "syndrome"
+            ],
+            "concern_only": [
+              "indicates",
+              "means",
+              "resulted",
+              "suggested",
+              "suggests"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "22": {
+            "overlap": [],
+            "plain_only": [
+              "diagnosis",
+              "disorder",
+              "individuals",
+              "phenomenon",
+              "syndrome"
+            ],
+            "concern_only": [
+              "demonstrated",
+              "demonstrates",
+              "highlighting",
+              "indicates",
+              "reflects"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "23": {
+            "overlap": [],
+            "plain_only": [
+              "diagnosis",
+              "diseases",
+              "disorder",
+              "illness",
+              "syndrome"
+            ],
+            "concern_only": [
+              "demonstrates",
+              "highlighting",
+              "highlights",
+              "indicates",
+              "reflects"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "24": {
+            "overlap": [],
+            "plain_only": [
+              "diagnosis",
+              "disorder",
+              "population",
+              "syndrome",
+              "underlying"
+            ],
+            "concern_only": [
+              "demonstrates",
+              "highlights",
+              "illustrates",
+              "indicates",
+              "reflects"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "25": {
+            "overlap": [],
+            "plain_only": [
+              "condition",
+              "disorder",
+              "illness",
+              "synd",
+              "syndrome"
+            ],
+            "concern_only": [
+              "demonstrates",
+              "emphasizes",
+              "highlight",
+              "highlights",
+              "reflects"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "26": {
+            "overlap": [],
+            "plain_only": [
+              "condition",
+              "disorder",
+              "phenotype",
+              "synd",
+              "syndrome"
+            ],
+            "concern_only": [
+              "complic",
+              "demonstrates",
+              "highlights",
+              "indicates",
+              "reflects"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          }
+        },
+        "most_document_driven_layers": [
+          [
+            17,
+            5
+          ],
+          [
+            19,
+            5
+          ],
+          [
+            20,
+            5
+          ],
+          [
+            21,
+            5
+          ],
+          [
+            22,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "cluster_id": 114,
+      "n_docs": 12,
+      "sample_doc": "Approximately 75% of all kidney stones are composed primarily of calcium oxalate, and hyperoxaluria is a primary risk factor for this disorder. Nine types of raw and cooked vegetables were analyzed fo",
+      "plain_gradient": {
+        "0": [
+          {
+            "token": "attività",
+            "prob": 0.0019
+          },
+          {
+            "token": "novità",
+            "prob": 0.0014
+          }
+        ],
+        "1": [
+          {
+            "token": "novità",
+            "prob": 0.0055
+          },
+          {
+            "token": "attività",
+            "prob": 0.0043
+          },
+          {
+            "token": "коло",
+            "prob": 0.0024
+          }
+        ],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [
+          {
+            "token": "novità",
+            "prob": 0.0008
+          }
+        ],
+        "6": [],
+        "7": [
+          {
+            "token": "detalle",
+            "prob": 0.004
+          },
+          {
+            "token": "novità",
+            "prob": 0.0015
+          },
+          {
+            "token": "proprietà",
+            "prob": 0.0005
+          }
+        ],
+        "8": [],
+        "9": [],
+        "10": [],
+        "11": [],
+        "12": [],
+        "13": [
+          {
+            "token": "nutrient",
+            "prob": 0.0079
+          },
+          {
+            "token": "detalle",
+            "prob": 0.0023
+          },
+          {
+            "token": "nutrients",
+            "prob": 0.0018
+          },
+          {
+            "token": "proprietà",
+            "prob": 0.0008
+          },
+          {
+            "token": "novità",
+            "prob": 0.0008
+          }
+        ],
+        "14": [
+          {
+            "token": "nutrient",
+            "prob": 0.007
+          },
+          {
+            "token": "novità",
+            "prob": 0.0048
+          },
+          {
+            "token": "modalità",
+            "prob": 0.0023
+          },
+          {
+            "token": "relu",
+            "prob": 0.002
+          },
+          {
+            "token": "każdym",
+            "prob": 0.0019
+          }
+        ],
+        "15": [
+          {
+            "token": "nutrient",
+            "prob": 0.0099
+          },
+          {
+            "token": "verdienen",
+            "prob": 0.0039
+          },
+          {
+            "token": "nutrients",
+            "prob": 0.0028
+          },
+          {
+            "token": "każdym",
+            "prob": 0.0027
+          },
+          {
+            "token": "calories",
+            "prob": 0.0025
+          }
+        ],
+        "16": [
+          {
+            "token": "tats",
+            "prob": 0.0056
+          },
+          {
+            "token": "nutrient",
+            "prob": 0.0046
+          },
+          {
+            "token": "bergen",
+            "prob": 0.0046
+          },
+          {
+            "token": "verm",
+            "prob": 0.0041
+          },
+          {
+            "token": "calories",
+            "prob": 0.0038
+          }
+        ],
+        "17": [
+          {
+            "token": "verdienen",
+            "prob": 0.0004
+          },
+          {
+            "token": "tats",
+            "prob": 0.0004
+          },
+          {
+            "token": "foundland",
+            "prob": 0.0002
+          },
+          {
+            "token": "männer",
+            "prob": 0.0002
+          },
+          {
+            "token": "proprié",
+            "prob": 0.0002
+          }
+        ],
+        "18": [
+          {
+            "token": "exercitation",
+            "prob": 0.0023
+          },
+          {
+            "token": "männer",
+            "prob": 0.002
+          },
+          {
+            "token": "volupt",
+            "prob": 0.0018
+          },
+          {
+            "token": "calories",
+            "prob": 0.0016
+          },
+          {
+            "token": "ratio",
+            "prob": 0.0016
+          }
+        ],
+        "19": [
+          {
+            "token": "nutrient",
+            "prob": 0.0061
+          },
+          {
+            "token": "calories",
+            "prob": 0.0045
+          },
+          {
+            "token": "volupt",
+            "prob": 0.0042
+          },
+          {
+            "token": "foundland",
+            "prob": 0.0037
+          },
+          {
+            "token": "detalle",
+            "prob": 0.0033
+          }
+        ],
+        "20": [
+          {
+            "token": "foundland",
+            "prob": 0.0071
+          },
+          {
+            "token": "potrà",
+            "prob": 0.0049
+          },
+          {
+            "token": "männer",
+            "prob": 0.0046
+          },
+          {
+            "token": "exercitation",
+            "prob": 0.0033
+          },
+          {
+            "token": "tats",
+            "prob": 0.0031
+          }
+        ],
+        "21": [
+          {
+            "token": "Incontri",
+            "prob": 0.0254
+          },
+          {
+            "token": "foundland",
+            "prob": 0.0186
+          },
+          {
+            "token": "potrà",
+            "prob": 0.0106
+          },
+          {
+            "token": "calories",
+            "prob": 0.0106
+          },
+          {
+            "token": "nutrients",
+            "prob": 0.0077
+          }
+        ],
+        "22": [
+          {
+            "token": "ulin",
+            "prob": 0.014
+          },
+          {
+            "token": "calories",
+            "prob": 0.0123
+          },
+          {
+            "token": "potrà",
+            "prob": 0.0116
+          },
+          {
+            "token": "hentai",
+            "prob": 0.0062
+          },
+          {
+            "token": "nutrients",
+            "prob": 0.0055
+          }
+        ],
+        "23": [
+          {
+            "token": "potrà",
+            "prob": 0.017
+          },
+          {
+            "token": "lowes",
+            "prob": 0.0085
+          },
+          {
+            "token": "backpage",
+            "prob": 0.0085
+          },
+          {
+            "token": "azole",
+            "prob": 0.0062
+          },
+          {
+            "token": "Raqqa",
+            "prob": 0.0059
+          }
+        ],
+        "24": [
+          {
+            "token": "urate",
+            "prob": 0.0255
+          },
+          {
+            "token": "arbonate",
+            "prob": 0.0211
+          },
+          {
+            "token": "azole",
+            "prob": 0.0175
+          },
+          {
+            "token": "Raqqa",
+            "prob": 0.0113
+          },
+          {
+            "token": "itol",
+            "prob": 0.0073
+          }
+        ],
+        "25": [
+          {
+            "token": "odesk",
+            "prob": 0.0264
+          },
+          {
+            "token": "alic",
+            "prob": 0.0233
+          },
+          {
+            "token": "urate",
+            "prob": 0.016
+          },
+          {
+            "token": "arbonate",
+            "prob": 0.011
+          },
+          {
+            "token": "Raqqa",
+            "prob": 0.0097
+          }
+        ],
+        "26": [
+          {
+            "token": "alic",
+            "prob": 0.7722
+          },
+          {
+            "token": "amate",
+            "prob": 0.1184
+          },
+          {
+            "token": "alte",
+            "prob": 0.0043
+          },
+          {
+            "token": "alis",
+            "prob": 0.0038
+          },
+          {
+            "token": "odesk",
+            "prob": 0.0034
+          }
+        ]
+      },
+      "concern_gradient": {
+        "0": [],
+        "1": [
+          {
+            "token": "elsing",
+            "prob": 0.001
+          },
+          {
+            "token": "rigesimal",
+            "prob": 0.0008
+          },
+          {
+            "token": "incinn",
+            "prob": 0.0006
+          },
+          {
+            "token": "Gerät",
+            "prob": 0.0005
+          }
+        ],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [
+          {
+            "token": "abama",
+            "prob": 0.0019
+          },
+          {
+            "token": "okie",
+            "prob": 0.0004
+          }
+        ],
+        "6": [
+          {
+            "token": "behavioral",
+            "prob": 0.0
+          },
+          {
+            "token": "neighboring",
+            "prob": 0.0
+          },
+          {
+            "token": "favorable",
+            "prob": 0.0
+          },
+          {
+            "token": "gray",
+            "prob": 0.0
+          },
+          {
+            "token": "colored",
+            "prob": 0.0
+          }
+        ],
+        "7": [],
+        "8": [],
+        "9": [],
+        "10": [
+          {
+            "token": "ratio",
+            "prob": 0.0001
+          }
+        ],
+        "11": [
+          {
+            "token": "ratio",
+            "prob": 0.005
+          },
+          {
+            "token": "enzyme",
+            "prob": 0.0005
+          },
+          {
+            "token": "chemical",
+            "prob": 0.0004
+          },
+          {
+            "token": "nutrient",
+            "prob": 0.0004
+          },
+          {
+            "token": "nutrition",
+            "prob": 0.0004
+          }
+        ],
+        "12": [
+          {
+            "token": "ratio",
+            "prob": 0.038
+          },
+          {
+            "token": "food",
+            "prob": 0.004
+          },
+          {
+            "token": "proportion",
+            "prob": 0.0023
+          },
+          {
+            "token": "chemical",
+            "prob": 0.0021
+          },
+          {
+            "token": "ratios",
+            "prob": 0.002
+          }
+        ],
+        "13": [
+          {
+            "token": "ratio",
+            "prob": 0.0544
+          },
+          {
+            "token": "food",
+            "prob": 0.0054
+          },
+          {
+            "token": "nutrition",
+            "prob": 0.0037
+          },
+          {
+            "token": "proportion",
+            "prob": 0.0031
+          },
+          {
+            "token": "ratios",
+            "prob": 0.0027
+          }
+        ],
+        "14": [
+          {
+            "token": "ratio",
+            "prob": 0.3415
+          },
+          {
+            "token": "proportion",
+            "prob": 0.0141
+          },
+          {
+            "token": "ratios",
+            "prob": 0.0132
+          },
+          {
+            "token": "relative",
+            "prob": 0.0075
+          },
+          {
+            "token": "proportions",
+            "prob": 0.0024
+          }
+        ],
+        "15": [
+          {
+            "token": "ratio",
+            "prob": 0.6773
+          },
+          {
+            "token": "relative",
+            "prob": 0.0382
+          },
+          {
+            "token": "proportion",
+            "prob": 0.0263
+          },
+          {
+            "token": "ratios",
+            "prob": 0.0247
+          },
+          {
+            "token": "proportions",
+            "prob": 0.0046
+          }
+        ],
+        "16": [
+          {
+            "token": "ratio",
+            "prob": 0.5232
+          },
+          {
+            "token": "relative",
+            "prob": 0.0334
+          },
+          {
+            "token": "proportion",
+            "prob": 0.0245
+          },
+          {
+            "token": "ratios",
+            "prob": 0.0216
+          },
+          {
+            "token": "consumption",
+            "prob": 0.0075
+          }
+        ],
+        "17": [
+          {
+            "token": "ratio",
+            "prob": 0.4493
+          },
+          {
+            "token": "relative",
+            "prob": 0.0831
+          },
+          {
+            "token": "proportion",
+            "prob": 0.0154
+          },
+          {
+            "token": "ratios",
+            "prob": 0.0144
+          },
+          {
+            "token": "density",
+            "prob": 0.006
+          }
+        ],
+        "18": [
+          {
+            "token": "ratio",
+            "prob": 0.3016
+          },
+          {
+            "token": "relative",
+            "prob": 0.0864
+          },
+          {
+            "token": "ratios",
+            "prob": 0.0141
+          },
+          {
+            "token": "structural",
+            "prob": 0.0055
+          },
+          {
+            "token": "density",
+            "prob": 0.0046
+          }
+        ],
+        "19": [
+          {
+            "token": "ratio",
+            "prob": 0.2161
+          },
+          {
+            "token": "relative",
+            "prob": 0.0331
+          },
+          {
+            "token": "physical",
+            "prob": 0.0258
+          },
+          {
+            "token": "ratios",
+            "prob": 0.0189
+          },
+          {
+            "token": "proportion",
+            "prob": 0.0167
+          }
+        ],
+        "20": [
+          {
+            "token": "ratio",
+            "prob": 0.1574
+          },
+          {
+            "token": "relative",
+            "prob": 0.0511
+          },
+          {
+            "token": "proportion",
+            "prob": 0.0451
+          },
+          {
+            "token": "nond",
+            "prob": 0.0351
+          },
+          {
+            "token": "ratios",
+            "prob": 0.033
+          }
+        ],
+        "21": [
+          {
+            "token": "fiber",
+            "prob": 0.1531
+          },
+          {
+            "token": "lign",
+            "prob": 0.0439
+          },
+          {
+            "token": "biomass",
+            "prob": 0.0364
+          },
+          {
+            "token": "fibers",
+            "prob": 0.0301
+          },
+          {
+            "token": "structural",
+            "prob": 0.0266
+          }
+        ],
+        "22": [
+          {
+            "token": "lign",
+            "prob": 0.1953
+          },
+          {
+            "token": "fiber",
+            "prob": 0.1835
+          },
+          {
+            "token": "fibers",
+            "prob": 0.0464
+          },
+          {
+            "token": "ratio",
+            "prob": 0.0464
+          },
+          {
+            "token": "insol",
+            "prob": 0.03
+          }
+        ],
+        "23": [
+          {
+            "token": "insol",
+            "prob": 0.3099
+          },
+          {
+            "token": "lign",
+            "prob": 0.2735
+          },
+          {
+            "token": "fiber",
+            "prob": 0.2413
+          },
+          {
+            "token": "fibers",
+            "prob": 0.061
+          },
+          {
+            "token": "cellul",
+            "prob": 0.0154
+          }
+        ],
+        "24": [
+          {
+            "token": "fibre",
+            "prob": 0.8385
+          },
+          {
+            "token": "fiber",
+            "prob": 0.078
+          },
+          {
+            "token": "cellul",
+            "prob": 0.0325
+          },
+          {
+            "token": "insol",
+            "prob": 0.0223
+          },
+          {
+            "token": "lign",
+            "prob": 0.0154
+          }
+        ],
+        "25": [
+          {
+            "token": "fibre",
+            "prob": 0.7095
+          },
+          {
+            "token": "fiber",
+            "prob": 0.1794
+          },
+          {
+            "token": "insol",
+            "prob": 0.0514
+          },
+          {
+            "token": "soluble",
+            "prob": 0.0275
+          },
+          {
+            "token": "fibers",
+            "prob": 0.0101
+          }
+        ],
+        "26": [
+          {
+            "token": "insol",
+            "prob": 0.8524
+          },
+          {
+            "token": "soluble",
+            "prob": 0.07
+          },
+          {
+            "token": "fibre",
+            "prob": 0.0257
+          },
+          {
+            "token": "dietary",
+            "prob": 0.0138
+          },
+          {
+            "token": "cellul",
+            "prob": 0.0107
+          }
+        ]
+      },
+      "plain_onset": 0,
+      "concern_onset": 1,
+      "ab_comparison": {
+        "per_layer": {
+          "0": {
+            "overlap": [],
+            "plain_only": [
+              "attività",
+              "novità"
+            ],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 2,
+            "n_concern_only": 0
+          },
+          "1": {
+            "overlap": [],
+            "plain_only": [
+              "attività",
+              "novità",
+              "коло"
+            ],
+            "concern_only": [
+              "elsing",
+              "gerät",
+              "incinn",
+              "rigesimal"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 3,
+            "n_concern_only": 4
+          },
+          "2": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "3": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "4": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "5": {
+            "overlap": [],
+            "plain_only": [
+              "novità"
+            ],
+            "concern_only": [
+              "abama",
+              "okie"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 1,
+            "n_concern_only": 2
+          },
+          "6": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [
+              "behavioral",
+              "colored",
+              "favorable",
+              "gray",
+              "neighboring"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 5
+          },
+          "7": {
+            "overlap": [],
+            "plain_only": [
+              "detalle",
+              "novità",
+              "proprietà"
+            ],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 3,
+            "n_concern_only": 0
+          },
+          "8": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "9": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "10": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [
+              "ratio"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 1
+          },
+          "11": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [
+              "chemical",
+              "enzyme",
+              "nutrient",
+              "nutrition",
+              "ratio"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 5
+          },
+          "12": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [
+              "chemical",
+              "food",
+              "proportion",
+              "ratio",
+              "ratios"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 5
+          },
+          "13": {
+            "overlap": [],
+            "plain_only": [
+              "detalle",
+              "novità",
+              "nutrient",
+              "nutrients",
+              "proprietà"
+            ],
+            "concern_only": [
+              "food",
+              "nutrition",
+              "proportion",
+              "ratio",
+              "ratios"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "14": {
+            "overlap": [],
+            "plain_only": [
+              "każdym",
+              "modalità",
+              "novità",
+              "nutrient",
+              "relu"
+            ],
+            "concern_only": [
+              "proportion",
+              "proportions",
+              "ratio",
+              "ratios",
+              "relative"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "15": {
+            "overlap": [],
+            "plain_only": [
+              "calories",
+              "każdym",
+              "nutrient",
+              "nutrients",
+              "verdienen"
+            ],
+            "concern_only": [
+              "proportion",
+              "proportions",
+              "ratio",
+              "ratios",
+              "relative"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "16": {
+            "overlap": [],
+            "plain_only": [
+              "bergen",
+              "calories",
+              "nutrient",
+              "tats",
+              "verm"
+            ],
+            "concern_only": [
+              "consumption",
+              "proportion",
+              "ratio",
+              "ratios",
+              "relative"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "17": {
+            "overlap": [],
+            "plain_only": [
+              "foundland",
+              "männer",
+              "proprié",
+              "tats",
+              "verdienen"
+            ],
+            "concern_only": [
+              "density",
+              "proportion",
+              "ratio",
+              "ratios",
+              "relative"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "18": {
+            "overlap": [
+              "ratio"
+            ],
+            "plain_only": [
+              "calories",
+              "exercitation",
+              "männer",
+              "volupt"
+            ],
+            "concern_only": [
+              "density",
+              "ratios",
+              "relative",
+              "structural"
+            ],
+            "n_overlap": 1,
+            "n_plain_only": 4,
+            "n_concern_only": 4
+          },
+          "19": {
+            "overlap": [],
+            "plain_only": [
+              "calories",
+              "detalle",
+              "foundland",
+              "nutrient",
+              "volupt"
+            ],
+            "concern_only": [
+              "physical",
+              "proportion",
+              "ratio",
+              "ratios",
+              "relative"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "20": {
+            "overlap": [],
+            "plain_only": [
+              "exercitation",
+              "foundland",
+              "männer",
+              "potrà",
+              "tats"
+            ],
+            "concern_only": [
+              "nond",
+              "proportion",
+              "ratio",
+              "ratios",
+              "relative"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "21": {
+            "overlap": [],
+            "plain_only": [
+              "calories",
+              "foundland",
+              "incontri",
+              "nutrients",
+              "potrà"
+            ],
+            "concern_only": [
+              "biomass",
+              "fiber",
+              "fibers",
+              "lign",
+              "structural"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "22": {
+            "overlap": [],
+            "plain_only": [
+              "calories",
+              "hentai",
+              "nutrients",
+              "potrà",
+              "ulin"
+            ],
+            "concern_only": [
+              "fiber",
+              "fibers",
+              "insol",
+              "lign",
+              "ratio"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "23": {
+            "overlap": [],
+            "plain_only": [
+              "azole",
+              "backpage",
+              "lowes",
+              "potrà",
+              "raqqa"
+            ],
+            "concern_only": [
+              "cellul",
+              "fiber",
+              "fibers",
+              "insol",
+              "lign"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "24": {
+            "overlap": [],
+            "plain_only": [
+              "arbonate",
+              "azole",
+              "itol",
+              "raqqa",
+              "urate"
+            ],
+            "concern_only": [
+              "cellul",
+              "fiber",
+              "fibre",
+              "insol",
+              "lign"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "25": {
+            "overlap": [],
+            "plain_only": [
+              "alic",
+              "arbonate",
+              "odesk",
+              "raqqa",
+              "urate"
+            ],
+            "concern_only": [
+              "fiber",
+              "fibers",
+              "fibre",
+              "insol",
+              "soluble"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "26": {
+            "overlap": [],
+            "plain_only": [
+              "alic",
+              "alis",
+              "alte",
+              "amate",
+              "odesk"
+            ],
+            "concern_only": [
+              "cellul",
+              "dietary",
+              "fibre",
+              "insol",
+              "soluble"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          }
+        },
+        "most_document_driven_layers": [
+          [
+            13,
+            5
+          ],
+          [
+            14,
+            5
+          ],
+          [
+            15,
+            5
+          ],
+          [
+            16,
+            5
+          ],
+          [
+            17,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "cluster_id": 105,
+      "n_docs": 11,
+      "sample_doc": "Elevated phosphate (P) levels are seen in advanced renal failure and, together with dysregulated calcium, parathyroid hormone and vitamin D levels, contribute to the complex of chronic kidney disease-",
+      "plain_gradient": {
+        "0": [],
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": [],
+        "8": [],
+        "9": [],
+        "10": [],
+        "11": [],
+        "12": [],
+        "13": [],
+        "14": [],
+        "15": [],
+        "16": [
+          {
+            "token": "investigation",
+            "prob": 0.0001
+          }
+        ],
+        "17": [
+          {
+            "token": "type",
+            "prob": 0.0057
+          },
+          {
+            "token": "limited",
+            "prob": 0.0032
+          },
+          {
+            "token": "being",
+            "prob": 0.0016
+          },
+          {
+            "token": "location",
+            "prob": 0.0016
+          }
+        ],
+        "18": [
+          {
+            "token": "methodology",
+            "prob": 0.0038
+          },
+          {
+            "token": "researchers",
+            "prob": 0.0025
+          },
+          {
+            "token": "investigation",
+            "prob": 0.0022
+          },
+          {
+            "token": "findings",
+            "prob": 0.0018
+          },
+          {
+            "token": "researcher",
+            "prob": 0.0018
+          }
+        ],
+        "19": [
+          {
+            "token": "participants",
+            "prob": 0.0457
+          },
+          {
+            "token": "methodology",
+            "prob": 0.026
+          },
+          {
+            "token": "participant",
+            "prob": 0.0179
+          },
+          {
+            "token": "findings",
+            "prob": 0.0168
+          },
+          {
+            "token": "limitations",
+            "prob": 0.0102
+          }
+        ],
+        "20": [
+          {
+            "token": "findings",
+            "prob": 0.05
+          },
+          {
+            "token": "participants",
+            "prob": 0.05
+          },
+          {
+            "token": "researchers",
+            "prob": 0.0208
+          },
+          {
+            "token": "methodology",
+            "prob": 0.0196
+          },
+          {
+            "token": "subjects",
+            "prob": 0.0135
+          }
+        ],
+        "21": [
+          {
+            "token": "participants",
+            "prob": 0.0087
+          },
+          {
+            "token": "methodology",
+            "prob": 0.0064
+          },
+          {
+            "token": "subjects",
+            "prob": 0.0034
+          },
+          {
+            "token": "limitations",
+            "prob": 0.0032
+          },
+          {
+            "token": "itself",
+            "prob": 0.0032
+          }
+        ],
+        "22": [
+          {
+            "token": "participants",
+            "prob": 0.3048
+          },
+          {
+            "token": "subjects",
+            "prob": 0.144
+          },
+          {
+            "token": "participant",
+            "prob": 0.0364
+          },
+          {
+            "token": "required",
+            "prob": 0.0266
+          },
+          {
+            "token": "methodology",
+            "prob": 0.0183
+          }
+        ],
+        "23": [
+          {
+            "token": "participants",
+            "prob": 0.2719
+          },
+          {
+            "token": "subjects",
+            "prob": 0.1455
+          },
+          {
+            "token": "designs",
+            "prob": 0.1133
+          },
+          {
+            "token": "design",
+            "prob": 0.0883
+          },
+          {
+            "token": "methodology",
+            "prob": 0.0305
+          }
+        ],
+        "24": [
+          {
+            "token": "designs",
+            "prob": 0.5553
+          },
+          {
+            "token": "design",
+            "prob": 0.1093
+          },
+          {
+            "token": "population",
+            "prob": 0.0965
+          },
+          {
+            "token": "subjects",
+            "prob": 0.0456
+          },
+          {
+            "token": "populations",
+            "prob": 0.0313
+          }
+        ],
+        "25": [
+          {
+            "token": "design",
+            "prob": 0.5301
+          },
+          {
+            "token": "designs",
+            "prob": 0.4678
+          },
+          {
+            "token": "subjects",
+            "prob": 0.0
+          },
+          {
+            "token": "population",
+            "prob": 0.0
+          },
+          {
+            "token": "designing",
+            "prob": 0.0
+          }
+        ],
+        "26": [
+          {
+            "token": "designs",
+            "prob": 0.8165
+          },
+          {
+            "token": "design",
+            "prob": 0.1822
+          },
+          {
+            "token": "subjects",
+            "prob": 0.0002
+          },
+          {
+            "token": "population",
+            "prob": 0.0001
+          },
+          {
+            "token": "populations",
+            "prob": 0.0001
+          }
+        ]
+      },
+      "concern_gradient": {
+        "0": [],
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": [],
+        "8": [],
+        "9": [],
+        "10": [],
+        "11": [],
+        "12": [
+          {
+            "token": "overall",
+            "prob": 0.0001
+          },
+          {
+            "token": "change",
+            "prob": 0.0001
+          },
+          {
+            "token": "stability",
+            "prob": 0.0001
+          },
+          {
+            "token": "performance",
+            "prob": 0.0001
+          },
+          {
+            "token": "fluct",
+            "prob": 0.0001
+          }
+        ],
+        "13": [
+          {
+            "token": "overall",
+            "prob": 0.0007
+          },
+          {
+            "token": "diet",
+            "prob": 0.0006
+          },
+          {
+            "token": "fluct",
+            "prob": 0.0006
+          },
+          {
+            "token": "stability",
+            "prob": 0.0006
+          },
+          {
+            "token": "moderate",
+            "prob": 0.0005
+          }
+        ],
+        "14": [
+          {
+            "token": "measurable",
+            "prob": 0.0
+          },
+          {
+            "token": "measurement",
+            "prob": 0.0
+          },
+          {
+            "token": "diet",
+            "prob": 0.0
+          },
+          {
+            "token": "measured",
+            "prob": 0.0
+          },
+          {
+            "token": "fluct",
+            "prob": 0.0
+          }
+        ],
+        "15": [
+          {
+            "token": "measurable",
+            "prob": 0.0015
+          },
+          {
+            "token": "decreased",
+            "prob": 0.0007
+          },
+          {
+            "token": "moderate",
+            "prob": 0.0006
+          },
+          {
+            "token": "measurement",
+            "prob": 0.0005
+          },
+          {
+            "token": "fluct",
+            "prob": 0.0005
+          }
+        ],
+        "16": [
+          {
+            "token": "measurable",
+            "prob": 0.0079
+          },
+          {
+            "token": "measured",
+            "prob": 0.0058
+          },
+          {
+            "token": "change",
+            "prob": 0.0051
+          },
+          {
+            "token": "decreased",
+            "prob": 0.0048
+          },
+          {
+            "token": "moderate",
+            "prob": 0.0045
+          }
+        ],
+        "17": [
+          {
+            "token": "minor",
+            "prob": 0.0173
+          },
+          {
+            "token": "moderate",
+            "prob": 0.0072
+          },
+          {
+            "token": "measured",
+            "prob": 0.006
+          },
+          {
+            "token": "performance",
+            "prob": 0.0047
+          },
+          {
+            "token": "change",
+            "prob": 0.0047
+          }
+        ],
+        "18": [
+          {
+            "token": "minor",
+            "prob": 0.0131
+          },
+          {
+            "token": "behavior",
+            "prob": 0.008
+          },
+          {
+            "token": "global",
+            "prob": 0.0066
+          },
+          {
+            "token": "measurable",
+            "prob": 0.0066
+          },
+          {
+            "token": "performance",
+            "prob": 0.0066
+          }
+        ],
+        "19": [
+          {
+            "token": "behavior",
+            "prob": 0.0449
+          },
+          {
+            "token": "measurable",
+            "prob": 0.0349
+          },
+          {
+            "token": "levels",
+            "prob": 0.0199
+          },
+          {
+            "token": "behaviors",
+            "prob": 0.0199
+          },
+          {
+            "token": "global",
+            "prob": 0.0187
+          }
+        ],
+        "20": [
+          {
+            "token": "behavior",
+            "prob": 0.1203
+          },
+          {
+            "token": "behaviors",
+            "prob": 0.0416
+          },
+          {
+            "token": "performance",
+            "prob": 0.0268
+          },
+          {
+            "token": "population",
+            "prob": 0.0223
+          },
+          {
+            "token": "global",
+            "prob": 0.0196
+          }
+        ],
+        "21": [
+          {
+            "token": "behavior",
+            "prob": 0.0665
+          },
+          {
+            "token": "indicators",
+            "prob": 0.0551
+          },
+          {
+            "token": "measurable",
+            "prob": 0.0295
+          },
+          {
+            "token": "performance",
+            "prob": 0.0295
+          },
+          {
+            "token": "levels",
+            "prob": 0.023
+          }
+        ],
+        "22": [
+          {
+            "token": "biom",
+            "prob": 0.1751
+          },
+          {
+            "token": "markers",
+            "prob": 0.0827
+          },
+          {
+            "token": "indicators",
+            "prob": 0.0605
+          },
+          {
+            "token": "baseline",
+            "prob": 0.0252
+          },
+          {
+            "token": "serum",
+            "prob": 0.0237
+          }
+        ],
+        "23": [
+          {
+            "token": "serum",
+            "prob": 0.2684
+          },
+          {
+            "token": "biom",
+            "prob": 0.1845
+          },
+          {
+            "token": "markers",
+            "prob": 0.0722
+          },
+          {
+            "token": "blood",
+            "prob": 0.0496
+          },
+          {
+            "token": "biochemical",
+            "prob": 0.0321
+          }
+        ],
+        "24": [
+          {
+            "token": "serum",
+            "prob": 0.3741
+          },
+          {
+            "token": "biom",
+            "prob": 0.2003
+          },
+          {
+            "token": "markers",
+            "prob": 0.156
+          },
+          {
+            "token": "calcium",
+            "prob": 0.0946
+          },
+          {
+            "token": "biochemical",
+            "prob": 0.0271
+          }
+        ],
+        "25": [
+          {
+            "token": "serum",
+            "prob": 0.6054
+          },
+          {
+            "token": "markers",
+            "prob": 0.1531
+          },
+          {
+            "token": "biom",
+            "prob": 0.0928
+          },
+          {
+            "token": "blood",
+            "prob": 0.0638
+          },
+          {
+            "token": "bone",
+            "prob": 0.0126
+          }
+        ],
+        "26": [
+          {
+            "token": "serum",
+            "prob": 0.5826
+          },
+          {
+            "token": "biom",
+            "prob": 0.13
+          },
+          {
+            "token": "markers",
+            "prob": 0.0422
+          },
+          {
+            "token": "circulating",
+            "prob": 0.0372
+          },
+          {
+            "token": "bone",
+            "prob": 0.024
+          }
+        ]
+      },
+      "plain_onset": 17,
+      "concern_onset": 12,
+      "ab_comparison": {
+        "per_layer": {
+          "0": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "1": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "2": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "3": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "4": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "5": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "6": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "7": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "8": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "9": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "10": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "11": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 0
+          },
+          "12": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [
+              "change",
+              "fluct",
+              "overall",
+              "performance",
+              "stability"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 5
+          },
+          "13": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [
+              "diet",
+              "fluct",
+              "moderate",
+              "overall",
+              "stability"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 5
+          },
+          "14": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [
+              "diet",
+              "fluct",
+              "measurable",
+              "measured",
+              "measurement"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 5
+          },
+          "15": {
+            "overlap": [],
+            "plain_only": [],
+            "concern_only": [
+              "decreased",
+              "fluct",
+              "measurable",
+              "measurement",
+              "moderate"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 0,
+            "n_concern_only": 5
+          },
+          "16": {
+            "overlap": [],
+            "plain_only": [
+              "investigation"
+            ],
+            "concern_only": [
+              "change",
+              "decreased",
+              "measurable",
+              "measured",
+              "moderate"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 1,
+            "n_concern_only": 5
+          },
+          "17": {
+            "overlap": [],
+            "plain_only": [
+              "being",
+              "limited",
+              "location",
+              "type"
+            ],
+            "concern_only": [
+              "change",
+              "measured",
+              "minor",
+              "moderate",
+              "performance"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 4,
+            "n_concern_only": 5
+          },
+          "18": {
+            "overlap": [],
+            "plain_only": [
+              "findings",
+              "investigation",
+              "methodology",
+              "researcher",
+              "researchers"
+            ],
+            "concern_only": [
+              "behavior",
+              "global",
+              "measurable",
+              "minor",
+              "performance"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "19": {
+            "overlap": [],
+            "plain_only": [
+              "findings",
+              "limitations",
+              "methodology",
+              "participant",
+              "participants"
+            ],
+            "concern_only": [
+              "behavior",
+              "behaviors",
+              "global",
+              "levels",
+              "measurable"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "20": {
+            "overlap": [],
+            "plain_only": [
+              "findings",
+              "methodology",
+              "participants",
+              "researchers",
+              "subjects"
+            ],
+            "concern_only": [
+              "behavior",
+              "behaviors",
+              "global",
+              "performance",
+              "population"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "21": {
+            "overlap": [],
+            "plain_only": [
+              "itself",
+              "limitations",
+              "methodology",
+              "participants",
+              "subjects"
+            ],
+            "concern_only": [
+              "behavior",
+              "indicators",
+              "levels",
+              "measurable",
+              "performance"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "22": {
+            "overlap": [],
+            "plain_only": [
+              "methodology",
+              "participant",
+              "participants",
+              "required",
+              "subjects"
+            ],
+            "concern_only": [
+              "baseline",
+              "biom",
+              "indicators",
+              "markers",
+              "serum"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "23": {
+            "overlap": [],
+            "plain_only": [
+              "design",
+              "designs",
+              "methodology",
+              "participants",
+              "subjects"
+            ],
+            "concern_only": [
+              "biochemical",
+              "biom",
+              "blood",
+              "markers",
+              "serum"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "24": {
+            "overlap": [],
+            "plain_only": [
+              "design",
+              "designs",
+              "population",
+              "populations",
+              "subjects"
+            ],
+            "concern_only": [
+              "biochemical",
+              "biom",
+              "calcium",
+              "markers",
+              "serum"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "25": {
+            "overlap": [],
+            "plain_only": [
+              "design",
+              "designing",
+              "designs",
+              "population",
+              "subjects"
+            ],
+            "concern_only": [
+              "biom",
+              "blood",
+              "bone",
+              "markers",
+              "serum"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          },
+          "26": {
+            "overlap": [],
+            "plain_only": [
+              "design",
+              "designs",
+              "population",
+              "populations",
+              "subjects"
+            ],
+            "concern_only": [
+              "biom",
+              "bone",
+              "circulating",
+              "markers",
+              "serum"
+            ],
+            "n_overlap": 0,
+            "n_plain_only": 5,
+            "n_concern_only": 5
+          }
+        },
+        "most_document_driven_layers": [
+          [
+            18,
+            5
+          ],
+          [
+            19,
+            5
+          ],
+          [
+            20,
+            5
+          ],
+          [
+            21,
+            5
+          ],
+          [
+            22,
+            5
+          ]
+        ]
+      }
+    }
+  ]
+}

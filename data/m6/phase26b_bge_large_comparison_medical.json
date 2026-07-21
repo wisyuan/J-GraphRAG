@@ -1,0 +1,64 @@
+{
+  "method": "bge_large_leaderboard_comparison",
+  "domain": "medical",
+  "n_chunks": 200,
+  "n_questions": 28,
+  "efficiency": {
+    "build_time_s": 39.4,
+    "build_time_per_chunk_s": 0.1972,
+    "vram_peak_gb": 5.76
+  },
+  "results": {
+    "B0_bge_m3": {
+      "acc": 0.7142857142857143,
+      "recall": 0.712121212121212,
+      "acc_by_level": {
+        "L1": 1.0,
+        "L2": 0.42857142857142855,
+        "L3": 1.0,
+        "L4": 0.42857142857142855
+      },
+      "n": 28
+    },
+    "B0_bge_large": {
+      "acc": 0.7142857142857143,
+      "recall": 0.6856060606060606,
+      "acc_by_level": {
+        "L1": 1.0,
+        "L2": 0.42857142857142855,
+        "L3": 1.0,
+        "L4": 0.42857142857142855
+      },
+      "n": 28
+    },
+    "JGR_bge_m3": {
+      "acc": 0.7142857142857143,
+      "recall": 0.691017316017316,
+      "acc_by_level": {
+        "L1": 1.0,
+        "L2": 0.42857142857142855,
+        "L3": 1.0,
+        "L4": 0.42857142857142855
+      },
+      "n": 28
+    },
+    "JGR_bge_large": {
+      "acc": 0.75,
+      "recall": 0.7012987012987012,
+      "acc_by_level": {
+        "L1": 1.0,
+        "L2": 0.5714285714285714,
+        "L3": 1.0,
+        "L4": 0.42857142857142855
+      },
+      "n": 28
+    }
+  },
+  "leaderboard_conversion": {
+    "leaderboard_rag_acc": 61.0,
+    "our_b0_large_acc": 0.7143,
+    "conversion_factor": 0.85,
+    "jgr_estimated_acc_method1": 64.0,
+    "jgr_estimated_acc_method2": 64.0
+  }
+}

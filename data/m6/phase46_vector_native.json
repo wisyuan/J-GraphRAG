@@ -1,0 +1,4206 @@
+{
+  "method": "phase46_vector_native",
+  "created": "2026-07-21 03:13:45",
+  "probes": {
+    "medical": {
+      "p3": {
+        "n_vocab": 50,
+        "chance_top1": 0.02127659574468085,
+        "chance_top5": 0.10638297872340426,
+        "relation_analogies": {
+          "n": 40,
+          "top1": 0.05,
+          "top5": 0.15,
+          "details": [
+            {
+              "a": "breast",
+              "b": "kidney",
+              "c": "bones",
+              "d": "cervical",
+              "kind": "relation:anatom",
+              "top5": [
+                "kidneys",
+                "lungs",
+                "genes",
+                "tumors",
+                "headaches"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "breast",
+              "b": "muscle",
+              "c": "heart",
+              "d": "breasts",
+              "kind": "relation:anatom",
+              "top5": [
+                "kidneys",
+                "lungs",
+                "genes",
+                "liver",
+                "bones"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "prostate",
+              "b": "kidney",
+              "c": "bones",
+              "d": "chest",
+              "kind": "relation:anatom",
+              "top5": [
+                "kidneys",
+                "lungs",
+                "genes",
+                "breasts",
+                "heart"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "kidneys",
+              "b": "chest",
+              "c": "heart",
+              "d": "breasts",
+              "kind": "relation:anatom",
+              "top5": [
+                "breast",
+                "body",
+                "liver",
+                "blood",
+                "kidney"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "breasts",
+              "b": "cervical",
+              "c": "breast",
+              "d": "muscle",
+              "kind": "relation:anatom",
+              "top5": [
+                "prostate",
+                "kidney",
+                "liver",
+                "genetic",
+                "chest"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "body",
+              "b": "cervical",
+              "c": "prostate",
+              "d": "breasts",
+              "kind": "relation:anatom",
+              "top5": [
+                "breast",
+                "liver",
+                "kidney",
+                "cancer",
+                "lungs"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "cancer",
+              "b": "tumor",
+              "c": "injectable",
+              "d": "injection",
+              "kind": "relation:causal",
+              "top5": [
+                "injection",
+                "surgical",
+                "breast",
+                "blood",
+                "kidney"
+              ],
+              "hit1": true,
+              "hit5": true
+            },
+            {
+              "a": "genetic",
+              "b": "mutation",
+              "c": "lungs",
+              "d": "symptoms",
+              "kind": "relation:causal",
+              "top5": [
+                "kidneys",
+                "bones",
+                "genes",
+                "tumors",
+                "symptoms"
+              ],
+              "hit1": false,
+              "hit5": true
+            },
+            {
+              "a": "breasts",
+              "b": "cancer",
+              "c": "biopsy",
+              "d": "injection",
+              "kind": "relation:causal",
+              "top5": [
+                "tumor",
+                "surgical",
+                "surgery",
+                "diagnosis",
+                "carcinoma"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "pregnancy",
+              "b": "body",
+              "c": "medications",
+              "d": "doses",
+              "kind": "relation:critical",
+              "top5": [
+                "bones",
+                "lungs",
+                "drugs",
+                "kidneys",
+                "surgeries"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "breast",
+              "b": "bones",
+              "c": "surgeon",
+              "d": "injectable",
+              "kind": "relation:indirect",
+              "top5": [
+                "surgeries",
+                "surgery",
+                "genes",
+                "medications",
+                "genetics"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "prostate",
+              "b": "kidneys",
+              "c": "tests",
+              "d": "sugar",
+              "kind": "relation:indirect",
+              "top5": [
+                "medications",
+                "treatments",
+                "drugs",
+                "trials",
+                "genes"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "prostate",
+              "b": "chest",
+              "c": "surgeon",
+              "d": "injectable",
+              "kind": "relation:indirect",
+              "top5": [
+                "surgery",
+                "surgeries",
+                "lungs",
+                "diagnosis",
+                "medications"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "pregnancy",
+              "b": "bones",
+              "c": "lungs",
+              "d": "injection",
+              "kind": "relation:indirect",
+              "top5": [
+                "kidneys",
+                "breasts",
+                "genes",
+                "tumors",
+                "headaches"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "pregnancy",
+              "b": "cervical",
+              "c": "kidney",
+              "d": "chest",
+              "kind": "relation:indirect",
+              "top5": [
+                "breast",
+                "liver",
+                "prostate",
+                "kidneys",
+                "lungs"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "bones",
+              "b": "breath",
+              "c": "chest",
+              "d": "immune",
+              "kind": "relation:indirect",
+              "top5": [
+                "breast",
+                "blood",
+                "kidney",
+                "heart",
+                "liver"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "headaches",
+              "b": "breath",
+              "c": "pregnancy",
+              "d": "bones",
+              "kind": "relation:indirect",
+              "top5": [
+                "medicine",
+                "blood",
+                "surgical",
+                "tumor",
+                "breast"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "breath",
+              "b": "cervical",
+              "c": "pregnancy",
+              "d": "bones",
+              "kind": "relation:indirect",
+              "top5": [
+                "prostate",
+                "cancer",
+                "breast",
+                "surgeries",
+                "lungs"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "chest",
+              "b": "immune",
+              "c": "kidney",
+              "d": "breasts",
+              "kind": "relation:indirect",
+              "top5": [
+                "liver",
+                "blood",
+                "kidneys",
+                "prostate",
+                "heart"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "chest",
+              "b": "immune",
+              "c": "pregnancy",
+              "d": "bones",
+              "kind": "relation:indirect",
+              "top5": [
+                "cancer",
+                "medicine",
+                "diagnosis",
+                "surgery",
+                "mutation"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "bones",
+              "b": "body",
+              "c": "diagnosis",
+              "d": "trials",
+              "kind": "relation:integral",
+              "top5": [
+                "surgery",
+                "biopsy",
+                "injection",
+                "cancer",
+                "pregnancy"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "breasts",
+              "b": "body",
+              "c": "surgical",
+              "d": "biopsy",
+              "kind": "relation:integral",
+              "top5": [
+                "surgery",
+                "biopsy",
+                "genetic",
+                "radiation",
+                "tumor"
+              ],
+              "hit1": false,
+              "hit5": true
+            },
+            {
+              "a": "breasts",
+              "b": "body",
+              "c": "trials",
+              "d": "doses",
+              "kind": "relation:integral",
+              "top5": [
+                "surgery",
+                "tests",
+                "therapy",
+                "diagnosis",
+                "surgeries"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "surgery",
+              "b": "surgical",
+              "c": "tests",
+              "d": "trials",
+              "kind": "relation:integral",
+              "top5": [
+                "genetic",
+                "heart",
+                "biopsy",
+                "blood",
+                "tumor"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "surgery",
+              "b": "treatments",
+              "c": "headaches",
+              "d": "body",
+              "kind": "relation:integral",
+              "top5": [
+                "symptoms",
+                "risks",
+                "medications",
+                "drugs",
+                "tumors"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "surgery",
+              "b": "treatments",
+              "c": "medicine",
+              "d": "trials",
+              "kind": "relation:integral",
+              "top5": [
+                "medications",
+                "drugs",
+                "tests",
+                "doses",
+                "therapy"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "surgery",
+              "b": "biopsy",
+              "c": "blood",
+              "d": "medicine",
+              "kind": "relation:integral",
+              "top5": [
+                "breast",
+                "liver",
+                "kidney",
+                "heart",
+                "tumor"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "surgical",
+              "b": "treatments",
+              "c": "blood",
+              "d": "medicine",
+              "kind": "relation:integral",
+              "top5": [
+                "medications",
+                "bones",
+                "drugs",
+                "genes",
+                "risks"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "blood",
+              "b": "risks",
+              "c": "diagnosis",
+              "d": "trials",
+              "kind": "relation:integral",
+              "top5": [
+                "treatments",
+                "therapy",
+                "doses",
+                "surgeries",
+                "symptoms"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "blood",
+              "b": "risks",
+              "c": "genetics",
+              "d": "mutation",
+              "kind": "relation:integral",
+              "top5": [
+                "genes",
+                "treatments",
+                "medications",
+                "therapy",
+                "tests"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "blood",
+              "b": "medications",
+              "c": "surgery",
+              "d": "surgical",
+              "kind": "relation:integral",
+              "top5": [
+                "surgeries",
+                "drugs",
+                "treatments",
+                "therapy",
+                "trials"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "diagnosis",
+              "b": "risks",
+              "c": "genetics",
+              "d": "genes",
+              "kind": "relation:integral",
+              "top5": [
+                "genes",
+                "bones",
+                "lungs",
+                "headaches",
+                "drugs"
+              ],
+              "hit1": true,
+              "hit5": true
+            },
+            {
+              "a": "diagnosis",
+              "b": "medicine",
+              "c": "tests",
+              "d": "trials",
+              "kind": "relation:integral",
+              "top5": [
+                "drugs",
+                "medications",
+                "treatments",
+                "trials",
+                "doses"
+              ],
+              "hit1": false,
+              "hit5": true
+            },
+            {
+              "a": "diagnosis",
+              "b": "safety",
+              "c": "body",
+              "d": "muscle",
+              "kind": "relation:integral",
+              "top5": [
+                "chest",
+                "heart",
+                "liver",
+                "kidney",
+                "lungs"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "tests",
+              "b": "trials",
+              "c": "body",
+              "d": "chest",
+              "kind": "relation:integral",
+              "top5": [
+                "lungs",
+                "chest",
+                "kidneys",
+                "bones",
+                "liver"
+              ],
+              "hit1": false,
+              "hit5": true
+            },
+            {
+              "a": "tests",
+              "b": "trials",
+              "c": "body",
+              "d": "muscle",
+              "kind": "relation:integral",
+              "top5": [
+                "lungs",
+                "chest",
+                "kidneys",
+                "bones",
+                "liver"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "medicine",
+              "b": "trials",
+              "c": "bones",
+              "d": "muscle",
+              "kind": "relation:integral",
+              "top5": [
+                "lungs",
+                "kidneys",
+                "tumors",
+                "surgeries",
+                "genes"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "trials",
+              "b": "doses",
+              "c": "body",
+              "d": "muscle",
+              "kind": "relation:integral",
+              "top5": [
+                "chest",
+                "lungs",
+                "bones",
+                "heart",
+                "breast"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "trials",
+              "b": "doses",
+              "c": "surgery",
+              "d": "biopsy",
+              "kind": "relation:integral",
+              "top5": [
+                "surgeries",
+                "diagnosis",
+                "treatments",
+                "medications",
+                "therapy"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "risks",
+              "b": "doses",
+              "c": "heart",
+              "d": "headaches",
+              "kind": "relation:often",
+              "top5": [
+                "liver",
+                "lungs",
+                "kidney",
+                "kidneys",
+                "chest"
+              ],
+              "hit1": false,
+              "hit5": false
+            }
+          ]
+        },
+        "morph_analogies": {
+          "n": 30,
+          "top1": 0.5,
+          "top5": 0.7666666666666667,
+          "details": [
+            {
+              "a": "breast",
+              "b": "breasts",
+              "c": "cancer",
+              "d": "cancers",
+              "kind": "morph",
+              "top5": [
+                "tumors",
+                "cancers",
+                "kidneys",
+                "carcinoma",
+                "bones"
+              ],
+              "hit1": false,
+              "hit5": true
+            },
+            {
+              "a": "breast",
+              "b": "breasts",
+              "c": "genetic",
+              "d": "genetics",
+              "kind": "morph",
+              "top5": [
+                "genetics",
+                "genes",
+                "kidneys",
+                "bones",
+                "tumors"
+              ],
+              "hit1": true,
+              "hit5": true
+            },
+            {
+              "a": "breast",
+              "b": "breasts",
+              "c": "kidney",
+              "d": "kidneys",
+              "kind": "morph",
+              "top5": [
+                "kidneys",
+                "lungs",
+                "bones",
+                "tumors",
+                "liver"
+              ],
+              "hit1": true,
+              "hit5": true
+            },
+            {
+              "a": "breast",
+              "b": "breasts",
+              "c": "surgeries",
+              "d": "surgery",
+              "kind": "morph",
+              "top5": [
+                "treatments",
+                "medications",
+                "surgery",
+                "bones",
+                "kidneys"
+              ],
+              "hit1": false,
+              "hit5": true
+            },
+            {
+              "a": "breast",
+              "b": "breasts",
+              "c": "tumor",
+              "d": "tumors",
+              "kind": "morph",
+              "top5": [
+                "tumors",
+                "cancers",
+                "kidneys",
+                "carcinoma",
+                "cancer"
+              ],
+              "hit1": true,
+              "hit5": true
+            },
+            {
+              "a": "cancer",
+              "b": "cancers",
+              "c": "breast",
+              "d": "breasts",
+              "kind": "morph",
+              "top5": [
+                "breasts",
+                "tumors",
+                "lungs",
+                "cervical",
+                "prostate"
+              ],
+              "hit1": true,
+              "hit5": true
+            },
+            {
+              "a": "cancer",
+              "b": "cancers",
+              "c": "genetic",
+              "d": "genetics",
+              "kind": "morph",
+              "top5": [
+                "tumors",
+                "genes",
+                "bones",
+                "risks",
+                "genetics"
+              ],
+              "hit1": false,
+              "hit5": true
+            },
+            {
+              "a": "cancer",
+              "b": "cancers",
+              "c": "kidney",
+              "d": "kidneys",
+              "kind": "morph",
+              "top5": [
+                "kidneys",
+                "lungs",
+                "breasts",
+                "liver",
+                "tumors"
+              ],
+              "hit1": true,
+              "hit5": true
+            },
+            {
+              "a": "cancer",
+              "b": "cancers",
+              "c": "surgeries",
+              "d": "surgery",
+              "kind": "morph",
+              "top5": [
+                "treatments",
+                "tumors",
+                "medications",
+                "bones",
+                "headaches"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "cancer",
+              "b": "cancers",
+              "c": "tumor",
+              "d": "tumors",
+              "kind": "morph",
+              "top5": [
+                "tumors",
+                "breasts",
+                "bones",
+                "carcinoma",
+                "lungs"
+              ],
+              "hit1": true,
+              "hit5": true
+            },
+            {
+              "a": "genetic",
+              "b": "genetics",
+              "c": "breast",
+              "d": "breasts",
+              "kind": "morph",
+              "top5": [
+                "lungs",
+                "kidneys",
+                "breasts",
+                "bones",
+                "surgery"
+              ],
+              "hit1": false,
+              "hit5": true
+            },
+            {
+              "a": "genetic",
+              "b": "genetics",
+              "c": "cancer",
+              "d": "cancers",
+              "kind": "morph",
+              "top5": [
+                "diagnosis",
+                "therapy",
+                "surgery",
+                "carcinoma",
+                "tumors"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "genetic",
+              "b": "genetics",
+              "c": "kidney",
+              "d": "kidneys",
+              "kind": "morph",
+              "top5": [
+                "kidneys",
+                "lungs",
+                "bones",
+                "liver",
+                "heart"
+              ],
+              "hit1": true,
+              "hit5": true
+            },
+            {
+              "a": "genetic",
+              "b": "genetics",
+              "c": "surgeries",
+              "d": "surgery",
+              "kind": "morph",
+              "top5": [
+                "surgery",
+                "therapy",
+                "medications",
+                "treatments",
+                "trials"
+              ],
+              "hit1": true,
+              "hit5": true
+            },
+            {
+              "a": "genetic",
+              "b": "genetics",
+              "c": "tumor",
+              "d": "tumors",
+              "kind": "morph",
+              "top5": [
+                "tumors",
+                "surgery",
+                "carcinoma",
+                "cancer",
+                "mutation"
+              ],
+              "hit1": true,
+              "hit5": true
+            },
+            {
+              "a": "kidney",
+              "b": "kidneys",
+              "c": "breast",
+              "d": "breasts",
+              "kind": "morph",
+              "top5": [
+                "breasts",
+                "lungs",
+                "bones",
+                "chest",
+                "tumors"
+              ],
+              "hit1": true,
+              "hit5": true
+            },
+            {
+              "a": "kidney",
+              "b": "kidneys",
+              "c": "cancer",
+              "d": "cancers",
+              "kind": "morph",
+              "top5": [
+                "tumors",
+                "cancers",
+                "carcinoma",
+                "diagnosis",
+                "surgery"
+              ],
+              "hit1": false,
+              "hit5": true
+            },
+            {
+              "a": "kidney",
+              "b": "kidneys",
+              "c": "genetic",
+              "d": "genetics",
+              "kind": "morph",
+              "top5": [
+                "genetics",
+                "genes",
+                "bones",
+                "lungs",
+                "mutation"
+              ],
+              "hit1": true,
+              "hit5": true
+            },
+            {
+              "a": "kidney",
+              "b": "kidneys",
+              "c": "surgeries",
+              "d": "surgery",
+              "kind": "morph",
+              "top5": [
+                "treatments",
+                "surgery",
+                "medications",
+                "therapy",
+                "headaches"
+              ],
+              "hit1": false,
+              "hit5": true
+            },
+            {
+              "a": "kidney",
+              "b": "kidneys",
+              "c": "tumor",
+              "d": "tumors",
+              "kind": "morph",
+              "top5": [
+                "tumors",
+                "carcinoma",
+                "cancer",
+                "cancers",
+                "lungs"
+              ],
+              "hit1": true,
+              "hit5": true
+            },
+            {
+              "a": "surgeries",
+              "b": "surgery",
+              "c": "breast",
+              "d": "breasts",
+              "kind": "morph",
+              "top5": [
+                "kidney",
+                "liver",
+                "prostate",
+                "tumor",
+                "chest"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "surgeries",
+              "b": "surgery",
+              "c": "cancer",
+              "d": "cancers",
+              "kind": "morph",
+              "top5": [
+                "tumor",
+                "carcinoma",
+                "surgical",
+                "diagnosis",
+                "pregnancy"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "surgeries",
+              "b": "surgery",
+              "c": "genetic",
+              "d": "genetics",
+              "kind": "morph",
+              "top5": [
+                "surgical",
+                "tumor",
+                "cancer",
+                "blood",
+                "genetics"
+              ],
+              "hit1": false,
+              "hit5": true
+            },
+            {
+              "a": "surgeries",
+              "b": "surgery",
+              "c": "kidney",
+              "d": "kidneys",
+              "kind": "morph",
+              "top5": [
+                "liver",
+                "breast",
+                "heart",
+                "prostate",
+                "tumor"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "surgeries",
+              "b": "surgery",
+              "c": "tumor",
+              "d": "tumors",
+              "kind": "morph",
+              "top5": [
+                "cancer",
+                "surgical",
+                "carcinoma",
+                "biopsy",
+                "liver"
+              ],
+              "hit1": false,
+              "hit5": false
+            },
+            {
+              "a": "tumor",
+              "b": "tumors",
+              "c": "breast",
+              "d": "breasts",
+              "kind": "morph",
+              "top5": [
+                "breasts",
+                "lungs",
+                "bones",
+                "kidneys",
+                "cervical"
+              ],
+              "hit1": true,
+              "hit5": true
+            },
+            {
+              "a": "tumor",
+              "b": "tumors",
+              "c": "cancer",
+              "d": "cancers",
+              "kind": "morph",
+              "top5": [
+                "cancers",
+                "headaches",
+                "bones",
+                "lungs",
+                "surgeries"
+              ],
+              "hit1": true,
+              "hit5": true
+            },
+            {
+              "a": "tumor",
+              "b": "tumors",
+              "c": "genetic",
+              "d": "genetics",
+              "kind": "morph",
+              "top5": [
+                "genes",
+                "genetics",
+                "bones",
+                "headaches",
+                "lungs"
+              ],
+              "hit1": false,
+              "hit5": true
+            },
+            {
+              "a": "tumor",
+              "b": "tumors",
+              "c": "kidney",
+              "d": "kidneys",
+              "kind": "morph",
+              "top5": [
+                "kidneys",
+                "lungs",
+                "bones",
+                "breasts",
+                "liver"
+              ],
+              "hit1": true,
+              "hit5": true
+            },
+            {
+              "a": "tumor",
+              "b": "tumors",
+              "c": "surgeries",
+              "d": "surgery",
+              "kind": "morph",
+              "top5": [
+                "treatments",
+                "medications",
+                "headaches",
+                "bones",
+                "cancers"
+              ],
+              "hit1": false,
+              "hit5": false
+            }
+          ]
+        },
+        "overall": {
+          "n": 70,
+          "top1": 0.24285714285714285,
+          "top5": 0.4142857142857143
+        },
+        "verdict": "linear_analogy_holds"
+      },
+      "p4": {
+        "n_real": 40,
+        "n_pseudo": 40,
+        "auc": {
+          "w2_propagation": 0.9981249999999999,
+          "ws_chain_cos": 0.5381250000000001,
+          "ws_midpoint_dist": 0.5325
+        },
+        "verdict": "w2_only",
+        "real_paths": [
+          [
+            "biopsy",
+            "injection",
+            "symptoms"
+          ],
+          [
+            "blood",
+            "safety",
+            "doses"
+          ],
+          [
+            "blood",
+            "tests",
+            "safety"
+          ],
+          [
+            "bones",
+            "breasts",
+            "muscle"
+          ],
+          [
+            "bones",
+            "cervical",
+            "immune"
+          ],
+          [
+            "bones",
+            "chest",
+            "muscle"
+          ],
+          [
+            "breast",
+            "body",
+            "breath"
+          ],
+          [
+            "breast",
+            "heart",
+            "cervical"
+          ],
+          [
+            "breast",
+            "kidney",
+            "muscle"
+          ],
+          [
+            "breast",
+            "pregnancy",
+            "bones"
+          ],
+          [
+            "breasts",
+            "breath",
+            "chest"
+          ],
+          [
+            "breasts",
+            "genetics",
+            "genetic"
+          ],
+          [
+            "breasts",
+            "genetics",
+            "mutation"
+          ],
+          [
+            "chest",
+            "immune",
+            "muscle"
+          ],
+          [
+            "diagnosis",
+            "medications",
+            "doses"
+          ],
+          [
+            "diagnosis",
+            "tests",
+            "trials"
+          ],
+          [
+            "heart",
+            "breath",
+            "immune"
+          ],
+          [
+            "heart",
+            "chest",
+            "muscle"
+          ],
+          [
+            "heart",
+            "pregnancy",
+            "headaches"
+          ],
+          [
+            "kidney",
+            "pregnancy",
+            "immune"
+          ],
+          [
+            "kidneys",
+            "breasts",
+            "genetics"
+          ],
+          [
+            "kidneys",
+            "breasts",
+            "surgeries"
+          ],
+          [
+            "kidneys",
+            "breath",
+            "cervical"
+          ],
+          [
+            "kidneys",
+            "headaches",
+            "breath"
+          ],
+          [
+            "lungs",
+            "biopsy",
+            "symptoms"
+          ],
+          [
+            "medicine",
+            "drugs",
+            "doses"
+          ],
+          [
+            "pregnancy",
+            "body",
+            "chest"
+          ],
+          [
+            "pregnancy",
+            "body",
+            "immune"
+          ],
+          [
+            "pregnancy",
+            "breasts",
+            "breath"
+          ],
+          [
+            "pregnancy",
+            "breasts",
+            "muscle"
+          ],
+          [
+            "prostate",
+            "breasts",
+            "surgeries"
+          ],
+          [
+            "risks",
+            "medications",
+            "trials"
+          ],
+          [
+            "risks",
+            "medicine",
+            "sugar"
+          ],
+          [
+            "risks",
+            "sugar",
+            "trials"
+          ],
+          [
+            "surgeries",
+            "cancer",
+            "tumor"
+          ],
+          [
+            "surgeries",
+            "lungs",
+            "surgeon"
+          ],
+          [
+            "surgery",
+            "lungs",
+            "treatments"
+          ],
+          [
+            "surgical",
+            "biopsy",
+            "symptoms"
+          ],
+          [
+            "surgical",
+            "surgeries",
+            "injectable"
+          ],
+          [
+            "tests",
+            "medications",
+            "medicine"
+          ]
+        ],
+        "pseudo_paths": [
+          [
+            "surgical",
+            "injectable",
+            "immune"
+          ],
+          [
+            "diagnosis",
+            "medicine",
+            "symptoms"
+          ],
+          [
+            "heart",
+            "chest",
+            "medicine"
+          ],
+          [
+            "medications",
+            "drugs",
+            "surgeon"
+          ],
+          [
+            "surgical",
+            "surgeries",
+            "carcinoma"
+          ],
+          [
+            "heart",
+            "kidneys",
+            "genetic"
+          ],
+          [
+            "bones",
+            "headaches",
+            "injection"
+          ],
+          [
+            "cervical",
+            "chest",
+            "injectable"
+          ],
+          [
+            "immune",
+            "muscle",
+            "surgery"
+          ],
+          [
+            "heart",
+            "immune",
+            "cancers"
+          ],
+          [
+            "surgeon",
+            "injectable",
+            "surgical"
+          ],
+          [
+            "kidney",
+            "body",
+            "tests"
+          ],
+          [
+            "surgical",
+            "biopsy",
+            "bones"
+          ],
+          [
+            "tumor",
+            "cancers",
+            "doses"
+          ],
+          [
+            "radiation",
+            "chemotherapy",
+            "headaches"
+          ],
+          [
+            "kidney",
+            "pregnancy",
+            "tumor"
+          ],
+          [
+            "cancer",
+            "cancers",
+            "bones"
+          ],
+          [
+            "safety",
+            "doses",
+            "surgeon"
+          ],
+          [
+            "pregnancy",
+            "cervical",
+            "injectable"
+          ],
+          [
+            "lungs",
+            "symptoms",
+            "breath"
+          ],
+          [
+            "breath",
+            "muscle",
+            "genetic"
+          ],
+          [
+            "headaches",
+            "chest",
+            "genetics"
+          ],
+          [
+            "surgery",
+            "surgeries",
+            "chest"
+          ],
+          [
+            "injection",
+            "symptoms",
+            "doses"
+          ],
+          [
+            "diagnosis",
+            "drugs",
+            "headaches"
+          ],
+          [
+            "pregnancy",
+            "cervical",
+            "tumor"
+          ],
+          [
+            "sugar",
+            "doses",
+            "immune"
+          ],
+          [
+            "prostate",
+            "muscle",
+            "trials"
+          ],
+          [
+            "heart",
+            "breasts",
+            "blood"
+          ],
+          [
+            "surgeon",
+            "biopsy",
+            "bones"
+          ],
+          [
+            "medicine",
+            "trials",
+            "blood"
+          ],
+          [
+            "medications",
+            "sugar",
+            "pregnancy"
+          ],
+          [
+            "heart",
+            "bones",
+            "chemotherapy"
+          ],
+          [
+            "kidney",
+            "pregnancy",
+            "lungs"
+          ],
+          [
+            "kidneys",
+            "chest",
+            "family"
+          ],
+          [
+            "surgical",
+            "surgeon",
+            "risks"
+          ],
+          [
+            "breast",
+            "immune",
+            "injectable"
+          ],
+          [
+            "kidney",
+            "kidneys",
+            "cancer"
+          ],
+          [
+            "tumor",
+            "carcinoma",
+            "breast"
+          ],
+          [
+            "tumor",
+            "cancers",
+            "risks"
+          ]
+        ]
+      },
+      "p1": {
+        "n_pairs": {
+          "same": 6,
+          "near": 19,
+          "diff": 38
+        },
+        "relaxed_note": "label 'same' 只有 6 对 (<8)，按任务书放宽到 ≥5",
+        "selection_note": "near 候选取自 ws 余弦 top-40、diff 候选取自余弦下半区随机 30，再经 DeepSeek 预标注——候选构造本身以 ws 为条件，对 ws 臂存在选择偏差（near/diff 的 ws 余弦被拉近），解读需谨慎",
+        "polysemy_bonus": "skipped: npz 只有均值向量，无 per-chunk ws 向量",
+        "class_means": {
+          "same": {
+            "ws_cos": 0.822,
+            "m_cos": 0.5065,
+            "bge_cos": 0.9216
+          },
+          "near": {
+            "ws_cos": 0.8055,
+            "m_cos": 0.1398,
+            "bge_cos": 0.7071
+          },
+          "diff": {
+            "ws_cos": 0.718,
+            "m_cos": 0.0,
+            "bge_cos": 0.5666
+          }
+        },
+        "results": {
+          "ws_cos": {
+            "accuracy": 0.36507936507936506,
+            "macro_f1": 0.25925925925925924,
+            "per_class": {
+              "same": {
+                "precision": 0.08333333333333333,
+                "recall": 0.5,
+                "f1": 0.14285714285714285
+              },
+              "near": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "diff": {
+                "precision": 0.8,
+                "recall": 0.5263157894736842,
+                "f1": 0.6349206349206349
+              }
+            }
+          },
+          "m_row_cos": {
+            "accuracy": 0.746031746031746,
+            "macro_f1": 0.6245210727969348,
+            "per_class": {
+              "same": {
+                "precision": 0.5555555555555556,
+                "recall": 0.8333333333333334,
+                "f1": 0.6666666666666666
+              },
+              "near": {
+                "precision": 0.8,
+                "recall": 0.21052631578947367,
+                "f1": 0.3333333333333333
+              },
+              "diff": {
+                "precision": 0.7755102040816326,
+                "recall": 1.0,
+                "f1": 0.8735632183908046
+              }
+            }
+          },
+          "joint_ws+m": {
+            "accuracy": 0.7301587301587301,
+            "macro_f1": 0.6157105943152454,
+            "per_class": {
+              "same": {
+                "precision": 0.5555555555555556,
+                "recall": 0.8333333333333334,
+                "f1": 0.6666666666666666
+              },
+              "near": {
+                "precision": 0.6666666666666666,
+                "recall": 0.21052631578947367,
+                "f1": 0.32
+              },
+              "diff": {
+                "precision": 0.7708333333333334,
+                "recall": 0.9736842105263158,
+                "f1": 0.8604651162790697
+              }
+            }
+          },
+          "bge_cos": {
+            "accuracy": 0.7301587301587301,
+            "macro_f1": 0.5685920226923898,
+            "per_class": {
+              "same": {
+                "precision": 0.46153846153846156,
+                "recall": 1.0,
+                "f1": 0.631578947368421
+              },
+              "near": {
+                "precision": 1.0,
+                "recall": 0.10526315789473684,
+                "f1": 0.19047619047619047
+              },
+              "diff": {
+                "precision": 0.7916666666666666,
+                "recall": 1.0,
+                "f1": 0.8837209302325582
+              }
+            }
+          }
+        },
+        "verdict": "geometry_wins",
+        "per_pair": [
+          {
+            "a": "breast",
+            "b": "breasts",
+            "label": "same",
+            "pred": "same",
+            "ws_cos": 0.7895,
+            "m_cos": 0.3909,
+            "bge_cos": 0.9398
+          },
+          {
+            "a": "cancer",
+            "b": "cancers",
+            "label": "same",
+            "pred": "near",
+            "ws_cos": 0.7994,
+            "m_cos": 0.1398,
+            "bge_cos": 0.9159
+          },
+          {
+            "a": "genetic",
+            "b": "genetics",
+            "label": "same",
+            "pred": "same",
+            "ws_cos": 0.7536,
+            "m_cos": 0.6184,
+            "bge_cos": 0.9067
+          },
+          {
+            "a": "kidney",
+            "b": "kidneys",
+            "label": "same",
+            "pred": "same",
+            "ws_cos": 0.8574,
+            "m_cos": 0.8348,
+            "bge_cos": 0.9619
+          },
+          {
+            "a": "surgeries",
+            "b": "surgery",
+            "label": "same",
+            "pred": "same",
+            "ws_cos": 0.9067,
+            "m_cos": 0.5053,
+            "bge_cos": 0.8855
+          },
+          {
+            "a": "tumor",
+            "b": "tumors",
+            "label": "same",
+            "pred": "same",
+            "ws_cos": 0.8253,
+            "m_cos": 0.5499,
+            "bge_cos": 0.9199
+          },
+          {
+            "a": "bones",
+            "b": "tumors",
+            "label": "near",
+            "pred": "diff",
+            "ws_cos": 0.8268,
+            "m_cos": 0.0,
+            "bge_cos": 0.6513
+          },
+          {
+            "a": "breast",
+            "b": "chest",
+            "label": "near",
+            "pred": "near",
+            "ws_cos": 0.8248,
+            "m_cos": 0.1381,
+            "bge_cos": 0.7233
+          },
+          {
+            "a": "cancer",
+            "b": "tumor",
+            "label": "near",
+            "pred": "same",
+            "ws_cos": 0.8466,
+            "m_cos": 0.2992,
+            "bge_cos": 0.8216
+          },
+          {
+            "a": "cancers",
+            "b": "genetic",
+            "label": "near",
+            "pred": "diff",
+            "ws_cos": 0.61,
+            "m_cos": 0.0,
+            "bge_cos": 0.5278
+          },
+          {
+            "a": "cancers",
+            "b": "tumors",
+            "label": "near",
+            "pred": "diff",
+            "ws_cos": 0.8972,
+            "m_cos": 0.0,
+            "bge_cos": 0.8651
+          },
+          {
+            "a": "drugs",
+            "b": "medications",
+            "label": "near",
+            "pred": "near",
+            "ws_cos": 0.933,
+            "m_cos": 0.2586,
+            "bge_cos": 0.8481
+          },
+          {
+            "a": "drugs",
+            "b": "treatments",
+            "label": "near",
+            "pred": "diff",
+            "ws_cos": 0.8578,
+            "m_cos": 0.0,
+            "bge_cos": 0.6536
+          },
+          {
+            "a": "genes",
+            "b": "genetics",
+            "label": "near",
+            "pred": "same",
+            "ws_cos": 0.8864,
+            "m_cos": 0.4058,
+            "bge_cos": 0.8808
+          },
+          {
+            "a": "genetics",
+            "b": "mutation",
+            "label": "near",
+            "pred": "same",
+            "ws_cos": 0.8269,
+            "m_cos": 0.4687,
+            "bge_cos": 0.5953
+          },
+          {
+            "a": "headaches",
+            "b": "symptoms",
+            "label": "near",
+            "pred": "diff",
+            "ws_cos": 0.839,
+            "m_cos": 0.0,
+            "bge_cos": 0.6545
+          },
+          {
+            "a": "headaches",
+            "b": "tumor",
+            "label": "near",
+            "pred": "diff",
+            "ws_cos": 0.645,
+            "m_cos": 0.0,
+            "bge_cos": 0.526
+          },
+          {
+            "a": "medications",
+            "b": "treatments",
+            "label": "near",
+            "pred": "near",
+            "ws_cos": 0.8689,
+            "m_cos": 0.2249,
+            "bge_cos": 0.7469
+          },
+          {
+            "a": "medicine",
+            "b": "treatments",
+            "label": "near",
+            "pred": "diff",
+            "ws_cos": 0.6359,
+            "m_cos": 0.0,
+            "bge_cos": 0.6629
+          },
+          {
+            "a": "radiation",
+            "b": "risks",
+            "label": "near",
+            "pred": "diff",
+            "ws_cos": 0.5981,
+            "m_cos": 0.0,
+            "bge_cos": 0.5738
+          },
+          {
+            "a": "surgeon",
+            "b": "surgery",
+            "label": "near",
+            "pred": "near",
+            "ws_cos": 0.838,
+            "m_cos": 0.1869,
+            "bge_cos": 0.8139
+          },
+          {
+            "a": "surgeries",
+            "b": "treatments",
+            "label": "near",
+            "pred": "diff",
+            "ws_cos": 0.8525,
+            "m_cos": 0.0,
+            "bge_cos": 0.671
+          },
+          {
+            "a": "surgery",
+            "b": "surgical",
+            "label": "near",
+            "pred": "same",
+            "ws_cos": 0.8297,
+            "m_cos": 0.6731,
+            "bge_cos": 0.8246
+          },
+          {
+            "a": "surgery",
+            "b": "therapy",
+            "label": "near",
+            "pred": "diff",
+            "ws_cos": 0.8529,
+            "m_cos": 0.0,
+            "bge_cos": 0.6255
+          },
+          {
+            "a": "therapy",
+            "b": "treatments",
+            "label": "near",
+            "pred": "diff",
+            "ws_cos": 0.8342,
+            "m_cos": 0.0,
+            "bge_cos": 0.7694
+          },
+          {
+            "a": "genetics",
+            "b": "immune",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.5968,
+            "m_cos": 0.0,
+            "bge_cos": 0.5416
+          },
+          {
+            "a": "family",
+            "b": "kidneys",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.5114,
+            "m_cos": 0.0,
+            "bge_cos": 0.5093
+          },
+          {
+            "a": "bones",
+            "b": "lungs",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.8971,
+            "m_cos": 0.0,
+            "bge_cos": 0.6167
+          },
+          {
+            "a": "liver",
+            "b": "lungs",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.8401,
+            "m_cos": 0.0,
+            "bge_cos": 0.6261
+          },
+          {
+            "a": "kidney",
+            "b": "prostate",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.845,
+            "m_cos": 0.0,
+            "bge_cos": 0.603
+          },
+          {
+            "a": "breast",
+            "b": "prostate",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.8649,
+            "m_cos": 0.0,
+            "bge_cos": 0.5705
+          },
+          {
+            "a": "diagnosis",
+            "b": "surgery",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.8535,
+            "m_cos": 0.0,
+            "bge_cos": 0.5758
+          },
+          {
+            "a": "breasts",
+            "b": "lungs",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.83,
+            "m_cos": 0.0,
+            "bge_cos": 0.6168
+          },
+          {
+            "a": "doses",
+            "b": "tumor",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.5715,
+            "m_cos": 0.0,
+            "bge_cos": 0.4875
+          },
+          {
+            "a": "diagnosis",
+            "b": "therapy",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.8242,
+            "m_cos": 0.0,
+            "bge_cos": 0.6361
+          },
+          {
+            "a": "heart",
+            "b": "kidney",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.8414,
+            "m_cos": 0.0,
+            "bge_cos": 0.5963
+          },
+          {
+            "a": "diagnosis",
+            "b": "family",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.5738,
+            "m_cos": 0.0,
+            "bge_cos": 0.5474
+          },
+          {
+            "a": "heart",
+            "b": "lungs",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.824,
+            "m_cos": 0.0,
+            "bge_cos": 0.5978
+          },
+          {
+            "a": "bones",
+            "b": "kidneys",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.867,
+            "m_cos": 0.0,
+            "bge_cos": 0.6074
+          },
+          {
+            "a": "breast",
+            "b": "liver",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.8577,
+            "m_cos": 0.0,
+            "bge_cos": 0.5509
+          },
+          {
+            "a": "genetics",
+            "b": "safety",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.6578,
+            "m_cos": 0.0,
+            "bge_cos": 0.5488
+          },
+          {
+            "a": "body",
+            "b": "tests",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.6187,
+            "m_cos": 0.0,
+            "bge_cos": 0.6172
+          },
+          {
+            "a": "kidneys",
+            "b": "lungs",
+            "label": "diff",
+            "pred": "near",
+            "ws_cos": 0.9184,
+            "m_cos": 0.0,
+            "bge_cos": 0.6
+          },
+          {
+            "a": "breasts",
+            "b": "kidneys",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.8548,
+            "m_cos": 0.0,
+            "bge_cos": 0.6053
+          },
+          {
+            "a": "cancers",
+            "b": "injection",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.5976,
+            "m_cos": 0.0,
+            "bge_cos": 0.5343
+          },
+          {
+            "a": "bones",
+            "b": "family",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.4993,
+            "m_cos": 0.0,
+            "bge_cos": 0.5479
+          },
+          {
+            "a": "chemotherapy",
+            "b": "surgery",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.8282,
+            "m_cos": 0.0,
+            "bge_cos": 0.5602
+          },
+          {
+            "a": "breasts",
+            "b": "immune",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.5748,
+            "m_cos": 0.0,
+            "bge_cos": 0.5464
+          },
+          {
+            "a": "genetic",
+            "b": "tests",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.6409,
+            "m_cos": 0.0,
+            "bge_cos": 0.5537
+          },
+          {
+            "a": "breast",
+            "b": "sugar",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.6395,
+            "m_cos": 0.0,
+            "bge_cos": 0.4929
+          },
+          {
+            "a": "headaches",
+            "b": "muscle",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.6128,
+            "m_cos": 0.0,
+            "bge_cos": 0.5162
+          },
+          {
+            "a": "prostate",
+            "b": "safety",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.5479,
+            "m_cos": 0.0,
+            "bge_cos": 0.5458
+          },
+          {
+            "a": "genes",
+            "b": "lungs",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.8295,
+            "m_cos": 0.0,
+            "bge_cos": 0.5742
+          },
+          {
+            "a": "tests",
+            "b": "treatments",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.8362,
+            "m_cos": 0.0,
+            "bge_cos": 0.578
+          },
+          {
+            "a": "kidney",
+            "b": "tests",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.6397,
+            "m_cos": 0.0,
+            "bge_cos": 0.5168
+          },
+          {
+            "a": "chest",
+            "b": "risks",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.653,
+            "m_cos": 0.0,
+            "bge_cos": 0.5254
+          },
+          {
+            "a": "chest",
+            "b": "doses",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.5903,
+            "m_cos": 0.0,
+            "bge_cos": 0.5047
+          },
+          {
+            "a": "chest",
+            "b": "family",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.5386,
+            "m_cos": 0.0,
+            "bge_cos": 0.5671
+          },
+          {
+            "a": "kidneys",
+            "b": "liver",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.8291,
+            "m_cos": 0.0,
+            "bge_cos": 0.6351
+          },
+          {
+            "a": "injection",
+            "b": "tumors",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.6386,
+            "m_cos": 0.0,
+            "bge_cos": 0.5412
+          },
+          {
+            "a": "breasts",
+            "b": "cervical",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.6293,
+            "m_cos": 0.0,
+            "bge_cos": 0.641
+          },
+          {
+            "a": "muscle",
+            "b": "surgery",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.6469,
+            "m_cos": 0.0,
+            "bge_cos": 0.593
+          },
+          {
+            "a": "liver",
+            "b": "prostate",
+            "label": "diff",
+            "pred": "diff",
+            "ws_cos": 0.8619,
+            "m_cos": 0.0,
+            "bge_cos": 0.5014
+          }
+        ]
+      },
+      "p2": {
+        "top_concepts": [
+          "cancer",
+          "surgery",
+          "tumor",
+          "blood",
+          "surgical",
+          "breast",
+          "tumors",
+          "diagnosis",
+          "surgeries",
+          "radiation",
+          "lungs",
+          "family",
+          "liver",
+          "genetics",
+          "risks"
+        ],
+        "aggregate": {
+          "precision_ws": 0.7583333333333333,
+          "precision_bge": 0.7833333333333333,
+          "mean_overlap_top8": 0.8916666666666667,
+          "verdict": "bge_better"
+        },
+        "per_concept": {
+          "cancer": {
+            "df": 316,
+            "ws_top": [
+              {
+                "term": "diagnosis",
+                "kind": "role",
+                "freq": 132,
+                "sim": 0.8616245726203258,
+                "score": 113.734443585883
+              },
+              {
+                "term": "treatments",
+                "kind": "role",
+                "freq": 102,
+                "sim": 0.8705132290192309,
+                "score": 88.79234935996155
+              },
+              {
+                "term": "therapy",
+                "kind": "role",
+                "freq": 72,
+                "sim": 0.8790541633926129,
+                "score": 63.29189976426813
+              },
+              {
+                "term": "reatment",
+                "kind": "role",
+                "freq": 71,
+                "sim": 0.8718340576634985,
+                "score": 61.900218094108396
+              },
+              {
+                "term": "progression",
+                "kind": "role",
+                "freq": 61,
+                "sim": 0.848754069300649,
+                "score": 51.77399822733959
+              },
+              {
+                "term": "detection",
+                "kind": "role",
+                "freq": 56,
+                "sim": 0.8552892308013236,
+                "score": 47.89619692487412
+              },
+              {
+                "term": "classification",
+                "kind": "role",
+                "freq": 55,
+                "sim": 0.847367062975612,
+                "score": 46.60518846365866
+              },
+              {
+                "term": "treat",
+                "kind": "role",
+                "freq": 49,
+                "sim": 0.8383066178242115,
+                "score": 41.077024273386364
+              }
+            ],
+            "bge_top": [
+              {
+                "term": "diagnosis",
+                "kind": "role",
+                "freq": 132,
+                "sim": 0.597112449280969,
+                "score": 78.81884330508791
+              },
+              {
+                "term": "treatments",
+                "kind": "role",
+                "freq": 102,
+                "sim": 0.5182467719426455,
+                "score": 52.86117073814984
+              },
+              {
+                "term": "therapy",
+                "kind": "role",
+                "freq": 72,
+                "sim": 0.5659213934740833,
+                "score": 40.746340330134
+              },
+              {
+                "term": "tumor",
+                "kind": "concept",
+                "freq": 43,
+                "sim": 0.8215728142722696,
+                "score": 35.327631013707595
+              },
+              {
+                "term": "reatment",
+                "kind": "role",
+                "freq": 71,
+                "sim": 0.4739649159992817,
+                "score": 33.651509035949
+              },
+              {
+                "term": "progression",
+                "kind": "role",
+                "freq": 61,
+                "sim": 0.48023161915257406,
+                "score": 29.29412876830702
+              },
+              {
+                "term": "detection",
+                "kind": "role",
+                "freq": 56,
+                "sim": 0.47949189383826385,
+                "score": 26.851546054942776
+              },
+              {
+                "term": "treat",
+                "kind": "role",
+                "freq": 49,
+                "sim": 0.5125958543158259,
+                "score": 25.117196861475467
+              }
+            ],
+            "judge": {
+              "diagnosis": true,
+              "treatments": true,
+              "therapy": true,
+              "reatment": false,
+              "progression": true,
+              "detection": true,
+              "classification": true,
+              "treat": false,
+              "tumor": true
+            },
+            "precision_ws": 0.75,
+            "precision_bge": 0.75,
+            "overlap_top8": 0.875
+          },
+          "surgery": {
+            "df": 59,
+            "ws_top": [
+              {
+                "term": "surgical",
+                "kind": "concept",
+                "freq": 31,
+                "sim": 0.829708992299469,
+                "score": 25.72097876128354
+              },
+              {
+                "term": "procedures",
+                "kind": "role",
+                "freq": 23,
+                "sim": 0.8874543099639887,
+                "score": 20.41144912917174
+              },
+              {
+                "term": "cancer",
+                "kind": "concept",
+                "freq": 26,
+                "sim": 0.7765692086233427,
+                "score": 20.190799424206908
+              },
+              {
+                "term": "techniques",
+                "kind": "role",
+                "freq": 19,
+                "sim": 0.8363751459126825,
+                "score": 15.891127772340967
+              },
+              {
+                "term": "technique",
+                "kind": "role",
+                "freq": 13,
+                "sim": 0.907544323379461,
+                "score": 11.798076203932993
+              },
+              {
+                "term": "methods",
+                "kind": "role",
+                "freq": 13,
+                "sim": 0.8460101910413769,
+                "score": 10.9981324835379
+              },
+              {
+                "term": "procedure",
+                "kind": "role",
+                "freq": 12,
+                "sim": 0.8874543099639887,
+                "score": 10.649451719567864
+              },
+              {
+                "term": "options",
+                "kind": "role",
+                "freq": 11,
+                "sim": 0.907544323379461,
+                "score": 9.982987557174072
+              }
+            ],
+            "bge_top": [
+              {
+                "term": "surgical",
+                "kind": "concept",
+                "freq": 31,
+                "sim": 0.8246109680862392,
+                "score": 25.562940010673415
+              },
+              {
+                "term": "cancer",
+                "kind": "concept",
+                "freq": 26,
+                "sim": 0.5881036470898506,
+                "score": 15.290694824336116
+              },
+              {
+                "term": "procedures",
+                "kind": "role",
+                "freq": 23,
+                "sim": 0.6390739924262842,
+                "score": 14.698701825804536
+              },
+              {
+                "term": "techniques",
+                "kind": "role",
+                "freq": 19,
+                "sim": 0.5929864662640407,
+                "score": 11.266742859016773
+              },
+              {
+                "term": "procedure",
+                "kind": "role",
+                "freq": 12,
+                "sim": 0.669504512852584,
+                "score": 8.034054154231008
+              },
+              {
+                "term": "technique",
+                "kind": "role",
+                "freq": 13,
+                "sim": 0.6007382468362601,
+                "score": 7.809597208871381
+              },
+              {
+                "term": "methods",
+                "kind": "role",
+                "freq": 13,
+                "sim": 0.5391564768299753,
+                "score": 7.009034198789678
+              },
+              {
+                "term": "options",
+                "kind": "role",
+                "freq": 11,
+                "sim": 0.5599747081620331,
+                "score": 6.159721789782364
+              }
+            ],
+            "judge": {
+              "surgical": true,
+              "procedures": true,
+              "cancer": false,
+              "techniques": true,
+              "technique": true,
+              "methods": true,
+              "procedure": true,
+              "options": true
+            },
+            "precision_ws": 0.875,
+            "precision_bge": 0.875,
+            "overlap_top8": 1.0
+          },
+          "tumor": {
+            "df": 53,
+            "ws_top": [
+              {
+                "term": "cancer",
+                "kind": "concept",
+                "freq": 43,
+                "sim": 0.8465951690216336,
+                "score": 36.40359226793024
+              },
+              {
+                "term": "classification",
+                "kind": "role",
+                "freq": 24,
+                "sim": 0.8465951690216333,
+                "score": 20.3182840565192
+              },
+              {
+                "term": "progression",
+                "kind": "role",
+                "freq": 12,
+                "sim": 0.8518361228736407,
+                "score": 10.22203347448369
+              },
+              {
+                "term": "growth",
+                "kind": "role",
+                "freq": 9,
+                "sim": 0.8553246299455588,
+                "score": 7.697921669510029
+              },
+              {
+                "term": "characteristics",
+                "kind": "role",
+                "freq": 9,
+                "sim": 0.8239108567742585,
+                "score": 7.415197710968326
+              },
+              {
+                "term": "pathology",
+                "kind": "role",
+                "freq": 8,
+                "sim": 0.8568111247139435,
+                "score": 6.854488997711548
+              },
+              {
+                "term": "biopsy",
+                "kind": "role",
+                "freq": 8,
+                "sim": 0.8351720298108108,
+                "score": 6.681376238486487
+              },
+              {
+                "term": "size",
+                "kind": "role",
+                "freq": 8,
+                "sim": 0.8239108567742585,
+                "score": 6.591286854194068
+              }
+            ],
+            "bge_top": [
+              {
+                "term": "cancer",
+                "kind": "concept",
+                "freq": 43,
+                "sim": 0.8215728142722696,
+                "score": 35.327631013707595
+              },
+              {
+                "term": "classification",
+                "kind": "role",
+                "freq": 24,
+                "sim": 0.42814646179426047,
+                "score": 10.27551508306225
+              },
+              {
+                "term": "progression",
+                "kind": "role",
+                "freq": 12,
+                "sim": 0.47860249778930486,
+                "score": 5.743229973471658
+              },
+              {
+                "term": "biopsy",
+                "kind": "role",
+                "freq": 8,
+                "sim": 0.5637304093865335,
+                "score": 4.509843275092268
+              },
+              {
+                "term": "growth",
+                "kind": "role",
+                "freq": 9,
+                "sim": 0.4898393110306996,
+                "score": 4.408553799276296
+              },
+              {
+                "term": "pathology",
+                "kind": "role",
+                "freq": 8,
+                "sim": 0.5292781162336786,
+                "score": 4.234224929869429
+              },
+              {
+                "term": "size",
+                "kind": "role",
+                "freq": 8,
+                "sim": 0.5052373328197843,
+                "score": 4.041898662558275
+              },
+              {
+                "term": "characteristics",
+                "kind": "role",
+                "freq": 9,
+                "sim": 0.42908709193957995,
+                "score": 3.8617838274562195
+              }
+            ],
+            "judge": {
+              "cancer": true,
+              "classification": true,
+              "progression": true,
+              "growth": true,
+              "characteristics": true,
+              "pathology": true,
+              "biopsy": true,
+              "size": true
+            },
+            "precision_ws": 1.0,
+            "precision_bge": 1.0,
+            "overlap_top8": 1.0
+          },
+          "blood": {
+            "df": 43,
+            "ws_top": [
+              {
+                "term": "tests",
+                "kind": "role",
+                "freq": 15,
+                "sim": 0.8170926179463274,
+                "score": 12.25638926919491
+              },
+              {
+                "term": "cells",
+                "kind": "role",
+                "freq": 15,
+                "sim": 0.7871453378260111,
+                "score": 11.807180067390167
+              },
+              {
+                "term": "diseases",
+                "kind": "role",
+                "freq": 9,
+                "sim": 0.7215790838783207,
+                "score": 6.494211754904886
+              },
+              {
+                "term": "samples",
+                "kind": "role",
+                "freq": 8,
+                "sim": 0.7215790838783207,
+                "score": 5.772632671026566
+              },
+              {
+                "term": "disorders",
+                "kind": "role",
+                "freq": 8,
+                "sim": 0.7215790838783207,
+                "score": 5.772632671026566
+              },
+              {
+                "term": "sample",
+                "kind": "role",
+                "freq": 7,
+                "sim": 0.7215790838783207,
+                "score": 5.051053587148245
+              },
+              {
+                "term": "chemistry",
+                "kind": "role",
+                "freq": 5,
+                "sim": 0.8236522986307503,
+                "score": 4.118261493153751
+              },
+              {
+                "term": "formation",
+                "kind": "role",
+                "freq": 5,
+                "sim": 0.7221540204360253,
+                "score": 3.610770102180126
+              }
+            ],
+            "bge_top": [
+              {
+                "term": "tests",
+                "kind": "role",
+                "freq": 15,
+                "sim": 0.564681629959527,
+                "score": 8.470224449392905
+              },
+              {
+                "term": "cells",
+                "kind": "role",
+                "freq": 15,
+                "sim": 0.5404301304194145,
+                "score": 8.106451956291217
+              },
+              {
+                "term": "diseases",
+                "kind": "role",
+                "freq": 9,
+                "sim": 0.561291402361266,
+                "score": 5.0516226212513935
+              },
+              {
+                "term": "disorders",
+                "kind": "role",
+                "freq": 8,
+                "sim": 0.5506102016391197,
+                "score": 4.404881613112957
+              },
+              {
+                "term": "samples",
+                "kind": "role",
+                "freq": 8,
+                "sim": 0.5481106809437992,
+                "score": 4.384885447550394
+              },
+              {
+                "term": "sample",
+                "kind": "role",
+                "freq": 7,
+                "sim": 0.5474903922965825,
+                "score": 3.832432746076077
+              },
+              {
+                "term": "chemistry",
+                "kind": "role",
+                "freq": 5,
+                "sim": 0.577782887682208,
+                "score": 2.8889144384110397
+              },
+              {
+                "term": "formation",
+                "kind": "role",
+                "freq": 5,
+                "sim": 0.445961645344844,
+                "score": 2.22980822672422
+              }
+            ],
+            "judge": {
+              "tests": true,
+              "cells": true,
+              "diseases": true,
+              "samples": true,
+              "disorders": true,
+              "sample": true,
+              "chemistry": true,
+              "formation": true
+            },
+            "precision_ws": 1.0,
+            "precision_bge": 1.0,
+            "overlap_top8": 1.0
+          },
+          "surgical": {
+            "df": 31,
+            "ws_top": [
+              {
+                "term": "procedures",
+                "kind": "role",
+                "freq": 31,
+                "sim": 0.8342126716618997,
+                "score": 25.860592821518892
+              },
+              {
+                "term": "surgery",
+                "kind": "concept",
+                "freq": 31,
+                "sim": 0.829708992299469,
+                "score": 25.72097876128354
+              },
+              {
+                "term": "procedure",
+                "kind": "role",
+                "freq": 22,
+                "sim": 0.8204914417573146,
+                "score": 18.05081171866092
+              },
+              {
+                "term": "treatments",
+                "kind": "role",
+                "freq": 17,
+                "sim": 0.8342126716618997,
+                "score": 14.181615418252296
+              },
+              {
+                "term": "removal",
+                "kind": "role",
+                "freq": 15,
+                "sim": 0.8342126716618997,
+                "score": 12.513190074928495
+              },
+              {
+                "term": "surgeries",
+                "kind": "concept",
+                "freq": 14,
+                "sim": 0.7004937404312251,
+                "score": 9.806912366037151
+              },
+              {
+                "term": "techniques",
+                "kind": "role",
+                "freq": 9,
+                "sim": 0.809169203328921,
+                "score": 7.282522829960288
+              },
+              {
+                "term": "cancer",
+                "kind": "concept",
+                "freq": 10,
+                "sim": 0.7210910963293578,
+                "score": 7.2109109632935775
+              }
+            ],
+            "bge_top": [
+              {
+                "term": "surgery",
+                "kind": "concept",
+                "freq": 31,
+                "sim": 0.8246109680862392,
+                "score": 25.562940010673415
+              },
+              {
+                "term": "procedures",
+                "kind": "role",
+                "freq": 31,
+                "sim": 0.6137609215177657,
+                "score": 19.026588567050737
+              },
+              {
+                "term": "procedure",
+                "kind": "role",
+                "freq": 22,
+                "sim": 0.617282708780529,
+                "score": 13.58021959317164
+              },
+              {
+                "term": "surgeries",
+                "kind": "concept",
+                "freq": 14,
+                "sim": 0.8373490731590465,
+                "score": 11.722887024226651
+              },
+              {
+                "term": "treatments",
+                "kind": "role",
+                "freq": 17,
+                "sim": 0.6053364063430628,
+                "score": 10.290718907832069
+              },
+              {
+                "term": "removal",
+                "kind": "role",
+                "freq": 15,
+                "sim": 0.5658270221570015,
+                "score": 8.487405332355022
+              },
+              {
+                "term": "cancer",
+                "kind": "concept",
+                "freq": 10,
+                "sim": 0.5770514656294301,
+                "score": 5.770514656294301
+              },
+              {
+                "term": "techniques",
+                "kind": "role",
+                "freq": 9,
+                "sim": 0.6071933281061648,
+                "score": 5.464739952955483
+              }
+            ],
+            "judge": {
+              "procedures": true,
+              "surgery": true,
+              "procedure": true,
+              "treatments": true,
+              "removal": true,
+              "surgeries": true,
+              "techniques": true,
+              "cancer": false
+            },
+            "precision_ws": 0.875,
+            "precision_bge": 0.875,
+            "overlap_top8": 1.0
+          },
+          "breast": {
+            "df": 22,
+            "ws_top": [
+              {
+                "term": "cancer",
+                "kind": "concept",
+                "freq": 15,
+                "sim": 0.7461017056555583,
+                "score": 11.191525584833375
+              },
+              {
+                "term": "tissue",
+                "kind": "role",
+                "freq": 13,
+                "sim": 0.856417675818488,
+                "score": 11.133429785640345
+              },
+              {
+                "term": "tumor",
+                "kind": "role",
+                "freq": 11,
+                "sim": 0.7804863052919454,
+                "score": 8.585349358211399
+              },
+              {
+                "term": "anatomy",
+                "kind": "role",
+                "freq": 10,
+                "sim": 0.8578952599261025,
+                "score": 8.578952599261026
+              },
+              {
+                "term": "carcinoma",
+                "kind": "role",
+                "freq": 8,
+                "sim": 0.7461017056555578,
+                "score": 5.968813645244462
+              },
+              {
+                "term": "pathology",
+                "kind": "role",
+                "freq": 6,
+                "sim": 0.7954652169919432,
+                "score": 4.772791301951659
+              },
+              {
+                "term": "carcin",
+                "kind": "role",
+                "freq": 6,
+                "sim": 0.7791139093639473,
+                "score": 4.674683456183684
+              },
+              {
+                "term": "ancer",
+                "kind": "role",
+                "freq": 6,
+                "sim": 0.7461017056555578,
+                "score": 4.4766102339333464
+              }
+            ],
+            "bge_top": [
+              {
+                "term": "cancer",
+                "kind": "concept",
+                "freq": 15,
+                "sim": 0.5685926687040896,
+                "score": 8.528890030561344
+              },
+              {
+                "term": "tissue",
+                "kind": "role",
+                "freq": 13,
+                "sim": 0.5932111069045831,
+                "score": 7.7117443897595805
+              },
+              {
+                "term": "tumor",
+                "kind": "role",
+                "freq": 11,
+                "sim": 0.5636889751307456,
+                "score": 6.200578726438201
+              },
+              {
+                "term": "anatomy",
+                "kind": "role",
+                "freq": 10,
+                "sim": 0.5920922010771921,
+                "score": 5.920922010771921
+              },
+              {
+                "term": "carcinoma",
+                "kind": "role",
+                "freq": 8,
+                "sim": 0.536573407942626,
+                "score": 4.292587263541008
+              },
+              {
+                "term": "carcin",
+                "kind": "role",
+                "freq": 6,
+                "sim": 0.47422478780557753,
+                "score": 2.845348726833465
+              },
+              {
+                "term": "ancer",
+                "kind": "role",
+                "freq": 6,
+                "sim": 0.47343104225683147,
+                "score": 2.8405862535409887
+              },
+              {
+                "term": "pathology",
+                "kind": "role",
+                "freq": 6,
+                "sim": 0.46752409503879844,
+                "score": 2.8051445702327906
+              }
+            ],
+            "judge": {
+              "cancer": true,
+              "tissue": true,
+              "tumor": true,
+              "anatomy": true,
+              "carcinoma": true,
+              "pathology": true,
+              "carcin": false,
+              "ancer": false
+            },
+            "precision_ws": 0.75,
+            "precision_bge": 0.75,
+            "overlap_top8": 1.0
+          },
+          "tumors": {
+            "df": 17,
+            "ws_top": [
+              {
+                "term": "cancer",
+                "kind": "concept",
+                "freq": 13,
+                "sim": 0.7858328729148922,
+                "score": 10.2158273478936
+              },
+              {
+                "term": "classification",
+                "kind": "role",
+                "freq": 10,
+                "sim": 0.8149001147615852,
+                "score": 8.149001147615852
+              },
+              {
+                "term": "location",
+                "kind": "role",
+                "freq": 3,
+                "sim": 0.7858328729148921,
+                "score": 2.3574986187446765
+              },
+              {
+                "term": "progression",
+                "kind": "role",
+                "freq": 2,
+                "sim": 0.8149001147615852,
+                "score": 1.6298002295231704
+              },
+              {
+                "term": "particularly",
+                "kind": "role",
+                "freq": 2,
+                "sim": 0.7858328729148921,
+                "score": 1.5716657458297842
+              },
+              {
+                "term": "growth",
+                "kind": "role",
+                "freq": 2,
+                "sim": 0.7858328729148921,
+                "score": 1.5716657458297842
+              },
+              {
+                "term": "stages",
+                "kind": "role",
+                "freq": 2,
+                "sim": 0.7858328729148921,
+                "score": 1.5716657458297842
+              },
+              {
+                "term": "stage",
+                "kind": "role",
+                "freq": 2,
+                "sim": 0.7858328729148921,
+                "score": 1.5716657458297842
+              }
+            ],
+            "bge_top": [
+              {
+                "term": "cancer",
+                "kind": "concept",
+                "freq": 13,
+                "sim": 0.7914960891455604,
+                "score": 10.289449158892285
+              },
+              {
+                "term": "classification",
+                "kind": "role",
+                "freq": 10,
+                "sim": 0.4729948944920729,
+                "score": 4.729948944920729
+              },
+              {
+                "term": "location",
+                "kind": "role",
+                "freq": 3,
+                "sim": 0.4624737664950153,
+                "score": 1.387421299485046
+              },
+              {
+                "term": "stages",
+                "kind": "role",
+                "freq": 2,
+                "sim": 0.5280776954112831,
+                "score": 1.0561553908225663
+              },
+              {
+                "term": "measurement",
+                "kind": "role",
+                "freq": 2,
+                "sim": 0.5172203608454058,
+                "score": 1.0344407216908116
+              },
+              {
+                "term": "growth",
+                "kind": "role",
+                "freq": 2,
+                "sim": 0.5155873020426489,
+                "score": 1.0311746040852978
+              },
+              {
+                "term": "progression",
+                "kind": "role",
+                "freq": 2,
+                "sim": 0.48931075199102336,
+                "score": 0.9786215039820467
+              },
+              {
+                "term": "particularly",
+                "kind": "role",
+                "freq": 2,
+                "sim": 0.483603172859855,
+                "score": 0.96720634571971
+              }
+            ],
+            "judge": {
+              "cancer": false,
+              "classification": true,
+              "location": true,
+              "progression": true,
+              "particularly": false,
+              "growth": true,
+              "stages": true,
+              "stage": true,
+              "measurement": true
+            },
+            "precision_ws": 0.75,
+            "precision_bge": 0.75,
+            "overlap_top8": 0.875
+          },
+          "diagnosis": {
+            "df": 15,
+            "ws_top": [
+              {
+                "term": "procedures",
+                "kind": "role",
+                "freq": 7,
+                "sim": 0.7699506137580651,
+                "score": 5.389654296306455
+              },
+              {
+                "term": "methods",
+                "kind": "role",
+                "freq": 6,
+                "sim": 0.7699506137580651,
+                "score": 4.619703682548391
+              },
+              {
+                "term": "cancer",
+                "kind": "concept",
+                "freq": 5,
+                "sim": 0.7699506137580654,
+                "score": 3.849753068790327
+              },
+              {
+                "term": "techniques",
+                "kind": "role",
+                "freq": 3,
+                "sim": 0.7699506137580651,
+                "score": 2.3098518412741953
+              },
+              {
+                "term": "follow",
+                "kind": "role",
+                "freq": 1,
+                "sim": 0.7699506137580651,
+                "score": 0.7699506137580651
+              },
+              {
+                "term": "tools",
+                "kind": "role",
+                "freq": 1,
+                "sim": 0.7699506137580651,
+                "score": 0.7699506137580651
+              },
+              {
+                "term": "markers",
+                "kind": "role",
+                "freq": 1,
+                "sim": 0.7699506137580651,
+                "score": 0.7699506137580651
+              },
+              {
+                "term": "tests",
+                "kind": "role",
+                "freq": 1,
+                "sim": 0.7699506137580651,
+                "score": 0.7699506137580651
+              }
+            ],
+            "bge_top": [
+              {
+                "term": "procedures",
+                "kind": "role",
+                "freq": 7,
+                "sim": 0.5829356482947855,
+                "score": 4.080549538063498
+              },
+              {
+                "term": "methods",
+                "kind": "role",
+                "freq": 6,
+                "sim": 0.520661052904068,
+                "score": 3.123966317424408
+              },
+              {
+                "term": "cancer",
+                "kind": "concept",
+                "freq": 5,
+                "sim": 0.597112449280969,
+                "score": 2.985562246404845
+              },
+              {
+                "term": "process",
+                "kind": "role",
+                "freq": 4,
+                "sim": 0.5629529002633693,
+                "score": 2.251811601053477
+              },
+              {
+                "term": "processes",
+                "kind": "role",
+                "freq": 3,
+                "sim": 0.5607871021682036,
+                "score": 1.6823613065046108
+              },
+              {
+                "term": "techniques",
+                "kind": "role",
+                "freq": 3,
+                "sim": 0.5567743925151145,
+                "score": 1.6703231775453435
+              },
+              {
+                "term": "tests",
+                "kind": "role",
+                "freq": 1,
+                "sim": 0.6275276250020623,
+                "score": 0.6275276250020623
+              },
+              {
+                "term": "criteria",
+                "kind": "role",
+                "freq": 1,
+                "sim": 0.6001193846419522,
+                "score": 0.6001193846419522
+              }
+            ],
+            "judge": {
+              "procedures": true,
+              "methods": true,
+              "cancer": false,
+              "techniques": true,
+              "follow": false,
+              "tools": true,
+              "markers": true,
+              "tests": true,
+              "process": true,
+              "processes": true,
+              "criteria": true
+            },
+            "precision_ws": 0.75,
+            "precision_bge": 0.875,
+            "overlap_top8": 0.625
+          },
+          "surgeries": {
+            "df": 15,
+            "ws_top": [
+              {
+                "term": "surgical",
+                "kind": "concept",
+                "freq": 14,
+                "sim": 0.7004937404312251,
+                "score": 9.806912366037151
+              },
+              {
+                "term": "cancer",
+                "kind": "concept",
+                "freq": 4,
+                "sim": 0.6871671413037769,
+                "score": 2.7486685652151075
+              },
+              {
+                "term": "options",
+                "kind": "role",
+                "freq": 3,
+                "sim": 0.700493740431225,
+                "score": 2.101481221293675
+              },
+              {
+                "term": "procedures",
+                "kind": "role",
+                "freq": 3,
+                "sim": 0.700493740431225,
+                "score": 2.101481221293675
+              },
+              {
+                "term": "surgeon",
+                "kind": "concept",
+                "freq": 2,
+                "sim": 0.7834672243535297,
+                "score": 1.5669344487070593
+              },
+              {
+                "term": "techniques",
+                "kind": "role",
+                "freq": 2,
+                "sim": 0.7479394125287555,
+                "score": 1.495878825057511
+              },
+              {
+                "term": "alternatives",
+                "kind": "role",
+                "freq": 2,
+                "sim": 0.700493740431225,
+                "score": 1.40098748086245
+              },
+              {
+                "term": "sequence",
+                "kind": "role",
+                "freq": 1,
+                "sim": 0.7949902996233861,
+                "score": 0.7949902996233861
+              }
+            ],
+            "bge_top": [
+              {
+                "term": "surgical",
+                "kind": "concept",
+                "freq": 14,
+                "sim": 0.8373490731590465,
+                "score": 11.722887024226651
+              },
+              {
+                "term": "cancer",
+                "kind": "concept",
+                "freq": 4,
+                "sim": 0.5622893731153942,
+                "score": 2.2491574924615767
+              },
+              {
+                "term": "procedures",
+                "kind": "role",
+                "freq": 3,
+                "sim": 0.6745889885953282,
+                "score": 2.0237669657859847
+              },
+              {
+                "term": "options",
+                "kind": "role",
+                "freq": 3,
+                "sim": 0.5734891330172658,
+                "score": 1.7204673990517974
+              },
+              {
+                "term": "surgeon",
+                "kind": "concept",
+                "freq": 2,
+                "sim": 0.8298660138393257,
+                "score": 1.6597320276786514
+              },
+              {
+                "term": "techniques",
+                "kind": "role",
+                "freq": 2,
+                "sim": 0.6038996487174413,
+                "score": 1.2077992974348826
+              },
+              {
+                "term": "alternatives",
+                "kind": "role",
+                "freq": 2,
+                "sim": 0.5270929064570768,
+                "score": 1.0541858129141537
+              },
+              {
+                "term": "stages",
+                "kind": "role",
+                "freq": 1,
+                "sim": 0.5956182349767181,
+                "score": 0.5956182349767181
+              }
+            ],
+            "judge": {
+              "surgical": true,
+              "cancer": false,
+              "options": true,
+              "procedures": true,
+              "surgeon": true,
+              "techniques": true,
+              "alternatives": true,
+              "sequence": false,
+              "stages": false
+            },
+            "precision_ws": 0.75,
+            "precision_bge": 0.75,
+            "overlap_top8": 0.875
+          },
+          "radiation": {
+            "df": 13,
+            "ws_top": [
+              {
+                "term": "therapy",
+                "kind": "role",
+                "freq": 12,
+                "sim": 0.7365878972252695,
+                "score": 8.839054766703235
+              },
+              {
+                "term": "treatments",
+                "kind": "role",
+                "freq": 9,
+                "sim": 0.7365878972252695,
+                "score": 6.629291075027425
+              },
+              {
+                "term": "ther",
+                "kind": "role",
+                "freq": 8,
+                "sim": 0.7365878972252695,
+                "score": 5.892703177802156
+              },
+              {
+                "term": "therapist",
+                "kind": "role",
+                "freq": 5,
+                "sim": 0.7365878972252695,
+                "score": 3.6829394861263474
+              },
+              {
+                "term": "therap",
+                "kind": "role",
+                "freq": 3,
+                "sim": 0.7365878972252695,
+                "score": 2.2097636916758088
+              },
+              {
+                "term": "cancer",
+                "kind": "concept",
+                "freq": 3,
+                "sim": 0.7365878972252693,
+                "score": 2.209763691675808
+              },
+              {
+                "term": "therapists",
+                "kind": "role",
+                "freq": 1,
+                "sim": 0.7365878972252695,
+                "score": 0.7365878972252695
+              },
+              {
+                "term": "exposure",
+                "kind": "role",
+                "freq": 4,
+                "sim": 0.0,
+                "score": 0.0
+              }
+            ],
+            "bge_top": [
+              {
+                "term": "therapy",
+                "kind": "role",
+                "freq": 12,
+                "sim": 0.6125372382210714,
+                "score": 7.350446858652857
+              },
+              {
+                "term": "treatments",
+                "kind": "role",
+                "freq": 9,
+                "sim": 0.5530129540765629,
+                "score": 4.977116586689066
+              },
+              {
+                "term": "ther",
+                "kind": "role",
+                "freq": 8,
+                "sim": 0.5513957095351836,
+                "score": 4.411165676281469
+              },
+              {
+                "term": "therapist",
+                "kind": "role",
+                "freq": 5,
+                "sim": 0.5756805544804953,
+                "score": 2.8784027724024766
+              },
+              {
+                "term": "exposure",
+                "kind": "role",
+                "freq": 4,
+                "sim": 0.6923721663396405,
+                "score": 2.769488665358562
+              },
+              {
+                "term": "treat",
+                "kind": "role",
+                "freq": 5,
+                "sim": 0.5219693643567691,
+                "score": 2.6098468217838455
+              },
+              {
+                "term": "cancer",
+                "kind": "concept",
+                "freq": 3,
+                "sim": 0.6146159184655391,
+                "score": 1.8438477553966173
+              },
+              {
+                "term": "therap",
+                "kind": "role",
+                "freq": 3,
+                "sim": 0.5583407824117,
+                "score": 1.6750223472351
+              }
+            ],
+            "judge": {
+              "therapy": true,
+              "treatments": true,
+              "ther": false,
+              "therapist": false,
+              "therap": false,
+              "cancer": true,
+              "therapists": false,
+              "exposure": true,
+              "treat": true
+            },
+            "precision_ws": 0.5,
+            "precision_bge": 0.625,
+            "overlap_top8": 0.875
+          },
+          "lungs": {
+            "df": 12,
+            "ws_top": [
+              {
+                "term": "anatomy",
+                "kind": "role",
+                "freq": 6,
+                "sim": 0.7432903683165173,
+                "score": 4.459742209899104
+              },
+              {
+                "term": "cancer",
+                "kind": "concept",
+                "freq": 5,
+                "sim": 0.7250846811737321,
+                "score": 3.625423405868661
+              },
+              {
+                "term": "structure",
+                "kind": "role",
+                "freq": 5,
+                "sim": 0.5883255921078065,
+                "score": 2.9416279605390327
+              },
+              {
+                "term": "diseases",
+                "kind": "role",
+                "freq": 4,
+                "sim": 0.7250846811737319,
+                "score": 2.9003387246949277
+              },
+              {
+                "term": "ancer",
+                "kind": "role",
+                "freq": 2,
+                "sim": 0.7250846811737319,
+                "score": 1.4501693623474639
+              },
+              {
+                "term": "carcinoma",
+                "kind": "role",
+                "freq": 2,
+                "sim": 0.7250846811737319,
+                "score": 1.4501693623474639
+              },
+              {
+                "term": "tumors",
+                "kind": "role",
+                "freq": 2,
+                "sim": 0.7250846811737319,
+                "score": 1.4501693623474639
+              },
+              {
+                "term": "breath",
+                "kind": "concept",
+                "freq": 2,
+                "sim": 0.5883255921078065,
+                "score": 1.176651184215613
+              }
+            ],
+            "bge_top": [
+              {
+                "term": "anatomy",
+                "kind": "role",
+                "freq": 6,
+                "sim": 0.5525887607996075,
+                "score": 3.3155325647976452
+              },
+              {
+                "term": "diseases",
+                "kind": "role",
+                "freq": 4,
+                "sim": 0.6530471713402597,
+                "score": 2.6121886853610388
+              },
+              {
+                "term": "cancer",
+                "kind": "concept",
+                "freq": 5,
+                "sim": 0.5105920467275825,
+                "score": 2.5529602336379127
+              },
+              {
+                "term": "structure",
+                "kind": "role",
+                "freq": 5,
+                "sim": 0.4934685739695229,
+                "score": 2.4673428698476143
+              },
+              {
+                "term": "breath",
+                "kind": "concept",
+                "freq": 2,
+                "sim": 0.694694449287733,
+                "score": 1.389388898575466
+              },
+              {
+                "term": "tumors",
+                "kind": "role",
+                "freq": 2,
+                "sim": 0.6037701209361751,
+                "score": 1.2075402418723502
+              },
+              {
+                "term": "structures",
+                "kind": "role",
+                "freq": 2,
+                "sim": 0.5563513753707567,
+                "score": 1.1127027507415135
+              },
+              {
+                "term": "carcinoma",
+                "kind": "role",
+                "freq": 2,
+                "sim": 0.5159403293932113,
+                "score": 1.0318806587864227
+              }
+            ],
+            "judge": {
+              "anatomy": true,
+              "cancer": true,
+              "structure": true,
+              "diseases": true,
+              "ancer": false,
+              "carcinoma": true,
+              "tumors": true,
+              "breath": true,
+              "structures": true
+            },
+            "precision_ws": 0.875,
+            "precision_bge": 1.0,
+            "overlap_top8": 0.875
+          },
+          "family": {
+            "df": 11,
+            "ws_top": [
+              {
+                "term": "history",
+                "kind": "role",
+                "freq": 11,
+                "sim": 0.0,
+                "score": 0.0
+              },
+              {
+                "term": "medicine",
+                "kind": "role",
+                "freq": 9,
+                "sim": 0.0,
+                "score": 0.0
+              },
+              {
+                "term": "genetics",
+                "kind": "role",
+                "freq": 11,
+                "sim": 0.0,
+                "score": 0.0
+              },
+              {
+                "term": "cancer",
+                "kind": "role",
+                "freq": 5,
+                "sim": 0.0,
+                "score": 0.0
+              },
+              {
+                "term": "hist",
+                "kind": "role",
+                "freq": 1,
+                "sim": 0.0,
+                "score": 0.0
+              },
+              {
+                "term": "risk",
+                "kind": "role",
+                "freq": 3,
+                "sim": 0.0,
+                "score": 0.0
+              }
+            ],
+            "bge_top": [
+              {
+                "term": "history",
+                "kind": "role",
+                "freq": 11,
+                "sim": 0.6187846754480573,
+                "score": 6.80663142992863
+              },
+              {
+                "term": "genetics",
+                "kind": "role",
+                "freq": 11,
+                "sim": 0.5987883905432358,
+                "score": 6.586672295975594
+              },
+              {
+                "term": "medicine",
+                "kind": "role",
+                "freq": 9,
+                "sim": 0.5783084513595482,
+                "score": 5.2047760622359345
+              },
+              {
+                "term": "cancer",
+                "kind": "role",
+                "freq": 5,
+                "sim": 0.5220974055666255,
+                "score": 2.610487027833128
+              },
+              {
+                "term": "risk",
+                "kind": "role",
+                "freq": 3,
+                "sim": 0.5367947571808301,
+                "score": 1.6103842715424905
+              },
+              {
+                "term": "hist",
+                "kind": "role",
+                "freq": 1,
+                "sim": 0.426412285705633,
+                "score": 0.426412285705633
+              }
+            ],
+            "judge": {
+              "history": true,
+              "medicine": false,
+              "genetics": true,
+              "cancer": false,
+              "hist": false,
+              "risk": true
+            },
+            "precision_ws": 0.5,
+            "precision_bge": 0.5,
+            "overlap_top8": 0.75
+          },
+          "liver": {
+            "df": 11,
+            "ws_top": [
+              {
+                "term": "anatomy",
+                "kind": "role",
+                "freq": 5,
+                "sim": 0.8482652705964833,
+                "score": 4.241326352982417
+              },
+              {
+                "term": "pathology",
+                "kind": "role",
+                "freq": 5,
+                "sim": 0.7727931113133708,
+                "score": 3.8639655565668543
+              },
+              {
+                "term": "function",
+                "kind": "role",
+                "freq": 4,
+                "sim": 0.8117007386744856,
+                "score": 3.2468029546979422
+              },
+              {
+                "term": "diseases",
+                "kind": "role",
+                "freq": 4,
+                "sim": 0.7727931113133708,
+                "score": 3.0911724452534832
+              },
+              {
+                "term": "cancer",
+                "kind": "concept",
+                "freq": 4,
+                "sim": 0.7606388134479146,
+                "score": 3.0425552537916585
+              },
+              {
+                "term": "carcinoma",
+                "kind": "role",
+                "freq": 3,
+                "sim": 0.760638813447915,
+                "score": 2.281916440343745
+              },
+              {
+                "term": "tumors",
+                "kind": "role",
+                "freq": 2,
+                "sim": 0.760638813447915,
+                "score": 1.52127762689583
+              },
+              {
+                "term": "carcin",
+                "kind": "role",
+                "freq": 2,
+                "sim": 0.760638813447915,
+                "score": 1.52127762689583
+              }
+            ],
+            "bge_top": [
+              {
+                "term": "anatomy",
+                "kind": "role",
+                "freq": 5,
+                "sim": 0.5398154717154232,
+                "score": 2.699077358577116
+              },
+              {
+                "term": "pathology",
+                "kind": "role",
+                "freq": 5,
+                "sim": 0.5124717217156711,
+                "score": 2.5623586085783554
+              },
+              {
+                "term": "cancer",
+                "kind": "concept",
+                "freq": 4,
+                "sim": 0.576742854483124,
+                "score": 2.306971417932496
+              },
+              {
+                "term": "diseases",
+                "kind": "role",
+                "freq": 4,
+                "sim": 0.5483532017607308,
+                "score": 2.193412807042923
+              },
+              {
+                "term": "function",
+                "kind": "role",
+                "freq": 4,
+                "sim": 0.4807731814762858,
+                "score": 1.9230927259051431
+              },
+              {
+                "term": "carcinoma",
+                "kind": "role",
+                "freq": 3,
+                "sim": 0.5749358732103953,
+                "score": 1.724807619631186
+              },
+              {
+                "term": "tumor",
+                "kind": "role",
+                "freq": 2,
+                "sim": 0.5937740881637351,
+                "score": 1.1875481763274702
+              },
+              {
+                "term": "tumors",
+                "kind": "role",
+                "freq": 2,
+                "sim": 0.58915480382018,
+                "score": 1.17830960764036
+              }
+            ],
+            "judge": {
+              "anatomy": true,
+              "pathology": true,
+              "function": true,
+              "diseases": true,
+              "cancer": true,
+              "carcinoma": true,
+              "tumors": true,
+              "carcin": true,
+              "tumor": true
+            },
+            "precision_ws": 1.0,
+            "precision_bge": 1.0,
+            "overlap_top8": 0.875
+          },
+          "genetics": {
+            "df": 9,
+            "ws_top": [
+              {
+                "term": "genes",
+                "kind": "concept",
+                "freq": 3,
+                "sim": 0.8863583776927543,
+                "score": 2.6590751330782627
+              },
+              {
+                "term": "mutation",
+                "kind": "concept",
+                "freq": 2,
+                "sim": 0.8268881048946658,
+                "score": 1.6537762097893316
+              },
+              {
+                "term": "mutations",
+                "kind": "role",
+                "freq": 1,
+                "sim": 0.869930645361157,
+                "score": 0.869930645361157
+              },
+              {
+                "term": "cancer",
+                "kind": "concept",
+                "freq": 1,
+                "sim": 0.7152414700180019,
+                "score": 0.7152414700180019
+              },
+              {
+                "term": "counselor",
+                "kind": "role",
+                "freq": 2,
+                "sim": 0.0,
+                "score": 0.0
+              },
+              {
+                "term": "tests",
+                "kind": "role",
+                "freq": 1,
+                "sim": 0.0,
+                "score": 0.0
+              }
+            ],
+            "bge_top": [
+              {
+                "term": "genes",
+                "kind": "concept",
+                "freq": 3,
+                "sim": 0.880823872710226,
+                "score": 2.6424716181306778
+              },
+              {
+                "term": "mutation",
+                "kind": "concept",
+                "freq": 2,
+                "sim": 0.5952966452162918,
+                "score": 1.1905932904325836
+              },
+              {
+                "term": "counselor",
+                "kind": "role",
+                "freq": 2,
+                "sim": 0.44153680324803335,
+                "score": 0.8830736064960667
+              },
+              {
+                "term": "mutations",
+                "kind": "role",
+                "freq": 1,
+                "sim": 0.6904969781385502,
+                "score": 0.6904969781385502
+              },
+              {
+                "term": "tests",
+                "kind": "role",
+                "freq": 1,
+                "sim": 0.5840925178529562,
+                "score": 0.5840925178529562
+              },
+              {
+                "term": "cancer",
+                "kind": "concept",
+                "freq": 1,
+                "sim": 0.5135832795146504,
+                "score": 0.5135832795146504
+              }
+            ],
+            "judge": {
+              "genes": true,
+              "mutation": true,
+              "mutations": true,
+              "cancer": true,
+              "counselor": true,
+              "tests": true
+            },
+            "precision_ws": 1.0,
+            "precision_bge": 1.0,
+            "overlap_top8": 0.75
+          },
+          "risks": {
+            "df": 8,
+            "ws_top": [
+              {
+                "term": "cancer",
+                "kind": "concept",
+                "freq": 4,
+                "sim": 0.7040241779808063,
+                "score": 2.816096711923225
+              },
+              {
+                "term": "actors",
+                "kind": "role",
+                "freq": 2,
+                "sim": 0.7040241779808064,
+                "score": 1.4080483559616128
+              },
+              {
+                "term": "classification",
+                "kind": "role",
+                "freq": 2,
+                "sim": 0.7040241779808064,
+                "score": 1.4080483559616128
+              },
+              {
+                "term": "fact",
+                "kind": "role",
+                "freq": 1,
+                "sim": 0.7040241779808064,
+                "score": 0.7040241779808064
+              },
+              {
+                "term": "liver",
+                "kind": "concept",
+                "freq": 1,
+                "sim": 0.6660068356203862,
+                "score": 0.6660068356203862
+              },
+              {
+                "term": "asses",
+                "kind": "role",
+                "freq": 1,
+                "sim": 0.0,
+                "score": 0.0
+              },
+              {
+                "term": "identification",
+                "kind": "role",
+                "freq": 1,
+                "sim": 0.0,
+                "score": 0.0
+              },
+              {
+                "term": "groups",
+                "kind": "role",
+                "freq": 1,
+                "sim": 0.0,
+                "score": 0.0
+              }
+            ],
+            "bge_top": [
+              {
+                "term": "cancer",
+                "kind": "concept",
+                "freq": 4,
+                "sim": 0.5188749850954828,
+                "score": 2.075499940381931
+              },
+              {
+                "term": "actors",
+                "kind": "role",
+                "freq": 2,
+                "sim": 0.5206542805716237,
+                "score": 1.0413085611432473
+              },
+              {
+                "term": "classification",
+                "kind": "role",
+                "freq": 2,
+                "sim": 0.5169128952161515,
+                "score": 1.033825790432303
+              },
+              {
+                "term": "fact",
+                "kind": "role",
+                "freq": 1,
+                "sim": 0.5771904071901761,
+                "score": 0.5771904071901761
+              },
+              {
+                "term": "groups",
+                "kind": "role",
+                "freq": 1,
+                "sim": 0.5679782145682373,
+                "score": 0.5679782145682373
+              },
+              {
+                "term": "asses",
+                "kind": "role",
+                "freq": 1,
+                "sim": 0.5318638852822668,
+                "score": 0.5318638852822668
+              },
+              {
+                "term": "liver",
+                "kind": "concept",
+                "freq": 1,
+                "sim": 0.4963968223376056,
+                "score": 0.4963968223376056
+              },
+              {
+                "term": "identification",
+                "kind": "role",
+                "freq": 1,
+                "sim": 0.4962811489032013,
+                "score": 0.4962811489032013
+              }
+            ],
+            "judge": {
+              "cancer": false,
+              "actors": false,
+              "classification": false,
+              "fact": false,
+              "liver": false,
+              "asses": false,
+              "identification": false,
+              "groups": false
+            },
+            "precision_ws": 0.0,
+            "precision_bge": 0.0,
+            "overlap_top8": 1.0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "weight_key": "weight_logprob",
+  "prompt_version": "v2",
+  "benchmarks": {
+    "nfcorpus": {
+      "n_docs": 3633,
+      "n_queries": 323,
+      "n_doc_kw_ok": 3633,
+      "n_query_kw_ok": 323,
+      "avg_kw_per_doc": 14.16,
+      "weight_key": "weight_logprob",
+      "results": {
+        "B0": {
+          "ndcg_10": 0.30872,
+          "recall_10": 0.14309,
+          "recall_100": 0.28114,
+          "mrr": 0.51129,
+          "map_10": 0.11346
+        },
+        "S-jaccard": {
+          "ndcg_10": 0.18153,
+          "ndcg_1": 0.2709,
+          "ndcg_3": 0.22963,
+          "recall_10": 0.07972,
+          "recall_100": 0.12012,
+          "mrr": 0.35814,
+          "map_10": 0.06492
+        },
+        "S-embed": {
+          "ndcg_10": 0.18269,
+          "ndcg_1": 0.26935,
+          "ndcg_3": 0.23121,
+          "recall_10": 0.08075,
+          "recall_100": 0.12006,
+          "mrr": 0.35809,
+          "map_10": 0.06495
+        }
+      },
+      "permutation": {
+        "S-jaccard_vs_B0": {
+          "delta": -0.12777947988729832,
+          "p_value": 0.0,
+          "significant": true,
+          "n_queries": 323
+        },
+        "S-embed_vs_B0": {
+          "delta": -0.12662762994281668,
+          "p_value": 0.0,
+          "significant": true,
+          "n_queries": 323
+        },
+        "S-embed_vs_S-jaccard": {
+          "delta": 0.0011518499444816584,
+          "p_value": 0.357,
+          "significant": false,
+          "n_queries": 323
+        }
+      }
+    },
+    "scifact": {
+      "n_docs": 5183,
+      "n_queries": 300,
+      "n_doc_kw_ok": 5183,
+      "n_query_kw_ok": 300,
+      "avg_kw_per_doc": 14.08,
+      "weight_key": "weight_logprob",
+      "results": {
+        "B0": {
+          "ndcg_10": 0.628,
+          "recall_10": 0.76122,
+          "recall_100": 0.90533,
+          "mrr": 0.59402,
+          "map_10": 0.5795
+        },
+        "S-jaccard": {
+          "ndcg_10": 0.35951,
+          "ndcg_1": 0.25,
+          "ndcg_3": 0.31845,
+          "recall_10": 0.47822,
+          "recall_100": 0.61283,
+          "mrr": 0.32756,
+          "map_10": 0.31845
+        },
+        "S-embed": {
+          "ndcg_10": 0.36492,
+          "ndcg_1": 0.25,
+          "ndcg_3": 0.32408,
+          "recall_10": 0.48856,
+          "recall_100": 0.61283,
+          "mrr": 0.33281,
+          "map_10": 0.32194
+        }
+      },
+      "permutation": {
+        "S-jaccard_vs_B0": {
+          "delta": -0.26849380032954995,
+          "p_value": 0.0,
+          "significant": true,
+          "n_queries": 300
+        },
+        "S-embed_vs_B0": {
+          "delta": -0.26308755300103664,
+          "p_value": 0.0,
+          "significant": true,
+          "n_queries": 300
+        },
+        "S-embed_vs_S-jaccard": {
+          "delta": 0.005406247328513281,
+          "p_value": 0.224,
+          "significant": false,
+          "n_queries": 300
+        }
+      }
+    },
+    "pi-code": {
+      "n_docs": 1162,
+      "n_queries": 368,
+      "n_doc_kw_ok": 1162,
+      "n_query_kw_ok": 368,
+      "avg_kw_per_doc": 7.29,
+      "weight_key": "weight_logprob",
+      "results": {
+        "B0": {
+          "ndcg_10": 0.45373,
+          "recall_10": 0.09968,
+          "recall_100": 0.30732,
+          "mrr": 0.79243,
+          "map_10": 0.07462
+        },
+        "S-jaccard": {
+          "ndcg_10": 0.29523,
+          "ndcg_1": 0.63315,
+          "ndcg_3": 0.51123,
+          "recall_10": 0.04877,
+          "recall_100": 0.05391,
+          "mrr": 0.71578,
+          "map_10": 0.04011
+        },
+        "S-embed": {
+          "ndcg_10": 0.29583,
+          "ndcg_1": 0.64402,
+          "ndcg_3": 0.51201,
+          "recall_10": 0.04856,
+          "recall_100": 0.05391,
+          "mrr": 0.72294,
+          "map_10": 0.04005
+        }
+      },
+      "permutation": {
+        "S-jaccard_vs_B0": {
+          "delta": -0.15849804909956572,
+          "p_value": 0.0,
+          "significant": true,
+          "n_queries": 368
+        },
+        "S-embed_vs_B0": {
+          "delta": -0.15790356076489892,
+          "p_value": 0.0,
+          "significant": true,
+          "n_queries": 368
+        },
+        "S-embed_vs_S-jaccard": {
+          "delta": 0.0005944883346667963,
+          "p_value": 0.454,
+          "significant": false,
+          "n_queries": 368
+        }
+      }
+    }
+  }
+}

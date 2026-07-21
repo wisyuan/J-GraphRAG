@@ -1,0 +1,21 @@
+# Secrets & environment
+.env
+.venv/
+
+# Model cache (17GB, symlink or local; restore via scripts/restore_env.sh)
+.model_cache/
+
+# Python
+__pycache__/
+*.pyc
+
+# Large regenerable experiment data (small result JSONs stay in git)
+data/.embedcache/
+data/.kwcache/
+data/.xlmrcache/
+data/m6/concept_cache/
+data/m6/fast_graphrag_workspace/
+data/m6/*.npz
+
+# OS / editor
+.DS_Store

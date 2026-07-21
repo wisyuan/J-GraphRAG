@@ -1,0 +1,61 @@
+{
+  "method": "hierarchical_concept_graph_benchmark",
+  "domain": "novel",
+  "n_chunks": 200,
+  "n_questions": 28,
+  "results": {
+    "B0": {
+      "overall": 0.0,
+      "by_level": {
+        "L1": 0.0,
+        "L2": 0.0,
+        "L3": 0.0,
+        "L4": 0.0
+      },
+      "n": 28
+    },
+    "flat_concept": {
+      "overall": 0.0,
+      "by_level": {
+        "L1": 0.0,
+        "L2": 0.0,
+        "L3": 0.0,
+        "L4": 0.0
+      },
+      "n": 28
+    },
+    "hierarchical": {
+      "overall": 0.0,
+      "by_level": {
+        "L1": 0.0,
+        "L2": 0.0,
+        "L3": 0.0,
+        "L4": 0.0
+      },
+      "n": 28
+    }
+  },
+  "graph_stats": {
+    "flat": {
+      "n_chunks": 200,
+      "n_concepts": 116,
+      "avg_concepts_per_chunk": 5.0,
+      "avg_chunks_per_concept": 8.620689655172415,
+      "n_cooccur_edges": 654
+    },
+    "meta": {
+      "n_chunks": 200,
+      "n_concepts": 26,
+      "avg_concepts_per_chunk": 4.365,
+      "avg_chunks_per_concept": 33.57692307692308,
+      "n_cooccur_edges": 121
+    },
+    "sub": {
+      "n_chunks": 200,
+      "n_concepts": 87,
+      "avg_concepts_per_chunk": 3.05,
+      "avg_chunks_per_concept": 7.011494252873563,
+      "n_cooccur_edges": 271
+    }
+  }
+}

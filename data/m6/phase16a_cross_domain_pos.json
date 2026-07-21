@@ -1,0 +1,447 @@
+{
+  "method": "cross_domain_pos_distribution",
+  "model": "qwen2.5-7b-it",
+  "layer": 26,
+  "max_docs_per_domain": 200,
+  "domains": {
+    "nfcorpus_medical": {
+      "n_docs": 827,
+      "n_clusters": 51,
+      "n_concepts": 114,
+      "pos_distribution": {
+        "UNK": 40,
+        "VBG": 7,
+        "NN": 9,
+        "FRAG": 24,
+        "VBD": 13,
+        "JJ": 9,
+        "NNS": 12
+      },
+      "noun_ratio": 0.682,
+      "verb_ratio": 0.175,
+      "adj_ratio": 0.079,
+      "bpe_fragment_ratio": 0.211,
+      "corpus_hit_ratio": 0.746,
+      "clusters": [
+        {
+          "cluster_id": 124,
+          "n_docs": 45,
+          "concepts": [
+            "index",
+            "score",
+            "insulin",
+            "fasting"
+          ],
+          "pos_counts": {
+            "UNK": 2,
+            "FRAG": 1,
+            "VBG": 1
+          },
+          "noun_ratio": 0.67,
+          "verb_ratio": 0.25,
+          "bpe_fragment_ratio": 0.25,
+          "corpus_hit_ratio": 0.75
+        },
+        {
+          "cluster_id": 126,
+          "n_docs": 29,
+          "concepts": [
+            "impairment",
+            "impair",
+            "decline",
+            "impaired",
+            "dysfunction",
+            "decl",
+            "deterioration",
+            "impro"
+          ],
+          "pos_counts": {
+            "NN": 3,
+            "FRAG": 3,
+            "UNK": 1,
+            "VBD": 1
+          },
+          "noun_ratio": 1.0,
+          "verb_ratio": 0.12,
+          "bpe_fragment_ratio": 0.38,
+          "corpus_hit_ratio": 0.25
+        },
+        {
+          "cluster_id": 76,
+          "n_docs": 17,
+          "concepts": [
+            "June",
+            "January",
+            "April",
+            "July",
+            "September",
+            "February",
+            "March",
+            "November"
+          ],
+          "pos_counts": {
+            "FRAG": 3,
+            "UNK": 5
+          },
+          "noun_ratio": 1.0,
+          "verb_ratio": 0.0,
+          "bpe_fragment_ratio": 0.38,
+          "corpus_hit_ratio": 0.25
+        },
+        {
+          "cluster_id": 104,
+          "n_docs": 12,
+          "concepts": [
+            "vegetarian",
+            "veget",
+            "dietary",
+            "consumption",
+            "adherence",
+            "diet",
+            "vegetable",
+            "diets"
+          ],
+          "pos_counts": {
+            "JJ": 2,
+            "FRAG": 2,
+            "UNK": 2,
+            "NN": 2
+          },
+          "noun_ratio": 0.75,
+          "verb_ratio": 0.0,
+          "bpe_fragment_ratio": 0.25,
+          "corpus_hit_ratio": 0.5
+        },
+        {
+          "cluster_id": 17,
+          "n_docs": 12,
+          "concepts": [
+            "either",
+            "intr",
+            "twenty",
+            "positive",
+            "equal",
+            "daily",
+            "cont",
+            "control"
+          ],
+          "pos_counts": {
+            "FRAG": 5,
+            "JJ": 1,
+            "UNK": 2
+          },
+          "noun_ratio": 1.0,
+          "verb_ratio": 0.0,
+          "bpe_fragment_ratio": 0.62,
+          "corpus_hit_ratio": 0.12
+        },
+        {
+          "cluster_id": 110,
+          "n_docs": 10,
+          "concepts": [
+            "mortality",
+            "linked",
+            "follow",
+            "survival",
+            "death",
+            "linkage",
+            "outcome",
+            "vital"
+          ],
+          "pos_counts": {
+            "NN": 1,
+            "VBD": 1,
+            "UNK": 4,
+            "JJ": 1,
+            "FRAG": 1
+          },
+          "noun_ratio": 0.6,
+          "verb_ratio": 0.12,
+          "bpe_fragment_ratio": 0.12,
+          "corpus_hit_ratio": 0.62
+        },
+        {
+          "cluster_id": 89,
+          "n_docs": 10,
+          "concepts": [
+            "even",
+            "whereas",
+            "measured",
+            "particularly",
+            "evidenced",
+            "manifested",
+            "regardless",
+            "leading"
+          ],
+          "pos_counts": {
+            "FRAG": 1,
+            "NNS": 1,
+            "VBD": 3,
+            "UNK": 1,
+            "JJ": 1,
+            "VBG": 1
+          },
+          "noun_ratio": 0.0,
+          "verb_ratio": 0.5,
+          "bpe_fragment_ratio": 0.12,
+          "corpus_hit_ratio": 0.12
+        },
+        {
+          "cluster_id": 86,
+          "n_docs": 9,
+          "concepts": [
+            "ndern",
+            "emachine",
+            "Elite",
+            "Nguồn",
+            "icont",
+            "igrams"
+          ],
+          "pos_counts": {
+            "FRAG": 5,
+            "UNK": 1
+          },
+          "noun_ratio": 0.0,
+          "verb_ratio": 0.0,
+          "bpe_fragment_ratio": 0.83,
+          "corpus_hit_ratio": 0.0
+        },
+        {
+          "cluster_id": 57,
+          "n_docs": 9,
+          "concepts": [
+            "identified",
+            "strategy",
+            "revealed",
+            "conducted",
+            "covering",
+            "included",
+            "across",
+            "encompass"
+          ],
+          "pos_counts": {
+            "VBD": 4,
+            "UNK": 2,
+            "VBG": 1,
+            "FRAG": 1
+          },
+          "noun_ratio": 0.25,
+          "verb_ratio": 0.62,
+          "bpe_fragment_ratio": 0.12,
+          "corpus_hit_ratio": 0.5
+        },
+        {
+          "cluster_id": 111,
+          "n_docs": 9,
+          "concepts": [
+            "levels",
+            "rate",
+            "frequency",
+            "vitamin",
+            "dose",
+            "azole",
+            "consumption",
+            "regimen"
+          ],
+          "pos_counts": {
+            "FRAG": 4,
+            "NN": 2,
+            "UNK": 1,
+            "JJ": 1
+          },
+          "noun_ratio": 1.0,
+          "verb_ratio": 0.0,
+          "bpe_fragment_ratio": 0.5,
+          "corpus_hit_ratio": 0.38
+        },
+        {
+          "cluster_id": 51,
+          "n_docs": 9,
+          "concepts": [
+            "incy",
+            "agal",
+            "otron",
+            "ytic",
+            "aden",
+            "yclic",
+            "carcinoma",
+            "carcin"
+          ],
+          "pos_counts": {
+            "FRAG": 7,
+            "NN": 1
+          },
+          "noun_ratio": 0.0,
+          "verb_ratio": 0.0,
+          "bpe_fragment_ratio": 0.88,
+          "corpus_hit_ratio": 0.0
+        },
+        {
+          "cluster_id": 113,
+          "n_docs": 8,
+          "concepts": [
+            "individuals",
+            "suspected",
+            "cases",
+            "adults",
+            "evaluating",
+            "assessing",
+            "vitamin",
+            "subjects"
+          ],
+          "pos_counts": {
+            "NNS": 3,
+            "VBD": 1,
+            "FRAG": 1,
+            "VBG": 2,
+            "UNK": 1
+          },
+          "noun_ratio": 1.0,
+          "verb_ratio": 0.38,
+          "bpe_fragment_ratio": 0.12,
+          "corpus_hit_ratio": 0.38
+        },
+        {
+          "cluster_id": 38,
+          "n_docs": 8,
+          "concepts": [
+            "cases",
+            "children",
+            "girls",
+            "kids",
+            "boys",
+            "participants",
+            "women",
+            "females"
+          ],
+          "pos_counts": {
+            "FRAG": 3,
+            "JJ": 1,
+            "NNS": 4
+          },
+          "noun_ratio": 0.67,
+          "verb_ratio": 0.0,
+          "bpe_fragment_ratio": 0.38,
+          "corpus_hit_ratio": 0.38
+        },
+        {
+          "cluster_id": 32,
+          "n_docs": 7,
+          "concepts": [
+            "Recently",
+            "Emerging",
+            "Among",
+            "Numerous",
+            "Increasing",
+            "Hist",
+            "Comp",
+            "Natural"
+          ],
+          "pos_counts": {
+            "UNK": 2,
+            "VBG": 2,
+            "JJ": 2,
+            "FRAG": 2
+          },
+          "noun_ratio": 0.67,
+          "verb_ratio": 0.25,
+          "bpe_fragment_ratio": 0.25,
+          "corpus_hit_ratio": 0.38
+        },
+        {
+          "cluster_id": 19,
+          "n_docs": 7,
+          "concepts": [
+            "remain",
+            "indicate",
+            "points",
+            "tend",
+            "exhibit",
+            "remained",
+            "appeared",
+            "failed"
+          ],
+          "pos_counts": {
+            "FRAG": 4,
+            "UNK": 2,
+            "VBD": 2
+          },
+          "noun_ratio": 0.0,
+          "verb_ratio": 0.25,
+          "bpe_fragment_ratio": 0.5,
+          "corpus_hit_ratio": 0.0
+        }
+      ]
+    },
+    "novel": {
+      "n_docs": 124,
+      "n_clusters": 1,
+      "n_concepts": 8,
+      "pos_distribution": {
+        "VBG": 2,
+        "UNK": 4,
+        "VBD": 2
+      },
+      "noun_ratio": 0.5,
+      "verb_ratio": 0.5,
+      "adj_ratio": 0.0,
+      "bpe_fragment_ratio": 0.0,
+      "corpus_hit_ratio": 0.75,
+      "clusters": [
+        {
+          "cluster_id": 0,
+          "n_docs": 120,
+          "concepts": [
+            "surrounding",
+            "around",
+            "behind",
+            "surrounded",
+            "adjacent",
+            "near",
+            "adjoining",
+            "enclosed"
+          ],
+          "pos_counts": {
+            "VBG": 2,
+            "UNK": 4,
+            "VBD": 2
+          },
+          "noun_ratio": 0.5,
+          "verb_ratio": 0.5,
+          "bpe_fragment_ratio": 0.0,
+          "corpus_hit_ratio": 0.75
+        }
+      ]
+    },
+    "code": {
+      "n_docs": 96,
+      "n_clusters": 1,
+      "n_concepts": 2,
+      "pos_distribution": {
+        "FRAG": 2
+      },
+      "noun_ratio": 0.0,
+      "verb_ratio": 0.0,
+      "adj_ratio": 0.0,
+      "bpe_fragment_ratio": 1.0,
+      "corpus_hit_ratio": 0.0,
+      "clusters": [
+        {
+          "cluster_id": 0,
+          "n_docs": 92,
+          "concepts": [
+            "odyn",
+            "agini"
+          ],
+          "pos_counts": {
+            "FRAG": 2
+          },
+          "noun_ratio": 0.0,
+          "verb_ratio": 0.0,
+          "bpe_fragment_ratio": 1.0,
+          "corpus_hit_ratio": 0.0
+        }
+      ]
+    }
+  }
+}

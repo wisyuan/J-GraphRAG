@@ -1,0 +1,780 @@
+{
+  "method": "recursive_concept_tree",
+  "n_docs": 827,
+  "tree_stats": {
+    "n_nodes": 52,
+    "max_depth": 1,
+    "n_leaves": 51,
+    "nodes_at_depth": {
+      "0": 1,
+      "1": 51
+    }
+  },
+  "tree": {
+    "node_id": "d0_n1",
+    "depth": 0,
+    "n_docs": 827,
+    "concepts": [
+      "mortality",
+      "linked",
+      "follow",
+      "survival",
+      "death"
+    ],
+    "parent": null,
+    "children": [
+      {
+        "node_id": "d1_n2",
+        "depth": 1,
+        "n_docs": 10,
+        "concepts": [
+          "mortality",
+          "linked",
+          "follow",
+          "survival",
+          "death"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "Recent studies have suggested that statins, an established drug group in the prevention of cardiovascular mortality, could delay or prevent breast can"
+      },
+      {
+        "node_id": "d1_n3",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "ohana",
+          "inoa",
+          "alink",
+          "okit",
+          "rawer"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "Hit Reaction Time latencies (HRT) in the Continuous Performance Test (CPT) measure the speed of visual information processing. The latencies may invol"
+      },
+      {
+        "node_id": "d1_n4",
+        "depth": 1,
+        "n_docs": 9,
+        "concepts": [
+          "ndern",
+          "emachine",
+          "Elite",
+          "Nguồn"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "Elevated phosphate (P) levels are seen in advanced renal failure and, together with dysregulated calcium, parathyroid hormone and vitamin D levels, co"
+      },
+      {
+        "node_id": "d1_n5",
+        "depth": 1,
+        "n_docs": 6,
+        "concepts": [
+          "content",
+          "contents",
+          "levels",
+          "values",
+          "amounts"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "OBJECTIVE: Among plant foods, grain products, legumes, and seeds are important sources of phosphorus (P). Current data on P content and absorbability "
+      },
+      {
+        "node_id": "d1_n6",
+        "depth": 1,
+        "n_docs": 7,
+        "concepts": [
+          "Recent",
+          "Several",
+          "Recently",
+          "Evidence",
+          "Many"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "Diet supplementation and/or modulation is an important strategy to significantly improve human health. The search of plants as additional sources of b"
+      },
+      {
+        "node_id": "d1_n7",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "inoa",
+          "ohana",
+          "alink",
+          "odied",
+          "можем"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "AIM OF THE STUDY: The Roselle (Hibiscus sabdariffa) was investigated for its uricosuric effect. MATERIALS AND METHODS: A human model with nine subject"
+      },
+      {
+        "node_id": "d1_n8",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "alink",
+          "ohana",
+          "inoa",
+          "odied",
+          "ridged"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "Insulin resistance, obesity, hypertension, and dyslipidemia are strongly associated with metabolic syndrome (MeSy), which is considered to be a revers"
+      },
+      {
+        "node_id": "d1_n9",
+        "depth": 1,
+        "n_docs": 8,
+        "concepts": [
+          "individuals",
+          "suspected",
+          "cases",
+          "adults",
+          "evaluating"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "While not intended as an exhaustive list, it provides a basis for organising and prioritising research efforts in the area of vitamin D, which may off"
+      },
+      {
+        "node_id": "d1_n10",
+        "depth": 1,
+        "n_docs": 10,
+        "concepts": [
+          "suggesting",
+          "characterized",
+          "indicating",
+          "even",
+          "primarily"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "OBJECTIVE: Fructose intake has increased considerably in the United States, primarily as a result of increased consumption of high-fructose corn syrup"
+      },
+      {
+        "node_id": "d1_n11",
+        "depth": 1,
+        "n_docs": 6,
+        "concepts": [
+          "alink",
+          "ohana",
+          "linked",
+          "ridged",
+          "centered"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "In addition to causing embarrassment and unease, flatulence is linked to a variety of symptoms, some of which may be distressing. This review describe"
+      },
+      {
+        "node_id": "d1_n12",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "alink",
+          "ohana",
+          "represented",
+          "akit",
+          "inoa"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "Bismuth therapy has shown efficacy against two major gastrointestinal disorders: peptic ulcer disease and diarrhea. In peptic ulcer disease it is as e"
+      },
+      {
+        "node_id": "d1_n13",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "Nutrition",
+          "esub",
+          "alink",
+          "odyn",
+          "ridged"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "In a 1995 pivotal study, Kushner described the attitudes, practice behaviors, and barriers to the delivery of nutrition counseling by primary care phy"
+      },
+      {
+        "node_id": "d1_n14",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "alink",
+          "ohana",
+          "okit",
+          "esub",
+          "almart"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "During the slaughter process, cattle carcasses are split by sawing centrally down the vertebral column, resulting in contamination of each half with s"
+      },
+      {
+        "node_id": "d1_n15",
+        "depth": 1,
+        "n_docs": 7,
+        "concepts": [
+          "showed",
+          "might",
+          "show",
+          "seem",
+          "appear"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "The world-wide increase of antimicrobial resistance in micro-organisms complicates medical treatment of infected humans. We did a risk-factor analysis"
+      },
+      {
+        "node_id": "d1_n16",
+        "depth": 1,
+        "n_docs": 7,
+        "concepts": [
+          "require",
+          "occur",
+          "arise",
+          "might",
+          "include"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "Segmental colitis associated with diverticula shares common histopathological features with inflammatory bowel disease and may benefit from treatment "
+      },
+      {
+        "node_id": "d1_n17",
+        "depth": 1,
+        "n_docs": 12,
+        "concepts": [
+          "vegetarian",
+          "veget",
+          "dietary",
+          "consumption",
+          "adherence"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "METHODS AND RESULTS Diet was assessed using an interviewer-administered 108-item food frequency questionnaire (n=1,941). CVD events were defined as a "
+      },
+      {
+        "node_id": "d1_n18",
+        "depth": 1,
+        "n_docs": 6,
+        "concepts": [
+          "portfolio",
+          "intervention",
+          "interventions",
+          "portfolios",
+          "intake"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "CONTEXT: Combining foods with recognized cholesterol-lowering properties (dietary portfolio) has proven highly effective in lowering serum cholesterol"
+      },
+      {
+        "node_id": "d1_n19",
+        "depth": 1,
+        "n_docs": 6,
+        "concepts": [
+          "represented",
+          "highlighted",
+          "alink",
+          "alyzed",
+          "inoa"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "Recent evidences have highlighted an influence of micronutrients in the maintenance of telomere length (TL)."
+      },
+      {
+        "node_id": "d1_n20",
+        "depth": 1,
+        "n_docs": 7,
+        "concepts": [
+          "behaviors",
+          "exhibited",
+          "healthy",
+          "reported",
+          "experienced"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "PURPOSE: To determine the frequency of adopting a healthy lifestyle (5 or more fruits and vegetables daily, regular exercise, BMI 18.5-29.9 kg/m2, no "
+      },
+      {
+        "node_id": "d1_n21",
+        "depth": 1,
+        "n_docs": 6,
+        "concepts": [
+          "esub",
+          "alink",
+          "odyn",
+          "inoa",
+          "Counseling"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "OBJECTIVES: To determine the counseling practices of a group of internists in the areas of smoking, exercise, and alcohol and seat belt use, and to de"
+      },
+      {
+        "node_id": "d1_n22",
+        "depth": 1,
+        "n_docs": 45,
+        "concepts": [
+          "index",
+          "score",
+          "insulin",
+          "fasting"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "While many women with polycystic ovary syndrome (PCOS) are overweight, obese or centrally obese, the effect of excess weight on the outcomes of PCOS i"
+      },
+      {
+        "node_id": "d1_n23",
+        "depth": 1,
+        "n_docs": 9,
+        "concepts": [
+          "identified",
+          "strategy",
+          "revealed",
+          "conducted",
+          "covering"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "MEDLINE, EMBASE, CINAHL, Cochrane Central Register of Controlled Trials (CENTRAL) and PSYCINFO were searched for studies reporting outcomes according "
+      },
+      {
+        "node_id": "d1_n24",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "esub",
+          "diet",
+          "alink",
+          "inoa",
+          "odied"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "The women were assigned through rank minimization to one of the following 2 diets without caloric restriction: an HP diet (>40% of energy from protein"
+      },
+      {
+        "node_id": "d1_n25",
+        "depth": 1,
+        "n_docs": 9,
+        "concepts": [
+          "levels",
+          "vitamin",
+          "rate",
+          "frequency",
+          "dose"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "Additional studies are needed to determine whether such effects can reduce the risk of developing breast cancer."
+      },
+      {
+        "node_id": "d1_n26",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "inoa",
+          "alink",
+          "alyzed",
+          "ohana",
+          "represented"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "Docosahexaenoic acid (DHA) is an omega-3 fatty acid that comprises 22 carbons and 6 alternative double bonds in its hydrocarbon chain (22:6omega3). Pr"
+      },
+      {
+        "node_id": "d1_n27",
+        "depth": 1,
+        "n_docs": 12,
+        "concepts": [
+          "single",
+          "similar",
+          "three",
+          "five",
+          "once"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "A double-blind comparison was made of the use of 14 daily intravaginal gelatin capsules containing 600 mg of boric acid powder versus the use of ident"
+      },
+      {
+        "node_id": "d1_n28",
+        "depth": 1,
+        "n_docs": 7,
+        "concepts": [
+          "showed",
+          "versus",
+          "relative",
+          "appeared",
+          "being"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "BACKGROUND & AIMS: Increasing evidence suggests that a low folate intake and impaired folate metabolism may be implicated in the development of gastro"
+      },
+      {
+        "node_id": "d1_n29",
+        "depth": 1,
+        "n_docs": 17,
+        "concepts": [
+          "June",
+          "January",
+          "April",
+          "July",
+          "September"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "OBJECTIVE: To present a child who developed gastric ulcers and duodenal erosions after ingestion of hydrogen peroxide 3% and delineate the epidemiolog"
+      },
+      {
+        "node_id": "d1_n30",
+        "depth": 1,
+        "n_docs": 7,
+        "concepts": [
+          "prostate",
+          "risk",
+          "invers",
+          "dose",
+          "whereas"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "Individual-based studies that investigated the relation between dietary alpha-linolenic acid (ALA) intake and prostate cancer risk have shown inconsis"
+      },
+      {
+        "node_id": "d1_n31",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "alink",
+          "ohana",
+          "ridged",
+          "almart",
+          "inoa"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "BACKGROUND AND OBJECTIVES: Momordica charantia, locally known as Ampalaya, is being widely used and advertised for its hypoglycemic effects. However, "
+      },
+      {
+        "node_id": "d1_n32",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "inoa",
+          "ridged",
+          "ohana",
+          "alink",
+          "represented"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "However, in the past 15 years, there was a several-fold increase in the literature studying Ilex paraguariensis properties showing effects such as ant"
+      },
+      {
+        "node_id": "d1_n33",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "alink",
+          "odied",
+          "Mercury",
+          "inoa",
+          "ohana"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "Dental amalgam is 50% metallic mercury (Hg) by weight and Hg vapour continuously evolves from in-place dental amalgam, causing increased Hg content wi"
+      },
+      {
+        "node_id": "d1_n34",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "RESULTS: Following CC ingestion, FMD decreased progressively and significantly (mean+/-s.e.m.: 0 min, 7.7+/-0.6; 30 min, 6.3+/-0.7; 60 min, 6.0+/-0.8%"
+      },
+      {
+        "node_id": "d1_n35",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "alink",
+          "inoa",
+          "esub",
+          "oils",
+          "alyzed"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "BACKGROUND: Both hempseed oil (HO) and flaxseed oil (FO) contain high amounts of essential fatty acids (FAs); i.e. linoleic acid (LA, 18:2n-6) and alp"
+      },
+      {
+        "node_id": "d1_n36",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "ohana",
+          "inoa",
+          "alink",
+          "okit",
+          "almart"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "Colored-flesh potatoes are an excellent source of health-benefiting dietary polyphenols, but are stored for up to 3-6 months before consumption. This "
+      },
+      {
+        "node_id": "d1_n37",
+        "depth": 1,
+        "n_docs": 8,
+        "concepts": [
+          "cases",
+          "children",
+          "girls",
+          "kids",
+          "boys"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "The symptoms were in the form of cough in seven, wheezing in three, hemoptysis in two, nasal congestion in three, dyspnea in one, recurrent otitis med"
+      },
+      {
+        "node_id": "d1_n38",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "might",
+          "hold",
+          "offer",
+          "represent",
+          "particularly"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "BACKGROUND: The contribution of various risk factors to the burden of stroke worldwide is unknown, particularly in countries of low and middle income."
+      },
+      {
+        "node_id": "d1_n39",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "entiful",
+          "alink",
+          "Vitamin",
+          "ridged",
+          "esub"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "Vitamin D was used to treat tuberculosis in the pre-antibiotic era. New insights into the immunomodulatory properties of 1alpha,25-dihydroxy-vitamin D"
+      },
+      {
+        "node_id": "d1_n40",
+        "depth": 1,
+        "n_docs": 6,
+        "concepts": [
+          "observed",
+          "found",
+          "detected",
+          "noted",
+          "recorded"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "INTRODUCTION: Vegetarian diets are considered to promote health and reduce the risk of some chronic diseases. It is also known that restriction or exc"
+      },
+      {
+        "node_id": "d1_n41",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "alink",
+          "almart",
+          "ohana",
+          "Blood",
+          "akit"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "OBJECTIVE: To assess the effects of krill oil on blood lipids, specifically total cholesterol, triglycerides, low-density lipoprotein (LDL), and high-"
+      },
+      {
+        "node_id": "d1_n42",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "omega",
+          "marine",
+          "dietary",
+          "fish",
+          "supplements"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "Background Bioavailability of omega-3 fatty acids (FA) depends on their chemical form. Superior bioavailability has been suggested for phospholipid (P"
+      },
+      {
+        "node_id": "d1_n43",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "calcium",
+          "stone",
+          "kidney",
+          "calcul",
+          "forming"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "BACKGROUND: The contribution of ascorbate to urinary oxalate is controversial. The present study aimed to determine whether urinary oxalate and pH may"
+      },
+      {
+        "node_id": "d1_n44",
+        "depth": 1,
+        "n_docs": 6,
+        "concepts": [
+          "represented",
+          "encaps",
+          "ohana",
+          "ridged",
+          "alyzed"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "Many products used in everyday life are made with the assistance of nanotechnologies. Cosmetic, pharmaceuticals, sunscreen, powdered food are only few"
+      },
+      {
+        "node_id": "d1_n45",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "alink",
+          "ohana",
+          "ridged",
+          "inoa",
+          "odied"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "We assess the evidence for health benefits of three commonly consumed plant food supplements (PFS), green tea, isoflavone and aloe vera, based on publ"
+      },
+      {
+        "node_id": "d1_n46",
+        "depth": 1,
+        "n_docs": 7,
+        "concepts": [],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "BACKGROUND: Irritable bowel syndrome (IBS) is a common chronic gastrointestinal disorder. The role of pharmacotherapy for IBS is limited and focused m"
+      },
+      {
+        "node_id": "d1_n47",
+        "depth": 1,
+        "n_docs": 9,
+        "concepts": [
+          "incy",
+          "agal",
+          "otron",
+          "ytic",
+          "yclic"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "Hexane, chloroform, and ethyl acetate extracts of Capsicum Frutescens Fruit at 200 mg/kg resulted in death of all mice. In a short-term inhalation tox"
+      },
+      {
+        "node_id": "d1_n48",
+        "depth": 1,
+        "n_docs": 7,
+        "concepts": [
+          "ndern",
+          "kker",
+          "emachine",
+          "ynos",
+          "prowad"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "Capsaicin functions as an external analgesic, a fragrance ingredient, and as a skin-conditioning agent--miscellaneous in cosmetic products, but is not"
+      },
+      {
+        "node_id": "d1_n49",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "alink",
+          "odied",
+          "okit",
+          "ridged",
+          "alyzed"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "Serum cobalamin \"analogue\" levels were estimated by the discrepancy in cobalamin results with radioassays done with pure intrinsic factor and R binder"
+      },
+      {
+        "node_id": "d1_n50",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "diet",
+          "fiber",
+          "esub",
+          "alyzed",
+          "inoa"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "There is no recognized definition of what constitutes a high fiber diet. Intakes of dietary fiber in different populations internationally vary widely"
+      },
+      {
+        "node_id": "d1_n51",
+        "depth": 1,
+        "n_docs": 29,
+        "concepts": [
+          "impairment",
+          "impair",
+          "decline",
+          "impaired",
+          "dysfunction"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "Background An increased rate of brain atrophy is often observed in older subjects, in particular those who suffer from cognitive decline. Homocysteine"
+      },
+      {
+        "node_id": "d1_n52",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "alink",
+          "ridged",
+          "agini",
+          "egov",
+          "ohana"
+        ],
+        "parent": "d0_n1",
+        "children": [],
+        "sample_doc": "Background Cognitive impairment without dementia is associated with increased risk for disability, increased health care costs, and progression to dem"
+      }
+    ],
+    "sample_doc": "Recent studies have suggested that statins, an established drug group in the prevention of cardiovascular mortality, could delay or prevent breast can"
+  }
+}

@@ -1,0 +1,906 @@
+{
+  "method": "two_pass_extraction_bm25_completion",
+  "model": "qwen2.5-7b-it",
+  "n_docs": 1206,
+  "n_clusters": 8,
+  "clusters": [
+    {
+      "cluster_id": 61,
+      "n_docs": 34,
+      "sample_doc": "It has been speculated that maternal phthalate exposure may affect reproductive development in human newborns. However, the mechanism awaits further i",
+      "pass1": {
+        "n": 8,
+        "avg_len": 8.1,
+        "corpus_hit_rate": 0.0,
+        "structural_ratio": 0.0,
+        "pos_dist": {
+          "JJ": 2,
+          "UNK": 4,
+          "NN": 2
+        },
+        "concepts": [
+          "artisan",
+          "incontri",
+          "annunci",
+          "verity",
+          "logarith",
+          "transformation",
+          "normal",
+          "transform"
+        ]
+      },
+      "pass2": {
+        "A_field": {
+          "n": 8,
+          "avg_len": 7.6,
+          "corpus_hit_rate": 0.0,
+          "structural_ratio": 0.0,
+          "pos_dist": {
+            "JJ": 1,
+            "NNS": 1,
+            "UNK": 6
+          },
+          "concepts": [
+            "rigesimal",
+            "emphas",
+            "libft",
+            "akedown",
+            "utilise",
+            "stringstream",
+            "centre",
+            "Liverpool"
+          ]
+        },
+        "B_exclude": {
+          "n": 8,
+          "avg_len": 6.6,
+          "corpus_hit_rate": 0.0,
+          "structural_ratio": 0.0,
+          "pos_dist": {
+            "JJ": 1,
+            "NNS": 1,
+            "UNK": 5,
+            "NN": 1
+          },
+          "concepts": [
+            "rigesimal",
+            "emphas",
+            "utilise",
+            "lbrace",
+            "akedown",
+            "libft",
+            "umbnail",
+            "Whilst"
+          ]
+        },
+        "C_phase16": {
+          "n": 8,
+          "avg_len": 6.8,
+          "corpus_hit_rate": 0.12,
+          "structural_ratio": 0.0,
+          "pos_dist": {
+            "UNK": 6,
+            "JJ": 1,
+            "NNS": 1
+          },
+          "concepts": [
+            "stdexcept",
+            "tabpanel",
+            "verschiedenen",
+            "redni",
+            "none",
+            "esub",
+            "abilia",
+            "anuts"
+          ]
+        },
+        "D_narrative": {
+          "n": 8,
+          "avg_len": 8.2,
+          "corpus_hit_rate": 0.0,
+          "structural_ratio": 0.0,
+          "pos_dist": {
+            "NNS": 3,
+            "UNK": 2,
+            "VBD": 1,
+            "VBG": 1,
+            "NN": 1
+          },
+          "concepts": [
+            "udiantes",
+            "utilise",
+            "concerns",
+            "themes",
+            "detailed",
+            "pertinent",
+            "detailing",
+            "involvement"
+          ]
+        }
+      }
+    },
+    {
+      "cluster_id": 101,
+      "n_docs": 23,
+      "sample_doc": "Diverticular disease of the colon is among the most prevalent conditions in western society and is among the leading reasons for outpatient visits and",
+      "pass1": {
+        "n": 7,
+        "avg_len": 8.7,
+        "corpus_hit_rate": 0.29,
+        "structural_ratio": 0.0,
+        "pos_dist": {
+          "UNK": 4,
+          "NN": 2,
+          "JJ": 1
+        },
+        "concepts": [
+          "moderately",
+          "food",
+          "dietary",
+          "prescription",
+          "nutrition",
+          "nutritional",
+          "nutrient"
+        ]
+      },
+      "pass2": {
+        "A_field": {
+          "n": 8,
+          "avg_len": 7.6,
+          "corpus_hit_rate": 0.0,
+          "structural_ratio": 0.0,
+          "pos_dist": {
+            "JJ": 1,
+            "NNS": 1,
+            "UNK": 6
+          },
+          "concepts": [
+            "rigesimal",
+            "emphas",
+            "libft",
+            "akedown",
+            "utilise",
+            "stringstream",
+            "centre",
+            "Liverpool"
+          ]
+        },
+        "B_exclude": {
+          "n": 8,
+          "avg_len": 6.5,
+          "corpus_hit_rate": 0.0,
+          "structural_ratio": 0.0,
+          "pos_dist": {
+            "JJ": 1,
+            "NNS": 1,
+            "NN": 1,
+            "UNK": 5
+          },
+          "concepts": [
+            "rigesimal",
+            "emphas",
+            "lbrace",
+            "utilise",
+            "ffield",
+            "libft",
+            "akedown",
+            "Whilst"
+          ]
+        },
+        "C_phase16": {
+          "n": 8,
+          "avg_len": 7.8,
+          "corpus_hit_rate": 0.0,
+          "structural_ratio": 0.0,
+          "pos_dist": {
+            "UNK": 7,
+            "NNS": 1
+          },
+          "concepts": [
+            "stdexcept",
+            "ensely",
+            "regelm",
+            "gettimeofday",
+            "astle",
+            "redni",
+            "strtolower",
+            "diagnoses"
+          ]
+        },
+        "D_narrative": {
+          "n": 8,
+          "avg_len": 8.5,
+          "corpus_hit_rate": 0.0,
+          "structural_ratio": 0.0,
+          "pos_dist": {
+            "NNS": 5,
+            "UNK": 2,
+            "VBD": 1
+          },
+          "concepts": [
+            "udiantes",
+            "utilise",
+            "themes",
+            "concerns",
+            "specifics",
+            "discussions",
+            "detailed",
+            "significant"
+          ]
+        }
+      }
+    },
+    {
+      "cluster_id": 151,
+      "n_docs": 16,
+      "sample_doc": "BACKGROUND: Irritable bowel syndrome (IBS) is a common chronic gastrointestinal disorder. The role of pharmacotherapy for IBS is limited and focused m",
+      "pass1": {
+        "n": 8,
+        "avg_len": 10.1,
+        "corpus_hit_rate": 0.12,
+        "structural_ratio": 0.0,
+        "pos_dist": {
+          "NN": 4,
+          "NNS": 1,
+          "UNK": 2,
+          "JJ": 1
+        },
+        "concepts": [
+          "experience",
+          "limitation",
+          "resources",
+          "access",
+          "effectiveness",
+          "documentation",
+          "scientific",
+          "literature"
+        ]
+      },
+      "pass2": {
+        "A_field": {
+          "n": 8,
+          "avg_len": 7.2,
+          "corpus_hit_rate": 0.0,
+          "structural_ratio": 0.0,
+          "pos_dist": {
+            "JJ": 1,
+            "NNS": 1,
+            "UNK": 6
+          },
+          "concepts": [
+            "rigesimal",
+            "emphas",
+            "libft",
+            "utilise",
+            "akedown",
+            "stringstream",
+            "centre",
+            "anford"
+          ]
+        },
+        "B_exclude": {
+          "n": 8,
+          "avg_len": 6.6,
+          "corpus_hit_rate": 0.0,
+          "structural_ratio": 0.0,
+          "pos_dist": {
+            "JJ": 1,
+            "NNS": 1,
+            "NN": 1,
+            "UNK": 5
+          },
+          "concepts": [
+            "rigesimal",
+            "emphas",
+            "lbrace",
+            "utilise",
+            "libft",
+            "akedown",
+            "Whilst",
+            "uminium"
+          ]
+        },
+        "C_phase16": {
+          "n": 8,
+          "avg_len": 7.6,
+          "corpus_hit_rate": 0.38,
+          "structural_ratio": 0.0,
+          "pos_dist": {
+            "UNK": 5,
+            "NNS": 3
+          },
+          "concepts": [
+            "stdexcept",
+            "tabpanel",
+            "ramento",
+            "treatments",
+            "symptoms",
+            "symptom",
+            "abilia",
+            "stants"
+          ]
+        },
+        "D_narrative": {
+          "n": 8,
+          "avg_len": 8.2,
+          "corpus_hit_rate": 0.0,
+          "structural_ratio": 0.0,
+          "pos_dist": {
+            "NNS": 5,
+            "UNK": 2,
+            "VBD": 1
+          },
+          "concepts": [
+            "udiantes",
+            "fffffff",
+            "concerns",
+            "discussions",
+            "specifics",
+            "themes",
+            "detailed",
+            "pertinent"
+          ]
+        }
+      }
+    },
+    {
+      "cluster_id": 167,
+      "n_docs": 13,
+      "sample_doc": "While many women with polycystic ovary syndrome (PCOS) are overweight, obese or centrally obese, the effect of excess weight on the outcomes of PCOS i",
+      "pass1": {
+        "n": 7,
+        "avg_len": 9.6,
+        "corpus_hit_rate": 0.29,
+        "structural_ratio": 0.14,
+        "pos_dist": {
+          "NN": 2,
+          "NNS": 3,
+          "UNK": 2
+        },
+        "concepts": [
+          "implementation",
+          "methods",
+          "investig",
+          "researchers",
+          "pregnancy",
+          "investigators",
+          "women"
+        ]
+      },
+      "pass2": {
+        "A_field": {
+          "n": 8,
+          "avg_len": 7.2,
+          "corpus_hit_rate": 0.0,
+          "structural_ratio": 0.0,
+          "pos_dist": {
+            "NNS": 1,
+            "JJ": 1,
+            "UNK": 6
+          },
+          "concepts": [
+            "emphas",
+            "rigesimal",
+            "libft",
+            "utilise",
+            "akedown",
+            "stringstream",
+            "Whilst",
+            "centre"
+          ]
+        },
+        "B_exclude": {
+          "n": 8,
+          "avg_len": 6.5,
+          "corpus_hit_rate": 0.0,
+          "structural_ratio": 0.0,
+          "pos_dist": {
+            "JJ": 1,
+            "NNS": 1,
+            "NN": 1,
+            "UNK": 5
+          },
+          "concepts": [
+            "rigesimal",
+            "emphas",
+            "lbrace",
+            "utilise",
+            "libft",
+            "akedown",
+            "Whilst",
+            "Colour"
+          ]
+        },
+        "C_phase16": {
+          "n": 8,
+          "avg_len": 7.4,
+          "corpus_hit_rate": 0.12,
+          "structural_ratio": 0.0,
+          "pos_dist": {
+            "UNK": 7,
+            "NNS": 1
+          },
+          "concepts": [
+            "stdexcept",
+            "tabpanel",
+            "ensely",
+            "gettimeofday",
+            "astle",
+            "redni",
+            "treatments",
+            "diet"
+          ]
+        },
+        "D_narrative": {
+          "n": 8,
+          "avg_len": 7.6,
+          "corpus_hit_rate": 0.12,
+          "structural_ratio": 0.0,
+          "pos_dist": {
+            "NNS": 4,
+            "VBG": 2,
+            "VBD": 2
+          },
+          "concepts": [
+            "udiantes",
+            "specifics",
+            "themes",
+            "concerns",
+            "varying",
+            "detailed",
+            "varied",
+            "differing"
+          ]
+        }
+      }
+    },
+    {
+      "cluster_id": 103,
+      "n_docs": 13,
+      "sample_doc": "Diabetic retinopathy is a common and specific microvascular complication of diabetes, and remains the leading cause of preventable blindness in workin",
+      "pass1": {
+        "n": 8,
+        "avg_len": 7.0,
+        "corpus_hit_rate": 0.38,
+        "structural_ratio": 0.0,
+        "pos_dist": {
+          "UNK": 6,
+          "NN": 2
+        },
+        "concepts": [
+          "timely",
+          "consistent",
+          "length",
+          "duration",
+          "completion",
+          "period",
+          "post",
+          "either"
+        ]
+      },
+      "pass2": {
+        "A_field": {
+          "n": 8,
+          "avg_len": 7.2,
+          "corpus_hit_rate": 0.0,
+          "structural_ratio": 0.0,
+          "pos_dist": {
+            "JJ": 1,
+            "NNS": 1,
+            "UNK": 6
+          },
+          "concepts": [
+            "rigesimal",
+            "emphas",
+            "libft",
+            "akedown",
+            "stringstream",
+            "centre",
+            "Liverpool",
+            "etri"
+          ]
+        },
+        "B_exclude": {
+          "n": 8,
+          "avg_len": 6.6,
+          "corpus_hit_rate": 0.0,
+          "structural_ratio": 0.0,
+          "pos_dist": {
+            "JJ": 1,
+            "NNS": 1,
+            "UNK": 5,
+            "NN": 1
+          },
+          "concepts": [
+            "rigesimal",
+            "emphas",
+            "akedown",
+            "lbrace",
+            "libft",
+            "utilise",
+            "umbnail",
+            "Whilst"
+          ]
+        },
+        "C_phase16": {
+          "n": 8,
+          "avg_len": 7.9,
+          "corpus_hit_rate": 0.12,
+          "structural_ratio": 0.0,
+          "pos_dist": {
+            "UNK": 6,
+            "NNS": 1,
+            "NN": 1
+          },
+          "concepts": [
+            "borah",
+            "stdexcept",
+            "gettimeofday",
+            "tabpanel",
+            "redni",
+            "astle",
+            "treatments",
+            "diagnosis"
+          ]
+        },
+        "D_narrative": {
+          "n": 8,
+          "avg_len": 8.1,
+          "corpus_hit_rate": 0.0,
+          "structural_ratio": 0.0,
+          "pos_dist": {
+            "NNS": 5,
+            "UNK": 3
+          },
+          "concepts": [
+            "udiantes",
+            "fffffff",
+            "discussions",
+            "themes",
+            "specifics",
+            "concerns",
+            "pertinent",
+            "entieth"
+          ]
+        }
+      }
+    },
+    {
+      "cluster_id": 165,
+      "n_docs": 12,
+      "sample_doc": "Overweight or obese women with PCOS had decreased sex hormone-binding globulin (SHBG), increased total testosterone, free androgen index, hirsutism, f",
+      "pass1": {
+        "n": 7,
+        "avg_len": 7.9,
+        "corpus_hit_rate": 0.29,
+        "structural_ratio": 0.0,
+        "pos_dist": {
+          "UNK": 4,
+          "NNS": 3
+        },
+        "concepts": [
+          "women",
+          "female",
+          "criteria",
+          "illustrates",
+          "clearly",
+          "reflects",
+          "emphasizes"
+        ]
+      },
+      "pass2": {
+        "A_field": {
+          "n": 8,
+          "avg_len": 7.2,
+          "corpus_hit_rate": 0.0,
+          "structural_ratio": 0.0,
+          "pos_dist": {
+            "JJ": 1,
+            "NNS": 1,
+            "UNK": 6
+          },
+          "concepts": [
+            "rigesimal",
+            "emphas",
+            "libft",
+            "akedown",
+            "utilise",
+            "stringstream",
+            "centre",
+            "Whilst"
+          ]
+        },
+        "B_exclude": {
+          "n": 8,
+          "avg_len": 6.6,
+          "corpus_hit_rate": 0.0,
+          "structural_ratio": 0.0,
+          "pos_dist": {
+            "JJ": 1,
+            "NNS": 1,
+            "NN": 1,
+            "UNK": 5
+          },
+          "concepts": [
+            "rigesimal",
+            "emphas",
+            "lbrace",
+            "utilise",
+            "libft",
+            "akedown",
+            "Whilst",
+            "uminium"
+          ]
+        },
+        "C_phase16": {
+          "n": 8,
+          "avg_len": 7.2,
+          "corpus_hit_rate": 0.0,
+          "structural_ratio": 0.0,
+          "pos_dist": {
+            "UNK": 7,
+            "NNS": 1
+          },
+          "concepts": [
+            "stdexcept",
+            "borah",
+            "ensely",
+            "tabpanel",
+            "gettimeofday",
+            "zych",
+            "variations",
+            "esub"
+          ]
+        },
+        "D_narrative": {
+          "n": 8,
+          "avg_len": 7.8,
+          "corpus_hit_rate": 0.25,
+          "structural_ratio": 0.0,
+          "pos_dist": {
+            "NNS": 5,
+            "UNK": 2,
+            "VBD": 1
+          },
+          "concepts": [
+            "udiantes",
+            "utilise",
+            "concerns",
+            "themes",
+            "detailed",
+            "specifics",
+            "significant",
+            "areas"
+          ]
+        }
+      }
+    },
+    {
+      "cluster_id": 114,
+      "n_docs": 12,
+      "sample_doc": "Approximately 75% of all kidney stones are composed primarily of calcium oxalate, and hyperoxaluria is a primary risk factor for this disorder. Nine t",
+      "pass1": {
+        "n": 8,
+        "avg_len": 7.9,
+        "corpus_hit_rate": 0.12,
+        "structural_ratio": 0.0,
+        "pos_dist": {
+          "UNK": 3,
+          "JJ": 1,
+          "NN": 3,
+          "NNS": 1
+        },
+        "concepts": [
+          "food",
+          "nutrient",
+          "chemical",
+          "nutrition",
+          "proportions",
+          "composition",
+          "density",
+          "ratio"
+        ]
+      },
+      "pass2": {
+        "A_field": {
+          "n": 8,
+          "avg_len": 7.5,
+          "corpus_hit_rate": 0.0,
+          "structural_ratio": 0.0,
+          "pos_dist": {
+            "JJ": 1,
+            "NNS": 1,
+            "UNK": 6
+          },
+          "concepts": [
+            "rigesimal",
+            "emphas",
+            "libft",
+            "akedown",
+            "stringstream",
+            "centre",
+            "Whilst",
+            "Liverpool"
+          ]
+        },
+        "B_exclude": {
+          "n": 8,
+          "avg_len": 6.5,
+          "corpus_hit_rate": 0.0,
+          "structural_ratio": 0.0,
+          "pos_dist": {
+            "JJ": 1,
+            "NNS": 1,
+            "UNK": 5,
+            "NN": 1
+          },
+          "concepts": [
+            "rigesimal",
+            "emphas",
+            "utilise",
+            "lbrace",
+            "libft",
+            "akedown",
+            "Whilst",
+            "Colour"
+          ]
+        },
+        "C_phase16": {
+          "n": 8,
+          "avg_len": 6.8,
+          "corpus_hit_rate": 0.25,
+          "structural_ratio": 0.0,
+          "pos_dist": {
+            "UNK": 6,
+            "NNS": 2
+          },
+          "concepts": [
+            "stdexcept",
+            "tabpanel",
+            "astle",
+            "vegetables",
+            "rawer",
+            "spinach",
+            "Veget",
+            "foods"
+          ]
+        },
+        "D_narrative": {
+          "n": 8,
+          "avg_len": 9.0,
+          "corpus_hit_rate": 0.12,
+          "structural_ratio": 0.0,
+          "pos_dist": {
+            "NNS": 5,
+            "VBD": 1,
+            "VBG": 1,
+            "UNK": 1
+          },
+          "concepts": [
+            "udiantes",
+            "concerns",
+            "themes",
+            "detailed",
+            "concerning",
+            "specifics",
+            "significant",
+            "interactions"
+          ]
+        }
+      }
+    },
+    {
+      "cluster_id": 105,
+      "n_docs": 11,
+      "sample_doc": "Elevated phosphate (P) levels are seen in advanced renal failure and, together with dysregulated calcium, parathyroid hormone and vitamin D levels, co",
+      "pass1": {
+        "n": 8,
+        "avg_len": 7.9,
+        "corpus_hit_rate": 0.12,
+        "structural_ratio": 0.0,
+        "pos_dist": {
+          "NN": 3,
+          "UNK": 4,
+          "JJ": 1
+        },
+        "concepts": [
+          "stability",
+          "dietary",
+          "fluctuation",
+          "moderate",
+          "change",
+          "measurement",
+          "minor",
+          "global"
+        ]
+      },
+      "pass2": {
+        "A_field": {
+          "n": 8,
+          "avg_len": 7.5,
+          "corpus_hit_rate": 0.0,
+          "structural_ratio": 0.0,
+          "pos_dist": {
+            "JJ": 1,
+            "NNS": 1,
+            "UNK": 6
+          },
+          "concepts": [
+            "rigesimal",
+            "emphas",
+            "libft",
+            "akedown",
+            "stringstream",
+            "centre",
+            "Liverpool",
+            "anford"
+          ]
+        },
+        "B_exclude": {
+          "n": 8,
+          "avg_len": 6.5,
+          "corpus_hit_rate": 0.0,
+          "structural_ratio": 0.0,
+          "pos_dist": {
+            "JJ": 1,
+            "NNS": 1,
+            "NN": 1,
+            "UNK": 5
+          },
+          "concepts": [
+            "rigesimal",
+            "emphas",
+            "lbrace",
+            "utilise",
+            "akedown",
+            "libft",
+            "Whilst",
+            "Colour"
+          ]
+        },
+        "C_phase16": {
+          "n": 8,
+          "avg_len": 8.4,
+          "corpus_hit_rate": 0.0,
+          "structural_ratio": 0.0,
+          "pos_dist": {
+            "UNK": 5,
+            "NNS": 2,
+            "NN": 1
+          },
+          "concepts": [
+            "stdexcept",
+            "tabpanel",
+            "ensely",
+            "gettimeofday",
+            "astle",
+            "variations",
+            "variability",
+            "themes"
+          ]
+        },
+        "D_narrative": {
+          "n": 8,
+          "avg_len": 8.6,
+          "corpus_hit_rate": 0.0,
+          "structural_ratio": 0.0,
+          "pos_dist": {
+            "NNS": 5,
+            "UNK": 2,
+            "VBD": 1
+          },
+          "concepts": [
+            "udiantes",
+            "fffffff",
+            "concerns",
+            "themes",
+            "specifics",
+            "detailed",
+            "significant",
+            "interactions"
+          ]
+        }
+      }
+    }
+  ]
+}

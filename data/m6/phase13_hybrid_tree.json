@@ -1,0 +1,1221 @@
+{
+  "method": "hybrid_concept_tree",
+  "n_docs": 1206,
+  "n_l0": 68,
+  "n_l1": 14,
+  "tree": [
+    {
+      "node_id": "L0_1",
+      "level": 0,
+      "n_docs": 39,
+      "concepts": [
+        "their",
+        "examine",
+        "evaluate",
+        "assess",
+        "explore"
+      ],
+      "method": "jlens",
+      "children": [
+        {
+          "node_id": "L0_1_L1_1",
+          "level": 1,
+          "n_docs": 10,
+          "concepts": [
+            "whereas",
+            "where"
+          ],
+          "method": "bge-m3",
+          "children": [],
+          "sample": "This study was designed to determine the body burden of polybrominated diphenyl ethers (PBDEs) among first-time mothers in the Greater Boston, Massach"
+        },
+        {
+          "node_id": "L0_1_L1_4",
+          "level": 1,
+          "n_docs": 6,
+          "concepts": [
+            "discussed",
+            "covered",
+            "mentioned",
+            "disc",
+            "odied"
+          ],
+          "method": "bge-m3",
+          "children": [],
+          "sample": "Methods: We measured concentrations of PBDEs and other POPs in colostrum samples of 290 women recruited in a Spanish birth cohort. We tested children "
+        },
+        {
+          "node_id": "L0_1_L1_0",
+          "level": 1,
+          "n_docs": 4,
+          "concepts": [
+            "alink",
+            "almart",
+            "istrate",
+            "alyzed",
+            "ridged"
+          ],
+          "method": "bge-m3",
+          "children": [],
+          "sample": "It has been speculated that maternal phthalate exposure may affect reproductive development in human newborns. However, the mechanism awaits further i"
+        },
+        {
+          "node_id": "L0_1_L1_3",
+          "level": 1,
+          "n_docs": 3,
+          "concepts": [
+            "alink",
+            "можем",
+            "odied",
+            "ofilm",
+            "alyzed"
+          ],
+          "method": "bge-m3",
+          "children": [],
+          "sample": "Background: There is increasing interest in the potential effects of polybrominated diphenyl ethers (PBDEs) on children’s neuropsychological developme"
+        },
+        {
+          "node_id": "L0_1_L1_2",
+          "level": 1,
+          "n_docs": 3,
+          "concepts": [
+            "alink",
+            "istrate",
+            "aternity",
+            "odied",
+            "almart"
+          ],
+          "method": "bge-m3",
+          "children": [],
+          "sample": "Prenatal exposure to polybrominated diphenyl ethers (PBDEs) may disrupt thyroid function and contribute to adverse neurodevelopmental outcomes. We con"
+        }
+      ],
+      "sample": "The aims of this study were to determine the concentrations of 4-nonylphenol (NP) and 4-octylphenol (OP) in 59 human milk samples and to examine relat"
+    },
+    {
+      "node_id": "L0_7",
+      "level": 0,
+      "n_docs": 33,
+      "concepts": [
+        "impairment",
+        "impair",
+        "decline",
+        "impaired",
+        "dysfunction"
+      ],
+      "method": "jlens",
+      "children": [
+        {
+          "node_id": "L0_7_L1_0",
+          "level": 1,
+          "n_docs": 10,
+          "concepts": [
+            "involving",
+            "conducted",
+            "investigating",
+            "examining",
+            "among"
+          ],
+          "method": "bge-m3",
+          "children": [],
+          "sample": "Background An increased rate of brain atrophy is often observed in older subjects, in particular those who suffer from cognitive decline. Homocysteine"
+        },
+        {
+          "node_id": "L0_7_L1_1",
+          "level": 1,
+          "n_docs": 4,
+          "concepts": [
+            "alink",
+            "ohana",
+            "odied",
+            "ridged",
+            "inoa"
+          ],
+          "method": "bge-m3",
+          "children": [],
+          "sample": "OBJECTIVES: Elevated homocysteine has emerged as a risk factor for cognitive impairment even in healthy elderly persons. Reduced brain volume and whit"
+        }
+      ],
+      "sample": "Background An increased rate of brain atrophy is often observed in older subjects, in particular those who suffer from cognitive decline. Homocysteine"
+    },
+    {
+      "node_id": "L0_10",
+      "level": 0,
+      "n_docs": 32,
+      "concepts": [
+        "children",
+        "adults",
+        "childhood",
+        "pediatric",
+        "relation"
+      ],
+      "method": "jlens",
+      "children": [
+        {
+          "node_id": "L0_10_L1_0",
+          "level": 1,
+          "n_docs": 12,
+          "concepts": [],
+          "method": "bge-m3",
+          "children": [],
+          "sample": "Objective To determine the effect of fibre, antispasmodics, and peppermint oil in the treatment of irritable bowel syndrome. Design Systematic review "
+        },
+        {
+          "node_id": "L0_10_L1_3",
+          "level": 1,
+          "n_docs": 5,
+          "concepts": [
+            "alink",
+            "ridged",
+            "ohana",
+            "represented",
+            "vider"
+          ],
+          "method": "bge-m3",
+          "children": [],
+          "sample": "BACKGROUND: Irritable bowel syndrome (IBS) is a common chronic gastrointestinal disorder. The role of pharmacotherapy for IBS is limited and focused m"
+        },
+        {
+          "node_id": "L0_10_L1_2",
+          "level": 1,
+          "n_docs": 4,
+          "concepts": [
+            "esub",
+            "alink",
+            "inoa",
+            "ohana",
+            "ridged"
+          ],
+          "method": "bge-m3",
+          "children": [],
+          "sample": "AUTHORS' CONCLUSIONS: There is no evidence that bulking agents are effective for treating IBS. There is evidence that antispasmodics are effective for"
+        },
+        {
+          "node_id": "L0_10_L1_4",
+          "level": 1,
+          "n_docs": 4,
+          "concepts": [
+            "alink",
+            "ohana",
+            "akit",
+            "odied",
+            "egov"
+          ],
+          "method": "bge-m3",
+          "children": [],
+          "sample": "BACKGROUND: The impact of irritable bowel syndrome, a gastrointestinal motility disorder, is underestimated and poorly quantified, as clinicians may s"
+        },
+        {
+          "node_id": "L0_10_L1_1",
+          "level": 1,
+          "n_docs": 3,
+          "concepts": [
+            "esub",
+            "alink",
+            "ridged",
+            "ohana",
+            "akit"
+          ],
+          "method": "bge-m3",
+          "children": [],
+          "sample": "There has been an underestimation of the impact of irritable bowel syndrome (IBS) on an individual's functioning and quality of life (QoL). The genera"
+        }
+      ],
+      "sample": "BACKGROUND: Irritable bowel syndrome (IBS) is a common chronic gastrointestinal disorder. The role of pharmacotherapy for IBS is limited and focused m"
+    },
+    {
+      "node_id": "L0_16",
+      "level": 0,
+      "n_docs": 18,
+      "concepts": [
+        "modifiable",
+        "amines",
+        "piler",
+        "oins",
+        "osaur"
+      ],
+      "method": "jlens",
+      "children": [
+        {
+          "node_id": "L0_16_L1_0",
+          "level": 1,
+          "n_docs": 14,
+          "concepts": [
+            "clus",
+            "clusions",
+            "vers",
+            "ardu",
+            "preh"
+          ],
+          "method": "bge-m3",
+          "children": [],
+          "sample": "Diverticular disease of the colon is among the most prevalent conditions in western society and is among the leading reasons for outpatient visits and"
+        },
+        {
+          "node_id": "L0_16_L1_1",
+          "level": 1,
+          "n_docs": 3,
+          "concepts": [
+            "alink",
+            "akit",
+            "egov",
+            "vider",
+            "ohana"
+          ],
+          "method": "bge-m3",
+          "children": [],
+          "sample": "Segmental colitis associated with diverticula shares common histopathological features with inflammatory bowel disease and may benefit from treatment "
+        }
+      ],
+      "sample": "Diverticular disease of the colon is among the most prevalent conditions in western society and is among the leading reasons for outpatient visits and"
+    },
+    {
+      "node_id": "L0_19",
+      "level": 0,
+      "n_docs": 16,
+      "concepts": [
+        "requiring",
+        "leading",
+        "which",
+        "necess",
+        "treated"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "OBJECTIVE: To present a child who developed gastric ulcers and duodenal erosions after ingestion of hydrogen peroxide 3% and delineate the epidemiolog"
+    },
+    {
+      "node_id": "L0_20",
+      "level": 0,
+      "n_docs": 14,
+      "concepts": [
+        "receiving",
+        "treated",
+        "undergoing"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "While many women with polycystic ovary syndrome (PCOS) are overweight, obese or centrally obese, the effect of excess weight on the outcomes of PCOS i"
+    },
+    {
+      "node_id": "L0_21",
+      "level": 0,
+      "n_docs": 14,
+      "concepts": [
+        "Drug",
+        "Drugs",
+        "Administration",
+        "Pharmaceutical",
+        "Medicine"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "Hexane, chloroform, and ethyl acetate extracts of Capsicum Frutescens Fruit at 200 mg/kg resulted in death of all mice. In a short-term inhalation tox"
+    },
+    {
+      "node_id": "L0_22",
+      "level": 0,
+      "n_docs": 13,
+      "concepts": [
+        "functional",
+        "components",
+        "bitter",
+        "compounds",
+        "dietary"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "We investigated the cell growth inhibition of DHA from the cultured microalga Crypthecodinium cohnii (algal DHA [aDHA]) in human breast carcinoma MCF-"
+    },
+    {
+      "node_id": "L0_23",
+      "level": 0,
+      "n_docs": 12,
+      "concepts": [
+        "including",
+        "affecting",
+        "sleep",
+        "obesity",
+        "contributing"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "Overweight or obese women with PCOS had decreased sex hormone-binding globulin (SHBG), increased total testosterone, free androgen index, hirsutism, f"
+    },
+    {
+      "node_id": "L0_24",
+      "level": 0,
+      "n_docs": 12,
+      "concepts": [
+        "crossover",
+        "cross",
+        "parallel",
+        "placebo",
+        "crossed"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "RESULTS: Following CC ingestion, FMD decreased progressively and significantly (mean+/-s.e.m.: 0 min, 7.7+/-0.6; 30 min, 6.3+/-0.7; 60 min, 6.0+/-0.8%"
+    },
+    {
+      "node_id": "L0_25",
+      "level": 0,
+      "n_docs": 12,
+      "concepts": [
+        "insol",
+        "soluble",
+        "fibre",
+        "dietary",
+        "cellul"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "Approximately 75% of all kidney stones are composed primarily of calcium oxalate, and hyperoxaluria is a primary risk factor for this disorder. Nine t"
+    },
+    {
+      "node_id": "L0_26",
+      "level": 0,
+      "n_docs": 11,
+      "concepts": [
+        "serum",
+        "biom",
+        "markers",
+        "circulating",
+        "cardiovascular"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "Elevated phosphate (P) levels are seen in advanced renal failure and, together with dysregulated calcium, parathyroid hormone and vitamin D levels, co"
+    },
+    {
+      "node_id": "L0_27",
+      "level": 0,
+      "n_docs": 10,
+      "concepts": [
+        "risk",
+        "urinary",
+        "factors",
+        "risks",
+        "urine"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "A study was carried out to determine the effect of a low animal protein diet, such as taken by vegetarians, on the risk of urinary stone disease. A na"
+    },
+    {
+      "node_id": "L0_28",
+      "level": 0,
+      "n_docs": 10,
+      "concepts": [
+        "elige",
+        "iness",
+        "liquid"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "Background While symptom questionnaires provide a snapshot of bowel habits, they may not reflect day-to-day variations or the relationship between bow"
+    },
+    {
+      "node_id": "L0_29",
+      "level": 0,
+      "n_docs": 9,
+      "concepts": [
+        "Brass",
+        "cruc",
+        "cabbage",
+        "mustard",
+        "genus"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "In this study, the effect of Crocus sativus (saffron) was studied on male erectile dysfunction (ED). Twenty male patients with ED were followed for te"
+    },
+    {
+      "node_id": "L0_30",
+      "level": 0,
+      "n_docs": 8,
+      "concepts": [
+        "ourcem",
+        "ordinate",
+        "oders"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "Recent studies have suggested that statins, an established drug group in the prevention of cardiovascular mortality, could delay or prevent breast can"
+    },
+    {
+      "node_id": "L0_31",
+      "level": 0,
+      "n_docs": 8,
+      "concepts": [
+        "Participants",
+        "Elig",
+        "Women",
+        "Blood",
+        "Breast"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "Background Based on the hypothesized protective effect, we examined the effect of soy foods on estrogens in nipple aspirate fluid (NAF) and serum, pos"
+    },
+    {
+      "node_id": "L0_32",
+      "level": 0,
+      "n_docs": 8,
+      "concepts": [
+        "biom",
+        "quant",
+        "surrogate",
+        "endpoints",
+        "markers"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "Docosahexaenoic acid (DHA) is an omega-3 fatty acid that comprises 22 carbons and 6 alternative double bonds in its hydrocarbon chain (22:6omega3). Pr"
+    },
+    {
+      "node_id": "L0_33",
+      "level": 0,
+      "n_docs": 8,
+      "concepts": [
+        "circumference",
+        "ratio",
+        "circum",
+        "waist",
+        "diameter"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "BACKGROUND: To determine whether there is an association between diet and plasma insulin concentration that is independent of obesity, we studied the "
+    },
+    {
+      "node_id": "L0_34",
+      "level": 0,
+      "n_docs": 7,
+      "concepts": [
+        "behaviors",
+        "exhibited",
+        "healthy",
+        "reported",
+        "experienced"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "PURPOSE: To determine the frequency of adopting a healthy lifestyle (5 or more fruits and vegetables daily, regular exercise, BMI 18.5-29.9 kg/m2, no "
+    },
+    {
+      "node_id": "L0_35",
+      "level": 0,
+      "n_docs": 7,
+      "concepts": [
+        "previous",
+        "findings",
+        "effects",
+        "colon",
+        "earlier"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "Much evidence indicates that there is an increased motor activity in the colon from eating in several species of animals. Though some of this effect m"
+    },
+    {
+      "node_id": "L0_36",
+      "level": 0,
+      "n_docs": 7,
+      "concepts": [
+        "tures"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "Background Polychlorinated biphenyls (PCBs) and chlorinated pesticides are endocrine disruptors, altering both thyroid and estrogen hormonal systems. "
+    },
+    {
+      "node_id": "L0_37",
+      "level": 0,
+      "n_docs": 7,
+      "concepts": [
+        "Hôtel",
+        "Blood",
+        "Jeste"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "PURPOSE: To determine the effect of curcumin on plasma cells and osteoclasts in patients with MGUS. EXPERIMENTAL DESIGN: Twenty-six patients with MGUS"
+    },
+    {
+      "node_id": "L0_38",
+      "level": 0,
+      "n_docs": 6,
+      "concepts": [
+        "inoa",
+        "diet",
+        "alyzed",
+        "esub",
+        "Nutrition"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "The North American Institute of Medicine (IOM) recently published their report on dietary reference intakes (DRI) for Ca and vitamin D. The DRI commit"
+    },
+    {
+      "node_id": "L0_39",
+      "level": 0,
+      "n_docs": 6,
+      "concepts": [
+        "rights",
+        "droits",
+        "derechos",
+        "права",
+        "droit"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "MAIN OUTCOME MEASURES: Mean peak breath hydrogen, time of peak, area under the curve (AUC) for breath hydrogen and gastrointestinal symptoms were meas"
+    },
+    {
+      "node_id": "L0_40",
+      "level": 0,
+      "n_docs": 6,
+      "concepts": [
+        "represented",
+        "ohana",
+        "centered",
+        "alink",
+        "inoa"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "OBJECTIVE: To determine the relation of gas passage and abdominal bloating to the production of gas in the colon. DESIGN: Randomized, double-blind, cr"
+    },
+    {
+      "node_id": "L0_41",
+      "level": 0,
+      "n_docs": 6,
+      "concepts": [
+        "alink",
+        "odyn",
+        "okit",
+        "odied",
+        "alyzed"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "The world-wide increase of antimicrobial resistance in micro-organisms complicates medical treatment of infected humans. We did a risk-factor analysis"
+    },
+    {
+      "node_id": "L0_42",
+      "level": 0,
+      "n_docs": 6,
+      "concepts": [
+        "factors",
+        "factor",
+        "traits",
+        "mechanisms",
+        "genes"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "The speed of alleviation of signs and symptoms was similar for the two drugs. There were no untoward side effects, and cervical cytologic features wer"
+    },
+    {
+      "node_id": "L0_43",
+      "level": 0,
+      "n_docs": 6,
+      "concepts": [
+        "diet",
+        "alink",
+        "ridged",
+        "inoa",
+        "represented"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "A case-control study was carried out in Harbin city to assess the role of diet in the aetiology of colorectal cancer. A total of 336 incident cases of"
+    },
+    {
+      "node_id": "L0_44",
+      "level": 0,
+      "n_docs": 6,
+      "concepts": [
+        "fiber",
+        "diet",
+        "alyzed",
+        "inoa",
+        "esub"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "There is no recognized definition of what constitutes a high fiber diet. Intakes of dietary fiber in different populations internationally vary widely"
+    },
+    {
+      "node_id": "L0_45",
+      "level": 0,
+      "n_docs": 6,
+      "concepts": [
+        "stool",
+        "bowel",
+        "stools",
+        "load",
+        "colon"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "The present studies explored whether faecal retention in the colon is a causative factor in functional bowel disease, appendicitis, and haemorrhoids. "
+    },
+    {
+      "node_id": "L0_46",
+      "level": 0,
+      "n_docs": 6,
+      "concepts": [
+        "alink",
+        "odyn",
+        "ignet",
+        "esub",
+        "inoa"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "OBJECTIVE: To indicate why the world's most powerful nation state and one powerful sector of the food and drink production and manufacturing industry "
+    },
+    {
+      "node_id": "L0_47",
+      "level": 0,
+      "n_docs": 6,
+      "concepts": [
+        "chluss",
+        "obao",
+        "activ",
+        "zoek",
+        "ecided"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "BACKGROUND AND AIM: Studies have shown monounsaturated oleic acid to be less toxic than palmitic acid and to prevent/attenuate palmitic acid hepatocit"
+    },
+    {
+      "node_id": "L0_48",
+      "level": 0,
+      "n_docs": 6,
+      "concepts": [
+        "ohana",
+        "alink",
+        "alyzed",
+        "inoa",
+        "esub"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "The effect of an uncooked extreme vegan diet on fecal microflora was studied by direct stool sample gas-liquid chromatography (GLC) of bacterial cellu"
+    },
+    {
+      "node_id": "L0_49",
+      "level": 0,
+      "n_docs": 5,
+      "concepts": [
+        "inoa",
+        "alyzed",
+        "represented",
+        "alink",
+        "ohana"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "OBJECTIVE: Among plant foods, grain products, legumes, and seeds are important sources of phosphorus (P). Current data on P content and absorbability "
+    },
+    {
+      "node_id": "L0_50",
+      "level": 0,
+      "n_docs": 5,
+      "concepts": [
+        "ridged",
+        "ohana",
+        "alink",
+        "esub",
+        "inoa"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "However, conflicting reports especially in the prevention of chemotherapy-induced nausea and vomiting and motion sickness prevent us from drawing any "
+    },
+    {
+      "node_id": "L0_51",
+      "level": 0,
+      "n_docs": 5,
+      "concepts": [
+        "ohana",
+        "odied",
+        "represented",
+        "inoa",
+        "alink"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "The aim of the present study was to evaluate the effects of a Hibiscus sabdariffa extract powder (HSEP) and a recognized preventive treatment (diet) o"
+    },
+    {
+      "node_id": "L0_52",
+      "level": 0,
+      "n_docs": 5,
+      "concepts": [
+        "linked",
+        "alink",
+        "Vitamin",
+        "centered",
+        "represented"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "Therefore vitamin D deficiency has been linked to increased risk for preeclampsia, requiring a Cesarean section for birthing, multiple sclerosis, rheu"
+    },
+    {
+      "node_id": "L0_53",
+      "level": 0,
+      "n_docs": 5,
+      "concepts": [
+        "alink",
+        "ohana",
+        "okit",
+        "esub",
+        "almart"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "During the slaughter process, cattle carcasses are split by sawing centrally down the vertebral column, resulting in contamination of each half with s"
+    },
+    {
+      "node_id": "L0_54",
+      "level": 0,
+      "n_docs": 5,
+      "concepts": [
+        "alink",
+        "odied",
+        "ridged",
+        "ohana",
+        "odyn"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "The double-blind randomized controlled trial (RCT) is accepted by medicine as objective scientific methodology that, when ideally performed, produces "
+    },
+    {
+      "node_id": "L0_55",
+      "level": 0,
+      "n_docs": 5,
+      "concepts": [
+        "esub",
+        "ridged",
+        "alink",
+        "ohana",
+        "represented"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "There is evidence that certain phytoestrogens inhibit aromatase, the enzyme that converts androgens to oestrogens. Kinetic studies in cell-free prepar"
+    },
+    {
+      "node_id": "L0_56",
+      "level": 0,
+      "n_docs": 5,
+      "concepts": [
+        "alink",
+        "highlighted",
+        "inoa",
+        "represented",
+        "alyzed"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "Recent evidences have highlighted an influence of micronutrients in the maintenance of telomere length (TL)."
+    },
+    {
+      "node_id": "L0_57",
+      "level": 0,
+      "n_docs": 5,
+      "concepts": [
+        "text",
+        "texts",
+        "provided",
+        "textual",
+        "primary"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "Healthy overweight men (n = 6) consumed a control and spiced meal in a randomized crossover design with 1 wk between testing sessions. Blood was sampl"
+    },
+    {
+      "node_id": "L0_58",
+      "level": 0,
+      "n_docs": 5,
+      "concepts": [
+        "alink",
+        "esub",
+        "ridged",
+        "odied",
+        "ohana"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "CONCLUSIONS: The low level of self-reported counseling among these internists suggests that further emphasis on training in these skills is needed. Th"
+    },
+    {
+      "node_id": "L0_59",
+      "level": 0,
+      "n_docs": 5,
+      "concepts": [
+        "alink",
+        "ocalypse",
+        "odyn",
+        "isclosed",
+        "ohana"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "The Ethiopian Field Epidemiology and Laboratory Training Program (EFELTP) is a comprehensive two-year competency-based training and service program de"
+    },
+    {
+      "node_id": "L0_60",
+      "level": 0,
+      "n_docs": 5,
+      "concepts": [
+        "represented",
+        "alink",
+        "ridged",
+        "reflected",
+        "databases"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "MEDLINE, EMBASE, CINAHL, Cochrane Central Register of Controlled Trials (CENTRAL) and PSYCINFO were searched for studies reporting outcomes according "
+    },
+    {
+      "node_id": "L0_61",
+      "level": 0,
+      "n_docs": 5,
+      "concepts": [
+        "hormone",
+        "hormones",
+        "represented",
+        "esub",
+        "inoa"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "The hormonal and metabolic parameters measured at baseline, as well as after the intervention, were: follicle-stimulating hormone, luteinising hormone"
+    },
+    {
+      "node_id": "L0_62",
+      "level": 0,
+      "n_docs": 5,
+      "concepts": [
+        "inoa",
+        "alink",
+        "alyzed",
+        "represented",
+        "esub"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "CONCLUSION: Replacement of carbohydrates with protein in ad libitum diets improves weight loss and improves glucose metabolism by an effect that seems"
+    },
+    {
+      "node_id": "L0_63",
+      "level": 0,
+      "n_docs": 5,
+      "concepts": [
+        "Copyright",
+        "esub",
+        "umbed",
+        "alink",
+        "centered"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "© 2014 European Society of Endocrinology."
+    },
+    {
+      "node_id": "L0_64",
+      "level": 0,
+      "n_docs": 5,
+      "concepts": [
+        "alink",
+        "ridged",
+        "ohana",
+        "inoa",
+        "esub"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "Individual-based studies that investigated the relation between dietary alpha-linolenic acid (ALA) intake and prostate cancer risk have shown inconsis"
+    },
+    {
+      "node_id": "L0_65",
+      "level": 0,
+      "n_docs": 5,
+      "concepts": [
+        "inoa",
+        "ohana",
+        "alink",
+        "okit",
+        "almart"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "Colored-flesh potatoes are an excellent source of health-benefiting dietary polyphenols, but are stored for up to 3-6 months before consumption. This "
+    },
+    {
+      "node_id": "L0_66",
+      "level": 0,
+      "n_docs": 5,
+      "concepts": [
+        "alink",
+        "represented",
+        "egov",
+        "ohana",
+        "ridged"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "Heiner syndrome (HS) is a food hypersensitivity pulmonary disease that affects primarily infants, and is mostly caused by cow's milk (CM). Only a few "
+    },
+    {
+      "node_id": "L0_67",
+      "level": 0,
+      "n_docs": 5,
+      "concepts": [
+        "findings",
+        "experience",
+        "cohort",
+        "follow",
+        "approach"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "The symptoms were in the form of cough in seven, wheezing in three, hemoptysis in two, nasal congestion in three, dyspnea in one, recurrent otitis med"
+    },
+    {
+      "node_id": "L0_68",
+      "level": 0,
+      "n_docs": 5,
+      "concepts": [
+        "Stroke",
+        "alink",
+        "esub",
+        "odied",
+        "ridged"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "BACKGROUND: The contribution of various risk factors to the burden of stroke worldwide is unknown, particularly in countries of low and middle income."
+    },
+    {
+      "node_id": "L0_69",
+      "level": 0,
+      "n_docs": 5,
+      "concepts": [
+        "lower",
+        "higher",
+        "decrease",
+        "difference",
+        "lowering"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "INTRODUCTION: Vegetarian diets are considered to promote health and reduce the risk of some chronic diseases. It is also known that restriction or exc"
+    },
+    {
+      "node_id": "L0_70",
+      "level": 0,
+      "n_docs": 5,
+      "concepts": [
+        "alink",
+        "esub",
+        "represented",
+        "okit",
+        "ocaly"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "For 20 years, many articles report the presence of new compounds, called \"emerging compounds\", in wastewater and aquatic environments. The US EPA (Uni"
+    },
+    {
+      "node_id": "L0_71",
+      "level": 0,
+      "n_docs": 5,
+      "concepts": [
+        "egov",
+        "entiful",
+        "odied",
+        "alyzed",
+        "esub"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "The public perceives that the nutritional quality of eggs produced as free range is superior to that of eggs produced in cages. Therefore, this study "
+    },
+    {
+      "node_id": "L0_72",
+      "level": 0,
+      "n_docs": 5,
+      "concepts": [
+        "significant",
+        "significance",
+        "meaningful",
+        "signific",
+        "statistically"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "Patients were randomized to either open-label placebo pills presented as “placebo pills made of an inert substance, like sugar pills, that have been s"
+    },
+    {
+      "node_id": "L0_73",
+      "level": 0,
+      "n_docs": 5,
+      "concepts": [
+        "Diabetes",
+        "alink",
+        "okit",
+        "odied",
+        "ohana"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "Diabetic retinopathy is a common and specific microvascular complication of diabetes, and remains the leading cause of preventable blindness in workin"
+    },
+    {
+      "node_id": "L0_74",
+      "level": 0,
+      "n_docs": 5,
+      "concepts": [
+        "odied",
+        "represented",
+        "inoa",
+        "ohana",
+        "odyn"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "The majority of patients with a heavy faecal load but normal CTT had repetitive daily defecation, mostly with ease and with altering faecal consistenc"
+    },
+    {
+      "node_id": "L0_75",
+      "level": 0,
+      "n_docs": 5,
+      "concepts": [
+        "alink",
+        "represented",
+        "inoa",
+        "odied",
+        "ohana"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "The operated patients presented with a redundant colon (dolichocolon) significantly more often. These patients also had an extremely high rate of prev"
+    },
+    {
+      "node_id": "L0_76",
+      "level": 0,
+      "n_docs": 5,
+      "concepts": [
+        "esub",
+        "odyn",
+        "ohana",
+        "alink",
+        "okit"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "The aim of the study was to compare the straining forces applied when sitting or squatting during defecation. Twenty-eight apparently healthy voluntee"
+    },
+    {
+      "node_id": "L0_77",
+      "level": 0,
+      "n_docs": 5,
+      "concepts": [
+        "diet",
+        "odied",
+        "ridged",
+        "okit",
+        "esub"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "Environmental factors such as diets rich in saturated fats contribute to dysfunction and death of pancreatic β-cells in diabetes. Endoplasmic reticulu"
+    },
+    {
+      "node_id": "L0_78",
+      "level": 0,
+      "n_docs": 5,
+      "concepts": [
+        "alink",
+        "odied",
+        "diet",
+        "alyzed",
+        "esub"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "BACKGROUND: The results of some epidemiologic studies conducted by using questionnaires suggest that dietary fat composition influences diabetes risk."
+    },
+    {
+      "node_id": "L0_79",
+      "level": 0,
+      "n_docs": 5,
+      "concepts": [
+        "odied",
+        "alyzed",
+        "inoa",
+        "alink",
+        "ohana"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "Recent literature suggests that elevated free fatty acids (FFAs), especially saturated FFAs, may play an important role in lipotoxic mechanisms, both "
+    },
+    {
+      "node_id": "L0_80",
+      "level": 0,
+      "n_docs": 5,
+      "concepts": [
+        "odzi",
+        "utow",
+        "avaş",
+        "psilon",
+        "akit"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "OBJECTIVE: To measure Proteus mirabilis and Escherichia coli antibody levels in patients with rheumatoid arthritis (RA) during treatment by vegetarian"
+    },
+    {
+      "node_id": "L0_81",
+      "level": 0,
+      "n_docs": 5,
+      "concepts": [
+        "alink",
+        "ridged",
+        "represented",
+        "inoa",
+        "odied"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "Rheumatoid arthritis (RA) is a chronic and disabling polyarthritic disease, which affects mainly women in middle and old age. Extensive evidence based"
+    },
+    {
+      "node_id": "L0_82",
+      "level": 0,
+      "n_docs": 5,
+      "concepts": [
+        "plays",
+        "appears",
+        "interventions",
+        "modifications",
+        "etic"
+      ],
+      "method": "jlens",
+      "children": [],
+      "sample": "Background The last nationally representative assessment of kidney stone prevalence in the United States occurred in 1994. After a 13-yr hiatus, the N"
+    }
+  ]
+}

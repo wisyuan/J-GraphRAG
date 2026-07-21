@@ -1,0 +1,503 @@
+{
+  "n_fine_records": 1721,
+  "jspace": {
+    "top_dims": [
+      428,
+      873,
+      802,
+      347,
+      163,
+      224,
+      247,
+      697,
+      885,
+      706,
+      63,
+      420,
+      242,
+      937,
+      496,
+      518,
+      492,
+      397,
+      158,
+      589,
+      972,
+      385,
+      894,
+      206,
+      574,
+      565,
+      513,
+      858,
+      245,
+      757,
+      155,
+      195,
+      753,
+      475,
+      908,
+      26,
+      527,
+      744,
+      663,
+      101,
+      953,
+      358,
+      32,
+      741,
+      286,
+      87,
+      632,
+      165,
+      582,
+      346
+    ],
+    "top_var_sum": 0.03548717106018529,
+    "random_var_sum": 0.021402636239218027,
+    "concentration_ratio": 1.6580747653487131,
+    "total_dims": 1024
+  },
+  "cluster_labels": {
+    "84": {
+      "n_members": 32,
+      "concept_tokens": [
+        [
+          "fusioncooking",
+          0.438
+        ],
+        [
+          "subjunction",
+          0.4172
+        ],
+        [
+          "predetermination",
+          0.4065
+        ],
+        [
+          "compression",
+          0.4063
+        ],
+        [
+          "congener",
+          0.4058
+        ]
+      ],
+      "sample_docs": [
+        "const root:\nconst root = createTempDir();\n\t\t",
+        "const root:\nconst root = createTempDir();\n\t\t",
+        "const root:\nconst root = createTempDir();\n\t\t"
+      ]
+    },
+    "110": {
+      "n_members": 15,
+      "concept_tokens": [
+        [
+          "resgestae",
+          0.4464
+        ],
+        [
+          "uterinecontraction",
+          0.4405
+        ],
+        [
+          "predetermination",
+          0.4349
+        ],
+        [
+          "backstop",
+          0.4332
+        ],
+        [
+          "musclecontraction",
+          0.4295
+        ]
+      ],
+      "sample_docs": [
+        "const appendFullOutput:\nconst appendFullOutput = (text: string): void => {\n\t\tif (!fullOutputPath || ",
+        "const result:\nconst result = await env.exec(command, {\n\t\t\t...(options ?? {}),\n\t\t\tonStdout: onChunk,\n",
+        "const result:\nconst result = getOrThrow(await compact(preparation!, models, model));\n\t\texpect(result"
+      ]
+    },
+    "55": {
+      "n_members": 14,
+      "concept_tokens": [
+        [
+          "workflow",
+          0.5463
+        ],
+        [
+          "transfer",
+          0.5361
+        ],
+        [
+          "forwarding",
+          0.5238
+        ],
+        [
+          "practice",
+          0.5189
+        ],
+        [
+          "sending",
+          0.5128
+        ]
+      ],
+      "sample_docs": [
+        "interface AgentHarnessTurnState:\ninterface AgentHarnessTurnState<\n\tTSkill extends Skill = Skill,\n\tTP",
+        "class AgentHarness:\nexport class AgentHarness<\n\tTSkill extends Skill = Skill,\n\tTPromptTemplate exten",
+        "interface AgentHarnessResources:\nexport interface AgentHarnessResources<\n\tTSkill extends Skill = Ski"
+      ]
+    },
+    "154": {
+      "n_members": 13,
+      "concept_tokens": [
+        [
+          "burp",
+          0.4741
+        ],
+        [
+          "sending",
+          0.442
+        ],
+        [
+          "buddysystem",
+          0.4294
+        ],
+        [
+          "sleeptalking",
+          0.4265
+        ],
+        [
+          "feeling",
+          0.4248
+        ]
+      ],
+      "sample_docs": [
+        "const agent:\nconst agent = new Agent();\n\n\t\texpect(agent.state).toBeDefined();\n\t\texpect(agent.state.s",
+        "const agent:\nconst agent = new Agent({\n\t\t\tinitialState: {\n\t\t\t\tsystemPrompt: \"You are a helpful assis",
+        "const agent:\nconst agent = new Agent();\n\n\t\t// Test setSystemPrompt\n\t\tagent.state.systemPrompt = \"Cus"
+      ]
+    },
+    "89": {
+      "n_members": 13,
+      "concept_tokens": [
+        [
+          "faitaccompli",
+          0.4408
+        ],
+        [
+          "cannulisation",
+          0.4327
+        ],
+        [
+          "calloption",
+          0.4309
+        ],
+        [
+          "reverse",
+          0.4283
+        ],
+        [
+          "quickfix",
+          0.4199
+        ]
+      ],
+      "sample_docs": [
+        "const faux:\nconst faux = createFauxRegistration();\n\t\tfaux.setResponses([\n\t\t\tfauxAssistantMessage(\"Ni",
+        "const faux:\nconst faux = createFauxRegistration();\n\t\t\tfaux.setResponses([fauxAssistantMessage(\"HELLO",
+        "const registration:\nconst registration = newFaux();\n\t\tregistration.setResponses([\n\t\t\t(_context, opti"
+      ]
+    },
+    "171": {
+      "n_members": 13,
+      "concept_tokens": [
+        [
+          "resgestae",
+          0.4621
+        ],
+        [
+          "strut",
+          0.436
+        ],
+        [
+          "fusioncooking",
+          0.4282
+        ],
+        [
+          "compression",
+          0.4208
+        ],
+        [
+          "convolution",
+          0.4201
+        ]
+      ],
+      "sample_docs": [
+        "const env:\nconst env = new NodeExecutionEnv({ cwd: root });\n\t\t",
+        "const env:\nconst env = new NodeExecutionEnv({ cwd: root });\n\t\t",
+        "const env:\nconst env = new NodeExecutionEnv({ cwd: root });\n\t\t"
+      ]
+    },
+    "83": {
+      "n_members": 13,
+      "concept_tokens": [
+        [
+          "congener",
+          0.4601
+        ],
+        [
+          "resgestae",
+          0.4394
+        ],
+        [
+          "custom",
+          0.4254
+        ],
+        [
+          "default",
+          0.404
+        ],
+        [
+          "partitioning",
+          0.392
+        ]
+      ],
+      "sample_docs": [
+        "const dir:\nconst dir = createTempDir();\n\t\t",
+        "const dir:\nconst dir = createTempDir();\n\t\t",
+        "const dir:\nconst dir = createTempDir();\n\t\t"
+      ]
+    },
+    "32": {
+      "n_members": 11,
+      "concept_tokens": [
+        [
+          "predetermination",
+          0.5209
+        ],
+        [
+          "redetermination",
+          0.5127
+        ],
+        [
+          "practice",
+          0.5117
+        ],
+        [
+          "proscription",
+          0.4971
+        ],
+        [
+          "documentation",
+          0.4924
+        ]
+      ],
+      "sample_docs": [
+        "function parseAdvisoryUrl:\nfunction parseAdvisoryUrl(value: string): AdvisoryRef | undefined {\n\t",
+        "function readAdvisoryRefFromDraft:\nasync function readAdvisoryRefFromDraft(cwd: string, target: stri",
+        "function formatAdvisoryDetail:\nfunction formatAdvisoryDetail(advisory: GitHubAdvisoryMetadata): stri"
+      ]
+    },
+    "130": {
+      "n_members": 11,
+      "concept_tokens": [
+        [
+          "uterinecontraction",
+          0.5566
+        ],
+        [
+          "redetermination",
+          0.54
+        ],
+        [
+          "proscription",
+          0.4965
+        ],
+        [
+          "predetermination",
+          0.4884
+        ],
+        [
+          "faitaccompli",
+          0.4863
+        ]
+      ],
+      "sample_docs": [
+        "const abortController:\nconst abortController = new AbortController();\n\t\tlet resolvePromise = () => {",
+        "const promise:\nconst promise = new Promise<void>((resolve) => {\n\t\t\tresolvePromise = resolve;\n\t\t});\n\t",
+        "const abortController:\nconst abortController = new AbortController();\n\t\t"
+      ]
+    },
+    "122": {
+      "n_members": 11,
+      "concept_tokens": [
+        [
+          "uterinecontraction",
+          0.5526
+        ],
+        [
+          "congener",
+          0.5495
+        ],
+        [
+          "resgestae",
+          0.4973
+        ],
+        [
+          "disjunction",
+          0.4826
+        ],
+        [
+          "conglutination",
+          0.478
+        ]
+      ],
+      "sample_docs": [
+        "const entry:\nconst entry of entries) {\n\t\tif (entry.type === \"branch_summary\" && !entry.fromHook && e",
+        "const entry:\nconst entry = entries[i];\n\t\t",
+        "const entry:\nconst entry = entries[i];\n\t\tif (entry.type === \"message\") {\n\t\t\t"
+      ]
+    }
+  },
+  "gradient_input": {
+    "428": {
+      "target_dim": 428,
+      "top_tokens": [
+        [
+          "<s>",
+          -0.06821713596582413
+        ],
+        [
+          "^",
+          0.04139032959938049
+        ],
+        [
+          "IST",
+          -0.024129964411258698
+        ],
+        [
+          "ID",
+          -0.01948624849319458
+        ],
+        [
+          "-9",
+          0.019296864047646523
+        ],
+        [
+          "▁/",
+          0.01736893318593502
+        ],
+        [
+          ";",
+          -0.015820397064089775
+        ],
+        [
+          "A",
+          -0.014471269212663174
+        ],
+        [
+          "{",
+          -0.012930445373058319
+        ],
+        [
+          "-",
+          -0.012658784165978432
+        ]
+      ],
+      "target_value": -0.4064556658267975
+    },
+    "873": {
+      "target_dim": 873,
+      "top_tokens": [
+        [
+          "<s>",
+          0.050935547798871994
+        ],
+        [
+          "RE",
+          0.0437593050301075
+        ],
+        [
+          "ID",
+          0.03207860514521599
+        ],
+        [
+          "ID",
+          0.03143438696861267
+        ],
+        [
+          "▁=",
+          0.030165500938892365
+        ],
+        [
+          "RE",
+          0.030072102323174477
+        ],
+        [
+          "IST",
+          0.028188243508338928
+        ],
+        [
+          "^",
+          0.027874015271663666
+        ],
+        [
+          ";",
+          0.021991439163684845
+        ],
+        [
+          "_",
+          0.018129698932170868
+        ]
+      ],
+      "target_value": -0.7951633930206299
+    },
+    "802": {
+      "target_dim": 802,
+      "top_tokens": [
+        [
+          "▁con",
+          0.07305647432804108
+        ],
+        [
+          "<s>",
+          -0.06047472730278969
+        ],
+        [
+          "^",
+          0.04433394968509674
+        ],
+        [
+          "0",
+          -0.035473715513944626
+        ],
+        [
+          "▁G",
+          0.03207753226161003
+        ],
+        [
+          "A",
+          -0.02994379587471485
+        ],
+        [
+          "[",
+          -0.02940836176276207
+        ],
+        [
+          "-9",
+          0.02873324230313301
+        ],
+        [
+          "▁con",
+          0.026255914941430092
+        ],
+        [
+          "st",
+          -0.02602512389421463
+        ]
+      ],
+      "target_value": 0.09392788261175156
+    }
+  }
+}

@@ -1,0 +1,1487 @@
+{
+  "method": "per_position_lens_analysis",
+  "n_generate": 30,
+  "n_chunks_tested": 5,
+  "results": [
+    {
+      "chunk_index": 0,
+      "doc_excerpt": "About basal cell skin cancer What is basal cell skin cancer? How is basal cell skin cancer treated? What can you do to get the best care? Basal cell skin cancer, also known as basal cell carcinoma (BC",
+      "generated_text": ": 1 . Cancer  2 . Skin  3 . Treatment  4 . Prevention  5 . Diagnosis  6 . Surgery  7 . Care  8",
+      "doc_keywords": [
+        "basal",
+        "cancer",
+        "carcinoma",
+        "cases",
+        "caught",
+        "cells",
+        "cured",
+        "diagnosed",
+        "early",
+        "epidermis",
+        "every",
+        "known",
+        "layer",
+        "million",
+        "reading",
+        "remove",
+        "states",
+        "surgery",
+        "treated",
+        "united"
+      ],
+      "per_position": [
+        {
+          "position": -1,
+          "actual_token": "(prefill end)",
+          "lens_concepts": [
+            "Cancer",
+            "ohana",
+            "okit",
+            "alink",
+            "akit",
+            "esub",
+            "ridged",
+            "ocalypse"
+          ],
+          "overlap_count": 1,
+          "overlap_words": [
+            "cancer"
+          ]
+        },
+        {
+          "position": 0,
+          "actual_token": ":",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 1,
+          "actual_token": "1",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 2,
+          "actual_token": ".",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 3,
+          "actual_token": "Cancer",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 4,
+          "actual_token": "",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 5,
+          "actual_token": "2",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 6,
+          "actual_token": ".",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 7,
+          "actual_token": "Skin",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 8,
+          "actual_token": "",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 9,
+          "actual_token": "3",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 10,
+          "actual_token": ".",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 11,
+          "actual_token": "Treatment",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 12,
+          "actual_token": "",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 13,
+          "actual_token": "4",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 14,
+          "actual_token": ".",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 15,
+          "actual_token": "Prevention",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 16,
+          "actual_token": "",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 17,
+          "actual_token": "5",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 18,
+          "actual_token": ".",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 19,
+          "actual_token": "Diagnosis",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 20,
+          "actual_token": "",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 21,
+          "actual_token": "6",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 22,
+          "actual_token": ".",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 23,
+          "actual_token": "Surgery",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 24,
+          "actual_token": "",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 25,
+          "actual_token": "7",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 26,
+          "actual_token": ".",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 27,
+          "actual_token": "Care",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 28,
+          "actual_token": "",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        }
+      ],
+      "best_position": {
+        "position": -1,
+        "actual_token": "(prefill end)",
+        "lens_concepts": [
+          "Cancer",
+          "ohana",
+          "okit",
+          "alink",
+          "akit",
+          "esub",
+          "ridged",
+          "ocalypse"
+        ],
+        "overlap_count": 1,
+        "overlap_words": [
+          "cancer"
+        ]
+      },
+      "pos_neg1_coverage": {
+        "neg1_concepts": [
+          "Cancer",
+          "akit",
+          "alink",
+          "esub",
+          "ocalypse",
+          "ohana",
+          "okit",
+          "ridged"
+        ],
+        "concepts_only_in_generation": [],
+        "neg1_covers_pct": 800.0
+      }
+    },
+    {
+      "chunk_index": 50,
+      "doc_excerpt": "u may experience some side effects. They include: Tiredness (fatigue) Nausea and vomiting Lung and breathing problems (eg, cough, shortness of breath, chest pain) Damage to major organs including the ",
+      "generated_text": ":  1 . Side effects  2 . Fat igue  3 . N ause a  4 . C ough  5 . Liver  6 . Kid",
+      "doc_keywords": [
+        "blood",
+        "breath",
+        "breathing",
+        "cancer",
+        "chest",
+        "cough",
+        "damage",
+        "effects",
+        "experience",
+        "fatigue",
+        "immune",
+        "liver",
+        "major",
+        "nausea",
+        "organs",
+        "problems",
+        "shortness",
+        "tiredness",
+        "trial",
+        "vomiting"
+      ],
+      "per_position": [
+        {
+          "position": -1,
+          "actual_token": "(prefill end)",
+          "lens_concepts": [
+            "okit",
+            "akit",
+            "Side",
+            "anuts",
+            "vider",
+            "alink",
+            "agini",
+            "ohana"
+          ],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 0,
+          "actual_token": ":",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 1,
+          "actual_token": "",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 2,
+          "actual_token": "1",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 3,
+          "actual_token": ".",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 4,
+          "actual_token": "Side",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 5,
+          "actual_token": "effects",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 6,
+          "actual_token": "",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 7,
+          "actual_token": "2",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 8,
+          "actual_token": ".",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 9,
+          "actual_token": "Fat",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 10,
+          "actual_token": "igue",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 11,
+          "actual_token": "",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 12,
+          "actual_token": "3",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 13,
+          "actual_token": ".",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 14,
+          "actual_token": "N",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 15,
+          "actual_token": "ause",
+          "lens_concepts": [
+            "nausea",
+            "ause",
+            "vomiting"
+          ],
+          "overlap_count": 2,
+          "overlap_words": [
+            "nausea",
+            "vomiting"
+          ]
+        },
+        {
+          "position": 16,
+          "actual_token": "a",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 17,
+          "actual_token": "",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 18,
+          "actual_token": "4",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 19,
+          "actual_token": ".",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 20,
+          "actual_token": "C",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 21,
+          "actual_token": "ough",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 22,
+          "actual_token": "",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 23,
+          "actual_token": "5",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 24,
+          "actual_token": ".",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 25,
+          "actual_token": "Liver",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 26,
+          "actual_token": "",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 27,
+          "actual_token": "6",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 28,
+          "actual_token": ".",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        }
+      ],
+      "best_position": {
+        "position": 15,
+        "actual_token": "ause",
+        "lens_concepts": [
+          "nausea",
+          "ause",
+          "vomiting"
+        ],
+        "overlap_count": 2,
+        "overlap_words": [
+          "nausea",
+          "vomiting"
+        ]
+      },
+      "pos_neg1_coverage": {
+        "neg1_concepts": [
+          "Side",
+          "agini",
+          "akit",
+          "alink",
+          "anuts",
+          "ohana",
+          "okit",
+          "vider"
+        ],
+        "concepts_only_in_generation": [
+          "ause",
+          "nausea",
+          "vomiting"
+        ],
+        "neg1_covers_pct": 267.0
+      }
+    },
+    {
+      "chunk_index": 100,
+      "doc_excerpt": "digestive or gastrointestinal (GI) tract is part of the digestive system. Food enters the mouth and passes through the esophagus into the stomach. After being broken down into a liquid, food enters th",
+      "generated_text": ": 1 . Digest ive  2 . Tr act  3 . Es oph agus  4 . St om ach  5 . Int est ine  6",
+      "doc_keywords": [
+        "cells",
+        "connective",
+        "contains",
+        "digestive",
+        "enters",
+        "epithelium",
+        "esophagus",
+        "intestine",
+        "lamina",
+        "layer",
+        "mucosa",
+        "muscle",
+        "muscularis",
+        "parts",
+        "propria",
+        "stomach",
+        "submucosa",
+        "tissue",
+        "under",
+        "vessels"
+      ],
+      "per_position": [
+        {
+          "position": -1,
+          "actual_token": "(prefill end)",
+          "lens_concepts": [
+            "ohana",
+            "okit",
+            "alink",
+            "odyn",
+            "akit",
+            "esub",
+            "ections",
+            "egov"
+          ],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 0,
+          "actual_token": ":",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 1,
+          "actual_token": "1",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 2,
+          "actual_token": ".",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 3,
+          "actual_token": "Digest",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 4,
+          "actual_token": "ive",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 5,
+          "actual_token": "",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 6,
+          "actual_token": "2",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 7,
+          "actual_token": ".",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 8,
+          "actual_token": "Tr",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 9,
+          "actual_token": "act",
+          "lens_concepts": [
+            "tract",
+            "rigesimal",
+            "track",
+            "tracker",
+            "tracking",
+            "ventario",
+            "ourmet",
+            "tracts"
+          ],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 10,
+          "actual_token": "",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 11,
+          "actual_token": "3",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 12,
+          "actual_token": ".",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 13,
+          "actual_token": "Es",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 14,
+          "actual_token": "oph",
+          "lens_concepts": [
+            "ophage"
+          ],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 15,
+          "actual_token": "agus",
+          "lens_concepts": [
+            "agus"
+          ],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 16,
+          "actual_token": "",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 17,
+          "actual_token": "4",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 18,
+          "actual_token": ".",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 19,
+          "actual_token": "St",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 20,
+          "actual_token": "om",
+          "lens_concepts": [
+            "stomach",
+            "intestine",
+            "gastric",
+            "ovenant",
+            "intest",
+            "ochastic",
+            "ollapse",
+            "roma"
+          ],
+          "overlap_count": 2,
+          "overlap_words": [
+            "intestine",
+            "stomach"
+          ]
+        },
+        {
+          "position": 21,
+          "actual_token": "ach",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 22,
+          "actual_token": "",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 23,
+          "actual_token": "5",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 24,
+          "actual_token": ".",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 25,
+          "actual_token": "Int",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 26,
+          "actual_token": "est",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 27,
+          "actual_token": "ine",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 28,
+          "actual_token": "",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        }
+      ],
+      "best_position": {
+        "position": 20,
+        "actual_token": "om",
+        "lens_concepts": [
+          "stomach",
+          "intestine",
+          "gastric",
+          "ovenant",
+          "intest",
+          "ochastic",
+          "ollapse",
+          "roma"
+        ],
+        "overlap_count": 2,
+        "overlap_words": [
+          "intestine",
+          "stomach"
+        ]
+      },
+      "pos_neg1_coverage": {
+        "neg1_concepts": [
+          "akit",
+          "alink",
+          "ections",
+          "egov",
+          "esub",
+          "odyn",
+          "ohana",
+          "okit"
+        ],
+        "concepts_only_in_generation": [
+          "agus",
+          "gastric",
+          "intest",
+          "intestine",
+          "ochastic",
+          "ollapse",
+          "ophage",
+          "ourmet",
+          "ovenant",
+          "rigesimal",
+          "roma",
+          "stomach",
+          "track",
+          "tracker",
+          "tracking",
+          "tract",
+          "tracts",
+          "ventario"
+        ],
+        "neg1_covers_pct": 44.0
+      }
+    },
+    {
+      "chunk_index": 200,
+      "doc_excerpt": "the probe into your vagina. This may help the doctor see your ovaries more clearly. Transvaginal ultrasound Ultrasound uses sound waves to make pictures of the inside of the body. For a transvaginal u",
+      "generated_text": ": 1 . Ul trasound  2 . V agina  3 . O var ies  4 . Comfort  5 . Cancer  6 . CT  7",
+      "doc_keywords": [
+        "allergic",
+        "cancer",
+        "clearly",
+        "contrast",
+        "discomfort",
+        "doctor",
+        "inserted",
+        "inside",
+        "ovaries",
+        "painless",
+        "pictures",
+        "probe",
+        "scans",
+        "sound",
+        "spread",
+        "transvaginal",
+        "ultrasound",
+        "ultrasounds",
+        "vagina",
+        "waves"
+      ],
+      "per_position": [
+        {
+          "position": -1,
+          "actual_token": "(prefill end)",
+          "lens_concepts": [
+            "alink",
+            "ohana",
+            "vider",
+            "okit",
+            "odyn",
+            "almart",
+            "agini",
+            "aternity"
+          ],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 0,
+          "actual_token": ":",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 1,
+          "actual_token": "1",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 2,
+          "actual_token": ".",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 3,
+          "actual_token": "Ul",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 4,
+          "actual_token": "trasound",
+          "lens_concepts": [
+            "trasound"
+          ],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 5,
+          "actual_token": "",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 6,
+          "actual_token": "2",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 7,
+          "actual_token": ".",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 8,
+          "actual_token": "V",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 9,
+          "actual_token": "agina",
+          "lens_concepts": [
+            "agina",
+            "vagina"
+          ],
+          "overlap_count": 1,
+          "overlap_words": [
+            "vagina"
+          ]
+        },
+        {
+          "position": 10,
+          "actual_token": "",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 11,
+          "actual_token": "3",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 12,
+          "actual_token": ".",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 13,
+          "actual_token": "O",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 14,
+          "actual_token": "var",
+          "lens_concepts": [
+            "ovar",
+            "odash",
+            "ulumi",
+            "ocytes",
+            "Specifier",
+            "ervo"
+          ],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 15,
+          "actual_token": "ies",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 16,
+          "actual_token": "",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 17,
+          "actual_token": "4",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 18,
+          "actual_token": ".",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 19,
+          "actual_token": "Comfort",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 20,
+          "actual_token": "",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 21,
+          "actual_token": "5",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 22,
+          "actual_token": ".",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 23,
+          "actual_token": "Cancer",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 24,
+          "actual_token": "",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 25,
+          "actual_token": "6",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 26,
+          "actual_token": ".",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 27,
+          "actual_token": "CT",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 28,
+          "actual_token": "",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        }
+      ],
+      "best_position": {
+        "position": 9,
+        "actual_token": "agina",
+        "lens_concepts": [
+          "agina",
+          "vagina"
+        ],
+        "overlap_count": 1,
+        "overlap_words": [
+          "vagina"
+        ]
+      },
+      "pos_neg1_coverage": {
+        "neg1_concepts": [
+          "agini",
+          "alink",
+          "almart",
+          "aternity",
+          "odyn",
+          "ohana",
+          "okit",
+          "vider"
+        ],
+        "concepts_only_in_generation": [
+          "Specifier",
+          "agina",
+          "ervo",
+          "ocytes",
+          "odash",
+          "ovar",
+          "trasound",
+          "ulumi",
+          "vagina"
+        ],
+        "neg1_covers_pct": 89.0
+      }
+    },
+    {
+      "chunk_index": 400,
+      "doc_excerpt": "a radioactive substance called a tracer into your bloodstream. It takes about an hour for the tracer to circulate throughout your body. The tracer targets your cancer cells, which show up as bright sp",
+      "generated_text": ": 1 . Tr acer  2 . Blood stream  3 . Circ ulation  4 . Cancer  5 . Scan  6 . Ur ine  7",
+      "doc_keywords": [
+        "bloodstream",
+        "bright",
+        "called",
+        "cancer",
+        "cells",
+        "combined",
+        "emission",
+        "imaging",
+        "passed",
+        "positron",
+        "prostate",
+        "radioactive",
+        "radiotracer",
+        "spots",
+        "substance",
+        "takes",
+        "targets",
+        "throughout",
+        "tracer",
+        "urine"
+      ],
+      "per_position": [
+        {
+          "position": -1,
+          "actual_token": "(prefill end)",
+          "lens_concepts": [
+            "ohana",
+            "odyn",
+            "alink",
+            "esub",
+            "okit",
+            "clide",
+            "astle",
+            "Blood"
+          ],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 0,
+          "actual_token": ":",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 1,
+          "actual_token": "1",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 2,
+          "actual_token": ".",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 3,
+          "actual_token": "Tr",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 4,
+          "actual_token": "acer",
+          "lens_concepts": [
+            "rigesimal",
+            "tracer",
+            "acer"
+          ],
+          "overlap_count": 1,
+          "overlap_words": [
+            "tracer"
+          ]
+        },
+        {
+          "position": 5,
+          "actual_token": "",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 6,
+          "actual_token": "2",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 7,
+          "actual_token": ".",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 8,
+          "actual_token": "Blood",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 9,
+          "actual_token": "stream",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 10,
+          "actual_token": "",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 11,
+          "actual_token": "3",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 12,
+          "actual_token": ".",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 13,
+          "actual_token": "Circ",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 14,
+          "actual_token": "ulation",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 15,
+          "actual_token": "",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 16,
+          "actual_token": "4",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 17,
+          "actual_token": ".",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 18,
+          "actual_token": "Cancer",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 19,
+          "actual_token": "",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 20,
+          "actual_token": "5",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 21,
+          "actual_token": ".",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 22,
+          "actual_token": "Scan",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 23,
+          "actual_token": "",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 24,
+          "actual_token": "6",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 25,
+          "actual_token": ".",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 26,
+          "actual_token": "Ur",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 27,
+          "actual_token": "ine",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        },
+        {
+          "position": 28,
+          "actual_token": "",
+          "lens_concepts": [],
+          "overlap_count": 0,
+          "overlap_words": []
+        }
+      ],
+      "best_position": {
+        "position": 4,
+        "actual_token": "acer",
+        "lens_concepts": [
+          "rigesimal",
+          "tracer",
+          "acer"
+        ],
+        "overlap_count": 1,
+        "overlap_words": [
+          "tracer"
+        ]
+      },
+      "pos_neg1_coverage": {
+        "neg1_concepts": [
+          "Blood",
+          "alink",
+          "astle",
+          "clide",
+          "esub",
+          "odyn",
+          "ohana",
+          "okit"
+        ],
+        "concepts_only_in_generation": [
+          "acer",
+          "rigesimal",
+          "tracer"
+        ],
+        "neg1_covers_pct": 267.0
+      }
+    }
+  ],
+  "summary": {
+    "avg_neg1_coverage_pct": 293.0
+  }
+}

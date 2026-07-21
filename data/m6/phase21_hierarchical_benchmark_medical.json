@@ -1,0 +1,61 @@
+{
+  "method": "hierarchical_concept_graph_benchmark",
+  "domain": "medical",
+  "n_chunks": 200,
+  "n_questions": 28,
+  "results": {
+    "B0": {
+      "overall": 0.6955804612054611,
+      "by_level": {
+        "L1": 1.0,
+        "L2": 0.5,
+        "L3": 1.0,
+        "L4": 0.2823218448218448
+      },
+      "n": 28
+    },
+    "flat_concept": {
+      "overall": 0.7305871212121212,
+      "by_level": {
+        "L1": 1.0,
+        "L2": 0.5952380952380951,
+        "L3": 1.0,
+        "L4": 0.32711038961038963
+      },
+      "n": 28
+    },
+    "hierarchical": {
+      "overall": 0.7031926406926406,
+      "by_level": {
+        "L1": 1.0,
+        "L2": 0.5595238095238095,
+        "L3": 0.9642857142857143,
+        "L4": 0.2889610389610389
+      },
+      "n": 28
+    }
+  },
+  "graph_stats": {
+    "flat": {
+      "n_chunks": 200,
+      "n_concepts": 87,
+      "avg_concepts_per_chunk": 5.0,
+      "avg_chunks_per_concept": 11.494252873563218,
+      "n_cooccur_edges": 420
+    },
+    "meta": {
+      "n_chunks": 200,
+      "n_concepts": 23,
+      "avg_concepts_per_chunk": 4.255,
+      "avg_chunks_per_concept": 37.0,
+      "n_cooccur_edges": 93
+    },
+    "sub": {
+      "n_chunks": 200,
+      "n_concepts": 65,
+      "avg_concepts_per_chunk": 2.62,
+      "avg_chunks_per_concept": 8.061538461538461,
+      "n_cooccur_edges": 154
+    }
+  }
+}

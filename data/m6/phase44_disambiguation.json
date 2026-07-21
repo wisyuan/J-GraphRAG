@@ -1,0 +1,4027 @@
+{
+  "summary": {
+    "n_pairs": 40,
+    "label_counts": {
+      "same": 6,
+      "near": 16,
+      "diff": 18
+    },
+    "v1_accuracy": 0.8,
+    "v1_unparsed": 0,
+    "v2_accuracy": 0.45,
+    "v2_unlocated": 0,
+    "bge_accuracy": 0.6,
+    "gpu_time_s": 14.7
+  },
+  "results": [
+    {
+      "a": "surgical",
+      "b": "surgeries",
+      "label": "same",
+      "context_src": "cooccur:Medical::chunk_214",
+      "v1_raw": [
+        {
+          "token": "similar",
+          "prob": 0.2349
+        },
+        {
+          "token": "unrelated",
+          "prob": 0.2073
+        },
+        {
+          "token": "related",
+          "prob": 0.2073
+        },
+        {
+          "token": "Similar",
+          "prob": 0.1425
+        },
+        {
+          "token": "Related",
+          "prob": 0.111
+        },
+        {
+          "token": "Same",
+          "prob": 0.0408
+        },
+        {
+          "token": "same",
+          "prob": 0.017
+        },
+        {
+          "token": "similar",
+          "prob": 0.0133
+        },
+        {
+          "token": "相似",
+          "prob": 0.0052
+        },
+        {
+          "token": "related",
+          "prob": 0.0025
+        },
+        {
+          "token": "相关新闻",
+          "prob": 0.002
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0019
+        },
+        {
+          "token": "imilar",
+          "prob": 0.0016
+        },
+        {
+          "token": "Different",
+          "prob": 0.0012
+        },
+        {
+          "token": "Related",
+          "prob": 0.0007
+        }
+      ],
+      "v1_pred": "near",
+      "v2": {
+        "shared": [],
+        "n_shared": 0,
+        "jaccard": 0.0,
+        "pred": "diff",
+        "words_a": [
+          "procedures",
+          "removal",
+          "treatments",
+          "approaches",
+          "options",
+          "procedure",
+          "methods",
+          "techniques"
+        ],
+        "words_b": [
+          "involved",
+          "performed",
+          "types",
+          "focused",
+          "relevant"
+        ],
+        "positions": {
+          "surgical": 195,
+          "surgeries": 197
+        }
+      },
+      "bge_cos": 0.8372,
+      "bge_pred": "same"
+    },
+    {
+      "a": "kidney",
+      "b": "kidneys",
+      "label": "same",
+      "context_src": "cooccur:Medical::chunk_301",
+      "v1_raw": [
+        {
+          "token": "same",
+          "prob": 0.4624
+        },
+        {
+          "token": "Same",
+          "prob": 0.2804
+        },
+        {
+          "token": "unrelated",
+          "prob": 0.0803
+        },
+        {
+          "token": "similar",
+          "prob": 0.0487
+        },
+        {
+          "token": "related",
+          "prob": 0.043
+        },
+        {
+          "token": "Related",
+          "prob": 0.0335
+        },
+        {
+          "token": "Similar",
+          "prob": 0.0296
+        },
+        {
+          "token": "same",
+          "prob": 0.0051
+        },
+        {
+          "token": "similar",
+          "prob": 0.0016
+        },
+        {
+          "token": "相似",
+          "prob": 0.0015
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0013
+        },
+        {
+          "token": "相同",
+          "prob": 0.0011
+        },
+        {
+          "token": "Same",
+          "prob": 0.0007
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0005
+        },
+        {
+          "token": "相同的",
+          "prob": 0.0004
+        }
+      ],
+      "v1_pred": "same",
+      "v2": {
+        "shared": [
+          "anatomy",
+          "function",
+          "functions",
+          "location",
+          "organs",
+          "structure"
+        ],
+        "n_shared": 6,
+        "jaccard": 0.455,
+        "pred": "same",
+        "words_a": [
+          "anatomy",
+          "structure",
+          "cancer",
+          "location",
+          "structures",
+          "function",
+          "pathology",
+          "organs"
+        ],
+        "words_b": [
+          "anatomy",
+          "structure",
+          "function",
+          "functions",
+          "organs",
+          "overview",
+          "location",
+          "functioning"
+        ],
+        "positions": {
+          "kidney": 183,
+          "kidneys": 185
+        }
+      },
+      "bge_cos": 0.9618,
+      "bge_pred": "same"
+    },
+    {
+      "a": "breast",
+      "b": "breasts",
+      "label": "same",
+      "context_src": "cooccur:Medical::chunk_460",
+      "v1_raw": [
+        {
+          "token": "Same",
+          "prob": 0.4552
+        },
+        {
+          "token": "same",
+          "prob": 0.3545
+        },
+        {
+          "token": "unrelated",
+          "prob": 0.0544
+        },
+        {
+          "token": "Related",
+          "prob": 0.048
+        },
+        {
+          "token": "related",
+          "prob": 0.0374
+        },
+        {
+          "token": "Similar",
+          "prob": 0.0137
+        },
+        {
+          "token": "similar",
+          "prob": 0.0107
+        },
+        {
+          "token": "same",
+          "prob": 0.0065
+        },
+        {
+          "token": "相同",
+          "prob": 0.0015
+        },
+        {
+          "token": "Same",
+          "prob": 0.0014
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0014
+        },
+        {
+          "token": "同一",
+          "prob": 0.0006
+        },
+        {
+          "token": "相同的",
+          "prob": 0.0005
+        },
+        {
+          "token": "related",
+          "prob": 0.0005
+        },
+        {
+          "token": "similar",
+          "prob": 0.0005
+        }
+      ],
+      "v1_pred": "same",
+      "v2": {
+        "shared": [
+          "anatomy",
+          "structure",
+          "structures",
+          "tissues"
+        ],
+        "n_shared": 4,
+        "jaccard": 0.444,
+        "pred": "same",
+        "words_a": [
+          "anatomy",
+          "structure",
+          "tissue",
+          "structures",
+          "tissues",
+          "glands",
+          "gland",
+          "pathology"
+        ],
+        "words_b": [
+          "anatomy",
+          "structure",
+          "structures",
+          "tissues",
+          "components"
+        ],
+        "positions": {
+          "breast": 205,
+          "breasts": 207
+        }
+      },
+      "bge_cos": 0.9398,
+      "bge_pred": "same"
+    },
+    {
+      "a": "tumor",
+      "b": "tumors",
+      "label": "same",
+      "context_src": "cooccur:Medical::chunk_104",
+      "v1_raw": [
+        {
+          "token": "Same",
+          "prob": 0.5365
+        },
+        {
+          "token": "same",
+          "prob": 0.3687
+        },
+        {
+          "token": "Related",
+          "prob": 0.0303
+        },
+        {
+          "token": "related",
+          "prob": 0.0143
+        },
+        {
+          "token": "unrelated",
+          "prob": 0.0126
+        },
+        {
+          "token": "Similar",
+          "prob": 0.0098
+        },
+        {
+          "token": "similar",
+          "prob": 0.0068
+        },
+        {
+          "token": "same",
+          "prob": 0.0046
+        },
+        {
+          "token": "相同",
+          "prob": 0.0012
+        },
+        {
+          "token": "Same",
+          "prob": 0.0009
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0007
+        },
+        {
+          "token": "同一",
+          "prob": 0.0006
+        },
+        {
+          "token": "相同的",
+          "prob": 0.0003
+        },
+        {
+          "token": "synonymous",
+          "prob": 0.0002
+        },
+        {
+          "token": "一样的",
+          "prob": 0.0002
+        }
+      ],
+      "v1_pred": "same",
+      "v2": {
+        "shared": [
+          "classification",
+          "classifications",
+          "size",
+          "sizes"
+        ],
+        "n_shared": 4,
+        "jaccard": 0.333,
+        "pred": "same",
+        "words_a": [
+          "size",
+          "sizes",
+          "classification",
+          "staging",
+          "stage",
+          "stages",
+          "classifications",
+          "characteristics"
+        ],
+        "words_b": [
+          "classification",
+          "categorized",
+          "classified",
+          "sizes",
+          "size",
+          "classifications",
+          "sized",
+          "characterized"
+        ],
+        "positions": {
+          "tumor": 203,
+          "tumors": 205
+        }
+      },
+      "bge_cos": 0.92,
+      "bge_pred": "same"
+    },
+    {
+      "a": "cancer",
+      "b": "cancers",
+      "label": "same",
+      "context_src": "cooccur:Medical::chunk_305",
+      "v1_raw": [
+        {
+          "token": "similar",
+          "prob": 0.3154
+        },
+        {
+          "token": "same",
+          "prob": 0.2168
+        },
+        {
+          "token": "Same",
+          "prob": 0.1688
+        },
+        {
+          "token": "Similar",
+          "prob": 0.116
+        },
+        {
+          "token": "related",
+          "prob": 0.0704
+        },
+        {
+          "token": "Related",
+          "prob": 0.0484
+        },
+        {
+          "token": "unrelated",
+          "prob": 0.0332
+        },
+        {
+          "token": "similar",
+          "prob": 0.0065
+        },
+        {
+          "token": "相似",
+          "prob": 0.0048
+        },
+        {
+          "token": "same",
+          "prob": 0.0031
+        },
+        {
+          "token": "相同",
+          "prob": 0.0014
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0012
+        },
+        {
+          "token": "imilar",
+          "prob": 0.0011
+        },
+        {
+          "token": "synonymous",
+          "prob": 0.0008
+        },
+        {
+          "token": "related",
+          "prob": 0.0006
+        }
+      ],
+      "v1_pred": "near",
+      "v2": {
+        "shared": [
+          "types"
+        ],
+        "n_shared": 1,
+        "jaccard": 0.077,
+        "pred": "near",
+        "words_a": [
+          "types",
+          "awareness",
+          "diagnosis",
+          "guidelines",
+          "treatments",
+          "classification",
+          "subtype",
+          "diagnoses"
+        ],
+        "words_b": [
+          "affecting",
+          "relevant",
+          "types",
+          "linked",
+          "categorized",
+          "concerning"
+        ],
+        "positions": {
+          "cancer": 207,
+          "cancers": 209
+        }
+      },
+      "bge_cos": 0.916,
+      "bge_pred": "same"
+    },
+    {
+      "a": "surgery",
+      "b": "surgeries",
+      "label": "same",
+      "context_src": "cooccur:Medical::chunk_214",
+      "v1_raw": [
+        {
+          "token": "Same",
+          "prob": 0.3337
+        },
+        {
+          "token": "same",
+          "prob": 0.2945
+        },
+        {
+          "token": "similar",
+          "prob": 0.0956
+        },
+        {
+          "token": "related",
+          "prob": 0.0844
+        },
+        {
+          "token": "Similar",
+          "prob": 0.058
+        },
+        {
+          "token": "unrelated",
+          "prob": 0.0512
+        },
+        {
+          "token": "Related",
+          "prob": 0.0452
+        },
+        {
+          "token": "same",
+          "prob": 0.0069
+        },
+        {
+          "token": "similar",
+          "prob": 0.0037
+        },
+        {
+          "token": "相同",
+          "prob": 0.0035
+        },
+        {
+          "token": "相似",
+          "prob": 0.0033
+        },
+        {
+          "token": "相关新闻",
+          "prob": 0.0016
+        },
+        {
+          "token": "相同的",
+          "prob": 0.0011
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0009
+        },
+        {
+          "token": "Same",
+          "prob": 0.0009
+        }
+      ],
+      "v1_pred": "same",
+      "v2": {
+        "shared": [
+          "types"
+        ],
+        "n_shared": 1,
+        "jaccard": 0.067,
+        "pred": "near",
+        "words_a": [
+          "types",
+          "procedures",
+          "removal",
+          "options",
+          "techniques",
+          "methods",
+          "type",
+          "treatments"
+        ],
+        "words_b": [
+          "involved",
+          "performed",
+          "types",
+          "discussed",
+          "targeted",
+          "focused",
+          "descriptions",
+          "commonly"
+        ],
+        "positions": {
+          "surgery": 195,
+          "surgeries": 197
+        }
+      },
+      "bge_cos": 0.8855,
+      "bge_pred": "same"
+    },
+    {
+      "a": "injectable",
+      "b": "injection",
+      "label": "near",
+      "context_src": "cooccur:Medical::chunk_857",
+      "v1_raw": [
+        {
+          "token": "unrelated",
+          "prob": 0.8869
+        },
+        {
+          "token": "similar",
+          "prob": 0.0268
+        },
+        {
+          "token": "Similar",
+          "prob": 0.0236
+        },
+        {
+          "token": "Related",
+          "prob": 0.0236
+        },
+        {
+          "token": "related",
+          "prob": 0.0236
+        },
+        {
+          "token": "Un",
+          "prob": 0.0044
+        },
+        {
+          "token": "similar",
+          "prob": 0.0022
+        },
+        {
+          "token": "Same",
+          "prob": 0.0016
+        },
+        {
+          "token": "Different",
+          "prob": 0.0009
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0006
+        },
+        {
+          "token": "相似",
+          "prob": 0.0005
+        },
+        {
+          "token": "imilar",
+          "prob": 0.0005
+        },
+        {
+          "token": "无关",
+          "prob": 0.0005
+        },
+        {
+          "token": "same",
+          "prob": 0.0004
+        },
+        {
+          "token": "related",
+          "prob": 0.0003
+        }
+      ],
+      "v1_pred": "diff",
+      "v2": {
+        "shared": [
+          "administration",
+          "delivery",
+          "methods"
+        ],
+        "n_shared": 3,
+        "jaccard": 0.231,
+        "pred": "same",
+        "words_a": [
+          "able",
+          "ability",
+          "administration",
+          "treatments",
+          "asive",
+          "methods",
+          "delivery",
+          "therapies"
+        ],
+        "words_b": [
+          "methods",
+          "sites",
+          "administration",
+          "site",
+          "delivery",
+          "techniques",
+          "procedures",
+          "technique"
+        ],
+        "positions": {
+          "injectable": 179,
+          "injection": 182
+        }
+      },
+      "bge_cos": 0.8519,
+      "bge_pred": "same"
+    },
+    {
+      "a": "medicine",
+      "b": "medications",
+      "label": "near",
+      "context_src": "concat:Medical::chunk_125+Medical::chunk_228",
+      "v1_raw": [
+        {
+          "token": "similar",
+          "prob": 0.255
+        },
+        {
+          "token": "Same",
+          "prob": 0.255
+        },
+        {
+          "token": "same",
+          "prob": 0.1986
+        },
+        {
+          "token": "Similar",
+          "prob": 0.1365
+        },
+        {
+          "token": "related",
+          "prob": 0.0569
+        },
+        {
+          "token": "Related",
+          "prob": 0.0502
+        },
+        {
+          "token": "相似",
+          "prob": 0.0099
+        },
+        {
+          "token": "similar",
+          "prob": 0.0064
+        },
+        {
+          "token": "same",
+          "prob": 0.0036
+        },
+        {
+          "token": "相同",
+          "prob": 0.003
+        },
+        {
+          "token": "synonymous",
+          "prob": 0.0028
+        },
+        {
+          "token": "unrelated",
+          "prob": 0.0014
+        },
+        {
+          "token": "同一",
+          "prob": 0.0013
+        },
+        {
+          "token": "相近",
+          "prob": 0.0013
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0013
+        }
+      ],
+      "v1_pred": "near",
+      "v2": {
+        "shared": [],
+        "n_shared": 0,
+        "jaccard": 0.0,
+        "pred": "diff",
+        "words_a": [
+          "history",
+          "types",
+          "interactions",
+          "interaction",
+          "usage",
+          "administration",
+          "histories",
+          "intake"
+        ],
+        "words_b": [],
+        "positions": {
+          "medicine": 172,
+          "medications": 174
+        }
+      },
+      "bge_cos": 0.8137,
+      "bge_pred": "same"
+    },
+    {
+      "a": "genetic",
+      "b": "genetics",
+      "label": "near",
+      "context_src": "cooccur:Medical::chunk_206",
+      "v1_raw": [
+        {
+          "token": "Same",
+          "prob": 0.2675
+        },
+        {
+          "token": "Similar",
+          "prob": 0.2675
+        },
+        {
+          "token": "similar",
+          "prob": 0.1623
+        },
+        {
+          "token": "Related",
+          "prob": 0.1115
+        },
+        {
+          "token": "related",
+          "prob": 0.0869
+        },
+        {
+          "token": "same",
+          "prob": 0.0676
+        },
+        {
+          "token": "similar",
+          "prob": 0.0056
+        },
+        {
+          "token": "相似",
+          "prob": 0.0052
+        },
+        {
+          "token": "unrelated",
+          "prob": 0.0041
+        },
+        {
+          "token": "same",
+          "prob": 0.0022
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0022
+        },
+        {
+          "token": "相关新闻",
+          "prob": 0.0014
+        },
+        {
+          "token": "相同",
+          "prob": 0.0013
+        },
+        {
+          "token": "related",
+          "prob": 0.0009
+        },
+        {
+          "token": "imilar",
+          "prob": 0.0009
+        }
+      ],
+      "v1_pred": "near",
+      "v2": {
+        "shared": [
+          "consultation",
+          "counsel",
+          "counseling",
+          "counselor",
+          "counselors",
+          "testing"
+        ],
+        "n_shared": 6,
+        "jaccard": 0.667,
+        "pred": "same",
+        "words_a": [
+          "counselor",
+          "counseling",
+          "counselors",
+          "testing",
+          "counsel",
+          "consultation",
+          "disorders",
+          "consulting"
+        ],
+        "words_b": [
+          "counseling",
+          "counselor",
+          "testing",
+          "counselors",
+          "consultation",
+          "tests",
+          "counsel"
+        ],
+        "positions": {
+          "genetic": 175,
+          "genetics": 177
+        }
+      },
+      "bge_cos": 0.9068,
+      "bge_pred": "same"
+    },
+    {
+      "a": "therapy",
+      "b": "treatments",
+      "label": "near",
+      "context_src": "concat:Medical::chunk_450+Medical::chunk_278",
+      "v1_raw": [
+        {
+          "token": "similar",
+          "prob": 0.581
+        },
+        {
+          "token": "Similar",
+          "prob": 0.311
+        },
+        {
+          "token": "related",
+          "prob": 0.0328
+        },
+        {
+          "token": "similar",
+          "prob": 0.0225
+        },
+        {
+          "token": "Related",
+          "prob": 0.0199
+        },
+        {
+          "token": "相似",
+          "prob": 0.0155
+        },
+        {
+          "token": "unrelated",
+          "prob": 0.0047
+        },
+        {
+          "token": "Same",
+          "prob": 0.0027
+        },
+        {
+          "token": "Similar",
+          "prob": 0.0015
+        },
+        {
+          "token": "imilar",
+          "prob": 0.0014
+        },
+        {
+          "token": "same",
+          "prob": 0.0014
+        },
+        {
+          "token": "synonymous",
+          "prob": 0.0006
+        },
+        {
+          "token": "相近",
+          "prob": 0.0005
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0004
+        },
+        {
+          "token": "related",
+          "prob": 0.0004
+        }
+      ],
+      "v1_pred": "near",
+      "v2": {
+        "shared": [
+          "approaches",
+          "combination",
+          "combinations",
+          "methods"
+        ],
+        "n_shared": 4,
+        "jaccard": 0.3,
+        "pred": "same",
+        "words_a": [
+          "types",
+          "approaches",
+          "combinations",
+          "methods",
+          "treatments",
+          "combination",
+          "techniques",
+          "kinds"
+        ],
+        "words_b": [
+          "approaches",
+          "combinations",
+          "combining",
+          "used",
+          "methods"
+        ],
+        "positions": {
+          "therapy": 193,
+          "treatments": 195
+        }
+      },
+      "bge_cos": 0.7696,
+      "bge_pred": "near"
+    },
+    {
+      "a": "cancer",
+      "b": "carcinoma",
+      "label": "near",
+      "context_src": "cooccur:Medical::chunk_454",
+      "v1_raw": [
+        {
+          "token": "similar",
+          "prob": 0.5263
+        },
+        {
+          "token": "Similar",
+          "prob": 0.2194
+        },
+        {
+          "token": "related",
+          "prob": 0.1036
+        },
+        {
+          "token": "Related",
+          "prob": 0.1036
+        },
+        {
+          "token": "similar",
+          "prob": 0.0109
+        },
+        {
+          "token": "Same",
+          "prob": 0.0096
+        },
+        {
+          "token": "相似",
+          "prob": 0.0091
+        },
+        {
+          "token": "same",
+          "prob": 0.0048
+        },
+        {
+          "token": "unrelated",
+          "prob": 0.0018
+        },
+        {
+          "token": "imilar",
+          "prob": 0.0014
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0013
+        },
+        {
+          "token": "synonymous",
+          "prob": 0.0012
+        },
+        {
+          "token": "related",
+          "prob": 0.0007
+        },
+        {
+          "token": "相近",
+          "prob": 0.0007
+        },
+        {
+          "token": "Similar",
+          "prob": 0.0006
+        }
+      ],
+      "v1_pred": "near",
+      "v2": {
+        "shared": [
+          "classification",
+          "subtype",
+          "type",
+          "types"
+        ],
+        "n_shared": 4,
+        "jaccard": 0.5,
+        "pred": "same",
+        "words_a": [
+          "types",
+          "pathology",
+          "type",
+          "classification",
+          "diagnosis",
+          "subtype",
+          "cells"
+        ],
+        "words_b": [
+          "types",
+          "type",
+          "subtype",
+          "classification",
+          "development"
+        ],
+        "positions": {
+          "cancer": 181,
+          "carcinoma": 183
+        }
+      },
+      "bge_cos": 0.8019,
+      "bge_pred": "same"
+    },
+    {
+      "a": "symptoms",
+      "b": "diagnosis",
+      "label": "near",
+      "context_src": "concat:Medical::chunk_542+Medical::chunk_16",
+      "v1_raw": [
+        {
+          "token": "unrelated",
+          "prob": 0.9907
+        },
+        {
+          "token": "related",
+          "prob": 0.0025
+        },
+        {
+          "token": "Un",
+          "prob": 0.0022
+        },
+        {
+          "token": "Related",
+          "prob": 0.0018
+        },
+        {
+          "token": "无关",
+          "prob": 0.0007
+        },
+        {
+          "token": "Similar",
+          "prob": 0.0004
+        },
+        {
+          "token": "Different",
+          "prob": 0.0004
+        },
+        {
+          "token": "similar",
+          "prob": 0.0003
+        },
+        {
+          "token": "different",
+          "prob": 0.0001
+        },
+        {
+          "token": "related",
+          "prob": 0.0001
+        },
+        {
+          "token": "similar",
+          "prob": 0.0001
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0
+        },
+        {
+          "token": "imilar",
+          "prob": 0.0
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0
+        },
+        {
+          "token": "相似",
+          "prob": 0.0
+        }
+      ],
+      "v1_pred": "diff",
+      "v2": {
+        "shared": [],
+        "n_shared": 0,
+        "jaccard": 0.0,
+        "pred": "diff",
+        "words_a": [
+          "caused",
+          "relevant",
+          "linked",
+          "diagnosis"
+        ],
+        "words_b": [
+          "methods",
+          "process",
+          "procedures",
+          "processes",
+          "through",
+          "procedure",
+          "approaches",
+          "approach"
+        ],
+        "positions": {
+          "symptoms": 183,
+          "diagnosis": 185
+        }
+      },
+      "bge_cos": 0.6953,
+      "bge_pred": "near"
+    },
+    {
+      "a": "radiation",
+      "b": "chemotherapy",
+      "label": "near",
+      "context_src": "concat:Medical::chunk_144+Medical::chunk_148",
+      "v1_raw": [
+        {
+          "token": "unrelated",
+          "prob": 0.9971
+        },
+        {
+          "token": "无关",
+          "prob": 0.0017
+        },
+        {
+          "token": "related",
+          "prob": 0.0002
+        },
+        {
+          "token": "Un",
+          "prob": 0.0002
+        },
+        {
+          "token": "Related",
+          "prob": 0.0001
+        },
+        {
+          "token": "Different",
+          "prob": 0.0001
+        },
+        {
+          "token": "similar",
+          "prob": 0.0001
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0
+        },
+        {
+          "token": "different",
+          "prob": 0.0
+        },
+        {
+          "token": "Similar",
+          "prob": 0.0
+        },
+        {
+          "token": "agini",
+          "prob": 0.0
+        },
+        {
+          "token": "similar",
+          "prob": 0.0
+        },
+        {
+          "token": "imilar",
+          "prob": 0.0
+        },
+        {
+          "token": "完全不同",
+          "prob": 0.0
+        },
+        {
+          "token": "related",
+          "prob": 0.0
+        }
+      ],
+      "v1_pred": "diff",
+      "v2": {
+        "shared": [],
+        "n_shared": 0,
+        "jaccard": 0.0,
+        "pred": "diff",
+        "words_a": [
+          "imaging",
+          "exposure",
+          "dose",
+          "technology",
+          "usage",
+          "therapy",
+          "techniques",
+          "dental"
+        ],
+        "words_b": [
+          "combined",
+          "treatments"
+        ],
+        "positions": {
+          "radiation": 184,
+          "chemotherapy": 186
+        }
+      },
+      "bge_cos": 0.6186,
+      "bge_pred": "near"
+    },
+    {
+      "a": "genes",
+      "b": "genetics",
+      "label": "near",
+      "context_src": "cooccur:Medical::chunk_406",
+      "v1_raw": [
+        {
+          "token": "Same",
+          "prob": 0.2862
+        },
+        {
+          "token": "Similar",
+          "prob": 0.2862
+        },
+        {
+          "token": "similar",
+          "prob": 0.1352
+        },
+        {
+          "token": "Related",
+          "prob": 0.1193
+        },
+        {
+          "token": "related",
+          "prob": 0.0724
+        },
+        {
+          "token": "same",
+          "prob": 0.0639
+        },
+        {
+          "token": "相似",
+          "prob": 0.0063
+        },
+        {
+          "token": "unrelated",
+          "prob": 0.0056
+        },
+        {
+          "token": "similar",
+          "prob": 0.0043
+        },
+        {
+          "token": "same",
+          "prob": 0.0025
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0018
+        },
+        {
+          "token": "相同",
+          "prob": 0.0015
+        },
+        {
+          "token": "Different",
+          "prob": 0.0012
+        },
+        {
+          "token": "imilar",
+          "prob": 0.0009
+        },
+        {
+          "token": "related",
+          "prob": 0.0008
+        }
+      ],
+      "v1_pred": "near",
+      "v2": {
+        "shared": [],
+        "n_shared": 0,
+        "jaccard": 0.0,
+        "pred": "diff",
+        "words_a": [
+          "mutations",
+          "mutation"
+        ],
+        "words_b": [],
+        "positions": {
+          "genes": 186,
+          "genetics": 188
+        }
+      },
+      "bge_cos": 0.8809,
+      "bge_pred": "same"
+    },
+    {
+      "a": "drugs",
+      "b": "medications",
+      "label": "near",
+      "context_src": "cooccur:Medical::chunk_228",
+      "v1_raw": [
+        {
+          "token": "Similar",
+          "prob": 0.3209
+        },
+        {
+          "token": "similar",
+          "prob": 0.2832
+        },
+        {
+          "token": "Same",
+          "prob": 0.25
+        },
+        {
+          "token": "same",
+          "prob": 0.0811
+        },
+        {
+          "token": "Related",
+          "prob": 0.0232
+        },
+        {
+          "token": "related",
+          "prob": 0.0141
+        },
+        {
+          "token": "相似",
+          "prob": 0.0075
+        },
+        {
+          "token": "similar",
+          "prob": 0.0059
+        },
+        {
+          "token": "相同",
+          "prob": 0.0016
+        },
+        {
+          "token": "same",
+          "prob": 0.0013
+        },
+        {
+          "token": "synonymous",
+          "prob": 0.0009
+        },
+        {
+          "token": "相近",
+          "prob": 0.0007
+        },
+        {
+          "token": "Similar",
+          "prob": 0.0006
+        },
+        {
+          "token": "imilar",
+          "prob": 0.0005
+        },
+        {
+          "token": "相关新闻",
+          "prob": 0.0004
+        }
+      ],
+      "v1_pred": "near",
+      "v2": {
+        "shared": [
+          "side"
+        ],
+        "n_shared": 1,
+        "jaccard": 0.143,
+        "pred": "near",
+        "words_a": [
+          "side",
+          "common",
+          "commonly",
+          "adverse",
+          "effects",
+          "reactions"
+        ],
+        "words_b": [
+          "side",
+          "interactions"
+        ],
+        "positions": {
+          "drugs": 171,
+          "medications": 173
+        }
+      },
+      "bge_cos": 0.848,
+      "bge_pred": "same"
+    },
+    {
+      "a": "chemotherapy",
+      "b": "therapy",
+      "label": "near",
+      "context_src": "concat:Medical::chunk_148+Medical::chunk_450",
+      "v1_raw": [
+        {
+          "token": "unrelated",
+          "prob": 0.961
+        },
+        {
+          "token": "similar",
+          "prob": 0.0094
+        },
+        {
+          "token": "related",
+          "prob": 0.0069
+        },
+        {
+          "token": "Similar",
+          "prob": 0.0061
+        },
+        {
+          "token": "Related",
+          "prob": 0.0045
+        },
+        {
+          "token": "similar",
+          "prob": 0.0027
+        },
+        {
+          "token": "Different",
+          "prob": 0.0009
+        },
+        {
+          "token": "相似",
+          "prob": 0.0008
+        },
+        {
+          "token": "无关",
+          "prob": 0.0008
+        },
+        {
+          "token": "imilar",
+          "prob": 0.0007
+        },
+        {
+          "token": "different",
+          "prob": 0.0005
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0005
+        },
+        {
+          "token": "related",
+          "prob": 0.0004
+        },
+        {
+          "token": "相关新闻",
+          "prob": 0.0003
+        },
+        {
+          "token": "Un",
+          "prob": 0.0003
+        }
+      ],
+      "v1_pred": "diff",
+      "v2": {
+        "shared": [
+          "combination",
+          "combinations",
+          "combining",
+          "treatments"
+        ],
+        "n_shared": 4,
+        "jaccard": 0.333,
+        "pred": "same",
+        "words_a": [
+          "combined",
+          "combination",
+          "treatments",
+          "combinations",
+          "combining",
+          "therapy",
+          "administration",
+          "therapies"
+        ],
+        "words_b": [
+          "combinations",
+          "combining",
+          "combination",
+          "types",
+          "approaches",
+          "treatments",
+          "methods",
+          "type"
+        ],
+        "positions": {
+          "chemotherapy": 190,
+          "therapy": 192
+        }
+      },
+      "bge_cos": 0.7209,
+      "bge_pred": "near"
+    },
+    {
+      "a": "tumor",
+      "b": "cancer",
+      "label": "near",
+      "context_src": "cooccur:Medical::chunk_10",
+      "v1_raw": [
+        {
+          "token": "Similar",
+          "prob": 0.508
+        },
+        {
+          "token": "similar",
+          "prob": 0.3956
+        },
+        {
+          "token": "similar",
+          "prob": 0.0253
+        },
+        {
+          "token": "Related",
+          "prob": 0.0223
+        },
+        {
+          "token": "相似",
+          "prob": 0.0174
+        },
+        {
+          "token": "related",
+          "prob": 0.0112
+        },
+        {
+          "token": "unrelated",
+          "prob": 0.0064
+        },
+        {
+          "token": "imilar",
+          "prob": 0.005
+        },
+        {
+          "token": "Similar",
+          "prob": 0.0021
+        },
+        {
+          "token": "Same",
+          "prob": 0.0015
+        },
+        {
+          "token": "相近",
+          "prob": 0.0008
+        },
+        {
+          "token": "类似",
+          "prob": 0.0003
+        },
+        {
+          "token": "related",
+          "prob": 0.0003
+        },
+        {
+          "token": "Different",
+          "prob": 0.0003
+        },
+        {
+          "token": "same",
+          "prob": 0.0002
+        }
+      ],
+      "v1_pred": "near",
+      "v2": {
+        "shared": [
+          "classification",
+          "classifications",
+          "spread",
+          "type",
+          "types"
+        ],
+        "n_shared": 5,
+        "jaccard": 0.333,
+        "pred": "same",
+        "words_a": [
+          "types",
+          "classification",
+          "classifications",
+          "spread",
+          "categories",
+          "locations",
+          "type",
+          "spreading"
+        ],
+        "words_b": [
+          "types",
+          "progression",
+          "classification",
+          "diagnosis",
+          "spread",
+          "severity",
+          "type",
+          "iology"
+        ],
+        "positions": {
+          "tumor": 201,
+          "cancer": 203
+        }
+      },
+      "bge_cos": 0.8216,
+      "bge_pred": "same"
+    },
+    {
+      "a": "biopsy",
+      "b": "diagnosis",
+      "label": "near",
+      "context_src": "concat:Medical::chunk_441+Medical::chunk_16",
+      "v1_raw": [
+        {
+          "token": "unrelated",
+          "prob": 0.8679
+        },
+        {
+          "token": "related",
+          "prob": 0.0432
+        },
+        {
+          "token": "similar",
+          "prob": 0.0297
+        },
+        {
+          "token": "Related",
+          "prob": 0.0231
+        },
+        {
+          "token": "Similar",
+          "prob": 0.0204
+        },
+        {
+          "token": "Un",
+          "prob": 0.0031
+        },
+        {
+          "token": "similar",
+          "prob": 0.0028
+        },
+        {
+          "token": "相似",
+          "prob": 0.0017
+        },
+        {
+          "token": "无关",
+          "prob": 0.001
+        },
+        {
+          "token": "related",
+          "prob": 0.001
+        },
+        {
+          "token": "Different",
+          "prob": 0.0007
+        },
+        {
+          "token": "imilar",
+          "prob": 0.0007
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0005
+        },
+        {
+          "token": "different",
+          "prob": 0.0003
+        },
+        {
+          "token": "Diagnostic",
+          "prob": 0.0002
+        }
+      ],
+      "v1_pred": "diff",
+      "v2": {
+        "shared": [
+          "assessment",
+          "evaluation"
+        ],
+        "n_shared": 2,
+        "jaccard": 0.2,
+        "pred": "same",
+        "words_a": [
+          "assessment",
+          "evaluation",
+          "core",
+          "cores",
+          "diagnosis",
+          "examination",
+          "sample",
+          "interpret"
+        ],
+        "words_b": [
+          "assessment",
+          "evaluation",
+          "methods",
+          "process"
+        ],
+        "positions": {
+          "biopsy": 186,
+          "diagnosis": 188
+        }
+      },
+      "bge_cos": 0.6357,
+      "bge_pred": "near"
+    },
+    {
+      "a": "tumor",
+      "b": "carcinoma",
+      "label": "near",
+      "context_src": "concat:Medical::chunk_10+Medical::chunk_454",
+      "v1_raw": [
+        {
+          "token": "unrelated",
+          "prob": 0.4169
+        },
+        {
+          "token": "similar",
+          "prob": 0.2529
+        },
+        {
+          "token": "Similar",
+          "prob": 0.2231
+        },
+        {
+          "token": "similar",
+          "prob": 0.0302
+        },
+        {
+          "token": "相似",
+          "prob": 0.0195
+        },
+        {
+          "token": "Related",
+          "prob": 0.0162
+        },
+        {
+          "token": "related",
+          "prob": 0.0126
+        },
+        {
+          "token": "imilar",
+          "prob": 0.0087
+        },
+        {
+          "token": "Different",
+          "prob": 0.0036
+        },
+        {
+          "token": "Similar",
+          "prob": 0.0019
+        },
+        {
+          "token": "different",
+          "prob": 0.0011
+        },
+        {
+          "token": "相关新闻",
+          "prob": 0.001
+        },
+        {
+          "token": "相近",
+          "prob": 0.0007
+        },
+        {
+          "token": "related",
+          "prob": 0.0006
+        },
+        {
+          "token": "类似",
+          "prob": 0.0006
+        }
+      ],
+      "v1_pred": "near",
+      "v2": {
+        "shared": [
+          "classification",
+          "types"
+        ],
+        "n_shared": 2,
+        "jaccard": 0.222,
+        "pred": "same",
+        "words_a": [
+          "types",
+          "spread",
+          "spreading",
+          "classification",
+          "spreads",
+          "locations",
+          "progression",
+          "location"
+        ],
+        "words_b": [
+          "types",
+          "type",
+          "classification"
+        ],
+        "positions": {
+          "tumor": 200,
+          "carcinoma": 202
+        }
+      },
+      "bge_cos": 0.7199,
+      "bge_pred": "near"
+    },
+    {
+      "a": "surgery",
+      "b": "surgeon",
+      "label": "near",
+      "context_src": "cooccur:Medical::chunk_552",
+      "v1_raw": [
+        {
+          "token": "unrelated",
+          "prob": 0.6939
+        },
+        {
+          "token": "related",
+          "prob": 0.1548
+        },
+        {
+          "token": "similar",
+          "prob": 0.0503
+        },
+        {
+          "token": "Related",
+          "prob": 0.0503
+        },
+        {
+          "token": "Similar",
+          "prob": 0.0269
+        },
+        {
+          "token": "similar",
+          "prob": 0.005
+        },
+        {
+          "token": "相似",
+          "prob": 0.0044
+        },
+        {
+          "token": "related",
+          "prob": 0.0022
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0016
+        },
+        {
+          "token": "Un",
+          "prob": 0.001
+        },
+        {
+          "token": "imilar",
+          "prob": 0.001
+        },
+        {
+          "token": "相关新闻",
+          "prob": 0.0006
+        },
+        {
+          "token": "无关",
+          "prob": 0.0005
+        },
+        {
+          "token": "Related",
+          "prob": 0.0005
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0004
+        }
+      ],
+      "v1_pred": "diff",
+      "v2": {
+        "shared": [
+          "precision",
+          "technique",
+          "techniques"
+        ],
+        "n_shared": 3,
+        "jaccard": 0.273,
+        "pred": "same",
+        "words_a": [
+          "procedure",
+          "procedures",
+          "process",
+          "technique",
+          "techniques",
+          "precision"
+        ],
+        "words_b": [
+          "precision",
+          "expertise",
+          "technique",
+          "involvement",
+          "techniques",
+          "accuracy",
+          "targeted",
+          "skills"
+        ],
+        "positions": {
+          "surgery": 187,
+          "surgeon": 189
+        }
+      },
+      "bge_cos": 0.8138,
+      "bge_pred": "same"
+    },
+    {
+      "a": "genes",
+      "b": "mutation",
+      "label": "near",
+      "context_src": "cooccur:Medical::chunk_406",
+      "v1_raw": [
+        {
+          "token": "similar",
+          "prob": 0.2365
+        },
+        {
+          "token": "related",
+          "prob": 0.2087
+        },
+        {
+          "token": "unrelated",
+          "prob": 0.2087
+        },
+        {
+          "token": "Similar",
+          "prob": 0.1626
+        },
+        {
+          "token": "Related",
+          "prob": 0.1266
+        },
+        {
+          "token": "similar",
+          "prob": 0.0171
+        },
+        {
+          "token": "相似",
+          "prob": 0.0133
+        },
+        {
+          "token": "imilar",
+          "prob": 0.0052
+        },
+        {
+          "token": "related",
+          "prob": 0.0036
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0028
+        },
+        {
+          "token": "Different",
+          "prob": 0.0026
+        },
+        {
+          "token": "Similar",
+          "prob": 0.0009
+        },
+        {
+          "token": "相关新闻",
+          "prob": 0.0008
+        },
+        {
+          "token": "Same",
+          "prob": 0.0008
+        },
+        {
+          "token": "Related",
+          "prob": 0.0007
+        }
+      ],
+      "v1_pred": "near",
+      "v2": {
+        "shared": [],
+        "n_shared": 0,
+        "jaccard": 0.0,
+        "pred": "diff",
+        "words_a": [
+          "mutations",
+          "mutation"
+        ],
+        "words_b": [
+          "types",
+          "ypes"
+        ],
+        "positions": {
+          "genes": 186,
+          "mutation": 188
+        }
+      },
+      "bge_cos": 0.5599,
+      "bge_pred": "near"
+    },
+    {
+      "a": "drugs",
+      "b": "medicine",
+      "label": "near",
+      "context_src": "concat:Medical::chunk_228+Medical::chunk_125",
+      "v1_raw": [
+        {
+          "token": "Similar",
+          "prob": 0.434
+        },
+        {
+          "token": "similar",
+          "prob": 0.2632
+        },
+        {
+          "token": "unrelated",
+          "prob": 0.0968
+        },
+        {
+          "token": "Related",
+          "prob": 0.0968
+        },
+        {
+          "token": "related",
+          "prob": 0.0457
+        },
+        {
+          "token": "similar",
+          "prob": 0.023
+        },
+        {
+          "token": "相似",
+          "prob": 0.0109
+        },
+        {
+          "token": "Same",
+          "prob": 0.0079
+        },
+        {
+          "token": "imilar",
+          "prob": 0.0033
+        },
+        {
+          "token": "Different",
+          "prob": 0.0029
+        },
+        {
+          "token": "相关新闻",
+          "prob": 0.0018
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0014
+        },
+        {
+          "token": "Similar",
+          "prob": 0.0012
+        },
+        {
+          "token": "related",
+          "prob": 0.001
+        },
+        {
+          "token": "same",
+          "prob": 0.0009
+        }
+      ],
+      "v1_pred": "near",
+      "v2": {
+        "shared": [
+          "effects",
+          "reactions",
+          "side"
+        ],
+        "n_shared": 3,
+        "jaccard": 0.273,
+        "pred": "same",
+        "words_a": [
+          "side",
+          "common",
+          "commonly",
+          "adverse",
+          "effects",
+          "reactions"
+        ],
+        "words_b": [
+          "interactions",
+          "interaction",
+          "side",
+          "interact",
+          "effects",
+          "safety",
+          "reactions",
+          "administration"
+        ],
+        "positions": {
+          "drugs": 172,
+          "medicine": 174
+        }
+      },
+      "bge_cos": 0.7428,
+      "bge_pred": "near"
+    },
+    {
+      "a": "headaches",
+      "b": "kidneys",
+      "label": "diff",
+      "context_src": "concat:Medical::chunk_244+Medical::chunk_301",
+      "v1_raw": [
+        {
+          "token": "unrelated",
+          "prob": 0.9833
+        },
+        {
+          "token": "Un",
+          "prob": 0.0124
+        },
+        {
+          "token": "无关",
+          "prob": 0.0035
+        },
+        {
+          "token": "Related",
+          "prob": 0.0004
+        },
+        {
+          "token": "related",
+          "prob": 0.0001
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0
+        },
+        {
+          "token": "Different",
+          "prob": 0.0
+        },
+        {
+          "token": "Rel",
+          "prob": 0.0
+        },
+        {
+          "token": "irrelevant",
+          "prob": 0.0
+        },
+        {
+          "token": "Un",
+          "prob": 0.0
+        },
+        {
+          "token": "related",
+          "prob": 0.0
+        },
+        {
+          "token": "相关的",
+          "prob": 0.0
+        },
+        {
+          "token": "Similar",
+          "prob": 0.0
+        },
+        {
+          "token": "usercontent",
+          "prob": 0.0
+        },
+        {
+          "token": "agini",
+          "prob": 0.0
+        }
+      ],
+      "v1_pred": "diff",
+      "v2": {
+        "shared": [],
+        "n_shared": 0,
+        "jaccard": 0.0,
+        "pred": "diff",
+        "words_a": [
+          "affecting"
+        ],
+        "words_b": [
+          "cancer",
+          "cancers",
+          "diseases",
+          "anatomy",
+          "disorders"
+        ],
+        "positions": {
+          "headaches": 181,
+          "kidneys": 183
+        }
+      },
+      "bge_cos": 0.5834,
+      "bge_pred": "near"
+    },
+    {
+      "a": "radiation",
+      "b": "pregnancy",
+      "label": "diff",
+      "context_src": "concat:Medical::chunk_144+Medical::chunk_139",
+      "v1_raw": [
+        {
+          "token": "unrelated",
+          "prob": 0.9887
+        },
+        {
+          "token": "Un",
+          "prob": 0.0052
+        },
+        {
+          "token": "related",
+          "prob": 0.0019
+        },
+        {
+          "token": "无关",
+          "prob": 0.0019
+        },
+        {
+          "token": "Related",
+          "prob": 0.0017
+        },
+        {
+          "token": "related",
+          "prob": 0.0001
+        },
+        {
+          "token": "Different",
+          "prob": 0.0
+        },
+        {
+          "token": "Similar",
+          "prob": 0.0
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0
+        },
+        {
+          "token": "similar",
+          "prob": 0.0
+        },
+        {
+          "token": "irrelevant",
+          "prob": 0.0
+        },
+        {
+          "token": "相关的",
+          "prob": 0.0
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0
+        },
+        {
+          "token": "Related",
+          "prob": 0.0
+        },
+        {
+          "token": "相关新闻",
+          "prob": 0.0
+        }
+      ],
+      "v1_pred": "diff",
+      "v2": {
+        "shared": [],
+        "n_shared": 0,
+        "jaccard": 0.0,
+        "pred": "diff",
+        "words_a": [
+          "exposure",
+          "dose",
+          "imaging",
+          "usage",
+          "safety",
+          "doses",
+          "therapy",
+          "sensitivity"
+        ],
+        "words_b": [
+          "prevention",
+          "advice",
+          "risks",
+          "recommendations",
+          "risk",
+          "guidance",
+          "concerns",
+          "recommend"
+        ],
+        "positions": {
+          "radiation": 185,
+          "pregnancy": 187
+        }
+      },
+      "bge_cos": 0.5857,
+      "bge_pred": "near"
+    },
+    {
+      "a": "cancer",
+      "b": "kidney",
+      "label": "diff",
+      "context_src": "cooccur:Medical::chunk_304",
+      "v1_raw": [
+        {
+          "token": "unrelated",
+          "prob": 0.7279
+        },
+        {
+          "token": "related",
+          "prob": 0.0985
+        },
+        {
+          "token": "Related",
+          "prob": 0.0767
+        },
+        {
+          "token": "similar",
+          "prob": 0.0527
+        },
+        {
+          "token": "Similar",
+          "prob": 0.0282
+        },
+        {
+          "token": "Un",
+          "prob": 0.0026
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0022
+        },
+        {
+          "token": "similar",
+          "prob": 0.002
+        },
+        {
+          "token": "related",
+          "prob": 0.0017
+        },
+        {
+          "token": "相似",
+          "prob": 0.0012
+        },
+        {
+          "token": "imilar",
+          "prob": 0.0007
+        },
+        {
+          "token": "Same",
+          "prob": 0.0004
+        },
+        {
+          "token": "Different",
+          "prob": 0.0003
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0002
+        },
+        {
+          "token": "Related",
+          "prob": 0.0002
+        }
+      ],
+      "v1_pred": "diff",
+      "v2": {
+        "shared": [
+          "pathology"
+        ],
+        "n_shared": 1,
+        "jaccard": 0.067,
+        "pred": "near",
+        "words_a": [
+          "types",
+          "type",
+          "classification",
+          "diagnosis",
+          "pathology",
+          "overview",
+          "subtype",
+          "awareness"
+        ],
+        "words_b": [
+          "cancer",
+          "cancers",
+          "tumors",
+          "anatomy",
+          "tumor",
+          "diseases",
+          "pathology",
+          "carcinoma"
+        ],
+        "positions": {
+          "cancer": 193,
+          "kidney": 195
+        }
+      },
+      "bge_cos": 0.5884,
+      "bge_pred": "near"
+    },
+    {
+      "a": "trials",
+      "b": "safety",
+      "label": "diff",
+      "context_src": "concat:Medical::chunk_676+Medical::chunk_52",
+      "v1_raw": [
+        {
+          "token": "unrelated",
+          "prob": 0.7398
+        },
+        {
+          "token": "related",
+          "prob": 0.1135
+        },
+        {
+          "token": "Related",
+          "prob": 0.0607
+        },
+        {
+          "token": "similar",
+          "prob": 0.0368
+        },
+        {
+          "token": "Similar",
+          "prob": 0.0287
+        },
+        {
+          "token": "similar",
+          "prob": 0.0056
+        },
+        {
+          "token": "相似",
+          "prob": 0.0027
+        },
+        {
+          "token": "related",
+          "prob": 0.0024
+        },
+        {
+          "token": "Un",
+          "prob": 0.0022
+        },
+        {
+          "token": "imilar",
+          "prob": 0.0012
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0009
+        },
+        {
+          "token": "无关",
+          "prob": 0.0006
+        },
+        {
+          "token": "相关新闻",
+          "prob": 0.0003
+        },
+        {
+          "token": "相关的",
+          "prob": 0.0003
+        },
+        {
+          "token": "Related",
+          "prob": 0.0003
+        }
+      ],
+      "v1_pred": "diff",
+      "v2": {
+        "shared": [],
+        "n_shared": 0,
+        "jaccard": 0.0,
+        "pred": "diff",
+        "words_a": [
+          "safety",
+          "availability",
+          "eligibility",
+          "overview",
+          "involvement",
+          "administration",
+          "organization"
+        ],
+        "words_b": [
+          "measures",
+          "concerns",
+          "protocol",
+          "procedures",
+          "guidelines",
+          "practices",
+          "assurance",
+          "measure"
+        ],
+        "positions": {
+          "trials": 172,
+          "safety": 174
+        }
+      },
+      "bge_cos": 0.5707,
+      "bge_pred": "near"
+    },
+    {
+      "a": "sugar",
+      "b": "carcinoma",
+      "label": "diff",
+      "context_src": "concat:Medical::chunk_202+Medical::chunk_454",
+      "v1_raw": [
+        {
+          "token": "unrelated",
+          "prob": 0.992
+        },
+        {
+          "token": "related",
+          "prob": 0.0046
+        },
+        {
+          "token": "Related",
+          "prob": 0.0009
+        },
+        {
+          "token": "无关",
+          "prob": 0.0006
+        },
+        {
+          "token": "Un",
+          "prob": 0.0004
+        },
+        {
+          "token": "similar",
+          "prob": 0.0002
+        },
+        {
+          "token": "related",
+          "prob": 0.0002
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0001
+        },
+        {
+          "token": "Similar",
+          "prob": 0.0001
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0001
+        },
+        {
+          "token": "similar",
+          "prob": 0.0001
+        },
+        {
+          "token": "imilar",
+          "prob": 0.0001
+        },
+        {
+          "token": "Different",
+          "prob": 0.0
+        },
+        {
+          "token": "相似",
+          "prob": 0.0
+        },
+        {
+          "token": "相关的",
+          "prob": 0.0
+        }
+      ],
+      "v1_pred": "diff",
+      "v2": {
+        "shared": [],
+        "n_shared": 0,
+        "jaccard": 0.0,
+        "pred": "diff",
+        "words_a": [
+          "metabolism",
+          "radi",
+          "metabolic",
+          "usage",
+          "uptake",
+          "glucose",
+          "imaging",
+          "radiation"
+        ],
+        "words_b": [
+          "types",
+          "cells",
+          "tumors",
+          "type",
+          "cancer",
+          "detection",
+          "development",
+          "breast"
+        ],
+        "positions": {
+          "sugar": 188,
+          "carcinoma": 190
+        }
+      },
+      "bge_cos": 0.4838,
+      "bge_pred": "diff"
+    },
+    {
+      "a": "blood",
+      "b": "breast",
+      "label": "diff",
+      "context_src": "concat:Medical::chunk_112+Medical::chunk_453",
+      "v1_raw": [
+        {
+          "token": "unrelated",
+          "prob": 0.9845
+        },
+        {
+          "token": "Un",
+          "prob": 0.0085
+        },
+        {
+          "token": "Related",
+          "prob": 0.0022
+        },
+        {
+          "token": "无关",
+          "prob": 0.002
+        },
+        {
+          "token": "related",
+          "prob": 0.0012
+        },
+        {
+          "token": "Similar",
+          "prob": 0.0004
+        },
+        {
+          "token": "similar",
+          "prob": 0.0001
+        },
+        {
+          "token": "Different",
+          "prob": 0.0001
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0001
+        },
+        {
+          "token": "related",
+          "prob": 0.0001
+        },
+        {
+          "token": "similar",
+          "prob": 0.0001
+        },
+        {
+          "token": "相似",
+          "prob": 0.0
+        },
+        {
+          "token": "Rel",
+          "prob": 0.0
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0
+        },
+        {
+          "token": "相关新闻",
+          "prob": 0.0
+        }
+      ],
+      "v1_pred": "diff",
+      "v2": {
+        "shared": [],
+        "n_shared": 0,
+        "jaccard": 0.0,
+        "pred": "diff",
+        "words_a": [
+          "filtration",
+          "filtering",
+          "filter",
+          "filters",
+          "filtered",
+          "clot",
+          "regulation",
+          "chemistry"
+        ],
+        "words_b": [
+          "anatomy",
+          "tissue",
+          "structure",
+          "tissues",
+          "structures",
+          "organization",
+          "organs",
+          "characteristics"
+        ],
+        "positions": {
+          "blood": 184,
+          "breast": 186
+        }
+      },
+      "bge_cos": 0.5889,
+      "bge_pred": "near"
+    },
+    {
+      "a": "surgery",
+      "b": "genetics",
+      "label": "diff",
+      "context_src": "concat:Medical::chunk_195+Medical::chunk_206",
+      "v1_raw": [
+        {
+          "token": "unrelated",
+          "prob": 0.9948
+        },
+        {
+          "token": "Un",
+          "prob": 0.0012
+        },
+        {
+          "token": "related",
+          "prob": 0.0012
+        },
+        {
+          "token": "无关",
+          "prob": 0.001
+        },
+        {
+          "token": "Related",
+          "prob": 0.0009
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0001
+        },
+        {
+          "token": "related",
+          "prob": 0.0001
+        },
+        {
+          "token": "Similar",
+          "prob": 0.0001
+        },
+        {
+          "token": "similar",
+          "prob": 0.0001
+        },
+        {
+          "token": "Different",
+          "prob": 0.0001
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0
+        },
+        {
+          "token": "相似",
+          "prob": 0.0
+        },
+        {
+          "token": "different",
+          "prob": 0.0
+        },
+        {
+          "token": "similar",
+          "prob": 0.0
+        },
+        {
+          "token": "imilar",
+          "prob": 0.0
+        }
+      ],
+      "v1_pred": "diff",
+      "v2": {
+        "shared": [],
+        "n_shared": 0,
+        "jaccard": 0.0,
+        "pred": "diff",
+        "words_a": [
+          "performed",
+          "expertise",
+          "specialists",
+          "specialist",
+          "performance",
+          "perform",
+          "performing",
+          "expert"
+        ],
+        "words_b": [
+          "counseling",
+          "testing",
+          "consultation",
+          "consulting"
+        ],
+        "positions": {
+          "surgery": 168,
+          "genetics": 170
+        }
+      },
+      "bge_cos": 0.4989,
+      "bge_pred": "diff"
+    },
+    {
+      "a": "immune",
+      "b": "bones",
+      "label": "diff",
+      "context_src": "concat:Medical::chunk_117+Medical::chunk_159",
+      "v1_raw": [
+        {
+          "token": "unrelated",
+          "prob": 0.9921
+        },
+        {
+          "token": "related",
+          "prob": 0.0022
+        },
+        {
+          "token": "Related",
+          "prob": 0.0018
+        },
+        {
+          "token": "无关",
+          "prob": 0.0014
+        },
+        {
+          "token": "Un",
+          "prob": 0.0011
+        },
+        {
+          "token": "similar",
+          "prob": 0.0002
+        },
+        {
+          "token": "related",
+          "prob": 0.0001
+        },
+        {
+          "token": "Similar",
+          "prob": 0.0001
+        },
+        {
+          "token": "Different",
+          "prob": 0.0001
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0001
+        },
+        {
+          "token": "imilar",
+          "prob": 0.0
+        },
+        {
+          "token": "similar",
+          "prob": 0.0
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0
+        },
+        {
+          "token": "different",
+          "prob": 0.0
+        },
+        {
+          "token": "相似",
+          "prob": 0.0
+        }
+      ],
+      "v1_pred": "diff",
+      "v2": {
+        "shared": [
+          "cells"
+        ],
+        "n_shared": 1,
+        "jaccard": 0.077,
+        "pred": "near",
+        "words_a": [
+          "system",
+          "systems",
+          "defense",
+          "systemic",
+          "response",
+          "function",
+          "cells"
+        ],
+        "words_b": [
+          "marrow",
+          "structure",
+          "structures",
+          "tissues",
+          "vessels",
+          "tissue",
+          "cells"
+        ],
+        "positions": {
+          "immune": 188,
+          "bones": 190
+        }
+      },
+      "bge_cos": 0.5862,
+      "bge_pred": "near"
+    },
+    {
+      "a": "cancer",
+      "b": "surgery",
+      "label": "diff",
+      "context_src": "cooccur:Medical::chunk_217",
+      "v1_raw": [
+        {
+          "token": "unrelated",
+          "prob": 0.9923
+        },
+        {
+          "token": "related",
+          "prob": 0.0022
+        },
+        {
+          "token": "Related",
+          "prob": 0.0015
+        },
+        {
+          "token": "Un",
+          "prob": 0.0012
+        },
+        {
+          "token": "similar",
+          "prob": 0.0005
+        },
+        {
+          "token": "无关",
+          "prob": 0.0005
+        },
+        {
+          "token": "Different",
+          "prob": 0.0003
+        },
+        {
+          "token": "Similar",
+          "prob": 0.0003
+        },
+        {
+          "token": "different",
+          "prob": 0.0002
+        },
+        {
+          "token": "similar",
+          "prob": 0.0001
+        },
+        {
+          "token": "related",
+          "prob": 0.0001
+        },
+        {
+          "token": "imilar",
+          "prob": 0.0001
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0001
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0
+        },
+        {
+          "token": "相似",
+          "prob": 0.0
+        }
+      ],
+      "v1_pred": "diff",
+      "v2": {
+        "shared": [],
+        "n_shared": 0,
+        "jaccard": 0.0,
+        "pred": "diff",
+        "words_a": [
+          "diagnosis",
+          "treatments",
+          "surgery",
+          "screening",
+          "testing",
+          "detection",
+          "reatment",
+          "therapy"
+        ],
+        "words_b": [
+          "preparations",
+          "prepared",
+          "prepare",
+          "preparing",
+          "prepares",
+          "procedures",
+          "procedure",
+          "planning"
+        ],
+        "positions": {
+          "cancer": 191,
+          "surgery": 193
+        }
+      },
+      "bge_cos": 0.5881,
+      "bge_pred": "near"
+    },
+    {
+      "a": "bones",
+      "b": "therapy",
+      "label": "diff",
+      "context_src": "concat:Medical::chunk_159+Medical::chunk_450",
+      "v1_raw": [
+        {
+          "token": "unrelated",
+          "prob": 0.9895
+        },
+        {
+          "token": "Un",
+          "prob": 0.0052
+        },
+        {
+          "token": "无关",
+          "prob": 0.0023
+        },
+        {
+          "token": "Related",
+          "prob": 0.0012
+        },
+        {
+          "token": "related",
+          "prob": 0.0008
+        },
+        {
+          "token": "Similar",
+          "prob": 0.0001
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0001
+        },
+        {
+          "token": "similar",
+          "prob": 0.0001
+        },
+        {
+          "token": "related",
+          "prob": 0.0001
+        },
+        {
+          "token": "Different",
+          "prob": 0.0
+        },
+        {
+          "token": "irrelevant",
+          "prob": 0.0
+        },
+        {
+          "token": "imilar",
+          "prob": 0.0
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0
+        },
+        {
+          "token": "similar",
+          "prob": 0.0
+        },
+        {
+          "token": "unos",
+          "prob": 0.0
+        }
+      ],
+      "v1_pred": "diff",
+      "v2": {
+        "shared": [],
+        "n_shared": 0,
+        "jaccard": 0.0,
+        "pred": "diff",
+        "words_a": [
+          "marrow",
+          "structure",
+          "anatomy",
+          "forming",
+          "containing",
+          "structures"
+        ],
+        "words_b": [
+          "types",
+          "methods",
+          "approaches",
+          "treatments",
+          "techniques",
+          "combinations",
+          "type",
+          "combination"
+        ],
+        "positions": {
+          "bones": 192,
+          "therapy": 194
+        }
+      },
+      "bge_cos": 0.5299,
+      "bge_pred": "diff"
+    },
+    {
+      "a": "chest",
+      "b": "drugs",
+      "label": "diff",
+      "context_src": "concat:Medical::chunk_453+Medical::chunk_228",
+      "v1_raw": [
+        {
+          "token": "unrelated",
+          "prob": 0.9912
+        },
+        {
+          "token": "Un",
+          "prob": 0.0046
+        },
+        {
+          "token": "无关",
+          "prob": 0.0028
+        },
+        {
+          "token": "Related",
+          "prob": 0.0006
+        },
+        {
+          "token": "related",
+          "prob": 0.0003
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0001
+        },
+        {
+          "token": "irrelevant",
+          "prob": 0.0
+        },
+        {
+          "token": "related",
+          "prob": 0.0
+        },
+        {
+          "token": "Different",
+          "prob": 0.0
+        },
+        {
+          "token": "agini",
+          "prob": 0.0
+        },
+        {
+          "token": "Similar",
+          "prob": 0.0
+        },
+        {
+          "token": "Same",
+          "prob": 0.0
+        },
+        {
+          "token": "相关的",
+          "prob": 0.0
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0
+        },
+        {
+          "token": "Rel",
+          "prob": 0.0
+        }
+      ],
+      "v1_pred": "diff",
+      "v2": {
+        "shared": [],
+        "n_shared": 0,
+        "jaccard": 0.0,
+        "pred": "diff",
+        "words_a": [
+          "anatomy",
+          "muscles",
+          "muscle",
+          "structure",
+          "structures",
+          "muscular",
+          "wall",
+          "cavity"
+        ],
+        "words_b": [
+          "side",
+          "effects",
+          "common",
+          "adverse",
+          "toxicity",
+          "interactions"
+        ],
+        "positions": {
+          "chest": 177,
+          "drugs": 179
+        }
+      },
+      "bge_cos": 0.492,
+      "bge_pred": "diff"
+    },
+    {
+      "a": "muscle",
+      "b": "genes",
+      "label": "diff",
+      "context_src": "concat:Medical::chunk_167+Medical::chunk_175",
+      "v1_raw": [
+        {
+          "token": "unrelated",
+          "prob": 0.9916
+        },
+        {
+          "token": "Un",
+          "prob": 0.0036
+        },
+        {
+          "token": "related",
+          "prob": 0.0012
+        },
+        {
+          "token": "无关",
+          "prob": 0.001
+        },
+        {
+          "token": "Related",
+          "prob": 0.001
+        },
+        {
+          "token": "Similar",
+          "prob": 0.0003
+        },
+        {
+          "token": "Different",
+          "prob": 0.0002
+        },
+        {
+          "token": "similar",
+          "prob": 0.0002
+        },
+        {
+          "token": "related",
+          "prob": 0.0001
+        },
+        {
+          "token": "similar",
+          "prob": 0.0001
+        },
+        {
+          "token": "different",
+          "prob": 0.0
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0
+        },
+        {
+          "token": "imilar",
+          "prob": 0.0
+        },
+        {
+          "token": "相似",
+          "prob": 0.0
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0
+        }
+      ],
+      "v1_pred": "diff",
+      "v2": {
+        "shared": [],
+        "n_shared": 0,
+        "jaccard": 0.0,
+        "pred": "diff",
+        "words_a": [
+          "waste",
+          "metabolism",
+          "creat",
+          "metabolic",
+          "production",
+          "breakdown",
+          "activity",
+          "chemistry"
+        ],
+        "words_b": [
+          "chromosomes",
+          "chromosome",
+          "mutations"
+        ],
+        "positions": {
+          "muscle": 182,
+          "genes": 184
+        }
+      },
+      "bge_cos": 0.4952,
+      "bge_pred": "diff"
+    },
+    {
+      "a": "breath",
+      "b": "cervical",
+      "label": "diff",
+      "context_src": "concat:Medical::chunk_246+Medical::chunk_645",
+      "v1_raw": [
+        {
+          "token": "unrelated",
+          "prob": 0.9771
+        },
+        {
+          "token": "Un",
+          "prob": 0.0139
+        },
+        {
+          "token": "无关",
+          "prob": 0.0075
+        },
+        {
+          "token": "Related",
+          "prob": 0.0006
+        },
+        {
+          "token": "related",
+          "prob": 0.0002
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0001
+        },
+        {
+          "token": "irrelevant",
+          "prob": 0.0
+        },
+        {
+          "token": "related",
+          "prob": 0.0
+        },
+        {
+          "token": "相关的",
+          "prob": 0.0
+        },
+        {
+          "token": "Rel",
+          "prob": 0.0
+        },
+        {
+          "token": "Different",
+          "prob": 0.0
+        },
+        {
+          "token": "agini",
+          "prob": 0.0
+        },
+        {
+          "token": "Un",
+          "prob": 0.0
+        },
+        {
+          "token": "Similar",
+          "prob": 0.0
+        },
+        {
+          "token": "unos",
+          "prob": 0.0
+        }
+      ],
+      "v1_pred": "diff",
+      "v2": {
+        "shared": [],
+        "n_shared": 0,
+        "jaccard": 0.0,
+        "pred": "diff",
+        "words_a": [
+          "measurement",
+          "monitoring",
+          "measurements",
+          "testing",
+          "assessment",
+          "ability",
+          "metabolism"
+        ],
+        "words_b": [
+          "cancer",
+          "cancers",
+          "biopsy",
+          "carcinoma",
+          "surgery",
+          "tumor",
+          "diseases",
+          "pathology"
+        ],
+        "positions": {
+          "breath": 183,
+          "cervical": 185
+        }
+      },
+      "bge_cos": 0.4372,
+      "bge_pred": "diff"
+    },
+    {
+      "a": "blood",
+      "b": "surgery",
+      "label": "diff",
+      "context_src": "concat:Medical::chunk_112+Medical::chunk_195",
+      "v1_raw": [
+        {
+          "token": "unrelated",
+          "prob": 0.9894
+        },
+        {
+          "token": "Un",
+          "prob": 0.0059
+        },
+        {
+          "token": "Related",
+          "prob": 0.0016
+        },
+        {
+          "token": "无关",
+          "prob": 0.001
+        },
+        {
+          "token": "related",
+          "prob": 0.001
+        },
+        {
+          "token": "Similar",
+          "prob": 0.0003
+        },
+        {
+          "token": "Different",
+          "prob": 0.0001
+        },
+        {
+          "token": "similar",
+          "prob": 0.0001
+        },
+        {
+          "token": "related",
+          "prob": 0.0
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0
+        },
+        {
+          "token": "similar",
+          "prob": 0.0
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0
+        },
+        {
+          "token": "相似",
+          "prob": 0.0
+        },
+        {
+          "token": "different",
+          "prob": 0.0
+        },
+        {
+          "token": "imilar",
+          "prob": 0.0
+        }
+      ],
+      "v1_pred": "diff",
+      "v2": {
+        "shared": [],
+        "n_shared": 0,
+        "jaccard": 0.0,
+        "pred": "diff",
+        "words_a": [
+          "filtration",
+          "filtering",
+          "filter",
+          "filters",
+          "filtered",
+          "chemistry",
+          "clot",
+          "regulation"
+        ],
+        "words_b": [
+          "techniques",
+          "performed",
+          "specialists",
+          "procedures",
+          "expertise",
+          "roles",
+          "types"
+        ],
+        "positions": {
+          "blood": 172,
+          "surgery": 174
+        }
+      },
+      "bge_cos": 0.5901,
+      "bge_pred": "near"
+    },
+    {
+      "a": "liver",
+      "b": "radiation",
+      "label": "diff",
+      "context_src": "concat:Medical::chunk_168+Medical::chunk_144",
+      "v1_raw": [
+        {
+          "token": "unrelated",
+          "prob": 0.9956
+        },
+        {
+          "token": "无关",
+          "prob": 0.0019
+        },
+        {
+          "token": "Un",
+          "prob": 0.0015
+        },
+        {
+          "token": "Related",
+          "prob": 0.0003
+        },
+        {
+          "token": "related",
+          "prob": 0.0002
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0
+        },
+        {
+          "token": "Different",
+          "prob": 0.0
+        },
+        {
+          "token": "related",
+          "prob": 0.0
+        },
+        {
+          "token": "agini",
+          "prob": 0.0
+        },
+        {
+          "token": "Similar",
+          "prob": 0.0
+        },
+        {
+          "token": "irrelevant",
+          "prob": 0.0
+        },
+        {
+          "token": "similar",
+          "prob": 0.0
+        },
+        {
+          "token": "imilar",
+          "prob": 0.0
+        },
+        {
+          "token": "disparate",
+          "prob": 0.0
+        },
+        {
+          "token": "different",
+          "prob": 0.0
+        }
+      ],
+      "v1_pred": "diff",
+      "v2": {
+        "shared": [],
+        "n_shared": 0,
+        "jaccard": 0.0,
+        "pred": "diff",
+        "words_a": [
+          "function",
+          "chemistry",
+          "functioning",
+          "enzyme",
+          "testing",
+          "assessment",
+          "functions",
+          "enzymes"
+        ],
+        "words_b": [
+          "exposure",
+          "measurement",
+          "levels",
+          "measurements",
+          "imaging",
+          "tests",
+          "sensitivity",
+          "detection"
+        ],
+        "positions": {
+          "liver": 198,
+          "radiation": 200
+        }
+      },
+      "bge_cos": 0.4903,
+      "bge_pred": "diff"
+    },
+    {
+      "a": "lungs",
+      "b": "pregnancy",
+      "label": "diff",
+      "context_src": "concat:Medical::chunk_246+Medical::chunk_139",
+      "v1_raw": [
+        {
+          "token": "unrelated",
+          "prob": 0.9818
+        },
+        {
+          "token": "Un",
+          "prob": 0.0109
+        },
+        {
+          "token": "Related",
+          "prob": 0.0024
+        },
+        {
+          "token": "无关",
+          "prob": 0.0021
+        },
+        {
+          "token": "related",
+          "prob": 0.0016
+        },
+        {
+          "token": "Different",
+          "prob": 0.0001
+        },
+        {
+          "token": "Similar",
+          "prob": 0.0001
+        },
+        {
+          "token": "related",
+          "prob": 0.0001
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0001
+        },
+        {
+          "token": "similar",
+          "prob": 0.0
+        },
+        {
+          "token": "相关的",
+          "prob": 0.0
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0
+        },
+        {
+          "token": "Rel",
+          "prob": 0.0
+        },
+        {
+          "token": "irrelevant",
+          "prob": 0.0
+        },
+        {
+          "token": "相关新闻",
+          "prob": 0.0
+        }
+      ],
+      "v1_pred": "diff",
+      "v2": {
+        "shared": [],
+        "n_shared": 0,
+        "jaccard": 0.0,
+        "pred": "diff",
+        "words_a": [
+          "function",
+          "functioning",
+          "breathing",
+          "assessment",
+          "functions",
+          "activity",
+          "respiratory",
+          "movement"
+        ],
+        "words_b": [
+          "prevention",
+          "risk",
+          "risks",
+          "advice",
+          "guidance",
+          "prevent",
+          "care",
+          "recommendations"
+        ],
+        "positions": {
+          "lungs": 178,
+          "pregnancy": 180
+        }
+      },
+      "bge_cos": 0.5435,
+      "bge_pred": "diff"
+    },
+    {
+      "a": "family",
+      "b": "tumor",
+      "label": "diff",
+      "context_src": "concat:Medical::chunk_133+Medical::chunk_10",
+      "v1_raw": [
+        {
+          "token": "unrelated",
+          "prob": 0.9936
+        },
+        {
+          "token": "Un",
+          "prob": 0.0018
+        },
+        {
+          "token": "Related",
+          "prob": 0.0014
+        },
+        {
+          "token": "related",
+          "prob": 0.0011
+        },
+        {
+          "token": "无关",
+          "prob": 0.0011
+        },
+        {
+          "token": "Different",
+          "prob": 0.0001
+        },
+        {
+          "token": "Similar",
+          "prob": 0.0001
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0001
+        },
+        {
+          "token": "related",
+          "prob": 0.0001
+        },
+        {
+          "token": "similar",
+          "prob": 0.0
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0
+        },
+        {
+          "token": "imilar",
+          "prob": 0.0
+        },
+        {
+          "token": "相关的",
+          "prob": 0.0
+        },
+        {
+          "token": "agini",
+          "prob": 0.0
+        },
+        {
+          "token": "different",
+          "prob": 0.0
+        }
+      ],
+      "v1_pred": "diff",
+      "v2": {
+        "shared": [
+          "genetic",
+          "genetics",
+          "histories",
+          "history"
+        ],
+        "n_shared": 4,
+        "jaccard": 0.167,
+        "pred": "same",
+        "words_a": [
+          "history",
+          "histories",
+          "genetics",
+          "medicine",
+          "genetic",
+          "cancer"
+        ],
+        "words_b": [
+          "types",
+          "screening",
+          "spread",
+          "history",
+          "genetics",
+          "diagnosis",
+          "classification",
+          "testing"
+        ],
+        "positions": {
+          "family": 195,
+          "tumor": 197
+        }
+      },
+      "bge_cos": 0.4927,
+      "bge_pred": "diff"
+    },
+    {
+      "a": "heart",
+      "b": "prostate",
+      "label": "diff",
+      "context_src": "concat:Medical::chunk_182+Medical::chunk_389",
+      "v1_raw": [
+        {
+          "token": "unrelated",
+          "prob": 0.9953
+        },
+        {
+          "token": "Un",
+          "prob": 0.0028
+        },
+        {
+          "token": "无关",
+          "prob": 0.0012
+        },
+        {
+          "token": "Related",
+          "prob": 0.0003
+        },
+        {
+          "token": "related",
+          "prob": 0.0002
+        },
+        {
+          "token": "Different",
+          "prob": 0.0001
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0
+        },
+        {
+          "token": "irrelevant",
+          "prob": 0.0
+        },
+        {
+          "token": "different",
+          "prob": 0.0
+        },
+        {
+          "token": "Similar",
+          "prob": 0.0
+        },
+        {
+          "token": "related",
+          "prob": 0.0
+        },
+        {
+          "token": "similar",
+          "prob": 0.0
+        },
+        {
+          "token": "RELATED",
+          "prob": 0.0
+        },
+        {
+          "token": "完全不同",
+          "prob": 0.0
+        },
+        {
+          "token": "Same",
+          "prob": 0.0
+        }
+      ],
+      "v1_pred": "diff",
+      "v2": {
+        "shared": [
+          "test",
+          "testing",
+          "tests"
+        ],
+        "n_shared": 3,
+        "jaccard": 0.25,
+        "pred": "same",
+        "words_a": [
+          "tests",
+          "testing",
+          "assessments",
+          "test",
+          "examinations",
+          "exams",
+          "diseases"
+        ],
+        "words_b": [
+          "cancer",
+          "tests",
+          "cancers",
+          "testing",
+          "tumor",
+          "gland",
+          "tumors",
+          "test"
+        ],
+        "positions": {
+          "heart": 185,
+          "prostate": 187
+        }
+      },
+      "bge_cos": 0.5317,
+      "bge_pred": "diff"
+    }
+  ],
+  "model": "qwen2.5-7b-it"
+}

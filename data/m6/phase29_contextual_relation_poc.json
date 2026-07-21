@@ -1,0 +1,368 @@
+{
+  "method": "contextual_relation_poc",
+  "model": "qwen2.5-7b-it",
+  "n_pairs": 3,
+  "n_context_dependent": 0,
+  "results": [
+    {
+      "concept_pair": [
+        "cancer",
+        "diet"
+      ],
+      "contexts": [
+        {
+          "label": "nutrition-oncology context",
+          "doc_a_excerpt": "About basal cell skin cancer What is basal cell skin cancer? How is basal cell skin cancer treated? What can you do to get the best care? Basal cell s",
+          "doc_b_excerpt": "u may experience some side effects. They include: Tiredness (fatigue) Nausea and vomiting Lung and breathing problems (eg, cough, shortness of breath,",
+          "bare_top5": [
+            {
+              "token": "indirect",
+              "prob": 0.0551
+            },
+            {
+              "token": "minimal",
+              "prob": 0.0517
+            },
+            {
+              "token": "complex",
+              "prob": 0.023
+            },
+            {
+              "token": "influenced",
+              "prob": 0.0131
+            },
+            {
+              "token": "indirectly",
+              "prob": 0.0115
+            }
+          ],
+          "contextual_top5": [
+            {
+              "token": "unrelated",
+              "prob": 0.0143
+            },
+            {
+              "token": "connected",
+              "prob": 0.0049
+            },
+            {
+              "token": "linked",
+              "prob": 0.0019
+            },
+            {
+              "token": "indirectly",
+              "prob": 0.0019
+            },
+            {
+              "token": "interconnected",
+              "prob": 0.0018
+            }
+          ],
+          "bare_known": [],
+          "contextual_known": [],
+          "overlap": [
+            "indirectly"
+          ]
+        },
+        {
+          "label": "genetic-risk context",
+          "doc_a_excerpt": "About basal cell skin cancer What is basal cell skin cancer? How is basal cell skin cancer treated? What can you do to get the best care? Basal cell s",
+          "doc_b_excerpt": "he epidermis that produce melanin. Melanin is responsible for our hair, skin, and eye color. It also protects our skin from harmful ultraviolet (UV) r",
+          "bare_top5": [
+            {
+              "token": "indirect",
+              "prob": 0.0551
+            },
+            {
+              "token": "minimal",
+              "prob": 0.0517
+            },
+            {
+              "token": "complex",
+              "prob": 0.023
+            },
+            {
+              "token": "influenced",
+              "prob": 0.0131
+            },
+            {
+              "token": "indirectly",
+              "prob": 0.0115
+            }
+          ],
+          "contextual_top5": [
+            {
+              "token": "unrelated",
+              "prob": 0.3355
+            },
+            {
+              "token": "indirectly",
+              "prob": 0.0178
+            },
+            {
+              "token": "connected",
+              "prob": 0.0018
+            },
+            {
+              "token": "loosely",
+              "prob": 0.0006
+            },
+            {
+              "token": "mentioned",
+              "prob": 0.0005
+            }
+          ],
+          "bare_known": [],
+          "contextual_known": [],
+          "overlap": [
+            "indirectly"
+          ]
+        }
+      ]
+    },
+    {
+      "concept_pair": [
+        "cancer",
+        "surgery"
+      ],
+      "contexts": [
+        {
+          "label": "treatment context",
+          "doc_a_excerpt": "About basal cell skin cancer What is basal cell skin cancer? How is basal cell skin cancer treated? What can you do to get the best care? Basal cell s",
+          "doc_b_excerpt": "or someone in your family has had skin cancer, you’re more likely to develop any type of skin cancer. Radiation therapy – Radiation treatment for othe",
+          "bare_top5": [
+            {
+              "token": "Treat",
+              "prob": 0.3595
+            },
+            {
+              "token": "often",
+              "prob": 0.0051
+            },
+            {
+              "token": "treated",
+              "prob": 0.0035
+            },
+            {
+              "token": "reatment",
+              "prob": 0.0014
+            },
+            {
+              "token": "treating",
+              "prob": 0.0006
+            }
+          ],
+          "contextual_top5": [
+            {
+              "token": "linked",
+              "prob": 0.0154
+            },
+            {
+              "token": "connected",
+              "prob": 0.012
+            },
+            {
+              "token": "often",
+              "prob": 0.0037
+            },
+            {
+              "token": "interconnected",
+              "prob": 0.0006
+            },
+            {
+              "token": "closely",
+              "prob": 0.0005
+            }
+          ],
+          "bare_known": [
+            "Treat",
+            "treated",
+            "reatment",
+            "treating"
+          ],
+          "contextual_known": [],
+          "overlap": [
+            "often"
+          ]
+        },
+        {
+          "label": "prevention context",
+          "doc_a_excerpt": "About basal cell skin cancer What is basal cell skin cancer? How is basal cell skin cancer treated? What can you do to get the best care? Basal cell s",
+          "doc_b_excerpt": "aught early. To find out how basal cell skin cancer is diagnosed, read Chapter 2: Testing for basal cell skin cancer. Causes and risk factors Basal ce",
+          "bare_top5": [
+            {
+              "token": "Treat",
+              "prob": 0.3595
+            },
+            {
+              "token": "often",
+              "prob": 0.0051
+            },
+            {
+              "token": "treated",
+              "prob": 0.0035
+            },
+            {
+              "token": "reatment",
+              "prob": 0.0014
+            },
+            {
+              "token": "treating",
+              "prob": 0.0006
+            }
+          ],
+          "contextual_top5": [
+            {
+              "token": "linked",
+              "prob": 0.0154
+            },
+            {
+              "token": "connected",
+              "prob": 0.012
+            },
+            {
+              "token": "often",
+              "prob": 0.005
+            },
+            {
+              "token": "closely",
+              "prob": 0.0006
+            },
+            {
+              "token": "interconnected",
+              "prob": 0.0003
+            }
+          ],
+          "bare_known": [
+            "Treat",
+            "treated",
+            "reatment",
+            "treating"
+          ],
+          "contextual_known": [],
+          "overlap": [
+            "often"
+          ]
+        }
+      ]
+    },
+    {
+      "concept_pair": [
+        "tumor",
+        "growth"
+      ],
+      "contexts": [
+        {
+          "label": "pathology context",
+          "doc_a_excerpt": "About basal cell skin cancer What is basal cell skin cancer? How is basal cell skin cancer treated? What can you do to get the best care? Basal cell s",
+          "doc_b_excerpt": "he epidermis that produce melanin. Melanin is responsible for our hair, skin, and eye color. It also protects our skin from harmful ultraviolet (UV) r",
+          "bare_top5": [
+            {
+              "token": "causal",
+              "prob": 0.0544
+            },
+            {
+              "token": "Cancer",
+              "prob": 0.0451
+            },
+            {
+              "token": "often",
+              "prob": 0.0398
+            },
+            {
+              "token": "evident",
+              "prob": 0.0374
+            },
+            {
+              "token": "caus",
+              "prob": 0.0166
+            }
+          ],
+          "contextual_top5": [
+            {
+              "token": "closely",
+              "prob": 0.0017
+            },
+            {
+              "token": "linked",
+              "prob": 0.0017
+            },
+            {
+              "token": "interconnected",
+              "prob": 0.0011
+            },
+            {
+              "token": "connected",
+              "prob": 0.001
+            },
+            {
+              "token": "directly",
+              "prob": 0.0004
+            }
+          ],
+          "bare_known": [
+            "causal",
+            "caus"
+          ],
+          "contextual_known": [],
+          "overlap": []
+        },
+        {
+          "label": "treatment context",
+          "doc_a_excerpt": "ing studies. See Guide Your diagnosis will determine your treatment plan. It is important you understand what these tests mean, so keep reading for mo",
+          "doc_b_excerpt": "he epidermis that produce melanin. Melanin is responsible for our hair, skin, and eye color. It also protects our skin from harmful ultraviolet (UV) r",
+          "bare_top5": [
+            {
+              "token": "causal",
+              "prob": 0.059
+            },
+            {
+              "token": "caus",
+              "prob": 0.0316
+            },
+            {
+              "token": "alink",
+              "prob": 0.0297
+            },
+            {
+              "token": "riger",
+              "prob": 0.0066
+            },
+            {
+              "token": "embod",
+              "prob": 0.0058
+            }
+          ],
+          "contextual_top5": [
+            {
+              "token": "closely",
+              "prob": 0.0021
+            },
+            {
+              "token": "interconnected",
+              "prob": 0.0013
+            },
+            {
+              "token": "linked",
+              "prob": 0.0008
+            },
+            {
+              "token": "connected",
+              "prob": 0.0005
+            },
+            {
+              "token": "unrelated",
+              "prob": 0.0002
+            }
+          ],
+          "bare_known": [
+            "causal",
+            "caus"
+          ],
+          "contextual_known": [],
+          "overlap": []
+        }
+      ]
+    }
+  ]
+}

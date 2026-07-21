@@ -1,0 +1,805 @@
+{
+  "method": "two_pass_concern_sub_concept",
+  "model": "qwen2.5-7b-it",
+  "domain": "nfcorpus",
+  "n_clusters": 6,
+  "n_pairs_judged": 65,
+  "n_is_a": 1,
+  "n_part_of": 16,
+  "n_related": 11,
+  "n_unrelated": 37,
+  "hierarchy_rate": 0.262,
+  "results": [
+    {
+      "cluster_id": 85,
+      "n_docs": 23,
+      "meta_concept": "itian",
+      "pass1_broad": [
+        "assessed",
+        "itian",
+        "etic",
+        "questionnaire",
+        "errated"
+      ],
+      "pass2_specific": [
+        "plements",
+        "foil",
+        "alsy",
+        "ynch",
+        "ifetime"
+      ],
+      "sample_doc": "Diverticular disease of the colon is among the most prevalent conditions in western society and is among the leading reasons for outpatient visits and causes of hospitalization. While previously consi"
+    },
+    {
+      "cluster_id": 85,
+      "n_docs": 23,
+      "meta_concept": "etic",
+      "pass1_broad": [
+        "assessed",
+        "itian",
+        "etic",
+        "questionnaire",
+        "errated"
+      ],
+      "pass2_specific": [
+        "foil",
+        "plements",
+        "alsy",
+        "ynch",
+        "ifetime"
+      ],
+      "sample_doc": "Diverticular disease of the colon is among the most prevalent conditions in western society and is among the leading reasons for outpatient visits and causes of hospitalization. While previously consi"
+    },
+    {
+      "cluster_id": 44,
+      "n_docs": 13,
+      "meta_concept": "ranging",
+      "pass1_broad": [
+        "ranging",
+        "detected",
+        "quant",
+        "across",
+        "obtained"
+      ],
+      "pass2_specific": [
+        "profiles",
+        "pecific",
+        "spec",
+        "specificity",
+        "distributions"
+      ],
+      "sample_doc": "The aims of this study were to determine the concentrations of 4-nonylphenol (NP) and 4-octylphenol (OP) in 59 human milk samples and to examine related factors including mothers' demographics and die"
+    },
+    {
+      "cluster_id": 44,
+      "n_docs": 13,
+      "meta_concept": "detected",
+      "pass1_broad": [
+        "ranging",
+        "detected",
+        "quant",
+        "across",
+        "obtained"
+      ],
+      "pass2_specific": [
+        "profiles",
+        "pecific",
+        "spec",
+        "specificity",
+        "distributions"
+      ],
+      "sample_doc": "The aims of this study were to determine the concentrations of 4-nonylphenol (NP) and 4-octylphenol (OP) in 59 human milk samples and to examine related factors including mothers' demographics and die"
+    },
+    {
+      "cluster_id": 44,
+      "n_docs": 13,
+      "meta_concept": "quant",
+      "pass1_broad": [
+        "ranging",
+        "detected",
+        "quant",
+        "across",
+        "obtained"
+      ],
+      "pass2_specific": [
+        "profiles",
+        "pecific",
+        "spec",
+        "specificity",
+        "distributions"
+      ],
+      "sample_doc": "The aims of this study were to determine the concentrations of 4-nonylphenol (NP) and 4-octylphenol (OP) in 59 human milk samples and to examine related factors including mothers' demographics and die"
+    },
+    {
+      "cluster_id": 127,
+      "n_docs": 13,
+      "meta_concept": "Women",
+      "pass1_broad": [
+        "Women",
+        "Pregn",
+        "Obst",
+        "Female",
+        "Random"
+      ],
+      "pass2_specific": [
+        "receiving",
+        "treated",
+        "undergoing"
+      ],
+      "sample_doc": "While many women with polycystic ovary syndrome (PCOS) are overweight, obese or centrally obese, the effect of excess weight on the outcomes of PCOS is inconsistent. The review aimed to assess the eff"
+    },
+    {
+      "cluster_id": 127,
+      "n_docs": 13,
+      "meta_concept": "Pregn",
+      "pass1_broad": [
+        "Women",
+        "Pregn",
+        "Obst",
+        "Female",
+        "Random"
+      ],
+      "pass2_specific": [
+        "receiving",
+        "treated",
+        "undergoing"
+      ],
+      "sample_doc": "While many women with polycystic ovary syndrome (PCOS) are overweight, obese or centrally obese, the effect of excess weight on the outcomes of PCOS is inconsistent. The review aimed to assess the eff"
+    },
+    {
+      "cluster_id": 127,
+      "n_docs": 13,
+      "meta_concept": "Obst",
+      "pass1_broad": [
+        "Women",
+        "Pregn",
+        "Obst",
+        "Female",
+        "Random"
+      ],
+      "pass2_specific": [
+        "receiving",
+        "treated",
+        "undergoing"
+      ],
+      "sample_doc": "While many women with polycystic ovary syndrome (PCOS) are overweight, obese or centrally obese, the effect of excess weight on the outcomes of PCOS is inconsistent. The review aimed to assess the eff"
+    },
+    {
+      "cluster_id": 125,
+      "n_docs": 12,
+      "meta_concept": "reflects",
+      "pass1_broad": [
+        "reflects",
+        "complic",
+        "emphasizes",
+        "illustrates",
+        "underscores"
+      ],
+      "pass2_specific": [
+        "Here",
+        "Recently",
+        "Current",
+        "Numerous",
+        "Still"
+      ],
+      "sample_doc": "Overweight or obese women with PCOS had decreased sex hormone-binding globulin (SHBG), increased total testosterone, free androgen index, hirsutism, fasting glucose, fasting insulin, homeostatic model"
+    },
+    {
+      "cluster_id": 125,
+      "n_docs": 12,
+      "meta_concept": "complic",
+      "pass1_broad": [
+        "reflects",
+        "complic",
+        "emphasizes",
+        "illustrates",
+        "underscores"
+      ],
+      "pass2_specific": [
+        "Here",
+        "Recently",
+        "Current",
+        "Numerous",
+        "Still"
+      ],
+      "sample_doc": "Overweight or obese women with PCOS had decreased sex hormone-binding globulin (SHBG), increased total testosterone, free androgen index, hirsutism, fasting glucose, fasting insulin, homeostatic model"
+    },
+    {
+      "cluster_id": 125,
+      "n_docs": 12,
+      "meta_concept": "emphasizes",
+      "pass1_broad": [
+        "reflects",
+        "complic",
+        "emphasizes",
+        "illustrates",
+        "underscores"
+      ],
+      "pass2_specific": [
+        "Here",
+        "Recently",
+        "Current",
+        "Numerous",
+        "Still"
+      ],
+      "sample_doc": "Overweight or obese women with PCOS had decreased sex hormone-binding globulin (SHBG), increased total testosterone, free androgen index, hirsutism, fasting glucose, fasting insulin, homeostatic model"
+    },
+    {
+      "cluster_id": 96,
+      "n_docs": 12,
+      "meta_concept": "insol",
+      "pass1_broad": [
+        "insol",
+        "soluble",
+        "fibre",
+        "dietary",
+        "cellul"
+      ],
+      "pass2_specific": [
+        "consumed",
+        "derived",
+        "obtained",
+        "sourced",
+        "bound"
+      ],
+      "sample_doc": "Approximately 75% of all kidney stones are composed primarily of calcium oxalate, and hyperoxaluria is a primary risk factor for this disorder. Nine types of raw and cooked vegetables were analyzed fo"
+    },
+    {
+      "cluster_id": 96,
+      "n_docs": 12,
+      "meta_concept": "soluble",
+      "pass1_broad": [
+        "insol",
+        "soluble",
+        "fibre",
+        "dietary",
+        "cellul"
+      ],
+      "pass2_specific": [
+        "derived",
+        "consumed",
+        "obtained",
+        "sourced",
+        "bound"
+      ],
+      "sample_doc": "Approximately 75% of all kidney stones are composed primarily of calcium oxalate, and hyperoxaluria is a primary risk factor for this disorder. Nine types of raw and cooked vegetables were analyzed fo"
+    },
+    {
+      "cluster_id": 96,
+      "n_docs": 12,
+      "meta_concept": "fibre",
+      "pass1_broad": [
+        "insol",
+        "soluble",
+        "fibre",
+        "dietary",
+        "cellul"
+      ],
+      "pass2_specific": [
+        "consumed",
+        "derived",
+        "obtained",
+        "sourced",
+        "absorbed"
+      ],
+      "sample_doc": "Approximately 75% of all kidney stones are composed primarily of calcium oxalate, and hyperoxaluria is a primary risk factor for this disorder. Nine types of raw and cooked vegetables were analyzed fo"
+    },
+    {
+      "cluster_id": 89,
+      "n_docs": 11,
+      "meta_concept": "serum",
+      "pass1_broad": [
+        "serum",
+        "biom",
+        "markers",
+        "circulating",
+        "bone"
+      ],
+      "pass2_specific": [
+        "mechanisms",
+        "causal",
+        "caus",
+        "mechan",
+        "epidemi"
+      ],
+      "sample_doc": "Elevated phosphate (P) levels are seen in advanced renal failure and, together with dysregulated calcium, parathyroid hormone and vitamin D levels, contribute to the complex of chronic kidney disease-"
+    },
+    {
+      "cluster_id": 89,
+      "n_docs": 11,
+      "meta_concept": "biom",
+      "pass1_broad": [
+        "serum",
+        "biom",
+        "markers",
+        "circulating",
+        "bone"
+      ],
+      "pass2_specific": [
+        "mechanisms",
+        "causal",
+        "caus",
+        "mechan",
+        "epidemi"
+      ],
+      "sample_doc": "Elevated phosphate (P) levels are seen in advanced renal failure and, together with dysregulated calcium, parathyroid hormone and vitamin D levels, contribute to the complex of chronic kidney disease-"
+    },
+    {
+      "cluster_id": 89,
+      "n_docs": 11,
+      "meta_concept": "markers",
+      "pass1_broad": [
+        "serum",
+        "biom",
+        "markers",
+        "circulating",
+        "bone"
+      ],
+      "pass2_specific": [
+        "mechanisms",
+        "causal",
+        "caus",
+        "mechan",
+        "epidemi"
+      ],
+      "sample_doc": "Elevated phosphate (P) levels are seen in advanced renal failure and, together with dysregulated calcium, parathyroid hormone and vitamin D levels, contribute to the complex of chronic kidney disease-"
+    }
+  ],
+  "judgments": [
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - \"itian\" and \"plements\" appear to be nonsensical or truncated words without meaningful connection to the document content about diverticula",
+      "cluster_id": 85,
+      "meta": "itian",
+      "sub": "plements"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - Neither \"itian\" nor \"foil\" appear in the provided document excerpt, and they have no meaningful connection to diverticular disease or each",
+      "cluster_id": 85,
+      "meta": "itian",
+      "sub": "foil"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - \"itian\" and \"alsy\" appear to be extraction errors with no meaningful connection to the document text about diverticular disease.",
+      "cluster_id": 85,
+      "meta": "itian",
+      "sub": "alsy"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - \"itian\" and \"ynch\" appear to be misspellings or fragments that do not correspond to any recognizable concepts in the document excerpt abou",
+      "cluster_id": 85,
+      "meta": "itian",
+      "sub": "ynch"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - The document excerpt discusses diverticular disease of the colon, while the broader concept \"etic\" and specific concept \"foil\" appear to b",
+      "cluster_id": 85,
+      "meta": "etic",
+      "sub": "foil"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - The broader concept \"etic\" and specific concept \"plements\" appear to be fragments or misspellings unrelated to the document's content abou",
+      "cluster_id": 85,
+      "meta": "etic",
+      "sub": "plements"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - \"etic\" and \"alsy\" appear to be unrelated fragments or misspellings with no clear connection to diverticular disease.",
+      "cluster_id": 85,
+      "meta": "etic",
+      "sub": "alsy"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - The broader concept \"etic\" and specific concept \"ynch\" appear to be arbitrary or misspelled fragments that do not correspond to any recogn",
+      "cluster_id": 85,
+      "meta": "etic",
+      "sub": "ynch"
+    },
+    {
+      "judgment": "related",
+      "reasoning": "RELATED - \"Profiles\" and \"ranging\" both relate to describing or measuring variations (e.g., concentration ranges of compounds), but \"profiles\" is not ",
+      "cluster_id": 44,
+      "meta": "ranging",
+      "sub": "profiles"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - \"pecific\" appears to be a fragment or misspelling, and \"ranging\" does not relate to any concept in the document excerpt. Neither term has ",
+      "cluster_id": 44,
+      "meta": "ranging",
+      "sub": "pecific"
+    },
+    {
+      "judgment": "part_of",
+      "reasoning": "PART_OF - \"spec\" likely refers to specification or specific values (like the 0.98 ng/g and 0.39 ng/g concentrations), which are detailed aspects or co",
+      "cluster_id": 44,
+      "meta": "ranging",
+      "sub": "spec"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - \"specificity\" and \"ranging\" have no meaningful connection in the context of the document, which discusses chemical concentrations and diet",
+      "cluster_id": 44,
+      "meta": "ranging",
+      "sub": "specificity"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - \"profiles\" is not discussed in the document; the text mentions detecting concentrations of specific compounds, not any \"profiles.\"",
+      "cluster_id": 44,
+      "meta": "detected",
+      "sub": "profiles"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - \"pecific\" appears to be a typo or incomplete word (\"specific\"?), and there is no meaningful connection to \"detected\" in the context provid",
+      "cluster_id": 44,
+      "meta": "detected",
+      "sub": "pecific"
+    },
+    {
+      "judgment": "related",
+      "reasoning": "RELATED - \"spec\" (likely a typo for \"spectrometry\" or similar) is a method used to detect substances, but the text discusses detection of NP/OP concen",
+      "cluster_id": 44,
+      "meta": "detected",
+      "sub": "spec"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - \"Specificity\" (likely referring to measurement specificity or statistical specificity) is not mentioned or implied in the document excerpt",
+      "cluster_id": 44,
+      "meta": "detected",
+      "sub": "specificity"
+    },
+    {
+      "judgment": "related",
+      "reasoning": "RELATED - \"profiles\" and \"quant\" co-occur in the context of measuring concentrations, but profiles (e.g., concentration profiles) are not a specific t",
+      "cluster_id": 44,
+      "meta": "quant",
+      "sub": "profiles"
+    },
+    {
+      "judgment": "part_of",
+      "reasoning": "PART_OF - \"pecific\" appears to be a fragment of \"specific,\" and \"quant\" is likely shorthand for \"quantitative\" or \"quantity,\" but in context, the docu",
+      "cluster_id": 44,
+      "meta": "quant",
+      "sub": "pecific"
+    },
+    {
+      "judgment": "is_a",
+      "reasoning": "IS_A - \"spec\" (the specific concept) represents specific measured values (0.98 ng/g and 0.39 ng/g), which are instances/quantifications of the broader",
+      "cluster_id": 44,
+      "meta": "quant",
+      "sub": "spec"
+    },
+    {
+      "judgment": "related",
+      "reasoning": "RELATED - The document discusses quantifiable measurements (concentrations) and specific findings (significance, difference between groups), but \"spec",
+      "cluster_id": 44,
+      "meta": "quant",
+      "sub": "specificity"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - \"receiving\" is not a type, part, or aspect of \"Women\"; the document discusses women with PCOS but does not relate to the concept \"receivin",
+      "cluster_id": 127,
+      "meta": "Women",
+      "sub": "receiving"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - \"treated\" is an adjective describing a state (receiving treatment) and does not denote a type, part, or inherent aspect of \"Women\" as a co",
+      "cluster_id": 127,
+      "meta": "Women",
+      "sub": "treated"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - \"undergoing\" is a verb form describing an action or state, not a type, component, or meaningful co-occurring concept related to \"Women\" in",
+      "cluster_id": 127,
+      "meta": "Women",
+      "sub": "undergoing"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - \"Pregn\" appears to be a truncated form of \"pregnancy\", but \"receiving\" has no meaningful semantic connection to pregnancy in this context.",
+      "cluster_id": 127,
+      "meta": "Pregn",
+      "sub": "receiving"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - \"Pregn\" (likely shorthand for pregnancy) and \"treated\" do not share a clear hierarchical or component relationship; the excerpt discusses ",
+      "cluster_id": 127,
+      "meta": "Pregn",
+      "sub": "treated"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - \"Pregn\" likely refers to pregnancy, but \"undergoing\" is a verb describing an action or process, not a type, component, or aspect of pregna",
+      "cluster_id": 127,
+      "meta": "Pregn",
+      "sub": "undergoing"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - \"Obst\" appears to be an abbreviation for \"obstetric\" or \"obstetrics,\" which is unrelated to the concept of \"receiving\" in any hierarchical",
+      "cluster_id": 127,
+      "meta": "Obst",
+      "sub": "receiving"
+    },
+    {
+      "judgment": "related",
+      "reasoning": "RELATED - \"Obst\" (likely short for obesity/obstetrics) and \"treated\" co-occur in the context of assessing effects of excess weight on PCOS outcomes, b",
+      "cluster_id": 127,
+      "meta": "Obst",
+      "sub": "treated"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - \"Obst\" (likely short for \"obstetrics\" or \"obstacle\") has no clear or meaningful connection to \"undergoing\" in the context of PCOS and obes",
+      "cluster_id": 127,
+      "meta": "Obst",
+      "sub": "undergoing"
+    },
+    {
+      "judgment": "part_of",
+      "reasoning": "PART_OF - \"Here\" (the specific outcomes like decreased SHBG, increased testosterone, etc.) are components/aspects of what is being \"reflected\" as meta",
+      "cluster_id": 125,
+      "meta": "reflects",
+      "sub": "Here"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - \"Recently\" is a temporal term, while \"reflects\" describes a relationship or indication; they have no meaningful semantic or hierarchical c",
+      "cluster_id": 125,
+      "meta": "reflects",
+      "sub": "Recently"
+    },
+    {
+      "judgment": "related",
+      "reasoning": "RELATED - \"Current\" (likely referring to current state or current findings) is not a type, instance, component, or specific aspect of \"reflects\" in an",
+      "cluster_id": 125,
+      "meta": "reflects",
+      "sub": "Current"
+    },
+    {
+      "judgment": "related",
+      "reasoning": "RELATED - The broader concept \"reflects\" and specific concept \"Numerous\" do not have a hierarchical relationship; \"Numerous\" is not a type or componen",
+      "cluster_id": 125,
+      "meta": "reflects",
+      "sub": "Numerous"
+    },
+    {
+      "judgment": "part_of",
+      "reasoning": "PART_OF - \"Here\" refers to PCOS in the context of obesity, which is a specific manifestation or component of the broader concept \"complic\" (likely sho",
+      "cluster_id": 125,
+      "meta": "complic",
+      "sub": "Here"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - \"Recently\" is a temporal term with no meaningful connection to \"complic\" (likely short for complication/complicated) in the context of PCO",
+      "cluster_id": 125,
+      "meta": "complic",
+      "sub": "Recently"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - The broader concept \"complic\" appears to be an abbreviation for \"complication,\" but the specific concept \"Current\" has no meaningful medic",
+      "cluster_id": 125,
+      "meta": "complic",
+      "sub": "Current"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - \"Numerous\" is a quantifier meaning \"many,\" while \"complic\" likely refers to complications or something similar; there is no hierarchical o",
+      "cluster_id": 125,
+      "meta": "complic",
+      "sub": "Numerous"
+    },
+    {
+      "judgment": "part_of",
+      "reasoning": "PART_OF - \"Here\" in the specific concept appears to refer to specific metabolic and reproductive outcomes (like decreased SHBG, increased testosterone",
+      "cluster_id": 125,
+      "meta": "emphasizes",
+      "sub": "Here"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - \"Recently\" is a temporal term indicating time, while \"emphasizes\" is a verb indicating focus or importance; there is no meaningful concept",
+      "cluster_id": 125,
+      "meta": "emphasizes",
+      "sub": "Recently"
+    },
+    {
+      "judgment": "part_of",
+      "reasoning": "PART_OF - The broader concept \"emphasizes\" refers to the document's focus on highlighting certain outcomes, and \"Current\" (likely referring to current",
+      "cluster_id": 125,
+      "meta": "emphasizes",
+      "sub": "Current"
+    },
+    {
+      "judgment": "related",
+      "reasoning": "RELATED - \"Numerous\" describes a quantity or multiplicity, while \"emphasizes\" indicates highlighting or stressing something; they are conceptually dis",
+      "cluster_id": 125,
+      "meta": "emphasizes",
+      "sub": "Numerous"
+    },
+    {
+      "judgment": "part_of",
+      "reasoning": "PART_OF - \"consumed\" (as in consumed vegetables) is a component of the broader concept \"insol\" (likely meaning insoluble oxalate), since the document ",
+      "cluster_id": 96,
+      "meta": "insol",
+      "sub": "consumed"
+    },
+    {
+      "judgment": "part_of",
+      "reasoning": "PART_OF - The document discusses oxalate and its reduction by boiling, which relates to solubility (insol?), but \"derived\" likely refers to oxalate co",
+      "cluster_id": 96,
+      "meta": "insol",
+      "sub": "derived"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - \"insol\" is likely an abbreviation for \"insoluble\" (referring to oxalate solubility), while \"obtained\" is a generic verb with no hierarchic",
+      "cluster_id": 96,
+      "meta": "insol",
+      "sub": "obtained"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - \"insol\" (likely short for insoluble or insoluble oxalate) and \"sourced\" (referring to source of oxalate, e.g., from vegetables) are not hi",
+      "cluster_id": 96,
+      "meta": "insol",
+      "sub": "sourced"
+    },
+    {
+      "judgment": "related",
+      "reasoning": "RELATED - \"derived\" (as in water-soluble oxalate in vegetables) relates to the concept of \"soluble\" in the context of oxalate content, but it is not a",
+      "cluster_id": 96,
+      "meta": "soluble",
+      "sub": "derived"
+    },
+    {
+      "judgment": "related",
+      "reasoning": "RELATED - The document discusses soluble oxalate content in vegetables and how it is affected by boiling, while \"consumed\" refers to ingestion; they c",
+      "cluster_id": 96,
+      "meta": "soluble",
+      "sub": "consumed"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - \"obtained\" (a verb describing acquisition) has no meaningful hierarchical or component relationship with \"soluble\" (an adjective describin",
+      "cluster_id": 96,
+      "meta": "soluble",
+      "sub": "obtained"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - \"sourced\" (likely referring to oxalate source) is not a type, component, or specific aspect of \"soluble\"; they are conceptually unrelated ",
+      "cluster_id": 96,
+      "meta": "soluble",
+      "sub": "sourced"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - The document discusses oxalates in vegetables and kidney stones, with no mention of \"fibre\" or \"consumed\" as a sub-concept of fibre.",
+      "cluster_id": 96,
+      "meta": "fibre",
+      "sub": "consumed"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - The document discusses oxalate in vegetables and kidney stones, with no mention or connection to \"fibre\" or \"derived\" as related concepts.",
+      "cluster_id": 96,
+      "meta": "fibre",
+      "sub": "derived"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - \"obtained\" is a verb indicating acquisition, while \"fibre\" is a dietary component; they have no meaningful conceptual connection in the pr",
+      "cluster_id": 96,
+      "meta": "fibre",
+      "sub": "obtained"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - There is no meaningful connection between \"fibre\" and \"sourced\" in the given document excerpt. \"Sourced\" is not a sub-concept, component, ",
+      "cluster_id": 96,
+      "meta": "fibre",
+      "sub": "sourced"
+    },
+    {
+      "judgment": "part_of",
+      "reasoning": "PART_OF - \"mechanisms\" (such as dysregulation or vascular calcification) are aspects or components related to the manifestation and consequences of al",
+      "cluster_id": 89,
+      "meta": "serum",
+      "sub": "mechanisms"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - \"causal\" is a relational concept describing a relationship (cause-effect), while \"serum\" is a biological fluid; they are not hierarchicall",
+      "cluster_id": 89,
+      "meta": "serum",
+      "sub": "causal"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - \"caus\" appears to be a truncated or partial term (possibly related to \"causality\" or \"causal\"), while \"serum\" refers to a blood component;",
+      "cluster_id": 89,
+      "meta": "serum",
+      "sub": "caus"
+    },
+    {
+      "judgment": "unrelated",
+      "reasoning": "UNRELATED - \"mechan\" appears to be a truncation of \"mechanism\" or similar, and has no direct hierarchical or compositional relationship with \"serum\" a",
+      "cluster_id": 89,
+      "meta": "serum",
+      "sub": "mechan"
+    },
+    {
+      "judgment": "part_of",
+      "reasoning": "PART_OF - mechanisms of phosphate elevation and its effects are described as contributing to or being part of the broader concept of \"biom\" (likely re",
+      "cluster_id": 89,
+      "meta": "biom",
+      "sub": "mechanisms"
+    },
+    {
+      "judgment": "part_of",
+      "reasoning": "PART_OF - \"causal\" refers to causal factors or mechanisms (like elevated phosphate) that are part of the broader concept \"biom\" (biomarker or biologic",
+      "cluster_id": 89,
+      "meta": "biom",
+      "sub": "causal"
+    },
+    {
+      "judgment": "part_of",
+      "reasoning": "PART_OF - \"caus\" (causation/mechanism) is an aspect of the broader concept \"biom\" (biomarker or biological phenomenon), as elevated phosphate is a bio",
+      "cluster_id": 89,
+      "meta": "biom",
+      "sub": "caus"
+    },
+    {
+      "judgment": "part_of",
+      "reasoning": "PART_OF - mechan (mechanism) refers to the mechanistic role of elevated phosphate in vascular calcification and mortality, which is an aspect/componen",
+      "cluster_id": 89,
+      "meta": "biom",
+      "sub": "mechan"
+    },
+    {
+      "judgment": "part_of",
+      "reasoning": "PART_OF - mechanisms are an aspect or component of markers, as the document discusses mechanisms (like how phosphate contributes to disease) that are ",
+      "cluster_id": 89,
+      "meta": "markers",
+      "sub": "mechanisms"
+    },
+    {
+      "judgment": "part_of",
+      "reasoning": "PART_OF - The document excerpt describes elevated phosphate as a contributing factor (causal) in the complex of CKD-MBD and its association with vascu",
+      "cluster_id": 89,
+      "meta": "markers",
+      "sub": "causal"
+    },
+    {
+      "judgment": "part_of",
+      "reasoning": "PART_OF - The document treats “caus” (likely a truncated reference to causality/mechanisms related to phosphate) as an aspect or component within the ",
+      "cluster_id": 89,
+      "meta": "markers",
+      "sub": "caus"
+    },
+    {
+      "judgment": "related",
+      "reasoning": "RELATED - \"mechan\" appears to refer to mechanisms (as in mechanisms of disease), while \"markers\" refers to indicators like phosphate levels; they are ",
+      "cluster_id": 89,
+      "meta": "markers",
+      "sub": "mechan"
+    }
+  ]
+}

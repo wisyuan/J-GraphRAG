@@ -1,0 +1,209 @@
+{
+  "pairs": [
+    {
+      "a": "surgical",
+      "b": "surgeries",
+      "label": "same"
+    },
+    {
+      "a": "kidney",
+      "b": "kidneys",
+      "label": "same"
+    },
+    {
+      "a": "breast",
+      "b": "breasts",
+      "label": "same"
+    },
+    {
+      "a": "tumor",
+      "b": "tumors",
+      "label": "same"
+    },
+    {
+      "a": "cancer",
+      "b": "cancers",
+      "label": "same"
+    },
+    {
+      "a": "surgery",
+      "b": "surgeries",
+      "label": "same"
+    },
+    {
+      "a": "injectable",
+      "b": "injection",
+      "label": "near"
+    },
+    {
+      "a": "medicine",
+      "b": "medications",
+      "label": "near"
+    },
+    {
+      "a": "genetic",
+      "b": "genetics",
+      "label": "near"
+    },
+    {
+      "a": "therapy",
+      "b": "treatments",
+      "label": "near"
+    },
+    {
+      "a": "cancer",
+      "b": "carcinoma",
+      "label": "near"
+    },
+    {
+      "a": "symptoms",
+      "b": "diagnosis",
+      "label": "near"
+    },
+    {
+      "a": "radiation",
+      "b": "chemotherapy",
+      "label": "near"
+    },
+    {
+      "a": "genes",
+      "b": "genetics",
+      "label": "near"
+    },
+    {
+      "a": "drugs",
+      "b": "medications",
+      "label": "near"
+    },
+    {
+      "a": "chemotherapy",
+      "b": "therapy",
+      "label": "near"
+    },
+    {
+      "a": "tumor",
+      "b": "cancer",
+      "label": "near"
+    },
+    {
+      "a": "biopsy",
+      "b": "diagnosis",
+      "label": "near"
+    },
+    {
+      "a": "tumor",
+      "b": "carcinoma",
+      "label": "near"
+    },
+    {
+      "a": "surgery",
+      "b": "surgeon",
+      "label": "near"
+    },
+    {
+      "a": "genes",
+      "b": "mutation",
+      "label": "near"
+    },
+    {
+      "a": "drugs",
+      "b": "medicine",
+      "label": "near"
+    },
+    {
+      "a": "headaches",
+      "b": "kidneys",
+      "label": "diff"
+    },
+    {
+      "a": "radiation",
+      "b": "pregnancy",
+      "label": "diff"
+    },
+    {
+      "a": "cancer",
+      "b": "kidney",
+      "label": "diff"
+    },
+    {
+      "a": "trials",
+      "b": "safety",
+      "label": "diff"
+    },
+    {
+      "a": "sugar",
+      "b": "carcinoma",
+      "label": "diff"
+    },
+    {
+      "a": "blood",
+      "b": "breast",
+      "label": "diff"
+    },
+    {
+      "a": "surgery",
+      "b": "genetics",
+      "label": "diff"
+    },
+    {
+      "a": "immune",
+      "b": "bones",
+      "label": "diff"
+    },
+    {
+      "a": "cancer",
+      "b": "surgery",
+      "label": "diff"
+    },
+    {
+      "a": "bones",
+      "b": "therapy",
+      "label": "diff"
+    },
+    {
+      "a": "chest",
+      "b": "drugs",
+      "label": "diff"
+    },
+    {
+      "a": "muscle",
+      "b": "genes",
+      "label": "diff"
+    },
+    {
+      "a": "breath",
+      "b": "cervical",
+      "label": "diff"
+    },
+    {
+      "a": "blood",
+      "b": "surgery",
+      "label": "diff"
+    },
+    {
+      "a": "liver",
+      "b": "radiation",
+      "label": "diff"
+    },
+    {
+      "a": "lungs",
+      "b": "pregnancy",
+      "label": "diff"
+    },
+    {
+      "a": "family",
+      "b": "tumor",
+      "label": "diff"
+    },
+    {
+      "a": "heart",
+      "b": "prostate",
+      "label": "diff"
+    }
+  ],
+  "counts": {
+    "same": 6,
+    "near": 16,
+    "diff": 18
+  }
+}

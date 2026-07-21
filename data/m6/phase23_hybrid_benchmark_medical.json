@@ -1,0 +1,55 @@
+{
+  "method": "hybrid_filtered_benchmark",
+  "domain": "medical",
+  "n_chunks": 200,
+  "n_questions": 28,
+  "results": {
+    "B0": {
+      "overall": 0.7013986013986013,
+      "by_level": {
+        "L1": 1.0,
+        "L2": 0.5,
+        "L3": 0.9357142857142857,
+        "L4": 0.3698801198801198
+      },
+      "n": 28
+    },
+    "flat_stage7c": {
+      "overall": 0.7343073593073594,
+      "by_level": {
+        "L1": 1.0,
+        "L2": 0.5952380952380951,
+        "L3": 0.9642857142857143,
+        "L4": 0.3777056277056277
+      },
+      "n": 28
+    },
+    "flat_phase20": {
+      "overall": 0.743844696969697,
+      "by_level": {
+        "L1": 1.0,
+        "L2": 0.5952380952380951,
+        "L3": 1.0,
+        "L4": 0.38014069264069267
+      },
+      "n": 28
+    }
+  },
+  "filter_stats": {
+    "stage7c": {
+      "n_before": 87,
+      "n_after": 31
+    },
+    "phase20": {
+      "n_before": 87,
+      "n_after": 15,
+      "removed": {
+        "not_in_corpus": 14,
+        "verb_form": 4,
+        "prefill_stopword": 2,
+        "non_ascii": 1,
+        "too_rare": 51
+      }
+    }
+  }
+}

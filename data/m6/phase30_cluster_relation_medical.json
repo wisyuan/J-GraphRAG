@@ -1,0 +1,193 @@
+{
+  "method": "cluster_relation_graph_benchmark",
+  "domain": "medical",
+  "n_chunks": 200,
+  "n_questions": 28,
+  "clusters": {
+    "0": {
+      "concepts": [
+        "lungs",
+        "liver",
+        "heart"
+      ],
+      "representative": "liver",
+      "n": 3
+    },
+    "1": {
+      "concepts": [
+        "diagnosis",
+        "surgery",
+        "surgical",
+        "surgeries"
+      ],
+      "representative": "surgeries",
+      "n": 4
+    },
+    "2": {
+      "concepts": [
+        "cancer",
+        "tumors",
+        "tumor"
+      ],
+      "representative": "tumor",
+      "n": 3
+    },
+    "3": {
+      "concepts": [
+        "skinned",
+        "family",
+        "blood"
+      ],
+      "representative": "blood",
+      "n": 3
+    }
+  },
+  "efficiency": {
+    "concept_build_s": 53.8,
+    "relation_build_s": 3.1,
+    "total_build_s": 56.9,
+    "per_chunk_s": 0.2844,
+    "vram_peak_gb": 5.76,
+    "n_concepts": 13,
+    "n_relations": 21,
+    "n_known_type": 14,
+    "n_intra": 15,
+    "n_inter": 6,
+    "n_pairs_tested": 21
+  },
+  "results": {
+    "B0": {
+      "acc": 0.75,
+      "recall": 0.7122044622044621,
+      "acc_by_level": {
+        "L1": 1.0,
+        "L2": 0.7142857142857143,
+        "L3": 1.0,
+        "L4": 0.2857142857142857
+      },
+      "n": 28
+    },
+    "flat": {
+      "acc": 0.75,
+      "recall": 0.6972402597402596,
+      "acc_by_level": {
+        "L1": 1.0,
+        "L2": 0.5714285714285714,
+        "L3": 1.0,
+        "L4": 0.42857142857142855
+      },
+      "n": 28
+    },
+    "relation": {
+      "acc": 0.7142857142857143,
+      "recall": 0.6846861471861472,
+      "acc_by_level": {
+        "L1": 1.0,
+        "L2": 0.5714285714285714,
+        "L3": 1.0,
+        "L4": 0.2857142857142857
+      },
+      "n": 28
+    }
+  },
+  "top_relations": [
+    {
+      "a": "surgeries",
+      "b": "tumor",
+      "relation": "treat",
+      "prob": 0.4044,
+      "type": "inter"
+    },
+    {
+      "a": "liver",
+      "b": "surgeries",
+      "relation": "crucial",
+      "prob": 0.1736,
+      "type": "inter"
+    },
+    {
+      "a": "liver",
+      "b": "blood",
+      "relation": "crucial",
+      "prob": 0.1043,
+      "type": "inter"
+    },
+    {
+      "a": "cancer",
+      "b": "tumor",
+      "relation": "causal",
+      "prob": 0.0958,
+      "type": "intra"
+    },
+    {
+      "a": "cancer",
+      "b": "tumors",
+      "relation": "causal",
+      "prob": 0.0751,
+      "type": "intra"
+    },
+    {
+      "a": "lungs",
+      "b": "heart",
+      "relation": "vital",
+      "prob": 0.0587,
+      "type": "intra"
+    },
+    {
+      "a": "diagnosis",
+      "b": "surgery",
+      "relation": "crucial",
+      "prob": 0.0462,
+      "type": "intra"
+    },
+    {
+      "a": "diagnosis",
+      "b": "surgical",
+      "relation": "crucial",
+      "prob": 0.0235,
+      "type": "intra"
+    },
+    {
+      "a": "tumor",
+      "b": "blood",
+      "relation": "regulated",
+      "prob": 0.0219,
+      "type": "inter"
+    },
+    {
+      "a": "surgeries",
+      "b": "blood",
+      "relation": "crucial",
+      "prob": 0.0201,
+      "type": "inter"
+    },
+    {
+      "a": "diagnosis",
+      "b": "surgeries",
+      "relation": "crucial",
+      "prob": 0.0159,
+      "type": "intra"
+    },
+    {
+      "a": "liver",
+      "b": "heart",
+      "relation": "regulated",
+      "prob": 0.0137,
+      "type": "intra"
+    },
+    {
+      "a": "liver",
+      "b": "tumor",
+      "relation": "crucial",
+      "prob": 0.0075,
+      "type": "inter"
+    },
+    {
+      "a": "surgery",
+      "b": "surgical",
+      "relation": "integral",
+      "prob": 0.0052,
+      "type": "intra"
+    }
+  ]
+}

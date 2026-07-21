@@ -1,0 +1,3499 @@
+{
+  "method": "phase41_retrieval_equivalence",
+  "domain": "novel",
+  "created": "2026-07-21 02:03:30",
+  "config": {
+    "top_k": 10,
+    "seed_k": 5,
+    "sim_alpha": 0.5,
+    "ridge_lambdas": [
+      0.01,
+      0.1,
+      1.0
+    ],
+    "relation_weight": 0.7,
+    "relation_hops": 1,
+    "max_queries": 50
+  },
+  "n_chunks": 4391,
+  "n_concepts": 244,
+  "n_queries": 48,
+  "has_relations": true,
+  "verdict_rule": "top10_overlap >= 0.7 and kendall_tau >= 0.6",
+  "summary": {
+    "matrix_bge__vs__graph_flat": {
+      "mean_top10_overlap": 0.5083333333333333,
+      "mean_kendall_tau": -0.02584041416960186,
+      "n_queries": 48,
+      "n_tau": 41,
+      "verdict": "not_equivalent"
+    },
+    "matrix_bge__vs__graph_relation": {
+      "mean_top10_overlap": 0.5020833333333333,
+      "mean_kendall_tau": 0.02126982817293448,
+      "n_queries": 48,
+      "n_tau": 41,
+      "verdict": "not_equivalent"
+    },
+    "matrix_relation__vs__graph_flat": {
+      "mean_top10_overlap": 0.6604166666666667,
+      "mean_kendall_tau": 0.40625172592039044,
+      "n_queries": 48,
+      "n_tau": 40,
+      "verdict": "not_equivalent"
+    },
+    "matrix_relation__vs__graph_relation": {
+      "mean_top10_overlap": 1.0,
+      "mean_kendall_tau": 1.0,
+      "n_queries": 48,
+      "n_tau": 40,
+      "verdict": "matrix_can_replace_graph"
+    },
+    "matrix_ridge_0.01__vs__graph_flat": {
+      "mean_top10_overlap": 0.9145833333333334,
+      "mean_kendall_tau": 0.38453965461988115,
+      "n_queries": 48,
+      "n_tau": 40,
+      "verdict": "not_equivalent"
+    },
+    "matrix_ridge_0.01__vs__graph_relation": {
+      "mean_top10_overlap": 0.65,
+      "mean_kendall_tau": 0.03883855025573402,
+      "n_queries": 48,
+      "n_tau": 40,
+      "verdict": "not_equivalent"
+    },
+    "matrix_ridge_0.1__vs__graph_flat": {
+      "mean_top10_overlap": 0.9145833333333334,
+      "mean_kendall_tau": 0.38559020934409455,
+      "n_queries": 48,
+      "n_tau": 40,
+      "verdict": "not_equivalent"
+    },
+    "matrix_ridge_0.1__vs__graph_relation": {
+      "mean_top10_overlap": 0.65,
+      "mean_kendall_tau": 0.039157166915900724,
+      "n_queries": 48,
+      "n_tau": 40,
+      "verdict": "not_equivalent"
+    },
+    "matrix_ridge_1__vs__graph_flat": {
+      "mean_top10_overlap": 0.9145833333333334,
+      "mean_kendall_tau": 0.38620429725154304,
+      "n_queries": 48,
+      "n_tau": 40,
+      "verdict": "not_equivalent"
+    },
+    "matrix_ridge_1__vs__graph_relation": {
+      "mean_top10_overlap": 0.65,
+      "mean_kendall_tau": 0.03938825912676479,
+      "n_queries": 48,
+      "n_tau": 40,
+      "verdict": "not_equivalent"
+    },
+    "matrix_seed_idf__vs__graph_flat": {
+      "mean_top10_overlap": 1.0,
+      "mean_kendall_tau": 1.0,
+      "n_queries": 48,
+      "n_tau": 40,
+      "verdict": "matrix_can_replace_graph"
+    },
+    "matrix_seed_idf__vs__graph_relation": {
+      "mean_top10_overlap": 0.6604166666666667,
+      "mean_kendall_tau": 0.40625172592039044,
+      "n_queries": 48,
+      "n_tau": 40,
+      "verdict": "not_equivalent"
+    },
+    "matrix_sim_ws__vs__graph_flat": {
+      "mean_top10_overlap": 0.9666666666666667,
+      "mean_kendall_tau": 0.26645439348022204,
+      "n_queries": 48,
+      "n_tau": 41,
+      "verdict": "not_equivalent"
+    },
+    "matrix_sim_ws__vs__graph_relation": {
+      "mean_top10_overlap": 0.64375,
+      "mean_kendall_tau": 0.15060605469328767,
+      "n_queries": 48,
+      "n_tau": 41,
+      "verdict": "not_equivalent"
+    },
+    "matrix_sim_wu__vs__graph_flat": {
+      "mean_top10_overlap": 0.9625,
+      "mean_kendall_tau": 0.2589750358530563,
+      "n_queries": 48,
+      "n_tau": 41,
+      "verdict": "not_equivalent"
+    },
+    "matrix_sim_wu__vs__graph_relation": {
+      "mean_top10_overlap": 0.64375,
+      "mean_kendall_tau": 0.14511474456940804,
+      "n_queries": 48,
+      "n_tau": 41,
+      "verdict": "not_equivalent"
+    }
+  },
+  "per_query": [
+    {
+      "qid": "Novel-73586ddc",
+      "level": "L1",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.9999999999999999
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.3940892081708866
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.44369859151460245
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.4667643135129602
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.23116123091406585
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.6813855970687058
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.6813855970687058
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.6813855970687058
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.3940892081708866
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.25061800252877986
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.18780674087395294
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.08292256329366998
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.057734685600654055
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.057734685600654055
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.05786969012678676
+        }
+      }
+    },
+    {
+      "qid": "Novel-74440a6a",
+      "level": "L1",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.9999999999999999
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.8,
+          "kendall_tau": 0.40777447092182756
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.34137116704333864
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.32916928215836955
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.12203658898753553
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.5170487376647359
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.5170487376647359
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.5170487376647359
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.8,
+          "kendall_tau": 0.4077744709218275
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.8,
+          "kendall_tau": 0.18560586117951777
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.8,
+          "kendall_tau": 0.22490413475692567
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.18886226525918864
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.8,
+          "kendall_tau": 0.010077745435257704
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.8,
+          "kendall_tau": 0.010018811251425787
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.8,
+          "kendall_tau": 0.010092478981215682
+        }
+      }
+    },
+    {
+      "qid": "Novel-f80cbf85",
+      "level": "L1",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.9999999999999999
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.2746859074660014
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.19334905841370387
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.2313667902761141
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.0927383704101802
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 0.7,
+          "kendall_tau": 0.28860085718093675
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 0.7,
+          "kendall_tau": 0.28986989722717027
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 0.7,
+          "kendall_tau": 0.3027013021390868
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.27468590746600147
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.9999999999999998
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.0758395462902966
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.08378868865011939
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.0995154331831744
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.4004353140619079
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.40024388613709144
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.3977234184603413
+        }
+      }
+    },
+    {
+      "qid": "Novel-b3c430ef",
+      "level": "L1",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": null
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": null
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        }
+      }
+    },
+    {
+      "qid": "Novel-304b0354",
+      "level": "L1",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.41483799925443365
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.2380334983110744
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.25892802256124553
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.021336812406904798
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.36748145857104825
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.36748145857104825
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.36748145857104825
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.4148379992544336
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.20917813808105912
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.17424981240837786
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.05964812500244292
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.1468099852370746
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.14656772453536326
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.1456332904001909
+        }
+      }
+    },
+    {
+      "qid": "Novel-b1a95144",
+      "level": "L1",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.34654160056480815
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.30750266799032455
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.3192135327043383
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.04340209694453484
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.46810513644883855
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.46810513644883855
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.46810513644883855
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.34654160056480826
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.18385966361671846
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.1766039744898286
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.10791214970913716
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.1933467828964842
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.19333377035935753
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.19321665752521758
+        }
+      }
+    },
+    {
+      "qid": "Novel-e05d0922",
+      "level": "L1",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.4143036441772435
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.23802690085627382
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.2589195076731291
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.05719538924888531
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.3672945488152783
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.3672945488152783
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.3672945488152783
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.4143036441772435
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.20917189764442326
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.17424103246480668
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.10901205392917244
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.14667694275857704
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.14643467315043404
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.14550020466188243
+        }
+      }
+    },
+    {
+      "qid": "Novel-dba48e64",
+      "level": "L1",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": null
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": null
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        }
+      }
+    },
+    {
+      "qid": "Novel-ea3d4859",
+      "level": "L1",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.3770023103259985
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.37631431938510934
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.36295775873393343
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.12986808657653884
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.5501290291734365
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.5622560423201479
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.5640010478373237
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.3770023103259985
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.23737963383808056
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.25702145689070943
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.1985080003779385
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.0223380371312109
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.018962451748950854
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.008362829173198994
+        }
+      }
+    },
+    {
+      "qid": "Novel-ba894e2c",
+      "level": "L1",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.18286500952402907
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.11968376324589751
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.1205587026427704
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.06555305062178209
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 0.7,
+          "kendall_tau": -0.25458753860865774
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 0.7,
+          "kendall_tau": -0.25458753860865774
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 0.7,
+          "kendall_tau": -0.25458753860865774
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.18286500952402907
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.07407630994310399
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.010203408382568913
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.08196238997641199
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.16815029294398842
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.16815029294398842
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.16815029294398842
+        }
+      }
+    },
+    {
+      "qid": "Novel-42f1975a",
+      "level": "L1",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": null
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": null
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        }
+      }
+    },
+    {
+      "qid": "Novel-419cadfe",
+      "level": "L1",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": null
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": null
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        }
+      }
+    },
+    {
+      "qid": "Novel-8ff5dd5a",
+      "level": "L2",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.9999999999999999
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.2594761258373957
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.09470901987775318
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.1018670759837757
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.049888563017822185
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.4666666666666666
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.4666666666666666
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.4666666666666666
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.2594761258373957
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.04453998635969783
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.048932826995246745
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.05044652795255894
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.16614709273596098
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.16614709273596098
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.16614709273596098
+        }
+      }
+    },
+    {
+      "qid": "Novel-322bb52d",
+      "level": "L2",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.9999999999999999
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.4977443338643303
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.26242857199796565
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.25315063315063874
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.008199300266173729
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.4093504579252229
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.4093504579252229
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.4093504579252229
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.4977443338643303
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.2390346689101776
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.27702013460875075
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.06244408686970746
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.18276182807020716
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.18276182807020716
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.18272662401972653
+        }
+      }
+    },
+    {
+      "qid": "Novel-35fee661",
+      "level": "L2",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.18286500952402907
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.11968376324589751
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.1205587026427704
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.04981451624790042
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 0.7,
+          "kendall_tau": -0.25458753860865774
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 0.7,
+          "kendall_tau": -0.25458753860865774
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 0.7,
+          "kendall_tau": -0.25458753860865774
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.18286500952402907
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.07407630994310399
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.010203408382568913
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.08875599677344674
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.16815029294398842
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.16815029294398842
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.16815029294398842
+        }
+      }
+    },
+    {
+      "qid": "Novel-ade4b34a",
+      "level": "L2",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.5024297169239281
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.2655703549762511
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.25621601312353925
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.06097474591223852
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.41374823065542893
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.41374823065542893
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.41374823065542893
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.5024297169239281
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.24203660727748974
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.2795832783925009
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.008210491370569818
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.18845452342520533
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.18845452342520533
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.18841965672336902
+        }
+      }
+    },
+    {
+      "qid": "Novel-462ecc23",
+      "level": "L2",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.34654160056480815
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.30750266799032455
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.3192135327043383
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.050788488240064635
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.46810513644883855
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.46810513644883855
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.46810513644883855
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.34654160056480826
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.18385966361671846
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.1766039744898286
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.08868489514011337
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.1933467828964842
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.19333377035935753
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.19321665752521758
+        }
+      }
+    },
+    {
+      "qid": "Novel-4f5a8531",
+      "level": "L2",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.35359389245780537
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.36249698690405835
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.3495771637016012
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.043043063593587096
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.5406147810732519
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.5502697658525099
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.5516429192433377
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.35359389245780537
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.2207942432414904
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.2338310143322113
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.1368065042953139
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.02383024402153649
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.021877723316500213
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.021267560596176377
+        }
+      }
+    },
+    {
+      "qid": "Novel-0e2be889",
+      "level": "L2",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.42539254333847853
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.2415749157949622
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.24243642477496719
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.020413016269765893
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.37251953139438193
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.37251953139438193
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.37251953139438193
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.42539254333847853
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.21089109806203604
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.16991106378736295
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.03064060590980553
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.15294122898909474
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.152701267406012
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.15177570129983572
+        }
+      }
+    },
+    {
+      "qid": "Novel-0d237b40",
+      "level": "L2",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.0847293993650619
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.08658147763027724
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.04416828115133602
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.1318658898416305
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.1318658898416305
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.1318658898416305
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.0847293993650619
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.08658147763027724
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.04416828115133602
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.1318658898416305
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.1318658898416305
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.1318658898416305
+        }
+      }
+    },
+    {
+      "qid": "Novel-346b12e8",
+      "level": "L2",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.34654160056480815
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.30750266799032455
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.3192135327043383
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.016544200859771263
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.46810513644883855
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.46810513644883855
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.46810513644883855
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.34654160056480826
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.18385966361671846
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.1766039744898286
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.11316861545428138
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.1933467828964842
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.19333377035935753
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.19321665752521758
+        }
+      }
+    },
+    {
+      "qid": "Novel-302a626f",
+      "level": "L2",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.18286500952402907
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.11968376324589751
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.1205587026427704
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.04461668999538958
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 0.7,
+          "kendall_tau": -0.25458753860865774
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 0.7,
+          "kendall_tau": -0.25458753860865774
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 0.7,
+          "kendall_tau": -0.25458753860865774
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.18286500952402907
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.07407630994310399
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.010203408382568913
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.09061301913254506
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.16815029294398842
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.16815029294398842
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.16815029294398842
+        }
+      }
+    },
+    {
+      "qid": "Novel-e894a5f5",
+      "level": "L2",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.4145709458032738
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.2380301034344273
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.25892361749454096
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.036288857228088785
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.36730632077103964
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.36730632077103964
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.36730632077103964
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.4145709458032738
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.209174933364154
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.1742453251764186
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.029310971879571265
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.14669120912127345
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.1464489445314778
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.14551449539940883
+        }
+      }
+    },
+    {
+      "qid": "Novel-f473bcb0",
+      "level": "L2",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.42674297286167895
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.2556389121070085
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.2701455453436858
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.05076302091821552
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 0.8,
+          "kendall_tau": 0.37715076727923097
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 0.8,
+          "kendall_tau": 0.3843842675453992
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 0.8,
+          "kendall_tau": 0.3883700738145124
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.42674297286167895
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.2353031083090781
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.18197640835547774
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.022093102281304268
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.21484788037766578
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.2192694783047381
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.220905817695072
+        }
+      }
+    },
+    {
+      "qid": "Novel-ff793656",
+      "level": "L3",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.34654160056480815
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.30750266799032455
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.3192135327043383
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.057159955540788815
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.46810513644883855
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.46810513644883855
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.46810513644883855
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.34654160056480826
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.18385966361671846
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.1766039744898286
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.11397864248708735
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.1933467828964842
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.19333377035935753
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.19321665752521758
+        }
+      }
+    },
+    {
+      "qid": "Novel-48edb564",
+      "level": "L3",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.08472924676457719
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.12571840516889451
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.04261619072943106
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.14561722496557417
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.14561722496557417
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.14561722496557417
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.08472924676457719
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.12571840516889451
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.04261619072943106
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.14561722496557417
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.14561722496557417
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.14561722496557417
+        }
+      }
+    },
+    {
+      "qid": "Novel-296c7595",
+      "level": "L3",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.42539254333847853
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.24152188590692814
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.2329673995810499
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.031068702831213685
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.37278575356545807
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.37278575356545807
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.37278575356545807
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.42539254333847853
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.2069351274419301
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.25516580550802515
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.0555605564122744
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.15311334124463968
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.1528733785470661
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.15194780814213935
+        }
+      }
+    },
+    {
+      "qid": "Novel-733f63f7",
+      "level": "L3",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": null
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": null
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        }
+      }
+    },
+    {
+      "qid": "Novel-2ab4a26d",
+      "level": "L3",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.34654160056480815
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.30750266799032455
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.3192135327043383
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.036748706311920204
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.46810513644883855
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.46810513644883855
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.46810513644883855
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.34654160056480826
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.18385966361671846
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.1766039744898286
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.10375313994392363
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.1933467828964842
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.19333377035935753
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.19321665752521758
+        }
+      }
+    },
+    {
+      "qid": "Novel-f24f442f",
+      "level": "L3",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.45068951297340304
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.2521988599502101
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.2431884506315129
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.059408054759161597
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.41328102748612333
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.41328102748612333
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.41328102748612333
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.450689512973403
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.21111239109929103
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.2648352871622861
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.0237383379948137
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.08554813343376326
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.08558906555502344
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.0853434728274624
+        }
+      }
+    },
+    {
+      "qid": "Novel-3b90994e",
+      "level": "L3",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.9999999999999999
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.2594761258373957
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.09470901987775318
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.1018670759837757
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.05676447522548527
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.4666666666666666
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.4666666666666666
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.4666666666666666
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.2594761258373957
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.04453998635969783
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.048932826995246745
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.016875018881580682
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.16614709273596098
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.16614709273596098
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.16614709273596098
+        }
+      }
+    },
+    {
+      "qid": "Novel-613d4e81",
+      "level": "L3",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.41483799925443365
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.2380334983110744
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.25892802256124553
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.014435155546357003
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.36748145857104825
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.36748145857104825
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.36748145857104825
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.4148379992544336
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.20917813808105912
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.17424981240837786
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.077411507851276
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.1468099852370746
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.14656772453536326
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.1456332904001909
+        }
+      }
+    },
+    {
+      "qid": "Novel-69348684",
+      "level": "L3",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.38364414684303527
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.38320992702390977
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.3825343789532262
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.27689817925986565
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.5816302390806786
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.5816302390806786
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.5816302390806786
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.38364414684303527
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.2396390228662725
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.23289874125355314
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.18314492173128752
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": -0.005636937466253944
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": -0.005651791056415351
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": -0.0058300341383522355
+        }
+      }
+    },
+    {
+      "qid": "Novel-19dda12f",
+      "level": "L3",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": null
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": null
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        }
+      }
+    },
+    {
+      "qid": "Novel-6aa2cc33",
+      "level": "L3",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.42674297286167895
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.2556389121070085
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.2701455453436858
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.057071589113540384
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 0.8,
+          "kendall_tau": 0.37715076727923097
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 0.8,
+          "kendall_tau": 0.3843842675453992
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 0.8,
+          "kendall_tau": 0.3883700738145124
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.42674297286167895
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.2353031083090781
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.18197640835547774
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.014314301737238973
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.21484788037766578
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.2192694783047381
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.220905817695072
+        }
+      }
+    },
+    {
+      "qid": "Novel-b418b955",
+      "level": "L3",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.9999999999999999
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.47759130144450374
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.25893022230828006
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.24980665078189088
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.044372189295389455
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.40304412309898136
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.4030952610959488
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.40329981308381857
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.4775913014445037
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.9999999999999999
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.23052935059926935
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.283118854326677
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.09535392653503812
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.20642541316998897
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.20639136642528008
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.2057785250205201
+        }
+      }
+    },
+    {
+      "qid": "Novel-9d9b1ed1",
+      "level": "L4",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.38364414684303527
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.38320992702390977
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.3825343789532262
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.2763354226466999
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.5816302390806786
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.5816302390806786
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.5816302390806786
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.38364414684303527
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.2396390228662725
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.23289874125355314
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.14779466007576691
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": -0.005636937466253944
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": -0.005651791056415351
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": -0.0058300341383522355
+        }
+      }
+    },
+    {
+      "qid": "Novel-dca8ac49",
+      "level": "L4",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.38893232941021416
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.44083088069632165
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.43925379797981123
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.2547987385083369
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.6715051420939431
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.6715051420939431
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.6715051420939431
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.38893232941021416
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.28294577918723707
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.2582901717179446
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.10768039869371453
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.06187626151667084
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.06186293760161557
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.061996176752168265
+        }
+      }
+    },
+    {
+      "qid": "Novel-e89fa155",
+      "level": "L4",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.3214837625219534
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.26879121449157906
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.2593383386670962
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.6,
+          "kendall_tau": -0.015517441598608383
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 0.7,
+          "kendall_tau": 0.3830518432574898
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 0.7,
+          "kendall_tau": 0.3875048557245181
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 0.7,
+          "kendall_tau": 0.3879223256433019
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.3214837625219534
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.0006867156752810306
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.07554299651162075
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.06468874115854889
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.07876487692376495
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.07858034833004941
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.08020650656216757
+        }
+      }
+    },
+    {
+      "qid": "Novel-6956692c",
+      "level": "L4",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 0.8,
+          "kendall_tau": 0.07339432953180673
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 0.8,
+          "kendall_tau": 0.11278971135410257
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.019441844343143503
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.6666666666666669
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.6666666666666669
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.6666666666666669
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.8,
+          "kendall_tau": 0.07339432953180673
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.8,
+          "kendall_tau": 0.11278971135410257
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.019441844343143503
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.6666666666666669
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.6666666666666669
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.6666666666666669
+        }
+      }
+    },
+    {
+      "qid": "Novel-27b6e451",
+      "level": "L4",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.36565563166590226
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.438544826953956
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.28665421869963875
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.5774936610989729
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.5774936610989729
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.5774936610989729
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.36565563166590226
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.36565563166590226
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.105104807027126
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.13550902439214263
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.01660243848620591
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.01661753161210246
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.01679864912286107
+        }
+      }
+    },
+    {
+      "qid": "Novel-a940228b",
+      "level": "L4",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.9999999999999998
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.2483395118928012
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.11971751482187067
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.12654164697688267
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.09312082885575289
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.15746862995291877
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.15746862995291877
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.15746862995291877
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.2483395118928012
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.9,
+          "kendall_tau": -0.12563108190619646
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.9,
+          "kendall_tau": -0.2121761806831391
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.10433381424733915
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.9,
+          "kendall_tau": -0.29846042593046207
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.9,
+          "kendall_tau": -0.29846042593046207
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.9,
+          "kendall_tau": -0.29847760795895467
+        }
+      }
+    },
+    {
+      "qid": "Novel-2e0ffce2",
+      "level": "L4",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.41241660281095305
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.41948603160348363
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.4334014979759722
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.04793134056963636
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.5750124429900402
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.5750124429900402
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.5750433393654628
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.412416602810953
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.1272629752208255
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.12918746222477098
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": -0.0017843045671621135
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.06446740396784276
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.06445711470059068
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.0643850898298262
+        }
+      }
+    },
+    {
+      "qid": "Novel-4334e7fc",
+      "level": "L4",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.9999999999999999
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.2833789663000405
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.09470901987775318
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.10103132769799839
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.04759659228193448
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.14719429664521316
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.14719429664521316
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.14719429664521316
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.2833789663000405
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.08098366824295153
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.14872003501214542
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.08452795882890785
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.9,
+          "kendall_tau": -0.3260759534004223
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.9,
+          "kendall_tau": -0.32626731252800467
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.9,
+          "kendall_tau": -0.3261477130732657
+        }
+      }
+    },
+    {
+      "qid": "Novel-db4551ac",
+      "level": "L4",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.0423933019360531
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.045368180175363496
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.03901987907557383
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.0423933019360531
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.6,
+          "kendall_tau": 0.045368180175363496
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.03901987907557383
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        }
+      }
+    },
+    {
+      "qid": "Novel-a4a83818",
+      "level": "L4",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.7,
+          "kendall_tau": 0.23038583726094802
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.41406965419965397
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.4126787299112525
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.25628459021383404
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.6208510073720825
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.6208510073720825
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.6208794190052224
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.7,
+          "kendall_tau": 0.23038583726094805
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.7,
+          "kendall_tau": 0.19271016781905312
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.7,
+          "kendall_tau": 0.2127566025865883
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.07325309742166285
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.7,
+          "kendall_tau": -0.13105185232335348
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.7,
+          "kendall_tau": -0.13112552352134285
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.7,
+          "kendall_tau": -0.13115315022058888
+        }
+      }
+    },
+    {
+      "qid": "Novel-e0a374bb",
+      "level": "L4",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 1.0
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 0.8,
+          "kendall_tau": 0.33351054275743114
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.32652025658602174
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 0.9,
+          "kendall_tau": 0.31659070675558504
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": 0.030514971603477308
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 0.8,
+          "kendall_tau": 0.44512905442426604
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 0.8,
+          "kendall_tau": 0.44512905442426604
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 0.8,
+          "kendall_tau": 0.44509006444884236
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 0.8,
+          "kendall_tau": 0.33351054275743114
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": 0.9999999999999999
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 0.8,
+          "kendall_tau": 0.08147484795881006
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 0.8,
+          "kendall_tau": 0.03540019366278034
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": -0.001517528031893236
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 0.7,
+          "kendall_tau": -0.13187035181726142
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 0.7,
+          "kendall_tau": -0.13190353405280186
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 0.7,
+          "kendall_tau": -0.13191182961168701
+        }
+      }
+    },
+    {
+      "qid": "Novel-11abd566",
+      "level": "L4",
+      "pairs": {
+        "matrix_seed_idf__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_relation__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_sim_ws__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_sim_wu__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_bge__vs__graph_flat": {
+          "top10_overlap": 0.5,
+          "kendall_tau": null
+        },
+        "matrix_ridge_0.01__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_ridge_0.1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_ridge_1__vs__graph_flat": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_seed_idf__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_relation__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_sim_ws__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_sim_wu__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_bge__vs__graph_relation": {
+          "top10_overlap": 0.5,
+          "kendall_tau": null
+        },
+        "matrix_ridge_0.01__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_ridge_0.1__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        },
+        "matrix_ridge_1__vs__graph_relation": {
+          "top10_overlap": 1.0,
+          "kendall_tau": null
+        }
+      }
+    }
+  ]
+}

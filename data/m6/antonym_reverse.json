@@ -1,0 +1,252 @@
+{
+  "authentication": {
+    "text_preview": "function verifyPassword(user, input) { const hash = bcrypt.h",
+    "direction_analysis": [
+      {
+        "n_words": 1,
+        "offset_syn": 0.02384922800315603,
+        "offset_anti": 0.06281335150664691,
+        "cos_syn_anti_directions": 0.3705539786513078,
+        "best_alpha": 0.0,
+        "enhanced_to_syn_similarity": 0.976150771996844,
+        "offset_enhanced": 1.0003985306816787e-08
+      },
+      {
+        "n_words": 3,
+        "offset_syn": 0.044186400728923214,
+        "offset_anti": 0.10606689113954271,
+        "cos_syn_anti_directions": 0.4734810057196971,
+        "best_alpha": 0.0,
+        "enhanced_to_syn_similarity": 0.9558135992710768,
+        "offset_enhanced": 1.0003985306816787e-08
+      },
+      {
+        "n_words": 5,
+        "offset_syn": 0.06311002758391426,
+        "offset_anti": 0.13517092602669456,
+        "cos_syn_anti_directions": 0.40647978885737696,
+        "best_alpha": 0.0,
+        "enhanced_to_syn_similarity": 0.9368899724160857,
+        "offset_enhanced": 1.0003985306816787e-08
+      },
+      {
+        "n_words": 8,
+        "offset_syn": 0.08921350489998103,
+        "offset_anti": 0.14528123108176638,
+        "cos_syn_anti_directions": 0.43852253444422007,
+        "best_alpha": 0.0,
+        "enhanced_to_syn_similarity": 0.910786495100019,
+        "offset_enhanced": 1.0003985306816787e-08
+      },
+      {
+        "n_words": 12,
+        "offset_syn": 0.09361408031565932,
+        "offset_anti": 0.15963807770047123,
+        "cos_syn_anti_directions": 0.4583629357457623,
+        "best_alpha": 0.0,
+        "enhanced_to_syn_similarity": 0.9063859196843407,
+        "offset_enhanced": 1.0003985306816787e-08
+      }
+    ]
+  },
+  "nutrition": {
+    "text_preview": "Recent studies suggest that high-fiber diets may reduce the ",
+    "direction_analysis": [
+      {
+        "n_words": 1,
+        "offset_syn": 0.018252448645263986,
+        "offset_anti": 0.042886818182317876,
+        "cos_syn_anti_directions": 0.5005306470617248,
+        "best_alpha": 0.0,
+        "enhanced_to_syn_similarity": 0.981747551354736,
+        "offset_enhanced": 9.999685524064716e-09
+      },
+      {
+        "n_words": 3,
+        "offset_syn": 0.03585662944840151,
+        "offset_anti": 0.06606278791382181,
+        "cos_syn_anti_directions": 0.5610718414240966,
+        "best_alpha": 0.0,
+        "enhanced_to_syn_similarity": 0.9641433705515985,
+        "offset_enhanced": 9.999685524064716e-09
+      },
+      {
+        "n_words": 5,
+        "offset_syn": 0.05207669456447184,
+        "offset_anti": 0.07616591958206453,
+        "cos_syn_anti_directions": 0.5729391454255113,
+        "best_alpha": 0.0,
+        "enhanced_to_syn_similarity": 0.9479233054355282,
+        "offset_enhanced": 9.999685524064716e-09
+      },
+      {
+        "n_words": 8,
+        "offset_syn": 0.07086467733441659,
+        "offset_anti": 0.10769187811219416,
+        "cos_syn_anti_directions": 0.5934297213223201,
+        "best_alpha": 0.0,
+        "enhanced_to_syn_similarity": 0.9291353226655834,
+        "offset_enhanced": 9.999685524064716e-09
+      },
+      {
+        "n_words": 12,
+        "offset_syn": 0.09691229629382514,
+        "offset_anti": 0.13192131084341896,
+        "cos_syn_anti_directions": 0.6013039651279156,
+        "best_alpha": 0.0,
+        "enhanced_to_syn_similarity": 0.9030877037061749,
+        "offset_enhanced": 9.999685524064716e-09
+      }
+    ]
+  },
+  "machine_learning": {
+    "text_preview": "We propose a novel transformer architecture that achieves st",
+    "direction_analysis": [
+      {
+        "n_words": 1,
+        "offset_syn": 0.03217798135154415,
+        "offset_anti": 0.04930204309055741,
+        "cos_syn_anti_directions": 0.41378447083703257,
+        "best_alpha": 0.0,
+        "enhanced_to_syn_similarity": 0.9678220186484559,
+        "offset_enhanced": 1.0001132699777315e-08
+      },
+      {
+        "n_words": 3,
+        "offset_syn": 0.06730330783024718,
+        "offset_anti": 0.09683145593219578,
+        "cos_syn_anti_directions": 0.4060183960059223,
+        "best_alpha": 0.0,
+        "enhanced_to_syn_similarity": 0.9326966921697528,
+        "offset_enhanced": 1.0001132699777315e-08
+      },
+      {
+        "n_words": 5,
+        "offset_syn": 0.10199869844674192,
+        "offset_anti": 0.14922019481068471,
+        "cos_syn_anti_directions": 0.4800835664589324,
+        "best_alpha": 0.0,
+        "enhanced_to_syn_similarity": 0.8980013015532581,
+        "offset_enhanced": 1.0001132699777315e-08
+      },
+      {
+        "n_words": 8,
+        "offset_syn": 0.1485561834615231,
+        "offset_anti": 0.1861723450447409,
+        "cos_syn_anti_directions": 0.5743808699925065,
+        "best_alpha": 0.0,
+        "enhanced_to_syn_similarity": 0.8514438165384769,
+        "offset_enhanced": 1.0001132699777315e-08
+      },
+      {
+        "n_words": 12,
+        "offset_syn": 0.167156680452202,
+        "offset_anti": 0.19875511511768917,
+        "cos_syn_anti_directions": 0.6396507557730761,
+        "best_alpha": 0.0,
+        "enhanced_to_syn_similarity": 0.832843319547798,
+        "offset_enhanced": 1.0001132699777315e-08
+      }
+    ]
+  },
+  "cardiovascular": {
+    "text_preview": "Statin therapy has been shown to reduce LDL cholesterol leve",
+    "direction_analysis": [
+      {
+        "n_words": 1,
+        "offset_syn": 0.029095081773831022,
+        "offset_anti": 0.05624321370512442,
+        "cos_syn_anti_directions": 0.503980372544618,
+        "best_alpha": 0.0,
+        "enhanced_to_syn_similarity": 0.970904918226169,
+        "offset_enhanced": 9.9941213083099e-09
+      },
+      {
+        "n_words": 3,
+        "offset_syn": 0.042483937603737365,
+        "offset_anti": 0.07075751395917262,
+        "cos_syn_anti_directions": 0.5567523156487035,
+        "best_alpha": 0.0,
+        "enhanced_to_syn_similarity": 0.9575160623962626,
+        "offset_enhanced": 9.9941213083099e-09
+      },
+      {
+        "n_words": 5,
+        "offset_syn": 0.07035965080345052,
+        "offset_anti": 0.08289232719424344,
+        "cos_syn_anti_directions": 0.5653017354877333,
+        "best_alpha": 0.0,
+        "enhanced_to_syn_similarity": 0.9296403491965495,
+        "offset_enhanced": 9.9941213083099e-09
+      },
+      {
+        "n_words": 8,
+        "offset_syn": 0.09162859632701403,
+        "offset_anti": 0.11214071146073079,
+        "cos_syn_anti_directions": 0.5876677827086854,
+        "best_alpha": 0.0,
+        "enhanced_to_syn_similarity": 0.908371403672986,
+        "offset_enhanced": 9.9941213083099e-09
+      },
+      {
+        "n_words": 12,
+        "offset_syn": 0.10504688634867287,
+        "offset_anti": 0.13799043253430898,
+        "cos_syn_anti_directions": 0.589576662045144,
+        "best_alpha": 0.0,
+        "enhanced_to_syn_similarity": 0.8949531136513271,
+        "offset_enhanced": 9.9941213083099e-09
+      }
+    ]
+  },
+  "customer_service": {
+    "text_preview": "Customer A reported a delayed delivery of order #12345. The ",
+    "direction_analysis": [
+      {
+        "n_words": 1,
+        "offset_syn": 0.0042845643479334505,
+        "offset_anti": 0.0493290899401051,
+        "cos_syn_anti_directions": 0.24604264700910064,
+        "best_alpha": 0.0,
+        "enhanced_to_syn_similarity": 0.9957154356520665,
+        "offset_enhanced": 1.0004277850583776e-08
+      },
+      {
+        "n_words": 3,
+        "offset_syn": 0.018832647546369707,
+        "offset_anti": 0.07438320926248387,
+        "cos_syn_anti_directions": 0.34200355991009407,
+        "best_alpha": 0.0,
+        "enhanced_to_syn_similarity": 0.9811673524536303,
+        "offset_enhanced": 1.0004277850583776e-08
+      },
+      {
+        "n_words": 5,
+        "offset_syn": 0.031181925046910863,
+        "offset_anti": 0.07963927992705222,
+        "cos_syn_anti_directions": 0.4451581107148709,
+        "best_alpha": 0.0,
+        "enhanced_to_syn_similarity": 0.9688180749530891,
+        "offset_enhanced": 1.0004277850583776e-08
+      },
+      {
+        "n_words": 8,
+        "offset_syn": 0.0605373406205294,
+        "offset_anti": 0.1265146482002939,
+        "cos_syn_anti_directions": 0.5050403348670979,
+        "best_alpha": 0.0,
+        "enhanced_to_syn_similarity": 0.9394626593794706,
+        "offset_enhanced": 1.0004277850583776e-08
+      },
+      {
+        "n_words": 12,
+        "offset_syn": 0.08998312316473389,
+        "offset_anti": 0.1538914758874681,
+        "cos_syn_anti_directions": 0.5897170214679024,
+        "best_alpha": 0.0,
+        "enhanced_to_syn_similarity": 0.9100168768352661,
+        "offset_enhanced": 1.0004277850583776e-08
+      }
+    ]
+  }
+}

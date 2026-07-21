@@ -1,0 +1,2530 @@
+{
+  "method": "threshold_controlled_jlens_expansion",
+  "model": "qwen2.5-7b-it",
+  "layer": 26,
+  "n_docs": 1206,
+  "thresholds": {
+    "min_corpus_hit_rate": 0.4,
+    "max_bpe_frag_ratio": 0.3,
+    "max_verb_ratio": 0.4,
+    "min_effective_concepts": 3,
+    "max_depth": 3
+  },
+  "tree_stats": {
+    "n_nodes": 79,
+    "n_expanded": 4,
+    "n_stopped": 75,
+    "max_depth": 2,
+    "stop_reasons": {
+      "too_few_effective": 47,
+      "prior_expansion_leaf": 18,
+      "low_corpus_hit": 8,
+      "high_verb_ratio": 2
+    },
+    "nodes_at_depth": {
+      "1": 61,
+      "2": 18
+    },
+    "expand_rate": 0.05063291139240506
+  },
+  "tree": {
+    "node_id": "root",
+    "depth": 0,
+    "n_docs": 1206,
+    "concepts": [],
+    "quality": {},
+    "expand_decision": "expanded",
+    "stop_reason": null,
+    "children": [
+      {
+        "node_id": "d1_n2",
+        "depth": 1,
+        "n_docs": 34,
+        "concepts": [
+          "normally",
+          "transformed",
+          "ormal",
+          "aturally",
+          "alyzed",
+          "transform",
+          "normalized",
+          "izontally"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 1.0,
+          "verb_ratio": 0.25,
+          "bpe_frag_ratio": 0.25,
+          "corpus_hit_ratio": 0.12,
+          "n_effective": 1,
+          "pos_counts": {
+            "UNK": 4,
+            "VBD": 2,
+            "FRAG": 2
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (1<3)",
+        "children": [],
+        "sample": "It has been speculated that maternal phthalate exposure may affect reproductive development in human newborns. However, the mechanism awaits further i"
+      },
+      {
+        "node_id": "d1_n3",
+        "depth": 1,
+        "n_docs": 23,
+        "concepts": [
+          "assessed",
+          "assessment",
+          "assessments",
+          "itian",
+          "etic",
+          "frequency",
+          "questionnaire",
+          "quality"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 0.75,
+          "verb_ratio": 0.12,
+          "bpe_frag_ratio": 0.25,
+          "corpus_hit_ratio": 0.5,
+          "n_effective": 4,
+          "pos_counts": {
+            "VBD": 1,
+            "NN": 3,
+            "NNS": 1,
+            "FRAG": 2,
+            "UNK": 1
+          }
+        },
+        "expand_decision": "expanded",
+        "stop_reason": null,
+        "children": [
+          {
+            "node_id": "d2_n4",
+            "depth": 2,
+            "n_docs": 23,
+            "concepts": [
+              "discussed",
+              "predominantly",
+              "mainly",
+              "mostly",
+              "largely",
+              "diverse",
+              "likely",
+              "evident"
+            ],
+            "quality": {
+              "n_concepts": 8,
+              "noun_ratio": 0.5,
+              "verb_ratio": 0.12,
+              "bpe_frag_ratio": 0.25,
+              "corpus_hit_ratio": 0.25,
+              "n_effective": 2,
+              "pos_counts": {
+                "VBD": 1,
+                "UNK": 5,
+                "FRAG": 2
+              }
+            },
+            "expand_decision": "leaf",
+            "stop_reason": "prior_expansion_leaf",
+            "children": [],
+            "sample": "Diverticular disease of the colon is among the most prevalent conditions in western society and is among the leading reasons for outpatient visits and"
+          },
+          {
+            "node_id": "d2_n5",
+            "depth": 2,
+            "n_docs": 23,
+            "concepts": [
+              "discussed",
+              "predominantly",
+              "mainly",
+              "evident",
+              "mostly",
+              "likely",
+              "diverse",
+              "largely"
+            ],
+            "quality": {
+              "n_concepts": 8,
+              "noun_ratio": 0.5,
+              "verb_ratio": 0.12,
+              "bpe_frag_ratio": 0.25,
+              "corpus_hit_ratio": 0.25,
+              "n_effective": 2,
+              "pos_counts": {
+                "VBD": 1,
+                "UNK": 5,
+                "FRAG": 2
+              }
+            },
+            "expand_decision": "leaf",
+            "stop_reason": "prior_expansion_leaf",
+            "children": [],
+            "sample": "Diverticular disease of the colon is among the most prevalent conditions in western society and is among the leading reasons for outpatient visits and"
+          },
+          {
+            "node_id": "d2_n6",
+            "depth": 2,
+            "n_docs": 23,
+            "concepts": [
+              "likely",
+              "mainly",
+              "mostly",
+              "implicitly",
+              "predominantly",
+              "implicit",
+              "discussed",
+              "implied"
+            ],
+            "quality": {
+              "n_concepts": 8,
+              "noun_ratio": 0.5,
+              "verb_ratio": 0.25,
+              "bpe_frag_ratio": 0.25,
+              "corpus_hit_ratio": 0.25,
+              "n_effective": 2,
+              "pos_counts": {
+                "FRAG": 2,
+                "UNK": 4,
+                "VBD": 2
+              }
+            },
+            "expand_decision": "leaf",
+            "stop_reason": "prior_expansion_leaf",
+            "children": [],
+            "sample": "Diverticular disease of the colon is among the most prevalent conditions in western society and is among the leading reasons for outpatient visits and"
+          },
+          {
+            "node_id": "d2_n7",
+            "depth": 2,
+            "n_docs": 23,
+            "concepts": [
+              "likely",
+              "mostly",
+              "mainly",
+              "predominantly",
+              "largely",
+              "evident",
+              "unlikely",
+              "typically"
+            ],
+            "quality": {
+              "n_concepts": 8,
+              "noun_ratio": 1.0,
+              "verb_ratio": 0.0,
+              "bpe_frag_ratio": 0.25,
+              "corpus_hit_ratio": 0.12,
+              "n_effective": 1,
+              "pos_counts": {
+                "FRAG": 2,
+                "UNK": 6
+              }
+            },
+            "expand_decision": "leaf",
+            "stop_reason": "prior_expansion_leaf",
+            "children": [],
+            "sample": "Diverticular disease of the colon is among the most prevalent conditions in western society and is among the leading reasons for outpatient visits and"
+          }
+        ],
+        "sample": "Diverticular disease of the colon is among the most prevalent conditions in western society and is among the leading reasons for outpatient visits and"
+      },
+      {
+        "node_id": "d1_n8",
+        "depth": 1,
+        "n_docs": 16,
+        "concepts": [
+          "availability",
+          "number",
+          "empirical",
+          "accessibility",
+          "efficacy",
+          "literature",
+          "follow",
+          "scope"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 1.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 0.25,
+          "corpus_hit_ratio": 0.38,
+          "n_effective": 3,
+          "pos_counts": {
+            "NN": 3,
+            "UNK": 2,
+            "JJ": 1,
+            "FRAG": 2
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "low_corpus_hit (38%<40%)",
+        "children": [],
+        "sample": "BACKGROUND: Irritable bowel syndrome (IBS) is a common chronic gastrointestinal disorder. The role of pharmacotherapy for IBS is limited and focused m"
+      },
+      {
+        "node_id": "d1_n9",
+        "depth": 1,
+        "n_docs": 13,
+        "concepts": [
+          "Women",
+          "Pregn",
+          "Participants",
+          "Obst",
+          "Female",
+          "Subjects",
+          "Random",
+          "Eight"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 1.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 0.62,
+          "corpus_hit_ratio": 0.12,
+          "n_effective": 1,
+          "pos_counts": {
+            "UNK": 1,
+            "FRAG": 5,
+            "NNS": 2
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (1<3)",
+        "children": [],
+        "sample": "While many women with polycystic ovary syndrome (PCOS) are overweight, obese or centrally obese, the effect of excess weight on the outcomes of PCOS i"
+      },
+      {
+        "node_id": "d1_n10",
+        "depth": 1,
+        "n_docs": 13,
+        "concepts": [
+          "reporting",
+          "published",
+          "evaluating",
+          "assessing",
+          "involving",
+          "examining",
+          "investigating",
+          "comparing"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 0.0,
+          "verb_ratio": 1.0,
+          "bpe_frag_ratio": 0.0,
+          "corpus_hit_ratio": 0.12,
+          "n_effective": 1,
+          "pos_counts": {
+            "VBG": 7,
+            "VBD": 1
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (1<3)",
+        "children": [],
+        "sample": "Diabetic retinopathy is a common and specific microvascular complication of diabetes, and remains the leading cause of preventable blindness in workin"
+      },
+      {
+        "node_id": "d1_n11",
+        "depth": 1,
+        "n_docs": 12,
+        "concepts": [
+          "highlights",
+          "reflects",
+          "demonstrates",
+          "indicates",
+          "emphasizes",
+          "suggests",
+          "complic",
+          "underscores"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 1.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 0.0,
+          "corpus_hit_ratio": 0.12,
+          "n_effective": 1,
+          "pos_counts": {
+            "NNS": 7,
+            "JJ": 1
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (1<3)",
+        "children": [],
+        "sample": "Overweight or obese women with PCOS had decreased sex hormone-binding globulin (SHBG), increased total testosterone, free androgen index, hirsutism, f"
+      },
+      {
+        "node_id": "d1_n12",
+        "depth": 1,
+        "n_docs": 12,
+        "concepts": [
+          "insol",
+          "soluble",
+          "fibre",
+          "dietary",
+          "cellul",
+          "fiber",
+          "lign",
+          "crystall"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 1.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 0.5,
+          "corpus_hit_ratio": 0.25,
+          "n_effective": 2,
+          "pos_counts": {
+            "FRAG": 4,
+            "UNK": 4
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (2<3)",
+        "children": [],
+        "sample": "Approximately 75% of all kidney stones are composed primarily of calcium oxalate, and hyperoxaluria is a primary risk factor for this disorder. Nine t"
+      },
+      {
+        "node_id": "d1_n13",
+        "depth": 1,
+        "n_docs": 11,
+        "concepts": [
+          "serum",
+          "biom",
+          "markers",
+          "circulating",
+          "bone",
+          "calcium",
+          "cardiovascular",
+          "biochemical"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 0.6,
+          "verb_ratio": 0.12,
+          "bpe_frag_ratio": 0.12,
+          "corpus_hit_ratio": 0.62,
+          "n_effective": 5,
+          "pos_counts": {
+            "UNK": 3,
+            "FRAG": 1,
+            "NNS": 1,
+            "VBG": 1,
+            "JJ": 2
+          }
+        },
+        "expand_decision": "expanded",
+        "stop_reason": null,
+        "children": [
+          {
+            "node_id": "d2_n14",
+            "depth": 2,
+            "n_docs": 11,
+            "concepts": [
+              "discussed",
+              "evident",
+              "highlighted",
+              "multif",
+              "explored",
+              "predominantly",
+              "diverse",
+              "elucid"
+            ],
+            "quality": {
+              "n_concepts": 8,
+              "noun_ratio": 0.0,
+              "verb_ratio": 0.38,
+              "bpe_frag_ratio": 0.25,
+              "corpus_hit_ratio": 0.0,
+              "n_effective": 0,
+              "pos_counts": {
+                "VBD": 3,
+                "UNK": 3,
+                "FRAG": 2
+              }
+            },
+            "expand_decision": "leaf",
+            "stop_reason": "prior_expansion_leaf",
+            "children": [],
+            "sample": "Elevated phosphate (P) levels are seen in advanced renal failure and, together with dysregulated calcium, parathyroid hormone and vitamin D levels, co"
+          },
+          {
+            "node_id": "d2_n15",
+            "depth": 2,
+            "n_docs": 11,
+            "concepts": [
+              "discussed",
+              "highlighted",
+              "evident",
+              "explored",
+              "multif",
+              "predominantly",
+              "mentioned",
+              "mainly"
+            ],
+            "quality": {
+              "n_concepts": 8,
+              "noun_ratio": 0.0,
+              "verb_ratio": 0.5,
+              "bpe_frag_ratio": 0.25,
+              "corpus_hit_ratio": 0.0,
+              "n_effective": 0,
+              "pos_counts": {
+                "VBD": 4,
+                "UNK": 2,
+                "FRAG": 2
+              }
+            },
+            "expand_decision": "leaf",
+            "stop_reason": "prior_expansion_leaf",
+            "children": [],
+            "sample": "Elevated phosphate (P) levels are seen in advanced renal failure and, together with dysregulated calcium, parathyroid hormone and vitamin D levels, co"
+          },
+          {
+            "node_id": "d2_n16",
+            "depth": 2,
+            "n_docs": 11,
+            "concepts": [
+              "discussed",
+              "evident",
+              "highlighted",
+              "mentioned",
+              "multif",
+              "predominantly",
+              "interconnected",
+              "explored"
+            ],
+            "quality": {
+              "n_concepts": 8,
+              "noun_ratio": 0.0,
+              "verb_ratio": 0.62,
+              "bpe_frag_ratio": 0.12,
+              "corpus_hit_ratio": 0.0,
+              "n_effective": 0,
+              "pos_counts": {
+                "VBD": 5,
+                "UNK": 2,
+                "FRAG": 1
+              }
+            },
+            "expand_decision": "leaf",
+            "stop_reason": "prior_expansion_leaf",
+            "children": [],
+            "sample": "Elevated phosphate (P) levels are seen in advanced renal failure and, together with dysregulated calcium, parathyroid hormone and vitamin D levels, co"
+          },
+          {
+            "node_id": "d2_n17",
+            "depth": 2,
+            "n_docs": 11,
+            "concepts": [
+              "discussed",
+              "implicit",
+              "implicitly",
+              "intertwined",
+              "implied",
+              "mentioned",
+              "indirectly",
+              "interconnected"
+            ],
+            "quality": {
+              "n_concepts": 8,
+              "noun_ratio": 0.0,
+              "verb_ratio": 0.62,
+              "bpe_frag_ratio": 0.0,
+              "corpus_hit_ratio": 0.0,
+              "n_effective": 0,
+              "pos_counts": {
+                "VBD": 5,
+                "UNK": 3
+              }
+            },
+            "expand_decision": "leaf",
+            "stop_reason": "prior_expansion_leaf",
+            "children": [],
+            "sample": "Elevated phosphate (P) levels are seen in advanced renal failure and, together with dysregulated calcium, parathyroid hormone and vitamin D levels, co"
+          },
+          {
+            "node_id": "d2_n18",
+            "depth": 2,
+            "n_docs": 11,
+            "concepts": [
+              "discussed",
+              "highlighted",
+              "evident",
+              "alyzed",
+              "explored",
+              "identified",
+              "emphasized",
+              "mentioned"
+            ],
+            "quality": {
+              "n_concepts": 8,
+              "noun_ratio": 0.0,
+              "verb_ratio": 0.75,
+              "bpe_frag_ratio": 0.12,
+              "corpus_hit_ratio": 0.0,
+              "n_effective": 0,
+              "pos_counts": {
+                "VBD": 6,
+                "UNK": 1,
+                "FRAG": 1
+              }
+            },
+            "expand_decision": "leaf",
+            "stop_reason": "prior_expansion_leaf",
+            "children": [],
+            "sample": "Elevated phosphate (P) levels are seen in advanced renal failure and, together with dysregulated calcium, parathyroid hormone and vitamin D levels, co"
+          }
+        ],
+        "sample": "Elevated phosphate (P) levels are seen in advanced renal failure and, together with dysregulated calcium, parathyroid hormone and vitamin D levels, co"
+      },
+      {
+        "node_id": "d1_n19",
+        "depth": 1,
+        "n_docs": 11,
+        "concepts": [
+          "administration",
+          "injection",
+          "injections",
+          "administrations",
+          "routes",
+          "doses",
+          "toxicity",
+          "exposure"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 1.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 0.25,
+          "corpus_hit_ratio": 0.5,
+          "n_effective": 4,
+          "pos_counts": {
+            "NN": 3,
+            "NNS": 2,
+            "FRAG": 2,
+            "UNK": 1
+          }
+        },
+        "expand_decision": "expanded",
+        "stop_reason": null,
+        "children": [
+          {
+            "node_id": "d2_n20",
+            "depth": 2,
+            "n_docs": 11,
+            "concepts": [
+              "discussed",
+              "evident",
+              "predominantly",
+              "mainly",
+              "mostly",
+              "largely",
+              "multif",
+              "biological"
+            ],
+            "quality": {
+              "n_concepts": 8,
+              "noun_ratio": 1.0,
+              "verb_ratio": 0.12,
+              "bpe_frag_ratio": 0.38,
+              "corpus_hit_ratio": 0.12,
+              "n_effective": 1,
+              "pos_counts": {
+                "VBD": 1,
+                "UNK": 3,
+                "FRAG": 3,
+                "JJ": 1
+              }
+            },
+            "expand_decision": "leaf",
+            "stop_reason": "prior_expansion_leaf",
+            "children": [],
+            "sample": "Capsicum-derived ingredients function as skin-conditioning agents--miscellaneous, external analgesics, flavoring agents, or fragrance components in co"
+          },
+          {
+            "node_id": "d2_n21",
+            "depth": 2,
+            "n_docs": 11,
+            "concepts": [
+              "discussed",
+              "evident",
+              "highlighted",
+              "mentioned",
+              "explored",
+              "described",
+              "multif",
+              "predominantly"
+            ],
+            "quality": {
+              "n_concepts": 8,
+              "noun_ratio": 1.0,
+              "verb_ratio": 0.62,
+              "bpe_frag_ratio": 0.12,
+              "corpus_hit_ratio": 0.12,
+              "n_effective": 1,
+              "pos_counts": {
+                "VBD": 5,
+                "UNK": 2,
+                "FRAG": 1
+              }
+            },
+            "expand_decision": "leaf",
+            "stop_reason": "prior_expansion_leaf",
+            "children": [],
+            "sample": "Capsicum-derived ingredients function as skin-conditioning agents--miscellaneous, external analgesics, flavoring agents, or fragrance components in co"
+          },
+          {
+            "node_id": "d2_n22",
+            "depth": 2,
+            "n_docs": 11,
+            "concepts": [
+              "discussed",
+              "evident",
+              "highlighted",
+              "multif",
+              "mentioned",
+              "predominantly",
+              "mainly",
+              "described"
+            ],
+            "quality": {
+              "n_concepts": 8,
+              "noun_ratio": 1.0,
+              "verb_ratio": 0.5,
+              "bpe_frag_ratio": 0.25,
+              "corpus_hit_ratio": 0.12,
+              "n_effective": 1,
+              "pos_counts": {
+                "VBD": 4,
+                "UNK": 2,
+                "FRAG": 2
+              }
+            },
+            "expand_decision": "leaf",
+            "stop_reason": "prior_expansion_leaf",
+            "children": [],
+            "sample": "Capsicum-derived ingredients function as skin-conditioning agents--miscellaneous, external analgesics, flavoring agents, or fragrance components in co"
+          },
+          {
+            "node_id": "d2_n23",
+            "depth": 2,
+            "n_docs": 11,
+            "concepts": [
+              "discussed",
+              "evident",
+              "multif",
+              "highlighted",
+              "diverse",
+              "varied",
+              "identified",
+              "described"
+            ],
+            "quality": {
+              "n_concepts": 8,
+              "noun_ratio": 1.0,
+              "verb_ratio": 0.5,
+              "bpe_frag_ratio": 0.25,
+              "corpus_hit_ratio": 0.12,
+              "n_effective": 1,
+              "pos_counts": {
+                "VBD": 4,
+                "UNK": 2,
+                "FRAG": 2
+              }
+            },
+            "expand_decision": "leaf",
+            "stop_reason": "prior_expansion_leaf",
+            "children": [],
+            "sample": "Capsicum-derived ingredients function as skin-conditioning agents--miscellaneous, external analgesics, flavoring agents, or fragrance components in co"
+          }
+        ],
+        "sample": "Capsicum-derived ingredients function as skin-conditioning agents--miscellaneous, external analgesics, flavoring agents, or fragrance components in co"
+      },
+      {
+        "node_id": "d1_n24",
+        "depth": 1,
+        "n_docs": 11,
+        "concepts": [
+          "ases",
+          "ased",
+          "aser",
+          "anse",
+          "asing",
+          "aset",
+          "ates",
+          "asel"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 0.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 1.0,
+          "corpus_hit_ratio": 0.0,
+          "n_effective": 0,
+          "pos_counts": {
+            "FRAG": 8
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (0<3)",
+        "children": [],
+        "sample": "Molecular mimicry is one of the pathological mechanisms proposed to explain the association between microorganisms and autoimmune diseases. This revie"
+      },
+      {
+        "node_id": "d1_n25",
+        "depth": 1,
+        "n_docs": 10,
+        "concepts": [
+          "randomized",
+          "trials",
+          "prospective",
+          "observational",
+          "random",
+          "relevant",
+          "published",
+          "placebo"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 0.67,
+          "verb_ratio": 0.25,
+          "bpe_frag_ratio": 0.12,
+          "corpus_hit_ratio": 0.38,
+          "n_effective": 3,
+          "pos_counts": {
+            "VBD": 2,
+            "NNS": 1,
+            "JJ": 2,
+            "FRAG": 1,
+            "UNK": 2
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "low_corpus_hit (38%<40%)",
+        "children": [],
+        "sample": "Objective To determine whether supplementation with B vitamins that lower levels of plasma total homocysteine can slow the rate of brain atrophy in su"
+      },
+      {
+        "node_id": "d1_n26",
+        "depth": 1,
+        "n_docs": 10,
+        "concepts": [
+          "percent",
+          "males",
+          "women"
+        ],
+        "quality": {
+          "n_concepts": 3,
+          "noun_ratio": 1.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 0.33,
+          "corpus_hit_ratio": 0.33,
+          "n_effective": 1,
+          "pos_counts": {
+            "UNK": 2,
+            "FRAG": 1
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (1<3)",
+        "children": [],
+        "sample": "Primary (simple) constipation is a consequence of habitual bowel elimination on common toilet seats. A considerable proportion of the population with "
+      },
+      {
+        "node_id": "d1_n27",
+        "depth": 1,
+        "n_docs": 9,
+        "concepts": [
+          "olic",
+          "rosis",
+          "olis",
+          "olist",
+          "osis",
+          "olia",
+          "olum",
+          "iosis"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 0.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 1.0,
+          "corpus_hit_ratio": 0.0,
+          "n_effective": 0,
+          "pos_counts": {
+            "FRAG": 8
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (0<3)",
+        "children": [],
+        "sample": "INTRODUCTION: Ingestion of a small amount of concentrated hydrogen peroxide can cause cerebral air gas embolism (CAGE). Hyperbaric oxygen therapy (HBO"
+      },
+      {
+        "node_id": "d1_n28",
+        "depth": 1,
+        "n_docs": 9,
+        "concepts": [
+          "forming",
+          "stone",
+          "developing",
+          "urinary",
+          "formation",
+          "kidney",
+          "stones",
+          "calcium"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 0.83,
+          "verb_ratio": 0.25,
+          "bpe_frag_ratio": 0.12,
+          "corpus_hit_ratio": 0.75,
+          "n_effective": 6,
+          "pos_counts": {
+            "VBG": 2,
+            "UNK": 3,
+            "NN": 1,
+            "FRAG": 1,
+            "NNS": 1
+          }
+        },
+        "expand_decision": "expanded",
+        "stop_reason": null,
+        "children": [
+          {
+            "node_id": "d2_n29",
+            "depth": 2,
+            "n_docs": 9,
+            "concepts": [
+              "discussed",
+              "highlighted",
+              "predominantly",
+              "explored",
+              "mentioned",
+              "evident",
+              "likely",
+              "mainly"
+            ],
+            "quality": {
+              "n_concepts": 8,
+              "noun_ratio": 0.0,
+              "verb_ratio": 0.5,
+              "bpe_frag_ratio": 0.25,
+              "corpus_hit_ratio": 0.0,
+              "n_effective": 0,
+              "pos_counts": {
+                "VBD": 4,
+                "UNK": 2,
+                "FRAG": 2
+              }
+            },
+            "expand_decision": "leaf",
+            "stop_reason": "prior_expansion_leaf",
+            "children": [],
+            "sample": "A study was carried out to determine the effect of a low animal protein diet, such as taken by vegetarians, on the risk of urinary stone disease. A na"
+          },
+          {
+            "node_id": "d2_n30",
+            "depth": 2,
+            "n_docs": 9,
+            "concepts": [
+              "discussed",
+              "predominantly",
+              "mainly",
+              "highlighted",
+              "largely",
+              "explored",
+              "examined",
+              "mostly"
+            ],
+            "quality": {
+              "n_concepts": 8,
+              "noun_ratio": 0.0,
+              "verb_ratio": 0.5,
+              "bpe_frag_ratio": 0.25,
+              "corpus_hit_ratio": 0.12,
+              "n_effective": 1,
+              "pos_counts": {
+                "VBD": 4,
+                "UNK": 2,
+                "FRAG": 2
+              }
+            },
+            "expand_decision": "leaf",
+            "stop_reason": "prior_expansion_leaf",
+            "children": [],
+            "sample": "A study was carried out to determine the effect of a low animal protein diet, such as taken by vegetarians, on the risk of urinary stone disease. A na"
+          },
+          {
+            "node_id": "d2_n31",
+            "depth": 2,
+            "n_docs": 9,
+            "concepts": [
+              "discussed",
+              "highlighted",
+              "evident",
+              "explored",
+              "mentioned",
+              "multif",
+              "covered",
+              "alyzed"
+            ],
+            "quality": {
+              "n_concepts": 8,
+              "noun_ratio": 0.0,
+              "verb_ratio": 0.62,
+              "bpe_frag_ratio": 0.25,
+              "corpus_hit_ratio": 0.0,
+              "n_effective": 0,
+              "pos_counts": {
+                "VBD": 5,
+                "UNK": 1,
+                "FRAG": 2
+              }
+            },
+            "expand_decision": "leaf",
+            "stop_reason": "prior_expansion_leaf",
+            "children": [],
+            "sample": "A study was carried out to determine the effect of a low animal protein diet, such as taken by vegetarians, on the risk of urinary stone disease. A na"
+          },
+          {
+            "node_id": "d2_n32",
+            "depth": 2,
+            "n_docs": 9,
+            "concepts": [
+              "discussed",
+              "predominantly",
+              "mainly",
+              "highlighted",
+              "evident",
+              "mentioned",
+              "likely",
+              "explored"
+            ],
+            "quality": {
+              "n_concepts": 8,
+              "noun_ratio": 0.0,
+              "verb_ratio": 0.5,
+              "bpe_frag_ratio": 0.25,
+              "corpus_hit_ratio": 0.0,
+              "n_effective": 0,
+              "pos_counts": {
+                "VBD": 4,
+                "UNK": 2,
+                "FRAG": 2
+              }
+            },
+            "expand_decision": "leaf",
+            "stop_reason": "prior_expansion_leaf",
+            "children": [],
+            "sample": "A study was carried out to determine the effect of a low animal protein diet, such as taken by vegetarians, on the risk of urinary stone disease. A na"
+          },
+          {
+            "node_id": "d2_n33",
+            "depth": 2,
+            "n_docs": 9,
+            "concepts": [
+              "discussed",
+              "evident",
+              "highlighted",
+              "predominantly",
+              "explored",
+              "multif",
+              "mainly",
+              "identified"
+            ],
+            "quality": {
+              "n_concepts": 8,
+              "noun_ratio": 0.0,
+              "verb_ratio": 0.5,
+              "bpe_frag_ratio": 0.25,
+              "corpus_hit_ratio": 0.0,
+              "n_effective": 0,
+              "pos_counts": {
+                "VBD": 4,
+                "UNK": 2,
+                "FRAG": 2
+              }
+            },
+            "expand_decision": "leaf",
+            "stop_reason": "prior_expansion_leaf",
+            "children": [],
+            "sample": "A study was carried out to determine the effect of a low animal protein diet, such as taken by vegetarians, on the risk of urinary stone disease. A na"
+          }
+        ],
+        "sample": "A study was carried out to determine the effect of a low animal protein diet, such as taken by vegetarians, on the risk of urinary stone disease. A na"
+      },
+      {
+        "node_id": "d1_n34",
+        "depth": 1,
+        "n_docs": 8,
+        "concepts": [
+          "vitro",
+          "experimental",
+          "animal",
+          "laboratory",
+          "humans",
+          "macro",
+          "mice",
+          "vivo"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 1.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 0.62,
+          "corpus_hit_ratio": 0.12,
+          "n_effective": 1,
+          "pos_counts": {
+            "UNK": 2,
+            "JJ": 1,
+            "FRAG": 5
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (1<3)",
+        "children": [],
+        "sample": "Throughout evolution sunlight produced vitamin D in the skin has been critically important for health. Vitamin D, known as the sunshine vitamin, is ac"
+      },
+      {
+        "node_id": "d1_n35",
+        "depth": 1,
+        "n_docs": 8,
+        "concepts": [
+          "over",
+          "overs",
+          "back",
+          "half",
+          "över",
+          "halfway",
+          "overd",
+          "groups"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 1.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 0.62,
+          "corpus_hit_ratio": 0.25,
+          "n_effective": 2,
+          "pos_counts": {
+            "UNK": 2,
+            "FRAG": 5,
+            "NNS": 1
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (2<3)",
+        "children": [],
+        "sample": "METHODS: Twenty-five patients were assigned to receive marjoram tea or a placebo tea twice daily for 1 month (intervention group: n = 14; placebo grou"
+      },
+      {
+        "node_id": "d1_n36",
+        "depth": 1,
+        "n_docs": 8,
+        "concepts": [
+          "treatments",
+          "alone",
+          "followed",
+          "therapy",
+          "sessions",
+          "placebo"
+        ],
+        "quality": {
+          "n_concepts": 6,
+          "noun_ratio": 1.0,
+          "verb_ratio": 0.17,
+          "bpe_frag_ratio": 0.17,
+          "corpus_hit_ratio": 0.33,
+          "n_effective": 2,
+          "pos_counts": {
+            "NNS": 2,
+            "FRAG": 1,
+            "VBD": 1,
+            "UNK": 2
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (2<3)",
+        "children": [],
+        "sample": "Background Placebo treatment can significantly influence subjective symptoms. However, it is widely believed that response to placebo requires conceal"
+      },
+      {
+        "node_id": "d1_n37",
+        "depth": 1,
+        "n_docs": 8,
+        "concepts": [
+          "decreased",
+          "resolved",
+          "disappeared",
+          "ceased",
+          "diminished",
+          "became",
+          "improved",
+          "reduced"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 0.33,
+          "verb_ratio": 0.75,
+          "bpe_frag_ratio": 0.12,
+          "corpus_hit_ratio": 0.38,
+          "n_effective": 3,
+          "pos_counts": {
+            "VBD": 6,
+            "FRAG": 1,
+            "UNK": 1
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "low_corpus_hit (38%<40%)",
+        "children": [],
+        "sample": "The present studies explored whether faecal retention in the colon is a causative factor in functional bowel disease, appendicitis, and haemorrhoids. "
+      },
+      {
+        "node_id": "d1_n38",
+        "depth": 1,
+        "n_docs": 8,
+        "concepts": [
+          "assessment",
+          "evaluation",
+          "assessments",
+          "interviews",
+          "evaluations",
+          "occupational",
+          "judgment",
+          "estimation"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 0.5,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 0.0,
+          "corpus_hit_ratio": 0.25,
+          "n_effective": 2,
+          "pos_counts": {
+            "NN": 4,
+            "NNS": 3,
+            "JJ": 1
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (2<3)",
+        "children": [],
+        "sample": "Background Acrylamide, a probable human carcinogen, is present in many everyday foods. Since the finding of its presence in foods in 2002, epidemiolog"
+      },
+      {
+        "node_id": "d1_n39",
+        "depth": 1,
+        "n_docs": 7,
+        "concepts": [
+          "Overall",
+          "zych"
+        ],
+        "quality": {
+          "n_concepts": 2,
+          "noun_ratio": 0.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 0.5,
+          "corpus_hit_ratio": 0.0,
+          "n_effective": 0,
+          "pos_counts": {
+            "UNK": 1,
+            "FRAG": 1
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (0<3)",
+        "children": [],
+        "sample": "Recent studies have suggested that statins, an established drug group in the prevention of cardiovascular mortality, could delay or prevent breast can"
+      },
+      {
+        "node_id": "d1_n40",
+        "depth": 1,
+        "n_docs": 7,
+        "concepts": [
+          "Participants",
+          "Elig",
+          "Women",
+          "Blood",
+          "Pros",
+          "Breast",
+          "Plasma",
+          "Healthy"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 1.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 0.5,
+          "corpus_hit_ratio": 0.38,
+          "n_effective": 3,
+          "pos_counts": {
+            "NNS": 1,
+            "FRAG": 4,
+            "UNK": 3
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "low_corpus_hit (38%<40%)",
+        "children": [],
+        "sample": "Background Based on the hypothesized protective effect, we examined the effect of soy foods on estrogens in nipple aspirate fluid (NAF) and serum, pos"
+      },
+      {
+        "node_id": "d1_n41",
+        "depth": 1,
+        "n_docs": 7,
+        "concepts": [
+          "assessed",
+          "evaluated",
+          "analyzed",
+          "examined",
+          "cell",
+          "tested",
+          "viability",
+          "treated"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 0.5,
+          "verb_ratio": 0.62,
+          "bpe_frag_ratio": 0.12,
+          "corpus_hit_ratio": 0.5,
+          "n_effective": 4,
+          "pos_counts": {
+            "VBD": 5,
+            "UNK": 1,
+            "FRAG": 1,
+            "NN": 1
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "high_verb_ratio (62%>40%)",
+        "children": [],
+        "sample": "Results from this study suggest that DHA from the cultured microalga is also effective in controlling cancer cell growth and that downregulation of an"
+      },
+      {
+        "node_id": "d1_n42",
+        "depth": 1,
+        "n_docs": 7,
+        "concepts": [
+          "dietary",
+          "fiber",
+          "hypotheses",
+          "mechanisms",
+          "consumption",
+          "hypo",
+          "four",
+          "hypothesis"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 1.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 0.25,
+          "corpus_hit_ratio": 0.38,
+          "n_effective": 3,
+          "pos_counts": {
+            "UNK": 3,
+            "NNS": 2,
+            "NN": 1,
+            "FRAG": 2
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "low_corpus_hit (38%<40%)",
+        "children": [],
+        "sample": "There is no recognized definition of what constitutes a high fiber diet. Intakes of dietary fiber in different populations internationally vary widely"
+      },
+      {
+        "node_id": "d1_n43",
+        "depth": 1,
+        "n_docs": 7,
+        "concepts": [
+          "standard",
+          "confidence",
+          "standardized",
+          "adjusted"
+        ],
+        "quality": {
+          "n_concepts": 4,
+          "noun_ratio": 0.0,
+          "verb_ratio": 0.5,
+          "bpe_frag_ratio": 0.0,
+          "corpus_hit_ratio": 0.0,
+          "n_effective": 0,
+          "pos_counts": {
+            "UNK": 1,
+            "NN": 1,
+            "VBD": 2
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (0<3)",
+        "children": [],
+        "sample": "Background An increased rate of brain atrophy is often observed in older subjects, in particular those who suffer from cognitive decline. Homocysteine"
+      },
+      {
+        "node_id": "d1_n44",
+        "depth": 1,
+        "n_docs": 6,
+        "concepts": [
+          "Specifically",
+          "Intervention",
+          "Further",
+          "Previous",
+          "Keywords",
+          "Additionally",
+          "Among",
+          "Given"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 1.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 0.12,
+          "corpus_hit_ratio": 0.38,
+          "n_effective": 3,
+          "pos_counts": {
+            "UNK": 4,
+            "NN": 1,
+            "JJ": 1,
+            "NNS": 1,
+            "FRAG": 1
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "low_corpus_hit (38%<40%)",
+        "children": [],
+        "sample": "Additionally, a triglyceride-lowering effect was observed in MeSy patients treated with HSEP plus diet, and in individuals without MeSy treated with H"
+      },
+      {
+        "node_id": "d1_n45",
+        "depth": 1,
+        "n_docs": 6,
+        "concepts": [
+          "ohana",
+          "inoa",
+          "ridged",
+          "alink",
+          "entiful",
+          "odied",
+          "represented",
+          "akit"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 0.0,
+          "verb_ratio": 0.12,
+          "bpe_frag_ratio": 0.75,
+          "corpus_hit_ratio": 0.0,
+          "n_effective": 0,
+          "pos_counts": {
+            "FRAG": 6,
+            "JJ": 1,
+            "VBD": 1
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (0<3)",
+        "children": [],
+        "sample": "The effect of beverages prepared from the dried calyx of the flowers of Hibiscus sabdariffa on the excretion of diclofenac was investigated using a co"
+      },
+      {
+        "node_id": "d1_n46",
+        "depth": 1,
+        "n_docs": 6,
+        "concepts": [
+          "okit",
+          "alink",
+          "odyn",
+          "ohana",
+          "akit",
+          "astle",
+          "odied",
+          "almart"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 0.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 1.0,
+          "corpus_hit_ratio": 0.0,
+          "n_effective": 0,
+          "pos_counts": {
+            "FRAG": 8
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (0<3)",
+        "children": [],
+        "sample": "The world-wide increase of antimicrobial resistance in micro-organisms complicates medical treatment of infected humans. We did a risk-factor analysis"
+      },
+      {
+        "node_id": "d1_n47",
+        "depth": 1,
+        "n_docs": 6,
+        "concepts": [
+          "alink",
+          "odyn",
+          "esub",
+          "inoa",
+          "akit",
+          "Counseling",
+          "vider",
+          "okit"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 0.0,
+          "verb_ratio": 0.12,
+          "bpe_frag_ratio": 0.88,
+          "corpus_hit_ratio": 0.12,
+          "n_effective": 1,
+          "pos_counts": {
+            "FRAG": 7,
+            "VBG": 1
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (1<3)",
+        "children": [],
+        "sample": "OBJECTIVES: To determine the counseling practices of a group of internists in the areas of smoking, exercise, and alcohol and seat belt use, and to de"
+      },
+      {
+        "node_id": "d1_n48",
+        "depth": 1,
+        "n_docs": 6,
+        "concepts": [
+          "Journal",
+          "journals",
+          "esub",
+          "alink",
+          "ohana",
+          "icensing",
+          "actices",
+          "umbed"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 0.0,
+          "verb_ratio": 0.12,
+          "bpe_frag_ratio": 0.5,
+          "corpus_hit_ratio": 0.12,
+          "n_effective": 1,
+          "pos_counts": {
+            "JJ": 1,
+            "NNS": 2,
+            "FRAG": 4,
+            "VBG": 1
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (1<3)",
+        "children": [],
+        "sample": "Journal of Obstetrics and Gynaecology Research © 2012 Japan Society of Obstetrics and Gynecology."
+      },
+      {
+        "node_id": "d1_n49",
+        "depth": 1,
+        "n_docs": 6,
+        "concepts": [
+          "fung",
+          "fungal",
+          "ungal",
+          "icrobial",
+          "fungi",
+          "icon",
+          "fungus",
+          "ivol"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 0.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 0.88,
+          "corpus_hit_ratio": 0.0,
+          "n_effective": 0,
+          "pos_counts": {
+            "FRAG": 7,
+            "JJ": 1
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (0<3)",
+        "children": [],
+        "sample": "In contrast, boric acid was effective in curing 98% of the patients who had previously failed to respond to the most commonly used antifungal agents a"
+      },
+      {
+        "node_id": "d1_n50",
+        "depth": 1,
+        "n_docs": 6,
+        "concepts": [
+          "kidneys",
+          "kidney",
+          "sple",
+          "lungs",
+          "pancre",
+          "renal",
+          "lung",
+          "bile"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 1.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 0.88,
+          "corpus_hit_ratio": 0.12,
+          "n_effective": 1,
+          "pos_counts": {
+            "NNS": 1,
+            "FRAG": 7
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (1<3)",
+        "children": [],
+        "sample": "The data obtained from the studies with the ethanol extract of the leaves and seeds from Moringa stenopetala show that they contain toxic substances t"
+      },
+      {
+        "node_id": "d1_n51",
+        "depth": 1,
+        "n_docs": 6,
+        "concepts": [
+          "lower",
+          "higher",
+          "decrease",
+          "difference",
+          "lowering",
+          "lowered",
+          "differences",
+          "reduction"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 0.67,
+          "verb_ratio": 0.25,
+          "bpe_frag_ratio": 0.0,
+          "corpus_hit_ratio": 0.38,
+          "n_effective": 3,
+          "pos_counts": {
+            "UNK": 3,
+            "NN": 2,
+            "VBG": 1,
+            "VBD": 1,
+            "NNS": 1
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "low_corpus_hit (38%<40%)",
+        "children": [],
+        "sample": "INTRODUCTION: Vegetarian diets are considered to promote health and reduce the risk of some chronic diseases. It is also known that restriction or exc"
+      },
+      {
+        "node_id": "d1_n52",
+        "depth": 1,
+        "n_docs": 6,
+        "concepts": [
+          "events",
+          "event",
+          "effects",
+          "reactions",
+          "effect",
+          "reaction",
+          "experiences",
+          "side"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 1.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 0.25,
+          "corpus_hit_ratio": 0.25,
+          "n_effective": 2,
+          "pos_counts": {
+            "NNS": 4,
+            "UNK": 1,
+            "FRAG": 2,
+            "NN": 1
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (2<3)",
+        "children": [],
+        "sample": "INTRODUCTION: The use of peppermint oil in treating the irritable bowel syndrome has been studied with variable results probably due to the presence o"
+      },
+      {
+        "node_id": "d1_n53",
+        "depth": 1,
+        "n_docs": 6,
+        "concepts": [
+          "alink",
+          "odyn",
+          "esub",
+          "inoa",
+          "almart",
+          "utenberg",
+          "ocalypse",
+          "ignet"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 0.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 0.75,
+          "corpus_hit_ratio": 0.0,
+          "n_effective": 0,
+          "pos_counts": {
+            "FRAG": 6,
+            "UNK": 2
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (0<3)",
+        "children": [],
+        "sample": "OBJECTIVE: To indicate why the world's most powerful nation state and one powerful sector of the food and drink production and manufacturing industry "
+      },
+      {
+        "node_id": "d1_n54",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "content",
+          "contents",
+          "levels",
+          "values",
+          "amounts",
+          "concentrations",
+          "value",
+          "level"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 1.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 0.5,
+          "corpus_hit_ratio": 0.38,
+          "n_effective": 3,
+          "pos_counts": {
+            "UNK": 1,
+            "NNS": 3,
+            "FRAG": 4
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "low_corpus_hit (38%<40%)",
+        "children": [],
+        "sample": "OBJECTIVE: Among plant foods, grain products, legumes, and seeds are important sources of phosphorus (P). Current data on P content and absorbability "
+      },
+      {
+        "node_id": "d1_n55",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "ohana",
+          "alink",
+          "inoa",
+          "akit",
+          "esub",
+          "diet",
+          "okit",
+          "odied"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 1.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 0.88,
+          "corpus_hit_ratio": 0.12,
+          "n_effective": 1,
+          "pos_counts": {
+            "FRAG": 7,
+            "UNK": 1
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (1<3)",
+        "children": [],
+        "sample": "The aim of the present study was to evaluate the effects of a Hibiscus sabdariffa extract powder (HSEP) and a recognized preventive treatment (diet) o"
+      },
+      {
+        "node_id": "d1_n56",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "Nutrition",
+          "esub",
+          "odyn",
+          "alink",
+          "inoa",
+          "ocalypse",
+          "anuts",
+          "diet"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 1.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 0.62,
+          "corpus_hit_ratio": 0.25,
+          "n_effective": 2,
+          "pos_counts": {
+            "NN": 1,
+            "FRAG": 5,
+            "UNK": 2
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (2<3)",
+        "children": [],
+        "sample": "In a 1995 pivotal study, Kushner described the attitudes, practice behaviors, and barriers to the delivery of nutrition counseling by primary care phy"
+      },
+      {
+        "node_id": "d1_n57",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "esub",
+          "ohana",
+          "alink",
+          "ridged",
+          "inoa",
+          "akit",
+          "abilia",
+          "entiful"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 0.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 0.88,
+          "corpus_hit_ratio": 0.0,
+          "n_effective": 0,
+          "pos_counts": {
+            "FRAG": 7,
+            "JJ": 1
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (0<3)",
+        "children": [],
+        "sample": "There is evidence that certain phytoestrogens inhibit aromatase, the enzyme that converts androgens to oestrogens. Kinetic studies in cell-free prepar"
+      },
+      {
+        "node_id": "d1_n58",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "forty",
+          "fourth",
+          "four"
+        ],
+        "quality": {
+          "n_concepts": 3,
+          "noun_ratio": 0.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 1.0,
+          "corpus_hit_ratio": 0.0,
+          "n_effective": 0,
+          "pos_counts": {
+            "FRAG": 3
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (0<3)",
+        "children": [],
+        "sample": "The LDL-C reductions from an overall mean of 171 mg/dL (95% confidence interval [CI], 168-174 mg/dL) were -13.8% (95% CI, -17.2% to -10.3%; P < .001) "
+      },
+      {
+        "node_id": "d1_n59",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "consumed",
+          "exhibited",
+          "demonstrated",
+          "experienced",
+          "consuming",
+          "displayed",
+          "reported",
+          "underwent"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 0.25,
+          "verb_ratio": 0.88,
+          "bpe_frag_ratio": 0.0,
+          "corpus_hit_ratio": 0.5,
+          "n_effective": 4,
+          "pos_counts": {
+            "VBD": 6,
+            "VBG": 1,
+            "UNK": 1
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "high_verb_ratio (88%>40%)",
+        "children": [],
+        "sample": "Healthy overweight men (n = 6) consumed a control and spiced meal in a randomized crossover design with 1 wk between testing sessions. Blood was sampl"
+      },
+      {
+        "node_id": "d1_n60",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "ohana",
+          "inoa",
+          "alink",
+          "esub",
+          "abilia",
+          "ridged",
+          "represented",
+          "almart"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 0.0,
+          "verb_ratio": 0.12,
+          "bpe_frag_ratio": 0.88,
+          "corpus_hit_ratio": 0.0,
+          "n_effective": 0,
+          "pos_counts": {
+            "FRAG": 7,
+            "VBD": 1
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (0<3)",
+        "children": [],
+        "sample": "Lepidium meyenii (Maca) is a plant that grows at over 4000 meters above sea level in the central Peruvian Andes. The hypocotyls of this plant are trad"
+      },
+      {
+        "node_id": "d1_n61",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "inoa",
+          "alink",
+          "ohana",
+          "alyzed",
+          "almart",
+          "esub",
+          "entiful",
+          "ocalypse"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 0.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 0.75,
+          "corpus_hit_ratio": 0.0,
+          "n_effective": 0,
+          "pos_counts": {
+            "FRAG": 6,
+            "JJ": 1,
+            "UNK": 1
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (0<3)",
+        "children": [],
+        "sample": "Docosahexaenoic acid (DHA) is an omega-3 fatty acid that comprises 22 carbons and 6 alternative double bonds in its hydrocarbon chain (22:6omega3). Pr"
+      },
+      {
+        "node_id": "d1_n62",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "alink",
+          "ohana",
+          "inoa",
+          "esub",
+          "ridged",
+          "diet",
+          "alyzed",
+          "odied"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 1.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 0.88,
+          "corpus_hit_ratio": 0.12,
+          "n_effective": 1,
+          "pos_counts": {
+            "FRAG": 7,
+            "UNK": 1
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (1<3)",
+        "children": [],
+        "sample": "Individual-based studies that investigated the relation between dietary alpha-linolenic acid (ALA) intake and prostate cancer risk have shown inconsis"
+      },
+      {
+        "node_id": "d1_n63",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "ohana",
+          "inoa",
+          "okit",
+          "alink",
+          "akit",
+          "almart",
+          "esub",
+          "entiful"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 0.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 0.88,
+          "corpus_hit_ratio": 0.0,
+          "n_effective": 0,
+          "pos_counts": {
+            "FRAG": 7,
+            "JJ": 1
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (0<3)",
+        "children": [],
+        "sample": "Colored-flesh potatoes are an excellent source of health-benefiting dietary polyphenols, but are stored for up to 3-6 months before consumption. This "
+      },
+      {
+        "node_id": "d1_n64",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "diet",
+          "alink",
+          "inoa",
+          "ohana",
+          "ridged",
+          "esub",
+          "akit",
+          "isoner"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 1.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 0.88,
+          "corpus_hit_ratio": 0.12,
+          "n_effective": 1,
+          "pos_counts": {
+            "UNK": 1,
+            "FRAG": 7
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (1<3)",
+        "children": [],
+        "sample": "A case-control study was carried out in Harbin city to assess the role of diet in the aetiology of colorectal cancer. A total of 336 incident cases of"
+      },
+      {
+        "node_id": "d1_n65",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "ohana",
+          "alink",
+          "represented",
+          "okit",
+          "inoa",
+          "egov",
+          "akit",
+          "abilia"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 0.0,
+          "verb_ratio": 0.12,
+          "bpe_frag_ratio": 0.88,
+          "corpus_hit_ratio": 0.0,
+          "n_effective": 0,
+          "pos_counts": {
+            "FRAG": 7,
+            "VBD": 1
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (0<3)",
+        "children": [],
+        "sample": "Heiner syndrome (HS) is a food hypersensitivity pulmonary disease that affects primarily infants, and is mostly caused by cow's milk (CM). Only a few "
+      },
+      {
+        "node_id": "d1_n66",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "comparisons",
+          "comparison",
+          "analyses",
+          "compar",
+          "differences",
+          "tests",
+          "testing",
+          "comparative"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 1.0,
+          "verb_ratio": 0.12,
+          "bpe_frag_ratio": 0.25,
+          "corpus_hit_ratio": 0.25,
+          "n_effective": 2,
+          "pos_counts": {
+            "NNS": 3,
+            "UNK": 1,
+            "FRAG": 2,
+            "VBG": 1,
+            "JJ": 1
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (2<3)",
+        "children": [],
+        "sample": "Patients in Group B were given 1-1.5 g krill oil daily, and Group C was given fish oil containing 180 mg eicosapentaenoic acid (EPA) and 120 mg docosa"
+      },
+      {
+        "node_id": "d1_n67",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "alink",
+          "okit",
+          "esub",
+          "ohana",
+          "almart",
+          "represented",
+          "utenberg",
+          "inoa"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 0.0,
+          "verb_ratio": 0.12,
+          "bpe_frag_ratio": 0.75,
+          "corpus_hit_ratio": 0.0,
+          "n_effective": 0,
+          "pos_counts": {
+            "FRAG": 6,
+            "VBD": 1,
+            "UNK": 1
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (0<3)",
+        "children": [],
+        "sample": "For 20 years, many articles report the presence of new compounds, called \"emerging compounds\", in wastewater and aquatic environments. The US EPA (Uni"
+      },
+      {
+        "node_id": "d1_n68",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "egov",
+          "entiful",
+          "ohana",
+          "inoa",
+          "esub",
+          "odied",
+          "alyzed",
+          "almart"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 0.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 0.88,
+          "corpus_hit_ratio": 0.0,
+          "n_effective": 0,
+          "pos_counts": {
+            "FRAG": 7,
+            "JJ": 1
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (0<3)",
+        "children": [],
+        "sample": "The public perceives that the nutritional quality of eggs produced as free range is superior to that of eggs produced in cages. Therefore, this study "
+      },
+      {
+        "node_id": "d1_n69",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "ohana",
+          "alink",
+          "akit",
+          "okit",
+          "esub",
+          "egov",
+          "abilia",
+          "ridged"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 0.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 1.0,
+          "corpus_hit_ratio": 0.0,
+          "n_effective": 0,
+          "pos_counts": {
+            "FRAG": 8
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (0<3)",
+        "children": [],
+        "sample": "BACKGROUND: The impact of irritable bowel syndrome, a gastrointestinal motility disorder, is underestimated and poorly quantified, as clinicians may s"
+      },
+      {
+        "node_id": "d1_n70",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "okit",
+          "inoa",
+          "ohana",
+          "odied",
+          "odyn",
+          "akit",
+          "represented",
+          "alink"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 0.0,
+          "verb_ratio": 0.12,
+          "bpe_frag_ratio": 0.88,
+          "corpus_hit_ratio": 0.0,
+          "n_effective": 0,
+          "pos_counts": {
+            "FRAG": 7,
+            "VBD": 1
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (0<3)",
+        "children": [],
+        "sample": "The majority of patients with a heavy faecal load but normal CTT had repetitive daily defecation, mostly with ease and with altering faecal consistenc"
+      },
+      {
+        "node_id": "d1_n71",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "esub",
+          "odyn",
+          "ohana",
+          "okit",
+          "alink",
+          "inoa",
+          "ylko",
+          "akit"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 0.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 1.0,
+          "corpus_hit_ratio": 0.0,
+          "n_effective": 0,
+          "pos_counts": {
+            "FRAG": 8
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (0<3)",
+        "children": [],
+        "sample": "The aim of the study was to compare the straining forces applied when sitting or squatting during defecation. Twenty-eight apparently healthy voluntee"
+      },
+      {
+        "node_id": "d1_n72",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "ohana",
+          "alink",
+          "okit",
+          "inoa",
+          "alyzed",
+          "agini",
+          "Food",
+          "akit"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 1.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 0.88,
+          "corpus_hit_ratio": 0.12,
+          "n_effective": 1,
+          "pos_counts": {
+            "FRAG": 7,
+            "UNK": 1
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (1<3)",
+        "children": [],
+        "sample": "A cephalic phase of colonic pressure response to food was sought in five normal subjects (mean age (22.6) years, 22-24), studied on six separate occas"
+      },
+      {
+        "node_id": "d1_n73",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "diet",
+          "okit",
+          "esub",
+          "ohana",
+          "abilia",
+          "inoa",
+          "alink",
+          "odied"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 1.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 0.88,
+          "corpus_hit_ratio": 0.12,
+          "n_effective": 1,
+          "pos_counts": {
+            "UNK": 1,
+            "FRAG": 7
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (1<3)",
+        "children": [],
+        "sample": "Environmental factors such as diets rich in saturated fats contribute to dysfunction and death of pancreatic β-cells in diabetes. Endoplasmic reticulu"
+      },
+      {
+        "node_id": "d1_n74",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "diet",
+          "alink",
+          "inoa",
+          "ohana",
+          "akit",
+          "esub",
+          "okit",
+          "abilia"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 1.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 0.88,
+          "corpus_hit_ratio": 0.12,
+          "n_effective": 1,
+          "pos_counts": {
+            "UNK": 1,
+            "FRAG": 7
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (1<3)",
+        "children": [],
+        "sample": "BACKGROUND: To determine whether there is an association between diet and plasma insulin concentration that is independent of obesity, we studied the "
+      },
+      {
+        "node_id": "d1_n75",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "diet",
+          "alink",
+          "odied",
+          "ohana",
+          "esub",
+          "inoa",
+          "alyzed",
+          "odyn"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 0.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 1.0,
+          "corpus_hit_ratio": 0.0,
+          "n_effective": 0,
+          "pos_counts": {
+            "FRAG": 8
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (0<3)",
+        "children": [],
+        "sample": "BACKGROUND: The results of some epidemiologic studies conducted by using questionnaires suggest that dietary fat composition influences diabetes risk."
+      },
+      {
+        "node_id": "d1_n76",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "ohana",
+          "inoa",
+          "odied",
+          "alyzed",
+          "alink",
+          "esub",
+          "almart",
+          "okit"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 0.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 1.0,
+          "corpus_hit_ratio": 0.0,
+          "n_effective": 0,
+          "pos_counts": {
+            "FRAG": 8
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (0<3)",
+        "children": [],
+        "sample": "Recent literature suggests that elevated free fatty acids (FFAs), especially saturated FFAs, may play an important role in lipotoxic mechanisms, both "
+      },
+      {
+        "node_id": "d1_n77",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "alink",
+          "okit",
+          "esub",
+          "istrate",
+          "odied",
+          "ridged",
+          "almart",
+          "ohana"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 0.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 0.88,
+          "corpus_hit_ratio": 0.0,
+          "n_effective": 0,
+          "pos_counts": {
+            "FRAG": 7,
+            "UNK": 1
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (0<3)",
+        "children": [],
+        "sample": "Background Polychlorinated biphenyls (PCBs) and chlorinated pesticides are endocrine disruptors, altering both thyroid and estrogen hormonal systems. "
+      },
+      {
+        "node_id": "d1_n78",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "odzi",
+          "utow",
+          "avaş",
+          "akit",
+          "psilon",
+          "owany",
+          "Mitar"
+        ],
+        "quality": {
+          "n_concepts": 7,
+          "noun_ratio": 0.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 1.0,
+          "corpus_hit_ratio": 0.0,
+          "n_effective": 0,
+          "pos_counts": {
+            "FRAG": 7
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (0<3)",
+        "children": [],
+        "sample": "OBJECTIVE: To measure Proteus mirabilis and Escherichia coli antibody levels in patients with rheumatoid arthritis (RA) during treatment by vegetarian"
+      },
+      {
+        "node_id": "d1_n79",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "ohana",
+          "alink",
+          "inoa",
+          "esub",
+          "alyzed",
+          "diet",
+          "okit",
+          "odyn"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 1.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 0.88,
+          "corpus_hit_ratio": 0.12,
+          "n_effective": 1,
+          "pos_counts": {
+            "FRAG": 7,
+            "UNK": 1
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (1<3)",
+        "children": [],
+        "sample": "The effect of an uncooked extreme vegan diet on fecal microflora was studied by direct stool sample gas-liquid chromatography (GLC) of bacterial cellu"
+      },
+      {
+        "node_id": "d1_n80",
+        "depth": 1,
+        "n_docs": 5,
+        "concepts": [
+          "plays",
+          "appears",
+          "interventions",
+          "modifications",
+          "etic",
+          "etics",
+          "modification",
+          "patterns"
+        ],
+        "quality": {
+          "n_concepts": 8,
+          "noun_ratio": 0.0,
+          "verb_ratio": 0.0,
+          "bpe_frag_ratio": 0.38,
+          "corpus_hit_ratio": 0.0,
+          "n_effective": 0,
+          "pos_counts": {
+            "FRAG": 3,
+            "NNS": 4,
+            "NN": 1
+          }
+        },
+        "expand_decision": "stopped",
+        "stop_reason": "too_few_effective (0<3)",
+        "children": [],
+        "sample": "Background The last nationally representative assessment of kidney stone prevalence in the United States occurred in 1994. After a 13-yr hiatus, the N"
+      }
+    ],
+    "sample": "Recent studies have suggested that statins, an established drug group in the prevention of cardiovascular mortality, could delay or prevent breast can"
+  }
+}

@@ -1,0 +1,1809 @@
+{
+  "method": "phase47_tensor_multihop",
+  "created": "2026-07-21 12:50:25",
+  "probes": {
+    "medical": {
+      "s1": {
+        "n_concepts": 50,
+        "n_buckets": 5,
+        "buckets": [
+          "treat",
+          "causal",
+          "structural",
+          "importance",
+          "assoc"
+        ],
+        "tensor_shape": [
+          50,
+          5,
+          50
+        ],
+        "n_edges_raw": 248,
+        "n_cells_nonzero": 248,
+        "density": 0.01984,
+        "edges_per_bucket": {
+          "treat": 36,
+          "causal": 40,
+          "structural": 82,
+          "importance": 36,
+          "assoc": 54
+        },
+        "bucket_map": {
+          "agini": "causal",
+          "alink": "assoc",
+          "anatom": "structural",
+          "assessed": "treat",
+          "aternity": "structural",
+          "causal": "causal",
+          "closely": "importance",
+          "complex": "structural",
+          "contained": "structural",
+          "critical": "importance",
+          "crucial": "importance",
+          "determined": "causal",
+          "diagnostic": "treat",
+          "errated": "structural",
+          "essential": "importance",
+          "evident": "importance",
+          "genetic": "causal",
+          "guided": "treat",
+          "impse": "structural",
+          "inclus": "structural",
+          "inclusive": "structural",
+          "indirect": "assoc",
+          "indirectly": "assoc",
+          "influenced": "causal",
+          "inherit": "causal",
+          "integral": "structural",
+          "intricate": "structural",
+          "inté": "structural",
+          "inverse": "assoc",
+          "iplinary": "structural",
+          "mediated": "causal",
+          "metabolism": "causal",
+          "minimal": "importance",
+          "often": "assoc",
+          "performed": "treat",
+          "plural": "structural",
+          "procedural": "treat",
+          "protect": "treat",
+          "rarely": "importance",
+          "reflected": "structural",
+          "regulated": "causal",
+          "regulatory": "causal",
+          "sequential": "assoc",
+          "significant": "importance",
+          "singular": "structural",
+          "surgical": "treat",
+          "therapeutic": "treat",
+          "treat": "treat",
+          "treated": "treat",
+          "unrelated": "assoc",
+          "vital": "importance"
+        },
+        "bucket_rule": "relation 词 → phase39._stem 归一 → 人工规则桶（treat/causal/structural/importance/assoc），未命中归 other"
+      },
+      "s2": {
+        "protocol": "20% 边按桶分层 holdout × 5 mask 种子；每配置 5 随机起点取 train 重构误差最小；测试边 vs 等量随机负三元组评分 ROC-AUC",
+        "ranks": [
+          3,
+          5,
+          8,
+          12
+        ],
+        "lams": [
+          0.1,
+          1.0
+        ],
+        "n_obs_train_approx": 198,
+        "cp_param_counts": {
+          "rank3": 315,
+          "rank5": 525,
+          "rank8": 840,
+          "rank12": 1260
+        },
+        "results": {
+          "rank3_lam0.1": {
+            "mean": 0.6813411078717201,
+            "std": 0.04983534767985335,
+            "aucs": [
+              0.7135,
+              0.6547,
+              0.611,
+              0.7564,
+              0.6712
+            ],
+            "n_repeats": 5
+          },
+          "rank3_lam1.0": {
+            "mean": 0.6978342357351104,
+            "std": 0.03114243639138711,
+            "aucs": [
+              0.7355,
+              0.7297,
+              0.6551,
+              0.6951,
+              0.6737
+            ],
+            "n_repeats": 5
+          },
+          "rank5_lam0.1": {
+            "mean": 0.6855893377759268,
+            "std": 0.07106944812380235,
+            "aucs": [
+              0.6664,
+              0.783,
+              0.716,
+              0.6968,
+              0.5658
+            ],
+            "n_repeats": 5
+          },
+          "rank5_lam1.0": {
+            "mean": 0.7813827571845064,
+            "std": 0.02166821258744624,
+            "aucs": [
+              0.8063,
+              0.7555,
+              0.7784,
+              0.7605,
+              0.8061
+            ],
+            "n_repeats": 5
+          },
+          "rank8_lam0.1": {
+            "mean": 0.658600583090379,
+            "std": 0.034886514557275865,
+            "aucs": [
+              0.6572,
+              0.7185,
+              0.6193,
+              0.6293,
+              0.6687
+            ],
+            "n_repeats": 5
+          },
+          "rank8_lam1.0": {
+            "mean": 0.8126197417742607,
+            "std": 0.04668150403879124,
+            "aucs": [
+              0.7543,
+              0.8771,
+              0.8097,
+              0.8517,
+              0.7703
+            ],
+            "n_repeats": 5
+          },
+          "rank12_lam0.1": {
+            "mean": 0.625197834235735,
+            "std": 0.060271376597597244,
+            "aucs": [
+              0.733,
+              0.5764,
+              0.6393,
+              0.6139,
+              0.5633
+            ],
+            "n_repeats": 5
+          },
+          "rank12_lam1.0": {
+            "mean": 0.7955435235318616,
+            "std": 0.05373994544150988,
+            "aucs": [
+              0.8234,
+              0.8217,
+              0.7426,
+              0.8663,
+              0.7237
+            ],
+            "n_repeats": 5
+          }
+        },
+        "best_config": "rank8_lam1.0",
+        "best_auc_mean": 0.8126197417742607,
+        "best_auc_std": 0.04668150403879124,
+        "verdict": "tensor_route_supported"
+      },
+      "s3": {
+        "n_paths": 60,
+        "note": null,
+        "rank": 8,
+        "lam": 1.0,
+        "mask_protocol": "逐路径抹去 A→B、B→C 全关系切片后 refit CP （3 起点取最优）；W² 基线在同 mask 图上计算",
+        "tensor": {
+          "recall@5": 0.26666666666666666,
+          "recall@10": 0.6166666666666667
+        },
+        "w2_baseline": {
+          "recall@5": 0.55,
+          "recall@10": 0.65
+        },
+        "chance": {
+          "recall@5": 0.10416666666666667,
+          "recall@10": 0.20833333333333334
+        },
+        "verdict": "w2_better",
+        "details": [
+          {
+            "path": [
+              "blood",
+              "tests",
+              "sugar"
+            ],
+            "tensor_top5": [
+              "bones",
+              "breasts",
+              "breath",
+              "kidney",
+              "cervical"
+            ],
+            "w2_top5": [
+              "safety",
+              "medicine",
+              "medications",
+              "tests",
+              "risks"
+            ],
+            "hit_t5": false,
+            "hit_t10": false,
+            "hit_w5": true,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "body",
+              "breath",
+              "immune"
+            ],
+            "tensor_top5": [
+              "cervical",
+              "heart",
+              "breasts",
+              "prostate",
+              "kidneys"
+            ],
+            "w2_top5": [
+              "biopsy",
+              "blood",
+              "bones",
+              "breast",
+              "breasts"
+            ],
+            "hit_t5": false,
+            "hit_t10": true,
+            "hit_w5": false,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "bones",
+              "breasts",
+              "cancer"
+            ],
+            "tensor_top5": [
+              "breasts",
+              "heart",
+              "treatments",
+              "kidneys",
+              "kidney"
+            ],
+            "w2_top5": [
+              "breasts",
+              "biopsy",
+              "blood",
+              "body",
+              "breast"
+            ],
+            "hit_t5": true,
+            "hit_t10": true,
+            "hit_w5": true,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "breast",
+              "bones",
+              "breath"
+            ],
+            "tensor_top5": [
+              "prostate",
+              "kidney",
+              "heart",
+              "kidneys",
+              "body"
+            ],
+            "w2_top5": [
+              "breasts",
+              "bones",
+              "kidney",
+              "kidneys",
+              "pregnancy"
+            ],
+            "hit_t5": false,
+            "hit_t10": true,
+            "hit_w5": true,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "breast",
+              "heart",
+              "breath"
+            ],
+            "tensor_top5": [
+              "prostate",
+              "kidney",
+              "kidneys",
+              "breasts",
+              "body"
+            ],
+            "w2_top5": [
+              "breasts",
+              "kidney",
+              "bones",
+              "kidneys",
+              "heart"
+            ],
+            "hit_t5": false,
+            "hit_t10": true,
+            "hit_w5": true,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "breast",
+              "kidney",
+              "kidneys"
+            ],
+            "tensor_top5": [
+              "heart",
+              "prostate",
+              "breasts",
+              "body",
+              "cervical"
+            ],
+            "w2_top5": [
+              "kidney",
+              "pregnancy",
+              "heart",
+              "biopsy",
+              "blood"
+            ],
+            "hit_t5": false,
+            "hit_t10": true,
+            "hit_w5": true,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "breast",
+              "pregnancy",
+              "chest"
+            ],
+            "tensor_top5": [
+              "prostate",
+              "heart",
+              "kidney",
+              "body",
+              "kidneys"
+            ],
+            "w2_top5": [
+              "breasts",
+              "body",
+              "breath",
+              "bones",
+              "headaches"
+            ],
+            "hit_t5": false,
+            "hit_t10": false,
+            "hit_w5": false,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "breast",
+              "pregnancy",
+              "kidneys"
+            ],
+            "tensor_top5": [
+              "prostate",
+              "heart",
+              "kidney",
+              "breasts",
+              "body"
+            ],
+            "w2_top5": [
+              "pregnancy",
+              "kidney",
+              "heart",
+              "biopsy",
+              "blood"
+            ],
+            "hit_t5": false,
+            "hit_t10": false,
+            "hit_w5": true,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "breast",
+              "prostate",
+              "breath"
+            ],
+            "tensor_top5": [
+              "kidney",
+              "heart",
+              "kidneys",
+              "body",
+              "breasts"
+            ],
+            "w2_top5": [
+              "breasts",
+              "bones",
+              "pregnancy",
+              "kidneys",
+              "kidney"
+            ],
+            "hit_t5": false,
+            "hit_t10": false,
+            "hit_w5": false,
+            "hit_w10": false
+          },
+          {
+            "path": [
+              "breast",
+              "prostate",
+              "cervical"
+            ],
+            "tensor_top5": [
+              "body",
+              "breasts",
+              "heart",
+              "kidney",
+              "kidneys"
+            ],
+            "w2_top5": [
+              "breasts",
+              "bones",
+              "pregnancy",
+              "body",
+              "kidneys"
+            ],
+            "hit_t5": false,
+            "hit_t10": false,
+            "hit_w5": false,
+            "hit_w10": false
+          },
+          {
+            "path": [
+              "breast",
+              "prostate",
+              "chest"
+            ],
+            "tensor_top5": [
+              "heart",
+              "kidney",
+              "body",
+              "breasts",
+              "kidneys"
+            ],
+            "w2_top5": [
+              "breasts",
+              "body",
+              "breath",
+              "bones",
+              "headaches"
+            ],
+            "hit_t5": false,
+            "hit_t10": false,
+            "hit_w5": false,
+            "hit_w10": false
+          },
+          {
+            "path": [
+              "breasts",
+              "cancer",
+              "cancers"
+            ],
+            "tensor_top5": [
+              "cervical",
+              "body",
+              "heart",
+              "prostate",
+              "kidneys"
+            ],
+            "w2_top5": [
+              "cancer",
+              "biopsy",
+              "blood",
+              "body",
+              "bones"
+            ],
+            "hit_t5": false,
+            "hit_t10": false,
+            "hit_w5": true,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "breasts",
+              "drugs",
+              "cancer"
+            ],
+            "tensor_top5": [
+              "kidney",
+              "cervical",
+              "prostate",
+              "heart",
+              "kidneys"
+            ],
+            "w2_top5": [
+              "biopsy",
+              "blood",
+              "body",
+              "bones",
+              "breast"
+            ],
+            "hit_t5": false,
+            "hit_t10": false,
+            "hit_w5": false,
+            "hit_w10": false
+          },
+          {
+            "path": [
+              "cancer",
+              "liver",
+              "cancers"
+            ],
+            "tensor_top5": [
+              "breasts",
+              "body",
+              "cervical",
+              "bones",
+              "breath"
+            ],
+            "w2_top5": [
+              "biopsy",
+              "blood",
+              "body",
+              "bones",
+              "breast"
+            ],
+            "hit_t5": false,
+            "hit_t10": false,
+            "hit_w5": false,
+            "hit_w10": false
+          },
+          {
+            "path": [
+              "cancer",
+              "tumor",
+              "carcinoma"
+            ],
+            "tensor_top5": [
+              "breasts",
+              "body",
+              "cervical",
+              "bones",
+              "heart"
+            ],
+            "w2_top5": [
+              "liver",
+              "biopsy",
+              "blood",
+              "body",
+              "bones"
+            ],
+            "hit_t5": false,
+            "hit_t10": false,
+            "hit_w5": false,
+            "hit_w10": false
+          },
+          {
+            "path": [
+              "chemotherapy",
+              "breasts",
+              "body"
+            ],
+            "tensor_top5": [
+              "breasts",
+              "cervical",
+              "bones",
+              "headaches",
+              "breath"
+            ],
+            "w2_top5": [
+              "biopsy",
+              "blood",
+              "bones",
+              "breast",
+              "breasts"
+            ],
+            "hit_t5": true,
+            "hit_t10": true,
+            "hit_w5": true,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "chemotherapy",
+              "cancer",
+              "tumor"
+            ],
+            "tensor_top5": [
+              "biopsy",
+              "blood",
+              "body",
+              "bones",
+              "breast"
+            ],
+            "w2_top5": [
+              "biopsy",
+              "blood",
+              "body",
+              "bones",
+              "breast"
+            ],
+            "hit_t5": false,
+            "hit_t10": true,
+            "hit_w5": false,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "diagnosis",
+              "drugs",
+              "cancer"
+            ],
+            "tensor_top5": [
+              "headaches",
+              "prostate",
+              "heart",
+              "kidneys",
+              "body"
+            ],
+            "w2_top5": [
+              "biopsy",
+              "blood",
+              "body",
+              "bones",
+              "breast"
+            ],
+            "hit_t5": false,
+            "hit_t10": false,
+            "hit_w5": false,
+            "hit_w10": false
+          },
+          {
+            "path": [
+              "diagnosis",
+              "medicine",
+              "sugar"
+            ],
+            "tensor_top5": [
+              "safety",
+              "medications",
+              "trials",
+              "tests",
+              "medicine"
+            ],
+            "w2_top5": [
+              "safety",
+              "medicine",
+              "tests",
+              "medications",
+              "biopsy"
+            ],
+            "hit_t5": true,
+            "hit_t10": true,
+            "hit_w5": true,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "diagnosis",
+              "tests",
+              "drugs"
+            ],
+            "tensor_top5": [
+              "lungs",
+              "surgeon",
+              "treatments",
+              "heart",
+              "prostate"
+            ],
+            "w2_top5": [
+              "medicine",
+              "medications",
+              "tests",
+              "biopsy",
+              "blood"
+            ],
+            "hit_t5": false,
+            "hit_t10": false,
+            "hit_w5": true,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "diagnosis",
+              "trials",
+              "doses"
+            ],
+            "tensor_top5": [
+              "bones",
+              "breath",
+              "kidney",
+              "prostate",
+              "risks"
+            ],
+            "w2_top5": [
+              "safety",
+              "medicine",
+              "medications",
+              "drugs",
+              "tests"
+            ],
+            "hit_t5": false,
+            "hit_t10": false,
+            "hit_w5": false,
+            "hit_w10": false
+          },
+          {
+            "path": [
+              "genetics",
+              "genes",
+              "mutation"
+            ],
+            "tensor_top5": [
+              "lungs",
+              "headaches",
+              "surgeon",
+              "treatments",
+              "bones"
+            ],
+            "w2_top5": [
+              "biopsy",
+              "blood",
+              "body",
+              "bones",
+              "breast"
+            ],
+            "hit_t5": false,
+            "hit_t10": false,
+            "hit_w5": false,
+            "hit_w10": false
+          },
+          {
+            "path": [
+              "headaches",
+              "breath",
+              "cervical"
+            ],
+            "tensor_top5": [
+              "breasts",
+              "bones",
+              "body",
+              "chest",
+              "kidneys"
+            ],
+            "w2_top5": [
+              "biopsy",
+              "blood",
+              "body",
+              "bones",
+              "breast"
+            ],
+            "hit_t5": false,
+            "hit_t10": true,
+            "hit_w5": false,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "headaches",
+              "breath",
+              "immune"
+            ],
+            "tensor_top5": [
+              "bones",
+              "kidneys",
+              "cervical",
+              "breasts",
+              "body"
+            ],
+            "w2_top5": [
+              "cervical",
+              "breath",
+              "biopsy",
+              "blood",
+              "body"
+            ],
+            "hit_t5": false,
+            "hit_t10": true,
+            "hit_w5": true,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "headaches",
+              "chest",
+              "immune"
+            ],
+            "tensor_top5": [
+              "breasts",
+              "bones",
+              "kidneys",
+              "cervical",
+              "breath"
+            ],
+            "w2_top5": [
+              "breath",
+              "biopsy",
+              "blood",
+              "body",
+              "bones"
+            ],
+            "hit_t5": false,
+            "hit_t10": true,
+            "hit_w5": false,
+            "hit_w10": false
+          },
+          {
+            "path": [
+              "heart",
+              "body",
+              "muscle"
+            ],
+            "tensor_top5": [
+              "breasts",
+              "headaches",
+              "prostate",
+              "bones",
+              "kidney"
+            ],
+            "w2_top5": [
+              "body",
+              "bones",
+              "breath",
+              "breasts",
+              "headaches"
+            ],
+            "hit_t5": false,
+            "hit_t10": true,
+            "hit_w5": true,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "heart",
+              "breasts",
+              "cervical"
+            ],
+            "tensor_top5": [
+              "body",
+              "prostate",
+              "bones",
+              "breasts",
+              "headaches"
+            ],
+            "w2_top5": [
+              "bones",
+              "breasts",
+              "kidneys",
+              "headaches",
+              "body"
+            ],
+            "hit_t5": true,
+            "hit_t10": true,
+            "hit_w5": true,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "heart",
+              "breath",
+              "chest"
+            ],
+            "tensor_top5": [
+              "breasts",
+              "headaches",
+              "prostate",
+              "body",
+              "kidney"
+            ],
+            "w2_top5": [
+              "body",
+              "breath",
+              "bones",
+              "breasts",
+              "headaches"
+            ],
+            "hit_t5": false,
+            "hit_t10": true,
+            "hit_w5": true,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "heart",
+              "pregnancy",
+              "breasts"
+            ],
+            "tensor_top5": [
+              "prostate",
+              "body",
+              "cervical",
+              "kidneys",
+              "kidney"
+            ],
+            "w2_top5": [
+              "pregnancy",
+              "bones",
+              "biopsy",
+              "blood",
+              "body"
+            ],
+            "hit_t5": false,
+            "hit_t10": true,
+            "hit_w5": true,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "heart",
+              "pregnancy",
+              "breath"
+            ],
+            "tensor_top5": [
+              "breasts",
+              "kidney",
+              "headaches",
+              "prostate",
+              "bones"
+            ],
+            "w2_top5": [
+              "breasts",
+              "bones",
+              "headaches",
+              "kidneys",
+              "pregnancy"
+            ],
+            "hit_t5": false,
+            "hit_t10": true,
+            "hit_w5": true,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "heart",
+              "pregnancy",
+              "cervical"
+            ],
+            "tensor_top5": [
+              "breasts",
+              "body",
+              "prostate",
+              "bones",
+              "headaches"
+            ],
+            "w2_top5": [
+              "body",
+              "breasts",
+              "bones",
+              "headaches",
+              "kidneys"
+            ],
+            "hit_t5": false,
+            "hit_t10": true,
+            "hit_w5": false,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "kidney",
+              "body",
+              "chest"
+            ],
+            "tensor_top5": [
+              "headaches",
+              "breasts",
+              "bones",
+              "breath",
+              "kidneys"
+            ],
+            "w2_top5": [
+              "body",
+              "breasts",
+              "breath",
+              "headaches",
+              "bones"
+            ],
+            "hit_t5": false,
+            "hit_t10": true,
+            "hit_w5": true,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "kidney",
+              "bones",
+              "breath"
+            ],
+            "tensor_top5": [
+              "headaches",
+              "bones",
+              "breasts",
+              "prostate",
+              "kidneys"
+            ],
+            "w2_top5": [
+              "breasts",
+              "bones",
+              "kidneys",
+              "headaches",
+              "biopsy"
+            ],
+            "hit_t5": true,
+            "hit_t10": true,
+            "hit_w5": true,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "kidney",
+              "cervical",
+              "chest"
+            ],
+            "tensor_top5": [
+              "headaches",
+              "breasts",
+              "bones",
+              "breath",
+              "kidneys"
+            ],
+            "w2_top5": [
+              "breasts",
+              "body",
+              "bones",
+              "kidneys",
+              "headaches"
+            ],
+            "hit_t5": false,
+            "hit_t10": true,
+            "hit_w5": false,
+            "hit_w10": false
+          },
+          {
+            "path": [
+              "kidney",
+              "kidneys",
+              "cervical"
+            ],
+            "tensor_top5": [
+              "breasts",
+              "bones",
+              "headaches",
+              "body",
+              "chest"
+            ],
+            "w2_top5": [
+              "breasts",
+              "body",
+              "bones",
+              "kidneys",
+              "headaches"
+            ],
+            "hit_t5": false,
+            "hit_t10": true,
+            "hit_w5": true,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "kidney",
+              "pregnancy",
+              "headaches"
+            ],
+            "tensor_top5": [
+              "bones",
+              "prostate",
+              "breath",
+              "kidneys",
+              "breasts"
+            ],
+            "w2_top5": [
+              "kidneys",
+              "biopsy",
+              "blood",
+              "body",
+              "bones"
+            ],
+            "hit_t5": false,
+            "hit_t10": true,
+            "hit_w5": false,
+            "hit_w10": false
+          },
+          {
+            "path": [
+              "kidneys",
+              "body",
+              "immune"
+            ],
+            "tensor_top5": [
+              "breasts",
+              "body",
+              "heart",
+              "bones",
+              "cervical"
+            ],
+            "w2_top5": [
+              "body",
+              "cervical",
+              "breath",
+              "headaches",
+              "biopsy"
+            ],
+            "hit_t5": true,
+            "hit_t10": true,
+            "hit_w5": true,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "medicine",
+              "drugs",
+              "doses"
+            ],
+            "tensor_top5": [
+              "bones",
+              "breath",
+              "kidney",
+              "prostate",
+              "body"
+            ],
+            "w2_top5": [
+              "drugs",
+              "sugar",
+              "biopsy",
+              "blood",
+              "body"
+            ],
+            "hit_t5": false,
+            "hit_t10": false,
+            "hit_w5": true,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "medicine",
+              "sugar",
+              "trials"
+            ],
+            "tensor_top5": [
+              "bones",
+              "kidney",
+              "kidneys",
+              "breath",
+              "heart"
+            ],
+            "w2_top5": [
+              "biopsy",
+              "blood",
+              "body",
+              "bones",
+              "breast"
+            ],
+            "hit_t5": false,
+            "hit_t10": false,
+            "hit_w5": false,
+            "hit_w10": false
+          },
+          {
+            "path": [
+              "pregnancy",
+              "bones",
+              "body"
+            ],
+            "tensor_top5": [
+              "breasts",
+              "bones",
+              "cervical",
+              "headaches",
+              "kidneys"
+            ],
+            "w2_top5": [
+              "breasts",
+              "biopsy",
+              "blood",
+              "bones",
+              "breast"
+            ],
+            "hit_t5": true,
+            "hit_t10": true,
+            "hit_w5": true,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "prostate",
+              "body",
+              "chest"
+            ],
+            "tensor_top5": [
+              "headaches",
+              "breasts",
+              "bones",
+              "heart",
+              "kidney"
+            ],
+            "w2_top5": [
+              "body",
+              "breasts",
+              "breath",
+              "bones",
+              "headaches"
+            ],
+            "hit_t5": false,
+            "hit_t10": true,
+            "hit_w5": true,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "prostate",
+              "breasts",
+              "breath"
+            ],
+            "tensor_top5": [
+              "headaches",
+              "kidney",
+              "bones",
+              "kidneys",
+              "heart"
+            ],
+            "w2_top5": [
+              "breasts",
+              "bones",
+              "pregnancy",
+              "kidneys",
+              "headaches"
+            ],
+            "hit_t5": false,
+            "hit_t10": true,
+            "hit_w5": true,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "prostate",
+              "headaches",
+              "breath"
+            ],
+            "tensor_top5": [
+              "headaches",
+              "breasts",
+              "bones",
+              "kidney",
+              "body"
+            ],
+            "w2_top5": [
+              "breasts",
+              "bones",
+              "pregnancy",
+              "kidneys",
+              "headaches"
+            ],
+            "hit_t5": true,
+            "hit_t10": true,
+            "hit_w5": true,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "prostate",
+              "headaches",
+              "chest"
+            ],
+            "tensor_top5": [
+              "breasts",
+              "headaches",
+              "body",
+              "heart",
+              "bones"
+            ],
+            "w2_top5": [
+              "body",
+              "breasts",
+              "breath",
+              "bones",
+              "headaches"
+            ],
+            "hit_t5": true,
+            "hit_t10": true,
+            "hit_w5": true,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "prostate",
+              "kidneys",
+              "breath"
+            ],
+            "tensor_top5": [
+              "headaches",
+              "breasts",
+              "kidney",
+              "bones",
+              "body"
+            ],
+            "w2_top5": [
+              "breasts",
+              "bones",
+              "pregnancy",
+              "kidneys",
+              "headaches"
+            ],
+            "hit_t5": false,
+            "hit_t10": true,
+            "hit_w5": true,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "risks",
+              "tests",
+              "drugs"
+            ],
+            "tensor_top5": [
+              "headaches",
+              "prostate",
+              "kidneys",
+              "heart",
+              "pregnancy"
+            ],
+            "w2_top5": [
+              "medicine",
+              "biopsy",
+              "blood",
+              "body",
+              "bones"
+            ],
+            "hit_t5": false,
+            "hit_t10": false,
+            "hit_w5": false,
+            "hit_w10": false
+          },
+          {
+            "path": [
+              "sugar",
+              "trials",
+              "doses"
+            ],
+            "tensor_top5": [
+              "safety",
+              "medications",
+              "medicine",
+              "tests",
+              "risks"
+            ],
+            "w2_top5": [
+              "biopsy",
+              "blood",
+              "body",
+              "bones",
+              "breast"
+            ],
+            "hit_t5": false,
+            "hit_t10": false,
+            "hit_w5": false,
+            "hit_w10": false
+          },
+          {
+            "path": [
+              "surgeries",
+              "genetics",
+              "mutation"
+            ],
+            "tensor_top5": [
+              "cancer",
+              "lungs",
+              "surgeon",
+              "treatments",
+              "breasts"
+            ],
+            "w2_top5": [
+              "genetics",
+              "biopsy",
+              "blood",
+              "body",
+              "bones"
+            ],
+            "hit_t5": false,
+            "hit_t10": false,
+            "hit_w5": true,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "surgeries",
+              "surgeon",
+              "symptoms"
+            ],
+            "tensor_top5": [
+              "lungs",
+              "treatments",
+              "injectable",
+              "surgeon",
+              "drugs"
+            ],
+            "w2_top5": [
+              "surgeon",
+              "biopsy",
+              "treatments",
+              "injectable",
+              "blood"
+            ],
+            "hit_t5": true,
+            "hit_t10": true,
+            "hit_w5": true,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "surgeries",
+              "treatments",
+              "injection"
+            ],
+            "tensor_top5": [
+              "lungs",
+              "surgeon",
+              "treatments",
+              "injectable",
+              "drugs"
+            ],
+            "w2_top5": [
+              "surgeon",
+              "treatments",
+              "biopsy",
+              "blood",
+              "body"
+            ],
+            "hit_t5": true,
+            "hit_t10": true,
+            "hit_w5": true,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "surgery",
+              "surgeries",
+              "injection"
+            ],
+            "tensor_top5": [
+              "bones",
+              "breasts",
+              "breath",
+              "kidney",
+              "kidneys"
+            ],
+            "w2_top5": [
+              "lungs",
+              "treatments",
+              "surgeon",
+              "biopsy",
+              "surgeries"
+            ],
+            "hit_t5": false,
+            "hit_t10": false,
+            "hit_w5": true,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "surgery",
+              "treatments",
+              "surgeon"
+            ],
+            "tensor_top5": [
+              "breasts",
+              "headaches",
+              "prostate",
+              "body",
+              "kidneys"
+            ],
+            "w2_top5": [
+              "surgeries",
+              "biopsy",
+              "blood",
+              "body",
+              "bones"
+            ],
+            "hit_t5": false,
+            "hit_t10": false,
+            "hit_w5": false,
+            "hit_w10": false
+          },
+          {
+            "path": [
+              "surgical",
+              "lungs",
+              "injection"
+            ],
+            "tensor_top5": [
+              "lungs",
+              "surgeon",
+              "treatments",
+              "surgeries",
+              "injectable"
+            ],
+            "w2_top5": [
+              "lungs",
+              "treatments",
+              "surgeon",
+              "biopsy",
+              "blood"
+            ],
+            "hit_t5": true,
+            "hit_t10": true,
+            "hit_w5": true,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "surgical",
+              "surgeries",
+              "injection"
+            ],
+            "tensor_top5": [
+              "lungs",
+              "surgeon",
+              "treatments",
+              "surgeries",
+              "injectable"
+            ],
+            "w2_top5": [
+              "surgeon",
+              "treatments",
+              "biopsy",
+              "blood",
+              "body"
+            ],
+            "hit_t5": true,
+            "hit_t10": true,
+            "hit_w5": false,
+            "hit_w10": false
+          },
+          {
+            "path": [
+              "tests",
+              "drugs",
+              "sugar"
+            ],
+            "tensor_top5": [
+              "safety",
+              "medications",
+              "medicine",
+              "trials",
+              "risks"
+            ],
+            "w2_top5": [
+              "medicine",
+              "biopsy",
+              "blood",
+              "body",
+              "bones"
+            ],
+            "hit_t5": false,
+            "hit_t10": true,
+            "hit_w5": false,
+            "hit_w10": false
+          },
+          {
+            "path": [
+              "tests",
+              "medications",
+              "doses"
+            ],
+            "tensor_top5": [
+              "safety",
+              "medications",
+              "medicine",
+              "trials",
+              "risks"
+            ],
+            "w2_top5": [
+              "safety",
+              "sugar",
+              "drugs",
+              "biopsy",
+              "blood"
+            ],
+            "hit_t5": true,
+            "hit_t10": true,
+            "hit_w5": false,
+            "hit_w10": false
+          },
+          {
+            "path": [
+              "tests",
+              "safety",
+              "drugs"
+            ],
+            "tensor_top5": [
+              "lungs",
+              "breasts",
+              "surgeon",
+              "safety",
+              "medications"
+            ],
+            "w2_top5": [
+              "biopsy",
+              "blood",
+              "body",
+              "bones",
+              "breast"
+            ],
+            "hit_t5": true,
+            "hit_t10": true,
+            "hit_w5": false,
+            "hit_w10": false
+          },
+          {
+            "path": [
+              "tests",
+              "sugar",
+              "trials"
+            ],
+            "tensor_top5": [
+              "safety",
+              "medications",
+              "medicine",
+              "risks",
+              "sugar"
+            ],
+            "w2_top5": [
+              "medicine",
+              "safety",
+              "biopsy",
+              "blood",
+              "body"
+            ],
+            "hit_t5": true,
+            "hit_t10": true,
+            "hit_w5": false,
+            "hit_w10": false
+          },
+          {
+            "path": [
+              "tumor",
+              "cancers",
+              "carcinoma"
+            ],
+            "tensor_top5": [
+              "breasts",
+              "body",
+              "cervical",
+              "bones",
+              "breath"
+            ],
+            "w2_top5": [
+              "biopsy",
+              "blood",
+              "body",
+              "bones",
+              "breast"
+            ],
+            "hit_t5": false,
+            "hit_t10": false,
+            "hit_w5": false,
+            "hit_w10": true
+          },
+          {
+            "path": [
+              "tumor",
+              "liver",
+              "carcinoma"
+            ],
+            "tensor_top5": [
+              "lungs",
+              "surgeon",
+              "treatments",
+              "surgeries",
+              "breasts"
+            ],
+            "w2_top5": [
+              "liver",
+              "biopsy",
+              "blood",
+              "body",
+              "bones"
+            ],
+            "hit_t5": false,
+            "hit_t10": false,
+            "hit_w5": true,
+            "hit_w10": true
+          }
+        ]
+      },
+      "s4": {
+        "rank": 8,
+        "lam": 1.0,
+        "random": {
+          "rank8_lam1.0": {
+            "mean": 0.8126197417742607,
+            "std": 0.04668150403879124,
+            "aucs": [
+              0.7543,
+              0.8771,
+              0.8097,
+              0.8517,
+              0.7703
+            ],
+            "n_repeats": 5
+          }
+        },
+        "pca_init": {
+          "rank8_lam1.0": {
+            "mean": 0.8079550187421907,
+            "std": 0.04079600680788783,
+            "aucs": [
+              0.7543,
+              0.8538,
+              0.8097,
+              0.8517,
+              0.7703
+            ],
+            "n_repeats": 5
+          }
+        },
+        "coupled": {
+          "rank8_lam1.0_mu0.3": {
+            "mean": 0.6821324448146605,
+            "std": 0.0894572169894086,
+            "aucs": [
+              0.7593,
+              0.7651,
+              0.7105,
+              0.5223,
+              0.6535
+            ],
+            "n_repeats": 5
+          },
+          "rank8_lam1.0_mu1.0": {
+            "mean": 0.646563931695127,
+            "std": 0.04257333998643268,
+            "aucs": [
+              0.6835,
+              0.6035,
+              0.693,
+              0.5885,
+              0.6643
+            ],
+            "n_repeats": 5
+          },
+          "rank8_lam1.0_mu3.0": {
+            "mean": 0.6314868804664722,
+            "std": 0.04457013595130217,
+            "aucs": [
+              0.661,
+              0.5585,
+              0.6814,
+              0.6035,
+              0.6531
+            ],
+            "n_repeats": 5
+          }
+        },
+        "delta": {
+          "pca_init_minus_random": -0.004664723032069995,
+          "coupled_best_minus_random": -0.13048729695960015,
+          "coupled_best_key": "rank8_lam1.0_mu0.3"
+        },
+        "gain_threshold": 0.02,
+        "verdict": "no_evidence_of_shared_space"
+      }
+    }
+  }
+}

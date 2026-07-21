@@ -1,0 +1,512 @@
+{
+  "method": "concept_tree_quality_llm_judge",
+  "model": "qwen2.5-7b-it",
+  "domains": {
+    "nfcorpus": {
+      "domain": "nfcorpus",
+      "n_clusters": 5,
+      "n_pairs_judged": 11,
+      "n_is_a": 0,
+      "n_part_of": 1,
+      "n_related": 10,
+      "n_unrelated": 0,
+      "n_error": 0,
+      "hierarchy_rate": 0.091,
+      "related_rate": 0.909
+    },
+    "scifact": {
+      "domain": "scifact",
+      "n_clusters": 5,
+      "n_pairs_judged": 17,
+      "n_is_a": 0,
+      "n_part_of": 1,
+      "n_related": 16,
+      "n_unrelated": 0,
+      "n_error": 0,
+      "hierarchy_rate": 0.059,
+      "related_rate": 0.941
+    },
+    "novel": {
+      "domain": "novel",
+      "n_clusters": 5,
+      "n_pairs_judged": 12,
+      "n_is_a": 0,
+      "n_part_of": 0,
+      "n_related": 12,
+      "n_unrelated": 0,
+      "n_error": 0,
+      "hierarchy_rate": 0.0,
+      "related_rate": 1.0
+    },
+    "medical_qa": {
+      "domain": "medical_qa",
+      "n_clusters": 5,
+      "n_pairs_judged": 16,
+      "n_is_a": 0,
+      "n_part_of": 0,
+      "n_related": 16,
+      "n_unrelated": 0,
+      "n_error": 0,
+      "hierarchy_rate": 0.0,
+      "related_rate": 1.0
+    }
+  },
+  "all_judgments": {
+    "nfcorpus": [
+      {
+        "judgment": "part_of",
+        "reasoning": "PART_OF - dietary is an aspect or component related to food, but not a subtype or instance of food itself.",
+        "domain": "nfcorpus",
+        "cluster_id": 85,
+        "meta": "food",
+        "sub": "dietary"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - \"variables\" has no meaningful connection to \"food\" based on the document excerpt, which discusses diverticular disease and the colon, not food or variables.",
+        "domain": "nfcorpus",
+        "cluster_id": 85,
+        "meta": "food",
+        "sub": "variables"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - The document discusses diverticular disease and the colon, with no mention of food or questionnaires, so there is no meaningful connection between the two concepts.",
+        "domain": "nfcorpus",
+        "cluster_id": 85,
+        "meta": "food",
+        "sub": "questionnaire"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - The document discusses diverticular disease and colon health, not food or habits, and there is no meaningful connection between \"food\" as a parent concept and \"habits\" as a child concept i",
+        "domain": "nfcorpus",
+        "cluster_id": 85,
+        "meta": "food",
+        "sub": "habits"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "RELATED - \"concentrations\" and \"average\" are semantically connected in the context of statistical analysis, but concentrations are not a type or component of an average; rather, an average can be deri",
+        "domain": "nfcorpus",
+        "cluster_id": 44,
+        "meta": "average",
+        "sub": "concentrations"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - \"women\" is a demographic group and \"methods\" refers to procedures or techniques, with no meaningful hierarchical connection between them.",
+        "domain": "nfcorpus",
+        "cluster_id": 127,
+        "meta": "methods",
+        "sub": "women"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "RELATED - \"reflects\" describes an outcome or measurement related to women in the context of PCOS, but it is not a type, component, or instance of women.",
+        "domain": "nfcorpus",
+        "cluster_id": 125,
+        "meta": "women",
+        "sub": "reflects"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - The document discusses oxalate content in vegetables, not fibre or ratio, so there is no meaningful connection between the parent \"ratio\" and child \"fibre\".",
+        "domain": "nfcorpus",
+        "cluster_id": 96,
+        "meta": "ratio",
+        "sub": "fibre"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "RELATED - Soluble is mentioned as a property of oxalate content (water-soluble oxalate), and ratio is implied in the context of proportions (e.g., percentage reduction or content), but soluble is not ",
+        "domain": "nfcorpus",
+        "cluster_id": 96,
+        "meta": "ratio",
+        "sub": "soluble"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - Neither \"fibre\" nor \"proportion\" appear in the document excerpt, and there is no meaningful conceptual connection between them in this context.",
+        "domain": "nfcorpus",
+        "cluster_id": 96,
+        "meta": "proportion",
+        "sub": "fibre"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "RELATED - \"soluble\" describes a type of oxalate in the document, not a type or part of \"proportion,\" but the document discusses the proportion of water-soluble oxalate, connecting the two terms contex",
+        "domain": "nfcorpus",
+        "cluster_id": 96,
+        "meta": "proportion",
+        "sub": "soluble"
+      }
+    ],
+    "scifact": [
+      {
+        "judgment": "related",
+        "reasoning": "RELATED - \"reliable\" describes a quality of tools that can contribute to \"successful\" genetic modification, but it is not a type, instance, or component of the abstract concept \"successfully.\"",
+        "domain": "scifact",
+        "cluster_id": 68,
+        "meta": "successfully",
+        "sub": "reliable"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "RELATED - \"efficient\" describes a quality that contributes to \"successfully\" achieving something, but it is not a type, instance, or component of the concept \"successfully.\"",
+        "domain": "scifact",
+        "cluster_id": 68,
+        "meta": "successfully",
+        "sub": "efficient"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "RELATED - \"reliable\" is a descriptor of tools for generation, not a type or component of generation itself.",
+        "domain": "scifact",
+        "cluster_id": 68,
+        "meta": "generation",
+        "sub": "reliable"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "RELATED - \"efficient\" describes a quality or method of generation, not a type or component of generation itself.",
+        "domain": "scifact",
+        "cluster_id": 68,
+        "meta": "generation",
+        "sub": "efficient"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - \"nano\" and \"amacare\" have no discernible connection to the glioblastoma stem cell hierarchy described in the document.",
+        "domain": "scifact",
+        "cluster_id": 126,
+        "meta": "amacare",
+        "sub": "nano"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - \"amacare\" and \"entities\" have no meaningful connection to the glioblastoma stem cell hierarchy described in the document.",
+        "domain": "scifact",
+        "cluster_id": 126,
+        "meta": "amacare",
+        "sub": "entities"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - The terms \"amacare\" and \"yans\" do not appear in the document excerpt and have no meaningful connection to the biological concepts described.",
+        "domain": "scifact",
+        "cluster_id": 126,
+        "meta": "amacare",
+        "sub": "yans"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - \"amacare\" and \"usterity\" do not appear in the document and have no discernible connection to the concepts discussed (glioblastomas, GSCs, A20, NF-kappaB).",
+        "domain": "scifact",
+        "cluster_id": 126,
+        "meta": "amacare",
+        "sub": "usterity"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - The terms \"innate\" and \"type\" from the hierarchy have no meaningful connection to each other or to the document excerpt.",
+        "domain": "scifact",
+        "cluster_id": 104,
+        "meta": "innate",
+        "sub": "type"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - \"dissect\" (meaning to analyze or cut apart) has no direct hierarchical or meaningful connection to \"significant\" (meaning important or notable) in the context of the provided text.",
+        "domain": "scifact",
+        "cluster_id": 108,
+        "meta": "significant",
+        "sub": "dissect"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "RELATED - The concepts \"subsequent\" and \"dissect\" have a sequential or methodological connection in the document context (e.g., dissecting something occurs subsequently), but \"dissect\" is not a type o",
+        "domain": "scifact",
+        "cluster_id": 108,
+        "meta": "subsequent",
+        "sub": "dissect"
+      },
+      {
+        "judgment": "part_of",
+        "reasoning": "PART_OF - \"dissect\" is a method or action used to analyze or understand \"central\" concepts, not a type or component of it.",
+        "domain": "scifact",
+        "cluster_id": 108,
+        "meta": "central",
+        "sub": "dissect"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "RELATED - The document discusses developmental processes like imprinting and gene silencing, while \"dissect\" refers to a laboratory technique, so the connection is tangential rather than hierarchical.",
+        "domain": "scifact",
+        "cluster_id": 108,
+        "meta": "development",
+        "sub": "dissect"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - \"therein\" and \"whilst\" are unrelated words that do not share any meaningful conceptual or hierarchical connection based on the provided document excerpt.",
+        "domain": "scifact",
+        "cluster_id": 122,
+        "meta": "therein",
+        "sub": "whilst"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - The words \"therein\" and \"albeit\" have no meaningful conceptual connection based on the document excerpt.",
+        "domain": "scifact",
+        "cluster_id": 122,
+        "meta": "therein",
+        "sub": "albeit"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - \"therein\" and \"subsequent\" have no meaningful hierarchical or contextual connection based on the provided text.",
+        "domain": "scifact",
+        "cluster_id": 122,
+        "meta": "therein",
+        "sub": "subsequent"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - \"therein\" and \"icity\" appear to be arbitrary or incomplete fragments with no meaningful conceptual connection to each other or to the provided document excerpt.",
+        "domain": "scifact",
+        "cluster_id": 122,
+        "meta": "therein",
+        "sub": "icity"
+      }
+    ],
+    "novel": [
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - The document discusses religious symbolism involving fire, phallus, and elephant-headed deities (Ganeza), with no mention of \"original\" as a concept or \"greek\" as a specific instance or co",
+        "domain": "novel",
+        "cluster_id": 16,
+        "meta": "original",
+        "sub": "greek"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "RELATED - The document mentions various cultural elements but does not establish \"egyptian\" as a type or component of \"original\" in a clear hierarchical manner.",
+        "domain": "novel",
+        "cluster_id": 16,
+        "meta": "original",
+        "sub": "egyptian"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "RELATED - \"original\" and \"translation\" are related as source and derived version, but translation is not a type, instance, or component of \"original\" in a strict hierarchical sense.",
+        "domain": "novel",
+        "cluster_id": 16,
+        "meta": "original",
+        "sub": "translation"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "RELATED - The document mentions ancient worship practices (fire, phallus, mastodon head) but does not specifically refer to Greek culture as an instance or component of \"ancient\" in the given excerpt.",
+        "domain": "novel",
+        "cluster_id": 16,
+        "meta": "ancient",
+        "sub": "greek"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "RELATED - The terms \"good\" and \"well\" are semantically associated (often used together in moral or functional contexts), but \"well\" is not a type, component, or instance of \"good\" in the given documen",
+        "domain": "novel",
+        "cluster_id": 1,
+        "meta": "good",
+        "sub": "well"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - The document describes a landscape with no hills or hillocks, using \"even\" to mean flat or uniform, which has no meaningful hierarchical connection to the concept \"good.\"",
+        "domain": "novel",
+        "cluster_id": 1,
+        "meta": "good",
+        "sub": "even"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - \"good\" and \"indeed\" have no semantic or hierarchical connection in the provided document excerpt.",
+        "domain": "novel",
+        "cluster_id": 1,
+        "meta": "good",
+        "sub": "indeed"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - The document describes a landscape scene with no connection between \"south\" and \"well.\"",
+        "domain": "novel",
+        "cluster_id": 1,
+        "meta": "south",
+        "sub": "well"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "RELATED - \"must\" appears as a possible typo or fragment in the document, but there is no clear hierarchical or component relationship to \"relations\" based on the provided text.",
+        "domain": "novel",
+        "cluster_id": 14,
+        "meta": "relations",
+        "sub": "must"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - The terms \"either\" and \"must\" from the document excerpt have no meaningful conceptual connection related to hierarchy.",
+        "domain": "novel",
+        "cluster_id": 14,
+        "meta": "either",
+        "sub": "must"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - There is no meaningful semantic or hierarchical connection between \"indeed\" and \"doubt\" based on the provided document excerpt.",
+        "domain": "novel",
+        "cluster_id": 13,
+        "meta": "indeed",
+        "sub": "doubt"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - The document excerpt discusses the survival and degeneration of the Mayan language, with no mention of \"doubt\" or its relationship to \"words\" in any hierarchical sense.",
+        "domain": "novel",
+        "cluster_id": 13,
+        "meta": "words",
+        "sub": "doubt"
+      }
+    ],
+    "medical_qa": [
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - \"sometimes\" is an adverb indicating frequency, while \"trial\" is a noun referring to a clinical study, with no hierarchical or meaningful semantic connection.",
+        "domain": "medical_qa",
+        "cluster_id": 23,
+        "meta": "sometimes",
+        "sub": "trial"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - \"sometimes\" is an adverb indicating frequency, not a broader category that \"trials\" could be a type or part of.",
+        "domain": "medical_qa",
+        "cluster_id": 23,
+        "meta": "sometimes",
+        "sub": "trials"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - The document discusses basal cell skin cancer and its treatment, with no mention of \"tests\" or \"chapter\" in any meaningful connection.",
+        "domain": "medical_qa",
+        "cluster_id": 22,
+        "meta": "tests",
+        "sub": "chapter"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "RELATED - A guide about basal cell skin cancer may mention tests as part of diagnosis, but a guide is not a type or component of tests.",
+        "domain": "medical_qa",
+        "cluster_id": 22,
+        "meta": "tests",
+        "sub": "guide"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - The document discusses basal cell skin cancer and treatment, with no mention of \"test\" or \"chapter,\" and these terms have no meaningful connection to the content.",
+        "domain": "medical_qa",
+        "cluster_id": 22,
+        "meta": "test",
+        "sub": "chapter"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - The document discusses basal cell skin cancer, but \"test\" and \"guide\" have no meaningful hierarchical connection to the medical context provided.",
+        "domain": "medical_qa",
+        "cluster_id": 22,
+        "meta": "test",
+        "sub": "guide"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - The terms \"themselves\" and \"begin\" have no meaningful connection to each other or to the document content about lung cancer.",
+        "domain": "medical_qa",
+        "cluster_id": 21,
+        "meta": "themselves",
+        "sub": "begin"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - \"themselves\" and \"start\" have no meaningful hierarchical or conceptual connection based on the provided document excerpt.",
+        "domain": "medical_qa",
+        "cluster_id": 21,
+        "meta": "themselves",
+        "sub": "start"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - \"themselves\" and \"branch\" have no meaningful connection to any concepts in the document excerpt about lung cancer.",
+        "domain": "medical_qa",
+        "cluster_id": 21,
+        "meta": "themselves",
+        "sub": "branch"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - \"themselves\" and \"connect\" have no meaningful hierarchical or semantic relationship in the context of the document about NSCLC and lung cancer.",
+        "domain": "medical_qa",
+        "cluster_id": 21,
+        "meta": "themselves",
+        "sub": "connect"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - \"commonly\" is an adverb with no meaningful hierarchical or thematic connection to \"others\" in the context of adrenal glands or tumors.",
+        "domain": "medical_qa",
+        "cluster_id": 5,
+        "meta": "others",
+        "sub": "commonly"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - The parent \"others\" and child \"solely\" have no meaningful connection based on the document excerpt, which discusses adrenal glands and tumors.",
+        "domain": "medical_qa",
+        "cluster_id": 5,
+        "meta": "others",
+        "sub": "solely"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - \"either\" and \"commonly\" are abstract function words with no meaningful connection in the context of the adrenal tumor hierarchy.",
+        "domain": "medical_qa",
+        "cluster_id": 5,
+        "meta": "either",
+        "sub": "commonly"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "RELATED - \"either\" and \"solely\" are vague, abstract terms that do not form a clear hierarchical or part-whole relationship based on the provided document excerpt.",
+        "domain": "medical_qa",
+        "cluster_id": 5,
+        "meta": "either",
+        "sub": "solely"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "RELATED - The document discusses lymphoma types (like CHL and NLPHL) which are related to the immune system, but \"immune\" is not a specific type of \"type\" in this context.",
+        "domain": "medical_qa",
+        "cluster_id": 3,
+        "meta": "type",
+        "sub": "immune"
+      },
+      {
+        "judgment": "related",
+        "reasoning": "UNRELATED - The document discusses lymphoma types and treatments, with no mention of \"protein\" as a type, component, or related concept to \"type\".",
+        "domain": "medical_qa",
+        "cluster_id": 3,
+        "meta": "type",
+        "sub": "protein"
+      }
+    ]
+  }
+}

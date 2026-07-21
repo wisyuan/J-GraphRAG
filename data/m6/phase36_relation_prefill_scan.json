@@ -1,0 +1,327 @@
+{
+  "method": "relation_prefill_position_scan",
+  "model": "qwen2.5-7b-it",
+  "n_pairs": 8,
+  "results": [
+    {
+      "concept_a": "cancer",
+      "concept_b": "chemotherapy",
+      "expected": "treatment",
+      "dictionary_words": [
+        "treated",
+        "Treat",
+        "therapeutic",
+        "often",
+        "apeut"
+      ],
+      "dictionary_known": [
+        "treated",
+        "Treat",
+        "therapeutic",
+        "treating",
+        "causal"
+      ],
+      "prefill_a_words": [
+        "refers",
+        "relates",
+        "alink",
+        "references",
+        "plays"
+      ],
+      "prefill_a_known": [],
+      "prefill_c_words": [
+        "appears",
+        "chem",
+        "chemotherapy",
+        "corresponds",
+        "direct",
+        "directly",
+        "does",
+        "doesn",
+        "encompasses",
+        "explicit"
+      ],
+      "prefill_c_known": []
+    },
+    {
+      "concept_a": "cancer",
+      "concept_b": "surgery",
+      "expected": "treatment",
+      "dictionary_words": [
+        "often",
+        "apeut",
+        "treated",
+        "alink",
+        "Treat"
+      ],
+      "dictionary_known": [
+        "treated",
+        "Treat",
+        "therapeutic"
+      ],
+      "prefill_a_words": [
+        "relates",
+        "plays",
+        "alink",
+        "refers",
+        "interacts"
+      ],
+      "prefill_a_known": [],
+      "prefill_c_words": [
+        "appears",
+        "direct",
+        "directly",
+        "does",
+        "doesn",
+        "explicit",
+        "explicitly",
+        "indirectly",
+        "irect",
+        "mentions"
+      ],
+      "prefill_c_known": []
+    },
+    {
+      "concept_a": "blood",
+      "concept_b": "heart",
+      "expected": "pumps/circulation",
+      "dictionary_words": [
+        "reflected",
+        "evidenced",
+        "evident",
+        "closely",
+        "regulated"
+      ],
+      "dictionary_known": [
+        "regulated",
+        "integral",
+        "vital"
+      ],
+      "prefill_a_words": [
+        "relates",
+        "refers",
+        "interacts",
+        "pressure",
+        "references"
+      ],
+      "prefill_a_known": [
+        "affects"
+      ],
+      "prefill_c_words": [
+        "affects",
+        "directly",
+        "heart",
+        "hearts",
+        "interaction",
+        "interacts",
+        "mainly",
+        "means",
+        "primarily",
+        "refer"
+      ],
+      "prefill_c_known": [
+        "affects"
+      ]
+    },
+    {
+      "concept_a": "insulin",
+      "concept_b": "diabetes",
+      "expected": "regulates",
+      "dictionary_words": [
+        "central",
+        "pivotal",
+        "critical",
+        "closely",
+        "crucial"
+      ],
+      "dictionary_known": [
+        "central",
+        "critical",
+        "crucial",
+        "integral",
+        "regulated"
+      ],
+      "prefill_a_words": [
+        "plays",
+        "itself",
+        "roperty",
+        "irect",
+        "indirectly"
+      ],
+      "prefill_a_known": [],
+      "prefill_c_words": [
+        "actually",
+        "appe",
+        "appear",
+        "appears",
+        "diabetes",
+        "direct",
+        "directly",
+        "does",
+        "doesn",
+        "indirectly"
+      ],
+      "prefill_c_known": []
+    },
+    {
+      "concept_a": "calcium",
+      "concept_b": "bones",
+      "expected": "builds",
+      "dictionary_words": [
+        "integral",
+        "essential",
+        "crucial",
+        "critical",
+        "vital"
+      ],
+      "dictionary_known": [
+        "integral",
+        "essential",
+        "crucial",
+        "critical",
+        "vital"
+      ],
+      "prefill_a_words": [
+        "plays",
+        "interacts",
+        "roperty",
+        "relates",
+        "ndef"
+      ],
+      "prefill_a_known": [],
+      "prefill_c_words": [
+        "appear",
+        "appears",
+        "aren",
+        "bone",
+        "bones",
+        "directly",
+        "implicitly",
+        "indirectly",
+        "interaction",
+        "interacts"
+      ],
+      "prefill_c_known": []
+    },
+    {
+      "concept_a": "diet",
+      "concept_b": "nutrition",
+      "expected": "related",
+      "dictionary_words": [
+        "integral",
+        "foundational",
+        "fundamental",
+        "essential",
+        "reflected"
+      ],
+      "dictionary_known": [
+        "integral",
+        "essential",
+        "crucial"
+      ],
+      "prefill_a_words": [
+        "plays",
+        "relates",
+        "indirectly",
+        "refers",
+        "intersects"
+      ],
+      "prefill_a_known": [],
+      "prefill_c_words": [
+        "actually",
+        "appears",
+        "because",
+        "directly",
+        "does",
+        "indirectly",
+        "influences",
+        "nutrition",
+        "plays",
+        "primarily"
+      ],
+      "prefill_c_known": []
+    },
+    {
+      "concept_a": "diagnosis",
+      "concept_b": "treatment",
+      "expected": "precedes",
+      "dictionary_words": [
+        "sequential",
+        "ersive",
+        "pivotal",
+        "causal",
+        "critical"
+      ],
+      "dictionary_known": [
+        "causal",
+        "critical",
+        "crucial",
+        "integral",
+        "caus"
+      ],
+      "prefill_a_words": [
+        "plays",
+        "serves",
+        "relates",
+        "ndef",
+        "playing"
+      ],
+      "prefill_a_known": [],
+      "prefill_c_words": [
+        "affects",
+        "because",
+        "contributes",
+        "influences",
+        "leads",
+        "mainly",
+        "play",
+        "playing",
+        "plays",
+        "preced"
+      ],
+      "prefill_c_known": [
+        "affects"
+      ]
+    },
+    {
+      "concept_a": "smoking",
+      "concept_b": "cancer",
+      "expected": "causes",
+      "dictionary_words": [
+        "causal",
+        "caus",
+        "alink",
+        "licative",
+        "contri"
+      ],
+      "dictionary_known": [
+        "causal",
+        "caus"
+      ],
+      "prefill_a_words": [
+        "ndef",
+        "appears",
+        "redni",
+        "roperty",
+        "urrenc"
+      ],
+      "prefill_a_known": [],
+      "prefill_c_words": [
+        "appe",
+        "appears",
+        "directly",
+        "incre",
+        "indirectly",
+        "negative",
+        "plays",
+        "poses",
+        "posit",
+        "positive"
+      ],
+      "prefill_c_known": [
+        "risk",
+        "risks"
+      ]
+    }
+  ]
+}

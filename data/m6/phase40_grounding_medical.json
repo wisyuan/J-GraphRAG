@@ -1,0 +1,116 @@
+{
+  "method": "phase40_grounding_test",
+  "domain": "medical",
+  "created": "2026-07-21 01:48:37",
+  "n_concepts": 50,
+  "n_edges": 248,
+  "n_perm": 1000,
+  "concepts": [
+    "biopsy",
+    "blood",
+    "body",
+    "bones",
+    "breast",
+    "breasts",
+    "breath",
+    "cancer",
+    "cancers",
+    "carcinoma",
+    "cervical",
+    "chemotherapy",
+    "chest",
+    "diagnosis",
+    "doses",
+    "drugs",
+    "family",
+    "genes",
+    "genetic",
+    "genetics",
+    "headaches",
+    "heart",
+    "immune",
+    "injectable",
+    "injection",
+    "kidney",
+    "kidneys",
+    "liver",
+    "lungs",
+    "medications",
+    "medicine",
+    "muscle",
+    "mutation",
+    "pregnancy",
+    "prostate",
+    "radiation",
+    "risks",
+    "safety",
+    "sugar",
+    "surgeon",
+    "surgeries",
+    "surgery",
+    "surgical",
+    "symptoms",
+    "tests",
+    "therapy",
+    "treatments",
+    "trials",
+    "tumor",
+    "tumors"
+  ],
+  "auc": {
+    "E_wu": {
+      "auc": 0.6325321094859181,
+      "p": 0.000999000999000999,
+      "n_pos": 248,
+      "n_pairs": 1225
+    },
+    "E_ws": {
+      "auc": 0.6310545778716942,
+      "p": 0.000999000999000999,
+      "n_pos": 248,
+      "n_pairs": 1225
+    },
+    "E_M": {
+      "auc": 0.5459231683560604,
+      "p": 0.000999000999000999,
+      "n_pos": 248,
+      "n_pairs": 1225
+    },
+    "E_bge": {
+      "auc": 0.7089262719978868,
+      "p": 0.000999000999000999,
+      "n_pos": 248,
+      "n_pairs": 1225
+    }
+  },
+  "cluster": {
+    "E_wu": {
+      "ari": 0.17791710644465097,
+      "nmi": 0.23874545750478354,
+      "ari_percentile": 100.0,
+      "k": 4
+    },
+    "E_ws": {
+      "ari": 0.16520428087693714,
+      "nmi": 0.25692668898803106,
+      "ari_percentile": 100.0,
+      "k": 4
+    },
+    "E_M": {
+      "ari": 0.04916829359420305,
+      "nmi": 0.2874266549753552,
+      "ari_percentile": 97.1,
+      "k": 4
+    },
+    "E_bge": {
+      "ari": 0.09821931889776835,
+      "nmi": 0.2834634319070496,
+      "ari_percentile": 99.7,
+      "k": 4
+    }
+  },
+  "interpretation": {
+    "verdict": "AUC > 0.5 with p < 0.05 = vector space encodes the symbolic relation structure (grounding holds)",
+    "net_info": "AUC(E_wu/E_ws) - AUC(E_M) = model semantics beyond co-occurrence statistics"
+  }
+}

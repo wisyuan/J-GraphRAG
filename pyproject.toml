@@ -1,0 +1,25 @@
+[project]
+name = "j-graphrag"
+version = "0.1.0"
+description = "J-GraphRAG: zero-LLM-generation knowledge graph extraction via Jacobian Lens workspace readout"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch",
+    "transformers>=5.5",
+    "jlens",
+    "bitsandbytes",
+    "FlagEmbedding",
+    "openai",
+    "numpy",
+    "scipy",
+    "scikit-learn",
+    "igraph",
+    "hdbscan",
+]
+
+[dependency-groups]
+dev = ["pytest", "maturin"]
+
+[tool.uv]
+package = false

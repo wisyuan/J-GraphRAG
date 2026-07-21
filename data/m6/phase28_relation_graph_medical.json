@@ -1,0 +1,53 @@
+{
+  "method": "relation_graph_benchmark",
+  "domain": "medical",
+  "n_chunks": 200,
+  "n_questions": 28,
+  "efficiency": {
+    "concept_build_s": 43.3,
+    "relation_build_s": 0.6,
+    "total_build_s": 43.9,
+    "per_chunk_s": 0.2193,
+    "vram_peak_gb": 5.76,
+    "n_concepts": 13,
+    "n_relations": 3,
+    "n_known_type_relations": 0,
+    "n_pairs_tested": 156
+  },
+  "results": {
+    "B0": {
+      "acc": 0.6428571428571429,
+      "recall": 0.718344155844156,
+      "acc_by_level": {
+        "L1": 1.0,
+        "L2": 0.42857142857142855,
+        "L3": 0.8571428571428571,
+        "L4": 0.2857142857142857
+      },
+      "n": 28
+    },
+    "flat": {
+      "acc": 0.7142857142857143,
+      "recall": 0.6972402597402597,
+      "acc_by_level": {
+        "L1": 1.0,
+        "L2": 0.5714285714285714,
+        "L3": 1.0,
+        "L4": 0.2857142857142857
+      },
+      "n": 28
+    },
+    "relation": {
+      "acc": 0.75,
+      "recall": 0.7394480519480521,
+      "acc_by_level": {
+        "L1": 1.0,
+        "L2": 0.42857142857142855,
+        "L3": 1.0,
+        "L4": 0.5714285714285714
+      },
+      "n": 28
+    }
+  },
+  "top_relations": []
+}

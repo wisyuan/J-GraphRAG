@@ -1,0 +1,92 @@
+{
+  "benchmarks": {
+    "nfcorpus": {
+      "n_docs": 3633,
+      "n_queries": 323,
+      "results": {
+        "B0": {
+          "ndcg_10": 0.30872,
+          "ndcg_3": 0.37279,
+          "ndcg_1": 0.40402,
+          "recall_10": 0.14309,
+          "recall_100": 0.28114,
+          "mrr": 0.51129
+        },
+        "JL-1": {
+          "ndcg_10": 0.30872,
+          "ndcg_3": 0.37279,
+          "ndcg_1": 0.40402,
+          "recall_10": 0.14309,
+          "recall_100": 0.28114,
+          "mrr": 0.51129
+        },
+        "JL-2": {
+          "ndcg_10": 0.11142,
+          "ndcg_3": 0.11276,
+          "ndcg_1": 0.12848,
+          "recall_10": 0.05575,
+          "recall_100": 0.28114,
+          "mrr": 0.18643
+        }
+      },
+      "permutation": {
+        "JL-1_vs_B0": {
+          "p_value": 1.0,
+          "significant": false,
+          "delta": 0.0,
+          "n_queries": 323
+        },
+        "JL-2_vs_B0": {
+          "delta": -0.1978524279331731,
+          "p_value": 0.0,
+          "significant": true,
+          "n_queries": 323
+        }
+      }
+    },
+    "scifact": {
+      "n_docs": 5183,
+      "n_queries": 300,
+      "results": {
+        "B0": {
+          "ndcg_10": 0.628,
+          "ndcg_3": 0.57926,
+          "ndcg_1": 0.50667,
+          "recall_10": 0.76122,
+          "recall_100": 0.90533,
+          "mrr": 0.59402
+        },
+        "JL-1": {
+          "ndcg_10": 0.628,
+          "ndcg_3": 0.57926,
+          "ndcg_1": 0.50667,
+          "recall_10": 0.76122,
+          "recall_100": 0.90533,
+          "mrr": 0.59402
+        },
+        "JL-2": {
+          "ndcg_10": 0.34265,
+          "ndcg_3": 0.27024,
+          "ndcg_1": 0.20667,
+          "recall_10": 0.52206,
+          "recall_100": 0.90533,
+          "mrr": 0.29435
+        }
+      },
+      "permutation": {
+        "JL-1_vs_B0": {
+          "p_value": 1.0,
+          "significant": false,
+          "delta": 0.0,
+          "n_queries": 300
+        },
+        "JL-2_vs_B0": {
+          "delta": -0.2853542887388286,
+          "p_value": 0.0,
+          "significant": true,
+          "n_queries": 300
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "method": "residual_space_concept_projection",
+  "date": "2026-07-14",
+  "status": "negative_result",
+  "goal": "Extract sub-concepts by projecting out meta-concept directions from transported residual, then reading what remains. No prompt needed → no prompt contamination.",
+
+  "approach": [
+    "1. Forward pass with concern prompt → get transported residual h at L26",
+    "2. Get concept direction v_word = unembed[token_id] for each meta-concept",
+    "3. Project out: h_sub = h - (h·v/v·v) * v",
+    "4. Read top-k tokens of h_sub → 'what the residual thinks about EXCEPT the meta-concept'"
+  ],
+
+  "results": {
+    "before_projection": "Fiber (3.2%), fiber (2.2%), diet (0.03%) — correct broad concepts",
+    "after_projecting_fiber_alpha_0.5": "All probabilities ~0.0000, only entiful/vider/listed (artifacts)",
+    "after_projecting_fiber_alpha_1.0": "listed (0.0000), cholesterol (0.0000) — cholesterol is a real sub-concept but signal too weak",
+    "after_subspace_projection_orthogonalized": "fiber 99.98% — projection INCREASED fiber probability (QR orthogonalization misaligned)"
+  },
+
+  "root_cause": "Unembedding concept directions are highly non-orthogonal in 3584-dim space. Projecting out one concept direction destroys most of the signal because concept directions are entangled. Even alpha=0.5 collapses probabilities to ~0.",
+
+  "what_would_be_needed": "Template Lens (paper Appendix A.9.1): pre-compute whitened concept vectors via Stein's lemma approximation. Whitening (Σ+λI)^{-1} orthogonalizes the directions, making projection safe. But this requires ~100 forward passes per word to build template vectors — significant precomputation cost.",
+
+  "comparison": {
+    "COM_classification": {"hierarchy_rate": "0-9%", "method": "COM ranking (no projection)"},
+    "two_pass_concern": {"hierarchy_rate": "26%", "method": "Couple meta-concept into prompt for Pass 2"},
+    "residual_projection": {"hierarchy_rate": "N/A (infeasible)", "method": "Linear projection in unembed space"}
+  },
+
+  "conclusion": "Residual space projection is NOT viable with simple linear projection due to non-orthogonal concept directions. Two-pass concern (Phase 24, 26% hierarchy) remains the best approach. Next step: parallel prompt variant comparison to improve the 26% rate."
+}
