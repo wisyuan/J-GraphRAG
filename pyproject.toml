@@ -23,3 +23,7 @@ dev = ["pytest", "maturin"]
 
 [tool.uv]
 package = false
+
+# jlens is not on PyPI; pin it to the GitHub repo so fresh `uv pip install -e .` works
+[tool.uv.sources]
+jlens = { git = "https://github.com/anthropics/jacobian-lens.git" }
