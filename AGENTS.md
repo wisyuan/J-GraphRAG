@@ -39,7 +39,7 @@ scripts/           # restore_env.sh（模型环境一键恢复）
 ## 4. 环境实操（含踩过的坑，重要）
 
 ```bash
-uv venv --python 3.12 .venv && source .venv/bin/activate && uv pip install -e .
+uv venv --python 3.12 .venv && uv sync && uv pip install beir   # package=false：不要 uv pip install -e .（setuptools 多顶层包报错）；beir 未进 pyproject 需单独装
 cp .env.example .env  # 填 DeepSeek key
 bash scripts/restore_env.sh   # /tmp 符号链接 + 数据集
 set -a; . .env; set +a; export HF_HUB_DISABLE_XET=1
