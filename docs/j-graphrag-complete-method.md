@@ -862,3 +862,21 @@ p = 0.8（当前概念提取准确率）→ 5x 成本下降；p = 0.7 → 3x
 **PPR vs dual-level**：在我们的图上 LightRAG 的 dual-level 更稳（1.011/1.104 vs 0.996/0.881）——MAX 聚合 + naive 交错对边权不均的图更鲁棒；PPR 全局扩散对重置配比高度敏感。对产品化的含义：**默认走 dual-level，PPR 作为可调选项**。
 
 **两个替换实验的总账**：LightRAG-J 双域 retained（1.011/1.104）、HippoRAG-J medical retained + novel 临界（0.996/0.881）。§14.1 主主张在两种主流 GraphRAG 框架上得到验证：J-Lens + 文本侧实体的混合提取可以替换 LLM generate() 提取管线，保持率 ≥0.9（5/6 域-臂组合）且零生成成本。
+
+## 19. Phase 54 S1：novel L4 趋零排查——评测协议问题，非检索问题（2026-07-23）
+
+**背景**：所有方法（含 B0 纯 bge 基线）在 novel L4（Creative Generation，12 题）ACC 趋零（最佳臂 1/12=0.083），而官方排行榜同题 23.8–48.28%。
+
+**证据链**（五条独立互证）：
+
+1. **B0 同样 0/12**——B0 不用任何图结构，失败与图/提取质量无关（`data/m6/phase50_lightrag_j.json` per_query 全臂 ✗，仅臂 b 蒙对 1 题）。
+2. **人工抽查判错答案质量合格**——B0 对"鱼的日记"题（Novel-9d9b1ed1）生成的日记是合格创意文本，仍被判 ✗ → judge 假阴性。
+3. **judge 协议结构性不适配**——`phase26_acc_eval.py` 的 judge 要求生成答案与 gold answer"传达相同信息"，但 L4 的 gold 是参考创意实现的一种，合理再创作必然偏离；且生成 prompt 为"answer concisely"（max_tokens=200），与日记/新闻体任务不匹配。
+4. **官方 L4 用三指标**（Accuracy + Factual Score + Coverage，官网 eval 维度），我方对 L4 套用 L1 式严格金标准匹配——协议不对标，保持率换算在 L4 上失真。
+5. **检索落在正确场景**——12 题关键实体在 top-10 检索块命中率 71–100%（b0 与 ah 几乎相同）→ 检索无罪。
+
+**附加发现**：gold evidence 是改写句而非原文引用（字符串包含检测 12 题全 0 命中）——evidence 类指标必须走 LLM judge，字符串匹配无效。
+
+**判决：SUPPORTED——novel L4 趋零是评测协议 artifact**。推论：medical L4（0.286）同受此协议影响；全部 L4 数字在修复协议前不可与排行榜对比；L4 占保持率 1/4 权重，修复后保持率数字预计上升。
+
+**修复方案（Phase 54 S2，待定）**：L4 改 rubric judge（对齐官方 Accuracy/Factual Score/Coverage 维度，以 evidence 为事实锚），已存答案直接重判（纯 DeepSeek API，零 GPU）；Phase 55 的 L4 扩样（novel 全量 67 题 Creative Generation）必须用修复后 judge + 生成侧改 max_tokens。
