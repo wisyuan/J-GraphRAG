@@ -1,58 +1,37 @@
 """Configuration via environment variables — no secrets hard-coded.
 
-All provider credentials/paths are read from the environment at runtime. This
-keeps secrets out of the repo (the .gitignore already excludes .env). Copy
-`.env.example` to `.env` and fill in your values, then source it before running.
+This module only carries connection parameters for the *default* providers
+(Qwen2.5-7B + jlens lens readout, bge-m3 embeddings). Custom providers are
+injected by the caller and need none of these.
 
-Resolution order: explicit env var → .env file (if python-dotenv available) →
-default. Missing required vars raise a clear error at provider init, not later.
+Note: the bge-m3 variables keep their historical ``LINCLE_BGE_M3_*`` names
+(inherited from the Lincle project this repo was split from). The on-disk
+embedding cache is namespaced by device, so switching ``LINCLE_BGE_M3_DEVICE``
+triggers a full re-embed.
 """
 from __future__ import annotations
 
 import os
 
-# --- Embedding (bge-m3) ---
+# --- Default EmbedProvider: bge-m3 ---
 BGE_M3_MODEL_NAME = os.environ.get("LINCLE_BGE_M3_MODEL", "BAAI/bge-m3")
 # Where to load weights from. Default = HuggingFace hub id; can be a local path.
 BGE_M3_PATH = os.environ.get("LINCLE_BGE_M3_PATH", BGE_M3_MODEL_NAME)
-# Device: "cuda" / "mps" / "cpu". Default auto (let FlagEmbedding decide).
-BGE_M3_DEVICE = os.environ.get("LINCLE_BGE_M3_DEVICE", None)  # None = auto
+# Device: "cuda" / "mps" / "cpu". Default "cpu" — on an 8GB GPU box bge-m3 must
+# not co-reside with the 4bit LLM (they OOM together), so CPU is the safe default.
+BGE_M3_DEVICE = os.environ.get("LINCLE_BGE_M3_DEVICE", "cpu")
 
-# --- LLM (DeepSeek, OpenAI-compatible) ---
-DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY", "")
-DEEPSEEK_BASE_URL = os.environ.get("DEEPSEEK_BASE_URL", "https://api.deepseek.com")
-DEEPSEEK_MODEL = os.environ.get("DEEPSEEK_MODEL", "deepseek-chat")
+# --- Default LensProvider: Qwen2.5-7B-Instruct (4bit) + Jacobian Lens ---
+# HF hub id (used when no local weights dir is present).
+QWEN_MODEL_ID = os.environ.get("JGRAPHRAG_QWEN_MODEL_ID", "Qwen/Qwen2.5-7B-Instruct")
+# Local weights dir; default matches the restore_env.sh symlink layout.
+QWEN_MODEL_PATH = os.environ.get("JGRAPHRAG_QWEN_MODEL_PATH", "/tmp/qwen25-7b-it-weights")
+# Local jlens lens dir; falls back to HF "neuronpedia/jacobian-lens" when absent.
+JLENS_LENS_PATH = os.environ.get("JGRAPHRAG_JLENS_LENS_PATH", "/tmp/jlens-qwen25-7b-it")
 
-# --- Dataset paths ---
-PI_REPO_PATH = os.environ.get("LINCLE_PI_REPO", "")  # path to cloned earendil-works/pi
-NOVEL_PATH = os.environ.get("LINCLE_NOVEL_PATH", "")  # path to novel .txt
+# --- Embedding disk cache ---
+EMBED_CACHE_DIR = os.environ.get("JGRAPHRAG_EMBED_CACHE_DIR", "data/.embedcache")
 
 
 class ConfigError(RuntimeError):
     """Raised when a required config value is missing."""
-
-
-def require_pi_repo() -> str:
-    if not PI_REPO_PATH:
-        raise ConfigError(
-            "LINCLE_PI_REPO not set. Clone earendil-works/pi and set this to its path. "
-            "e.g. export LINCLE_PI_REPO=/tmp/pi-repo"
-        )
-    return PI_REPO_PATH
-
-
-def require_deepseek_key() -> str:
-    if not DEEPSEEK_API_KEY:
-        raise ConfigError(
-            "DEEPSEEK_API_KEY not set. Get one at https://platform.deepseek.com/api_keys "
-            "and export it."
-        )
-    return DEEPSEEK_API_KEY
-
-
-def require_novel_path() -> str:
-    if not NOVEL_PATH:
-        raise ConfigError(
-            "LINCLE_NOVEL_PATH not set. Set this to a public-domain novel .txt file."
-        )
-    return NOVEL_PATH

@@ -9,13 +9,12 @@
 __pycache__/
 *.pyc
 
-# Large regenerable experiment data (small result JSONs stay in git)
+# Large regenerable runtime caches
 data/.embedcache/
-data/.kwcache/
-data/.xlmrcache/
-data/m6/concept_cache/
-data/m6/fast_graphrag_workspace/
-data/m6/*.npz
+
+# Built/persisted indexes (npz + JSON dumps)
+*.npz
+index_dump/
 
 # OS / editor
 .DS_Store

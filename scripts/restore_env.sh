@@ -1,6 +1,7 @@
 #!/bin/bash
-# restore_env.sh — 一键恢复模型环境
-# 模型权重/lens 已保存在 .model_cache/，只需恢复到 /tmp + 下载数据集
+# restore_env.sh — 恢复默认模型环境（dev/main 产品分支）
+# 模型权重/lens 保存在 .model_cache/，链接到 /tmp 即可（/tmp 链接重启后失效需重跑）
+# 数据集下载（GraphRAG-Bench/BEIR）属实验环境，见 experiment 分支版本。
 
 PROJECT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 CACHE=$PROJECT/.model_cache
@@ -23,46 +24,30 @@ else
     echo "  jlens-qwen25-7b-it already in /tmp"
 fi
 
-# 3. Download datasets if not cached
-source $PROJECT/.venv/bin/activate 2>/dev/null
+# 3. Sanity check: weights dir complete (safetensors shards + index) and lens present
+python3 - "$PROJECT" <<'EOF'
+import sys
+from pathlib import Path
 
-python3 -c "
-import os, sys
-os.environ['HF_HUB_DISABLE_XET'] = '1'
-sys.path.insert(0, '$PROJECT/crates/lincle/python')
+def dir_complete(d: Path) -> bool:
+    if not d.is_dir():
+        return False
+    idx = d / "model.safetensors.index.json"
+    if idx.exists():
+        import json
+        shards = {f for f in json.loads(idx.read_text())["weight_map"].values()}
+        return all((d / s).exists() for s in shards)
+    return any(d.glob("*.safetensors"))
 
-# Check model
-from experiments.phase10_jlens_stage1 import detect_model, _model_dir_complete
-c = detect_model()
-ok = _model_dir_complete(c['local_model_dir']) and __import__('pathlib').Path(c['local_lens_path']).exists()
-print(f'  Model: {\"OK\" if ok else \"MISSING\"} (complete={_model_dir_complete(c[\"local_model_dir\"])})')
-
+proj = Path(sys.argv[1])
+model = Path("/tmp/qwen25-7b-it-weights")
+lens = Path("/tmp/jlens-qwen25-7b-it")
+ok = dir_complete(model) and lens.exists()
+print(f"  Model: {'OK' if dir_complete(model) else 'MISSING'}")
+print(f"  Lens:  {'OK' if lens.exists() else 'MISSING'}")
 if not ok:
-    print('  ERROR: Model weights missing!')
+    print("  ERROR: model environment incomplete — check .model_cache/")
     sys.exit(1)
-
-# Download BEIR datasets if needed
-from beir.util import download_and_unzip
-from beir.datasets.data_loader import GenericDataLoader
-for ds in ['nfcorpus', 'scifact']:
-    p = f'/tmp/beir-datasets/{ds}'
-    if not os.path.exists(p):
-        print(f'  Downloading {ds}...')
-        download_and_unzip(f'https://public.ukp.informatik.tu-darmstadt.de/thakur/BEIR/datasets/{ds}.zip', '/tmp/beir-datasets')
-    corpus, _, _ = GenericDataLoader(data_folder=p).load()
-    print(f'  {ds}: {len(corpus)} docs')
-
-# Download GraphRAG-Bench if needed
-from huggingface_hub import hf_hub_download
-import subprocess
-for f in ['Datasets/Corpus/novel.json', 'Datasets/Corpus/medical.json',
-          'Datasets/Questions/medical_questions.json', 'Datasets/Questions/novel_questions.json']:
-    try:
-        hf_hub_download('GraphRAG-Bench/GraphRAG-Bench', f, repo_type='dataset', local_dir='/tmp/graphrag-bench')
-    except: pass
-subprocess.run('cd /tmp/graphrag-bench && ln -sf Datasets/Corpus/medical.json medical.json && ln -sf Datasets/Corpus/novel.json novel.json && ln -sf Datasets/Questions/medical_questions.json medical_questions.json && ln -sf Datasets/Questions/novel_questions.json novel_questions.json', shell=True)
-print('  GraphRAG-Bench: OK')
-
 print()
-print('=== Environment ready ===')
-"
+print("=== Environment ready ===")
+EOF

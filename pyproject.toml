@@ -1,3 +1,7 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [project]
 name = "j-graphrag"
 version = "0.1.0"
@@ -10,19 +14,17 @@ dependencies = [
     "jlens",
     "bitsandbytes",
     "FlagEmbedding",
-    "openai",
     "numpy",
     "scipy",
     "scikit-learn",
-    "igraph",
-    "hdbscan",
+    "nltk",
 ]
 
 [dependency-groups]
-dev = ["pytest", "maturin"]
+dev = ["pytest"]
 
-[tool.uv]
-package = false
+[tool.hatch.build.targets.wheel]
+packages = ["jgraphrag"]
 
 # jlens is not on PyPI; pin it to the GitHub repo so fresh `uv pip install -e .` works
 [tool.uv.sources]
