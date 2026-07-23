@@ -4,7 +4,7 @@
 
 源自 Lincle 项目（[lincledb](../lincledb)，语义检索层）的 M6 研究线，2026-07-21 拆分为独立项目。
 
-## 核心结论（Phase 10-53，详见 `docs/j-graphrag-complete-method.md` §14）
+## 核心结论（Phase 10-53，详见 `docs/j-graphrag-tech-report.md`）
 
 - **提取管线替换**：概念/关系/角色/消歧全部由单次 forward pass 的 workspace 读出完成（0.17s/chunk vs generate() 5-60s），建图成本 1/347，API 成本 $0，7B 本地模型可靠
 - **混合提取架构**：J-Lens 做抽象（概念/关系/角色），文本侧规则做表层（命名实体，零模型），几何做属性，W²/张量做多跳
