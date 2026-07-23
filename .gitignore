@@ -10,9 +10,10 @@ __pycache__/
 *.pyc
 
 # Large regenerable experiment data (small result JSONs stay in git)
-data/.embedcache/
-data/.kwcache/
-data/.xlmrcache/
+# (no trailing slash: must match both real dirs and cross-worktree symlinks)
+data/.embedcache
+data/.kwcache
+data/.xlmrcache
 data/m6/concept_cache/
 data/m6/fast_graphrag_workspace/
 data/m6/*.npz
