@@ -62,12 +62,16 @@ set -a; . .env; set +a; export HF_HUB_DISABLE_XET=1
 
 ## 6. 下一步计划（按优先级）
 
-1. **更大 L4 样本确认多跳增益**（novel 或 2062 题子集）——效果故事最薄弱环节
-2. **novel L4 全方法趋零排查**——疑似题目/judge 问题而非检索问题
+**论文**：arXiv 先行（tech-report 英文化，`paper/` 目录，experiment 分支），之后按贡献规模判断是否投会议。投稿前必须先关上 L4 两颗雷（下面前两项）。
+
+1. **novel L4 全方法趋零排查**（Phase 54）——疑似题目/judge 问题而非检索问题；决定所有 L4 数字的解读，基本不需 GPU，先行
+2. **更大 L4 样本确认多跳增益**（Phase 55，novel 2062 题子集）——效果故事最薄弱环节，GPU 重活
 3. **更强基线**：补 vs LightRAG/HippoRAG2 的 retrieval 级指标对比（Table 3 recall/relevance 已存档）
-4. **跨模型泛化**：Qwen3/Llama 的 J-Lens 拟合 + workspace 可读性验证
-5. 可选：novel ee 边换 J-Lens 读出边重测 Phase 51 novel（预期 0.881→≥0.9）；角色词 BPE 碎片过滤（WordNet 完整词验证）；实体-实体关系边规模化读出
-6. 产品化候选：jgraphrag 包沉淀建图/检索 API（目前是实验脚本集合）
+4. **跨模型泛化**（直接回应"单模型验证"局限，arXiv v1 能容纳则加分）：[neuronpedia/jacobian-lens](https://huggingface.co/neuronpedia/jacobian-lens) 已有预训练 lens（qwen3-1.7b/4b/8b/14b/32b、gemma-3-270m~27b 全系、llama3.1-8b、olmo-3 等），**无需自拟合**；8GB 显存选 ≤8B 4bit。最小复现：概念提取 + 接地 + 单域替换评测
+5. **参数量 × lens 精度消融**：gemma-3 阶梯（270m/1b/4b/12b/27b 同架构全有 lens）做规模曲线；lens 精度可用语料子采样（平均 Jacobian 的样本数）做精度刻度盘
+6. **多模态扩展**：gemma-3（4b/12b/27b 为 SigLIP 多模态且已有 lens）验证图像/非文本输入的 workspace 可读性——研究问题新（lens 是否覆盖视觉 token 未知），先小规模冒烟
+7. 可选：novel ee 边换 J-Lens 读出边重测 Phase 51 novel（预期 0.881→≥0.9）；角色词 BPE 碎片过滤（WordNet 完整词验证）；实体-实体关系边规模化读出
+8. 产品化候选（dev 分支）：jgraphrag 包沉淀建图/检索 API（目前是实验脚本集合）
 
 ## 7. 与 lincledb 的关系
 
