@@ -19,6 +19,7 @@
 - 等价：q×M、W×q 与图遍历**精确一致**（Phase 41）——图检索可整体矩阵化
 - 能力地图：属性→几何（0.76）、消歧→prompt（0.80）、多跳→W²（AUC 0.998）+ 张量补全（0.81）
 - 替换终审：LightRAG-J **1.011/1.104**（medical/novel retained）、HippoRAG-J **0.996**（medical）/0.881（novel 临界）
+- L4 协议修复（Phase 54）：旧 L4 judge 假阴性主导（官方该级用 Accuracy/Factual/Coverage rubric）；rubric 重判后 LightRAG-J **1.207/1.227**、HippoRAG-J novel **0.914/0.947** 越过 0.9 线（噪声边缘）——L4 残余低分是生成侧忠实度问题，非检索
 
 **已证伪（不要再试）**：查询侧概念路由替代 bge（42）、cloze 式 prompt（16/24/42/43 四次，只产模板续词——读出必须锚定实体位置或受限答案集）、J-Lens 读低频专名（52，7B 结构性限制）、概念层级树/递归展开（16-24）、关系纯向量补全（46 P3）、ws-关系强制耦合（47 S4）、Ridge 去共线（41A）。
 
@@ -64,8 +65,8 @@ set -a; . .env; set +a; export HF_HUB_DISABLE_XET=1
 
 **论文**：arXiv 先行（tech-report 英文化，`paper/` 目录，experiment 分支），之后按贡献规模判断是否投会议。投稿前必须先关上 L4 两颗雷（下面前两项）。
 
-1. **novel L4 全方法趋零排查**（Phase 54）——疑似题目/judge 问题而非检索问题；决定所有 L4 数字的解读，基本不需 GPU，先行
-2. **更大 L4 样本确认多跳增益**（Phase 55，novel 2062 题子集）——效果故事最薄弱环节，GPU 重活
+1. ~~**novel L4 全方法趋零排查**（Phase 54）~~ **已完成**：评测协议 artifact（§19）；rubric 重判后保持率全面上升，HippoRAG-J novel 翻正
+2. **更大 L4 样本确认多跳增益**（Phase 55，novel 67 题 Creative Generation 全量）——效果故事最薄弱环节，GPU 重活；**必须同时改生成侧**（去 concisely、提 max_tokens，S2 证据：L4 残余低分是生成忠实度问题）
 3. **更强基线**：补 vs LightRAG/HippoRAG2 的 retrieval 级指标对比（Table 3 recall/relevance 已存档）
 4. **跨模型泛化**（直接回应"单模型验证"局限，arXiv v1 能容纳则加分）：[neuronpedia/jacobian-lens](https://huggingface.co/neuronpedia/jacobian-lens) 已有预训练 lens（qwen3-1.7b/4b/8b/14b/32b、gemma-3-270m~27b 全系、llama3.1-8b、olmo-3 等），**无需自拟合**；8GB 显存选 ≤8B 4bit。最小复现：概念提取 + 接地 + 单域替换评测
 5. **参数量 × lens 精度消融**：gemma-3 阶梯（270m/1b/4b/12b/27b 同架构全有 lens）做规模曲线；lens 精度可用语料子采样（平均 Jacobian 的样本数）做精度刻度盘

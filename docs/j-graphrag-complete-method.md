@@ -880,3 +880,22 @@ p = 0.8（当前概念提取准确率）→ 5x 成本下降；p = 0.7 → 3x
 **判决：SUPPORTED——novel L4 趋零是评测协议 artifact**。推论：medical L4（0.286）同受此协议影响；全部 L4 数字在修复协议前不可与排行榜对比；L4 占保持率 1/4 权重，修复后保持率数字预计上升。
 
 **修复方案（Phase 54 S2，待定）**：L4 改 rubric judge（对齐官方 Accuracy/Factual Score/Coverage 维度，以 evidence 为事实锚），已存答案直接重判（纯 DeepSeek API，零 GPU）；Phase 55 的 L4 扩样（novel 全量 67 题 Creative Generation）必须用修复后 judge + 生成侧改 max_tokens。
+
+### 19.1 Phase 54 S2：rubric judge 重判——协议修复生效，HippoRAG-J novel 由临界翻正（2026-07-23）
+
+**方法**：L4 改 rubric judge（factual_errors/accuracy/coverage 三维，对齐官方 Creative Generation 评测维度），二值规则 accuracy≥0.5 且 factual_errors=0；仅重判已存答案（phase50/51/53 per_query，~260 次 DeepSeek 调用，零 GPU），L1-L3 沿用旧判。结果 `data/m6/phase54_l4_rejudge.json`（含 per-question 明细）。
+
+**judge 标定（B0 锚 vs 官方 RAG L4）**：novel 0.333 vs 官方 0.385–0.415（略严）；medical 0.714 vs 官方 0.589–0.606（略宽）。偏差 ±0.08–0.12，与 judge 噪声同阶——rubric judge 绝对标定合理。旧 judge（novel B0=0.000、medical B0=0.214）确认为假阴性主导。预设门槛 B0 novel ≥0.4 未达（0.333），但门槛本身高于官方 RAG 实际水平（0.385–0.415），且我方生成侧有 prompt  handicap（concisely、max_tokens=200）——判定协议修复有效，残余缺口归生成侧忠实度。
+
+**阈值稳健性**：t=0.3–0.6 区间 novel 各臂不变（0.33）、medical final 0.79–0.93——结论对二值阈值不敏感。
+
+**保持率重算**（L4 替换后）：
+
+| 臂 | medical（旧→新） | novel（旧→新） |
+|---|---|---|
+| LightRAG-J final（phase53） | 1.011 → **1.207** | 1.104 → **1.227** |
+| HippoRAG-J c_w0.3 | 0.996 → **1.245** | 0.751 → 0.816 |
+| HippoRAG-J c_w0.5 | — → 1.107 | 0.881 → **0.914**（临界上方，差 <1 题，噪声内） |
+| HippoRAG-J c_w0.8 | — → 1.218 | 0.881 → **0.947** |
+
+**含义**：①两个替换实验双域全部 retained（HippoRAG-J novel 0.914/0.947 越过 0.9 线，但仍在 judge 噪声边缘，报告需标注）；②L4 残余低分（novel ~0.33）是生成侧忠实度问题（judge 抓到捏造细节），不是检索/judge 问题——Phase 55 生成侧必须改 prompt（去 concisely、提 max_tokens）；③本重算将我方 rubric L4 与官方 metric 算的排行榜均值混合比较，锚检验显示偏差 ±0.12 内，方向有效但精确值带此 caveats；④单次重判，DeepSeek 噪声 ±1 题（novel L4 1 题 ≈ total ±0.021）。

@@ -1,0 +1,2577 @@
+{
+ "gate": {
+  "b0_novel_l4_acc_min": 0.4
+ },
+ "lightrag_concept_graph": {
+  "medical/b0": {
+   "n": 14,
+   "n_judged": 14,
+   "old_l4_acc": 0.21428571428571427,
+   "new_l4_acc": 0.7142857142857143,
+   "mean_coverage": 0.49672857142857146,
+   "rows": [
+    {
+     "factual_errors": 0,
+     "accuracy": 0.9,
+     "coverage": 0.33,
+     "acc_binary": 1,
+     "qid": "Medical-fe3240a4",
+     "old_acc": true,
+     "answer_head": "**Consult Note: Suspected Basal Cell Carcinoma (BCC)**\n\n**RE: [Patient Name] – New Patient Referral for Suspicious Facial Lesion**\n\n**Key Risk Factors"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.9167,
+     "acc_binary": 1,
+     "qid": "Medical-8f5233d5",
+     "old_acc": true,
+     "answer_head": "**Discharge Summary**\n\n**Patient:** [Name]\n**Diagnosis:** Basal cell carcinoma, scalp\n**Risk Factors:** Chronic sun exposure to scalp; history of acti"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.5,
+     "coverage": 0.3,
+     "acc_binary": 1,
+     "qid": "Medical-c9c108e1",
+     "old_acc": false,
+     "answer_head": "**Dear Family,**\n\nI’ve been diagnosed with **basal cell skin cancer**, a type of skin cancer. The diagnosis came from a biopsy and exams as outlined i"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.43,
+     "acc_binary": 1,
+     "qid": "Medical-bf68d23e",
+     "old_acc": false,
+     "answer_head": "**Public Health Advisory: Protecting Our Community from Basal Cell Carcinoma**\n\n**Why This Matters:** Basal cell carcinoma (BCC) is the most common sk"
+    },
+    {
+     "factual_errors": 2,
+     "accuracy": 0.0,
+     "coverage": 0.18,
+     "acc_binary": 0,
+     "qid": "Medical-fd1b07be",
+     "old_acc": false,
+     "answer_head": "Based on the guideline, this patient has **regional basal cell carcinoma** (cancer found in lymph nodes). **Risk factors** include a weakened immune s"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 1.0,
+     "acc_binary": 1,
+     "qid": "Medical-ea29b9d8",
+     "old_acc": false,
+     "answer_head": "**Initial Diagnostic Workup & Staging Plan for Suspected Primary CNS Lymphoma (PCNSL)**\n\n**Patient:** 62-year-old with progressive leg weakness, memor"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.83,
+     "acc_binary": 1,
+     "qid": "Medical-c2658ea4",
+     "old_acc": false,
+     "answer_head": "**Induction Phase (Goal: Maximal cytoreduction of blood-brain barrier-penetrating chemotherapy)**\n\n- **Regimen:** High-dose methotrexate (HD-MTX) 3.5–"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.88,
+     "acc_binary": 1,
+     "qid": "Medical-e6da7d3c",
+     "old_acc": false,
+     "answer_head": "**Referral Letter: Suspected Primary CNS Lymphoma**\n\n**To:** [Neuro-Oncologist Name]\n**From:** [General Neurologist Name]\n**Date:** [Date]\n\n**RE: [Pat"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.4,
+     "coverage": 0.1875,
+     "acc_binary": 0,
+     "qid": "Medical-96352a3c",
+     "old_acc": false,
+     "answer_head": "**Discharge Summary – Primary CNS Lymphoma (Post-Induction)**\n\n**Diagnosis:** Primary CNS lymphoma\n\n**Treatment Completed:** Induction chemotherapy (i"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.45,
+     "acc_binary": 1,
+     "qid": "Medical-3396b459",
+     "old_acc": false,
+     "answer_head": "**Public Health Advisory: Primary CNS Lymphoma**\n\n**Risk Factors:** The primary known risk factor is a weakened (impaired) immune system.\n\n**Key Sympt"
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.6,
+     "coverage": 0.4,
+     "acc_binary": 0,
+     "qid": "Medical-beb1f30e",
+     "old_acc": false,
+     "answer_head": "**Case Summary:** Newly diagnosed high-risk CSCC on the scalp.\n\n**Risk Assessment:** High-risk due to location (scalp/head/neck), which carries increa"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.9,
+     "coverage": 0.45,
+     "acc_binary": 1,
+     "qid": "Medical-9e9cc51b",
+     "old_acc": false,
+     "answer_head": "Based on the context, here is a patient-friendly discharge summary:\n\n**Diagnosis:** Regional cutaneous squamous cell carcinoma (CSCC) with lymph node "
+    },
+    {
+     "factual_errors": 4,
+     "accuracy": 0.5,
+     "coverage": 0.46,
+     "acc_binary": 0,
+     "qid": "Medical-970792d6",
+     "old_acc": true,
+     "answer_head": "**SUBJECTIVE:** Patient reports history of actinic keratoses, immunosuppression (e.g., post-organ transplant or HIV/AIDS). No acute skin complaints no"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.6,
+     "coverage": 0.14,
+     "acc_binary": 1,
+     "qid": "Medical-5b2de94d",
+     "old_acc": false,
+     "answer_head": "**Advisory for Primary Care Providers on Cutaneous Squamous Cell Carcinoma (CSCC)**\n\n**Prevention & Early Detection**\n- Emphasize sun protection, espe"
+    }
+   ],
+   "total_acc_recomputed": 0.7321428571428571,
+   "retention_recomputed": 1.151131995351332
+  },
+  "medical/a": {
+   "n": 14,
+   "n_judged": 14,
+   "old_l4_acc": 0.35714285714285715,
+   "new_l4_acc": 0.7857142857142857,
+   "mean_coverage": 0.4079785714285714,
+   "rows": [
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 1.0,
+     "acc_binary": 1,
+     "qid": "Medical-fe3240a4",
+     "old_acc": true,
+     "answer_head": "**Consult Note**\n\n**Patient:** [Name]  \n**Date:** [Date]  \n**Reason for Consultation:** Suspicious lesion on the face.\n\n**Key Risk Factors (per guidel"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.4167,
+     "acc_binary": 1,
+     "qid": "Medical-8f5233d5",
+     "old_acc": false,
+     "answer_head": "**Discharge Summary**\n\n**Patient:** [Name]\n**Date of Discharge:** [Date]\n\n**Diagnosis:** Basal cell carcinoma (BCC), scalp.\n\n**Risk Factors:** Prolong"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.25,
+     "acc_binary": 1,
+     "qid": "Medical-c9c108e1",
+     "old_acc": false,
+     "answer_head": "**Dear Family,**\n\nI’ve recently been diagnosed with **basal cell carcinoma**, a type of skin cancer. This diagnosis means cancer started in the basal "
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.25,
+     "acc_binary": 1,
+     "qid": "Medical-bf68d23e",
+     "old_acc": true,
+     "answer_head": "**Public Health Advisory: Protecting Our Community from Basal Cell Skin Cancer**\n\n**Prevention:** Limit exposure to UV radiation from the sun and tann"
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.3,
+     "coverage": 0.18,
+     "acc_binary": 0,
+     "qid": "Medical-fd1b07be",
+     "old_acc": false,
+     "answer_head": "Based on the guideline for cutaneous squamous cell carcinoma (CSCC), the risk assessment framework is applied. For recurrent basal cell carcinoma with"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.95,
+     "coverage": 0.71,
+     "acc_binary": 1,
+     "qid": "Medical-ea29b9d8",
+     "old_acc": false,
+     "answer_head": "**Initial Diagnostic Workup and Staging Plan for Suspected Primary CNS Lymphoma**\n\n**1. Urgent Imaging & Biopsy (Diagnostic Confirmation)**  \n- **Cont"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.75,
+     "acc_binary": 1,
+     "qid": "Medical-c2658ea4",
+     "old_acc": true,
+     "answer_head": "Based on the context provided, here is a concise treatment plan for a newly diagnosed immunocompetent adult with primary CNS lymphoma confined to the "
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.0,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Medical-e6da7d3c",
+     "old_acc": false,
+     "answer_head": "**Referral Letter: Suspected Primary CNS Lymphoma**\n\n**To:** [Neuro-Oncologist Name]\n**From:** [General Neurologist Name]\n**Date:** [Date]\n\n**RE: [Pat"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.125,
+     "acc_binary": 1,
+     "qid": "Medical-96352a3c",
+     "old_acc": false,
+     "answer_head": "**Discharge Summary for Primary CNS Lymphoma Patient (Post-Induction Chemotherapy, Entering Consolidation Phase)**\n\n**Diagnosis:** Primary CNS lymphom"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.8,
+     "coverage": 0.15,
+     "acc_binary": 1,
+     "qid": "Medical-3396b459",
+     "old_acc": false,
+     "answer_head": "**Public Health Advisory: Primary CNS Lymphoma**\n\n**Risk Factors:** Primary CNS lymphoma is rare but linked to a weakened immune system, including imm"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.6,
+     "coverage": 0.35,
+     "acc_binary": 1,
+     "qid": "Medical-beb1f30e",
+     "old_acc": false,
+     "answer_head": "**Case Summary:** Newly diagnosed high-risk CSCC of the scalp in a patient with no nodal involvement (local disease).\n\n**Risk Assessment:** Scalp loca"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.7,
+     "acc_binary": 1,
+     "qid": "Medical-9e9cc51b",
+     "old_acc": true,
+     "answer_head": "**Diagnosis:** Regional cutaneous squamous cell carcinoma (CSCC) with lymph node involvement.\n\n**Treatment:** You completed surgery to remove the tumo"
+    },
+    {
+     "factual_errors": 2,
+     "accuracy": 0.6,
+     "coverage": 0.54,
+     "acc_binary": 0,
+     "qid": "Medical-970792d6",
+     "old_acc": true,
+     "answer_head": "**SOAP Progress Note**\n\n**S:** Patient presents with multiple rough, scaly patches on sun-exposed areas. Reports history of immunosuppression. No new "
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.29,
+     "acc_binary": 1,
+     "qid": "Medical-5b2de94d",
+     "old_acc": false,
+     "answer_head": "**Advisory for Primary Care Providers: Cutaneous Squamous Cell Carcinoma (CSCC)**\n\n- **Prevention:** Emphasize sun protection, especially for lighter-"
+    }
+   ],
+   "total_acc_recomputed": 0.42857142857142855,
+   "retention_recomputed": 0.673833363132487
+  },
+  "medical/b": {
+   "n": 14,
+   "n_judged": 14,
+   "old_l4_acc": 0.07142857142857142,
+   "new_l4_acc": 0.7142857142857143,
+   "mean_coverage": 0.4422642857142857,
+   "rows": [
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.9167,
+     "acc_binary": 1,
+     "qid": "Medical-fe3240a4",
+     "old_acc": true,
+     "answer_head": "**Consult Note**\n\n**Patient:** New referral for suspicious facial lesion\n**Reason for Consult:** Evaluation and management of suspected basal cell car"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.25,
+     "acc_binary": 1,
+     "qid": "Medical-8f5233d5",
+     "old_acc": false,
+     "answer_head": "**Discharge Summary**\n\n**Patient:** [Patient Name]\n**Date of Discharge:** [Date]\n\n**Diagnosis:** Basal cell carcinoma (BCC), scalp.\n\n**Risk Factors:**"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.45,
+     "acc_binary": 1,
+     "qid": "Medical-c9c108e1",
+     "old_acc": false,
+     "answer_head": "**Dear Family,**\n\nI’ve been diagnosed with **basal cell carcinoma**, a type of skin cancer. It’s the most common and least aggressive form, and it rar"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.9,
+     "coverage": 0.33,
+     "acc_binary": 1,
+     "qid": "Medical-bf68d23e",
+     "old_acc": false,
+     "answer_head": "**Public Health Advisory: Preventing and Detecting Basal Cell Carcinoma**\n\n**To our community:**\n\nThere has been a recent increase in basal cell carci"
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.0,
+     "coverage": 0.18,
+     "acc_binary": 0,
+     "qid": "Medical-fd1b07be",
+     "old_acc": false,
+     "answer_head": "Based on the guideline provided, this patient has recurrent squamous cell skin cancer (CSCC) with lymph node involvement, not basal cell carcinoma. Ke"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.21,
+     "acc_binary": 1,
+     "qid": "Medical-ea29b9d8",
+     "old_acc": false,
+     "answer_head": "**Initial Diagnostic Workup and Staging Plan for Suspected Primary CNS Lymphoma**\n\n**1. Neuroimaging:**  \n- **Contrast-enhanced MRI of the brain and s"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.9,
+     "coverage": 0.23,
+     "acc_binary": 1,
+     "qid": "Medical-c2658ea4",
+     "old_acc": false,
+     "answer_head": "Based on the context provided, as a hematologist, the recommended induction and consolidation treatment plan for a newly diagnosed immunocompetent adu"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 1.0,
+     "acc_binary": 1,
+     "qid": "Medical-e6da7d3c",
+     "old_acc": false,
+     "answer_head": "**Referral Letter: Suspected Primary CNS Lymphoma**\n\n**To:** Dr. [Neuro-Oncologist's Name]\n**From:** Dr. [General Neurologist's Name]\n**Date:** [Date]"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.375,
+     "acc_binary": 1,
+     "qid": "Medical-96352a3c",
+     "old_acc": false,
+     "answer_head": "Based on the context, a discharge summary for a patient with primary CNS lymphoma entering the consolidation phase after induction chemotherapy would "
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.6,
+     "coverage": 0.5,
+     "acc_binary": 0,
+     "qid": "Medical-3396b459",
+     "old_acc": false,
+     "answer_head": "**Public Health Advisory: Primary CNS Lymphoma**\n\n**Risk Factors:** Primary CNS lymphoma is rare but more likely in individuals with a weakened immune"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.6,
+     "coverage": 0.3,
+     "acc_binary": 1,
+     "qid": "Medical-beb1f30e",
+     "old_acc": false,
+     "answer_head": "**Case Summary**: Newly diagnosed high-risk CSCC of the scalp.\n\n**Risk Assessment**: Classified as high-risk due to anatomic location (head/neck), wit"
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.8,
+     "coverage": 0.55,
+     "acc_binary": 0,
+     "qid": "Medical-9e9cc51b",
+     "old_acc": false,
+     "answer_head": "**Diagnosis:** Regional cutaneous squamous cell carcinoma (CSCC) with lymph node involvement.\n\n**Treatment:** You completed surgery to remove the tumo"
+    },
+    {
+     "factual_errors": 2,
+     "accuracy": 0.6,
+     "coverage": 0.4,
+     "acc_binary": 0,
+     "qid": "Medical-970792d6",
+     "old_acc": false,
+     "answer_head": "**SOAP Progress Note**\n\n**S:** Patient reports multiple rough, scaly spots on sun-exposed areas; asymptomatic aside from occasional tenderness. No new"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.5,
+     "acc_binary": 1,
+     "qid": "Medical-5b2de94d",
+     "old_acc": false,
+     "answer_head": "**Advisory for Primary Care Providers on Cutaneous Squamous Cell Carcinoma (CSCC)**\n\n**Prevention & Early Detection:**\n- Conduct regular, complete ski"
+    }
+   ],
+   "total_acc_recomputed": 0.4642857142857143,
+   "retention_recomputed": 0.7299861433935276
+  },
+  "medical/ah": {
+   "n": 14,
+   "n_judged": 14,
+   "old_l4_acc": 0.14285714285714285,
+   "new_l4_acc": 0.6428571428571429,
+   "mean_coverage": 0.38961428571428575,
+   "rows": [
+    {
+     "factual_errors": 1,
+     "accuracy": 0.7,
+     "coverage": 0.58,
+     "acc_binary": 0,
+     "qid": "Medical-fe3240a4",
+     "old_acc": false,
+     "answer_head": "**Consult Note: Suspected Basal Cell Carcinoma (BCC)**\n\n**Reason for Consult:** New patient referral for a suspicious lesion on the face.\n\n**Risk Fact"
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.83,
+     "coverage": 0.75,
+     "acc_binary": 0,
+     "qid": "Medical-8f5233d5",
+     "old_acc": false,
+     "answer_head": "**Discharge Summary**\n\n**Patient:** [Name]\n**Date:** [Date]\n**Diagnosis:** Basal cell carcinoma, scalp\n\n**Risk Factors:** Prolonged sun exposure, fair"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.5,
+     "acc_binary": 1,
+     "qid": "Medical-c9c108e1",
+     "old_acc": false,
+     "answer_head": "Dear Family,\n\nI was recently diagnosed with basal cell carcinoma, a type of skin cancer. Based on the clinical guidelines, this means the cancer start"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.5,
+     "acc_binary": 1,
+     "qid": "Medical-bf68d23e",
+     "old_acc": true,
+     "answer_head": "**Public Health Advisory: Protecting Our Community from Basal Cell Skin Cancer**\n\nRecent data show a rise in basal cell carcinoma (BCC) diagnoses loca"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.7,
+     "coverage": 0.45,
+     "acc_binary": 1,
+     "qid": "Medical-fd1b07be",
+     "old_acc": false,
+     "answer_head": "Based on the context, for a patient with recurrent basal cell carcinoma (BCC) that has spread to lymph nodes, the summary is:\n\n**Clinical findings:** "
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.3846,
+     "acc_binary": 1,
+     "qid": "Medical-ea29b9d8",
+     "old_acc": false,
+     "answer_head": "**Initial Diagnostic Workup and Staging Plan for Suspected Primary CNS Lymphoma (PCNSL)**\n\n**1. Neuroimaging (Initial Assessment of CNS Involvement)**"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.0,
+     "acc_binary": 1,
+     "qid": "Medical-c2658ea4",
+     "old_acc": false,
+     "answer_head": "Based on the context provided, here is a comprehensive induction and consolidation treatment plan for a newly diagnosed immunocompetent adult with pri"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.0,
+     "acc_binary": 1,
+     "qid": "Medical-e6da7d3c",
+     "old_acc": false,
+     "answer_head": "**Referral Letter: Primary CNS Lymphoma – Diagnosis and Management**\n\n**To:** [Neuro-oncologist Name]\n**From:** [General Neurologist Name]\n**Date:** ["
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.67,
+     "coverage": 0.31,
+     "acc_binary": 0,
+     "qid": "Medical-96352a3c",
+     "old_acc": false,
+     "answer_head": "**Discharge Summary for Primary CNS Lymphoma – Post-Induction Chemotherapy**\n\n**Diagnosis:** Primary CNS lymphoma (confirmed by stereotactic biopsy).\n"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.19,
+     "acc_binary": 1,
+     "qid": "Medical-3396b459",
+     "old_acc": false,
+     "answer_head": "**Public Health Advisory: Primary CNS Lymphoma**\n\n**Risk Factors:**  \n- Impaired immune system (e.g., immunodeficiency disorders).  \n- Genetic abnorma"
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.7,
+     "coverage": 0.5,
+     "acc_binary": 0,
+     "qid": "Medical-beb1f30e",
+     "old_acc": false,
+     "answer_head": "**Case Summary:** 65-year-old male with newly diagnosed cutaneous squamous cell carcinoma (CSCC) on the scalp.\n\n**Risk Assessment:** High-risk due to "
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.4,
+     "acc_binary": 1,
+     "qid": "Medical-9e9cc51b",
+     "old_acc": true,
+     "answer_head": "**Diagnosis:** You have been treated for regional cutaneous squamous cell carcinoma (CSCC), meaning the cancer had spread to nearby lymph nodes.\n\n**Tr"
+    },
+    {
+     "factual_errors": 3,
+     "accuracy": 0.6,
+     "coverage": 0.46,
+     "acc_binary": 0,
+     "qid": "Medical-970792d6",
+     "old_acc": false,
+     "answer_head": "**Subjective:** No new lesions or symptoms reported.\n\n**Objective:** Multiple scaly, erythematous plaques on sun-exposed areas (face, forearms). Patie"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.8,
+     "coverage": 0.43,
+     "acc_binary": 1,
+     "qid": "Medical-5b2de94d",
+     "old_acc": false,
+     "answer_head": "**Advisory for Primary Care Providers on Cutaneous Squamous Cell Carcinoma (CSCC)**\n\n**Prevention & Early Detection:**\n- Emphasize sun protection (esp"
+    }
+   ],
+   "total_acc_recomputed": 0.6607142857142857,
+   "retention_recomputed": 1.0388264348292509
+  },
+  "novel/b0": {
+   "n": 12,
+   "n_judged": 12,
+   "old_l4_acc": 0.0,
+   "new_l4_acc": 0.3333333333333333,
+   "mean_coverage": 0.31516666666666665,
+   "rows": [
+    {
+     "factual_errors": 2,
+     "accuracy": 0.2,
+     "coverage": 0.2,
+     "acc_binary": 0,
+     "qid": "Novel-9d9b1ed1",
+     "old_acc": false,
+     "answer_head": "**Diary Entry – A Moonlit Night Near Lizard**\n\nTonight, the waters shimmered silver, and I felt safe in my sandy burrow. Then came the great shadow ab"
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.4,
+     "coverage": 0.25,
+     "acc_binary": 0,
+     "qid": "Novel-dca8ac49",
+     "old_acc": false,
+     "answer_head": "**Diary of a Launce – Day of the Intruders**\n\nThe boat came. At first, just shadows and oars—then they slipped into the cave, their voices bouncing of"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.6,
+     "coverage": 0.43,
+     "acc_binary": 1,
+     "qid": "Novel-e89fa155",
+     "old_acc": false,
+     "answer_head": "**CORNISH FISHERMAN COMPARED TO KING ARTHUR**\n\nTINTAGEL – Local fisherman John Curgenven, 60, has been likened to the legendary King Arthur by visitin"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.3,
+     "coverage": 0.2,
+     "acc_binary": 0,
+     "qid": "Novel-6956692c",
+     "old_acc": false,
+     "answer_head": "**Lizard Coast Guide Recounts Perils and Beauty of Local Waters**\n\nKYNANCE — Local fisherman and guide John Curgenven, known for his steady hand and r"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.857,
+     "acc_binary": 1,
+     "qid": "Novel-27b6e451",
+     "old_acc": false,
+     "answer_head": "**August 12th**\n\nToday we explored Kynance Cove, a place of wild beauty and hidden dangers. The Devil’s Throat looms as a dark, yawning fissure in the"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.8,
+     "coverage": 0.83,
+     "acc_binary": 1,
+     "qid": "Novel-a940228b",
+     "old_acc": false,
+     "answer_head": "Dear Diary,\n\nMy beloved parrot is dead. That clever, imitative bird from the East, my sweet companion, has left me. I recall his last words—he called "
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.5,
+     "coverage": 0.6,
+     "acc_binary": 0,
+     "qid": "Novel-2e0ffce2",
+     "old_acc": false,
+     "answer_head": "**Diary of the Parrot**\n\nMy life with my mistress has been one of bliss. I was her favorite, housed in the groves, my tongue skilled at talking beyond"
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.3,
+     "coverage": 0.29,
+     "acc_binary": 0,
+     "qid": "Novel-4334e7fc",
+     "old_acc": false,
+     "answer_head": "**NEWS REPORT – Divine Chariot Mishap Ends in Tragedy**\n\nTHEBES—In a tragic turn of events, Hippolytus, son of Theseus, met his death following a char"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.6,
+     "coverage": 0.125,
+     "acc_binary": 1,
+     "qid": "Novel-db4551ac",
+     "old_acc": false,
+     "answer_head": "**Diary Entry – Dipsas**\n\nTonight, the moon drips with gore, just as I willed it. My name is no lie—thirst drives me, but not for wine alone. I know t"
+    },
+    {
+     "factual_errors": 4,
+     "accuracy": 0.0,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Novel-a4a83818",
+     "old_acc": false,
+     "answer_head": "**Chicago Woman Left Penniless After Legal Defeat, Refuses Lawyer’s Dubious Proposal**\n\nCHICAGO — Roxie Daymon, once poised to inherit the Simon estat"
+    },
+    {
+     "factual_errors": 3,
+     "accuracy": 0.0,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Novel-e0a374bb",
+     "old_acc": false,
+     "answer_head": "As Don Carlo, I walked through the still night to *headquarters*, ready to defend my rights. My brother Dan was my partner in the wood yard, but he al"
+    },
+    {
+     "factual_errors": 2,
+     "accuracy": 0.0,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Novel-11abd566",
+     "old_acc": false,
+     "answer_head": "**Diary Entry – Suza Fairfield**\n\nTom Ditamus grabbed me near his camp. I thought he wanted directions, but he caught my arm and held a gag. When I sc"
+    }
+   ],
+   "total_acc_recomputed": 0.625,
+   "retention_recomputed": 1.226713240186294
+  },
+  "novel/a": {
+   "n": 12,
+   "n_judged": 12,
+   "old_l4_acc": 0.0,
+   "new_l4_acc": 0.4166666666666667,
+   "mean_coverage": 0.22821666666666665,
+   "rows": [
+    {
+     "factual_errors": 2,
+     "accuracy": 0.4,
+     "coverage": 0.4,
+     "acc_binary": 0,
+     "qid": "Novel-9d9b1ed1",
+     "old_acc": false,
+     "answer_head": "**Day 87 of Solitude in the Rock Pool**\n\nGreat disturbance today. A strange wooden creature—long, like a great shadow—scraped against my cave’s mouth."
+    },
+    {
+     "factual_errors": 3,
+     "accuracy": 0.0,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Novel-dca8ac49",
+     "old_acc": false,
+     "answer_head": "**Diary of Launce, Lizard Coast**\n\nSaw a boat full of strange creatures heading for the cave. Tide rising fast. One old hen on shore fretting—her chic"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.5,
+     "coverage": 0.4286,
+     "acc_binary": 1,
+     "qid": "Novel-e89fa155",
+     "old_acc": false,
+     "answer_head": "**KING ARTHUR’S GHOST HAUNTS CORNWALL’S COAST**\n\nMULLION COVE – In a tale that blends legend with local history, visitors to Cornwall’s rugged coastli"
+    },
+    {
+     "factual_errors": 6,
+     "accuracy": 0.0,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Novel-6956692c",
+     "old_acc": false,
+     "answer_head": "**Boatman John Curgenven recounts a harrowing journey in an overloaded canoe on the Mississippi, describing a violent encounter with a massive alligat"
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.5,
+     "coverage": 0.29,
+     "acc_binary": 0,
+     "qid": "Novel-27b6e451",
+     "old_acc": false,
+     "answer_head": "**Diary Entry – Kynance Cove**\n\nThe Devil’s Throat is a churning, foaming sea-cave, black and hungry at the cliff’s base. The water surges in with a g"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.5,
+     "acc_binary": 1,
+     "qid": "Novel-a940228b",
+     "old_acc": false,
+     "answer_head": "**Diary Entry – Corinna’s Farewell to Her Parrot**\n\nMy darling parrot is gone. I weep still, recalling how he mimicked my sighs and called me by name."
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.7,
+     "coverage": 0.57,
+     "acc_binary": 1,
+     "qid": "Novel-2e0ffce2",
+     "old_acc": false,
+     "answer_head": "**Diary of the Parrot**\n\nDear Diary,\n\nI live in a beautiful home in the groves, beloved by my mistress. She dotes on me, and I charm all the guileless"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.8,
+     "coverage": 0.3,
+     "acc_binary": 1,
+     "qid": "Novel-4334e7fc",
+     "old_acc": false,
+     "answer_head": "**Mysterious Transformation at Court: Hippolytus Mentioned in Metamorphoses**\n\nIn a startling development that has captivated literary circles, source"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.8,
+     "coverage": 0.25,
+     "acc_binary": 1,
+     "qid": "Novel-db4551ac",
+     "old_acc": false,
+     "answer_head": "**Diary Entry – Dipsas**\n\nTonight, I stirred the potions of Ææa, mixing Thessalian herbs with threads of fate. My art binds the unwilling—man or maid—"
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.0,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Novel-a4a83818",
+     "old_acc": false,
+     "answer_head": "Based solely on the provided text, there is no mention of \"Roxie,\" \"Governor Morock,\" or any events surrounding a charge by him. Therefore, I cannot w"
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.0,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Novel-e0a374bb",
+     "old_acc": false,
+     "answer_head": "Based on the context provided, I cannot answer this question. The text does not contain any information about a character named Don Carlo, Dan Carlo, "
+    },
+    {
+     "factual_errors": 4,
+     "accuracy": 0.0,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Novel-11abd566",
+     "old_acc": false,
+     "answer_head": "**Diary Entry – [Date Unknown]**\n\nWe were taken prisoner. The German Command came with a paper for Dr. Inglis to sign, claiming we had been well treat"
+    }
+   ],
+   "total_acc_recomputed": 0.20833333333333334,
+   "retention_recomputed": 0.4089044133954314
+  },
+  "novel/b": {
+   "n": 12,
+   "n_judged": 12,
+   "old_l4_acc": 0.08333333333333333,
+   "new_l4_acc": 0.16666666666666666,
+   "mean_coverage": 0.27,
+   "rows": [
+    {
+     "factual_errors": 1,
+     "accuracy": 0.6,
+     "coverage": 0.4,
+     "acc_binary": 0,
+     "qid": "Novel-9d9b1ed1",
+     "old_acc": false,
+     "answer_head": "**Diary Entry – A Fish of Housel Cove**\n\nA strange commotion today. John Curgenven’s boat scraped against the cave mouth, and the shadow of his net ca"
+    },
+    {
+     "factual_errors": 2,
+     "accuracy": 0.6,
+     "coverage": 0.5,
+     "acc_binary": 0,
+     "qid": "Novel-dca8ac49",
+     "old_acc": false,
+     "answer_head": "**Diary of Launce, Lizard Cove**\n\nToday the two-legged creatures came in their hollow shell. They floated right to my cave's mouth, six of them splash"
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.5,
+     "coverage": 0.25,
+     "acc_binary": 0,
+     "qid": "Novel-e89fa155",
+     "old_acc": false,
+     "answer_head": "**King Arthur’s Legacy Meets Modern Heroism in Cornwall’s Hidden Coves**\n\nMULLION COVE, Cornwall – In a tale that bridges legend and local lore, the C"
+    },
+    {
+     "factual_errors": 3,
+     "accuracy": 0.0,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Novel-6956692c",
+     "old_acc": false,
+     "answer_head": "**PERILOUS JOURNEY ACROSS BAYOU — ALLIGATOR ATTACKS TINY CANOE**\n\nIn a daring voyage that nearly ended in disaster, John Curgenven navigated the treac"
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.6,
+     "coverage": 0.43,
+     "acc_binary": 0,
+     "qid": "Novel-27b6e451",
+     "old_acc": false,
+     "answer_head": "**Diary Entry: Kynance Cove**\n\nToday I ventured into the Devil’s Throat, a narrow, dark chasm carved into the serpentine cliffs. The sea surges in wit"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.6,
+     "coverage": 0.5,
+     "acc_binary": 1,
+     "qid": "Novel-a940228b",
+     "old_acc": false,
+     "answer_head": "**Diary Entry – Corinna**\n\nMy dearest parrot is gone. I could not bear to watch him fade, his little voice growing faint. I bathed him in my tears, an"
+    },
+    {
+     "factual_errors": 2,
+     "accuracy": 0.4,
+     "coverage": 0.3,
+     "acc_binary": 0,
+     "qid": "Novel-2e0ffce2",
+     "old_acc": true,
+     "answer_head": "**Diary of the Parrot**\n\nMy mistress loved me dearly. I learned to speak her name, and she would laugh—such sweet music. Her lover often lurked outsid"
+    },
+    {
+     "factual_errors": 2,
+     "accuracy": 0.0,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Novel-4334e7fc",
+     "old_acc": false,
+     "answer_head": "Based on the context provided, there is no mention of Hippolytus, the *Metamorphoses*, or the idea of Hippolytus becoming a Priapus. The text discusse"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.6,
+     "coverage": 0.43,
+     "acc_binary": 1,
+     "qid": "Novel-db4551ac",
+     "old_acc": false,
+     "answer_head": "**Diary of Dipsas**\n\nTonight I practised the old spells—threads of Ææan wool, crossed and knotted with intent. The witch’s craft flows through me: I c"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.0,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Novel-a4a83818",
+     "old_acc": false,
+     "answer_head": "Based solely on the provided text, there is no information about \"Roxie,\" \"Governor Morock,\" or any charge involving them. Therefore, a news article c"
+    },
+    {
+     "factual_errors": 2,
+     "accuracy": 0.3,
+     "coverage": 0.43,
+     "acc_binary": 0,
+     "qid": "Novel-e0a374bb",
+     "old_acc": false,
+     "answer_head": "As Don Carlo, I traveled to headquarters with Dan Carlo, uneasy partners bound by Jose’s plan. On the road, we ran into Brindle Bill, a rough, suspici"
+    },
+    {
+     "factual_errors": 3,
+     "accuracy": 0.0,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Novel-11abd566",
+     "old_acc": false,
+     "answer_head": "**October 14, 191?** – Captured today. Taken from our unit by German forces. They brought a paper, demanding Dr. Inglis sign it—a false statement that"
+    }
+   ],
+   "total_acc_recomputed": 0.125,
+   "retention_recomputed": 0.2453426480372588
+  },
+  "novel/ah": {
+   "n": 12,
+   "n_judged": 12,
+   "old_l4_acc": 0.0,
+   "new_l4_acc": 0.3333333333333333,
+   "mean_coverage": 0.3400833333333333,
+   "rows": [
+    {
+     "factual_errors": 1,
+     "accuracy": 0.6,
+     "coverage": 0.6,
+     "acc_binary": 0,
+     "qid": "Novel-9d9b1ed1",
+     "old_acc": false,
+     "answer_head": "**Diary of a Fish, Lizard Caves**\n\nToday the quiet gloom was shattered. A boat, guided by a stout-armed human named John Curgenven, drifted into our w"
+    },
+    {
+     "factual_errors": 2,
+     "accuracy": 0.2,
+     "coverage": 0.25,
+     "acc_binary": 0,
+     "qid": "Novel-dca8ac49",
+     "old_acc": false,
+     "answer_head": "**Diary of a Launce, Lizard Coast**\n\n*Moonlight Night*\n\nA strange shadow fell over my sandy burrow today. A great wooden creature, larger than any gul"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.5,
+     "acc_binary": 1,
+     "qid": "Novel-e89fa155",
+     "old_acc": false,
+     "answer_head": "**CORNISH FISHERMAN REMINDS VISITORS OF KING ARTHUR**\n\nMULLION COVE, Cornwall – A chance encounter with a local fisherman has stirred imaginations alo"
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.3,
+     "coverage": 0.33,
+     "acc_binary": 0,
+     "qid": "Novel-6956692c",
+     "old_acc": false,
+     "answer_head": "**Local Hero Leads Moonlit Excursion to Kynance, Highlights Perilous Coast**\n\nJohn Curgenven, a figure of steady nerves and local knowledge, guided a "
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.571,
+     "acc_binary": 1,
+     "qid": "Novel-27b6e451",
+     "old_acc": false,
+     "answer_head": "**July 12th**\n\nVisited Kynance Cove today—a place of wild beauty and strange legends. I stood near the Devil’s Throat, a dark chasm in the rocks where"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.7,
+     "coverage": 0.6,
+     "acc_binary": 1,
+     "qid": "Novel-a940228b",
+     "old_acc": false,
+     "answer_head": "**Diary Entry – Farewell to My Parrot**\n\nMy dearest imitative bird, my parrot from the East, is dead. I weep for you, my clever friend. You spoke my n"
+    },
+    {
+     "factual_errors": 2,
+     "accuracy": 0.4,
+     "coverage": 0.3,
+     "acc_binary": 0,
+     "qid": "Novel-2e0ffce2",
+     "old_acc": false,
+     "answer_head": "**Diary of the Parrot**\n\n**Day 1 with Mistress:** She speaks to me with such sweetness, calling me her \"loving mate.\" I chatter back, and she laughs. "
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.4,
+     "coverage": 0.29,
+     "acc_binary": 0,
+     "qid": "Novel-4334e7fc",
+     "old_acc": false,
+     "answer_head": "**News Report: Tragic End of Hippolytus, Mythical Charioteer, Recalled in Ovid’s *Metamorphoses*; Even His Fate Linked to Priapus**\n\nIn a dramatic ret"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.9,
+     "coverage": 0.5,
+     "acc_binary": 1,
+     "qid": "Novel-db4551ac",
+     "old_acc": false,
+     "answer_head": "**Diary Entry – Dipsas**\n\nToday, I reflected on my mastery of the dark arts. I know the charms of Ææa well—Circe and Medea’s own sorcery. With a word,"
+    },
+    {
+     "factual_errors": 4,
+     "accuracy": 0.0,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Novel-a4a83818",
+     "old_acc": false,
+     "answer_head": "**Lawyer Accused of Inflating Fee in Estate Case**\n\nCHICAGO — Governor Morock, a prominent attorney among the city’s elite, has been accused of overch"
+    },
+    {
+     "factual_errors": 3,
+     "accuracy": 0.2,
+     "coverage": 0.14,
+     "acc_binary": 0,
+     "qid": "Novel-e0a374bb",
+     "old_acc": false,
+     "answer_head": "Traveling to headquarters, I found Simon’s wife watching silently in the night. I climbed the cabin’s jutting logs and slid down the chimney. Inside, "
+    },
+    {
+     "factual_errors": 2,
+     "accuracy": 0.0,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Novel-11abd566",
+     "old_acc": false,
+     "answer_head": "**Diary Entry – Suza Fairfield**\n\n*Day 1*  \nI was walking past Tom’s camp when he grabbed my arm. He held a gag and threatened to put it in my mouth i"
+    }
+   ],
+   "total_acc_recomputed": 0.5416666666666666,
+   "retention_recomputed": 1.0631514748281214
+  }
+ },
+ "lightrag_final": {
+  "medical": {
+   "n": 14,
+   "n_judged": 14,
+   "old_l4_acc": 0.2857142857142857,
+   "new_l4_acc": 0.7857142857142857,
+   "mean_coverage": 0.4921428571428571,
+   "rows": [
+    {
+     "factual_errors": 0,
+     "accuracy": 0.9,
+     "coverage": 0.5,
+     "acc_binary": 1,
+     "qid": "Medical-fe3240a4",
+     "old_acc": true,
+     "answer_head": "**Consult Note – Suspected Basal Cell Carcinoma (BCC)**\n\n**Reason for Consult:** Suspicious lesion on the face.\n\n**Risk Factors:** Light skin, light h"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.5,
+     "acc_binary": 1,
+     "qid": "Medical-8f5233d5",
+     "old_acc": false,
+     "answer_head": "**Discharge Summary**\n\n**Patient:** [Patient Name]\n**Date of Discharge:** [Date]\n**Diagnosis:** Basal cell carcinoma (BCC), scalp.\n\n**Risk Factors:** "
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.45,
+     "acc_binary": 1,
+     "qid": "Medical-c9c108e1",
+     "old_acc": false,
+     "answer_head": "**Dear Family,**\n\nI wanted to share some news with you. I’ve been diagnosed with **basal cell carcinoma**, a type of skin cancer. It’s the most common"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.5,
+     "acc_binary": 1,
+     "qid": "Medical-bf68d23e",
+     "old_acc": true,
+     "answer_head": "**Public Health Advisory: Protecting Our Community from Basal Cell Carcinoma**\n\n**Prevention:** Protect your skin from UV radiation—the primary cause "
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.4,
+     "coverage": 0.45,
+     "acc_binary": 0,
+     "qid": "Medical-fd1b07be",
+     "old_acc": true,
+     "answer_head": "Based on the context, the referral should summarize:\n\n**Clinical findings:** Recurrent basal cell carcinoma (BCC) with spread to lymph nodes (based on"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 1.0,
+     "acc_binary": 1,
+     "qid": "Medical-ea29b9d8",
+     "old_acc": false,
+     "answer_head": "**Initial Diagnostic Workup & Staging Plan for Suspected Primary CNS Lymphoma (PCNSL)**\n\nAs a neuro-oncology fellow, my initial approach to this 62-ye"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.75,
+     "acc_binary": 1,
+     "qid": "Medical-c2658ea4",
+     "old_acc": false,
+     "answer_head": "Based on the context provided, here is a comprehensive treatment plan for a newly diagnosed immunocompetent adult with primary CNS lymphoma confined t"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.65,
+     "acc_binary": 1,
+     "qid": "Medical-e6da7d3c",
+     "old_acc": false,
+     "answer_head": "**Referral Letter**\n\n**To:** [Neuro-Oncologist Name]\n**From:** [General Neurologist Name]\n**Date:** [Date]\n**Re:** [Patient Name] – Suspected Primary "
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.6,
+     "coverage": 0.25,
+     "acc_binary": 1,
+     "qid": "Medical-96352a3c",
+     "old_acc": false,
+     "answer_head": "**Discharge Summary: Primary CNS Lymphoma – Transition to Consolidation**\n\n**Diagnosis:** Primary CNS lymphoma  \n**Phase:** Completed induction chemot"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.18,
+     "acc_binary": 1,
+     "qid": "Medical-3396b459",
+     "old_acc": false,
+     "answer_head": "**Public Health Advisory: Primary CNS Lymphoma**\n\n**Risk Factors:** The primary known risk factor is a weakened immune system. Individuals with impair"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.4,
+     "coverage": 0.1,
+     "acc_binary": 0,
+     "qid": "Medical-beb1f30e",
+     "old_acc": false,
+     "answer_head": "**Case Summary:** A patient with newly diagnosed high-risk CSCC of the scalp.\n\n**Risk Assessment:** High-risk due to scalp location (head/neck), which"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.5,
+     "acc_binary": 1,
+     "qid": "Medical-9e9cc51b",
+     "old_acc": false,
+     "answer_head": "Based on the context provided, here is a concise patient-friendly discharge summary:\n\n**Your Diagnosis & Treatment:** You have been treated for cutane"
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.92,
+     "coverage": 0.85,
+     "acc_binary": 0,
+     "qid": "Medical-970792d6",
+     "old_acc": true,
+     "answer_head": "**SOAP Progress Note**\n\n**S:** Patient reports multiple rough, scaly patches on sun-exposed areas. Denies pain or itching. History of immunosuppressio"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.21,
+     "acc_binary": 1,
+     "qid": "Medical-5b2de94d",
+     "old_acc": false,
+     "answer_head": "**Advisory for Primary Care Providers: Cutaneous Squamous Cell Carcinoma (CSCC)**\n\n**Prevention:** Emphasize sun protection, particularly for the head"
+    }
+   ],
+   "total_acc_recomputed": 0.7678571428571429,
+   "retention_recomputed": 1.2072847756123726,
+   "retention_old": 1.010710514406396
+  },
+  "novel": {
+   "n": 12,
+   "n_judged": 12,
+   "old_l4_acc": 0.08333333333333333,
+   "new_l4_acc": 0.3333333333333333,
+   "mean_coverage": 0.2891666666666666,
+   "rows": [
+    {
+     "factual_errors": 1,
+     "accuracy": 0.4,
+     "coverage": 0.6,
+     "acc_binary": 0,
+     "qid": "Novel-9d9b1ed1",
+     "old_acc": false,
+     "answer_head": "**Diary of a Fish: The Cave Near Lizard**\n\n*Day of the Loud Bang*\n\nAnother quiet morning in the gloom. Then came the boat—John Curgenven’s. I know his"
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.5,
+     "coverage": 0.5,
+     "acc_binary": 0,
+     "qid": "Novel-dca8ac49",
+     "old_acc": false,
+     "answer_head": "**June 12th, Moonlight Night**\n\nMy peaceful burrow was disturbed tonight. A great shadow fell upon the sand above, and a boat scraped over my cave’s r"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.0,
+     "acc_binary": 1,
+     "qid": "Novel-e89fa155",
+     "old_acc": false,
+     "answer_head": "**KING ARTHUR’S LEGEND MEETS CORNISH FISHERMAN**\n\nTINTAGEL — A chance encounter with a weather-beaten fisherman has reignited debate over the historic"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.6,
+     "coverage": 0.5,
+     "acc_binary": 1,
+     "qid": "Novel-6956692c",
+     "old_acc": false,
+     "answer_head": "**Lizard Boatman Guides Visitors Through Perilous Coastal Waters**\n\nKYNANCE COVE—Local fisherman John Curgenven, known for his steadfast nature and fa"
+    },
+    {
+     "factual_errors": 2,
+     "accuracy": 0.43,
+     "coverage": 0.29,
+     "acc_binary": 0,
+     "qid": "Novel-27b6e451",
+     "old_acc": false,
+     "answer_head": "**Diary Entry – Kynance Cove**\n\nThe Devil’s Throat haunted my thoughts long before I saw it. Local folk call it Hell’s Mouth, and the name alone chill"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.7,
+     "coverage": 0.4,
+     "acc_binary": 1,
+     "qid": "Novel-a940228b",
+     "old_acc": false,
+     "answer_head": "**Diary Entry – The Day My Parrot Died**\n\nMy sweet parrot, my clever mimic from the East, is gone. I found him still, his little beak silent. He spoke"
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.6,
+     "coverage": 0.57,
+     "acc_binary": 0,
+     "qid": "Novel-2e0ffce2",
+     "old_acc": false,
+     "answer_head": "**Diary of the Parrot**\n\nMy days were spent in luxury, perched beside my mistress, whose beauty stirred many a lover—none more passionate than her poe"
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.3,
+     "coverage": 0.14,
+     "acc_binary": 0,
+     "qid": "Novel-4334e7fc",
+     "old_acc": false,
+     "answer_head": "**Tragedy at Troezen: Hippolytus Dead, Chaste Hero Linked to Priapus in New Poem**\n\nTROEZEN — In a shocking turn of events, Hippolytus, the famed son "
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.2,
+     "coverage": 0.14,
+     "acc_binary": 0,
+     "qid": "Novel-db4551ac",
+     "old_acc": true,
+     "answer_head": "**Diary Entry – Dipsas**\n\nThe wine has yet to leave my veins, and the sun’s roseate horses have long since fled. I am called Dipsas for good reason—ne"
+    },
+    {
+     "factual_errors": 100,
+     "accuracy": 0.0,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Novel-a4a83818",
+     "old_acc": false,
+     "answer_head": "**Chicago Lawyer Proposes \"Shadow\" Marriage to Impoverished Client**\n\nCHICAGO — In a startling revelation from an ongoing inheritance dispute, promine"
+    },
+    {
+     "factual_errors": 5,
+     "accuracy": 0.0,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Novel-e0a374bb",
+     "old_acc": false,
+     "answer_head": "As Don Carlo, I traveled to headquarters through the stillness of the night, determined to defend my rights. For years, my brother Dan and I were equa"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.33,
+     "acc_binary": 1,
+     "qid": "Novel-11abd566",
+     "old_acc": false,
+     "answer_head": "**October 12th**\n\nDear Diary,\n\nThis morning, as I passed Tom Ditamus’s camp, he seized me. He held a gag and threatened to put a bridle on me if I scr"
+    }
+   ],
+   "total_acc_recomputed": 0.625,
+   "retention_recomputed": 1.226713240186294,
+   "retention_old": 1.1041643562160364
+  }
+ },
+ "hipporag": {
+  "medical/a": {
+   "n": 14,
+   "n_judged": 14,
+   "old_l4_acc": 0.2857142857142857,
+   "new_l4_acc": 0.8571428571428571,
+   "mean_coverage": 0.46714285714285714,
+   "rows": [
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.42,
+     "acc_binary": 1,
+     "qid": "Medical-fe3240a4",
+     "old_acc": true,
+     "answer_head": "**Consult Note – Suspected Basal Cell Carcinoma**\n\n**History & Risk Factors:**  \nPatient presents with a suspicious facial lesion. Pertinent risk fact"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.9,
+     "coverage": 0.75,
+     "acc_binary": 1,
+     "qid": "Medical-8f5233d5",
+     "old_acc": false,
+     "answer_head": "**Discharge Summary**\n\n**Patient:** [Name]  \n**Diagnosis:** Basal cell carcinoma, scalp  \n**Date:** [Date]\n\n**Risk Factors:** Prolonged sun exposure; "
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.5,
+     "acc_binary": 1,
+     "qid": "Medical-c9c108e1",
+     "old_acc": false,
+     "answer_head": "**Dear Family,**\n\nI’ve been diagnosed with basal cell carcinoma, a slow-growing skin cancer that starts in the basal cells. It’s usually caused by lon"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.25,
+     "acc_binary": 1,
+     "qid": "Medical-bf68d23e",
+     "old_acc": true,
+     "answer_head": "**Public Health Advisory: Increase in Basal Cell Carcinoma Cases**\n\n**Prevention:**  \nAvoid exposure to ultraviolet (UV) radiation from the sun and ta"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.6,
+     "coverage": 0.45,
+     "acc_binary": 1,
+     "qid": "Medical-fd1b07be",
+     "old_acc": true,
+     "answer_head": "Based on the guideline, the referral is for a patient with recurrent basal cell carcinoma now involving lymph nodes. Clinical findings include spread "
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 1.0,
+     "acc_binary": 1,
+     "qid": "Medical-ea29b9d8",
+     "old_acc": true,
+     "answer_head": "**Initial Diagnostic Workup and Staging Plan for Suspected Primary CNS Lymphoma (PCNSL)**\n\n**Patient:** 62-year-old presenting with progressive leg we"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.9,
+     "acc_binary": 1,
+     "qid": "Medical-c2658ea4",
+     "old_acc": false,
+     "answer_head": "**Induction Phase (Goal: Maximal cytoreduction)**\n\n- **Regimen:** **High-dose Methotrexate (HD-MTX)-based polychemotherapy.** The standard is **R-MPV*"
+    },
+    {
+     "factual_errors": 2,
+     "accuracy": 0.6,
+     "coverage": 0.15,
+     "acc_binary": 0,
+     "qid": "Medical-e6da7d3c",
+     "old_acc": false,
+     "answer_head": "**Referral Letter: Primary CNS Lymphoma**\n\n**Date:** [Insert Date]  \n**To:** Dr. [Neuro-oncologist’s Name]  \n**From:** Dr. [General Neurologist’s Name"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.18,
+     "acc_binary": 1,
+     "qid": "Medical-96352a3c",
+     "old_acc": false,
+     "answer_head": "**Discharge Summary: Primary CNS Lymphoma – Transition to Consolidation Phase**\n\n**Diagnosis:** Primary CNS lymphoma, status post induction chemothera"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.2,
+     "coverage": 0.1,
+     "acc_binary": 0,
+     "qid": "Medical-3396b459",
+     "old_acc": false,
+     "answer_head": "**Public Health Advisory: Primary CNS Lymphoma**\n\n**Risk Factors:** While not explicitly detailed in the guideline, primary CNS lymphoma can affect in"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.5,
+     "coverage": 0.25,
+     "acc_binary": 1,
+     "qid": "Medical-beb1f30e",
+     "old_acc": false,
+     "answer_head": "**Case Summary:** A patient with newly diagnosed high-risk cutaneous squamous cell carcinoma (CSCC) on the scalp.\n\n**Risk Assessment:** High-risk base"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.45,
+     "acc_binary": 1,
+     "qid": "Medical-9e9cc51b",
+     "old_acc": false,
+     "answer_head": "Based on the context provided, here is a concise discharge summary:\n\n**Diagnosis:** Regional cutaneous squamous cell carcinoma (CSCC) with lymph node "
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.7,
+     "coverage": 0.54,
+     "acc_binary": 1,
+     "qid": "Medical-970792d6",
+     "old_acc": false,
+     "answer_head": "**SUBJECTIVE:** Patient with history of actinic keratoses (AKs) and immunosuppression. Discussed treatment options per guidelines.\n\n**OBJECTIVE:** Exa"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.6,
+     "acc_binary": 1,
+     "qid": "Medical-5b2de94d",
+     "old_acc": false,
+     "answer_head": "**Advisory for Primary Care Providers on CSCC**\n\n**Prevention & Early Detection:** Advise sun protection and routine skin exams. For diagnosis, perfor"
+    }
+   ],
+   "total_acc_recomputed": 0.6785714285714286,
+   "retention_recomputed": 1.051602599405221
+  },
+  "medical/b": {
+   "n": 14,
+   "n_judged": 14,
+   "old_l4_acc": 0.07142857142857142,
+   "new_l4_acc": 0.7857142857142857,
+   "mean_coverage": 0.34771428571428575,
+   "rows": [
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.75,
+     "acc_binary": 1,
+     "qid": "Medical-fe3240a4",
+     "old_acc": true,
+     "answer_head": "**Consult Note: Suspected Basal Cell Carcinoma (BCC)**\n\n**Patient:** New referral, suspicious facial lesion.\n\n**Key Risk Factors:**\n- UV radiation exp"
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.7,
+     "coverage": 0.583,
+     "acc_binary": 0,
+     "qid": "Medical-8f5233d5",
+     "old_acc": false,
+     "answer_head": "**Discharge Summary**\n\n**Patient:** [Name]\n**Diagnosis:** Basal cell carcinoma (BCC), scalp\n**Risk Factors:** Prolonged sun exposure, fair skin, histo"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.8,
+     "coverage": 0.5,
+     "acc_binary": 1,
+     "qid": "Medical-c9c108e1",
+     "old_acc": false,
+     "answer_head": "**Subject:** My Recent Diagnosis: Basal Cell Carcinoma  \n\nDear Family,  \n\nI’m writing to share that I’ve been diagnosed with **basal cell carcinoma**."
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.67,
+     "acc_binary": 1,
+     "qid": "Medical-bf68d23e",
+     "old_acc": false,
+     "answer_head": "**PUBLIC HEALTH ADVISORY: Preventing and Detecting Basal Cell Skin Cancer**\n\n**To our community:** Due to a recent increase in basal cell carcinoma (B"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.8,
+     "coverage": 0.3,
+     "acc_binary": 1,
+     "qid": "Medical-fd1b07be",
+     "old_acc": false,
+     "answer_head": "Based on the guideline, this patient has recurrent basal cell carcinoma (BCC) with lymph node involvement. Diagnostic confirmation requires a biopsy o"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.125,
+     "acc_binary": 1,
+     "qid": "Medical-ea29b9d8",
+     "old_acc": false,
+     "answer_head": "As a neuro-oncology fellow, my initial diagnostic workup and staging plan for this 62-year-old patient with suspected primary CNS lymphoma (PCNSL) foc"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.6,
+     "acc_binary": 1,
+     "qid": "Medical-c2658ea4",
+     "old_acc": false,
+     "answer_head": "**Induction Phase (Goal: Maximize tumor cytoreduction)**\n\n- **Regimen:** High-dose methotrexate (HD-MTX)-based polychemotherapy.\n    - *Drugs:* HD-MTX"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.9,
+     "coverage": 0.15,
+     "acc_binary": 1,
+     "qid": "Medical-e6da7d3c",
+     "old_acc": false,
+     "answer_head": "**FORMAL REFERRAL LETTER**\n\n**To:** Consultant Neuro-Oncologist  \n**From:** General Neurologist  \n**Re:** Suspected Primary CNS Lymphoma\n\nDear Dr. [Na"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.33,
+     "coverage": 0.06,
+     "acc_binary": 0,
+     "qid": "Medical-96352a3c",
+     "old_acc": false,
+     "answer_head": "**Discharge Summary: Primary CNS Lymphoma – Transition to Consolidation Phase**\n\n**Diagnosis:** Primary central nervous system (CNS) lymphoma.\n\n**Summ"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.2,
+     "coverage": 0.05,
+     "acc_binary": 0,
+     "qid": "Medical-3396b459",
+     "old_acc": false,
+     "answer_head": "**Public Health Advisory: Primary CNS Lymphoma**\n\n**Risk Factors:** While specific risk factors are not detailed in the guideline, individuals with we"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.6,
+     "coverage": 0.2,
+     "acc_binary": 1,
+     "qid": "Medical-beb1f30e",
+     "old_acc": false,
+     "answer_head": "**Case Summary:** A patient with newly diagnosed high-risk cutaneous squamous cell carcinoma (CSCC) on the scalp.\n\n**Risk Assessment:** High-risk due "
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.67,
+     "coverage": 0.27,
+     "acc_binary": 1,
+     "qid": "Medical-9e9cc51b",
+     "old_acc": false,
+     "answer_head": "Based on the context provided, the following is a patient-friendly discharge summary for a person with regional cutaneous squamous cell carcinoma (CSC"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.7,
+     "coverage": 0.31,
+     "acc_binary": 1,
+     "qid": "Medical-970792d6",
+     "old_acc": false,
+     "answer_head": "**Subjective:** Patient with history of immunosuppression presents with multiple actinic keratoses. No new concerning lesions reported.\n\n**Objective:*"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.3,
+     "acc_binary": 1,
+     "qid": "Medical-5b2de94d",
+     "old_acc": false,
+     "answer_head": "**Prevention and Early Detection Advisory for CSCC**\n\n- **Prevention:** Emphasize sun protection (especially head and neck), and monitor for actinic k"
+    }
+   ],
+   "total_acc_recomputed": 0.6428571428571429,
+   "retention_recomputed": 0.9962550941733671
+  },
+  "medical/c_w0.3": {
+   "n": 14,
+   "n_judged": 14,
+   "old_l4_acc": 0.21428571428571427,
+   "new_l4_acc": 0.8571428571428571,
+   "mean_coverage": 0.47569285714285714,
+   "rows": [
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.4167,
+     "acc_binary": 1,
+     "qid": "Medical-fe3240a4",
+     "old_acc": true,
+     "answer_head": "**Consult Note – Suspected Basal Cell Carcinoma**\n\n**REASON FOR CONSULT:** Evaluation of suspicious facial lesion.\n\n**RISK FACTORS:** Light skin/hair/"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.75,
+     "acc_binary": 1,
+     "qid": "Medical-8f5233d5",
+     "old_acc": false,
+     "answer_head": "**Discharge Summary**\n\n**Patient:** [Name], [Age/Sex]\n**Diagnosis:** Basal cell carcinoma, left parietal scalp\n**Date of Discharge:** [Date]\n\n**Risk F"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.333,
+     "acc_binary": 1,
+     "qid": "Medical-c9c108e1",
+     "old_acc": false,
+     "answer_head": "**Dear Family,**\n\nI’ve been diagnosed with **basal cell carcinoma**, a slow-growing skin cancer that starts in the deepest layer of the epidermis. It "
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.5,
+     "acc_binary": 1,
+     "qid": "Medical-bf68d23e",
+     "old_acc": true,
+     "answer_head": "**Public Health Advisory: Protecting Our Community from Basal Cell Skin Cancer**\n\n**Prevention:** Limit exposure to UV radiation from the sun and tann"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.4,
+     "coverage": 0.33,
+     "acc_binary": 0,
+     "qid": "Medical-fd1b07be",
+     "old_acc": false,
+     "answer_head": "Based on the guideline, for a patient with recurrent basal cell carcinoma (BCC) spreading to lymph nodes, the referral to oncology is indicated due to"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.92,
+     "acc_binary": 1,
+     "qid": "Medical-ea29b9d8",
+     "old_acc": true,
+     "answer_head": "**Initial Diagnostic Workup and Staging Plan for Suspected Primary CNS Lymphoma**\n\n**1. Clinical & Baseline Assessment**\n- **Comprehensive history and"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 1.0,
+     "acc_binary": 1,
+     "qid": "Medical-c2658ea4",
+     "old_acc": false,
+     "answer_head": "Based on the context, here is a comprehensive induction and consolidation treatment plan for a newly diagnosed immunocompetent adult with primary CNS "
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.9,
+     "coverage": 0.3,
+     "acc_binary": 1,
+     "qid": "Medical-e6da7d3c",
+     "old_acc": false,
+     "answer_head": "**Referral Letter: Primary CNS Lymphoma**\n\n**To:** Neuro-Oncology Consultant  \n**From:** General Neurologist  \n\n**Re:** Patient [Name, DOB, Hospital N"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.7,
+     "coverage": 0.25,
+     "acc_binary": 1,
+     "qid": "Medical-96352a3c",
+     "old_acc": false,
+     "answer_head": "**Discharge Summary: Primary CNS Lymphoma – Post-Induction Chemotherapy**\n\n**Diagnosis:** Primary CNS lymphoma  \n**Phase Completed:** Induction chemot"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.33,
+     "coverage": 0.18,
+     "acc_binary": 0,
+     "qid": "Medical-3396b459",
+     "old_acc": false,
+     "answer_head": "**Public Health Advisory: Primary CNS Lymphoma**\n\n**Risk Factors:** Primary CNS lymphoma can affect individuals with weakened immune systems, though i"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.3,
+     "acc_binary": 1,
+     "qid": "Medical-beb1f30e",
+     "old_acc": false,
+     "answer_head": "**Case Summary:**  \nPatient with newly diagnosed high-risk cutaneous squamous cell carcinoma (CSCC) on the scalp.\n\n**Risk Assessment:**  \nScalp locati"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.4,
+     "acc_binary": 1,
+     "qid": "Medical-9e9cc51b",
+     "old_acc": false,
+     "answer_head": "**Diagnosis:** You have been treated for cutaneous squamous cell carcinoma (CSCC) that had spread to nearby lymph nodes.\n\n**Treatment:** You completed"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.9,
+     "coverage": 0.77,
+     "acc_binary": 1,
+     "qid": "Medical-970792d6",
+     "old_acc": false,
+     "answer_head": "**SOAP Progress Note**\n\n**S:** Patient reports multiple rough, scaly spots on sun-exposed areas. Denies pain or bleeding. History of immunosuppression"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.6,
+     "coverage": 0.21,
+     "acc_binary": 1,
+     "qid": "Medical-5b2de94d",
+     "old_acc": false,
+     "answer_head": "**Advisory for Primary Care Providers on Cutaneous Squamous Cell Carcinoma (CSCC)**\n\n**Prevention & Early Detection:**  \n- Perform full skin exams, es"
+    }
+   ],
+   "total_acc_recomputed": 0.8035714285714286,
+   "retention_recomputed": 1.2453188677167089
+  },
+  "medical/c_w0.5": {
+   "n": 14,
+   "n_judged": 14,
+   "old_l4_acc": 0.07142857142857142,
+   "new_l4_acc": 0.7142857142857143,
+   "mean_coverage": 0.48164285714285715,
+   "rows": [
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.583,
+     "acc_binary": 1,
+     "qid": "Medical-fe3240a4",
+     "old_acc": true,
+     "answer_head": "**Consult Note – Suspected Basal Cell Carcinoma**\n\n**Risk Factors:**  \n- Fair skin, light hair/eyes (in lighter skin)  \n- History of significant ultra"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 1.0,
+     "acc_binary": 1,
+     "qid": "Medical-8f5233d5",
+     "old_acc": false,
+     "answer_head": "**Discharge Summary**\n\n**Patient:** [Patient Name]\n**Diagnosis:** Basal cell carcinoma, scalp\n**Date of Discharge:** [Date]\n\n**Risk Factors:** Prolong"
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.65,
+     "coverage": 0.5,
+     "acc_binary": 0,
+     "qid": "Medical-c9c108e1",
+     "old_acc": false,
+     "answer_head": "**Dear Family,**\n\nI’ve been diagnosed with basal cell carcinoma, a slow-growing skin cancer that starts in the basal cells. It’s rarely serious and do"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.5,
+     "acc_binary": 1,
+     "qid": "Medical-bf68d23e",
+     "old_acc": false,
+     "answer_head": "**PUBLIC HEALTH ADVISORY: Basal Cell Carcinoma Prevention and Early Detection**\n\n**Prevention:** Limit exposure to UV radiation from the sun and tanni"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.6,
+     "coverage": 0.36,
+     "acc_binary": 1,
+     "qid": "Medical-fd1b07be",
+     "old_acc": false,
+     "answer_head": "Based on the guideline, the patient has recurrent basal cell carcinoma (BCC) with lymphatic spread, indicating advanced disease requiring oncology ref"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 1.0,
+     "acc_binary": 1,
+     "qid": "Medical-ea29b9d8",
+     "old_acc": false,
+     "answer_head": "As a neuro-oncology fellow, here is my detailed initial diagnostic workup and staging plan for this 62-year-old patient with progressive leg weakness,"
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.6,
+     "coverage": 0.6,
+     "acc_binary": 0,
+     "qid": "Medical-c2658ea4",
+     "old_acc": false,
+     "answer_head": "**Induction Phase (Goal: Maximal cytoreduction)**\n\nRegimen: High-Dose Methotrexate (HD-MTX)-based polychemotherapy.\n- **Drug Regimen:** HD-MTX (3.5–8 "
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.0,
+     "acc_binary": 1,
+     "qid": "Medical-e6da7d3c",
+     "old_acc": false,
+     "answer_head": "**Referral Letter: Suspected Primary CNS Lymphoma**\n\n**To:** [Neuro-Oncologist’s Name]\n**From:** [General Neurologist’s Name]\n**Re:** [Patient Name, D"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.2,
+     "coverage": 0.19,
+     "acc_binary": 0,
+     "qid": "Medical-96352a3c",
+     "old_acc": false,
+     "answer_head": "**Discharge Summary – Primary CNS Lymphoma**\n\n**Diagnosis:** Primary CNS lymphoma, status post induction chemotherapy.\n\n**Summary of Hospital Course:*"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.3,
+     "coverage": 0.08,
+     "acc_binary": 0,
+     "qid": "Medical-3396b459",
+     "old_acc": false,
+     "answer_head": "**Public Health Advisory: Primary CNS Lymphoma**\n\n**Risk Factors:** Immunocompromised status is a recognized risk; improved detection has led to bette"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.5,
+     "coverage": 0.25,
+     "acc_binary": 1,
+     "qid": "Medical-beb1f30e",
+     "old_acc": false,
+     "answer_head": "**Case Summary:**  \nA patient with newly diagnosed high-risk cutaneous squamous cell carcinoma (CSCC) on the scalp.\n\n**Risk Assessment:**  \nHigh-risk "
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.4,
+     "acc_binary": 1,
+     "qid": "Medical-9e9cc51b",
+     "old_acc": false,
+     "answer_head": "**Diagnosis:** You were treated for regional cutaneous squamous cell carcinoma (CSCC), which means the cancer had spread to nearby lymph nodes.\n\n**Tre"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.85,
+     "acc_binary": 1,
+     "qid": "Medical-970792d6",
+     "old_acc": false,
+     "answer_head": "**S:**\nPatient reports multiple rough, scaly patches on sun-exposed areas. History of immunosuppression (specify condition/medication if known). Denie"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.43,
+     "acc_binary": 1,
+     "qid": "Medical-5b2de94d",
+     "old_acc": false,
+     "answer_head": "**Advisory for Primary Care Providers: CSCC Prevention & Detection**\n\n- **Prevention:** Actinic keratoses (pre-cancerous lesions) should be treated ea"
+    }
+   ],
+   "total_acc_recomputed": 0.7142857142857143,
+   "retention_recomputed": 1.1069501046370744
+  },
+  "medical/c_w0.8": {
+   "n": 14,
+   "n_judged": 14,
+   "old_l4_acc": 0.14285714285714285,
+   "new_l4_acc": 0.8571428571428571,
+   "mean_coverage": 0.4694642857142857,
+   "rows": [
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.75,
+     "acc_binary": 1,
+     "qid": "Medical-fe3240a4",
+     "old_acc": false,
+     "answer_head": "**Consult Note: Suspected Basal Cell Carcinoma (BCC)**\n\n**Patient:** [Name], [Age/Sex]\n**Reason for Consult:** Suspicious lesion on the face.\n\n**Risk "
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.75,
+     "acc_binary": 1,
+     "qid": "Medical-8f5233d5",
+     "old_acc": false,
+     "answer_head": "**Discharge Summary**\n\n**Patient:** [Patient Name]\n**Diagnosis:** Basal cell carcinoma, scalp\n**Date of Discharge:** [Date]\n\n**Risk Factors:** Prolong"
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.5,
+     "coverage": 0.5,
+     "acc_binary": 0,
+     "qid": "Medical-c9c108e1",
+     "old_acc": false,
+     "answer_head": "**Dear Family,**\n\nI’ve been diagnosed with **basal cell carcinoma**, a slow-growing skin cancer that starts in the basal cells of the epidermis. It’s "
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.5,
+     "acc_binary": 1,
+     "qid": "Medical-bf68d23e",
+     "old_acc": true,
+     "answer_head": "**PUBLIC HEALTH ADVISORY: Preventing and Detecting Basal Cell Skin Cancer**\n\n**High-Risk Groups:** Older adults and individuals with fair skin, red or"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.8,
+     "coverage": 0.55,
+     "acc_binary": 1,
+     "qid": "Medical-fd1b07be",
+     "old_acc": false,
+     "answer_head": "Based on the guideline, the patient has recurrent basal cell carcinoma (BCC) with spread to lymph nodes, indicating advanced or metastatic disease. Ri"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 1.0,
+     "acc_binary": 1,
+     "qid": "Medical-ea29b9d8",
+     "old_acc": false,
+     "answer_head": "As a neuro-oncology fellow, my initial diagnostic workup and staging plan for this 62-year-old patient with progressive leg weakness, memory problems,"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.25,
+     "acc_binary": 1,
+     "qid": "Medical-c2658ea4",
+     "old_acc": false,
+     "answer_head": "Based on the context provided, as a hematologist, the recommended treatment plan for a newly diagnosed immunocompetent adult with primary CNS lymphoma"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.9,
+     "coverage": 0.0,
+     "acc_binary": 1,
+     "qid": "Medical-e6da7d3c",
+     "old_acc": false,
+     "answer_head": "**Referral Letter: Suspected Primary CNS Lymphoma**\n\n**To:** Dr. [Neuro-oncologist’s Name]\n**From:** Dr. [General Neurologist’s Name]\n**Date:** [Date]"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.5,
+     "coverage": 0.3125,
+     "acc_binary": 1,
+     "qid": "Medical-96352a3c",
+     "old_acc": false,
+     "answer_head": "**Discharge Summary: Primary CNS Lymphoma – Transition to Consolidation Phase**\n\nThe patient has completed induction chemotherapy for primary CNS lymp"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.8,
+     "coverage": 0.3,
+     "acc_binary": 1,
+     "qid": "Medical-3396b459",
+     "old_acc": false,
+     "answer_head": "**Public Health Advisory: Primary CNS Lymphoma**\n\n**Risk Factors:** While specific causes are not fully outlined, individuals with weakened immune sys"
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.3,
+     "coverage": 0.15,
+     "acc_binary": 0,
+     "qid": "Medical-beb1f30e",
+     "old_acc": false,
+     "answer_head": "**Case Summary:**  \n65-year-old patient with newly diagnosed cutaneous squamous cell carcinoma (CSCC) on the scalp.\n\n**Risk Assessment:**  \nHigh-risk "
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.45,
+     "acc_binary": 1,
+     "qid": "Medical-9e9cc51b",
+     "old_acc": false,
+     "answer_head": "Based on the context, here is a concise, patient-friendly discharge summary:\n\n**Diagnosis:** You were treated for regional cutaneous squamous cell car"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.77,
+     "acc_binary": 1,
+     "qid": "Medical-970792d6",
+     "old_acc": true,
+     "answer_head": "**S:**\nPatient reports multiple rough, scaly patches on sun-exposed areas. Denies pain, itching, or bleeding. History of immunosuppression.\n\n**O:**\nMu"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.29,
+     "acc_binary": 1,
+     "qid": "Medical-5b2de94d",
+     "old_acc": false,
+     "answer_head": "**Advisory for Primary Care Providers on Cutaneous Squamous Cell Carcinoma (CSCC)**\n\n**Prevention & Early Detection:**\n- Emphasize sun protection, esp"
+    }
+   ],
+   "total_acc_recomputed": 0.7857142857142857,
+   "retention_recomputed": 1.217645115100782
+  },
+  "novel/a": {
+   "n": 12,
+   "n_judged": 12,
+   "old_l4_acc": 0.0,
+   "new_l4_acc": 0.3333333333333333,
+   "mean_coverage": 0.315,
+   "rows": [
+    {
+     "factual_errors": 2,
+     "accuracy": 0.3,
+     "coverage": 0.6,
+     "acc_binary": 0,
+     "qid": "Novel-9d9b1ed1",
+     "old_acc": false,
+     "answer_head": "**Diary of a Fish, Kynance Cove**\n\nDear Diary,\n\nSaw John Curgenven’s boat again this morning. He’s impossible to miss—sits there rocking with that cal"
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.5,
+     "coverage": 0.5,
+     "acc_binary": 0,
+     "qid": "Novel-dca8ac49",
+     "old_acc": false,
+     "answer_head": "**Day 37 of the Moon’s Brightness**\n\nA terrible disturbance today. The great hollow thing—the boat—crept into my cave. Shadows fell, and the water chu"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.6,
+     "coverage": 0.5,
+     "acc_binary": 1,
+     "qid": "Novel-e89fa155",
+     "old_acc": false,
+     "answer_head": "**CORNISH FISHERMAN COMPARED TO KING ARTHUR**\n\nA recent traveller in Cornwall has drawn a striking comparison between a local fisherman and the legend"
+    },
+    {
+     "factual_errors": 2,
+     "accuracy": 0.0,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Novel-6956692c",
+     "old_acc": false,
+     "answer_head": "**LOCAL FISHERMAN GUIDES VISITORS, PRAISES COAST’S PERILOUS BEAUTY**\n\nJohn Curgenven, a Cornish fisherman widely admired for his gentle authority, led"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.4,
+     "coverage": 0.25,
+     "acc_binary": 0,
+     "qid": "Novel-27b6e451",
+     "old_acc": false,
+     "answer_head": "**Diary Entry**\n\nThe Devil’s Throat—or Hell’s Mouth, as some call it—is a forbidding chasm in the rock, dark and gaping, with the sea churning below. "
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.8,
+     "coverage": 0.5,
+     "acc_binary": 1,
+     "qid": "Novel-a940228b",
+     "old_acc": false,
+     "answer_head": "**Day of Sorrow**\n\nMy dear parrot is gone. I held him as he faded, his little body growing still. I called upon Isis, she who hears the cries of women"
+    },
+    {
+     "factual_errors": 3,
+     "accuracy": 0.3,
+     "coverage": 0.5,
+     "acc_binary": 0,
+     "qid": "Novel-2e0ffce2",
+     "old_acc": false,
+     "answer_head": "**Day of the Farewell**\n\nMy mistress doted on me, dressing my feathers with oils and speaking to me in soft tones. She never knew I spied on her—how s"
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.5,
+     "coverage": 0.43,
+     "acc_binary": 0,
+     "qid": "Novel-4334e7fc",
+     "old_acc": false,
+     "answer_head": "**News Report: Hippolytus Incident Raises Questions on Chastity and Desire**\n\nIn a startling turn of events, the legendary figure Hippolytus, long cel"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.9,
+     "coverage": 0.5,
+     "acc_binary": 1,
+     "qid": "Novel-db4551ac",
+     "old_acc": false,
+     "answer_head": "**Diary Entry of Dipsas**\n\nI, Dipsas, ever thirsting, never slaking my desire, find my power rooted in this very curse. My name is my nature, drawn fr"
+    },
+    {
+     "factual_errors": 3,
+     "accuracy": 0.0,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Novel-a4a83818",
+     "old_acc": false,
+     "answer_head": "**Chicago, January 1862 —** Governor Morock, a once-fashionable lawyer now known for dirty work at low prices, informed Roxie Daymon that she is “hope"
+    },
+    {
+     "factual_errors": 7,
+     "accuracy": 0.0,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Novel-e0a374bb",
+     "old_acc": false,
+     "answer_head": "I am Don Carlo. My brother Dan and I ran the Carlo wood yard together, but he was a weak partner. He took half the money from every sale, yet left me "
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.0,
+     "acc_binary": 1,
+     "qid": "Novel-11abd566",
+     "old_acc": false,
+     "answer_head": "**October 12th**\n\nI can scarcely hold the pen, my hand still trembles, but I must write it all down while it is fresh.\n\nThey took me. Tom Ditamus and "
+    }
+   ],
+   "total_acc_recomputed": 0.5625,
+   "retention_recomputed": 0.8813960694050992
+  },
+  "novel/b": {
+   "n": 12,
+   "n_judged": 12,
+   "old_l4_acc": 0.0,
+   "new_l4_acc": 0.3333333333333333,
+   "mean_coverage": 0.26166666666666666,
+   "rows": [
+    {
+     "factual_errors": 2,
+     "accuracy": 0.4,
+     "coverage": 0.4,
+     "acc_binary": 0,
+     "qid": "Novel-9d9b1ed1",
+     "old_acc": false,
+     "answer_head": "**August 12th**\n\nA strange shadow fell over our cave this morning. John Curgenven’s boat drifted near, nets trailing. I darted deeper, but a great swi"
+    },
+    {
+     "factual_errors": 4,
+     "accuracy": 0.0,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Novel-dca8ac49",
+     "old_acc": false,
+     "answer_head": "**Diary of a Launce, Lizard Cove**\n\nMoonlight flooded the cave entrance. Tonight they came—barefoot, silent, wading into my world. Their fires burned "
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.7,
+     "coverage": 0.5,
+     "acc_binary": 1,
+     "qid": "Novel-e89fa155",
+     "old_acc": false,
+     "answer_head": "**CORNISH FISHERMAN COMPARED TO KING ARTHUR**\n\nIn a recent unsentimental journey through Cornwall, one traveler recounts a striking encounter with a l"
+    },
+    {
+     "factual_errors": 4,
+     "accuracy": 0.5,
+     "coverage": 0.5,
+     "acc_binary": 0,
+     "qid": "Novel-6956692c",
+     "old_acc": false,
+     "answer_head": "**Local Fisherman Recounts Perilous Voyage and the Beauty of Lizard Lights**\n\nJohn Curgenven, a Cornish fisherman known for his kindness and local kno"
+    },
+    {
+     "factual_errors": 2,
+     "accuracy": 0.3,
+     "coverage": 0.14,
+     "acc_binary": 0,
+     "qid": "Novel-27b6e451",
+     "old_acc": false,
+     "answer_head": "**Diary Entry**\n\nAt Kynance Cove, I heard of the Devil’s Throat—or Hell’s Mouth, as some call it. A local warned us not to attempt it; the name alone "
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.9,
+     "coverage": 0.67,
+     "acc_binary": 1,
+     "qid": "Novel-a940228b",
+     "old_acc": false,
+     "answer_head": "**Diary Entry – The Seventh Day**\n\nMy parrot is gone. For nine ages he might have lived, but the destined numbers were against him. On this seventh da"
+    },
+    {
+     "factual_errors": 6,
+     "accuracy": 0.0,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Novel-2e0ffce2",
+     "old_acc": false,
+     "answer_head": "**September 15th, 1662**\n\nMy Lady keeps me in her chamber still. She wept today, which startled me. I heard the housekeeper speak of that Mr. Calton, "
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.6,
+     "coverage": 0.43,
+     "acc_binary": 1,
+     "qid": "Novel-4334e7fc",
+     "old_acc": false,
+     "answer_head": "**Chastity Icon Hippolytus No Match for Love’s Power, Poet Claims**\n\nIn a striking new commentary on ancient mythology, the poet asserts that even Hip"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.8,
+     "coverage": 0.5,
+     "acc_binary": 1,
+     "qid": "Novel-db4551ac",
+     "old_acc": false,
+     "answer_head": "As Dipsas, I write of the ancient arts—those deep, whispered charms of Ææa. My knowledge comes not from books of men but from the old blood, the Maya "
+    },
+    {
+     "factual_errors": 4,
+     "accuracy": 0.0,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Novel-a4a83818",
+     "old_acc": false,
+     "answer_head": "**Roxie Daymon Left Penniless: Lawyer Reveals Total Loss of Simon Estate**\n\nCHICAGO – In a dramatic turn of events, Roxie Daymon has been informed by "
+    },
+    {
+     "factual_errors": 2,
+     "accuracy": 0.0,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Novel-e0a374bb",
+     "old_acc": false,
+     "answer_head": "I am Don Carlo. My brother Dan and I were partners in the wood yard, but he was weak—always promising reform yet squandering our earnings. I paid all "
+    },
+    {
+     "factual_errors": 2,
+     "accuracy": 0.0,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Novel-11abd566",
+     "old_acc": false,
+     "answer_head": "**Diary Entry – Suza Fairfield**\n\nI was taken by Tom Ditamus and his family, traveling ten miles with their lazy ox team. When they fell asleep by the"
+    }
+   ],
+   "total_acc_recomputed": 0.4791666666666667,
+   "retention_recomputed": 0.7508188739376771
+  },
+  "novel/c_w0.3": {
+   "n": 12,
+   "n_judged": 12,
+   "old_l4_acc": 0.0,
+   "new_l4_acc": 0.16666666666666666,
+   "mean_coverage": 0.23916666666666667,
+   "rows": [
+    {
+     "factual_errors": 1,
+     "accuracy": 0.6,
+     "coverage": 0.6,
+     "acc_binary": 0,
+     "qid": "Novel-9d9b1ed1",
+     "old_acc": false,
+     "answer_head": "**Diary of a Lizard Cave Fish**\n\n**Day 7**\n\nSunlight flooded the cave entrance today. John Curgenven’s boat drifted overhead. Then came the flash of s"
+    },
+    {
+     "factual_errors": 3,
+     "accuracy": 0.1,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Novel-dca8ac49",
+     "old_acc": false,
+     "answer_head": "**Day 9 of the Moon's Bright Sickness**\n\nThe long shadows came again tonight, the two-legged ones with their crooked spears. They stood in the wet san"
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.4,
+     "coverage": 0.14,
+     "acc_binary": 0,
+     "qid": "Novel-e89fa155",
+     "old_acc": false,
+     "answer_head": "**CORNISH FISHERMAN COMPARED TO KING ARTHUR**\n\n**Local Character John Curgenven Draws Praise from Visitors**\n\nA recent traveller to Cornwall has made "
+    },
+    {
+     "factual_errors": 3,
+     "accuracy": 0.2,
+     "coverage": 0.33,
+     "acc_binary": 0,
+     "qid": "Novel-6956692c",
+     "old_acc": false,
+     "answer_head": "**JOHN CURGENVEN GUIDES VISITORS THROUGH CORNWALL’S TREACHEROUS COAST, PRAISES LIZARD LIGHTS**\n\nLIZARD POINT, Cornwall – Local fisherman John Curgenve"
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.57,
+     "coverage": 0.29,
+     "acc_binary": 0,
+     "qid": "Novel-27b6e451",
+     "old_acc": false,
+     "answer_head": "**Diary Entry:**\n\nThe Devil’s Throat is a grim, yawning chasm in the rock—dark, treacherous, and utterly forbidding. Locals warn against it, and I can"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.9,
+     "coverage": 0.67,
+     "acc_binary": 1,
+     "qid": "Novel-a940228b",
+     "old_acc": false,
+     "answer_head": "Dear Diary,\n\nMy dear parrot is gone. He left me today, calling out “Corinna, farewell” with his last breath. I am heartbroken. He was more than a pet—"
+    },
+    {
+     "factual_errors": 3,
+     "accuracy": 0.4,
+     "coverage": 0.3,
+     "acc_binary": 0,
+     "qid": "Novel-2e0ffce2",
+     "old_acc": false,
+     "answer_head": "**Diary Entry – Miss Mary, the Parrot**\n\nToday I recall my life with my dear mistress: I was her beloved, a talking bird skilled in words, as an epita"
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.2,
+     "coverage": 0.14,
+     "acc_binary": 0,
+     "qid": "Novel-4334e7fc",
+     "old_acc": false,
+     "answer_head": "**Tragic Charioteer Hippolytus Dies in Reins Mishap – Could Become Next Priapus**\n\nIn a tragic turn reminiscent of fate’s cruel design, Hippolytus, so"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.6,
+     "coverage": 0.4,
+     "acc_binary": 1,
+     "qid": "Novel-db4551ac",
+     "old_acc": false,
+     "answer_head": "**Diary of Dipsas**\n\nTonight, as always, I am deep in my cups, yet my mind remains sharp as a blade. My name is no accident—thirst drives me, but so d"
+    },
+    {
+     "factual_errors": 3,
+     "accuracy": 0.0,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Novel-a4a83818",
+     "old_acc": false,
+     "answer_head": "**Chicago Socialite Left Destitute as Legal Battle Ends**\n\nCHICAGO — Roxie Daymon, a young woman of grace and composure, has been left “hopelessly des"
+    },
+    {
+     "factual_errors": 3,
+     "accuracy": 0.0,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Novel-e0a374bb",
+     "old_acc": false,
+     "answer_head": "I traveled through the still night to headquarters, driven by family pride and the need to defend our rights. Dan, my brother and partner, had long dr"
+    },
+    {
+     "factual_errors": 3,
+     "accuracy": 0.0,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Novel-11abd566",
+     "old_acc": false,
+     "answer_head": "**Diary Entry – Suza Fairfield**\n\n*Date unknown*\n\nI was taken by Tom Ditamus and his family, traveling ten miles with a lazy ox team. They thought the"
+    }
+   ],
+   "total_acc_recomputed": 0.5208333333333334,
+   "retention_recomputed": 0.8161074716713882
+  },
+  "novel/c_w0.5": {
+   "n": 12,
+   "n_judged": 12,
+   "old_l4_acc": 0.0,
+   "new_l4_acc": 0.3333333333333333,
+   "mean_coverage": 0.32708333333333334,
+   "rows": [
+    {
+     "factual_errors": 3,
+     "accuracy": 0.2,
+     "coverage": 0.4,
+     "acc_binary": 0,
+     "qid": "Novel-9d9b1ed1",
+     "old_acc": false,
+     "answer_head": "**Day 7 – Late Morning**\n\nThe calm was shattered. John Curgenven’s boat drifted over my cave’s mouth, casting a long shadow. Then came the splash—a ne"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.6,
+     "coverage": 0.5,
+     "acc_binary": 1,
+     "qid": "Novel-dca8ac49",
+     "old_acc": false,
+     "answer_head": "**Diary of a Launce, Lizard Cove**\n\n*Day the Ninth*\n\nThe boat came today. It groaned into the shadows above my cave, blocking the sun. A great dark sh"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.75,
+     "acc_binary": 1,
+     "qid": "Novel-e89fa155",
+     "old_acc": false,
+     "answer_head": "**King Arthur’s Likeness Found in Cornish Fisherman**\n\nTINTAGEL — A recent journey along the rugged Cornish coastline has uncovered an unexpected echo"
+    },
+    {
+     "factual_errors": 2,
+     "accuracy": 0.4,
+     "coverage": 0.33,
+     "acc_binary": 0,
+     "qid": "Novel-6956692c",
+     "old_acc": false,
+     "answer_head": "**Local Fisherman Guides Visitors Along Treacherous Coast, Praises Lizard Lights**\n\nLIZARD, CORNWALL – Local fisherman John Curgenven led a party of v"
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.7,
+     "coverage": 0.43,
+     "acc_binary": 0,
+     "qid": "Novel-27b6e451",
+     "old_acc": false,
+     "answer_head": "**Diary Entry – Kynance Cove**\n\nI saw the Devil’s Throat today—a jagged fissure in the rock with a dark, yawning cave below. Locals call it Hell’s Mou"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.83,
+     "acc_binary": 1,
+     "qid": "Novel-a940228b",
+     "old_acc": false,
+     "answer_head": "**Diary Entry**\n\nMy beloved parrot is gone. I held him as he faded, whispering my name one last time—then silence. In my grief, I called upon Isis of "
+    },
+    {
+     "factual_errors": 4,
+     "accuracy": 0.3,
+     "coverage": 0.14,
+     "acc_binary": 0,
+     "qid": "Novel-2e0ffce2",
+     "old_acc": false,
+     "answer_head": "**Diary of Miss Mary, the Parrot**\n\nMy mistress loved me dearly. I was her constant companion, her \"Lady Parrot,\" as I commanded respect with my wit a"
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.0,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Novel-4334e7fc",
+     "old_acc": false,
+     "answer_head": "Based solely on the provided context, there is no information about Hippolytus, his events, his mention in the Metamorphoses, or the idea that he woul"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.375,
+     "acc_binary": 1,
+     "qid": "Novel-db4551ac",
+     "old_acc": false,
+     "answer_head": "**Diary Entry of Dipsas**\n\n*Ne’er a sober dawn rise I, but my mind is sharp with ancient craft. I know the charms of Ææa, the herbs that bind the will"
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.2,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Novel-a4a83818",
+     "old_acc": false,
+     "answer_head": "**Chicago News Dispatch – Exclusive Report**\n\n**Roxie Daymon Faces Allegations of Exploitation in Simon Estate Case**\n\nChicago – Prominent legal figur"
+    },
+    {
+     "factual_errors": 5,
+     "accuracy": 0.0,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Novel-e0a374bb",
+     "old_acc": false,
+     "answer_head": "I traveled to headquarters that night, driven by family pride and the need to defend my rights. Our wood business was failing because Dan, my brother "
+    },
+    {
+     "factual_errors": 2,
+     "accuracy": 0.33,
+     "coverage": 0.17,
+     "acc_binary": 0,
+     "qid": "Novel-11abd566",
+     "old_acc": false,
+     "answer_head": "**Diary Entry – Suza Fairfield**\n\nI write this by Aunt Katy’s fire, safe at last. But oh, what a night!\n\nThey took me from the house while she slept. "
+    }
+   ],
+   "total_acc_recomputed": 0.5833333333333334,
+   "retention_recomputed": 0.9140403682719547
+  },
+  "novel/c_w0.8": {
+   "n": 12,
+   "n_judged": 12,
+   "old_l4_acc": 0.08333333333333333,
+   "new_l4_acc": 0.25,
+   "mean_coverage": 0.20166666666666666,
+   "rows": [
+    {
+     "factual_errors": 3,
+     "accuracy": 0.2,
+     "coverage": 0.2,
+     "acc_binary": 0,
+     "qid": "Novel-9d9b1ed1",
+     "old_acc": false,
+     "answer_head": "**Diary of a Lizard Cave Fish**\n\n**Date: Day the Seventh**\n\nA strange shadow fell over our cave entrance today. John Curgenven’s boat drifted near, an"
+    },
+    {
+     "factual_errors": 3,
+     "accuracy": 0.0,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Novel-dca8ac49",
+     "old_acc": false,
+     "answer_head": "**Diary of a Launce at Lizard**\n\n**Day the Ninth**\n\nA terrible day. The moon shone bright, and I burrowed deep in the wet sand above the waterline, th"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 1.0,
+     "coverage": 0.57,
+     "acc_binary": 1,
+     "qid": "Novel-e89fa155",
+     "old_acc": false,
+     "answer_head": "**CORNISH FISHERMAN COMPARED TO KING ARTHUR**\n\nIn a recent exploration of the Cornish coastline, travelers encountered a remarkable figure: John Curge"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.5,
+     "coverage": 0.0,
+     "acc_binary": 1,
+     "qid": "Novel-6956692c",
+     "old_acc": false,
+     "answer_head": "**Local Fisherman Guides Visitors Along Cornwall’s Perilous Coast**\n\nLIZARD, CORNWALL — Local fisherman John Curgenven, known for his steady hand and "
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.3,
+     "coverage": 0.14,
+     "acc_binary": 0,
+     "qid": "Novel-27b6e451",
+     "old_acc": false,
+     "answer_head": "**Diary Entry – Kynance Cove**\n\nToday I saw the Devil’s Throat—a grim, yawning fissure in the rock, aptly named. Locals call it Hell’s Mouth, and one "
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.8,
+     "coverage": 0.5,
+     "acc_binary": 1,
+     "qid": "Novel-a940228b",
+     "old_acc": false,
+     "answer_head": "**September 15th**\n\nMy dear parrot is gone. I held her as she breathed her last, my little mimic who learned to say “farewell” as I so often did to Ov"
+    },
+    {
+     "factual_errors": 3,
+     "accuracy": 0.4,
+     "coverage": 0.43,
+     "acc_binary": 0,
+     "qid": "Novel-2e0ffce2",
+     "old_acc": false,
+     "answer_head": "**Diary of the Parrot**\n\n**Day 1** – I lived with my mistress, who loved me dearly. She taught me words, and I was her pride. But her lover grew jealo"
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.0,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Novel-4334e7fc",
+     "old_acc": true,
+     "answer_head": "Based on the context, there is no mention of Hippolytus, the story of Hippolytus in the Metamorphoses, or the idea of him becoming a Priapus. Therefor"
+    },
+    {
+     "factual_errors": 0,
+     "accuracy": 0.0,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Novel-db4551ac",
+     "old_acc": false,
+     "answer_head": "**Diary of Dipsas**\n\nAnother night steeped in wine and power. They call me Dipsas—named for my thirst, though I say it is for knowledge. Before dawn, "
+    },
+    {
+     "factual_errors": 4,
+     "accuracy": 0.0,
+     "coverage": 0.0,
+     "acc_binary": 0,
+     "qid": "Novel-a4a83818",
+     "old_acc": false,
+     "answer_head": "**Chicago Tribune – Special Report**\n\n**Roxie Daymon Charges Governor Morock with Unethical Conduct**\n\nIn a startling revelation from the parlor of a "
+    },
+    {
+     "factual_errors": 2,
+     "accuracy": 0.25,
+     "coverage": 0.25,
+     "acc_binary": 0,
+     "qid": "Novel-e0a374bb",
+     "old_acc": false,
+     "answer_head": "I am Don Carlo. I traveled to headquarters through the still night, driven by family pride and the need to defend my rights. At the cabin, I found the"
+    },
+    {
+     "factual_errors": 1,
+     "accuracy": 0.5,
+     "coverage": 0.33,
+     "acc_binary": 0,
+     "qid": "Novel-11abd566",
+     "old_acc": false,
+     "answer_head": "**Diary Entry – Suza Fairfield**\n\nDear Diary,\n\nTonight I am home. Or nearly home—I write this in Aunt Katy’s house, where I just arrived, safe. But th"
+    }
+   ],
+   "total_acc_recomputed": 0.6041666666666666,
+   "retention_recomputed": 0.9466846671388102
+  }
+ },
+ "verdict": {
+  "b0_novel_l4_new_acc": 0.3333333333333333,
+  "gate_passed": false
+ }
+}
