@@ -1,0 +1,21 @@
+\section{Weak Claim and Escape Architecture}
+\label{sec:escape}
+
+The final form of the claim is not ``J-Lens replaces \texttt{generate()}'' but
+\textbf{``cover $p\%$ of cases + confidence gating + component-level
+escape''}---turning a correctness problem into a cost problem:
+\begin{equation}
+\text{expected cost} = (1-p) \times \text{full LLM generation cost}
+\quad (p = 0.8 \to 5\times\ \text{reduction};\ p = 0.7 \to 3\times).
+\end{equation}
+
+\textbf{Ready-made confidence-gating signals}: corpus-validation failure rate,
+DF $< 2$ orphan concepts, queries that link to no graph node (Phase 50 failure
+signature), batch relation AUC $\approx 0.5$ (Phase 48 zero-model criterion).
+\textbf{Escape granularity is component-level} (re-extract a single chunk,
+fall back to dense-only for a single query)---pay precisely at the failure
+point.
+
+Current measured per-component coverage: concepts 80\%, relations 100\%,
+disambiguation 0.80, attributes 0.76, entities (text-side) $\sim$100\%,
+end-to-end retention 1.01/1.10.

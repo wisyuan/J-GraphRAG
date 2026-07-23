@@ -1,0 +1,42 @@
+\section{Experiment Index (Phase 1--53)}
+\label{app:phases}
+
+\begin{table}[h]
+\centering
+\caption{Chronological experiment index.}
+\label{tab:phases}
+\begin{tabular}{@{}llp{7.5cm}@{}}
+\toprule
+Phases & Content & Key conclusions \\
+\midrule
+1--9 & Embedding-fractal theory validation & Expansion adds dispersion, not discrimination; concept-hierarchy-tree seeds \\
+10--25 & J-Lens method formation & Concept extraction (position $-1$) + triple filtering + BM25 (final product config Phase 25: 114\% of B0) \\
+16--24 & Hierarchy/recursion routes & All falsified (\emph{is\_a} 0--9\%, prompt contamination, no gain over flat) \\
+26 & GraphRAG benchmarking & Energy efficiency 347$\times$; Fast-GraphRAG 7B collapse (ACC 3.6\%) \\
+27--37 & Relation extraction & Lexicon-style 100\% coverage; V3 refinement; prefill scan (role expansion) \\
+38--41 & Computabilization & Grounding ($\mathbf{E}_{ws}$ debiased $\approx$ bge); matrix $\equiv$ graph traversal (1.000); seed\_k quirk fixed \\
+42 & Query-side closure & FALSIFIED; seed+expand is the only correct integration \\
+43--47 & Capability map & Disambiguation prompt (0.80) / attribute geometry (0.76) / multi-hop $\mathbf{W}^2$ (0.998) / tensor (0.81); geometry--relation decoupling \\
+48--49 & Debiasing and diagnosis & $\mathbf{E}_{bge}$ circularity quantified; novel divergence benign \\
+50--53 & LightRAG-J & 0.842 $\to$ entity bottleneck $\to$ text-side fill $\to$ \textbf{1.011/1.104 retained} \\
+51 & HippoRAG-J & Matrix PPR; \textbf{medical 0.996 retained}, novel 0.881 borderline \\
+52 & Entity extraction & J-Lens rare proper names FALSIFIED (structural) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Reproducibility}
+\label{app:repro}
+
+\begin{itemize}
+\item \textbf{Environment}: Python $\geq$ 3.10 + uv (\texttt{pyproject.toml});
+Qwen2.5-7B-Instruct 4bit (8\,GB VRAM) + jacobian-lens + bge-m3.
+\item \textbf{Data}: GraphRAG-Bench (symlinked at \texttt{/tmp/graphrag-bench};
+one-command restore via \texttt{scripts/restore\_env.sh}).
+\item \textbf{Entry points}: \texttt{python -m experiments.phase\{XX\}\_*
+[{-}{-}domain medical or novel]}; cached artifacts under
+\texttt{data/m6/concept\_cache/}.
+\item \textbf{Leaderboard reference}:
+\texttt{data/m6/graphrag\_bench\_leaderboard.json} (sources:
+graphrag-bench.github.io + arXiv:2506.05690).
+\end{itemize}

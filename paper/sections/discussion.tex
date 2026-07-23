@@ -1,0 +1,90 @@
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{Cost accounting (indexing 1{,}000 documents)}
+
+\begin{table}[h]
+\centering
+\caption{Indexing cost for 1{,}000 documents.}
+\label{tab:cost}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Method & Time & API cost \\
+\midrule
+\textbf{J-GraphRAG basic} (concepts + relations + embeddings) & \textbf{$\sim$5 min} ($\sim$1020 forwards) & \textbf{\$0} \\
+\textbf{J-GraphRAG full} (+ roles + relation refinement) & \textbf{$\sim$8 min} ($\sim$2040 forwards) & \textbf{\$0} \\
+Fast-GraphRAG (Qwen-7B generate) & $\sim$1000 min & \$0 (but unreliable) \\
+Conventional GraphRAG (API) & $\sim$10 min & $\sim$\$5--15 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Methodological division of labor with interpretability research}
+\label{sec:discussion:methodology}
+
+The J-space paper proves the existence and causal privilege of the workspace
+(interventional experiments: swap/steering/gradient pursuit); this work proves
+the structure can be harvested by engineering. The key methodological
+difference: \emph{corpus-grounded validation replaces interventional
+validation}---in engineering extraction settings, ground truth in the data
+(corpus validation, DF statistics, judge sampling) substitutes for causal
+proof, cutting validation cost from months to minutes. We independently
+replicated their Claude-scale findings on a 7B open model (position $-1$
+readability, noise in the first third of layers, prefill modulation).
+
+\subsection{Limitations}
+\label{sec:discussion:limitations}
+
+\begin{itemize}
+\item Single-model validation (Qwen2.5-7B 4bit + fitted J-Lens); cross-model
+generalization unknown.
+\item Two domains (medical/novel); the L4 sample is small (14 questions), and
+on novel L4 \emph{all} methods---including dense baselines---score near zero.
+We currently suspect a question-set/judge artifact rather than a retrieval
+failure, but this is not yet confirmed.
+% TODO(Phase54): replace the following sentence with the confirmed diagnosis of
+% the novel-L4 near-zero anomaly (question set vs. judge vs. retrieval).
+\todo{Phase 54 diagnosis of novel-L4 near-zero pending.}
+If the investigation confirms an evaluation artifact, the L4 numbers should be
+re-measured on a corrected protocol and our retrieval conclusions stand; if it
+instead reveals a genuine retrieval deficiency, the escape architecture of
+\S\ref{sec:escape} predicts precisely this failure mode (queries linking to no
+graph node) and the L4 results become a stress test for confidence gating.
+\item The DeepSeek judge is non-deterministic ($\pm 0.03$--$0.05$);
+borderline conclusions (novel 0.881) are limited by this.
+\item Entity--entity relation edges for rare proper names are dominated by
+co-occurrence default edges; scaling readout coverage is future work.
+\end{itemize}
+
+\subsection{Future work}
+\label{sec:discussion:future}
+
+\begin{enumerate}
+\item \textbf{Larger L4 samples} to confirm the multi-hop gain (full novel
+question set or the 2062-question subset).
+% TODO(Phase55): fill in the confirmed multi-hop gain (or its absence) from the
+% larger-L4-sample run; the transition below supports either outcome.
+\todo{Phase 55 multi-hop gain on larger L4 sample pending.}
+A confirmed gain would close the weakest link in the effect story and justify
+graph expansion at L4; a null result would shift the multi-hop claim to
+discrimination-only (\S\ref{sec:capability}) and redirect effort to generation
+side.
+\item \textbf{Cross-model generalization}: fitting J-Lenses for
+Qwen3 / Gemma-3 / Llama-3.1 and verifying workspace readability---pretrained
+lenses for these models already exist in the
+neuronpedia/jacobian-lens ecosystem, making this a validation rather than a
+training effort.
+\item \textbf{Parameter count vs.\ lens accuracy ablation}: how readout
+quality (concept accuracy, grounding AUC) scales with model size, and whether
+larger models lift the structural ceiling on rare-entity readout
+(\S\ref{sec:negative}).
+\item \textbf{Escape architecture in practice}: measured confidence-gating
+trigger rates and the true cost ratio.
+\item \textbf{Qwen as dense encoder} to remove the last bge dependency on the
+query side (optional; motivation is deployment simplicity).
+\item \textbf{Tensor route at scale}: retest directional capability once
+edge/concept counts grow.
+\item \textbf{Multimodal extension}: applying workspace readout to
+vision-language models so that figures, tables, and images can be indexed with
+the same single-forward-pass extraction.
+\end{enumerate}

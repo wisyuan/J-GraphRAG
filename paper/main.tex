@@ -1,0 +1,60 @@
+% J-GraphRAG arXiv skeleton (draft)
+% Compile: pdflatex main && pdflatex main
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{multirow}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage{url}
+
+% Placeholder marker for results pending Phase 54/55 experiments.
+\newcommand{\todo}[1]{\textcolor{red}{\textbf{[TODO: #1]}}}
+
+\title{J-GraphRAG: Replacing All LLM Generation in GraphRAG Indexing\\
+with Jacobian-Lens Workspace Readout}
+
+\author{Anonymous}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Graph-based retrieval-augmented generation (GraphRAG) frameworks such as
+LightRAG, HippoRAG2, and MS-GraphRAG build their knowledge graphs with LLM
+\texttt{generate()} calls at every extraction step: 5--60 seconds per document,
+structured-output parsing with retries, unreliable JSON on 7B-scale models, and
+\$5--15 of API cost per thousand documents. We show that \emph{every} extraction
+step can be replaced by a single-forward-pass readout of the model's internal
+\emph{workspace} with the Jacobian Lens (J-Lens): 0.17\,s per chunk, no
+structured output, zero API cost. A hybrid extraction architecture---J-Lens
+readout for the abstract layer (concepts, relations, roles, disambiguation),
+text-side rules for the surface layer (named entities), vector geometry for
+attributes, and graph/tensor methods for multi-hop reasoning---retains
+\textbf{101\%/110\%} (LightRAG-J) and \textbf{100\%/88\%} (HippoRAG-J) of the
+original pipelines' accuracy on GraphRAG-Bench (medical/novel). We further show
+that the extracted artifacts are mathematically closed: concept vectors are
+grounded against the symbolic relation structure (matching bge-m3 after
+debiasing), and all graph retrieval operations linearize exactly into matrix
+multiplication.
+\end{abstract}
+
+\input{sections/introduction}
+\input{sections/background}
+\input{sections/method}
+\input{sections/math_properties}
+\input{sections/capability_map}
+\input{sections/replacement}
+\input{sections/negative_results}
+\input{sections/escape}
+\input{sections/discussion}
+
+\appendix
+\input{sections/appendix}
+
+\end{document}

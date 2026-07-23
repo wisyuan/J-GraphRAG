@@ -1,0 +1,27 @@
+\section{Capability Map (Phase 43--47 dual verdicts)}
+\label{sec:capability}
+
+\begin{table}[t]
+\centering
+\caption{One capability, one computational home: best route, score, and falsified alternatives.}
+\label{tab:capability}
+\begin{tabular}{@{}lllp{4.6cm}@{}}
+\toprule
+Capability & Best route & Score & Alternative routes and verdicts \\
+\midrule
+Concept extraction & position $-1$ concern (1 fwd) & 80\% accuracy & --- \\
+Role expansion & prefill scan ($+1$ fwd) & 71\% document-specific & --- \\
+Relation extraction & lexicon-style (1 fwd/pair) & 100\% coverage & --- \\
+Entity disambiguation & restricted-classification prompt (1 fwd) & \textbf{0.80} & geometry $\mathbf{M}$-rows 0.75; bge 0.60 \\
+Entity attributes & \textbf{geometry} (co-occurrence $\times$ $ws$ ranking) & \textbf{precision 0.76} & prompt route falsified ($\leq 0.39$) \\
+Named entities & \textbf{text-side detection} & detection rate $\sim$100\% & J-Lens readout falsified (rare proper names structurally unreadable) \\
+Multi-hop discrimination & \textbf{$\mathbf{W}^2$} & AUC 0.998 & chained prompt (top-5 50\%); $ws$ chaining ($\approx$ random) \\
+Link completion & CP tensor & holdout AUC 0.81 & direct edge-addition retrieval: no gain (Phase 50 arm b) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table~\ref{tab:capability} assigns each graph capability its verified
+computational home. The map is the positive counterpart of the negative results
+in \S\ref{sec:negative}: every ``home'' was selected by falsifying the
+competing routes on pre-registered thresholds.

@@ -1,0 +1,43 @@
+\section{Background}
+\label{sec:background}
+
+\subsection{J-Lens and the J-space}
+
+The Jacobian Lens computes, for each layer's residual stream, an average
+first-order causal effect $J_l$ (averaging Jacobians over a thousand-scale
+corpus), mapping intermediate activations into the unembedding space to read
+out top-$k$ tokens. The original work
+(transformer-circuits.pub/2026/workspace) shows these readouts satisfy the
+functional properties of a global workspace: reportable, modulable, carrying
+intermediate reasoning, generalizable, and selective. Three empirical findings
+matter most for this work:
+
+\begin{enumerate}
+\item \textbf{Intermediate entities of internal reasoning enter the workspace}
+(in a multi-hop question the model first produces \emph{spider} and then
+answers the number of legs)---entity-level representations exist.
+\item \textbf{The paired-question protocol}: the question form determines what
+enters the workspace---content used only implicitly does not enter; content
+must be explicitly named. This dictates our prompt design principles
+(\S\ref{sec:method:offline}) and uniformly explains all cloze-style failures
+(\S\ref{sec:math:cloze}).
+\item \textbf{The J-Lens is single-token}---multi-word concepts/entities
+require corpus-statistical merging (\S\ref{sec:method:offline}).
+\end{enumerate}
+
+\paragraph{Division of labor with interpretability research.}
+They prove the workspace exists and is causally privileged (requiring
+interventional experiments); we prove the structure can be harvested at low
+engineering cost---using \emph{corpus-grounded validation} in place of
+\emph{interventional validation} (\S\ref{sec:discussion:methodology}).
+
+\subsection{Benchmark and evaluation}
+
+GraphRAG-Bench (arXiv:2506.05690) provides two domains: \emph{medical} (NCCN
+guidelines, 957 chunks) and \emph{novel} (19th-century fiction, 4391 chunks),
+with four task levels: L1 fact retrieval, L2 complex reasoning, L3 contextual
+summarization, L4 creative generation. The original leaderboard numbers
+(GPT-4o-mini extraction and evaluation) are archived in
+\texttt{data/m6/graphrag\_bench\_leaderboard.json}. Our evaluation uses bge-m3
+retrieval with a DeepSeek judge, anchored to the leaderboard by a conversion
+factor from a co-run B0 baseline (\S\ref{sec:replacement:protocol}).

@@ -1,0 +1,34 @@
+\section{Negative Results (Falsified Directions)}
+\label{sec:negative}
+
+Negative results are a first-class contribution of this work: each direction
+below was falsified against a pre-registered threshold, saving future work from
+repeating it.
+
+\begin{table}[h]
+\centering
+\caption{Falsified directions.}
+\label{tab:negative}
+\begin{tabular}{@{}p{5.2cm}lp{5.6cm}@{}}
+\toprule
+Direction & Verdict & Evidence \\
+\midrule
+Query-side concept routing as a replacement for dense retrieval & FALSIFIED &
+ACC 0.05--0.21 vs.\ 0.50--0.57 (Phase 42); concepts are topical anchors, not
+query semantics \\
+Cloze-style prompts & FALSIFIED (law) & Three independent replications
+(\S\ref{sec:math:cloze}) \\
+J-Lens extraction of low-frequency proper names & FALSIFIED (structural) &
+All 4 readout strategies failed (Phase 52); covered by text-side detection \\
+Concept hierarchy trees / recursive expansion / hierarchical propagation &
+FALSIFIED & Phase 22 (0--9\% \emph{is\_a}), 24 (prompt contamination), 21
+(no gain over flat) \\
+Pure-vector relation completion & FALSIFIED & Relational analogies $\approx$
+random (Phase 46 P3) \\
+Direct retrieval augmentation with tensor-completed edges & No gain, slightly
+harmful & Phase 50 arm b $\leq$ arm a \\
+Full-ranking score fusion (z-score) & Below seed+expand & Phase 42 hybrid vs.\
+Phase 41B \\
+\bottomrule
+\end{tabular}
+\end{table}

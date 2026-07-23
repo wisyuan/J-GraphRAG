@@ -1,0 +1,76 @@
+\section{Mathematical Properties: Making Concepts Computable}
+\label{sec:math}
+
+\subsection{Grounding: vectors and symbols refer to the same objects}
+\label{sec:math:grounding}
+
+\textbf{Test} (Phase 40/48): use concept-vector cosine to distinguish edges
+from non-edges of the relation graph $\mathbf{W}$ (edge-level ROC-AUC + 1000
+permutation tests).
+
+\begin{table}[t]
+\centering
+\caption{Edge discrimination AUC by vector space. $^{***}$/$^{*}$: permutation-test significance.}
+\label{tab:grounding}
+\begin{tabular}{@{}llll@{}}
+\toprule
+Vector space & medical & novel & Note \\
+\midrule
+$\mathbf{E}_{ws}$ (workspace conditional vectors) & 0.631$^{***}$ & 0.612$^{***}$ & beats co-occurrence baseline by $+0.085$/$+0.088$ \\
+$\mathbf{E}_{wu}$ (first fragment of $W_U$, static) & 0.633$^{***}$ & 0.529$^{*}$ & $\approx$ co-occurrence on novel; static fragments are semantically thin \\
+$\mathbf{E}_{M}$ (co-occurrence control) & 0.546$^{***}$ & 0.524$^{***}$ & LSA-style baseline \\
+$\mathbf{E}_{bge}$ (external embeddings) & 0.709$^{***}$ & 0.705$^{***}$ & 0.605/0.538 after debiasing $\approx \mathbf{E}_{ws}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Debiasing test} (Phase 48): most of $\mathbf{E}_{bge}$'s lead is
+circularity inflation from bge-based cluster filtering ($+0.104$/$+0.167$);
+after debiasing, $\mathbf{E}_{ws} \approx$ bge---the LLM's self-generated
+vectors are equivalent to a dedicated embedding model, establishing single-model
+closure on the document side.
+
+\textbf{Correct reading of grounding}: the goal is not full agreement (that
+would mean the graph is redundant with the vectors) but \emph{partial}
+agreement---cluster-level ARI is low (0.02--0.18) while permutation
+percentiles are 97--100, indicating that geometry encodes relational structure
+and that the relation graph carries information beyond geometry.
+
+\subsection{Equivalence: matrix operations $\equiv$ graph traversal}
+\label{sec:math:equivalence}
+
+Phase 41 (full scale, both corpora): the matrix forms of $q \times \mathbf{M}$
+(concept propagation) and $\mathbf{W} \times q$ (relation expansion) agree with
+node-by-node graph traversal \emph{score for score} (top-10 overlap and
+Kendall $\tau$ both 1.000). Graph retrieval can be fully matricized; matrix
+acceleration brings no practical gain at current scale (milliseconds vs.\
+milliseconds)---its value lies in scaling and spectral methods. Ridge
+de-collinearity is unnecessary and distorts the ranking.
+
+\subsection{Decoupling: geometry and relation structure are different mathematical objects}
+\label{sec:math:decoupling}
+
+Two independent experiments corroborate each other (Phase 46 P3 + Phase 47 S4):
+\begin{itemize}
+\item the $ws$ space has linear morphological structure (singular/plural
+algebra top-1 50\% vs.\ 2\% random) but \textbf{no linear relational
+structure} (relational analogies $\approx$ random);
+\item forcing $ws$ geometry onto the tensor concept factors (coupling
+regularization) drops link-prediction holdout AUC from 0.81 to
+0.63--0.68---\textbf{forcing a shared latent space is harmful}.
+\end{itemize}
+
+Implication: the architecture must be heterogeneously layered
+(\S\ref{sec:method:arch}); the ``bijective consistency'' goal is downgraded to
+partial agreement.
+
+\subsection{The cloze law}
+\label{sec:math:cloze}
+
+Cloze-style prompts read out syntactic continuations (\emph{several},
+\emph{properties}) rather than semantic content---replicated independently
+three times: Phase 16/24 (recursive expansion), 42 (query-side arm A), and 43
+(attribute fill-in). The two effective anchorings for J-Lens readout are
+\emph{entity positions} (concept words in the prefill, Phase 35) and
+\emph{restricted answer sets} (Phase 44). This and the paired-question protocol
+(\S\ref{sec:background}) are mutually causal explanations.

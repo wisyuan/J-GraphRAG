@@ -1,0 +1,74 @@
+\section{Introduction}
+
+\subsection{Problem}
+
+GraphRAG augments retrieval with a knowledge graph, but the cost structure of
+graph construction limits its practicality. Table~\ref{tab:cost-compare}
+contrasts a conventional \texttt{generate()}-based indexing pipeline with the
+workspace-readout pipeline proposed here.
+
+\begin{table}[t]
+\centering
+\caption{Indexing pipeline: conventional LLM \texttt{generate()} vs.\ J-Lens workspace readout.}
+\label{tab:cost-compare}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Dimension & Conventional (\texttt{generate()}) & This work (J-Lens readout) \\
+\midrule
+Time per chunk & 5--60\,s & \textbf{0.17\,s} \\
+Output format & Structured JSON/triples (parse + retry) & None---direct workspace logits \\
+Reliability on 7B & \texttimes\ JSON truncation (Fast-GraphRAG: ACC 3.6\%) & \checkmark\ stable readout \\
+API cost & \$5--15 per 1k documents & \textbf{\$0} \\
+Energy efficiency & 1$\times$ & \textbf{347$\times$} (measured, Phase 26) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Core idea}
+
+The Jacobian Lens (J-Lens; Gurnee \& Sofroniew et al., 2026) reveals a
+\emph{global workspace} inside LLMs (the \emph{J-space}): a set of verbalizable
+representations that carry intermediate reasoning. The key observation behind
+this work: since the model has already placed concepts and relations into its
+workspace while reading a document, \emph{extracting knowledge does not require
+the model to generate---it only requires reading the workspace}. Each
+extraction step changes from one generation (5--20\,s) to one forward pass
+(0.17\,s).
+
+\subsection{Research questions and summary of findings}
+
+\begin{table}[t]
+\centering
+\caption{Research questions and conclusions.}
+\label{tab:rq}
+\begin{tabular}{@{}lp{4.8cm}p{6.2cm}@{}}
+\toprule
+RQ & Question & Conclusion \\
+\midrule
+RQ1 & Can extraction steps be replaced by workspace readout? &
+\textbf{Yes} (concepts, relations, roles, disambiguation), with sharp
+boundaries (\S\ref{sec:negative}). \\
+RQ2 & Are the extracted structures mathematically closed (grounded +
+computable)? & \textbf{Yes}: grounding holds (parity with bge-m3 after
+debiasing); matrix form $\equiv$ graph traversal, exactly
+(\S\ref{sec:math}). \\
+RQ3 & What is the computational home of each graph capability? &
+One capability, one home: attributes $\to$ geometry, disambiguation $\to$
+readout, multi-hop $\to$ graph/tensor (\S\ref{sec:capability}). \\
+RQ4 & How much performance is retained after replacement in real frameworks? &
+LightRAG $\geq 0.9$ (both domains: 1.01/1.10); HippoRAG2 medical 1.00
+(\S\ref{sec:replacement}). \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table~\ref{tab:rq} summarizes the four research questions. The remainder of the
+paper is organized as follows: \S\ref{sec:background} introduces the J-Lens and
+the evaluation benchmark; \S\ref{sec:method} presents the extraction method,
+the matrix formalization, online retrieval, and the final four-layer
+architecture; \S\ref{sec:math} states the mathematical properties;
+\S\ref{sec:capability} gives the capability map; \S\ref{sec:replacement}
+reports end-to-end replacement experiments; \S\ref{sec:negative} collects the
+negative results; \S\ref{sec:escape} describes the escape architecture;
+\S\ref{sec:discussion} discusses cost accounting, methodology, limitations, and
+future work.

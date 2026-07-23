@@ -1,0 +1,78 @@
+\section{Replacement Experiments (RQ4)}
+\label{sec:replacement}
+
+\subsection{Protocol}
+\label{sec:replacement:protocol}
+
+\textbf{Replacement--retention}: we faithfully reimplement the non-LLM parts
+of each framework (graph construction logic + retrieval algorithm) and swap
+only the LLM extraction for the hybrid pipeline of \S\ref{sec:method:offline}.
+The originals cannot be run locally (Fast-GraphRAG is broken), so we convert
+via the archived leaderboard numbers plus a conversion factor:
+\begin{align}
+\text{retention} &= \mathrm{ACC}(\text{replaced}, \text{our judge}) \times \text{factor} \;/\; \text{leaderboard original},\\
+\text{factor} &= \text{leaderboard RAG mean} \;/\; \text{our co-run B0}
+\quad (\text{medical } 1.005,\ \text{novel } 0.885).
+\end{align}
+The verdict line is $\geq 0.9$. Evaluation: medical 56 questions (14 per level
+$\times$ 4 levels) + novel 48 questions, DeepSeek judge (noise
+$\pm 0.03$--$0.05$).
+
+\subsection{LightRAG-J (Phase 50 $\to$ 53)}
+
+Full narrative: the concept-graph retention was 0.842/0.900 (below the line)
+$\to$ failure analysis localized the bottleneck to \emph{entity granularity}
+(topic concepts vs.\ named-entity mismatch) $\to$ Phase 52 proved J-Lens entity
+readout structurally infeasible $\to$ Phase 53 filled the gap with text-side
+detection:
+
+\begin{table}[t]
+\centering
+\caption{LightRAG-J retention (ACC / retention ratio).}
+\label{tab:lightragj}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Arm & medical & novel \\
+\midrule
+B0 (bge) & 0.607 / 0.954 & 0.542 / 1.064 \\
+Concept graph (ah) & 0.536 / 0.842 & 0.458 / 0.900 \\
+\textbf{Concept + entity graph (ah)} & \textbf{0.643 / 1.011 \checkmark} & \textbf{0.562 / 1.104 \checkmark} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Retained in both domains, surpassing the original} (7B J-Lens +
+text-side rules vs.\ GPT-4o-mini extraction).
+
+\subsection{HippoRAG-J (Phase 51)}
+
+Pure-matrix PPR reimplementation (official default damping $=0.5$):
+
+\begin{table}[t]
+\centering
+\caption{HippoRAG-J retention under different passage weights.}
+\label{tab:hipporagj}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Arm & medical & novel \\
+\midrule
+Official default (passage $w=0.05$) & 0.830 \texttimes & 0.751 \texttimes \\
+\textbf{passage $w=0.3$ (recalibrated)} & \textbf{0.996 \checkmark} & 0.751--0.881 (judge jitter) \\
+passage $w=0.8$ & 0.941 \checkmark & 0.881 (borderline) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{medical retained; novel borderline} (0.881, within judge noise of the
+0.9 line). Two deterministic findings: recognition memory (online LLM
+filtering) stably adds $+0.07$/$+0.08$ ACC and is worth keeping; the passage
+weight must be recalibrated per graph (the official value was calibrated on
+their OpenIE graph scale).
+
+\subsection{Comparative analysis}
+
+\textbf{dual-level is more stable than PPR on our graphs} (1.011/1.104 vs.\
+0.996/0.881): MAX aggregation + naive interleaving is more robust to uneven
+edge weights; PPR's global diffusion is highly sensitive to the passage/phrase
+reset ratio. The production default is dual-level, with PPR as a tunable
+option.

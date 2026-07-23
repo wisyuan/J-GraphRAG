@@ -1,0 +1,111 @@
+\section{Method}
+\label{sec:method}
+
+\subsection{Offline extraction (zero LLM generation cost throughout)}
+\label{sec:method:offline}
+
+\paragraph{Two-pass concept extraction} (Phase 25+35; 2 forwards per chunk):
+\begin{enumerate}
+\item \textbf{Pass 1, concepts}: concern prompt (\emph{``What concepts does this
+text discuss?''}) $\to$ full-layer depth gradient + position $-1$ readout
+$\to$ triple filtering (ASCII / prefill blacklist / POS) $\to$ BM25-based BPE
+completion $\to$ corpus validation with DF $\geq 2$. Accuracy 80\% (human
+review).
+\item \textbf{Pass 2, role expansion}: inverted prefill (\emph{``The concepts
+are: \{concepts\}''}) $\to$ scan the workspace at concept positions $\to$
+document-specific role words (e.g., Nutrition $\to$ Education, 71\%
+document-specific). The same forward pass also yields, at zero marginal cost,
+each concept's conditional vector $ws$ (the residual after
+\texttt{lens.transport}), the vector asset used in \S\ref{sec:math}.
+\end{enumerate}
+
+\paragraph{Text-side entity detection} (model-free): capitalized spans +
+terminology spans + frequency/rule filtering. Phase 52 proves the J-Lens
+cannot read out low-frequency proper names (a structural limitation of 7B
+models), but proper names are explicitly present in the
+text---\emph{detection does not require generation}. This yields 11{,}530
+(medical) and 16{,}186 (novel) entities with 100\% detection on the failure
+list.
+
+\paragraph{Relation extraction} (1 forward per pair): dual-concept concern
+prompt (\emph{``The relationship between A and B is''}) $\to$ position $-1$
+$\to$ relation words; 100\% coverage (Phase 27), refined with V3 priors +
+prefill scan (Phase 37). \textbf{Works for rare entities as well} (Phase 53
+S2, 62.5\%)---the model cannot read out the entity token but can read out the
+relation word (common vocabulary).
+
+\paragraph{Entity disambiguation} (1 forward per pair): dual-concept concern +
+restricted-classification prefill (\emph{``Answer:''}); accuracy 0.80, beating
+the bge cosine baseline of 0.60 (Phase 44). Key engineering finding: the
+language prior of the prefill wording directly determines the readout
+(\emph{``They are''} locks the output to \emph{``related''}); a restricted
+answer set is essential.
+
+\paragraph{Prompt design law} (three independent replications: Phase 16/24, 42,
+43): \emph{cloze-style prompts read out syntactic continuations rather than
+semantic content; J-Lens readout must be anchored at entity positions (concept
+words in the prefill) or on a restricted answer set.}
+
+\subsection{Data structures: matrix formalization}
+\label{sec:method:matrix}
+
+The extraction products are organized into four matrices/tensors, all amenable
+to linear-algebraic operations:
+\begin{itemize}
+\item $\mathbf{M}$: concept/entity--document map ($N \times N_{\text{chunks}}$,
+sparse), $M[i,j] = \mathrm{IDF}(i) \times \mathrm{BM25}_{tf}(i,j)$;
+\item $\mathbf{W}$: concept-relation adjacency ($N \times N$, typed,
+probability-weighted); third-order form $\mathcal{T}[i,r,j]$ (relation-type
+tensor);
+\item $\mathbf{E}_{ws}$: concept workspace conditional vectors
+($N \times 3584$), produced for free in Pass 2;
+\item $\mathbf{R}$: concept-role matrix (optional).
+\end{itemize}
+
+\subsection{Online retrieval}
+\label{sec:method:online}
+
+\paragraph{Seed + expand} (the only integration pattern verified correct,
+Phase 41B/42):
+\begin{enumerate}
+\item Query $\to$ bge-m3 $\to$ top-$K$ seed chunks (seeds fixed);
+\item concept propagation: $q \times \mathbf{M}$ (one matrix multiply);
+\item relation expansion: $\mathbf{W} \times q$ (one matrix multiply);
+\item expansions fill the remaining top-$K$ slots ($\text{seed}_k = 5$).
+\end{enumerate}
+
+\paragraph{Reimplemented graph retrieval algorithms} (\S\ref{sec:replacement}):
+\begin{itemize}
+\item \textbf{dual-level} (LightRAG): query $\to$ dual-path vector matching
+over entities/relations $\to$ one-hop neighbors $\to$ chunk MAX aggregation
+interleaved with naive retrieval;
+\item \textbf{PPR} (HippoRAG2): $\alpha\,(I - (1-\alpha)\mathbf{P})^{-1} s$,
+with phrase seeds (query-to-triple top-5 + recognition-memory filtering) and
+passage seeds (bge similarity $\times$ weight factor).
+\end{itemize}
+
+\subsection{Final architecture: four heterogeneous layers}
+\label{sec:method:arch}
+
+\begin{table}[t]
+\centering
+\caption{The four-layer heterogeneous architecture.}
+\label{tab:arch}
+\begin{tabular}{@{}llll@{}}
+\toprule
+Layer & Content & Source & Cost \\
+\midrule
+Symbolic/abstract & Concepts, relations, roles, disambiguation & J-Lens workspace readout & 1 forward per chunk(/pair) \\
+Surface & Named entities, proper names, terms & Text-side detection (rules/BM25) & $\sim 0$ \\
+Geometric & Attributes, similarity, grounding validation & $\mathbf{E}_{ws}$ / $\mathbf{M}$ vectors & $\sim 0$ \\
+Relational & Multi-hop, link completion & Powers of $\mathbf{W}$ / CP tensor & $\sim 0$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Division-of-labor principle: \emph{the model does abstraction (the most
+expensive and error-prone part of generation), deterministic methods do the
+surface (the part that was free anyway), and escape paths are reserved for the
+hard cases} (\S\ref{sec:escape}). Layers align through concept symbols but do
+not share a vector space (the decoupling verdict of
+\S\ref{sec:math:decoupling}).
