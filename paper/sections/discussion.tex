@@ -38,20 +38,13 @@ readability, noise in the first third of layers, prefill modulation).
 \begin{itemize}
 \item Single-model validation (Qwen2.5-7B 4bit + fitted J-Lens); cross-model
 generalization unknown.
-\item Two domains (medical/novel); the L4 sample is small (14 questions), and
-on novel L4 \emph{all} methods---including dense baselines---score near zero.
-We currently suspect a question-set/judge artifact rather than a retrieval
-failure, but this is not yet confirmed.
-% TODO(Phase54): replace the following sentence with the confirmed diagnosis of
-% the novel-L4 near-zero anomaly (question set vs. judge vs. retrieval).
-\todo{Phase 54 diagnosis of novel-L4 near-zero pending.}
-If the investigation confirms an evaluation artifact, the L4 numbers should be
-re-measured on a corrected protocol and our retrieval conclusions stand; if it
-instead reveals a genuine retrieval deficiency, the escape architecture of
-\S\ref{sec:escape} predicts precisely this failure mode (queries linking to no
-graph node) and the L4 results become a stress test for confidence gating.
+\item Two domains (medical/novel); the L4 sample is small (14 questions). The
+novel-L4 near-zero anomaly was confirmed to be a judge-protocol artifact
+(strict gold matching applied to Creative Generation) and is corrected in
+\S\ref{sec:replacement:l4fix}; the residual L4 gap is generation-side
+faithfulness, not retrieval.
 \item The DeepSeek judge is non-deterministic ($\pm 0.03$--$0.05$);
-borderline conclusions (novel 0.881) are limited by this.
+borderline conclusions (HippoRAG-J novel 0.914) are limited by this.
 \item Entity--entity relation edges for rare proper names are dominated by
 co-occurrence default edges; scaling readout coverage is future work.
 \end{itemize}

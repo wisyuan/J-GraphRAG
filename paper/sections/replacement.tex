@@ -63,16 +63,63 @@ passage $w=0.8$ & 0.941 \checkmark & 0.881 (borderline) \\
 \end{tabular}
 \end{table}
 
-\textbf{medical retained; novel borderline} (0.881, within judge noise of the
-0.9 line). Two deterministic findings: recognition memory (online LLM
+\textbf{medical retained; novel borderline under the strict judge} (0.881,
+within judge noise of the 0.9 line; see \S\ref{sec:replacement:l4fix} for the
+corrected verdict). Two deterministic findings: recognition memory (online LLM
 filtering) stably adds $+0.07$/$+0.08$ ACC and is worth keeping; the passage
 weight must be recalibrated per graph (the official value was calibrated on
 their OpenIE graph scale).
 
+\subsection{L4 evaluation-protocol correction (Phase 54)}
+\label{sec:replacement:l4fix}
+
+The strict judge asks whether the generated answer conveys the same information
+as the gold answer. This is appropriate for L1--L3 but structurally biased
+against L4 (Creative Generation), whose gold answer is only \emph{one} valid
+realization---on novel L4 even the dense baseline B0 scored $0/12$, while the
+official leaderboard reports 23.8--48.3\% for the same level (the benchmark
+evaluates Creative Generation with an Accuracy / Factual Score / Coverage
+rubric, not strict gold matching). We therefore re-judged all stored L4 answers
+with a matching rubric judge (binary rule: accuracy $\geq 0.5$ and zero factual
+contradictions), leaving L1--L3 verdicts untouched:
+
+\begin{table}[t]
+\centering
+\caption{Retention before $\to$ after the L4 protocol correction.}
+\label{tab:l4fix}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Arm & medical & novel \\
+\midrule
+LightRAG-J final & 1.011 $\to$ \textbf{1.207} & 1.104 $\to$ \textbf{1.227} \\
+HippoRAG-J $w{=}0.3$ & 0.996 $\to$ \textbf{1.245} & 0.751 $\to$ 0.816 \\
+HippoRAG-J $w{=}0.5$ & --- $\to$ 1.107 & 0.881 $\to$ \textbf{0.914} \\
+HippoRAG-J $w{=}0.8$ & --- $\to$ 1.218 & 0.881 $\to$ \textbf{0.947} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Three checks bound the correction's validity. (i) \emph{Calibration}: under the
+rubric judge our B0 anchor lands near the official plain-RAG L4 numbers (novel
+0.333 vs.\ 0.385--0.415; medical 0.714 vs.\ 0.589--0.606), a deviation of the
+same order as judge noise. (ii) \emph{Threshold robustness}: the binary rule's
+threshold can vary in $[0.3, 0.6]$ without changing any conclusion.
+(iii) \emph{Residual diagnosis}: retrieval is not the remaining
+bottleneck---key entities appear in the top-10 chunks for 71--100\% of L4
+questions; the residual L4 gap is generation-side faithfulness (the rubric
+judge catches fabricated details in the generated text). Caveats: the recompute
+mixes our rubric L4 with leaderboard averages produced by the official metric
+(bounded to $\pm 0.12$ by the anchor check), and the re-judge is a single run
+(one novel L4 question $\approx \pm 0.021$ total ACC), so HippoRAG-J novel
+sitting just above the 0.9 line should be read as \emph{retained, within
+noise}.
+
 \subsection{Comparative analysis}
 
-\textbf{dual-level is more stable than PPR on our graphs} (1.011/1.104 vs.\
-0.996/0.881): MAX aggregation + naive interleaving is more robust to uneven
-edge weights; PPR's global diffusion is highly sensitive to the passage/phrase
-reset ratio. The production default is dual-level, with PPR as a tunable
-option.
+Under the corrected L4 protocol both algorithms clear the 0.9 line in both
+domains (dual-level 1.207/1.227; best PPR arms 1.245/0.947). The stability
+argument for dual-level nevertheless stands: PPR's novel retention swings
+0.816--0.947 across passage weights and needs per-graph recalibration, while
+dual-level (MAX aggregation + naive interleaving) reaches its number without
+any per-graph tuning. The production default is dual-level, with PPR as a
+tunable option.
