@@ -68,7 +68,7 @@ set -a; . .env; set +a; export HF_HUB_DISABLE_XET=1
 1. ~~**novel L4 全方法趋零排查**（Phase 54）~~ **已完成**：评测协议 artifact（§19）；rubric 重判后保持率全面上升，HippoRAG-J novel 翻正
 2. **更大 L4 样本确认多跳增益**（Phase 55，novel 67 题 Creative Generation 全量）——效果故事最薄弱环节，GPU 重活；**必须同时改生成侧**（去 concisely、提 max_tokens，S2 证据：L4 残余低分是生成忠实度问题）
 3. **更强基线**：补 vs LightRAG/HippoRAG2 的 retrieval 级指标对比（Table 3 recall/relevance 已存档）
-4. **跨模型泛化**（直接回应"单模型验证"局限，arXiv v1 能容纳则加分）：[neuronpedia/jacobian-lens](https://huggingface.co/neuronpedia/jacobian-lens) 已有预训练 lens（qwen3-1.7b/4b/8b/14b/32b、gemma-3-270m~27b 全系、llama3.1-8b、olmo-3 等），**无需自拟合**；8GB 显存选 ≤8B 4bit。最小复现：概念提取 + 接地 + 单域替换评测
+4. **跨模型泛化**（直接回应"单模型验证"局限，arXiv v1 能容纳则加分）：[neuronpedia/jacobian-lens](https://huggingface.co/neuronpedia/jacobian-lens) 已有预训练 lens（qwen3-1.7b/4b/8b/14b/32b、gemma-3-270m~27b 全系、llama3.1-8b、olmo-3 等），**无需自拟合**。**执行手册：`docs/cross-model-4090-runbook.md`（Phase 56/57 设计 + 4090 环境准备，在 RTX 4090 机器执行）**
 5. **参数量 × lens 精度消融**：gemma-3 阶梯（270m/1b/4b/12b/27b 同架构全有 lens）做规模曲线；lens 精度可用语料子采样（平均 Jacobian 的样本数）做精度刻度盘
 6. **多模态扩展**：gemma-3（4b/12b/27b 为 SigLIP 多模态且已有 lens）验证图像/非文本输入的 workspace 可读性——研究问题新（lens 是否覆盖视觉 token 未知），先小规模冒烟
 7. 可选：novel ee 边换 J-Lens 读出边重测 Phase 51 novel（预期 0.881→≥0.9）；角色词 BPE 碎片过滤（WordNet 完整词验证）；实体-实体关系边规模化读出
