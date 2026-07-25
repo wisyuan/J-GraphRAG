@@ -14,8 +14,8 @@ __pycache__/
 data/.embedcache
 data/.kwcache
 data/.xlmrcache
-data/m6/concept_cache/
-data/m6/fast_graphrag_workspace/
+data/m6/concept_cache
+data/m6/fast_graphrag_workspace
 data/m6/*.npz
 
 # OS / editor
