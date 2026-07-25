@@ -66,13 +66,16 @@ set -a; . .env; set +a; export HF_HUB_DISABLE_XET=1
 **论文**：arXiv 先行（tech-report 英文化，`paper/` 目录，experiment 分支），之后按贡献规模判断是否投会议。投稿前必须先关上 L4 两颗雷（下面前两项）。
 
 1. ~~**novel L4 全方法趋零排查**（Phase 54）~~ **已完成**：评测协议 artifact（§19）；rubric 重判后保持率全面上升，HippoRAG-J novel 翻正
-2. **更大 L4 样本确认多跳增益**（Phase 55，novel 67 题 Creative Generation 全量）——效果故事最薄弱环节，GPU 重活；**必须同时改生成侧**（去 concisely、提 max_tokens，S2 证据：L4 残余低分是生成忠实度问题）
+2. ~~**更大 L4 样本确认多跳增益**（Phase 55）~~ **已完成，FALSIFIED**：novel 67 题全量 + 修正协议，图扩展臂 0.373 vs b0 0.448（discordant 5:10）——图扩展在创意生成有害，多跳主张收缩为判别任务（§20）。论文按"null result"过渡支落地
 3. **更强基线**：补 vs LightRAG/HippoRAG2 的 retrieval 级指标对比（Table 3 recall/relevance 已存档）
 4. **跨模型泛化**（直接回应"单模型验证"局限，arXiv v1 能容纳则加分）：[neuronpedia/jacobian-lens](https://huggingface.co/neuronpedia/jacobian-lens) 已有预训练 lens（qwen3-1.7b/4b/8b/14b/32b、gemma-3-270m~27b 全系、llama3.1-8b、olmo-3 等），**无需自拟合**。**执行手册：`docs/cross-model-4090-runbook.md`（Phase 56/57 设计 + 4090 环境准备，在 RTX 4090 机器执行）**
 5. **参数量 × lens 精度消融**：gemma-3 阶梯（270m/1b/4b/12b/27b 同架构全有 lens）做规模曲线；lens 精度可用语料子采样（平均 Jacobian 的样本数）做精度刻度盘
 6. **多模态扩展**：gemma-3（4b/12b/27b 为 SigLIP 多模态且已有 lens）验证图像/非文本输入的 workspace 可读性——研究问题新（lens 是否覆盖视觉 token 未知），先小规模冒烟
 7. 可选：novel ee 边换 J-Lens 读出边重测 Phase 51 novel（预期 0.881→≥0.9）；角色词 BPE 碎片过滤（WordNet 完整词验证）；实体-实体关系边规模化读出
-8. 产品化候选（dev 分支）：jgraphrag 包沉淀建图/检索 API（目前是实验脚本集合）
+8. **查询侧 LLM 关切生成臂**（产品化决策输入，来自 dev 设计讨论 2026-07-23）：LLM 自由生成查询关切点/子问题 vs 模板化 prompt 关键词提取 vs bge 直查（phase50 ah 臂现状），三臂对照。判决指标=GraphRAG-Bench 保持率（重点看 L4 全局/多跳题分层）。设计约束：① 这是"LLM 关切生成 → bge 种子"的**种子增强**，不是概念路由替代种子（后者 Phase 42 已证伪）；② 避免 cloze 式 prompt 的失败模式（四次证伪：只产模板续词——生成必须锚定问题实体或受限答案集）；③ 参照系=HippoRAG recognition memory（查询侧 LLM 做过滤/确认值 +0.07-0.08，做提取尚未见增益）。产品侧已预留 QueryProcessor 协议位，本臂 SUPPORTED 才收编。
+9. **增量建图可行性**（产品化决策输入，同上）：dev v1 的 insert 语义=追加语料+全量重建（chunk 级提取缓存摊销成本）。本实验验证真增量追加（新 chunk 直接入图、DF/共现统计增量累加）相对全量重建的**行为漂移程度**：判决指标=增量图与全量图的重合度（节点/边 Jaccard、检索 top-10 重叠、Kendall τ）+ 漂移统计监控量（DF 分布偏移、共现密度变化）触发全量重建的阈值可行性。SUPPORTED 则把增量姿势带回 dev v2。
+10. **跨语言概念投影**（条件触发：出现中文/多语场景时启动）：中文概念 → 英文概念空间的映射层（翻译对齐或跨语言嵌入映射），挂在 dev 预留的 ConceptNormalizer 钩子上。研究渊源=Phase 9 xlmr_vec2vec 跨语言向量映射；前置问题是 Qwen J-Lens 中文读出的概念质量本身未验证，需先小规模冒烟。
+11. 产品化候选（dev 分支）：jgraphrag 包沉淀建图/检索 API（v0.1 已完成 2026-07-23，提交 ec6ece0）
 
 ## 7. 与 lincledb 的关系
 

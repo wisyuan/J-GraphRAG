@@ -899,3 +899,16 @@ p = 0.8（当前概念提取准确率）→ 5x 成本下降；p = 0.7 → 3x
 | HippoRAG-J c_w0.8 | — → 1.218 | 0.881 → **0.947** |
 
 **含义**：①两个替换实验双域全部 retained（HippoRAG-J novel 0.914/0.947 越过 0.9 线，但仍在 judge 噪声边缘，报告需标注）；②L4 残余低分（novel ~0.33）是生成侧忠实度问题（judge 抓到捏造细节），不是检索/judge 问题——Phase 55 生成侧必须改 prompt（去 concisely、提 max_tokens）；③本重算将我方 rubric L4 与官方 metric 算的排行榜均值混合比较，锚检验显示偏差 ±0.12 内，方向有效但精确值带此 caveats；④单次重判，DeepSeek 噪声 ±1 题（novel L4 1 题 ≈ total ±0.021）。
+
+## 20. Phase 55：novel L4 全量多跳增益——FALSIFIED（图扩展在创意生成有害）（2026-07-24）
+
+**设计**：novel 全量 67 题 Creative Generation，双臂同题配对：b0（bge top-10）vs ah（Phase 53 概念+实体图 dual-level + 交错，最终 LightRAG-J 配置）。修正协议：rubric judge（Phase 54）+ 生成侧改造（任务适配 prompt、去 concisely、max_tokens 800）。预设判决（配对 discordant）：b−c≥5 SUPPORTED；|b−c|≤2 无增益；c−b≥3 FALSIFIED。
+
+**结果**（`data/m6/phase55_l4_scale.json`，修复后）：b0 ACC **0.448** / ah **0.373**；coverage 0.624/0.590；discordant b=5/c=10，diff=−5 → **FALSIFIED**。
+
+**判决：图扩展在 novel L4 创意生成上有害（中度）**。机制与 Phase 42 同源：概念是主题锚点不是查询语义——L4 需要特定场景的叙事细节，图扩展引入的 hub/主题块稀释了 top-10 中的场景原文。**多跳主张收缩为判别任务**（W² AUC 0.998 不受影响）；端到端保持率 >1 不受影响（图臂赢在 L1-L3，L4 仅占 1/4 且修复协议后绝对值已接近官方 RAG 水平——b0 0.448 vs 官方 0.385-0.415，生成改造有效）。
+
+**失败模式记录（测量基础设施，三条都已加防护）**：
+1. **空答案 judge 真空 1.0 假阳性**：v4 推理模型生成侧静默返空（推理链吃 budget，14/134=10%），空答案被 rubric judge 判 acc=1.0/fe=0（b0 虚增 9 场、ah 5 场）→ `rubric_judge` 加空答案护栏，空答案升级 budget 重生成（`phase55 --repair`）。
+2. **v4 judge 必须 `thinking=False`**：v4 是推理模型，judge 提示词嵌入长答案时推理链膨胀，max_tokens=2000 也全耗在隐藏推理上，content 为空（finish_reason=length）→ `DeepSeekProvider.complete(stream)` 加 `thinking` 参数（extra_body thinking disabled），phase54/26 两个 judge 都已启用。关推理后 26 token 出干净 JSON。
+3. **deepseek-chat 2026-07-24 退役**：API 仅支持 deepseek-v4-pro/flash；config 默认值已更新。**协议漂移声明**：Phase 54 用 deepseek-chat、Phase 55 用 v4-flash，跨 Phase 的 L4 绝对值不可比，只有同批次内的臂间配对比较有效（本实验主判决即配对设计，不受影响）。
