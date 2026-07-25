@@ -38,11 +38,14 @@ readability, noise in the first third of layers, prefill modulation).
 \begin{itemize}
 \item Single-model validation (Qwen2.5-7B 4bit + fitted J-Lens); cross-model
 generalization unknown.
-\item Two domains (medical/novel); the L4 sample is small (14 questions). The
-novel-L4 near-zero anomaly was confirmed to be a judge-protocol artifact
-(strict gold matching applied to Creative Generation) and is corrected in
-\S\ref{sec:replacement:l4fix}; the residual L4 gap is generation-side
-faithfulness, not retrieval.
+\item Two domains (medical/novel). The novel-L4 near-zero anomaly was
+confirmed to be a judge-protocol artifact (strict gold matching applied to
+Creative Generation) and is corrected in \S\ref{sec:replacement:l4fix}; the
+residual L4 gap is generation-side faithfulness, not retrieval.
+\item On the full 67-question novel Creative Generation set (Phase 55), the
+graph arm \emph{trails} dense-only retrieval at L4 (0.373 vs.\ 0.448); the
+end-to-end retention advantage is carried by L1--L3. The multi-hop claim is
+therefore restricted to discrimination tasks (\S\ref{sec:capability}).
 \item The DeepSeek judge is non-deterministic ($\pm 0.03$--$0.05$);
 borderline conclusions (HippoRAG-J novel 0.914) are limited by this.
 \item Entity--entity relation edges for rare proper names are dominated by
@@ -53,15 +56,16 @@ co-occurrence default edges; scaling readout coverage is future work.
 \label{sec:discussion:future}
 
 \begin{enumerate}
-\item \textbf{Larger L4 samples} to confirm the multi-hop gain (full novel
-question set or the 2062-question subset).
-% TODO(Phase55): fill in the confirmed multi-hop gain (or its absence) from the
-% larger-L4-sample run; the transition below supports either outcome.
-\todo{Phase 55 multi-hop gain on larger L4 sample pending.}
-A confirmed gain would close the weakest link in the effect story and justify
-graph expansion at L4; a null result would shift the multi-hop claim to
-discrimination-only (\S\ref{sec:capability}) and redirect effort to generation
-side.
+\item \textbf{Generation-side faithfulness at L4}: Phase 55 ran the full
+67-question novel Creative Generation set under the corrected protocol
+(rubric judge + task-adaptive generation). The dense baseline now slightly
+exceeds the official plain-RAG L4 range (0.448 vs.\ 0.385--0.415), validating
+the generation fix---but graph expansion \emph{hurts} creative generation
+(0.373 vs.\ 0.448; discordant pairs 5:10): scene-specific narrative chunks
+are diluted by hub chunks, mirroring the Phase-42 finding that concepts are
+thematic anchors, not query semantics. Improving generation-side faithfulness
+(the rubric judge's dominant failure mode) and L4-aware retrieval weighting
+are the open problems.
 \item \textbf{Cross-model generalization}: fitting J-Lenses for
 Qwen3 / Gemma-3 / Llama-3.1 and verifying workspace readability---pretrained
 lenses for these models already exist in the

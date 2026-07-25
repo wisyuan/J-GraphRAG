@@ -114,6 +114,15 @@ mixes our rubric L4 with leaderboard averages produced by the official metric
 sitting just above the 0.9 line should be read as \emph{retained, within
 noise}.
 
+A follow-up on the full 67-question novel Creative Generation set (Phase 55,
+same rubric judge plus a task-adaptive generation prompt) sharpens the
+picture in both directions: the dense baseline reaches 0.448---slightly above
+the official plain-RAG L4 range, confirming the corrected measurement
+chain---yet the graph arm trails it at L4 (0.373; discordant pairs 5:10).
+Graph expansion thus helps L1--L3 but not creative generation, where
+scene-specific narrative chunks are diluted by hub chunks; we scope the
+multi-hop claim to discrimination tasks accordingly.
+
 \subsection{Comparative analysis}
 
 Under the corrected L4 protocol both algorithms clear the 0.9 line in both
