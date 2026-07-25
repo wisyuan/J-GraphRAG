@@ -21,7 +21,7 @@ BGE_M3_DEVICE = os.environ.get("LINCLE_BGE_M3_DEVICE", None)  # None = auto
 # --- LLM (DeepSeek, OpenAI-compatible) ---
 DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY", "")
 DEEPSEEK_BASE_URL = os.environ.get("DEEPSEEK_BASE_URL", "https://api.deepseek.com")
-DEEPSEEK_MODEL = os.environ.get("DEEPSEEK_MODEL", "deepseek-chat")
+DEEPSEEK_MODEL = os.environ.get("DEEPSEEK_MODEL", "deepseek-v4-pro")  # deepseek-chat retired 2026-07 (API: use deepseek-v4-pro/flash)
 
 # --- Dataset paths ---
 PI_REPO_PATH = os.environ.get("LINCLE_PI_REPO", "")  # path to cloned earendil-works/pi

@@ -58,9 +58,15 @@ class DeepSeekProvider:
     def __init__(self, model: str = DEEPSEEK_MODEL) -> None:
         self.model = model
 
-    def stream(self, prompt: str, max_tokens: int = 512) -> Iterator:
+    def stream(self, prompt: str, max_tokens: int = 512,
+               thinking: bool | None = None) -> Iterator:
         """Stream completion events. Yields ('start',) | ('delta', chunk, partial)
-        | ('done'|'error', Message). Errors arrive as ('error', Message), not raised."""
+        | ('done'|'error', Message). Errors arrive as ('error', Message), not raised.
+
+        thinking=False sends {'thinking': {'type': 'disabled'}} (v4 models):
+        judge/extraction calls must disable reasoning, otherwise the hidden
+        reasoning chain can consume the whole budget and content comes back
+        EMPTY with finish_reason 'length' (silent all-False judge failure)."""
         try:
             client = _client()
         except Exception as e:  # pre-flight (auth/config) failure
@@ -70,11 +76,15 @@ class DeepSeekProvider:
         yield ("start",)
         partial_parts: list[str] = []
         try:
+            kwargs: dict = {}
+            if thinking is False:
+                kwargs["extra_body"] = {"thinking": {"type": "disabled"}}
             resp = client.chat.completions.create(
                 model=self.model,
                 max_tokens=max_tokens,
                 stream=True,
                 messages=[{"role": "user", "content": prompt}],
+                **kwargs,
             )
             for chunk in resp:
                 if not chunk.choices:
@@ -107,10 +117,11 @@ class DeepSeekProvider:
             ),
         )
 
-    def complete(self, prompt: str, max_tokens: int = 512) -> Message:
+    def complete(self, prompt: str, max_tokens: int = 512,
+                 thinking: bool | None = None) -> Message:
         """Collect a stream into a single Message (discipline 1: complete=stream().result())."""
         msg: Optional[Message] = None
-        for ev in self.stream(prompt, max_tokens):
+        for ev in self.stream(prompt, max_tokens, thinking=thinking):
             if ev[0] in ("done", "error"):
                 msg = ev[1]
         if msg is None:

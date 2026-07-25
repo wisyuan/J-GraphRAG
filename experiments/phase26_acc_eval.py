@@ -85,7 +85,7 @@ def judge_answer_correctness(
         f"information as the gold answer? Answer with only YES or NO."
     )
     try:
-        msg = llm.complete(prompt, max_tokens=10)
+        msg = llm.complete(prompt, max_tokens=500, thinking=False)  # v4 推理模型：judge 关 thinking（旧值 10 + 推理链 = 静默全 False）
         resp = msg.content if hasattr(msg, 'content') else str(msg)
         return resp.strip().upper().startswith("YES")
     except Exception:

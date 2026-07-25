@@ -72,13 +72,18 @@ def load_gold(domain: str) -> dict:
 
 def rubric_judge(question: str, generated: str, gold: dict, llm) -> dict:
     """Judge one L4 answer. Returns {factual_errors, accuracy, coverage, acc_binary, error?}."""
+    if not generated.strip():
+        # 空答案触发 judge 真空 1.0 假阳性（Phase 55 实测 14 例）——拒绝评分
+        return {"acc_binary": None, "error": "empty generated answer"}
     prompt = RUBRIC_PROMPT.format(
         question=question,
         gold_answer=gold["answer"],
         evidence="\n".join(f"- {e}" for e in gold["evidence"]) or "(none provided)",
         generated_answer=generated,
     )
-    msg = llm.complete(prompt, max_tokens=150)
+    # v4 是推理模型：judge 必须关 thinking，否则长答案触发推理链爆炸、
+    # content 静默为空（finish_reason=length）
+    msg = llm.complete(prompt, max_tokens=800, thinking=False)
     text = msg.content if hasattr(msg, "content") else str(msg)
     m = re.search(r"\{[^{}]*\}", text, re.DOTALL)
     if not m:
@@ -159,7 +164,7 @@ def _selftest():
             self.content = c
 
     class MockLLM:
-        def complete(self, prompt, max_tokens=150):
+        def complete(self, prompt, max_tokens=150, thinking=None):
             if "fish" in prompt.lower():
                 return MockMsg('{"factual_errors": 0, "accuracy": 0.8, "coverage": 0.6}')
             return MockMsg("I cannot judge this.")  # malformed path
