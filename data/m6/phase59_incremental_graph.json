@@ -1,0 +1,45 @@
+{
+ "domain": "novel",
+ "split": {
+  "old_chunks": 3603,
+  "new_chunks": 788
+ },
+ "nodes": {
+  "full": 244,
+  "old_pruned": 198,
+  "inc_tombstone": 244,
+  "inc_no_tombstone": 244,
+  "jaccard_tombstone_vs_full": 1.0,
+  "jaccard_no_tombstone_vs_full": 1.0,
+  "resurrected": 46,
+  "lost_without_tombstone": 0
+ },
+ "edges": {
+  "full": 200,
+  "jaccard_tombstone_vs_full": 1.0,
+  "jaccard_no_tombstone_vs_full": 1.0
+ },
+ "top_pairs_selection": {
+  "jaccard_old_vs_full": 0.7094017094017094,
+  "note": "J-Lens 读出边（top-100 共现对）的选择集稳定性"
+ },
+ "retrieval_drift_stale_vs_fresh_idf": {
+  "top10_overlap_mean": 0.99375,
+  "kendall_tau_mean": 0.9665740740740739,
+  "n_questions": 48
+ },
+ "verdict": {
+  "gates": {
+   "node_jaccard": 0.98,
+   "overlap": 0.95,
+   "tau": 0.9
+  },
+  "measured": {
+   "node_jaccard": 1.0,
+   "overlap": 0.99375,
+   "tau": 0.9665740740740739
+  },
+  "incremental_supported": true,
+  "note": "检索漂移行是 IDF 陈旧 vs 刷新——增量系统不刷新 IDF 时的真实漂移"
+ }
+}

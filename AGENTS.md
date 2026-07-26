@@ -46,7 +46,7 @@ bash scripts/restore_env.sh   # /tmp 符号链接 + 数据集
 set -a; . .env; set +a; export HF_HUB_DISABLE_XET=1
 ```
 
-- **/tmp 链接会随重启失效**：`/tmp/qwen25-7b-it-weights`、`/tmp/jlens-qwen25-7b-it`、`/tmp/graphrag-bench`、`/tmp/beir-datasets`——脚本报 FileNotFoundError 时先重跑 `scripts/restore_env.sh`（或手动 ln -s）。
+- **/tmp 链接会随重启失效**：`/tmp/qwen25-7b-it-weights`、`/tmp/jlens-qwen25-7b-it`、`/tmp/graphrag-bench`、`/tmp/beir-datasets`——脚本报 FileNotFoundError 时先重跑 `scripts/restore_env.sh`（或手动 ln -s）。**离线恢复源**：GraphRAG-Bench 在 `lincledb/.model_cache/graphrag-bench/`（9.3MB 完整副本）和 `~/.cache/huggingface` 的 HF 快照里各有一份——restore_env 的 HF 下载失败（网络不通）时直接从这两处 cp，无需网络。
 - **GPU 8GB 的铁律**：① 同一进程**不能加载两次 4bit 模型**（显存不释放，第二次报 "modules dispatched on CPU or disk"）——多 domain 实验要分进程跑；② **bge-m3 与 Qwen 不同时驻留**（争显存崩溃）——bge 用 CPU（`LINCLE_BGE_M3_DEVICE=cpu`，注意是 LINCLE_ 前缀）或等 Qwen 进程结束。
 - **嵌入设备环境变量是 `LINCLE_BGE_M3_DEVICE`**（历史遗留名，jgraphrag/config.py 读它）。CPU 与 GPU 的嵌入缓存是**不同命名空间**——切设备会触发全量重嵌入（20k 三元组 ~45 分钟）。
 - **DeepSeek judge 非确定性 ±0.05 ACC**（56 题里约 ±3 题）：边界结论要跑重复或报噪声区间。
@@ -73,7 +73,7 @@ set -a; . .env; set +a; export HF_HUB_DISABLE_XET=1
 6. **多模态扩展**：gemma-3（4b/12b/27b 为 SigLIP 多模态且已有 lens）验证图像/非文本输入的 workspace 可读性——研究问题新（lens 是否覆盖视觉 token 未知），先小规模冒烟
 7. 可选：novel ee 边换 J-Lens 读出边重测 Phase 51 novel（预期 0.881→≥0.9）；角色词 BPE 碎片过滤（WordNet 完整词验证）；实体-实体关系边规模化读出
 8. **查询侧 LLM 关切生成臂**（产品化决策输入，来自 dev 设计讨论 2026-07-23）：LLM 自由生成查询关切点/子问题 vs 模板化 prompt 关键词提取 vs bge 直查（phase50 ah 臂现状），三臂对照。判决指标=GraphRAG-Bench 保持率（重点看 L4 全局/多跳题分层）。设计约束：① 这是"LLM 关切生成 → bge 种子"的**种子增强**，不是概念路由替代种子（后者 Phase 42 已证伪）；② 避免 cloze 式 prompt 的失败模式（四次证伪：只产模板续词——生成必须锚定问题实体或受限答案集）；③ 参照系=HippoRAG recognition memory（查询侧 LLM 做过滤/确认值 +0.07-0.08，做提取尚未见增益）。产品侧已预留 QueryProcessor 协议位，本臂 SUPPORTED 才收编。
-9. **增量建图可行性**（产品化决策输入，同上）：dev v1 的 insert 语义=追加语料+全量重建（chunk 级提取缓存摊销成本）。本实验验证真增量追加（新 chunk 直接入图、DF/共现统计增量累加）相对全量重建的**行为漂移程度**：判决指标=增量图与全量图的重合度（节点/边 Jaccard、检索 top-10 重叠、Kendall τ）+ 漂移统计监控量（DF 分布偏移、共现密度变化）触发全量重建的阈值可行性。SUPPORTED 则把增量姿势带回 dev v2。
+9. ~~**增量建图可行性**~~ **已完成（Phase 59，SUPPORTED，产品域）**：tombstone 增量 vs 全量节点/边 Jaccard 1.0、IDF 陈旧检索重叠 0.994/τ 0.967——增量姿势可带回 dev v2；产品语义：剪枝只剪节点不删 DF 计数器（无需墓碑）、IDF 定期后台刷新、J-Lens 读出边选择有 ~30% 漂移需接受或定期重选（§21）
 10. **跨语言概念投影**（条件触发：出现中文/多语场景时启动）：中文概念 → 英文概念空间的映射层（翻译对齐或跨语言嵌入映射），挂在 dev 预留的 ConceptNormalizer 钩子上。研究渊源=Phase 9 xlmr_vec2vec 跨语言向量映射；前置问题是 Qwen J-Lens 中文读出的概念质量本身未验证，需先小规模冒烟。
 11. 产品化候选（dev 分支）：jgraphrag 包沉淀建图/检索 API（v0.1 已完成 2026-07-23，提交 ec6ece0）
 
