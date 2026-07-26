@@ -76,6 +76,7 @@ set -a; . .env; set +a; export HF_HUB_DISABLE_XET=1
 9. ~~**增量建图可行性**~~ **已完成（Phase 59，SUPPORTED，产品域）**：tombstone 增量 vs 全量节点/边 Jaccard 1.0、IDF 陈旧检索重叠 0.994/τ 0.967——增量姿势可带回 dev v2；产品语义：剪枝只剪节点不删 DF 计数器（无需墓碑）、IDF 定期后台刷新、J-Lens 读出边选择有 ~30% 漂移需接受或定期重选（§21）
 10. **跨语言概念投影**（条件触发：出现中文/多语场景时启动）：中文概念 → 英文概念空间的映射层（翻译对齐或跨语言嵌入映射），挂在 dev 预留的 ConceptNormalizer 钩子上。研究渊源=Phase 9 xlmr_vec2vec 跨语言向量映射；前置问题是 Qwen J-Lens 中文读出的概念质量本身未验证，需先小规模冒烟。
 11. 产品化候选（dev 分支）：jgraphrag 包沉淀建图/检索 API（v0.1 已完成 2026-07-23，提交 ec6ece0）
+12. **Lens Zoo 纲领**（第二篇论文候选，seed：`docs/lens-zoo-program.md`）：单 LLM 多透镜功能区域制图 + 提取边界矩阵。缘起 Phase 56（J-space ≠ 语义空间）。入口 = S1 原始残差分层扫描
 
 ## 7. 与 lincledb 的关系
 
