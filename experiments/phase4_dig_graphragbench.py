@@ -150,7 +150,7 @@ def llm_judge_evidence_recall(query: str, context: str, evidence_statements: lis
         f"Format: one line per statement, e.g. '1. YES' or '2. NO'."
     )
 
-    msg = llm.complete(prompt, max_tokens=256)
+    msg = llm.complete(prompt, max_tokens=800, thinking=False)  # v4 推理模型：judge 关 thinking（否则 8000 字符 context 触发推理链膨胀，content 静默为空 → 误判全 NO）
     if msg.is_error:
         return 0.0
 
