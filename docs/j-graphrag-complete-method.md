@@ -912,3 +912,53 @@ p = 0.8（当前概念提取准确率）→ 5x 成本下降；p = 0.7 → 3x
 1. **空答案 judge 真空 1.0 假阳性**：v4 推理模型生成侧静默返空（推理链吃 budget，14/134=10%），空答案被 rubric judge 判 acc=1.0/fe=0（b0 虚增 9 场、ah 5 场）→ `rubric_judge` 加空答案护栏，空答案升级 budget 重生成（`phase55 --repair`）。
 2. **v4 judge 必须 `thinking=False`**：v4 是推理模型，judge 提示词嵌入长答案时推理链膨胀，max_tokens=2000 也全耗在隐藏推理上，content 为空（finish_reason=length）→ `DeepSeekProvider.complete(stream)` 加 `thinking` 参数（extra_body thinking disabled），phase54/26 两个 judge 都已启用。关推理后 26 token 出干净 JSON。
 3. **deepseek-chat 2026-07-24 退役**：API 仅支持 deepseek-v4-pro/flash；config 默认值已更新。**协议漂移声明**：Phase 54 用 deepseek-chat、Phase 55 用 v4-flash，跨 Phase 的 L4 绝对值不可比，只有同批次内的臂间配对比较有效（本实验主判决即配对设计，不受影响）。
+
+## 21. Phase 59：增量建图行为漂移——SUPPORTED（产品域，不进论文）（2026-07-26）
+
+**来源**：dev 设计讨论（AGENTS.md §6 条目 9）。验证真增量追加（新 chunk 直接入图、统计增量累加）相对全量重建的漂移。协议：novel 20 本书按书切分（16 旧 + 4 新追加，788 chunks），复用 twopass 缓存纯 CPU 模拟。
+
+**结果**（`data/m6/phase59_incremental_graph.json`）：节点/边 Jaccard 1.0、IDF 陈旧 vs 刷新的检索 top-10 重叠 0.994、Kendall τ 0.967——全部门槛通过，**增量姿势 SUPPORTED，可带回 dev v2**。
+
+**产品语义**：
+1. 46 个概念旧库被剪后复活，但丢失=0——复活必经新 chunk 出现，**剪枝只剪节点不删 DF 计数器**即可，无需墓碑结构；
+2. IDF 陈旧漂移（N+22%）可忽略，定期后台刷新即可；
+3. 唯一显著漂移：top-100 共现对选择集 Jaccard 0.709——J-Lens 读出边的选择对语料规模敏感，增量系统需接受 ~30% 选择漂移或定期重选。
+
+**边界声明**：novel 概念层（244 节点）规模小；检索代理是 q×M 传播而非完整 dual-level ah；medical 域未测。产品决策建议在此规模内有效，规模化后重测。
+
+## 22. Phase 56：去嵌入闭环——FALSIFIED（ws 向量不可替代稠密检索）（2026-07-26）
+
+**背景**：tech-report §9.4 搁置项——用 LLM 自身向量替代 bge-m3 种子，达成单模型闭环。判决框架（与用户定稿）：不判"与 bge 是否相同"，判真实覆盖——LLM-judged evidence coverage 配对（48 题），Qwen ≥ bge − 0.05 → SUPPORTED。
+
+**路线 a（概念 ws_vec 聚合，零成本）**：死于覆盖空洞——244 概念仅覆盖 25% chunk，与几何无关，结构性证伪。
+
+**路线 b（逐 chunk 编码，4391 forwards 双产出）**：
+- dense = transported 残差全位置 mean-pool；sparse = lens logits 全位置 max-pool → top-{10,25,50} 实词（SPLADE 式；用户推测：读出位置不一定是 -1 → 全位置池化；J-Space 有效概念 ≤25 → 分档验证）。
+- 结果（bge cov10 = 0.723）：**dense 0.000、sparse10/25/50 = 0.031/0.014/0.029——全灭**。
+
+**失败机制（两条独立互证）**：
+1. **dense：文体陷阱**。top-3 全是 Project Gutenberg 版权页/转录说明（sim 0.96 vs 背景 0.23）——ws 稠密几何编码语域/表面规律而非主题；mean-centering 后 overlap 仍 0.000。这是 Phase 46/47 脱钩判决（ws 有词形结构无主题/关系结构）在直接检索任务上的第三次复证。
+2. **sparse：词表错层**。query 读出元级概念词（scientifically/referred/common），chunk 读出内容词（present/price/formerly）——43% 查询-块对零共享 token，点积 ≈ 随机。**top-25 无特殊地位**（三档同败）：瓶颈是抽象层错配，不是槽位数。
+
+**工程记录**：concern prompt 模板词会攻占稀疏向量 top 位（"模板续词"模式第五次复现）——解法=位置窗口池化（只在文本 span 后池化）+ 模板黑名单；分片 unembed 防显存爆；同一进程单次 4bit 加载。
+
+**结论**：bge-m3 在架构中确认留任。J-Lens 向量的有效域 = 图内接地（Phase 40）、消歧（44）、多跳判别（W²）；**开放语料种子检索是第二个独立方向的证伪**（继 Phase 42 概念路由之后）。"Qwen 作稠密编码器"从后续方向划除。
+
+### 22.1 与 J-Space 原论文的对照（2026-07-26，用户提示）
+
+Phase 56 的 FALSIFIED 与原论文（transformer-circuits.pub/2026/workspace）的功能刻画一致，并获得三个先验解释：
+1. **Selectivity**：workspace 不参与文本解析等"普遍常规处理"——开放语料检索编码正是这种处理，失败被论文自己的定义预言；
+2. **J-space 仅占激活方差 6-10%**——dense mean-pool 的 93% 内容在 J-space 外，文体陷阱（Gutenberg boilerplate）来自自动处理内容主导，dense 路线原理性不成立；
+3. **读出天然抽象/元级**（数数字任务中 workspace 出现 thoughts/AI/claude）——query 侧词表错层是 Claude 规模同构现象，非 7B 缺陷。
+反向证据（读出质量无问题）：论文 Figure 3 内容级概念读出（人脸/bug/蛋白）与我们 chunk 侧内容词、query 侧元级词同构——败在检索匹配，不在读出。paired-question 协议（Figure 11）为 56b 实体锚定变体提供设计依据与低预期。
+
+### 22.2 Phase 56b：实体锚定读出双域判别——用户"上下文边界"假设 SUPPORTED（2026-07-26）
+
+**假设**（用户提出）：workspace 内容以当前上下文为边界——query 侧只能读出问题承载的 + 参数化记忆能联想的概念，语料私有内容词不可能显现。
+**设计**：query 侧实体锚定读出（读出定律的最佳实践变体），双域判别，预设 gap_novel − gap_medical ≥ 0.15 → SUPPORTED。
+
+**结果**（`data/m6/phase56b_anchored.json`）：novel bge 0.723 / anchored 0.003（gap 0.720）；medical bge 0.602 / anchored 0.114（gap 0.489）。**gap 差 0.231 ≥ 0.15 → 假设 SUPPORTED**。
+
+**token 级铁证**：medical 查询锚定读出 = cancer/diagnosed/lesion/infection（真实医学联想，该题 coverage 1.0 与 bge 打平）；novel 查询 = referred/scientifically/commonly/的名字（问题框架的转述，零内容词，coverage 0.0）——同一管线，读出内容完全由"模型是否有参数化知识"决定。
+
+**最终边界**：①闭环（LLM 自向量替代嵌入）在任何域都不实用（medical 0.114 仍 ≪ 0.602）；②但失败不是均匀的——知识密集域有部分信号（38 倍于语料私有域），闭环按域划界；③bge-m3 在架构中最终确认留任；④56b 是读出定律最佳实践变体，此败即铁案——J-Lens 向量做开放语料种子检索的路线在所有已构想形态下证伪。

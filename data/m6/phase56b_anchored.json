@@ -1,0 +1,651 @@
+{
+ "method": "Phase 56b: 实体锚定读出双域判别（用户假设）",
+ "gates": {
+  "hypothesis_gap_diff": 0.15,
+  "falsify_gap": 0.1,
+  "closure": -0.05
+ },
+ "domains": {
+  "novel": {
+   "n": 48,
+   "bge_cov10": 0.723222552910053,
+   "anchored_cov10": 0.002976190476190476,
+   "gap": 0.7202463624338625,
+   "per_query": [
+    {
+     "qid": "Novel-73586ddc",
+     "level": "L1",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Novel-74440a6a",
+     "level": "L1",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Novel-f80cbf85",
+     "level": "L1",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.0
+    },
+    {
+     "qid": "Novel-b3c430ef",
+     "level": "L1",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Novel-304b0354",
+     "level": "L1",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Novel-b1a95144",
+     "level": "L1",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Novel-e05d0922",
+     "level": "L1",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.0
+    },
+    {
+     "qid": "Novel-dba48e64",
+     "level": "L1",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Novel-ea3d4859",
+     "level": "L1",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Novel-ba894e2c",
+     "level": "L1",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Novel-42f1975a",
+     "level": "L1",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Novel-419cadfe",
+     "level": "L1",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Novel-8ff5dd5a",
+     "level": "L2",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Novel-322bb52d",
+     "level": "L2",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.5
+    },
+    {
+     "qid": "Novel-35fee661",
+     "level": "L2",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.6666666666666666
+    },
+    {
+     "qid": "Novel-ade4b34a",
+     "level": "L2",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Novel-462ecc23",
+     "level": "L2",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Novel-4f5a8531",
+     "level": "L2",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Novel-0e2be889",
+     "level": "L2",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Novel-0d237b40",
+     "level": "L2",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Novel-346b12e8",
+     "level": "L2",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Novel-302a626f",
+     "level": "L2",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Novel-e894a5f5",
+     "level": "L2",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Novel-f473bcb0",
+     "level": "L2",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Novel-ff793656",
+     "level": "L3",
+     "anch_cov10": 0.14285714285714285,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Novel-48edb564",
+     "level": "L3",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.875
+    },
+    {
+     "qid": "Novel-296c7595",
+     "level": "L3",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Novel-733f63f7",
+     "level": "L3",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Novel-2ab4a26d",
+     "level": "L3",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Novel-f24f442f",
+     "level": "L3",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.5
+    },
+    {
+     "qid": "Novel-3b90994e",
+     "level": "L3",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Novel-613d4e81",
+     "level": "L3",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.4
+    },
+    {
+     "qid": "Novel-69348684",
+     "level": "L3",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Novel-19dda12f",
+     "level": "L3",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Novel-6aa2cc33",
+     "level": "L3",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Novel-b418b955",
+     "level": "L3",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.5
+    },
+    {
+     "qid": "Novel-9d9b1ed1",
+     "level": "L4",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.4
+    },
+    {
+     "qid": "Novel-dca8ac49",
+     "level": "L4",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.5
+    },
+    {
+     "qid": "Novel-e89fa155",
+     "level": "L4",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.42857142857142855
+    },
+    {
+     "qid": "Novel-6956692c",
+     "level": "L4",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.5
+    },
+    {
+     "qid": "Novel-27b6e451",
+     "level": "L4",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.14285714285714285
+    },
+    {
+     "qid": "Novel-a940228b",
+     "level": "L4",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.0
+    },
+    {
+     "qid": "Novel-2e0ffce2",
+     "level": "L4",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.0
+    },
+    {
+     "qid": "Novel-4334e7fc",
+     "level": "L4",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.0
+    },
+    {
+     "qid": "Novel-db4551ac",
+     "level": "L4",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.42857142857142855
+    },
+    {
+     "qid": "Novel-a4a83818",
+     "level": "L4",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.1111111111111111
+    },
+    {
+     "qid": "Novel-e0a374bb",
+     "level": "L4",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.42857142857142855
+    },
+    {
+     "qid": "Novel-11abd566",
+     "level": "L4",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.3333333333333333
+    }
+   ]
+  },
+  "medical": {
+   "n": 56,
+   "bge_cov10": 0.6024479984301413,
+   "anchored_cov10": 0.11360155950492086,
+   "gap": 0.48884643892522045,
+   "per_query": [
+    {
+     "qid": "Medical-73586ddc",
+     "level": "L1",
+     "anch_cov10": 1.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Medical-a8bad1cf",
+     "level": "L1",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Medical-422500d5",
+     "level": "L1",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Medical-6d2a190d",
+     "level": "L1",
+     "anch_cov10": 1.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Medical-5ad931db",
+     "level": "L1",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Medical-6b0f8bc4",
+     "level": "L1",
+     "anch_cov10": 1.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Medical-75c9949b",
+     "level": "L1",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Medical-ec091b24",
+     "level": "L1",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.0
+    },
+    {
+     "qid": "Medical-8d39da2e",
+     "level": "L1",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Medical-88c0b2ba",
+     "level": "L1",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.5
+    },
+    {
+     "qid": "Medical-a8ee8ba1",
+     "level": "L1",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Medical-ec7d8801",
+     "level": "L1",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.0
+    },
+    {
+     "qid": "Medical-9797af69",
+     "level": "L1",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.0
+    },
+    {
+     "qid": "Medical-6884d3fa",
+     "level": "L1",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.0
+    },
+    {
+     "qid": "Medical-604c9d44",
+     "level": "L2",
+     "anch_cov10": 1.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Medical-df366063",
+     "level": "L2",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Medical-0a90f1f2",
+     "level": "L2",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.6666666666666666
+    },
+    {
+     "qid": "Medical-831bb1e6",
+     "level": "L2",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.75
+    },
+    {
+     "qid": "Medical-01e3a9ea",
+     "level": "L2",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.0
+    },
+    {
+     "qid": "Medical-c69c2732",
+     "level": "L2",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.0
+    },
+    {
+     "qid": "Medical-f034d77d",
+     "level": "L2",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.5
+    },
+    {
+     "qid": "Medical-1eab8fa2",
+     "level": "L2",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Medical-14016ce3",
+     "level": "L2",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.5
+    },
+    {
+     "qid": "Medical-5e530443",
+     "level": "L2",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.0
+    },
+    {
+     "qid": "Medical-c8dd3e29",
+     "level": "L2",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.6666666666666666
+    },
+    {
+     "qid": "Medical-a9a52704",
+     "level": "L2",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Medical-346b12e8",
+     "level": "L2",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.0
+    },
+    {
+     "qid": "Medical-8ff5dd5a",
+     "level": "L2",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.6666666666666666
+    },
+    {
+     "qid": "Medical-5fd3c02d",
+     "level": "L3",
+     "anch_cov10": 0.6363636363636364,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Medical-b8b22d33",
+     "level": "L3",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Medical-9c85110b",
+     "level": "L3",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Medical-fcf87025",
+     "level": "L3",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Medical-6baf8bff",
+     "level": "L3",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Medical-643b2b9d",
+     "level": "L3",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.8
+    },
+    {
+     "qid": "Medical-25f8ca5e",
+     "level": "L3",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.75
+    },
+    {
+     "qid": "Medical-d961b796",
+     "level": "L3",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Medical-915df475",
+     "level": "L3",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Medical-e0e8fd6d",
+     "level": "L3",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.7
+    },
+    {
+     "qid": "Medical-d7012112",
+     "level": "L3",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.7
+    },
+    {
+     "qid": "Medical-6bb8a85b",
+     "level": "L3",
+     "anch_cov10": 0.0,
+     "bge_cov10": 1.0
+    },
+    {
+     "qid": "Medical-0a87d395",
+     "level": "L3",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.75
+    },
+    {
+     "qid": "Medical-23285edf",
+     "level": "L3",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.0
+    },
+    {
+     "qid": "Medical-fe3240a4",
+     "level": "L4",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.6666666666666666
+    },
+    {
+     "qid": "Medical-8f5233d5",
+     "level": "L4",
+     "anch_cov10": 0.5,
+     "bge_cov10": 0.0
+    },
+    {
+     "qid": "Medical-c9c108e1",
+     "level": "L4",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.18181818181818182
+    },
+    {
+     "qid": "Medical-bf68d23e",
+     "level": "L4",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.5833333333333334
+    },
+    {
+     "qid": "Medical-fd1b07be",
+     "level": "L4",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.18181818181818182
+    },
+    {
+     "qid": "Medical-ea29b9d8",
+     "level": "L4",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.5
+    },
+    {
+     "qid": "Medical-c2658ea4",
+     "level": "L4",
+     "anch_cov10": 0.8461538461538461,
+     "bge_cov10": 0.7692307692307693
+    },
+    {
+     "qid": "Medical-e6da7d3c",
+     "level": "L4",
+     "anch_cov10": 0.058823529411764705,
+     "bge_cov10": 0.0
+    },
+    {
+     "qid": "Medical-96352a3c",
+     "level": "L4",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.125
+    },
+    {
+     "qid": "Medical-3396b459",
+     "level": "L4",
+     "anch_cov10": 0.047619047619047616,
+     "bge_cov10": 0.42857142857142855
+    },
+    {
+     "qid": "Medical-beb1f30e",
+     "level": "L4",
+     "anch_cov10": 0.2727272727272727,
+     "bge_cov10": 0.36363636363636365
+    },
+    {
+     "qid": "Medical-9e9cc51b",
+     "level": "L4",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.2727272727272727
+    },
+    {
+     "qid": "Medical-970792d6",
+     "level": "L4",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.0
+    },
+    {
+     "qid": "Medical-5b2de94d",
+     "level": "L4",
+     "anch_cov10": 0.0,
+     "bge_cov10": 0.7142857142857143
+    }
+   ]
+  }
+ },
+ "verdict": "用户假设 SUPPORTED（gap_novel−gap_medical = +0.231 ≥ 0.15）——闭环按域划界：知识密集域可用，语料私有域不可用"
+}

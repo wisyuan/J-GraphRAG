@@ -1,13 +1,13 @@
 # 跨模型实验 Runbook（RTX 4090 / 24GB 执行）
 
 > 版本：v1.0（2026-07-24，基于 experiment 分支 a5880a1）
-> 执行机器：RTX 4090 台式机（24GB VRAM）。本文档是自包含交接：环境 → 数据 → 代码改动点 → Phase 56/57 设计（含预设判决）→ 已知坑。
+> 执行机器：RTX 4090 台式机（24GB VRAM）。本文档是自包含交接：环境 → 数据 → 代码改动点 → Phase 57/58 设计（含预设判决）→ 已知坑。
 > 方法论沿用 AGENTS.md §5：先定义判决指标再动手、先 selftest/冒烟后全量、结果写回 complete-method。
 
 ## 0. 目标与范围
 
-- **Phase 56（跨模型泛化）**：验证 J-Lens 提取管线在非 Qwen2.5-7B 模型上成立，直接回应论文 limitations 第一条（单模型验证）。预训练 lens 全部来自 [neuronpedia/jacobian-lens](https://huggingface.co/neuronpedia/jacobian-lens)，**无需自拟合**。
-- **Phase 57（参数量 × lens 精度消融）**：gemma-3 阶梯画规模曲线；lens 精度对下游指标的影响。
+- **Phase 57（跨模型泛化）**：验证 J-Lens 提取管线在非 Qwen2.5-7B 模型上成立，直接回应论文 limitations 第一条（单模型验证）。预训练 lens 全部来自 [neuronpedia/jacobian-lens](https://huggingface.co/neuronpedia/jacobian-lens)，**无需自拟合**。
+- **Phase 58（参数量 × lens 精度消融）**：gemma-3 阶梯画规模曲线；lens 精度对下游指标的影响。
 - **不在本期范围**：多模态（gemma-3 视觉侧，先单独冒烟）、qwen3-14b/32b（超出复现所需）。
 
 ## 1. 机器与仓库准备
@@ -59,11 +59,11 @@ bge-m3 嵌入：24GB 下可与 LLM 同驻留 GPU。但注意 `LINCLE_BGE_M3_DEVI
 ```
 
 - **lens 文件名模式**：`{候选name}/jlens/Salesforce-wikitext/{model_id最后一段}_jacobian_lens.pt`（`load_lens()` 会自动从 neuronpedia 下载，~433MB/个；也可手动 `hf_hub_download` 到 local_lens_path）。
-- **lens 质量元数据**：同目录 `config.yaml`（拟合参数 + `final_identity_distance`）和 `{name}_convergence.csv`——Phase 57 的 lens 精度数据源。
+- **lens 质量元数据**：同目录 `config.yaml`（拟合参数 + `final_identity_distance`）和 `{name}_convergence.csv`——Phase 58 的 lens 精度数据源。
 - `LENS_CONFIG`（第 117 行）是 qwen 残留，非 qwen 模型如报错可临时硬编码对应路径。
 - **gemma-3 冒烟的第一个目的**：验证 `jlens.HFLensModel` 的残差流 hook 对 gemma 架构兼容（jlens 官方支持列表含 gemma，但我们这套 4bit + 自建读出管线只在 qwen 上跑过）。
 
-## 3. Phase 56：跨模型泛化最小复现
+## 3. Phase 57：跨模型泛化最小复现
 
 **押注**：J-Lens 提取管线的关键结论（可读性、概念提取、接地）在非 Qwen 架构上复现。
 
@@ -84,9 +84,9 @@ bge-m3 嵌入：24GB 下可与 LLM 同驻留 GPU。但注意 `LINCLE_BGE_M3_DEVI
 **S3 单域替换**（可选，半天）：medical LightRAG-J 全管线。
 - **判决**：retention ≥0.9（**必须用 Phase 54 的 rubric L4 协议**，`experiments/phase54_l4_rubric_judge.py` 的 judge；生成侧去 concisely、max_tokens ≥800）。
 
-**写回**：每模型一个 `data/m6/phase56_{模型名}.json`；结论写回 complete-method §20。
+**写回**：每模型一个 `data/m6/phase57_{模型名}.json`；结论写回 complete-method §20。
 
-## 4. Phase 57：参数量 × lens 精度消融
+## 4. Phase 58：参数量 × lens 精度消融
 
 **押注**：提取质量随参数量提升（概念质量 ↔ 模型规模的验证链条）；lens 拟合精度是独立影响因子。
 
@@ -101,7 +101,7 @@ bge-m3 嵌入：24GB 下可与 LLM 同驻留 GPU。但注意 `LINCLE_BGE_M3_DEVI
 
 27b 显存明细：权重 NF4 ~12GB + 嵌入/lm_head bf16 ~5.1GB（vocab 248320 且不 tie，是大头）+ KV/激活/lens ~2.5GB。KV 压力小（64 层仅 16 层 full attention）。跳过 vision tower（见坑清单加载注意）。
 
-**指标**（每档跑 Phase 56 的 S0+S1+S2）：可读性通过率、概念准确率、接地 AUC → 对参数量画曲线；各 lens 的 `final_identity_distance`（config.yaml）作协变量记录——概念质量差异要能分离"模型规模"与"lens 质量"两个因子。
+**指标**（每档跑 Phase 57 的 S0+S1+S2）：可读性通过率、概念准确率、接地 AUC → 对参数量画曲线；各 lens 的 `final_identity_distance`（config.yaml）作协变量记录——概念质量差异要能分离"模型规模"与"lens 质量"两个因子。
 - **判决**：三指标随参数量单调不降，且 4b 档概念准确率 ≥70% → 规模效应成立；若 4b 即达 7b 水平（饱和），则论文部署故事更强（小模型够用）；27b 显著超 7b → 高端增益成立，"规模天花板"主张上修。
 - **混淆声明**：7b 点是 qwen2.5 dense 架构，与其余三点（qwen3_5 hybrid）不同——若 7b 点偏离链条趋势，用 gemma-3 对照链（下）判定是规模效应还是架构效应。
 
