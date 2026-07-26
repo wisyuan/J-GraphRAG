@@ -16,6 +16,11 @@ Direction & Verdict & Evidence \\
 Query-side concept routing as a replacement for dense retrieval & FALSIFIED &
 ACC 0.05--0.21 vs.\ 0.50--0.57 (Phase 42); concepts are topical anchors, not
 query semantics \\
+Workspace vectors as dense-retrieval seeds (single-model closure) & FALSIFIED &
+Evidence coverage 0.00--0.11 vs.\ bge 0.60--0.72 (Phase 56/56b): dense readout
+encodes register/style (Gutenberg-boilerplate trap); even entity-anchored
+readout succeeds only where the model has parametric knowledge (medical 0.11
+vs.\ novel 0.00)---workspace content is bounded by context, not a corpus index \\
 Cloze-style prompts & FALSIFIED (law) & Three independent replications
 (\S\ref{sec:math:cloze}) \\
 J-Lens extraction of low-frequency proper names & FALSIFIED (structural) &
